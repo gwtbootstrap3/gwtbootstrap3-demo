@@ -1,0 +1,10 @@
+function Apb(){}
+function Nib(){Kib();return Gib}
+function Lib(a,b,c){pg.call(this,a,b);this.b=c}
+function ppb(a,b,c){jL.call(this,a,b,c,(Qib(),Pib))}
+function y1(a){UW.call(this,a);this.r[HHb]='well'}
+function _qb(a){var b;if(!a.kb){b=new ypb(new Apb);a.kb=b}return a.kb}
+function $qb(a){var b;if(!a.jb){b=new ppb(sK(PL(a.b)),_qb(a),Zqb(a));KK((QL(a.b),b),_L(QL(a.b)));a.jb=b}return a.jb}
+function Kib(){Kib=BFb;Iib=new Lib(qIb,0,'well-lg');Hib=new Lib(iIb,1,null);Jib=new Lib(gMb,2,'well-sm');Gib=wl(FB,LFb,130,[Iib,Hib,Jib])}
+function ypb(){var a,b,c,d,e,f,g,i,j,k,n,o,p,q,r,s,t,u,v,w,x,y,z;DL(this,(a=new F0,aX(a,(b=new J_,b.b=rJb,I_(b),b)),aX(a,(c=new L_,aX(c,(d=new T_,S_(d,(n=new DZ(3),hg(n.r,WKb),n)),d)),aX(c,(e=new O_,aX(e,new y1((o=new UQ,o.b.b+="Look, I'm in a well!",new HC(o.b.b)).b)),e)),aX(c,(f=new Q_,aX(f,(p=new w0,v0(p,(q=new UQ,q.b.b+='&lt;b:Well&gt;\\n \\s\\s...\\n &lt;/b:Well&gt;\\n',new HC(q.b.b)).b),vG(p.r,OKb,true),vG(p.r,PKb,true),p)),f)),c)),aX(a,(g=new L_,aX(g,(i=new T_,S_(i,(r=new DZ(3),hg(r.r,'Optional classes'),r)),i)),aX(g,(j=new O_,aX(j,(s=new y1((t=new UQ,t.b.b+="Look, I'm in a large well!",new HC(t.b.b)).b),J1(s,_t,(Kib(),Iib)),s)),aX(j,(u=new y1((v=new UQ,v.b.b+="Look, I'm in a small well!",new HC(v.b.b)).b),J1(u,_t,Jib),u)),j)),aX(g,(k=new Q_,aX(k,(w=new w0,v0(w,(x=new UQ,x.b.b+='&lt;b:Well size="LARGE"&gt;\\n \\s\\s...\\n &lt;/b:Well&gt;\\n',new HC(x.b.b)).b),vG(w.r,OKb,true),vG(w.r,PKb,true),w)),aX(k,new KY),aX(k,(y=new w0,v0(y,(z=new UQ,z.b.b+='&lt;b:Well size="SMALL"&gt;\\n \\s\\s...\\n &lt;/b:Well&gt;\\n',new HC(z.b.b)).b),vG(y.r,OKb,true),vG(y.r,PKb,true),y)),k)),g)),a))}
+eC(470,352,ZFb,y1);eC(518,65,{7:1,68:1,71:1,72:1,124:1,130:1},Lib);_.tb=function Mib(){return this.b};_.b=null;var Gib,Hib,Iib,Jib;eC(681,242,bGb,ppb);eC(684,247,cGb,ypb);eC(685,1,{},Apb);eC(714,1,rGb);_.ob=function Msb(){eN(this.c,$qb(this.b.b))};var tw=SP(TJb,'WellPresenter',681),vw=SP(TJb,'WellView',684),uw=SP(TJb,'WellView_BinderImpl',685),Ts=SP(AKb,'Well',470),_t=TP(zKb,'WellSize',518,Nib),FB=RP(GKb,'WellSize;',981);vGb(ke)(20);
