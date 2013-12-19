@@ -129,6 +129,10 @@
                         </b:FormGroup>
 
                         <b:FormGroup>
+                            <b:CheckBox text="Remember me"/>
+                        </b:FormGroup>
+
+                        <b:FormGroup>
                             <b:Button>Send</b:Button>
                         </b:FormGroup>
                     </b:FieldSet>
@@ -147,6 +151,10 @@
                     \s\s\s\s&lt;b:FormGroup&gt;\n
                     \s\s\s\s\s\s&lt;b:PasswordTextBox placeholder=&quot;Enter password&quot;/&gt;\n
                     \s\s\s\s&lt;/b:FormGroup&gt;\n
+                    \n
+                    &lt;b:FormGroup&gt;\n
+                    \s\s&lt;b:CheckBox text="Remember me"/&gt;\n
+                    &lt;/b:FormGroup&gt;\n
                     \n
                     \s\s\s\s&lt;b:FormGroup&gt;\n
                     \s\s\s\s\s\s&lt;b:Button&gt;Send&lt;/b:Button&gt;\n
@@ -182,6 +190,12 @@
 
                         <b:FormGroup>
                             <g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10">
+                                <b:CheckBox text="Remember me"/>
+                            </g:FlowPanel>
+                        </b:FormGroup>
+
+                        <b:FormGroup>
+                            <g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10">
                                 <b:Button>Send</b:Button>
                             </g:FlowPanel>
                         </b:FormGroup>
@@ -207,6 +221,12 @@
                     \s\s\s\s\s\s\s\s&lt;b:TextBox text="blabla" b:id="formName"/&gt;\n
                     \s\s\s\s\s\s&lt;/g:FlowPanel&gt;\n
                     \s\s\s\s&lt;/b:FormGroup&gt;\n
+                    \n
+                    &lt;b:FormGroup&gt;\n
+                    \s\s&lt;g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10"&gt;\n
+                    \s\s\s\s&lt;b:CheckBox text="Remember me"/&gt;\n
+                    \s\s&lt;/g:FlowPanel&gt;\n
+                    &lt;/b:FormGroup&gt;\n
                     \n
                     \s\s\s\s&lt;b:FormGroup&gt;\n
                     \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10"&gt;\n
