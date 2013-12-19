@@ -47,7 +47,7 @@
         </plugins>
     </build>
 
-    <!-- Required because gwtbootstrap3-extras is a separate module and may need to be fetched by CI server -->
+    <!-- Required because snapshot releases may need to be fetched by CI server -->
     <repositories>
         <repository>
             <id>sonatype-nexus-snapshots</id>
