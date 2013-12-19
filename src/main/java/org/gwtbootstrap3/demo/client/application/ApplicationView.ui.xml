@@ -1,0 +1,132 @@
+<!--
+  #%L
+  GwtBootstrap3
+  %%
+  Copyright (C) 2013 GwtBootstrap3
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+    <ui:with field="nameTokens" type="org.gwtbootstrap3.demo.client.place.NameTokens"/>
+
+    <ui:style>
+        .buttons button {
+            margin: 0.5em;
+        }
+
+        .labels span {
+            margin-right: 5px;
+        }
+
+        .push {
+            padding-top: 70px;
+        }
+    </ui:style>
+
+    <g:ScrollPanel>
+        <b:Container>
+
+            <b:Navbar position="FIXED_TOP">
+                <b:Container>
+                    <b:NavbarHeader>
+                        <b:NavbarBrand targetHistoryToken="{nameTokens.getHome}" ui:field="brand">GwtBootstrap3
+                        </b:NavbarBrand>
+                        <b:NavbarCollapseButton target="#navbar-collapse"/>
+                    </b:NavbarHeader>
+                    <b:NavbarCollapse b:id="navbar-collapse">
+                        <b:NavbarNav>
+                            <b:ListItem text="Setup" targetHistoryToken="{nameTokens.getSetup}"/>
+                            <b:ListDropDown>
+                                <b:AnchorButton toggle="DROPDOWN">CSS</b:AnchorButton>
+                                <b:DropDownMenu>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getGridSystem}">Grid System</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getTypography}">Typography</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getCode}">Code</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getTables}">Tables</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getForms}">Forms</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getButtons}">Buttons</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getImages}">Images</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getResponsiveUtilities}">Responsive
+                                        Utilities
+                                    </b:ListItem>
+                                </b:DropDownMenu>
+                            </b:ListDropDown>
+                            <b:ListDropDown>
+                                <b:AnchorButton toggle="DROPDOWN">Components</b:AnchorButton>
+                                <b:DropDownMenu>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getAlerts}">Alerts</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getBadges}">Badges</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getBreadcrumbs}">Breadcrumbs
+                                    </b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getButtonDropdowns}">Button Dropdowns
+                                    </b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getButtonGroups}">Button Groups
+                                    </b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getDropdowns}">Dropdowns</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getIcons}">Icons</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getInputGroups}">Input Groups
+                                    </b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getJumbotron}">Jumbotron</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getLabels}">Labels</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getListGroup}">List Group</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getMediaObjects}">Media Objects
+                                    </b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getNavbar}">Navbar</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getNavs}">Navs</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getPageHeader}">Page Header</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getPagination}">Pagination</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getPanels}">Panels</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getProgressBars}">Progress Bars
+                                    </b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getThumbnails}">Thumbnails</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getWells}">Wells</b:ListItem>
+                                </b:DropDownMenu>
+                            </b:ListDropDown>
+                            <b:ListDropDown>
+                                <b:AnchorButton toggle="DROPDOWN">JavaScript</b:AnchorButton>
+                                <b:DropDownMenu>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getAffix}">Affix</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getCarousel}">Carousel</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getCollapse}">Collapse</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getModals}">Modals</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getPopover}">Popover</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getTooltips}">Tooltips</b:ListItem>
+                                </b:DropDownMenu>
+                            </b:ListDropDown>
+                            <b:ListDropDown>
+                                <b:AnchorButton toggle="DROPDOWN">Extras</b:AnchorButton>
+                                <b:DropDownMenu>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getDatetimePicker}">DateTimePicker
+                                    </b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getBootbox}">Bootbox</b:ListItem>
+                                </b:DropDownMenu>
+                            </b:ListDropDown>
+                            <b:ListItem text="Fork on GitHub" href="https://github.com/gwtbootstrap3/gwtbootstrap3"
+                                        ui:field="forkLink"/>
+                        </b:NavbarNav>
+                    </b:NavbarCollapse>
+                </b:Container>
+            </b:Navbar>
+
+            <!-- Container Content -->
+            <g:SimplePanel addStyleNames="{style.push}" ui:field="contentContainer"/>
+
+        </b:Container>
+
+    </g:ScrollPanel>
+
+</ui:UiBinder>
