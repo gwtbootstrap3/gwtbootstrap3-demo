@@ -90,6 +90,64 @@
             </b:PanelFooter>
         </b:Panel>
 
+        <b:Panel>
+            <b:PanelHeader>
+                <b:Heading size="3" text="Split"/>
+            </b:PanelHeader>
+            <b:PanelBody>
+                <b:ButtonGroup addStyleNames="{style.spacing}">
+                    <b:Button>Split Dropdown</b:Button>
+                    <b:Button toggle="DROPDOWN"/>
+                    <b:DropDownMenu>
+                        <b:ListItem>Item 1</b:ListItem>
+                        <b:ListItem>Item 2</b:ListItem>
+                        <b:ListItem>Item 3</b:ListItem>
+                    </b:DropDownMenu>
+                </b:ButtonGroup>
+            </b:PanelBody>
+            <b:PanelFooter>
+                <b:Pre addStyleNames="prettyprint lang-xml">
+                    &lt;b:ButtonGroup&gt;\n
+                    \s\s&lt;b:Button&gt;Split Dropdown&lt;/b:Button&gt;\n
+                    \s\s&lt;b:Button toggle="DROPDOWN"/&gt;\n
+                    \s\s&lt;b:DropDownMenu&gt;\n
+                    \s\s\s\s&lt;b:ListItem&gt;Item 1&lt;/b:ListItem&gt;\n
+                    \s\s\s\s&lt;b:ListItem&gt;Item 2&lt;/b:ListItem&gt;\n
+                    \s\s\s\s&lt;b:ListItem&gt;Item 3&lt;/b:ListItem&gt;\n
+                    \s\s&lt;/b:DropDownMenu&gt;\n
+                    &lt;/b:ButtonGroup&gt;
+                </b:Pre>
+            </b:PanelFooter>
+        </b:Panel>
+
+        <b:Panel>
+            <b:PanelHeader>
+                <b:Heading size="3" text="Dropup"/>
+            </b:PanelHeader>
+            <b:PanelBody>
+                <b:ButtonGroup dropUp="true" addStyleNames="{style.spacing}">
+                    <b:Button toggle="DROPDOWN">Dropup</b:Button>
+                    <b:DropDownMenu>
+                        <b:ListItem>Item 1</b:ListItem>
+                        <b:ListItem>Item 2</b:ListItem>
+                        <b:ListItem>Item 3</b:ListItem>
+                    </b:DropDownMenu>
+                </b:ButtonGroup>
+            </b:PanelBody>
+            <b:PanelFooter>
+                <b:Pre addStyleNames="prettyprint lang-xml">
+                    &lt;b:ButtonGroup dropUp="true"&gt;\n
+                    \s\s&lt;b:Button toggle="DROPDOWN"&gt;Dropup&lt;/b:Button&gt;\n
+                    \s\s&lt;b:DropDownMenu&gt;\n
+                    \s\s\s\s&lt;b:ListItem&gt;Item 1&lt;/b:ListItem&gt;\n
+                    \s\s\s\s&lt;b:ListItem&gt;Item 2&lt;/b:ListItem&gt;\n
+                    \s\s\s\s&lt;b:ListItem&gt;Item 3&lt;/b:ListItem&gt;\n
+                    \s\s&lt;/b:DropDownMenu&gt;\n
+                    &lt;/b:ButtonGroup&gt;
+                </b:Pre>
+            </b:PanelFooter>
+        </b:Panel>
+
     </b:Row>
 
 </ui:UiBinder>

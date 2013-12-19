@@ -21,20 +21,41 @@ package org.gwtbootstrap3.demo.client.demos.css;
  */
 
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.Composite;
+import org.gwtbootstrap3.client.ui.Button;
 import org.gwtbootstrap3.client.ui.Row;
 
 /**
  * @author Joshua Godi
  */
 public class Buttons extends Composite {
+
     interface ButtonsUiBinder extends UiBinder<Row, Buttons> {
     }
 
     private static final ButtonsUiBinder ourUiBinder = GWT.create(ButtonsUiBinder.class);
 
+    @UiField
+    Button button;
+
     public Buttons() {
         initWidget(ourUiBinder.createAndBindUi(this));
+    }
+
+    @UiHandler("button")
+    public void onButtonClick(final ClickEvent event) {
+        button.state().loading();
+
+        new Timer() {
+            @Override
+            public void run() {
+                button.state().reset();
+            }
+        }.schedule(2000);
     }
 }

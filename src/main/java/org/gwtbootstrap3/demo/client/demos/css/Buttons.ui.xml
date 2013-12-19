@@ -105,6 +105,66 @@
             </b:PanelFooter>
         </b:Panel>
 
+        <b:Panel>
+            <b:PanelHeader>
+                <b:Heading size="3" text="Toggle button"/>
+            </b:PanelHeader>
+            <b:PanelBody addStyleNames="{style.spacing}">
+                <b:Button toggle="BUTTON" text="Toggle button"/>
+            </b:PanelBody>
+            <b:PanelFooter>
+                <b:Pre addStyleNames="prettyprint lang-xml">
+                    &lt;b:Button toggle="BUTTON"/&gt;
+                </b:Pre>
+            </b:PanelFooter>
+        </b:Panel>
+
+        <b:Panel>
+            <b:PanelHeader>
+                <b:Heading size="3" text="With loading state"/>
+            </b:PanelHeader>
+            <b:PanelBody addStyleNames="{style.spacing}">
+                <b:Button ui:field="button" text="Click me" loadingText="Loading..."/>
+            </b:PanelBody>
+            <b:PanelFooter>
+                <b:Heading size="4" text="UiBinder"/>
+
+                <b:Pre addStyleNames="prettyprint lang-xml">
+                    &lt;b:Button ui:field="button" text="Click me" loadingText="Loading..."/&gt;
+                </b:Pre>
+
+                <b:Heading size="4" text="Java code"/>
+
+                <b:Pre addStyleNames="prettyprint lang-java">
+                    @UiHandler("button")\n
+                    public void onButtonClick(final ClickEvent event) {\n
+                    \s\sbutton.state().loading();\n
+                    \n
+                    \s\snew Timer() {\n
+                    \s\s\s\s@Override\n
+                    \s\s\s\spublic void run() {\n
+                    \s\s\s\s\s\sbutton.state().reset();\n
+                    \s\s\s\s}\n
+                    \s\s}.schedule(2000);\n
+                    }
+                </b:Pre>
+            </b:PanelFooter>
+        </b:Panel>
+
+        <b:Panel>
+            <b:PanelHeader>
+                <b:Heading size="3" text="Block level button"/>
+            </b:PanelHeader>
+            <b:PanelBody addStyleNames="{style.spacing}">
+                <b:Button text="Block level button" block="true"/>
+            </b:PanelBody>
+            <b:PanelFooter>
+                <b:Pre addStyleNames="prettyprint lang-xml">
+                    &lt;b:Button text="Block level button" block="true"/&gt;
+                </b:Pre>
+            </b:PanelFooter>
+        </b:Panel>
+
     </b:Row>
 
 </ui:UiBinder>

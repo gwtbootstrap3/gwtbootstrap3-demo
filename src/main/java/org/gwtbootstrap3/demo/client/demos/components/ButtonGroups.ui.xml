@@ -172,6 +172,54 @@
             </b:PanelFooter>
         </b:Panel>
 
+        <b:Panel>
+            <b:PanelHeader>
+                <b:Heading size="3" text="Checkbox buttons"/>
+            </b:PanelHeader>
+            <b:PanelBody>
+                <b:ButtonGroup toggle="BUTTONS">
+                    <b:CheckBoxButton active="true">Option 1</b:CheckBoxButton>
+                    <b:CheckBoxButton>Option 2</b:CheckBoxButton>
+                    <b:CheckBoxButton>Option 3</b:CheckBoxButton>
+                    <b:CheckBoxButton enabled="false">Option 4</b:CheckBoxButton>
+                </b:ButtonGroup>
+            </b:PanelBody>
+            <b:PanelFooter>
+                <b:Pre addStyleNames="prettyprint lang-xml">
+                    &lt;b:ButtonGroup toggle="BUTTONS"&gt;\n
+                    \s\s&lt;b:CheckBoxButton active="true"&gt;Option 1&lt;/b:CheckBoxButton&gt;\n
+                    \s\s&lt;b:CheckBoxButton&gt;Option 2&lt;/b:CheckBoxButton&gt;\n
+                    \s\s&lt;b:CheckBoxButton&gt;Option 3&lt;/b:CheckBoxButton&gt;\n
+                    \s\s&lt;b:CheckBoxButton enabled="false"&gt;Option 4&lt;/b:CheckBoxButton&gt;\n
+                    &lt;/b:ButtonGroup&gt;
+                </b:Pre>
+            </b:PanelFooter>
+        </b:Panel>
+
+        <b:Panel>
+            <b:PanelHeader>
+                <b:Heading size="3" text="Radio buttons"/>
+            </b:PanelHeader>
+            <b:PanelBody>
+                <b:ButtonGroup toggle="BUTTONS">
+                    <b:RadioButton>Option 1</b:RadioButton>
+                    <b:RadioButton active="true">Option 2</b:RadioButton>
+                    <b:RadioButton>Option 3</b:RadioButton>
+                    <b:RadioButton enabled="false">Option 4</b:RadioButton>
+                </b:ButtonGroup>
+            </b:PanelBody>
+            <b:PanelFooter>
+                <b:Pre addStyleNames="prettyprint lang-xml">
+                    &lt;b:ButtonGroup toggle="BUTTONS"&gt;\n
+                    \s\s&lt;b:RadioButton&gt;Option 1&lt;/b:RadioButton&gt;\n
+                    \s\s&lt;b:RadioButton active="true"&gt;Option 2&lt;/b:RadioButton&gt;\n
+                    \s\s&lt;b:RadioButton&gt;Option 3&lt;/b:RadioButton&gt;\n
+                    \s\s&lt;b:RadioButton enabled="false"&gt;Option 4&lt;/b:RadioButton&gt;\n
+                    &lt;/b:ButtonGroup&gt;
+                </b:Pre>
+            </b:PanelFooter>
+        </b:Panel>
+
     </b:Row>
 
 </ui:UiBinder>
