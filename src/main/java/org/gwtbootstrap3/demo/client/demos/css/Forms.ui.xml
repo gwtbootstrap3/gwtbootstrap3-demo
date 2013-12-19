@@ -152,9 +152,9 @@
                     \s\s\s\s\s\s&lt;b:PasswordTextBox placeholder=&quot;Enter password&quot;/&gt;\n
                     \s\s\s\s&lt;/b:FormGroup&gt;\n
                     \n
-                    &lt;b:FormGroup&gt;\n
-                    \s\s&lt;b:CheckBox text="Remember me"/&gt;\n
-                    &lt;/b:FormGroup&gt;\n
+                    \s\s\s\s&lt;b:FormGroup&gt;\n
+                    \s\s\s\s\s\s&lt;b:CheckBox text="Remember me"/&gt;\n
+                    \s\s\s\s&lt;/b:FormGroup&gt;\n
                     \n
                     \s\s\s\s&lt;b:FormGroup&gt;\n
                     \s\s\s\s\s\s&lt;b:Button&gt;Send&lt;/b:Button&gt;\n
@@ -222,11 +222,11 @@
                     \s\s\s\s\s\s&lt;/g:FlowPanel&gt;\n
                     \s\s\s\s&lt;/b:FormGroup&gt;\n
                     \n
-                    &lt;b:FormGroup&gt;\n
-                    \s\s&lt;g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10"&gt;\n
-                    \s\s\s\s&lt;b:CheckBox text="Remember me"/&gt;\n
-                    \s\s&lt;/g:FlowPanel&gt;\n
-                    &lt;/b:FormGroup&gt;\n
+                    \s\s\s\s&lt;b:FormGroup&gt;\n
+                    \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10"&gt;\n
+                    \s\s\s\s\s\s\s\s&lt;b:CheckBox text="Remember me"/&gt;\n
+                    \s\s\s\s\s\s&lt;/g:FlowPanel&gt;\n
+                    \s\s\s\s&lt;/b:FormGroup&gt;\n
                     \n
                     \s\s\s\s&lt;b:FormGroup&gt;\n
                     \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10"&gt;\n
