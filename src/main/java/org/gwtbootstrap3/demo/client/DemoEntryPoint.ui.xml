@@ -117,7 +117,7 @@
                 </b:Paragraph>
 
                 <b:Paragraph>
-                    This is the demo for GwtBootstrap3 version 0.4. For previous releases please go to:
+                    This is the demo for GwtBootstrap3 version 0.5-SNAPSHOT. For previous releases please go to:
                     <a href="https://github.com/gwtbootstrap3/gwtbootstrap3/releases">Previous Releases</a>
                 </b:Paragraph>
             </b:Jumbotron>
