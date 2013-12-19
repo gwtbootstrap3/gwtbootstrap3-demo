@@ -39,7 +39,7 @@
 
                         <b:FormGroup>
                             <b:FormLabel for="formPassword">Password</b:FormLabel>
-                            <b:PasswordTextBox b:id="formPassword"/>
+                            <b:Input type="PASSWORD" b:id="formPassword"/>
                         </b:FormGroup>
 
                         <b:FormGroup>
@@ -125,7 +125,7 @@
                         </b:FormGroup>
 
                         <b:FormGroup>
-                            <b:PasswordTextBox placeholder="Enter password"/>
+                            <b:Input type="PASSWORD" placeholder="Enter password"/>
                         </b:FormGroup>
 
                         <b:FormGroup>
