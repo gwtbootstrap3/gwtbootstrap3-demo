@@ -1,6 +1,0 @@
-function bpb(){}
-function Sob(a,b,c){GL.call(this,a,b,c,(mjb(),ljb))}
-function orb(a){var b;if(!a.bb){b=new _ob(new bpb);a.bb=b}return a.bb}
-function nrb(a){var b;if(!a.ab){b=new Sob(PK(kM(a.b)),orb(a),mrb(a));fL((lM(a.b),b),xM(lM(a.b)));a.ab=b}return a.ab}
-function _ob(){var a,b,c,d,e,f,g,i,j,k,n,o,p,q,r,s;$L(this,(a=new b1,yX(a,(b=new f0,b.b=PJb,e0(b),b)),yX(a,(c=new h0,yX(c,(d=new p0,o0(d,(g=new _Z(3),qg(g.r,nLb),g)),d)),yX(c,(e=new k0,yX(e,(i=new h0,yX(i,(j=new p0,o0(j,(k=new _Z(3),qg(k.r,'Panel Header'),k)),j)),yX(i,(n=new k0,yX(n,(o=new cY,qg(o.r,'Panel Body'),o)),n)),yX(i,(p=new m0,yX(p,(q=new cY,qg(q.r,'Panel Footer'),q)),p)),i)),e)),yX(c,(f=new m0,yX(f,(r=new U0,T0(r,(s=new qR,s.b.b+='&lt;b:Panel&gt;\\n \\s\\s&lt;b:PanelHeader&gt;\\n \\s\\s\\s\\s&lt;b:Heading size="3" text="..."/&gt;\\n \\s\\s&lt;/b:PanelHeader&gt;\\n \\s\\s&lt;b:PanelBody&gt;\\n \\s\\s\\s\\s&lt;b:Bold text="..."/&gt;\\n \\s\\s&lt;/b:PanelBody&gt;\\n \\s\\s&lt;b:PanelFooter&gt;\\n \\s\\s\\s\\s&lt;b:Bold text="..."/&gt;\\n \\s\\s&lt;/b:PanelFooter&gt;\\n &lt;/b:Panel&gt;\\n',new _C(s.b.b)).b),SG(r.r,qLb,true),SG(r.r,rLb,true),r)),f)),c)),a))}
-yC(660,245,AGb,Sob);yC(663,250,BGb,_ob);yC(664,1,{},bpb);yC(709,1,QGb);_.sb=function Isb(){BN(this.c,nrb(this.b.b))};var vw=nQ(vKb,'PanelPresenter',660),xw=nQ(vKb,'PanelView',663),ww=nQ(vKb,'PanelView_BinderImpl',664);UGb(ve)(17);
