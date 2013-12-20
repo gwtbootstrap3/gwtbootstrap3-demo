@@ -27,6 +27,7 @@ import com.gwtplatform.mvp.client.annotations.GaAccount;
 import com.gwtplatform.mvp.client.annotations.UnauthorizedPlace;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import com.gwtplatform.mvp.client.gin.DefaultModule;
+import com.gwtplatform.mvp.client.googleanalytics.GoogleAnalyticsNavigationTracker;
 import org.gwtbootstrap3.demo.client.application.ApplicationModule;
 import org.gwtbootstrap3.demo.client.place.NameTokens;
 
@@ -47,5 +48,6 @@ public class DemoModule extends AbstractPresenterModule {
 
         // Google Analytics
         bindConstant().annotatedWith(GaAccount.class).to(ANALYTICS_ACCOUNT);
+        bind(GoogleAnalyticsNavigationTracker.class).asEagerSingleton();
     }
 }
