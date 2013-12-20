@@ -15,7 +15,7 @@
 
     <properties>
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
-        <gwtp.version>1.0.1</gwtp.version>
+        <gwtp.version>1.0.3</gwtp.version>
         <gin.version>2.1.2</gin.version>
     </properties>
 
@@ -42,7 +42,7 @@
 
         <dependency>
             <groupId>com.gwtplatform</groupId>
-            <artifactId>gwtp-all</artifactId>
+            <artifactId>gwtp-mvp-client</artifactId>
             <version>${gwtp.version}</version>
             <scope>provided</scope>
         </dependency>
