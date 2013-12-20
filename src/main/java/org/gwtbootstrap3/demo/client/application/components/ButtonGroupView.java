@@ -20,20 +20,66 @@ package org.gwtbootstrap3.demo.client.application.components;
  * #L%
  */
 
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
+import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
+import org.gwtbootstrap3.client.ui.Paragraph;
+import org.gwtbootstrap3.client.ui.RadioButton;
 
 /**
  * @author Joshua Godi
  */
 public class ButtonGroupView extends ViewImpl implements ButtonGroupPresenter.MyView {
+
     interface Binder extends UiBinder<Widget, ButtonGroupView> {
     }
+
+    @UiField
+    RadioButton button1;
+
+    @UiField
+    RadioButton button2;
+
+    @UiField
+    RadioButton button3;
+
+    @UiField
+    FlowPanel log;
 
     @Inject
     ButtonGroupView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        button1.addValueChangeHandler(new ValueChangeHandler<Boolean>() {
+            @Override
+            public void onValueChange(final ValueChangeEvent<Boolean> event) {
+                log("Value of button1 changed to: " + event.getValue().toString());
+            }
+        });
+
+        button2.addValueChangeHandler(new ValueChangeHandler<Boolean>() {
+            @Override
+            public void onValueChange(final ValueChangeEvent<Boolean> event) {
+                log("Value of button2 changed to: " + event.getValue().toString());
+            }
+        });
+
+        button3.addValueChangeHandler(new ValueChangeHandler<Boolean>() {
+            @Override
+            public void onValueChange(final ValueChangeEvent<Boolean> event) {
+                log("Value of button3 changed to: " + event.getValue().toString());
+            }
+        });
+    }
+
+    private void log(final String msg) {
+        final Paragraph p = new Paragraph();
+        p.setText(msg);
+        log.add(p);
     }
 }

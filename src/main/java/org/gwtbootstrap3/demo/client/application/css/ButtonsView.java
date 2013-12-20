@@ -35,8 +35,16 @@ import org.gwtbootstrap3.client.ui.Button;
  */
 public class ButtonsView extends ViewImpl implements ButtonsPresenter.MyView {
 
+    interface Binder extends UiBinder<Widget, ButtonsView> {
+    }
+
     @UiField
     Button button;
+
+    @Inject
+    ButtonsView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
 
     @UiHandler("button")
     public void onButtonClick(final ClickEvent event) {
@@ -48,13 +56,5 @@ public class ButtonsView extends ViewImpl implements ButtonsPresenter.MyView {
                 button.state().reset();
             }
         }.schedule(2000);
-    }
-
-    interface Binder extends UiBinder<Widget, ButtonsView> {
-    }
-
-    @Inject
-    ButtonsView(Binder uiBinder) {
-        initWidget(uiBinder.createAndBindUi(this));
     }
 }

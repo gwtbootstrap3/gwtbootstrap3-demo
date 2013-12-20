@@ -18,7 +18,17 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-             xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+    <ui:style>
+        .log {
+            border: solid #555 1px;
+            padding: 0.5em;
+            height: 10em;
+            max-height: 10em;
+            overflow: scroll;
+        }
+    </ui:style>
 
     <b:Row>
 
@@ -201,12 +211,19 @@
                 <b:Heading size="3" text="Radio buttons"/>
             </b:PanelHeader>
             <b:PanelBody>
-                <b:ButtonGroup toggle="BUTTONS">
-                    <b:RadioButton>Option 1</b:RadioButton>
-                    <b:RadioButton active="true">Option 2</b:RadioButton>
-                    <b:RadioButton>Option 3</b:RadioButton>
-                    <b:RadioButton enabled="false">Option 4</b:RadioButton>
-                </b:ButtonGroup>
+                <b:Row>
+                    <b:Column size="SM_6 MD_4">
+                        <b:ButtonGroup toggle="BUTTONS" name="groupName">
+                            <b:RadioButton ui:field="button1">Option 1</b:RadioButton>
+                            <b:RadioButton ui:field="button2" active="true">Option 2</b:RadioButton>
+                            <b:RadioButton ui:field="button3">Option 3</b:RadioButton>
+                            <b:RadioButton enabled="false">Option 4</b:RadioButton>
+                        </b:ButtonGroup>
+                    </b:Column>
+                    <b:Column size="SM_6 MD_8">
+                        <g:FlowPanel ui:field="log" addStyleNames="{style.log}"/>
+                    </b:Column>
+                </b:Row>
             </b:PanelBody>
             <b:PanelFooter>
                 <b:Pre addStyleNames="prettyprint lang-xml">
