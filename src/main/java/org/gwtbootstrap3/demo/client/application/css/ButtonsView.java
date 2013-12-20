@@ -20,15 +20,36 @@ package org.gwtbootstrap3.demo.client.application.css;
  * #L%
  */
 
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
+import org.gwtbootstrap3.client.ui.Button;
 
 /**
  * @author Joshua Godi
  */
 public class ButtonsView extends ViewImpl implements ButtonsPresenter.MyView {
+
+    @UiField
+    Button button;
+
+    @UiHandler("button")
+    public void onButtonClick(final ClickEvent event) {
+        button.state().loading();
+
+        new Timer() {
+            @Override
+            public void run() {
+                button.state().reset();
+            }
+        }.schedule(2000);
+    }
+
     interface Binder extends UiBinder<Widget, ButtonsView> {
     }
 
