@@ -81,7 +81,7 @@
                 Last but not least must add this namespace to your *.ui.xml (don't have to name it b2):
             </b:Paragraph>
             <b:Pre addStyleNames="prettyprint lang-xml">
-                xmlns:b2="urn:import:org.gwtbootstrap3.datetimepicker.client.ui"
+                xmlns:b2="urn:import:org.gwtbootstrap3.extras.datetimepicker.client.ui"
             </b:Pre>
         </b:BlockQuote>
 

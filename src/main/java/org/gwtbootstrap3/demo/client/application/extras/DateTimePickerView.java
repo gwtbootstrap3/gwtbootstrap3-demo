@@ -141,6 +141,10 @@ public class DateTimePickerView extends ViewImpl implements DateTimePickerPresen
     DateTimePickerView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
+        // Setting the default value (one week ago)
+        Date date = new Date(System.currentTimeMillis() - (1000 * 60 * 60 * 24 * 7));
+        justDateBox.setValue(date);
+
         eventDateTimeBox.addValueChangeHandler(new ValueChangeHandler<Date>() {
             @Override
             public void onValueChange(final ValueChangeEvent<Date> event) {
