@@ -189,6 +189,17 @@
                         </b:FormGroup>
 
                         <b:FormGroup>
+                            <b:FormLabel for="formCountry" addStyleNames="col-lg-2">Country</b:FormLabel>
+                            <g:FlowPanel addStyleNames="col-lg-10">
+                                <b:ListBox b:id="formCountry">
+                                    <g:item>USA</g:item>
+                                    <g:item>Germany</g:item>
+                                    <g:item>Other</g:item>
+                                </b:ListBox>
+                            </g:FlowPanel>
+                        </b:FormGroup>
+
+                        <b:FormGroup>
                             <g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10">
                                 <b:CheckBox text="Remember me"/>
                             </g:FlowPanel>
@@ -219,6 +230,17 @@
                     \s\s\s\s\s\s&lt;b:FormLabel for="formName" addStyleNames="col-lg-2"&gt;Name&lt;/b:FormLabel&gt;\n
                     \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-10"&gt;\n
                     \s\s\s\s\s\s\s\s&lt;b:TextBox text="blabla" b:id="formName"/&gt;\n
+                    \s\s\s\s\s\s&lt;/g:FlowPanel&gt;\n
+                    \s\s\s\s&lt;/b:FormGroup&gt;\n
+                    \n
+                    \s\s\s\s&lt;b:FormGroup&gt;\n
+                    \s\s\s\s\s\s&lt;b:FormLabel for="formCountry" addStyleNames="col-lg-2"&gt;Country&lt;/b:FormLabel&gt;\n
+                    \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-10"&gt;\n
+                    \s\s\s\s\s\s\s\s&lt;b:ListBox b:id="formCountry"&gt;\n
+                    \s\s\s\s\s\s\s\s\s\s&lt;g:item&gt;USA&lt;/g:item&gt;\n
+                    \s\s\s\s\s\s\s\s\s\s&lt;g:item&gt;Germany&lt;/g:item&gt;\n
+                    \s\s\s\s\s\s\s\s\s\s&lt;g:item&gt;Other&lt;/g:item&gt;\n
+                    \s\s\s\s\s\s\s\s&lt;/b:ListBox&gt;\n
                     \s\s\s\s\s\s&lt;/g:FlowPanel&gt;\n
                     \s\s\s\s&lt;/b:FormGroup&gt;\n
                     \n
