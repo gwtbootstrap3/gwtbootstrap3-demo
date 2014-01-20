@@ -72,6 +72,7 @@ public class NameTokens {
     // Extra Pages
     public static final String DATETIME_PICKER = "dateTimePicker";
     public static final String BOOTBOX = "bootbox";
+    public static final String SLIDER = "slider";
 
     // Getters for UiBinders
 
@@ -225,5 +226,9 @@ public class NameTokens {
 
     public static String getBootbox() {
         return BOOTBOX;
+    }
+
+    public static String getSlider() {
+        return SLIDER;
     }
 }
