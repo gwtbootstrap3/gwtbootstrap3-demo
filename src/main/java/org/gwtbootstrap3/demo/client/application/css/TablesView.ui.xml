@@ -22,7 +22,37 @@
 
     <b:Row>
 
-        <b:PageHeader text="Tables" subText="TODO!!!"/>
+        <b:PageHeader text="Tables"/>
+
+        <b:Panel>
+            <b:PanelHeader>
+                <b:Heading size="3" text="Cell Table"/>
+            </b:PanelHeader>
+            <b:PanelBody>
+                <b:CellTable bordered="true" condensed="true" striped="true" hover="true" height="300px" width="100%" ui:field="cellTable"/>
+                <b:Pagination ui:field="cellTablePagination"/>
+            </b:PanelBody>
+            <b:PanelFooter>
+                <b:Pre addStyleNames="prettyprint lang-xml">
+                    &lt;b:CellTable bordered="true" condensed="true" striped="true" hover="true" height="..." width="..."/&gt;\n
+                </b:Pre>
+            </b:PanelFooter>
+        </b:Panel>
+
+        <b:Panel>
+            <b:PanelHeader>
+                <b:Heading size="3" text="Data Grid"/>
+            </b:PanelHeader>
+            <b:PanelBody>
+                <b:DataGrid bordered="true" condensed="true" striped="true" hover="true" height="300px" width="100%" ui:field="dataGrid"/>
+                <b:Pagination ui:field="dataGridPagination"/>
+            </b:PanelBody>
+            <b:PanelFooter>
+                <b:Pre addStyleNames="prettyprint lang-xml">
+                    &lt;b:DataGrid bordered="true" condensed="true" striped="true" hover="true" height="..." width="..."/&gt;\n
+                </b:Pre>
+            </b:PanelFooter>
+        </b:Panel>
 
     </b:Row>
 
