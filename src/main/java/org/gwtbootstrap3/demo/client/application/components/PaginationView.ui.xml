@@ -22,7 +22,72 @@
 
     <b:Row>
 
-        <b:PageHeader text="Pagination" subText="TODO!!!"/>
+        <b:PageHeader text="Pagination"/>
+
+        <b:Panel>
+            <b:PanelHeader>
+                <b:Heading size="3" text="Basic"/>
+            </b:PanelHeader>
+            <b:PanelBody>
+                <b:Pagination>
+                    <b:ListItem icon="ANGLE_DOUBLE_LEFT"/>
+                    <b:ListItem text="1"/>
+                    <b:ListItem text="2"/>
+                    <b:ListItem icon="ANGLE_DOUBLE_RIGHT"/>
+                </b:Pagination>
+                <b:ClearFix/>
+                <b:Pagination paginationSize="SMALL">
+                    <b:ListItem icon="ANGLE_DOUBLE_LEFT"/>
+                    <b:ListItem text="1"/>
+                    <b:ListItem text="2"/>
+                    <b:ListItem icon="ANGLE_DOUBLE_RIGHT"/>
+                </b:Pagination>
+                <b:ClearFix/>
+                <b:Pagination paginationSize="LARGE">
+                    <b:ListItem icon="ANGLE_DOUBLE_LEFT"/>
+                    <b:ListItem text="1"/>
+                    <b:ListItem text="2"/>
+                    <b:ListItem icon="ANGLE_DOUBLE_RIGHT"/>
+                </b:Pagination>
+            </b:PanelBody>
+            <b:PanelFooter>
+                <b:Pre addStyleNames="prettyprint lang-xml">
+                    &lt;b:Pagination&gt;\n
+                    \s\s&lt;b:ListItem active="true/false" enabled="true/false" text="..." icon="..."&gt;\n
+                    \s\s&lt;b:ListItem active="true/false" enabled="true/false" text="..." icon="..."&gt;\n
+                    \s\s&lt;b:ListItem active="true/false" enabled="true/false" text="..." icon="..."&gt;\n
+                    &lt;/b:Pagination&gt;\n\n
+                    &lt;b:Pagination paginationSize="SMALL/LARGE"&gt;\n
+                    \s\s&lt;b:ListItem active="true/false" enabled="true/false" text="..." icon="..."&gt;\n
+                    \s\s&lt;b:ListItem active="true/false" enabled="true/false" text="..." icon="..."&gt;\n
+                    \s\s&lt;b:ListItem active="true/false" enabled="true/false" text="..." icon="..."&gt;\n
+                    &lt;/b:Pagination&gt;\n
+                </b:Pre>
+            </b:PanelFooter>
+        </b:Panel>
+
+        <b:Panel>
+            <b:PanelHeader>
+                <b:Heading size="3" text="Pager"/>
+            </b:PanelHeader>
+            <b:PanelBody>
+                <b:Pager/>
+                <b:ClearFix/>
+                <b:Pager previousText="Older" nextText="Newer"/>
+                <b:ClearFix/>
+                <b:Pager previousText="Older" previousIcon="ANGLE_DOUBLE_LEFT" nextText="Newer" nextIcon="ANGLE_DOUBLE_RIGHT"/>
+                <b:ClearFix/>
+                <b:Pager previousText="Older" previousIcon="ANGLE_DOUBLE_LEFT" nextText="Newer" nextIcon="ANGLE_DOUBLE_RIGHT" alignToSides="true"/>
+            </b:PanelBody>
+            <b:PanelFooter>
+                <b:Pre addStyleNames="prettyprint lang-xml">
+                    &lt;b:Pager/&gt;\n\n
+                    &lt;b:Pager previousText="..." nextText="..."/&gt;\n\n
+                    &lt;b:Pager previousText="..." previousIcon="..." nextText="..." nextIcon="..."/&gt;\n\n
+                    &lt;b:Pager previousText="..." previousIcon="..." nextText="..." nextIcon="..." alignToSides="true/false"/&gt;\n
+                </b:Pre>
+            </b:PanelFooter>
+        </b:Panel>
 
     </b:Row>
 
