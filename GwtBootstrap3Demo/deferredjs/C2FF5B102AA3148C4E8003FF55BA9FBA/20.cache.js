@@ -1,0 +1,10 @@
+function GVb(){}
+function yOb(){vOb();return rOb}
+function wOb(a,b,c){nm.call(this,a,b);this.b=c}
+function vVb(a,b,c){Sab.call(this,a,b,c,(BOb(),AOb))}
+function Xvb(a){vob.call(this,a);this.ab[fec]='well'}
+function fXb(a){var b;if(!a.kb){b=new EVb(new GVb);a.kb=b}return a.kb}
+function eXb(a){var b;if(!a.jb){b=new vVb(_9(wbb(a.b)),fXb(a),dXb(a));rab((xbb(a.b),b),Ibb(xbb(a.b)));a.jb=b}return a.jb}
+function vOb(){vOb=Pbc;tOb=new wOb(rfc,0,'well-lg');sOb=new wOb(kfc,1,null);uOb=new wOb(gjc,2,'well-sm');rOb=vt(_O,Zbc,161,[tOb,sOb,uOb])}
+function EVb(){var a,b,c,d,e,f,g,i,j,k,n,o,p,q,r,s,t,u,v,w,x,y,z;kbb(this,(a=new Yub,Dob(a,(b=new Wtb,b.b=sgc,Vtb(b),b)),Dob(a,(c=new cub,Dob(c,(d=new kub,jub(d,(n=new Jrb(3),fvb(n.d,aic),n)),d)),Dob(c,(e=new fub,Dob(e,new Xvb((o=new whb,o.b.b+="Look, I'm in a well!",new IQ(o.b.b)).b)),e)),Dob(c,(f=new hub,Dob(f,(p=new Pub,Oub(p,(q=new whb,q.b.b+='&lt;b:Well&gt;\\n \\s\\s...\\n &lt;/b:Well&gt;\\n',new IQ(q.b.b)).b),dT(p.ab,Uhc,true),dT(p.ab,Vhc,true),p)),f)),c)),Dob(a,(g=new cub,Dob(g,(i=new kub,jub(i,(r=new Jrb(3),fvb(r.d,'Optional classes'),r)),i)),Dob(g,(j=new fub,Dob(j,(s=new Xvb((t=new whb,t.b.b+="Look, I'm in a large well!",new IQ(t.b.b)).b),ewb(s,GG,(vOb(),tOb)),s)),Dob(j,(u=new Xvb((v=new whb,v.b.b+="Look, I'm in a small well!",new IQ(v.b.b)).b),ewb(u,GG,uOb),u)),j)),Dob(g,(k=new hub,Dob(k,(w=new Pub,Oub(w,(x=new whb,x.b.b+='&lt;b:Well size="LARGE"&gt;\\n \\s\\s...\\n &lt;/b:Well&gt;\\n',new IQ(x.b.b)).b),dT(w.ab,Uhc,true),dT(w.ab,Vhc,true),w)),Dob(k,new Jqb),Dob(k,(y=new Pub,Oub(y,(z=new whb,z.b.b+='&lt;b:Well size="SMALL"&gt;\\n \\s\\s...\\n &lt;/b:Well&gt;\\n',new IQ(z.b.b)).b),dT(y.ab,Uhc,true),dT(y.ab,Vhc,true),y)),k)),g)),a))}
+EP(765,638,xcc,Xvb);EP(815,157,{10:1,90:1,93:1,94:1,154:1,161:1},wOb);_.Cb=function xOb(){return this.b};_.b=null;var rOb,sOb,tOb,uOb;EP(985,512,Ecc,vVb);EP(988,517,Fcc,EVb);EP(989,1,{},GVb);EP(1018,1,Ycc);_.wb=function SYb(){_cb(this.c,eXb(this.b.b))};var eJ=Tfb(Wgc,'WellPresenter',985),gJ=Tfb(Wgc,'WellView',988),fJ=Tfb(Wgc,'WellView_BinderImpl',989),wF=Tfb(Ehc,'Well',765),GG=Ufb(Dhc,'WellSize',815,yOb),_O=Sfb(Ohc,'WellSize;',1324);adc(ji)(20);
