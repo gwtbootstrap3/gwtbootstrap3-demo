@@ -36,6 +36,10 @@
                 <b:Heading size="4" text="h4. Bootstrap heading"/>
                 <b:Heading size="5" text="h5. Bootstrap heading"/>
                 <b:Heading size="6" text="h6. Bootstrap heading"/>
+                <b:HeadingContainer size="1">
+                    <b:Icon type="GEAR"/>
+                    <b:Text text="h1. Heading with Icon"/>
+                </b:HeadingContainer>
             </b:PanelBody>
             <b:PanelFooter>
                 <b:Pre addStyleNames="prettyprint lang-xml">
@@ -44,7 +48,11 @@
                     &lt;b:Heading size="3"/&gt;\n
                     &lt;b:Heading size="4"/&gt;\n
                     &lt;b:Heading size="5"/&gt;\n
-                    &lt;b:Heading size="6"/&gt;\n
+                    &lt;b:Heading size="6"/&gt;\n\n
+                    &lt;b:HeadingContainer size="1"&gt;\n
+                    \s\s&lt;b:Icon type="..."/&gt;\n
+                    \s\s&lt;b:Text type="..."/&gt;\n
+                    &lt;/b:HeadingContainer&gt;\n
                 </b:Pre>
             </b:PanelFooter>
         </b:Panel>
