@@ -42,7 +42,7 @@
                     \s\s&lt;b:ListGroupItem text=""/&gt;\n
                     \s\s&lt;b:ListGroupItem text=""/&gt;\n
                     \s\s&lt;b:ListGroupItem text=""/&gt;\n
-                    &lt;/b:ListGroup/&gt;\n
+                    &lt;/b:ListGroup&gt;\n
                 </b:Pre>
             </b:PanelFooter>
         </b:Panel>
@@ -79,7 +79,7 @@
                     \s\s&lt;b:ListGroupItem text=""/&gt;\n
                     \s\s\s\s&lt;b:Badge text=""/&gt;\n
                     \s\s&lt;/b:ListGroupItem&gt;\n
-                    &lt;/b:ListGroup/&gt;\n
+                    &lt;/b:ListGroup&gt;
                 </b:Pre>
             </b:PanelFooter>
         </b:Panel>
@@ -102,7 +102,7 @@
                     \s\s&lt;b:LinkedGroupItem active="true" text=""/&gt;\n
                     \s\s&lt;b:LinkedGroupItem text=""/&gt;\n
                     \s\s&lt;b:LinkedGroupItem text=""/&gt;\n
-                    &lt;/b:LinkedGroup/&gt;\n
+                    &lt;/b:LinkedGroup&gt;
                 </b:Pre>
             </b:PanelFooter>
         </b:Panel>
@@ -130,10 +130,19 @@
             <b:PanelFooter>
                 <b:Pre addStyleNames="prettyprint lang-xml">
                     &lt;b:LinkedGroup&gt;\n
-                    \s\s&lt;b:LinkedGroupItem active="true" text=""/&gt;\n
-                    \s\s&lt;b:LinkedGroupItem text=""/&gt;\n
-                    \s\s&lt;b:LinkedGroupItem text=""/&gt;\n
-                    &lt;/b:LinkedGroup/&gt;\n
+                    \s\s&lt;b:LinkedGroupItem active="true"&gt;\n
+                    \s\s\s\s&lt;b:LinkedGroupItemHeading size="3" text="..."/&gt;\n
+                    \s\s\s\s&lt;b:LinkedGroupItemText text="..."/&gt;\n
+                    \s\s&lt;/b:LinkedGroupItem&gt;\n
+                    \s\s&lt;b:LinkedGroupItem&gt;\n
+                    \s\s\s\s&lt;b:LinkedGroupItemHeading size="3" text="..."/&gt;\n
+                    \s\s\s\s&lt;b:LinkedGroupItemText text="..."/&gt;\n
+                    \s\s&lt;/b:LinkedGroupItem&gt;\n
+                    \s\s&lt;b:LinkedGroupItem&gt;\n
+                    \s\s\s\s&lt;b:LinkedGroupItemHeading size="3" text="..."/&gt;\n
+                    \s\s\s\s&lt;b:LinkedGroupItemText text="..."/&gt;\n
+                    \s\s&lt;/b:LinkedGroupItem&gt;\n
+                    &lt;/b:LinkedGroup&gt;
                 </b:Pre>
             </b:PanelFooter>
         </b:Panel>
