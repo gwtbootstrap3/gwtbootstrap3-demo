@@ -66,20 +66,57 @@
             </b:Pre>
         </b:BlockQuote>
 
+		<b:Panel>
+			<b:PanelHeader>
+				<b:Heading size="3" text="Basic Slider" />
+			</b:PanelHeader>
+			<b:PanelBody>
+				<b3:Slider />
+			</b:PanelBody>
+			<b:PanelFooter>
+				<b:Pre addStyleNames="prettyprint lang-xml">
+					&lt;b3:Slider/&gt;\n
+				</b:Pre>
+			</b:PanelFooter>
+		</b:Panel>
+
         <b:Panel>
             <b:PanelHeader>
-                <b:Heading size="3" text="Slider"/>
+                <b:Heading size="3" text="Custom Slider" />
             </b:PanelHeader>
             <b:PanelBody>
-                <b3:Slider/>
+                <b3:Slider ui:field="customSlider" value="250.0" min="-150.0" max="500.0" step="5.0" handle="SQUARE"/>
             </b:PanelBody>
             <b:PanelFooter>
                 <b:Pre addStyleNames="prettyprint lang-xml">
-                    &lt;b3:Slider/&gt;\n
+                    &lt;b3:Slider ui:field="customSlider" value="250.0" min="-150.0" max="500.0" step="5.0" handle="SQUARE"/&gt;\n
+                </b:Pre>
+                <b:Pre addStyleNames="prettyprint lang-java">
+                    customSlider.setFormatter(new FormatterCallback() {\n
+                    \s@Override\n
+                    \s\spublic String toolTipMsg(double value) {\n
+                    \s\s\sint b = (int) (value * 10);\n
+                    \s\s\sreturn b + " blocks";\n
+                    \s\s}\n
+                    \s});\n
                 </b:Pre>
             </b:PanelFooter>
         </b:Panel>
 
+
+        <b:Panel>
+            <b:PanelHeader>
+                <b:Heading size="3" text="Vertical Slider" />
+            </b:PanelHeader>
+            <b:PanelBody>
+                <b3:Slider orientation="VERTICAL"/>
+            </b:PanelBody>
+            <b:PanelFooter>
+                <b:Pre addStyleNames="prettyprint lang-xml">
+                    &lt;b3:Slider orientation="VERTICAL"/&gt;\n
+                </b:Pre>
+            </b:PanelFooter>
+        </b:Panel>
 
     </b:Row>
 
