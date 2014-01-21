@@ -87,7 +87,7 @@
                     \s\s&lt;/b:CarouselInner&gt;\n
                     \s\s&lt;b:CarouselControl href="#carousel-basic" prev="true" iconType="..."/&gt;\n
                     \s\s&lt;b:CarouselControl href="#carousel-basic" next="true" iconType="..."/&gt;\n
-                    &lt;/b:Carousel/&gt;\n
+                    &lt;/b:Carousel&gt;\n
                 </b:Pre>
             </b:PanelFooter>
         </b:Panel>
@@ -149,7 +149,7 @@
                     \s\s&lt;/b:CarouselInner&gt;\n
                     \s\s&lt;b:CarouselControl href="#carousel-captions" prev="true" iconType="..."/&gt;\n
                     \s\s&lt;b:CarouselControl href="#carousel-captions" next="true" iconType="..."/&gt;\n
-                    &lt;/b:Carousel/&gt;\n
+                    &lt;/b:Carousel&gt;\n
                 </b:Pre>
             </b:PanelFooter>
         </b:Panel>
