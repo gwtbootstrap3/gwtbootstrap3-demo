@@ -49,18 +49,18 @@
             <b:PanelBody>
                 <b:Icon type="GEAR"/>
                 <b:ClearFix/>
-                <b:SpanContainer>
+                <b:SpanPanel>
                     <b:Icon type="GEAR"/>
                     <b:Text text="Icon with Text"/>
-                </b:SpanContainer>
+                </b:SpanPanel>
             </b:PanelBody>
             <b:PanelFooter>
                 <b:Pre addStyleNames="prettyprint lang-xml">
                     &lt;b:Icon type="..."/&gt;\n\n
-                    &lt;b:SpanContainer&gt;\n
+                    &lt;b:SpanPanel&gt;\n
                     \s\s&lt;b:Icon type="..."/&gt;\n
                     \s\s&lt;b:Text text="..."/&gt;\n
-                    &lt;/b:SpanContainer&gt;
+                    &lt;/b:SpanPanel&gt;
                 </b:Pre>
             </b:PanelFooter>
         </b:Panel>
