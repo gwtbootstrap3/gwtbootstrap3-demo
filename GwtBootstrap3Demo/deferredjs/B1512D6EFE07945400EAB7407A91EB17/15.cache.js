@@ -1,0 +1,6 @@
+function GWb(){}
+function vWb(a,b,c){kdb.call(this,a,b,c,(WQb(),VQb))}
+function lZb(a){var b;if(!a.W){b=new EWb(new GWb);a.W=b}return a.W}
+function kZb(a){var b;if(!a.V){b=new vWb(tcb(Qdb(a.a)),lZb(a),jZb(a));Lcb((Rdb(a.a),b),aeb(Rdb(a.a)));a.V=b}return a.V}
+function EWb(){var a,b,c,d,e,f,g,i,j,k;Edb(this,(a=new rxb,Yqb(a,(b=new pwb,b.a=MCc,owb(b),b)),Yqb(a,(c=new xwb,Yqb(c,(d=new Fwb,Ewb(d,(g=new cub(3),Axb(g.c,Hwc),g)),d)),Yqb(c,(e=new Awb,Yqb(e,(i=new pwb,i.a=rBc,owb(i),i.b=NCc,owb(i),i)),e)),Yqb(c,(f=new Cwb,Yqb(f,(j=new ixb,hxb(j,(k=new Rjb,Dj(k.a,OCc),new UR(Ij(k.a))).a),oU(j._,Lwc,true),oU(j._,Mwc,true),j)),f)),c)),a))}
+var OCc='&lt;b:PageHeader text="..." subText="..."/&gt;',MCc='Page Headers',PCc='PageHeaderPresenter',QCc='PageHeaderView',RCc='PageHeaderView_BinderImpl',NCc='sub heading';nQ(959,525,dfc,vWb);nQ(962,530,efc,EWb);nQ(963,1,{},GWb);nQ(1018,1,xfc);_.vb=function x$b(){tfb(this.b,kZb(this.a.a))};var lJ=lib(Woc,PCc,959),nJ=lib(Woc,QCc,962),mJ=lib(Woc,RCc,963);Bfc(ji)(15);

@@ -1,0 +1,10 @@
+function GWb(){}
+function yPb(){vPb();return rPb}
+function wPb(a,b,c){_m.call(this,a,b);this.b=c}
+function vWb(a,b,c){Qbb.call(this,a,b,c,(BPb(),APb))}
+function Xwb(a){vpb.call(this,a);this.ab[vfc]='well'}
+function fYb(a){var b;if(!a.kb){b=new EWb(new GWb);a.kb=b}return a.kb}
+function eYb(a){var b;if(!a.jb){b=new vWb(Zab(ucb(a.b)),fYb(a),dYb(a));pbb((vcb(a.b),b),Gcb(vcb(a.b)));a.jb=b}return a.jb}
+function vPb(){vPb=Ucc;tPb=new wPb(Ggc,0,'well-lg');sPb=new wPb(zgc,1,null);uPb=new wPb(ukc,2,'well-sm');rPb=hu(WP,ddc,161,[tPb,sPb,uPb])}
+function EWb(){var a,b,c,d,e,f,g,i,j,k,n,o,p,q,r,s,t,u,v,w,x,y,z;icb(this,(a=new Yvb,Dpb(a,(b=new Wub,b.b=Hhc,Vub(b),b)),Dpb(a,(c=new cvb,Dpb(c,(d=new kvb,jvb(d,(n=new Jsb(3),fwb(n.d,pjc),n)),d)),Dpb(c,(e=new fvb,Dpb(e,new Xwb((o=new wib,o.b.b+="Look, I'm in a well!",new DR(o.b.b)).b)),e)),Dpb(c,(f=new hvb,Dpb(f,(p=new Pvb,Ovb(p,(q=new wib,q.b.b+='&lt;b:Well&gt;\\n \\s\\s...\\n &lt;/b:Well&gt;\\n',new DR(q.b.b)).b),$T(p.ab,hjc,true),$T(p.ab,ijc,true),p)),f)),c)),Dpb(a,(g=new cvb,Dpb(g,(i=new kvb,jvb(i,(r=new Jsb(3),fwb(r.d,'Optional classes'),r)),i)),Dpb(g,(j=new fvb,Dpb(j,(s=new Xwb((t=new wib,t.b.b+="Look, I'm in a large well!",new DR(t.b.b)).b),exb(s,AH,(vPb(),tPb)),s)),Dpb(j,(u=new Xwb((v=new wib,v.b.b+="Look, I'm in a small well!",new DR(v.b.b)).b),exb(u,AH,uPb),u)),j)),Dpb(g,(k=new hvb,Dpb(k,(w=new Pvb,Ovb(w,(x=new wib,x.b.b+='&lt;b:Well size="LARGE"&gt;\\n \\s\\s...\\n &lt;/b:Well&gt;\\n',new DR(x.b.b)).b),$T(w.ab,hjc,true),$T(w.ab,ijc,true),w)),Dpb(k,new Jrb),Dpb(k,(y=new Pvb,Ovb(y,(z=new wib,z.b.b+='&lt;b:Well size="SMALL"&gt;\\n \\s\\s...\\n &lt;/b:Well&gt;\\n',new DR(z.b.b)).b),$T(y.ab,hjc,true),$T(y.ab,ijc,true),y)),k)),g)),a))}
+zQ(770,643,Ddc,Xwb);zQ(820,162,{10:1,90:1,93:1,95:1,154:1,161:1},wPb);_.Kb=function xPb(){return this.b};_.b=null;var rPb,sPb,tPb,uPb;zQ(990,518,Kdc,vWb);zQ(993,523,Ldc,EWb);zQ(994,1,{},GWb);zQ(1023,1,cec);_.Ab=function SZb(){Zdb(this.c,eYb(this.b.b))};var $J=Rgb(jic,'WellPresenter',990),aK=Rgb(jic,'WellView',993),_J=Rgb(jic,'WellView_BinderImpl',994),qG=Rgb(Tic,'Well',770),AH=Sgb(Sic,'WellSize',820,yPb),WP=Qgb(bjc,'WellSize;',1330);gec(wi)(20);
