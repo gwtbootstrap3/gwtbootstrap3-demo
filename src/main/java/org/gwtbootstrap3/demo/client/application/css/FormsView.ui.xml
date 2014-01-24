@@ -80,7 +80,7 @@
                     \n
                     \s\s\s\s&lt;b:FormGroup&gt;\n
                     \s\s\s\s\s\s&lt;b:FormLabel for=&quot;formPassword&quot;&gt;Password&lt;/b:FormLabel&gt;\n
-                    \s\s\s\s\s\s&lt;b:PasswordTextBox b:id=&quot;formPassword&quot;/&gt;\n
+                    \s\s\s\s\s\s&lt;b:Input type="PASSWORD" b:id=&quot;formPassword&quot;/&gt;\n
                     \s\s\s\s&lt;/b:FormGroup&gt;\n
                     \n
                     \s\s\s\s&lt;b:FormGroup&gt;\n
