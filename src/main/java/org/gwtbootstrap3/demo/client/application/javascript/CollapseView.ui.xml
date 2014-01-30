@@ -7,211 +7,254 @@
 	express or implied. See the License for the specific language governing permissions
 	and limitations under the License. #L% -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-	xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
-	<ui:style>
-	.danger {
-		background-color: #fcf2f2;
-		border-color: #dFb5b4;
-	}
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
 
-	.margin-fix {
-		margin-top: 0 !important;
-	}
-	</ui:style>
-	<b:Row>
-		<b:Column size="XS_12">
+    <ui:style>
+        .danger {
+            background-color: #fcf2f2;
+            border-color: #dFb5b4;
+        }
 
+        .margin-fix {
+            margin-top: 0 !important;
+        }
 
-			<b:PageHeader text="Collapse" />
+        .margin {
+            margin: 5px;
+        }
+    </ui:style>
 
-			<b:BlockQuote addStyleNames="{style.danger}">
-				<b:Heading addStyleNames="{style.margin-fix}" size="4"
-					text="Cross-browser compatibility" />
-				<b:Paragraph>
-					<b>Transition animations not supported in Internet Explorer 8 &amp;
-						9</b>
-					<br />
-					Bootstrap exclusively uses CSS3 for its animations, but Internet
-					Explorer 8 &amp; 9 don't support the
-					necessary CSS properties. Thus,
-					there are no slide transition animations
-					when using these browsers.
-					We
-					have intentionally decided not to include jQuery-based fallbacks
-					for
-					the transitions.
-				</b:Paragraph>
-			</b:BlockQuote>
+    <b:Row>
+        <b:Column size="XS_12">
 
-			<b:Panel>
-				<b:PanelHeader>
-					<b:Heading size="3" text="Collapse via Button target" />
-				</b:PanelHeader>
-				<b:PanelBody>
+            <b:PageHeader text="Collapse"/>
 
+            <b:BlockQuote addStyleNames="{style.danger}">
+                <b:Heading addStyleNames="{style.margin-fix}" size="4"
+                           text="Cross-browser compatibility"/>
+                <b:Paragraph>
+                    <b>Transition animations not supported in Internet Explorer 8 &amp;
+                        9
+                    </b>
+                    <br/>
+                    Bootstrap exclusively uses CSS3 for its animations, but Internet
+                    Explorer 8 &amp; 9 don't support the
+                    necessary CSS properties. Thus,
+                    there are no slide transition animations
+                    when using these browsers.
+                    We
+                    have intentionally decided not to include jQuery-based fallbacks
+                    for
+                    the transitions.
+                </b:Paragraph>
+            </b:BlockQuote>
 
-						<b:Button type="DANGER" toggle="COLLAPSE" target="#demoCollapse">
-							Collapse Me</b:Button>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Collapse via Button target"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Button type="DANGER" toggle="COLLAPSE" target="#demoCollapse">
+                        Collapse Me
+                    </b:Button>
+                    <b:ClearFix addStyleNames="{style.margin}"/>
+                    <b:Collapse ui:field="demoCollapse" b:id="demoCollapse">
+                        <b:Well>
+                            <b:Paragraph>
+                                You can also use the plugin without the accordion
+                                markup. Make a button toggle the expanding and collapsing of
+                                another element.
+                            </b:Paragraph>
+                        </b:Well>
+                    </b:Collapse>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <b:Pre addStyleNames="prettyprint lang-xml">
+                        &lt;b:Button type="..." toggle="COLLAPSE" target="#demoCollapse" text="Collapse Me"/&gt;\n
+                        &lt;b:Collapse b:id="demoCollapse&gt;\n
+                        \s\sWidget To Collapse\n
+                        &lt;/b:Collapse&gt;\n
+                    </b:Pre>
+                </b:PanelFooter>
+            </b:Panel>
 
-                    <b:Paragraph></b:Paragraph>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Accordion Example using PanelCollapse"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:PanelGroup b:id="accordion">
+                        <b:Panel>
+                            <b:PanelHeader>
+                                <b:HeadingPanel size="4">
+                                    <b:Anchor toggle="COLLAPSE" dataParent="#accordion"
+                                              href="#collapseOne">Collapsible Group
+                                        Item #1
+                                    </b:Anchor>
+                                </b:HeadingPanel>
+                            </b:PanelHeader>
+                            <b:PanelCollapse b:id="collapseOne" in="true">
+                                <b:PanelBody>
+                                    <b:Paragraph>
+                                        Anim pariatur cliche reprehenderit, enim eiusmod
+                                        high life
+                                        accusamus
+                                        terry richardson ad squid. 3 wolf moon
+                                        officia
+                                        aute, non
+                                        cupidatat skateboard dolor brunch. Food
+                                        truck quinoa
+                                        nesciunt
+                                        laborum eiusmod. Brunch 3 wolf moon
+                                        tempor, sunt aliqua
+                                        put a
+                                        bird on it squid single-origin
+                                        coffee nulla assumenda
+                                        shoreditch
+                                        et. Nihil anim keffiyeh
+                                        helvetica, craft beer labore
+                                        wes
+                                        anderson cred nesciunt
+                                        sapiente ea proident. Ad vegan
+                                        excepteur
+                                        butcher vice lomo.
+                                        Leggings occaecat craft beer
+                                        farm-to-table,
+                                        raw denim
+                                        aesthetic synth nesciunt you probably
+                                        haven't heard of
+                                        them
+                                        accusamus labore sustainable VHS.
+                                    </b:Paragraph>
+                                </b:PanelBody>
+                            </b:PanelCollapse>
+                        </b:Panel>
 
-					<b:Collapse ui:field="demoCollapse" b:id="demoCollapse">
-						<b:Well>
-							<b:Paragraph>
-								You can also use the plugin without the accordion
-								markup. Make a button toggle the expanding and collapsing of
-								another element.
-							</b:Paragraph>
-						</b:Well>
-					</b:Collapse>
+                        <b:Panel>
+                            <b:PanelHeader>
+                                <b:HeadingPanel size="4">
+                                    <b:Anchor toggle="COLLAPSE" dataParent="#accordion"
+                                              href="#collapseTwo">Collapsible Group
+                                        Item #2
+                                    </b:Anchor>
+                                </b:HeadingPanel>
+                            </b:PanelHeader>
+                            <b:PanelCollapse b:id="collapseTwo">
+                                <b:PanelBody>
+                                    <b:Paragraph>
+                                        Anim pariatur cliche reprehenderit, enim eiusmod
+                                        high life
+                                        accusamus
+                                        terry richardson ad squid. 3 wolf moon
+                                        officia
+                                        aute, non
+                                        cupidatat skateboard dolor brunch. Food
+                                        truck quinoa
+                                        nesciunt
+                                        laborum eiusmod. Brunch 3 wolf moon
+                                        tempor, sunt aliqua
+                                        put a
+                                        bird on it squid single-origin
+                                        coffee nulla assumenda
+                                        shoreditch
+                                        et. Nihil anim keffiyeh
+                                        helvetica, craft beer labore
+                                        wes
+                                        anderson cred nesciunt
+                                        sapiente ea proident. Ad vegan
+                                        excepteur
+                                        butcher vice lomo.
+                                        Leggings occaecat craft beer
+                                        farm-to-table,
+                                        raw denim
+                                        aesthetic synth nesciunt you probably
+                                        haven't heard of
+                                        them
+                                        accusamus labore sustainable VHS.
+                                    </b:Paragraph>
+                                </b:PanelBody>
+                            </b:PanelCollapse>
+                        </b:Panel>
 
-				</b:PanelBody>
-			</b:Panel>
-
-			<b:Panel>
-				<b:PanelHeader>
-					<b:Heading size="3" text="Accordion Example using PanelCollapse" />
-				</b:PanelHeader>
-				<b:PanelBody>
-					<b:PanelGroup b:id="accordion">
-						<b:Panel>
-							<b:PanelHeader>
-								<b:HeadingPanel size="4">
-									<b:Anchor toggle="COLLAPSE" dataParent="#accordion"
-										href="#collapseOne">Collapsible Group
-										Item #1</b:Anchor>
-								</b:HeadingPanel>
-							</b:PanelHeader>
-							<b:PanelCollapse b:id="collapseOne" in="true">
-								<b:PanelBody>
-									<b:Paragraph>
-										Anim pariatur cliche reprehenderit, enim eiusmod
-										high life
-										accusamus
-										terry richardson ad squid. 3 wolf moon
-										officia
-										aute, non
-										cupidatat skateboard dolor brunch. Food
-										truck quinoa
-										nesciunt
-										laborum eiusmod. Brunch 3 wolf moon
-										tempor, sunt aliqua
-										put a
-										bird on it squid single-origin
-										coffee nulla assumenda
-										shoreditch
-										et. Nihil anim keffiyeh
-										helvetica, craft beer labore
-										wes
-										anderson cred nesciunt
-										sapiente ea proident. Ad vegan
-										excepteur
-										butcher vice lomo.
-										Leggings occaecat craft beer
-										farm-to-table,
-										raw denim
-										aesthetic synth nesciunt you probably
-										haven't heard of
-										them
-										accusamus labore sustainable VHS.
-									</b:Paragraph>
-								</b:PanelBody>
-							</b:PanelCollapse>
-						</b:Panel>
-
-						<b:Panel>
-							<b:PanelHeader>
-								<b:HeadingPanel size="4">
-									<b:Anchor toggle="COLLAPSE" dataParent="#accordion"
-										href="#collapseTwo">Collapsible Group
-										Item #2</b:Anchor>
-								</b:HeadingPanel>
-							</b:PanelHeader>
-							<b:PanelCollapse b:id="collapseTwo">
-								<b:PanelBody>
-									<b:Paragraph>
-										Anim pariatur cliche reprehenderit, enim eiusmod
-										high life
-										accusamus
-										terry richardson ad squid. 3 wolf moon
-										officia
-										aute, non
-										cupidatat skateboard dolor brunch. Food
-										truck quinoa
-										nesciunt
-										laborum eiusmod. Brunch 3 wolf moon
-										tempor, sunt aliqua
-										put a
-										bird on it squid single-origin
-										coffee nulla assumenda
-										shoreditch
-										et. Nihil anim keffiyeh
-										helvetica, craft beer labore
-										wes
-										anderson cred nesciunt
-										sapiente ea proident. Ad vegan
-										excepteur
-										butcher vice lomo.
-										Leggings occaecat craft beer
-										farm-to-table,
-										raw denim
-										aesthetic synth nesciunt you probably
-										haven't heard of
-										them
-										accusamus labore sustainable VHS.
-									</b:Paragraph>
-								</b:PanelBody>
-							</b:PanelCollapse>
-						</b:Panel>
-
-						<b:Panel>
-							<b:PanelHeader>
-								<b:HeadingPanel size="4">
-									<b:Anchor toggle="COLLAPSE" dataParent="#accordion"
-										href="#collapseThree">Collapsible Group
-										Item #3</b:Anchor>
-								</b:HeadingPanel>
-							</b:PanelHeader>
-							<b:PanelCollapse b:id="collapseThree">
-								<b:PanelBody>
-									<b:Paragraph>
-										Anim pariatur cliche reprehenderit, enim eiusmod
-										high life
-										accusamus
-										terry richardson ad squid. 3 wolf moon
-										officia
-										aute, non
-										cupidatat skateboard dolor brunch. Food
-										truck quinoa
-										nesciunt
-										laborum eiusmod. Brunch 3 wolf moon
-										tempor, sunt aliqua
-										put a
-										bird on it squid single-origin
-										coffee nulla assumenda
-										shoreditch
-										et. Nihil anim keffiyeh
-										helvetica, craft beer labore
-										wes
-										anderson cred nesciunt
-										sapiente ea proident. Ad vegan
-										excepteur
-										butcher vice lomo.
-										Leggings occaecat craft beer
-										farm-to-table,
-										raw denim
-										aesthetic synth nesciunt you probably
-										haven't heard of
-										them
-										accusamus labore sustainable VHS.
-									</b:Paragraph>
-								</b:PanelBody>
-							</b:PanelCollapse>
-						</b:Panel>
-					</b:PanelGroup>
-				</b:PanelBody>
-			</b:Panel>
-		</b:Column>
-	</b:Row>
+                        <b:Panel>
+                            <b:PanelHeader>
+                                <b:HeadingPanel size="4">
+                                    <b:Anchor toggle="COLLAPSE" dataParent="#accordion"
+                                              href="#collapseThree">Collapsible Group
+                                        Item #3
+                                    </b:Anchor>
+                                </b:HeadingPanel>
+                            </b:PanelHeader>
+                            <b:PanelCollapse b:id="collapseThree">
+                                <b:PanelBody>
+                                    <b:Paragraph>
+                                        Anim pariatur cliche reprehenderit, enim eiusmod
+                                        high life
+                                        accusamus
+                                        terry richardson ad squid. 3 wolf moon
+                                        officia
+                                        aute, non
+                                        cupidatat skateboard dolor brunch. Food
+                                        truck quinoa
+                                        nesciunt
+                                        laborum eiusmod. Brunch 3 wolf moon
+                                        tempor, sunt aliqua
+                                        put a
+                                        bird on it squid single-origin
+                                        coffee nulla assumenda
+                                        shoreditch
+                                        et. Nihil anim keffiyeh
+                                        helvetica, craft beer labore
+                                        wes
+                                        anderson cred nesciunt
+                                        sapiente ea proident. Ad vegan
+                                        excepteur
+                                        butcher vice lomo.
+                                        Leggings occaecat craft beer
+                                        farm-to-table,
+                                        raw denim
+                                        aesthetic synth nesciunt you probably
+                                        haven't heard of
+                                        them
+                                        accusamus labore sustainable VHS.
+                                    </b:Paragraph>
+                                </b:PanelBody>
+                            </b:PanelCollapse>
+                        </b:Panel>
+                    </b:PanelGroup>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <b:Pre addStyleNames="prettyprint lang-xml">
+                        &lt;b:PanelGroup b:id="accordion"&gt;\n
+                        \s\s&lt;b:Panel&gt;\n
+                        \s\s\s\s&lt;b:PanelHeader&gt;\n
+                        \s\s\s\s\s\s&lt;b:Anchor toggle="COLLAPSE" dataParent="#accordion" href="#collapseOne"/&gt;\n
+                        \s\s\s\s&lt;/b:PanelHeader&gt;\n
+                        \s\s\s\s&lt;b:PanelBody&gt;\n
+                        \s\s\s\s\s\sWidgets\n
+                        \s\s\s\s&lt;/b:PanelBody&gt;\n
+                        \s\s&lt;/b:Panel&gt;\n
+                        \s\s&lt;b:Panel&gt;\n
+                        \s\s\s\s&lt;b:PanelHeader&gt;\n
+                        \s\s\s\s\s\s&lt;b:Anchor toggle="COLLAPSE" dataParent="#accordion" href="#collapseTwo"/&gt;\n
+                        \s\s\s\s&lt;/b:PanelHeader&gt;\n
+                        \s\s\s\s&lt;b:PanelBody&gt;\n
+                        \s\s\s\s\s\sWidgets\n
+                        \s\s\s\s&lt;/b:PanelBody&gt;\n
+                        \s\s&lt;/b:Panel&gt;\n
+                        \s\s&lt;b:Panel&gt;\n
+                        \s\s\s\s&lt;b:PanelHeader&gt;\n
+                        \s\s\s\s\s\s&lt;b:Anchor toggle="COLLAPSE" dataParent="#accordion" href="#collapseThree"/&gt;\n
+                        \s\s\s\s&lt;/b:PanelHeader&gt;\n
+                        \s\s\s\s&lt;b:PanelBody&gt;\n
+                        \s\s\s\s\s\sWidgets\n
+                        \s\s\s\s&lt;/b:PanelBody&gt;\n
+                        \s\s&lt;/b:Panel&gt;\n
+                        &lt;/b:PanelGroup&gt;\n
+                    </b:Pre>
+                </b:PanelFooter>
+            </b:Panel>
+        </b:Column>
+    </b:Row>
 
 </ui:UiBinder>
