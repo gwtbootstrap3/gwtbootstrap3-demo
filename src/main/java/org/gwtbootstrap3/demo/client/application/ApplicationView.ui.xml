@@ -41,7 +41,6 @@
         <b:Container>
 
             <b:Navbar position="FIXED_TOP">
-                <b:Container>
                     <b:NavbarHeader>
                         <b:NavbarBrand targetHistoryToken="{nameTokens.getHome}" ui:field="brand">GwtBootstrap3
                         </b:NavbarBrand>
@@ -120,7 +119,6 @@
                                         ui:field="forkLink"/>
                         </b:NavbarNav>
                     </b:NavbarCollapse>
-                </b:Container>
             </b:Navbar>
 
             <!-- Container Content -->
