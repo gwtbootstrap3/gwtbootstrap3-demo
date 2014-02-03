@@ -1,0 +1,38 @@
+function f8b(){}
+function h8b(){}
+function n8b(){}
+function q8b(){}
+function qec(a,b){a.e=b}
+function oec(a,b){a.a=b}
+function pec(a,b){a.b=b}
+function Pib(a){this.a=a}
+function Kec(){Iec();return Eec}
+function Rec(){Pec();return Mec}
+function Zec(){Xec();return Tec}
+function ffc(){dfc();return _ec}
+function r8b(){r8b=gfc;m8b=new q8b}
+function tec(a,b){$wnd.jQuery(a).slider(b)}
+function rec(a,b){$wnd.jQuery(a).slider(b1c,b)}
+function Bec(a,b){this.a=a;this.c=b;this.b=false}
+function Jec(a,b,c){Sm.call(this,a,b);this.a=c}
+function Qec(a,b,c){Sm.call(this,a,b);this.a=c}
+function Yec(a,b,c){Sm.call(this,a,b);this.a=c}
+function efc(a,b,c){Sm.call(this,a,b);this.a=c}
+function W7b(a,b,c){Adb.call(this,a,b,c,(ERb(),DRb))}
+function mab(a,b){nyb(a);a._[YHc]=b!=null?b:xgc}
+function sec(a,b){mab(a.i,xgc+b.a);a.W&&uj((hj(),new Bec(a,b)),100)}
+function d8b(){Udb(this,j8b(new k8b(this)));oec(this.a,new f8b)}
+function k8b(a){this.a=a;this.b=(new n8b,r8b(),m8b);p8b(this.b)}
+function E8b(a){var b;if(!a.k){b=new d8b(new h8b);a.k=b}return a.k}
+function p8b(a){if(!a.a){a.a=true;xq();Uh(uq,f2c);Bq();return true}return false}
+function uec(e,b,c){var d=e;$wnd.jQuery(b).slider(c).on(g2c,function(a){d.Ne(a.value)})}
+function Pec(){Pec=gfc;Nec=new Qec(GAc,0,p2c);Oec=new Qec(IAc,1,q2c);Mec=_t(aQ,qfc,167,[Nec,Oec])}
+function Xec(){Xec=gfc;Vec=new Yec(r2c,0,s2c);Uec=new Yec(t2c,1,u2c);Wec=new Yec(uhc,2,vhc);Tec=_t(bQ,qfc,168,[Vec,Uec,Wec])}
+function Iec(){Iec=gfc;Fec=new Jec(j2c,0,k2c);Gec=new Jec(l2c,1,m2c);Hec=new Jec(n2c,2,o2c);Eec=_t(_P,qfc,166,[Fec,Gec,Hec])}
+function dfc(){dfc=gfc;cfc=new efc(v2c,0,Y0c);bfc=new efc(w2c,1,Z0c);afc=new efc(x2c,2,y2c);_ec=_t(cQ,qfc,169,[cfc,bfc,afc])}
+function D8b(a){var b;if(!a.j){b=new W7b(Jcb(eeb(a.a)),E8b(a),C8b(a));_cb((feb(a.a),b),qeb(feb(a.a)));a.j=b}return a.j}
+function zec(){this.e=(Pec(),Nec);this.f=(Xec(),Vec);this.j=(dfc(),cfc);this.b=(Iec(),Fec);this.i=new oyb;uU(this.i,Nl(this.i._,ujc));wU(this,this.i._);sec(this,new Pib(5))}
+function Nib(a){var b;if(!(b=Mib,!b&&(b=Mib=/^\s*[+-]?(NaN|Infinity|((\d+\.?\d*)|(\.\d+))([eE][+-]?\d+)?[dDfF]?)\s*$/),b.test(a))){throw new qjb(VUc+a+aQc)}return parseFloat(a)}
+function nec(r,b,c,d,e,f,g,i,j,k,n,o){var p=r;var q={id:b,min:c,max:d,step:e,orientation:f,value:g,selection:i,tooltip:j,handle:k,reversed:n,enabled:o};q.formater=function(a){return p.Me(a)};return q}
+function j8b(a){var b,c,d,e,f,g,i,j,k,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S;b=new Zxb;mrb(b,(c=new Twb,c.a=Toc,Swb(c),c));mrb(b,(d=new Srb,mrb(d,(e=new Gub(4),EU(e._,U1c,true),gyb(e.c,I_c),e)),mrb(d,(f=new tvb,svb(f,(A=new fkb,Kj(A.a,V1c),new iS(Pj(A.a))).a),f)),mrb(d,(g=new Qxb,Pxb(g,(B=new fkb,Kj(B.a,K_c),new iS(Pj(B.a))).a),EU(g._,byc,true),EU(g._,cyc,true),g)),mrb(d,(i=new tvb,svb(i,(C=new fkb,Kj(C.a,L_c),new iS(Pj(C.a))).a),i)),mrb(d,(j=new Qxb,Pxb(j,(D=new fkb,Kj(D.a,W1c),new iS(Pj(D.a))).a),EU(j._,byc,true),EU(j._,cyc,true),j)),mrb(d,(k=new tvb,svb(k,(E=new fkb,Kj(E.a,X1c),new iS(Pj(E.a))).a),k)),mrb(d,(n=new Qxb,Pxb(n,(F=new fkb,Kj(F.a,Y1c),new iS(Pj(F.a))).a),EU(n._,byc,true),EU(n._,cyc,true),n)),EU(d._,Z1c,true),d));mrb(b,(o=new _wb,mrb(o,(p=new lxb,kxb(p,(G=new Gub(3),gyb(G.c,$1c),G)),p)),mrb(o,(q=new cxb,mrb(q,new zec),q)),mrb(o,(r=new gxb,mrb(r,(H=new Qxb,Pxb(H,(I=new fkb,Kj(I.a,_1c),new iS(Pj(I.a))).a),EU(H._,byc,true),EU(H._,cyc,true),H)),r)),o));mrb(b,(s=new _wb,mrb(s,(t=new lxb,kxb(t,(J=new Gub(3),gyb(J.c,a2c),J)),t)),mrb(s,(u=new cxb,mrb(u,(K=new zec,K.d=-150,pec(K,(Iec(),Gec)),K.c=500,sec(K,new Pib(250)),K.g=5,a.a.a=K,K)),u)),mrb(s,(v=new gxb,mrb(v,(L=new Qxb,Pxb(L,(M=new fkb,Kj(M.a,b2c),new iS(Pj(M.a))).a),EU(L._,byc,true),EU(L._,cyc,true),L)),mrb(v,(N=new Qxb,Pxb(N,(O=new fkb,Kj(O.a,c2c),new iS(Pj(O.a))).a),EU(N._,byc,true),EU(N._,vGc,true),N)),v)),s));mrb(b,(w=new _wb,mrb(w,(x=new lxb,kxb(x,(P=new Gub(3),gyb(P.c,d2c),P)),x)),mrb(w,(y=new cxb,mrb(y,(Q=new zec,qec(Q,(Pec(),Oec)),Q)),y)),mrb(w,(z=new gxb,mrb(z,(R=new Qxb,Pxb(R,(S=new fkb,Kj(S.a,e2c),new iS(Pj(S.a))).a),EU(R._,byc,true),EU(R._,cyc,true),R)),z)),w));return b}
+var h2c=' blocks',e2c='&lt;b3:Slider orientation="VERTICAL"/&gt;\\n',b2c='&lt;b3:Slider ui:field="customSlider" value="250.0" min="-150.0" max="500.0" step="5.0" handle="SQUARE"/&gt;\\n',_1c='&lt;b3:Slider/&gt;\\n',W1c='&lt;inherits name="org.gwtbootstrap3.extras.slider.Slider"/&gt;',f2c='.GOEOEQ2AK{background-color:#fcf2f2;border-color:#dfb5b4;}.GOEOEQ2BK{margin-top:0 !important;}',t2c='AFTER',x2c='ALWAYS',r2c='BEFORE',$1c='Basic Slider',a2c='Custom Slider',z2c='Double',Z1c='GOEOEQ2AK',U1c='GOEOEQ2BK',w2c='HIDE',M2c='HandleType',O2c='HandleType;',X1c="Last but not least must add this namespace to your *.ui.xml (don't have to name it b3):",P2c='OrientationType',Q2c='OrientationType;',j2c='ROUND',v2c='SHOW',R2c='SelectionType',S2c='SelectionType;',G2c='SliderBase',H2c='SliderBase$1',A2c='SliderPresenter',B2c='SliderView',C2c='SliderView$1',D2c='SliderView_BinderImpl',E2c='SliderView_BinderImpl$Widgets',J2c='SliderView_BinderImpl_GenBundle_default_StaticClientBundleGenerator',K2c='SliderView_BinderImpl_GenBundle_default_StaticClientBundleGenerator$1',n2c='TRIANGLE',V1c='To use Slider, you must first add the extras module to your project. In Maven:',T2c='TooltipType',U2c='TooltipType;',d2c='Vertical Slider',N2c='[Lorg.gwtbootstrap3.extras.slider.client.ui.base.constants.',u2c='after',y2c='always',s2c='before',c2c='customSlider.setFormatter(new FormatterCallback() {\\n \\s@Override\\n \\s\\spublic String toolTipMsg(double value) {\\n \\s\\s\\sint b = (int) (value * 10);\\n \\s\\s\\sreturn b + " blocks";\\n \\s\\s}\\n \\s});\\n',p2c='horizontal',I2c='org.gwtbootstrap3.extras.slider.client.ui.',F2c='org.gwtbootstrap3.extras.slider.client.ui.base.',L2c='org.gwtbootstrap3.extras.slider.client.ui.base.constants.',k2c='round',m2c='square',o2c='triangle',q2c='vertical',Y1c='xmlns:b3="urn:import:org.gwtbootstrap3.extras.slider.client.ui"';var Mib=null;DQ(582,583,{92:1,95:1,96:1,103:1},Pib);_.eQ=function Qib(a){return ku(a,96)&&iu(a,96).a==this.a};_.hC=function Rib(){return ou(this.a)};_.tS=function Sib(){return xgc+this.a};_.a=0;DQ(1190,527,Yfc,W7b);DQ(1193,532,Zfc,d8b);_.a=null;DQ(1194,1,{},f8b);DQ(1195,1,{},h8b);DQ(1196,1,{},k8b);_.a=null;_.b=null;DQ(1197,1,{},n8b);var m8b=null;DQ(1198,1,{},q8b);_.a=false;DQ(1207,1,qgc);_.vb=function _8b(){Jfb(this.b,D8b(this.a.a))};DQ(1305,316,Ffc);_.Me=function vec(a){var b;if(this.a)return b=ou(a*10),b+h2c;return xgc+a};_.Ne=function wec(a){ws(this,new Pib(a))};_.jc=function xec(){var a;a=nec(this,this.i.a.a._.id,this.d,this.c,this.g,this.e.a,(new Pib(Nib(nyb(this.i)))).a,this.f.a,this.j.a,this.b.a,false,!this.i._[qzc]);uec(this,this._,a)};_.kc=function yec(){tec(this._,i2c)};_.a=null;_.c=10;_.d=0;_.g=1;_.i=null;DQ(1304,1305,Ffc,zec);DQ(1306,1,{},Bec);_.wb=function Cec(){if(this.a.W){rec(this.a._,this.c.a);this.b&&ws(this.a,this.c);return false}else{return true}};_.a=null;_.b=false;_.c=null;DQ(1307,159,{92:1,95:1,97:1,166:1},Jec);_.a=null;var Eec,Fec,Gec,Hec;DQ(1308,159,{92:1,95:1,97:1,167:1},Qec);_.a=null;var Mec,Nec,Oec;DQ(1309,159,{92:1,95:1,97:1,168:1},Yec);_.a=null;var Tec,Uec,Vec,Wec;DQ(1310,159,{92:1,95:1,97:1,169:1},efc);_.a=null;var _ec,afc,bfc,cfc;var UC=Bib(Zoc,z2c,582),aN=Bib(Xqc,A2c,1190),gN=Bib(Xqc,B2c,1193),bN=Bib(Xqc,C2c,1194),fN=Bib(Xqc,D2c,1195),cN=Bib(Xqc,E2c,1196),OO=Bib(F2c,G2c,1305),NO=Bib(F2c,H2c,1306),MO=Bib(I2c,Toc,1304),eN=Bib(Xqc,J2c,1197),dN=Bib(Xqc,K2c,1198),PO=Cib(L2c,M2c,1307,Kec),_P=Aib(N2c,O2c,1362),QO=Cib(L2c,P2c,1308,Rec),aQ=Aib(N2c,Q2c,1363),RO=Cib(L2c,R2c,1309,Zec),bQ=Aib(N2c,S2c,1370),SO=Cib(L2c,T2c,1310,ffc),cQ=Aib(N2c,U2c,1371);ugc(qi)(31);
