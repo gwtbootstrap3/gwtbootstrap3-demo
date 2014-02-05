@@ -71,10 +71,6 @@ public class DateTimePickerView extends ViewImpl implements DateTimePickerPresen
     @UiField
     Button disable;
     @UiField
-    Button hide;
-    @UiField
-    Button show;
-    @UiField
     Button setEndDate;
     @UiField
     Button setStartDate;
@@ -87,16 +83,6 @@ public class DateTimePickerView extends ViewImpl implements DateTimePickerPresen
     @UiHandler("setEndDate")
     public void handleSetEndDate(final ClickEvent event) {
         methodsBox.setEndDate(new Date(System.currentTimeMillis() + (1000 * 60 * 60 * 24 * 10)));
-    }
-
-    @UiHandler("show")
-    public void handleShow(final ClickEvent event) {
-        methodsBox.show();
-    }
-
-    @UiHandler("hide")
-    public void handleHide(final ClickEvent event) {
-        methodsBox.hide();
     }
 
     @UiHandler("disable")
