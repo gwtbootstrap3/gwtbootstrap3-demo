@@ -104,6 +104,7 @@
                                     <b:ListItem targetHistoryToken="{nameTokens.getCollapse}">Collapse</b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getModals}">Modals</b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getPopover}">Popover</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getTabs}">Tabs</b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getTooltips}">Tooltips</b:ListItem>
                                 </b:DropDownMenu>
                             </b:ListDropDown>

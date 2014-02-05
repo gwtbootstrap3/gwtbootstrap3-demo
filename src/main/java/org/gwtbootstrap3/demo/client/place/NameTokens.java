@@ -68,6 +68,7 @@ public class NameTokens {
     public static final String MODALS = "modals";
     public static final String POPOVER = "popover";
     public static final String TOOLTIPS = "tooltips";
+    public static final String TABS = "tabs";
 
     // Extra Pages
     public static final String DATETIME_PICKER = "dateTimePicker";
@@ -235,5 +236,9 @@ public class NameTokens {
 
     public static String getSummernote() {
         return SUMMERNOTE;
+    }
+
+    public static String getTabs() {
+        return TABS;
     }
 }

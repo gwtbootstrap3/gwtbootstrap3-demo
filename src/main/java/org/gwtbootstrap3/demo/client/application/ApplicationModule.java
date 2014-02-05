@@ -83,6 +83,7 @@ public class ApplicationModule extends AbstractPresenterModule {
         bindPresenter(ModalPresenter.class, ModalPresenter.MyView.class, ModalView.class, ModalPresenter.MyProxy.class);
         bindPresenter(PopoverPresenter.class, PopoverPresenter.MyView.class, PopoverView.class, PopoverPresenter.MyProxy.class);
         bindPresenter(TooltipPresenter.class, TooltipPresenter.MyView.class, TooltipView.class, TooltipPresenter.MyProxy.class);
+        bindPresenter(TabPresenter.class, TabPresenter.MyView.class, TabView.class, TabPresenter.MyProxy.class);
 
         // Extra Views
         bindPresenter(DateTimePickerPresenter.class, DateTimePickerPresenter.MyView.class, DateTimePickerView.class, DateTimePickerPresenter.MyProxy.class);

@@ -1,0 +1,221 @@
+<!--
+  #%L
+  GwtBootstrap3
+  %%
+  Copyright (C) 2013 GwtBootstrap3
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+
+    <ui:style>
+        .margin {
+            margin-right: 10px;
+        }
+    </ui:style>
+
+    <b:Row>
+        <b:Column size="XS_12">
+
+            <b:PageHeader text="Tabs"/>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Basic"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:NavTabs>
+                        <b:TabListItem active="true" href="#tab1" toggle="TAB">Tab 1</b:TabListItem>
+                        <b:TabListItem href="#tab2" toggle="TAB">Tab 2</b:TabListItem>
+                        <b:TabListItem href="#tab3" toggle="TAB">Tab 3</b:TabListItem>
+                    </b:NavTabs>
+                    <b:TabContent>
+                        <b:TabPane active="true" b:id="tab1">
+                            <b:Heading size="5">Tab 1</b:Heading>
+                            <b:Paragraph>
+                                You must have active="true" on the first tab pane, or set it programmatically.
+                            </b:Paragraph>
+                        </b:TabPane>
+                        <b:TabPane b:id="tab2">
+                            <b:Heading size="5">Tab 2</b:Heading>
+                            <b:Paragraph>
+                                You must have active="true" on the first tab pane, or set it programmatically.
+                            </b:Paragraph>
+                        </b:TabPane>
+                        <b:TabPane b:id="tab3">
+                            <b:Heading size="5">Tab 3</b:Heading>
+                            <b:Paragraph>
+                                You must have active="true" on the first tab pane, or set it programmatically.
+                            </b:Paragraph>
+                        </b:TabPane>
+                    </b:TabContent>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <b:Pre addStyleNames="prettyprint lang-xml">
+                        &lt;b:NavTabs&gt;\n
+                        \s\s&lt;b:TabListItem active="true" href="#tab1" toggle="TAB" text="..."/&gt;\n
+                        \s\s&lt;b:TabListItem href="#tab2" toggle="TAB" text="..."/&gt;\n
+                        \s\s&lt;b:TabListItem href="#tab3" toggle="TAB" text="..."/&gt;\n
+                        &lt;/b:NavTabs&gt;\n
+
+                        &lt;b:TabContent&gt;\n
+                        \s\s&lt;b:TabPane active="true" b:id="tab1"&gt;\n
+                        \s\s\s\s...\n
+                        \s\s&lt;/b:TabPane&gt;\n
+                        \s\s&lt;b:TabPane b:id="tab2"&gt;\n
+                        \s\s\s\s...\n
+                        \s\s&lt;/b:TabPane&gt;\n
+                        \s\s&lt;b:TabPane b:id="tab3"&gt;\n
+                        \s\s\s\s...\n
+                        \s\s&lt;/b:TabPane&gt;\n
+                        &lt;/b:TabContent&gt;\n
+                    </b:Pre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Fading Content In/Out"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:NavTabs>
+                        <b:TabListItem active="true" href="#tab4" toggle="TAB">Tab 4</b:TabListItem>
+                        <b:TabListItem href="#tab5" toggle="TAB">Tab 5</b:TabListItem>
+                        <b:TabListItem href="#tab6" toggle="TAB">Tab 6</b:TabListItem>
+                    </b:NavTabs>
+                    <b:TabContent>
+                        <b:TabPane fade="true" in="true" active="true" b:id="tab4">
+                            <b:Heading size="5">Tab 4</b:Heading>
+                            <b:Paragraph>
+                                To Fade you must have fade="true" on all TabPanes. Also on the first tab you must have
+                                active="true" and in="true".
+                            </b:Paragraph>
+                        </b:TabPane>
+                        <b:TabPane fade="true" b:id="tab5">
+                            <b:Heading size="5">Tab 5</b:Heading>
+                            <b:Paragraph>
+                                To Fade you must have fade="true" on all TabPanes. Also on the first tab you must have
+                                active="true" and in="true".
+                            </b:Paragraph>
+                        </b:TabPane>
+                        <b:TabPane fade="true" b:id="tab6">
+                            <b:Heading size="5">Tab 6</b:Heading>
+                            <b:Paragraph>
+                                To Fade you must have fade="true" on all TabPanes. Also on the first tab you must have
+                                active="true" and in="true".
+                            </b:Paragraph>
+                        </b:TabPane>
+                    </b:TabContent>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <b:Pre addStyleNames="prettyprint lang-xml">
+                        &lt;b:NavTabs&gt;\n
+                        \s\s&lt;b:TabListItem active="true" href="#tab4" toggle="TAB" text="..."/&gt;\n
+                        \s\s&lt;b:TabListItem href="#tab5" toggle="TAB" text="..."/&gt;\n
+                        \s\s&lt;b:TabListItem href="#tab6" toggle="TAB" text="..."/&gt;\n
+                        &lt;/b:NavTabs&gt;\n
+
+                        &lt;b:TabContent&gt;\n
+                        \s\s&lt;b:TabPane fade="true" in="true" active="true" b:id="tab4"&gt;\n
+                        \s\s\s\s...\n
+                        \s\s&lt;/b:TabPane&gt;\n
+                        \s\s&lt;b:TabPane fade="true" b:id="tab5"&gt;\n
+                        \s\s\s\s...\n
+                        \s\s&lt;/b:TabPane&gt;\n
+                        \s\s&lt;b:TabPane fade="true" b:id="tab6"&gt;\n
+                        \s\s\s\s...\n
+                        \s\s&lt;/b:TabPane&gt;\n
+                        &lt;/b:TabContent&gt;\n
+                    </b:Pre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Force Show Tabs"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:NavTabs>
+                        <b:TabListItem active="true" href="#tab7" toggle="TAB" ui:field="tab7ListItem">Tab 7
+                        </b:TabListItem>
+                        <b:TabListItem href="#tab8" toggle="TAB" ui:field="tab8ListItem">Tab 8</b:TabListItem>
+                        <b:TabListItem href="#tab9" toggle="TAB" ui:field="tab9ListItem">Tab 9</b:TabListItem>
+                    </b:NavTabs>
+                    <b:TabContent>
+                        <b:TabPane active="true" b:id="tab7">
+                            <b:Heading size="5">Tab 7</b:Heading>
+                            <b:Paragraph>
+                                Use Buttons to change me!
+                            </b:Paragraph>
+                        </b:TabPane>
+                        <b:TabPane b:id="tab8">
+                            <b:Heading size="5">Tab 8</b:Heading>
+                            <b:Paragraph>
+                                Use Buttons to change me!
+                            </b:Paragraph>
+                        </b:TabPane>
+                        <b:TabPane b:id="tab9">
+                            <b:Heading size="5">Tab 9</b:Heading>
+                            <b:Paragraph>
+                                Use Buttons to change me!
+                            </b:Paragraph>
+                        </b:TabPane>
+                    </b:TabContent>
+                    <b:Button addStyleNames="{style.margin}" type="PRIMARY" text="Change to Tab 7"
+                              ui:field="tab7Button"/>
+                    <b:Button addStyleNames="{style.margin}" type="PRIMARY" text="Change to Tab 8"
+                              ui:field="tab8Button"/>
+                    <b:Button addStyleNames="{style.margin}" type="PRIMARY" text="Change to Tab 9"
+                              ui:field="tab9Button"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <b:Heading size="4" text="UiBinder"/>
+
+                    <b:Pre addStyleNames="prettyprint lang-xml">
+                        &lt;b:NavTabs&gt;\n
+                        \s\s&lt;b:TabListItem active="true" href="#tab7" toggle="TAB" text="..."/&gt;\n
+                        \s\s&lt;b:TabListItem href="#tab8" toggle="TAB" text="..."/&gt;\n
+                        \s\s&lt;b:TabListItem href="#tab9" toggle="TAB" text="..."/&gt;\n
+                        &lt;/b:NavTabs&gt;\n
+
+                        &lt;b:TabContent&gt;\n
+                        \s\s&lt;b:TabPane active="true" b:id="tab7"&gt;\n
+                        \s\s\s\s...\n
+                        \s\s&lt;/b:TabPane&gt;\n
+                        \s\s&lt;b:TabPane b:id="tab8"&gt;\n
+                        \s\s\s\s...\n
+                        \s\s&lt;/b:TabPane&gt;\n
+                        \s\s&lt;b:TabPane b:id="tab9"&gt;\n
+                        \s\s\s\s...\n
+                        \s\s&lt;/b:TabPane&gt;\n
+                        &lt;/b:TabContent&gt;\n
+                    </b:Pre>
+
+                    <b:Heading size="4" text="Java code (on the list item you want to show)"/>
+
+                    <b:Pre addStyleNames="prettyprint lang-java">
+                        @UiField\n
+                        TabListItem tabListItem;\n\n
+
+                        Click Handler\n
+                        tabListItem.showTab();
+                    </b:Pre>
+
+                </b:PanelFooter>
+            </b:Panel>
+        </b:Column>
+    </b:Row>
+
+</ui:UiBinder>
