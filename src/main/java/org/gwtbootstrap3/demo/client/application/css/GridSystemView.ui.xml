@@ -18,7 +18,8 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-             xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
     <ui:style>
         .column {
@@ -77,7 +78,7 @@
                 </b:Row>
             </b:PanelBody>
             <b:PanelFooter>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:Row&gt;\n
                     \s\s&lt;b:Column size="MD_1"&gt;...&lt;/b:Column&gt;\n
                     \s\s&lt;b:Column size="MD_1"&gt;...&lt;/b:Column&gt;\n
@@ -85,7 +86,7 @@
                     \s\s&lt;b:Column size="MD_1"&gt;...&lt;/b:Column&gt;\n
                     \s\s...\n
                     &lt;/b:Row&gt;\n
-                </b:Pre>
+                </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
 
@@ -138,7 +139,7 @@
                 </b:Row>
             </b:PanelBody>
             <b:PanelFooter>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:Row&gt;\n
                     \s\s&lt;b:Column size="XS_6,SM_4,MD_3,LG_1"&gt;...&lt;/b:Column&gt;\n
                     \s\s&lt;b:Column size="XS_6,SM_4,MD_3,LG_1"&gt;...&lt;/b:Column&gt;\n
@@ -147,7 +148,7 @@
                     \s\s&lt;b:Column size="XS_6,SM_4,MD_3,LG_1"&gt;...&lt;/b:Column&gt;\n
                     \s\s...\n
                     &lt;/b:Row&gt;\n
-                </b:Pre>
+                </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
 
@@ -166,13 +167,13 @@
                 </b:Row>
             </b:PanelBody>
             <b:PanelFooter>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:Row&gt;\n
                     \s\s&lt;b:Column size="MD_4"&gt;...&lt;/b:Column&gt;\n
                     \s\s&lt;b:Column size="MD_4" offset="MD_4"&gt;...&lt;/b:Column&gt;\n
                     \s\s...\n
                     &lt;/b:Row&gt;\n
-                </b:Pre>
+                </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
 
@@ -196,7 +197,7 @@
                 </b:Row>
             </b:PanelBody>
             <b:PanelFooter>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:Row&gt;\n
                     \s\s&lt;b:Column size="MD_9"&gt;\n
                     \s\s\s\s &lt;b:Row&gt;\n
@@ -205,7 +206,7 @@
                     \s\s\s\s&lt;/b:Row&gt;\n
                     \s\s&lt;/b:Column&gt;\n
                     &lt;/b:Row&gt;\n
-                </b:Pre>
+                </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
 
@@ -224,12 +225,12 @@
                 </b:Row>
             </b:PanelBody>
             <b:PanelFooter>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:Row&gt;\n
                     \s\s&lt;b:Column size="MD_9" push="MD_3"&gt;...&lt;/b:Column&gt;\n
                     \s\s&lt;b:Column size="MD_3" pull="MD_9"&gt;...&lt;/b:Column&gt;\n
                     &lt;/b:Row&gt;\n
-                </b:Pre>
+                </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
         </b:Column>

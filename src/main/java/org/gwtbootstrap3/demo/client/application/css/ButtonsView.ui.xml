@@ -18,153 +18,154 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-             xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
     <ui:style>
-    .spacing>button {
-    	margin-right: 10px;
-    }
+        .spacing > button {
+            margin-right: 10px;
+        }
     </ui:style>
     <b:Row>
         <b:Column size="XS_12">
 
-	        <b:PageHeader text="Buttons" subText="styled, states, icons..."/>
+            <b:PageHeader text="Buttons" subText="styled, states, icons..."/>
 
-	        <b:Panel>
-	            <b:PanelHeader>
-	                <b:Heading size="3" text="Basic"/>
-	            </b:PanelHeader>
-	            <b:PanelBody addStyleNames="{style.spacing}">
-	                <b:Button text="Default"/>
-	                <b:Button type="PRIMARY" text="Primary"/>
-	                <b:Button type="SUCCESS" text="Success"/>
-	                <b:Button type="INFO" text="Info"/>
-	                <b:Button type="WARNING" text="Warning"/>
-	                <b:Button type="DANGER" text="Danger"/>
-	                <b:Button type="LINK" text="Link"/>
-	            </b:PanelBody>
-	            <b:PanelFooter>
-	                <b:Pre addStyleNames="prettyprint lang-xml">
-	                    &lt;b:Button type="DEFAULT"/&gt;\n
-	                    &lt;b:Button type="PRIMARY"/&gt;\n
-	                    &lt;b:Button type="SUCCESS"/&gt;\n
-	                    &lt;b:Button type="INFO"/&gt;\n
-	                    &lt;b:Button type="WARNING"/&gt;\n
-	                    &lt;b:Button type="DANGER"/&gt;\n
-	                    &lt;b:Button type="LINK"/&gt;\n
-	                </b:Pre>
-	            </b:PanelFooter>
-	        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Basic"/>
+                </b:PanelHeader>
+                <b:PanelBody addStyleNames="{style.spacing}">
+                    <b:Button text="Default"/>
+                    <b:Button type="PRIMARY" text="Primary"/>
+                    <b:Button type="SUCCESS" text="Success"/>
+                    <b:Button type="INFO" text="Info"/>
+                    <b:Button type="WARNING" text="Warning"/>
+                    <b:Button type="DANGER" text="Danger"/>
+                    <b:Button type="LINK" text="Link"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Button type="DEFAULT"/&gt;\n
+                        &lt;b:Button type="PRIMARY"/&gt;\n
+                        &lt;b:Button type="SUCCESS"/&gt;\n
+                        &lt;b:Button type="INFO"/&gt;\n
+                        &lt;b:Button type="WARNING"/&gt;\n
+                        &lt;b:Button type="DANGER"/&gt;\n
+                        &lt;b:Button type="LINK"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-	        <b:Panel>
-	            <b:PanelHeader>
-	                <b:Heading size="3" text="Sizes"/>
-	            </b:PanelHeader>
-	            <b:PanelBody addStyleNames="{style.spacing}">
-	                <b:Button type="PRIMARY" size="SMALL" text="Small"/>
-	                <b:Button type="PRIMARY" size="LARGE" text="Large"/>
-	                <b:Button type="PRIMARY" size="EXTRA_SMALL" text="Extra Small"/>
-	            </b:PanelBody>
-	            <b:PanelFooter>
-	                <b:Pre addStyleNames="prettyprint lang-xml">
-	                    &lt;b:Button type="PRIMARY" size="SMALL"/&gt;\n
-	                    &lt;b:Button type="PRIMARY" size="LARGE"/&gt;\n
-	                    &lt;b:Button type="PRIMARY" size="EXTRA_SMALL"/&gt;\n
-	                </b:Pre>
-	            </b:PanelFooter>
-	        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Sizes"/>
+                </b:PanelHeader>
+                <b:PanelBody addStyleNames="{style.spacing}">
+                    <b:Button type="PRIMARY" size="SMALL" text="Small"/>
+                    <b:Button type="PRIMARY" size="LARGE" text="Large"/>
+                    <b:Button type="PRIMARY" size="EXTRA_SMALL" text="Extra Small"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Button type="PRIMARY" size="SMALL"/&gt;\n
+                        &lt;b:Button type="PRIMARY" size="LARGE"/&gt;\n
+                        &lt;b:Button type="PRIMARY" size="EXTRA_SMALL"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-	        <b:Panel>
-	            <b:PanelHeader>
-	                <b:Heading size="3" text="Disabled State"/>
-	            </b:PanelHeader>
-	            <b:PanelBody addStyleNames="{style.spacing}">
-	                <b:Button type="PRIMARY" text="Enabled" enabled="true"/>
-	                <b:Button type="PRIMARY" text="Disabled" enabled="false"/>
-	            </b:PanelBody>
-	            <b:PanelFooter>
-	                <b:Pre addStyleNames="prettyprint lang-xml">
-	                    &lt;b:Button type="PRIMARY" enabled="true"/&gt;\n
-	                    &lt;b:Button type="PRIMARY" enabled="false"/&gt;\n
-	                </b:Pre>
-	            </b:PanelFooter>
-	        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Disabled State"/>
+                </b:PanelHeader>
+                <b:PanelBody addStyleNames="{style.spacing}">
+                    <b:Button type="PRIMARY" text="Enabled" enabled="true"/>
+                    <b:Button type="PRIMARY" text="Disabled" enabled="false"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Button type="PRIMARY" enabled="true"/&gt;\n
+                        &lt;b:Button type="PRIMARY" enabled="false"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-	        <b:Panel>
-	            <b:PanelHeader>
-	                <b:Heading size="3" text="With Icons"/>
-	            </b:PanelHeader>
-	            <b:PanelBody addStyleNames="{style.spacing}">
-	                <b:Button type="PRIMARY" text="With Icon" icon="STAR"/>
-	                <b:Button type="PRIMARY" text="With Icon on Right" icon="STAR" iconPosition="RIGHT"/>
-	            </b:PanelBody>
-	            <b:PanelFooter>
-	                <b:Pre addStyleNames="prettyprint lang-xml">
-	                    &lt;b:Button type="PRIMARY" icon="STAR"/&gt;\n
-	                    &lt;b:Button type="PRIMARY" icon="STAR" iconPosition="RIGHT"/&gt;\n
-	                </b:Pre>
-	            </b:PanelFooter>
-	        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="With Icons"/>
+                </b:PanelHeader>
+                <b:PanelBody addStyleNames="{style.spacing}">
+                    <b:Button type="PRIMARY" text="With Icon" icon="STAR"/>
+                    <b:Button type="PRIMARY" text="With Icon on Right" icon="STAR" iconPosition="RIGHT"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Button type="PRIMARY" icon="STAR"/&gt;\n
+                        &lt;b:Button type="PRIMARY" icon="STAR" iconPosition="RIGHT"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-	        <b:Panel>
-	            <b:PanelHeader>
-	                <b:Heading size="3" text="Toggle button"/>
-	            </b:PanelHeader>
-	            <b:PanelBody addStyleNames="{style.spacing}">
-	                <b:Button toggle="BUTTON" text="Toggle button"/>
-	            </b:PanelBody>
-	            <b:PanelFooter>
-	                <b:Pre addStyleNames="prettyprint lang-xml">
-	                    &lt;b:Button toggle="BUTTON"/&gt;
-	                </b:Pre>
-	            </b:PanelFooter>
-	        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Toggle button"/>
+                </b:PanelHeader>
+                <b:PanelBody addStyleNames="{style.spacing}">
+                    <b:Button toggle="BUTTON" text="Toggle button"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Button toggle="BUTTON"/&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-	        <b:Panel>
-	            <b:PanelHeader>
-	                <b:Heading size="3" text="With loading state"/>
-	            </b:PanelHeader>
-	            <b:PanelBody addStyleNames="{style.spacing}">
-	                <b:Button ui:field="button" text="Click me" loadingText="Loading..."/>
-	            </b:PanelBody>
-	            <b:PanelFooter>
-	                <b:Heading size="4" text="UiBinder"/>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="With loading state"/>
+                </b:PanelHeader>
+                <b:PanelBody addStyleNames="{style.spacing}">
+                    <b:Button ui:field="button" text="Click me" loadingText="Loading..."/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <b:Heading size="4" text="UiBinder"/>
 
-	                <b:Pre addStyleNames="prettyprint lang-xml">
-	                    &lt;b:Button ui:field="button" text="Click me" loadingText="Loading..."/&gt;
-	                </b:Pre>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Button ui:field="button" text="Click me" loadingText="Loading..."/&gt;
+                    </d:PrettyPre>
 
-	                <b:Heading size="4" text="Java code"/>
+                    <b:Heading size="4" text="Java code"/>
 
-	                <b:Pre addStyleNames="prettyprint lang-java">
-	                    @UiHandler("button")\n
-	                    public void onButtonClick(final ClickEvent event) {\n
-	                    \s\sbutton.state().loading();\n
-	                    \n
-	                    \s\snew Timer() {\n
-	                    \s\s\s\s@Override\n
-	                    \s\s\s\spublic void run() {\n
-	                    \s\s\s\s\s\sbutton.state().reset();\n
-	                    \s\s\s\s}\n
-	                    \s\s}.schedule(2000);\n
-	                    }
-	                </b:Pre>
-	            </b:PanelFooter>
-	        </b:Panel>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        @UiHandler("button")\n
+                        public void onButtonClick(final ClickEvent event) {\n
+                        \s\sbutton.state().loading();\n
+                        \n
+                        \s\snew Timer() {\n
+                        \s\s\s\s@Override\n
+                        \s\s\s\spublic void run() {\n
+                        \s\s\s\s\s\sbutton.state().reset();\n
+                        \s\s\s\s}\n
+                        \s\s}.schedule(2000);\n
+                        }
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-	        <b:Panel>
-	            <b:PanelHeader>
-	                <b:Heading size="3" text="Block level button"/>
-	            </b:PanelHeader>
-	            <b:PanelBody addStyleNames="{style.spacing}">
-	                <b:Button text="Block level button" block="true"/>
-	            </b:PanelBody>
-	            <b:PanelFooter>
-	                <b:Pre addStyleNames="prettyprint lang-xml">
-	                    &lt;b:Button text="Block level button" block="true"/&gt;
-	                </b:Pre>
-	            </b:PanelFooter>
-	        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Block level button"/>
+                </b:PanelHeader>
+                <b:PanelBody addStyleNames="{style.spacing}">
+                    <b:Button text="Block level button" block="true"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Button text="Block level button" block="true"/&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
         </b:Column>
     </b:Row>

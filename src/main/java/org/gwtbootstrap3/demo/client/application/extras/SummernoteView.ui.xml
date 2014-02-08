@@ -19,7 +19,8 @@
   -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
-             xmlns:summer="urn:import:org.gwtbootstrap3.extras.summernote.client.ui">
+             xmlns:summer="urn:import:org.gwtbootstrap3.extras.summernote.client.ui"
+             xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
     <ui:style>
         .danger {
@@ -46,29 +47,29 @@
                 <b:Paragraph>
                     To use Summernote, you must first add the extras module to your project. In Maven:
                 </b:Paragraph>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;dependency&gt;\n
                     \s\s\s\s&lt;groupId&gt;org.gwtbootstrap3&lt;/groupId&gt;\n
                     \s\s\s\s&lt;artifactId&gt;gwtbootstrap3-extras&lt;/artifactId&gt;\n
                     \s\s\s\s&lt;version&gt;VERSION&lt;/version&gt;\n
                     \s\s\s\s&lt;scope&gt;provided&lt;/scope&gt;\n
                     &lt;/dependency&gt;
-                </b:Pre>
+                </d:PrettyPre>
                 <b:Paragraph>
                     Then you need to inherit the following GWT Module
                     <strong>additionally</strong>
                     to any GwtBootstrap3
                     module into your *.gwt.xml of your project:
                 </b:Paragraph>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;inherits name="org.gwtbootstrap3.extras.summernote.Summernote"/&gt;
-                </b:Pre>
+                </d:PrettyPre>
                 <b:Paragraph>
                     Last but not least must add this namespace to your *.ui.xml (don't have to name it summer):
                 </b:Paragraph>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     xmlns:summer="urn:import:org.gwtbootstrap3.extras.summernote.client.ui"
-                </b:Pre>
+                </d:PrettyPre>
             </b:BlockQuote>
 
             <b:Panel>
@@ -79,9 +80,9 @@
                     <summer:Summernote/>
                 </b:PanelBody>
                 <b:PanelFooter>
-                    <b:Pre addStyleNames="prettyprint lang-xml">
+                    <d:PrettyPre addStyleNames="lang-xml">
                         &lt;summer:Summernote/&gt;
-                    </b:Pre>
+                    </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
 
@@ -95,13 +96,13 @@
                 <b:PanelFooter>
                     <b:Heading size="4" text="UiBinder"/>
 
-                    <b:Pre addStyleNames="prettyprint lang-xml">
+                    <d:PrettyPre addStyleNames="lang-xml">
                         &lt;summer:Summernote ui:field="customToolbar"/&gt;
-                    </b:Pre>
+                    </d:PrettyPre>
 
                     <b:Heading size="4" text="Java code"/>
 
-                    <b:Pre addStyleNames="prettyprint lang-java">
+                    <d:PrettyPre addStyleNames="lang-java">
                         @UiField(provided = true)\n
                         Summernote customToolbar;\n\n
 
@@ -109,7 +110,7 @@
                         customToolbar.setHeight(200);\n
                         customToolbar.setToolbar(new Toolbar()\n
                         \s\s.setShowBoldButton(true));
-                    </b:Pre>
+                    </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
 
@@ -125,13 +126,13 @@
                 <b:PanelFooter>
                     <b:Heading size="4" text="UiBinder"/>
 
-                    <b:Pre addStyleNames="prettyprint lang-xml">
+                    <d:PrettyPre addStyleNames="lang-xml">
                         &lt;summer:Summernote ui:field="getSetCode"/&gt;
-                    </b:Pre>
+                    </d:PrettyPre>
 
                     <b:Heading size="4" text="Java code"/>
 
-                    <b:Pre addStyleNames="prettyprint lang-java">
+                    <d:PrettyPre addStyleNames="lang-java">
                         @UiField(provided = true)\n
                         Summernote getSetCode;\n\n
 
@@ -142,7 +143,7 @@
 
                         Click Handler\n
                         Window.alert(getSetCode.getCode());
-                    </b:Pre>
+                    </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
         </b:Column>

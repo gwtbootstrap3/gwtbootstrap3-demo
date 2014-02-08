@@ -19,105 +19,108 @@
   -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
-             xmlns:b3="urn:import:org.gwtbootstrap3.extras.slider.client.ui">
+             xmlns:b3="urn:import:org.gwtbootstrap3.extras.slider.client.ui"
+             xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
     <ui:style>
-    .danger {
-    	background-color: #fcf2f2;
-    	border-color: #dFb5b4;
-    }
+        .danger {
+            background-color: #fcf2f2;
+            border-color: #dFb5b4;
+        }
 
-    .margin-fix {
-    	margin-top: 0 !important;
-    }
+        .margin-fix {
+            margin-top: 0 !important;
+        }
     </ui:style>
 
     <b:Row>
         <b:Column size="XS_12">
 
-	        <b:PageHeader text="Slider"/>
+            <b:PageHeader text="Slider"/>
 
-	        <b:BlockQuote addStyleNames="{style.danger}">
-	            <b:Heading addStyleNames="{style.margin-fix}" size="4" text="Required for use"/>
-	            <b:Paragraph>
-	                To use Slider, you must first add the extras module to your project. In Maven:
-	            </b:Paragraph>
-	            <b:Pre addStyleNames="prettyprint lang-xml">
-	                &lt;dependency&gt;\n
-	                \s\s\s\s&lt;groupId&gt;org.gwtbootstrap3&lt;/groupId&gt;\n
-	                \s\s\s\s&lt;artifactId&gt;gwtbootstrap3-extras&lt;/artifactId&gt;\n
-	                \s\s\s\s&lt;version&gt;VERSION&lt;/version&gt;\n
-	                \s\s\s\s&lt;scope&gt;provided&lt;/scope&gt;\n
-	                &lt;/dependency&gt;
-	            </b:Pre>
-	            <b:Paragraph>
-	                Then you need to inherit the following GWT Module
-	                <strong>additionally</strong>
-	                to any GwtBootstrap3
-	                module into your *.gwt.xml of your project:
-	            </b:Paragraph>
-	            <b:Pre addStyleNames="prettyprint lang-xml">
-	                &lt;inherits name="org.gwtbootstrap3.extras.slider.Slider"/&gt;
-	            </b:Pre>
-	            <b:Paragraph>
-	                Last but not least must add this namespace to your *.ui.xml (don't have to name it b3):
-	            </b:Paragraph>
-	            <b:Pre addStyleNames="prettyprint lang-xml">
-	                xmlns:b3="urn:import:org.gwtbootstrap3.extras.slider.client.ui"
-	            </b:Pre>
-	        </b:BlockQuote>
+            <b:BlockQuote addStyleNames="{style.danger}">
+                <b:Heading addStyleNames="{style.margin-fix}" size="4" text="Required for use"/>
+                <b:Paragraph>
+                    To use Slider, you must first add the extras module to your project. In Maven:
+                </b:Paragraph>
+                <d:PrettyPre addStyleNames="lang-xml">
+                    &lt;dependency&gt;\n
+                    \s\s\s\s&lt;groupId&gt;org.gwtbootstrap3&lt;/groupId&gt;\n
+                    \s\s\s\s&lt;artifactId&gt;gwtbootstrap3-extras&lt;/artifactId&gt;\n
+                    \s\s\s\s&lt;version&gt;VERSION&lt;/version&gt;\n
+                    \s\s\s\s&lt;scope&gt;provided&lt;/scope&gt;\n
+                    &lt;/dependency&gt;
+                </d:PrettyPre>
+                <b:Paragraph>
+                    Then you need to inherit the following GWT Module
+                    <strong>additionally</strong>
+                    to any GwtBootstrap3
+                    module into your *.gwt.xml of your project:
+                </b:Paragraph>
+                <d:PrettyPre addStyleNames="lang-xml">
+                    &lt;inherits name="org.gwtbootstrap3.extras.slider.Slider"/&gt;
+                </d:PrettyPre>
+                <b:Paragraph>
+                    Last but not least must add this namespace to your *.ui.xml (don't have to name it b3):
+                </b:Paragraph>
+                <d:PrettyPre addStyleNames="lang-xml">
+                    xmlns:b3="urn:import:org.gwtbootstrap3.extras.slider.client.ui"
+                </d:PrettyPre>
+            </b:BlockQuote>
 
-			<b:Panel>
-				<b:PanelHeader>
-					<b:Heading size="3" text="Basic Slider" />
-				</b:PanelHeader>
-				<b:PanelBody>
-					<b3:Slider />
-				</b:PanelBody>
-				<b:PanelFooter>
-					<b:Pre addStyleNames="prettyprint lang-xml">
-						&lt;b3:Slider/&gt;\n
-					</b:Pre>
-				</b:PanelFooter>
-			</b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Basic Slider"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:Slider/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:Slider/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-	        <b:Panel>
-	            <b:PanelHeader>
-	                <b:Heading size="3" text="Custom Slider" />
-	            </b:PanelHeader>
-	            <b:PanelBody>
-	                <b3:Slider ui:field="customSlider" value="250.0" min="-150.0" max="500.0" step="5.0" handle="SQUARE"/>
-	            </b:PanelBody>
-	            <b:PanelFooter>
-	                <b:Pre addStyleNames="prettyprint lang-xml">
-	                    &lt;b3:Slider ui:field="customSlider" value="250.0" min="-150.0" max="500.0" step="5.0" handle="SQUARE"/&gt;\n
-	                </b:Pre>
-	                <b:Pre addStyleNames="prettyprint lang-java">
-	                    customSlider.setFormatter(new FormatterCallback() {\n
-	                    \s@Override\n
-	                    \s\spublic String toolTipMsg(double value) {\n
-	                    \s\s\sint b = (int) (value * 10);\n
-	                    \s\s\sreturn b + " blocks";\n
-	                    \s\s}\n
-	                    \s});\n
-	                </b:Pre>
-	            </b:PanelFooter>
-	        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Custom Slider"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:Slider ui:field="customSlider" value="250.0" min="-150.0" max="500.0" step="5.0"
+                               handle="SQUARE"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:Slider ui:field="customSlider" value="250.0" min="-150.0" max="500.0" step="5.0"
+                        handle="SQUARE"/&gt;\n
+                    </d:PrettyPre>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        customSlider.setFormatter(new FormatterCallback() {\n
+                        \s@Override\n
+                        \s\spublic String toolTipMsg(double value) {\n
+                        \s\s\sint b = (int) (value * 10);\n
+                        \s\s\sreturn b + " blocks";\n
+                        \s\s}\n
+                        \s});\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
 
-	        <b:Panel>
-	            <b:PanelHeader>
-	                <b:Heading size="3" text="Vertical Slider" />
-	            </b:PanelHeader>
-	            <b:PanelBody>
-	                <b3:Slider orientation="VERTICAL"/>
-	            </b:PanelBody>
-	            <b:PanelFooter>
-	                <b:Pre addStyleNames="prettyprint lang-xml">
-	                    &lt;b3:Slider orientation="VERTICAL"/&gt;\n
-	                </b:Pre>
-	            </b:PanelFooter>
-	        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Vertical Slider"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:Slider orientation="VERTICAL"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:Slider orientation="VERTICAL"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
         </b:Column>
     </b:Row>
 
