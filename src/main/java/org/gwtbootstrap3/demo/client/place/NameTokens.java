@@ -68,11 +68,13 @@ public class NameTokens {
     public static final String MODALS = "modals";
     public static final String POPOVER = "popover";
     public static final String TOOLTIPS = "tooltips";
+    public static final String TABS = "tabs";
 
     // Extra Pages
     public static final String DATETIME_PICKER = "dateTimePicker";
     public static final String BOOTBOX = "bootbox";
     public static final String SLIDER = "slider";
+    public static final String SUMMERNOTE = "summernote";
 
     // Getters for UiBinders
 
@@ -230,5 +232,13 @@ public class NameTokens {
 
     public static String getSlider() {
         return SLIDER;
+    }
+
+    public static String getSummernote() {
+        return SUMMERNOTE;
+    }
+
+    public static String getTabs() {
+        return TABS;
     }
 }

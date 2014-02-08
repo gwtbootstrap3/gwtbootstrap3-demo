@@ -24,12 +24,7 @@ package org.gwtbootstrap3.demo.client.application;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import org.gwtbootstrap3.demo.client.application.components.*;
 import org.gwtbootstrap3.demo.client.application.css.*;
-import org.gwtbootstrap3.demo.client.application.extras.BootboxJSPresenter;
-import org.gwtbootstrap3.demo.client.application.extras.BootboxJSView;
-import org.gwtbootstrap3.demo.client.application.extras.DateTimePickerPresenter;
-import org.gwtbootstrap3.demo.client.application.extras.DateTimePickerView;
-import org.gwtbootstrap3.demo.client.application.extras.SliderPresenter;
-import org.gwtbootstrap3.demo.client.application.extras.SliderView;
+import org.gwtbootstrap3.demo.client.application.extras.*;
 import org.gwtbootstrap3.demo.client.application.general.HomePresenter;
 import org.gwtbootstrap3.demo.client.application.general.HomeView;
 import org.gwtbootstrap3.demo.client.application.general.SetupPresenter;
@@ -88,10 +83,12 @@ public class ApplicationModule extends AbstractPresenterModule {
         bindPresenter(ModalPresenter.class, ModalPresenter.MyView.class, ModalView.class, ModalPresenter.MyProxy.class);
         bindPresenter(PopoverPresenter.class, PopoverPresenter.MyView.class, PopoverView.class, PopoverPresenter.MyProxy.class);
         bindPresenter(TooltipPresenter.class, TooltipPresenter.MyView.class, TooltipView.class, TooltipPresenter.MyProxy.class);
+        bindPresenter(TabPresenter.class, TabPresenter.MyView.class, TabView.class, TabPresenter.MyProxy.class);
 
         // Extra Views
         bindPresenter(DateTimePickerPresenter.class, DateTimePickerPresenter.MyView.class, DateTimePickerView.class, DateTimePickerPresenter.MyProxy.class);
         bindPresenter(BootboxJSPresenter.class, BootboxJSPresenter.MyView.class, BootboxJSView.class, BootboxJSPresenter.MyProxy.class);
         bindPresenter(SliderPresenter.class, SliderPresenter.MyView.class, SliderView.class, SliderPresenter.MyProxy.class);
+        bindPresenter(SummernotePresenter.class, SummernotePresenter.MyView.class, SummernoteView.class, SummernotePresenter.MyProxy.class);
     }
 }
