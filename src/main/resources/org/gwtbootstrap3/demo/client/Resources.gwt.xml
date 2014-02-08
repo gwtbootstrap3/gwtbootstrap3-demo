@@ -27,5 +27,4 @@
     <!--Add these style sheets last so that they are the most important!-->
     <stylesheet src='css/demo.css'/>
     <stylesheet src='css/prettify.css'/>
-    <!--<script src='js/prettify.js'/>-->
 </module>

@@ -18,7 +18,8 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-             xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
     <ui:style>
         .danger {
@@ -63,7 +64,7 @@
                 </b:Progress>
             </b:PanelBody>
             <b:PanelFooter>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:Progress&gt;\n
                     \s\s&lt;b:ProgressBar type="SUCCESS" percent="40"/&gt;\n
                     &lt;/b:Progress&gt;\n
@@ -76,7 +77,7 @@
                     &lt;b:Progress&gt;\n
                     \s\s&lt;b:ProgressBar type="DANGER" percent="80"/&gt;\n
                     &lt;/b:Progress&gt;\n
-                </b:Pre>
+                </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
 
@@ -102,7 +103,7 @@
                 </b:Progress>
             </b:PanelBody>
             <b:PanelFooter>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:Progress type="STRIPED"&gt;\n
                     \s\s&lt;b:ProgressBar type="SUCCESS" percent="40"/&gt;\n
                     &lt;/b:Progress&gt;\n
@@ -115,7 +116,7 @@
                     &lt;b:Progress type="STRIPED"&gt;\n
                     \s\s&lt;b:ProgressBar type="DANGER" percent="80"/&gt;\n
                     &lt;/b:Progress&gt;\n
-                </b:Pre>
+                </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
 
@@ -132,11 +133,11 @@
                 </b:Progress>
             </b:PanelBody>
             <b:PanelFooter>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:Progress active="true" type="STRIPED"&gt;\n
                     \s\s&lt;b:ProgressBar type="SUCCESS" percent="40"/&gt;\n
                     &lt;/b:Progress&gt;\n
-                </b:Pre>
+                </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
 
@@ -152,13 +153,13 @@
                 </b:Progress>
             </b:PanelBody>
             <b:PanelFooter>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:Progress&gt;\n
                     \s\s&lt;b:ProgressBar type="SUCCESS" percent="35"/&gt;\n
                     \s\s&lt;b:ProgressBar type="WARNING" percent="20"/&gt;\n
                     \s\s&lt;b:ProgressBar type="DANGER" percent="10"/&gt;\n
                     &lt;/b:Progress&gt;\n
-                </b:Pre>
+                </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
 

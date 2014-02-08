@@ -35,4 +35,6 @@
 
     <inherits name="org.gwtbootstrap3.demo.client.Resources"/>
 
+    <entry-point class="org.gwtbootstrap3.demo.client.GwtBootstrap3DemoEntryPoint"/>
+
 </module>

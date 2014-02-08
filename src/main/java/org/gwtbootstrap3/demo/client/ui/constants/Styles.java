@@ -1,10 +1,10 @@
-package org.gwtbootstrap3.demo.client;
+package org.gwtbootstrap3.demo.client.ui.constants;
 
 /*
  * #%L
  * GwtBootstrap3
  * %%
- * Copyright (C) 2013 GwtBootstrap3
+ * Copyright (C) 2013 - 2014 GwtBootstrap3
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,18 +20,14 @@ package org.gwtbootstrap3.demo.client;
  * #L%
  */
 
-import com.google.gwt.core.client.EntryPoint;
-import com.google.gwt.core.client.ScriptInjector;
 
 /**
  * @author Sven Jacobs
  */
-public class GwtBootstrap3DemoEntryPoint implements EntryPoint {
+public final class Styles {
 
-    @Override
-    public void onModuleLoad() {
-        ScriptInjector.fromString(GwtBootstrap3DemoClientBundle.INSTANCE.prettify().getText())
-                .setWindow(ScriptInjector.TOP_WINDOW)
-                .inject();
+    public static final String PRETTYPRINT = "prettyprint";
+
+    private Styles() {
     }
 }

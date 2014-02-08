@@ -18,7 +18,8 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-             xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
     <b:Row>
 
@@ -36,13 +37,13 @@
                 </b:InputGroup>
             </b:PanelBody>
             <b:PanelFooter>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:InputGroup&gt;\n
                     \s\s&lt;b:InputGroupAddon&gt;P&lt;/b:InputGroupAddon&gt;\n
                     \s\s&lt;b:TextBox placeholder="Type here" autocomplete="false"/&gt;\n
                     \s\s&lt;b:InputGroupAddon&gt;A&lt;/b:InputGroupAddon&gt;\n
                     &lt;/b:InputGroup&gt;
-                </b:Pre>
+                </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
 
@@ -58,13 +59,13 @@
                 </b:InputGroup>
             </b:PanelBody>
             <b:PanelFooter>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:InputGroup&gt;\n
                     \s\s&lt;b:InputGroupAddon icon=&quot;USER&quot;/&gt;\n
                     \s\s&lt;b:TextBox placeholder=&quot;Type here&quot; autocomplete=&quot;false&quot;/&gt;\n
                     \s\s&lt;b:InputGroupAddon icon=&quot;FACEBOOK&quot;/&gt;\n
                     &lt;/b:InputGroup&gt;
-                </b:Pre>
+                </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
 
@@ -80,13 +81,13 @@
                 </b:InputGroup>
             </b:PanelBody>
             <b:PanelFooter>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:InputGroup&gt;\n
                     \s\s&lt;b:InputGroupAddon icon=&quot;USER&quot;&gt;User&lt;/b:InputGroupAddon&gt;\n
                     \s\s&lt;b:TextBox placeholder=&quot;Type here&quot; autocomplete=&quot;false&quot;/&gt;\n
                     \s\s&lt;b:InputGroupAddon icon=&quot;FACEBOOK&quot; iconPosition=&quot;RIGHT&quot;&gt;Facebook&lt;/b:InputGroupAddon&gt;\n
                     &lt;/b:InputGroup&gt;
-                </b:Pre>
+                </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
 
@@ -115,7 +116,7 @@
                 </b:Row>
             </b:PanelBody>
             <b:PanelFooter>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:InputGroup&gt;\n
                     \s\s&lt;b:InputGroupButton&gt;\n
                     \s\s\s\s&lt;b:CheckButton&gt;\n
@@ -129,7 +130,7 @@
                     \s\s&lt;/b:InputGroupButton&gt;\n
                     \s\s&lt;b:TextBox placeholder="Type here" autocomplete="false"/&gt;\n
                     &lt;/b:InputGroup&gt;\n
-                </b:Pre>
+                </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
 
@@ -146,14 +147,14 @@
                 </b:InputGroup>
             </b:PanelBody>
             <b:PanelFooter>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:InputGroup&gt;\n
                     \s\s&lt;b:InputGroupButton&gt;\n
                     \s\s\s\s&lt;b:Button text="..."&gt;\n
                     \s\s&lt;/b:InputGroupButton&gt;\n
                     \s\s&lt;b:TextBox placeholder="Type here" autocomplete="false"/&gt;\n
                     &lt;/b:InputGroup&gt;
-                </b:Pre>
+                </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
 

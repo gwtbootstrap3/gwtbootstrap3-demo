@@ -18,7 +18,8 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-             xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
     <b:Row>
 
@@ -37,13 +38,13 @@
                 </b:ListGroup>
             </b:PanelBody>
             <b:PanelFooter>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:ListGroup&gt;\n
                     \s\s&lt;b:ListGroupItem text=""/&gt;\n
                     \s\s&lt;b:ListGroupItem text=""/&gt;\n
                     \s\s&lt;b:ListGroupItem text=""/&gt;\n
                     &lt;/b:ListGroup&gt;\n
-                </b:Pre>
+                </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
 
@@ -68,7 +69,7 @@
                 </b:ListGroup>
             </b:PanelBody>
             <b:PanelFooter>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:ListGroup&gt;\n
                     \s\s&lt;b:ListGroupItem text=""&gt;\n
                     \s\s\s\s&lt;b:Badge text=""/&gt;\n
@@ -80,7 +81,7 @@
                     \s\s\s\s&lt;b:Badge text=""/&gt;\n
                     \s\s&lt;/b:ListGroupItem&gt;\n
                     &lt;/b:ListGroup&gt;
-                </b:Pre>
+                </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
 
@@ -97,13 +98,13 @@
                 </b:LinkedGroup>
             </b:PanelBody>
             <b:PanelFooter>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:LinkedGroup&gt;\n
                     \s\s&lt;b:LinkedGroupItem active="true" text=""/&gt;\n
                     \s\s&lt;b:LinkedGroupItem text=""/&gt;\n
                     \s\s&lt;b:LinkedGroupItem text=""/&gt;\n
                     &lt;/b:LinkedGroup&gt;
-                </b:Pre>
+                </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
 
@@ -128,7 +129,7 @@
                 </b:LinkedGroup>
             </b:PanelBody>
             <b:PanelFooter>
-                <b:Pre addStyleNames="prettyprint lang-xml">
+                <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:LinkedGroup&gt;\n
                     \s\s&lt;b:LinkedGroupItem active="true"&gt;\n
                     \s\s\s\s&lt;b:LinkedGroupItemHeading size="3" text="..."/&gt;\n
@@ -143,7 +144,7 @@
                     \s\s\s\s&lt;b:LinkedGroupItemText text="..."/&gt;\n
                     \s\s&lt;/b:LinkedGroupItem&gt;\n
                     &lt;/b:LinkedGroup&gt;
-                </b:Pre>
+                </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
 
