@@ -236,9 +236,6 @@
                         The choices of tab position are: LEFT, RIGHT, BELOW, TOP (default).
                         <br/>
                         <br/>
-                        <b>** Note the position of the NavTabs and the TabContent on the BELOW example! **</b>
-                        <br/>
-                        <br/>
                     </b:Paragraph>
                     <b:FluidContainer>
                         <b:Row>
@@ -269,6 +266,7 @@
                                             </b:Paragraph>
                                         </b:TabPane>
                                     </b:TabContent>
+                                    <b:ClearFix/>
                                 </b:TabPanel>
                             </b:Column>
                             <b:Column size="MD_6">
@@ -298,6 +296,7 @@
                                             </b:Paragraph>
                                         </b:TabPane>
                                     </b:TabContent>
+                                    <b:ClearFix/>
                                 </b:TabPanel>
                             </b:Column>
                             <b:Column size="XS_12">
@@ -334,6 +333,8 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <b:Heading size="4">Left</b:Heading>
+                    <b:Paragraph>** Make sure to include a ClearFix after the TabContent to ensure proper heights!
+                    </b:Paragraph>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:TabPanel tabPosition="LEFT"&gt;\n
                         \s\s &lt;b:NavTabs&gt;\n
@@ -353,9 +354,12 @@
                         \s\s\s\s\s\s...\n
                         \s\s\s\s&lt;/b:TabPane&gt;\n
                         \s\s&lt;/b:TabContent&gt;\n
+                        \s\s&lt;b:ClearFix/&gt;\n
                         &lt;/b:TabPanel&gt;\n
                     </d:PrettyPre>
                     <b:Heading size="4">Right</b:Heading>
+                    <b:Paragraph>** Make sure to include a ClearFix after the TabContent to ensure proper heights!
+                    </b:Paragraph>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:TabPanel tabPosition="RIGHT"&gt;\n
                         \s\s &lt;b:NavTabs&gt;\n
@@ -375,9 +379,11 @@
                         \s\s\s\s\s\s...\n
                         \s\s\s\s&lt;/b:TabPane&gt;\n
                         \s\s&lt;/b:TabContent&gt;\n
+                        \s\s&lt;b:ClearFix/&gt;\n
                         &lt;/b:TabPanel&gt;\n
                     </d:PrettyPre>
-                    <b:Heading size="4">Below (** CHECK THE POSITIONING OF CHILDREN **)</b:Heading>
+                    <b:Heading size="4">Below</b:Heading>
+                    <b:Paragraph>** Make sure to place the NavTabs BELOW the TabContent for BELOW tabs!</b:Paragraph>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:TabPanel tabPosition="BELOW"&gt;\n
                         \s\s&lt;b:TabContent&gt;\n
