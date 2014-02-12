@@ -53,16 +53,16 @@
                             <b:ListDropDown>
                                 <b:AnchorButton toggle="DROPDOWN">CSS</b:AnchorButton>
                                 <b:DropDownMenu>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getGridSystem}">Grid System</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getTypography}">Typography</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getCode}">Code</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getTables}">Tables</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getForms}">Forms</b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getButtons}">Buttons</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getCode}">Code</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getForms}">Forms</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getGridSystem}">Grid System</b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getImages}">Images</b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getResponsiveUtilities}">Responsive
                                         Utilities
                                     </b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getTables}">Tables</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getTypography}">Typography</b:ListItem>
                                 </b:DropDownMenu>
                             </b:ListDropDown>
                             <b:ListDropDown>
@@ -83,8 +83,8 @@
                                     <b:ListItem targetHistoryToken="{nameTokens.getJumbotron}">Jumbotron</b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getLabels}">Labels</b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getListGroup}">List Group</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getMediaObjects}">Media Objects
-                                    </b:ListItem>
+                                    <!--<b:ListItem targetHistoryToken="{nameTokens.getMediaObjects}">Media Objects-->
+                                    <!--</b:ListItem>-->
                                     <b:ListItem targetHistoryToken="{nameTokens.getNavbar}">Navbar</b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getNavs}">Navs</b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getPageHeader}">Page Header</b:ListItem>
@@ -99,7 +99,7 @@
                             <b:ListDropDown>
                                 <b:AnchorButton toggle="DROPDOWN">JavaScript</b:AnchorButton>
                                 <b:DropDownMenu>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getAffix}">Affix</b:ListItem>
+                                    <!--<b:ListItem targetHistoryToken="{nameTokens.getAffix}">Affix</b:ListItem>-->
                                     <b:ListItem targetHistoryToken="{nameTokens.getCarousel}">Carousel</b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getCollapse}">Collapse</b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getModals}">Modals</b:ListItem>
