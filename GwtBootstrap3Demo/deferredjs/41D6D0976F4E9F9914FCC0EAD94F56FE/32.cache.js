@@ -1,0 +1,57 @@
+function p9b(){}
+function E9b(){}
+function H9b(){}
+function Kic(){}
+function dic(){cic()}
+function jic(){iic()}
+function Bhc(){Ahc()}
+function Hhc(){Ghc()}
+function Nhc(){Mhc()}
+function Thc(){Shc()}
+function Zhc(){Yhc()}
+function tic(a,b){a.d=b}
+function X8b(a){this.b=a}
+function $8b(a){this.b=a}
+function b9b(a){this.b=a}
+function e9b(a){this.b=a}
+function h9b(a){this.b=a}
+function k9b(a){this.b=a}
+function n9b(a){this.b=a}
+function u9b(a){this.b=a}
+function x9b(a){this.b=a}
+function A9b(a){this.b=a}
+function Ahc(){Ahc=Lic;zhc=new Ir}
+function Ghc(){Ghc=Lic;Fhc=new Ir}
+function Mhc(){Mhc=Lic;Lhc=new Ir}
+function Shc(){Shc=Lic;Rhc=new Ir}
+function Yhc(){Yhc=Lic;Xhc=new Ir}
+function cic(){cic=Lic;bic=new Ir}
+function iic(){iic=Lic;hic=new Ir}
+function I9b(){I9b=Lic;D9b=new H9b}
+function Iic(a){a.b=true;return a}
+function Hic(a,b,c){a&&Li(b,[c,[c]])}
+function Fic(a,b,c){a&&(b.push(c),undefined)}
+function sic(a,b){$wnd.jQuery(a).code(b)}
+function oic(a){$wnd.jQuery(a).destroy()}
+function pic(a){return $wnd.jQuery(a).code()}
+function K8b(a,b,c){Zcb.call(this,a,b,c,(_Rb(),$Rb))}
+function Z9b(a){var b;if(!a.q){b=new U8b(new p9b);a.q=b}return a.q}
+function g9b(a){var b;b=new evb;Zm(b.ab,'Key Up Event Fired!');a.b.g.sd(b)}
+function j9b(a){var b;b=new evb;Zm(b.ab,'Key Down Event Fired!');a.b.g.sd(b)}
+function d9b(a){var b;b=new evb;Zm(b.ab,'Blur Event Fired!');a.b.g.sd(b)}
+function a9b(a){var b;b=new evb;Zm(b.ab,'Focus Event Fired!');a.b.g.sd(b)}
+function Z8b(a){var b;b=new evb;Zm(b.ab,'Enter Event Fired!');a.b.g.sd(b)}
+function W8b(a){var b;b=new evb;Zm(b.ab,'Initialized Event Fired!');a.b.g.sd(b)}
+function m9b(a){var b;b=new evb;Zm(b.ab,'Image Upload Event Fired!');a.b.g.sd(b)}
+function ric(a){oic(a.ab);qic(a,a.ab,a.c,false,Gic(a.d));a.b!=null&&sic(a.ab,a.b)}
+function Dic(){uyb.call(this,$doc.createElement(euc));this.ab[glc]=Lqc;this.d=Jic(new Kic)}
+function s9b(a){this.b=new u9b(this);this.c=new x9b(this);this.d=new A9b(this);this.e=a;this.f=(new E9b,I9b(),D9b);G9b(this.f)}
+function T8b(a){if(Uib(a.d.e.f.b.data,yvc)){ryb(a.c,true);srb(a.d,'Disable')}else{ryb(a.c,false);srb(a.d,yvc)}ric(a.c)}
+function Y9b(a){var b;if(!a.p){b=new K8b(gcb(Ddb(a.b)),Z9b(a),X9b(a));ycb((Edb(a.b),b),Pdb(Edb(a.b)));a.p=b}return a.p}
+function Jic(a){a.t=true;a.b=true;a.p=true;a.u=true;a.c=true;a.f=true;a.e=true;a.v=true;a.r=true;a.s=true;a.q=true;a.k=true;a.j=true;a.n=true;a.o=true;a.d=true;a.g=true;a.i=true;return a}
+function qic(g,b,c,d,e){var f=g;$wnd.jQuery(b).summernote({height:c,focus:d,toolbar:e,oninit:function(a){f.Ie(a)},onenter:function(a){f.Fe(a)},onfocus:function(a){f.Ge(a)},onblur:function(a){f.Ee(a)},onkeyup:function(a){f.Ke(a)},onkeydown:function(a){f.Je(a)},onImageUpload:function(a){f.He(a)}})}
+function G9b(a){if(!a.b){a.b=true;Tq();Wq((Vt(),'.GMIQW-EDDK{background-color:#fcf2f2;border-color:#dfb5b4;}.GMIQW-EDGK{margin-top:0 !important;}.GMIQW-EDHK{margin-top:10px;}.GMIQW-EDEK{border:1px solid #888;padding:5px;}.GMIQW-EDFK{margin-right:10px;}.GMIQW-EDCK{margin-bottom:10px;}'));return true}return false}
+function U8b(){this.b=new Dic;this.b.c=200;tic(this.b,Iic(new Kic));this.f=new Dic;this.f.b='<b>This is custom code<\/b><u>OH YA<\/u>';rdb(this,r9b(new s9b(this)));qV(this.e,new X8b(this),(Ahc(),Ahc(),zhc));qV(this.e,new $8b(this),(Mhc(),Mhc(),Lhc));qV(this.e,new b9b(this),(Shc(),Shc(),Rhc));qV(this.e,new e9b(this),(Ghc(),Ghc(),Fhc));qV(this.e,new h9b(this),(iic(),iic(),hic));qV(this.e,new k9b(this),(cic(),cic(),bic));qV(this.e,new n9b(this),(Yhc(),Yhc(),Xhc))}
+function Gic(a){var b,c,d,e,f;b=[];Hic(a.t,b,Mkc);c=[];Fic(a.b,c,'bold');Fic(a.p,c,'italic');Fic(a.u,c,'underline');Fic(a.c,c,'clear');!Ki(c).length||Li(b,[Mkc,c]);Hic(a.f,b,'fontsize');Hic(a.e,b,Sqc);d=[];Fic(a.v,d,amc);Fic(a.r,d,zvc);Fic(a.s,d,'paragraph');!Ki(d).length||Li(b,['para',d]);Hic(a.q,b,blc);e=[];Fic(a.k,e,'picture');Fic(a.j,e,Vsc);Fic(a.o,e,'video');!Ki(e).length||Li(b,['insert',e]);Hic(a.n,b,guc);f=[];Fic(a.g,f,'fullscreen');Fic(a.d,f,'codeview');!Ki(f).length||Li(b,['view',f]);Hic(a.i,b,'help');return b}
+function r9b(a){var b,c,d,e,f,g,i,j,k,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,$,ab,bb,cb,db,eb,fb,gb,hb,ib,jb,kb,lb,mb,nb,ob,pb,qb,rb,sb,tb,ub,vb;b=new Mxb;Wqb(b,(c=new wtb(Woc),Wqb(c,(d=new Hwb,d.b='Summernote WYSIWYG Editor',Gwb(d),d)),Wqb(c,(e=new Drb,Wqb(e,(f=new rub(4),lV(f.ab,'GMIQW-EDGK',true),lyb(f.d,dvc),f)),Wqb(e,(g=new evb,dvb(g,(u=new Cjb,u.b.b+='To use Summernote, you must first add the extras module to your project. In Maven:',new QS(u.b.b)).b),g)),Wqb(e,(i=new bgc,Dxb(i,(v=new Cjb,v.b.b+=evc,new QS(v.b.b)).b),lV(i.ab,$oc,true),i)),Wqb(e,(j=new evb,dvb(j,(w=new Cjb,w.b.b+=fvc,new QS(w.b.b)).b),j)),Wqb(e,(k=new bgc,Dxb(k,(x=new Cjb,x.b.b+='&lt;inherits name="org.gwtbootstrap3.extras.summernote.Summernote"/&gt;',new QS(x.b.b)).b),lV(k.ab,$oc,true),k)),Wqb(e,(n=new evb,dvb(n,(y=new Cjb,y.b.b+="Last but not least must add this namespace to your *.ui.xml (don't have to name it summer):",new QS(y.b.b)).b),n)),Wqb(e,(o=new bgc,Dxb(o,(z=new Cjb,z.b.b+='xmlns:summer="urn:import:org.gwtbootstrap3.extras.summernote.client.ui"',new QS(z.b.b)).b),lV(o.ab,$oc,true),o)),lV(e.ab,'GMIQW-EDDK',true),e)),Wqb(c,(p=new Pwb,Wqb(p,(A=new _wb,$wb(A,(B=new rub(3),lyb(B.d,Xoc),B)),A)),Wqb(p,(C=new Swb,Wqb(C,new Dic),C)),Wqb(p,(D=new Wwb,Wqb(D,(E=new bgc,Dxb(E,(F=new Cjb,F.b.b+='&lt;summer:Summernote/&gt;',new QS(F.b.b)).b),lV(E.ab,$oc,true),E)),D)),p)),Wqb(c,(q=new Pwb,Wqb(q,(G=new _wb,$wb(G,(H=new rub(3),lyb(H.d,'Custom Toolbar / Sizing'),H)),G)),Wqb(q,(I=new Swb,Wqb(I,a.e.b),I)),Wqb(q,(J=new Wwb,Wqb(J,(K=new rub(4),lyb(K.d,Cqc),K)),Wqb(J,(L=new bgc,Dxb(L,(M=new Cjb,M.b.b+='&lt;summer:Summernote ui:field="customToolbar"/&gt;',new QS(M.b.b)).b),lV(L.ab,$oc,true),L)),Wqb(J,(N=new rub(4),lyb(N.d,Dqc),N)),Wqb(J,(O=new bgc,Dxb(O,(P=new Cjb,P.b.b+='@UiField(provided = true)\\n Summernote customToolbar;\\n\\n customToolbar = new Summernote();\\n customToolbar.setHeight(200);\\n customToolbar.setToolbar(new Toolbar()\\n \\s\\s.setShowBoldButton(true));',new QS(P.b.b)).b),lV(O.ab,Eqc,true),O)),J)),q)),Wqb(c,(r=new Pwb,Wqb(r,(Q=new _wb,$wb(Q,(R=new rub(3),lyb(R.d,'Get/Set Code'),R)),Q)),Wqb(r,(S=new Swb,Wqb(S,a.e.f),Wqb(S,(T=new Qrb,lV(T.ab,'GMIQW-EDHK',true),Fzb(T.e,'Get Code'),lV(T.ab,Gqc,true),ozb(T,pH,(TAb(),QAb)),pV(T,a.b,(yr(),yr(),xr)),T)),S)),Wqb(r,(U=new Wwb,Wqb(U,(V=new rub(4),lyb(V.d,Cqc),V)),Wqb(U,(W=new bgc,Dxb(W,(X=new Cjb,X.b.b+='&lt;summer:Summernote ui:field="getSetCode"/&gt;',new QS(X.b.b)).b),lV(W.ab,$oc,true),W)),Wqb(U,(Y=new rub(4),lyb(Y.d,Dqc),Y)),Wqb(U,(Z=new bgc,Dxb(Z,($=new Cjb,$.b.b+='@UiField(provided = true)\\n Summernote getSetCode;\\n\\n getSetCode = new Summernote();\\n getSetCode.setCode(" <b>This is custom code<\/b> <u>OH YA<\/u>");\\n\\n Click Handler\\n Window.alert(getSetCode.getCode());',new QS($.b.b)).b),lV(Z.ab,Eqc,true),Z)),U)),r)),Wqb(c,(s=new Pwb,Wqb(s,(ab=new _wb,$wb(ab,(bb=new rub(3),lyb(bb.d,'Enable/Disable'),bb)),ab)),Wqb(s,(cb=new Swb,Wqb(cb,(db=new Qrb,lV(db.ab,'GMIQW-EDCK',true),Fzb(db.e,yvc),ozb(db,pH,QAb),pV(db,a.d,xr),a.e.d=db,db)),Wqb(cb,(eb=new Dic,zzb(eb.e,false),a.e.c=eb,eb)),cb)),Wqb(s,(fb=new Wwb,Wqb(fb,(gb=new rub(4),lyb(gb.d,Cqc),gb)),Wqb(fb,(hb=new bgc,Dxb(hb,(ib=new Cjb,ib.b.b+='&lt;summer:Summernote enabled="false" ui:field="enableDisable"/&gt;',new QS(ib.b.b)).b),lV(hb.ab,$oc,true),hb)),Wqb(fb,(jb=new rub(4),lyb(jb.d,Dqc),jb)),Wqb(fb,(kb=new bgc,Dxb(kb,(lb=new Cjb,lb.b.b+='Click Handler\\n enableDisable.setEnabled(true|false);\\n enableDisable.reconfigure();',new QS(lb.b.b)).b),lV(kb.ab,Eqc,true),kb)),fb)),s)),Wqb(c,(t=new Pwb,Wqb(t,(mb=new _wb,$wb(mb,(nb=new rub(3),lyb(nb.d,ovc),nb)),mb)),Wqb(t,(ob=new Swb,Wqb(ob,(pb=new Mxb,Wqb(pb,(qb=new wtb(Epc),Wqb(qb,(rb=new Dic,a.e.e=rb,rb)),qb)),Wqb(pb,(sb=new wtb(Dpc),Wqb(sb,(tb=new Frb,lV(tb.ab,'GMIQW-EDFK',true),Zm(tb.ab,pvc),tb)),Wqb(sb,(ub=new Qrb,lV(ub.ab,bqc,true),Fzb(ub.e,qvc),pV(ub,a.c,xr),ub)),Wqb(sb,(vb=new g6,a.e.g=vb,vb)),lV(sb.ab,'GMIQW-EDEK',true),sb)),pb)),ob)),t)),c));return b}
+var yvc='Enable',Bvc='org.gwtbootstrap3.extras.summernote.client.event.',Avc='org.gwtbootstrap3.extras.summernote.client.ui.base.';MR(769,770,xjc);MR(1196,514,Ajc,K8b);MR(1199,519,Bjc,U8b);_.b=null;_.c=null;_.d=null;_.e=null;_.f=null;_.g=null;MR(1200,1,{30:1,170:1},X8b);_.b=null;MR(1201,1,{30:1,172:1},$8b);_.b=null;MR(1202,1,{30:1,173:1},b9b);_.b=null;MR(1203,1,{30:1,171:1},e9b);_.b=null;MR(1204,1,{30:1,176:1},h9b);_.b=null;MR(1205,1,{30:1,175:1},k9b);_.b=null;MR(1206,1,{30:1,174:1},n9b);_.b=null;MR(1207,1,{},p9b);MR(1208,1,{},s9b);_.e=null;_.f=null;MR(1209,1,rjc,u9b);_.Ib=function v9b(a){k2(pic(this.b.e.f.ab))};_.b=null;MR(1210,1,rjc,x9b);_.Ib=function y9b(a){f6(this.b.e.g)};_.b=null;MR(1211,1,rjc,A9b);_.Ib=function B9b(a){T8b(this.b.e)};_.b=null;MR(1212,1,{},E9b);var D9b=null;MR(1213,1,{},H9b);_.b=false;MR(1224,1,Ujc);_.wb=function Bac(){gfb(this.c,Y9b(this.b.b))};MR(1345,217,{},Bhc);_.Eb=function Chc(a){W8b(Eu(a,170))};_.Fb=function Dhc(){return zhc};var zhc;MR(1346,217,{},Hhc);_.Eb=function Ihc(a){d9b(Eu(a,171))};_.Fb=function Jhc(){return Fhc};var Fhc;MR(1347,217,{},Nhc);_.Eb=function Ohc(a){Z8b(Eu(a,172))};_.Fb=function Phc(){return Lhc};var Lhc;MR(1348,217,{},Thc);_.Eb=function Uhc(a){a9b(Eu(a,173))};_.Fb=function Vhc(){return Rhc};var Rhc;MR(1349,217,{},Zhc);_.Eb=function $hc(a){m9b(Eu(a,174))};_.Fb=function _hc(){return Xhc};var Xhc;MR(1350,217,{},dic);_.Eb=function eic(a){j9b(Eu(a,175))};_.Fb=function fic(){return bic};var bic;MR(1351,217,{},jic);_.Eb=function kic(a){g9b(Eu(a,176))};_.Fb=function lic(){return hic};var hic;MR(1353,769,xjc);_.Ee=function uic(a){rV(this,new Hhc)};_.Fe=function vic(a){rV(this,new Nhc)};_.Ge=function wic(a){rV(this,new Thc)};_.He=function xic(a){rV(this,new Zhc)};_.Ie=function yic(a){rV(this,new Bhc)};_.Je=function zic(a){rV(this,new dic)};_.Ke=function Aic(a){rV(this,new jic)};_.fc=function Bic(){qic(this,this.ab,this.c,false,Gic(this.d));this.b!=null&&sic(this.ab,this.b)};_.gc=function Cic(){oic(this.ab)};_.b=null;_.c=100;MR(1352,1353,xjc,Dic);MR(1354,1,{},Kic);_.b=false;_.c=false;_.d=false;_.e=false;_.f=false;_.g=false;_.i=false;_.j=false;_.k=false;_.n=false;_.o=false;_.p=false;_.q=false;_.r=false;_.s=false;_.t=false;_.u=false;_.v=false;var CN=$hb(poc,'SummernotePresenter',1196),RN=$hb(poc,'SummernoteView',1199),DN=$hb(poc,'SummernoteView$1',1200),EN=$hb(poc,'SummernoteView$2',1201),FN=$hb(poc,'SummernoteView$3',1202),GN=$hb(poc,'SummernoteView$4',1203),HN=$hb(poc,'SummernoteView$5',1204),IN=$hb(poc,'SummernoteView$6',1205),JN=$hb(poc,'SummernoteView$7',1206),QN=$hb(poc,'SummernoteView_BinderImpl',1207),NN=$hb(poc,'SummernoteView_BinderImpl$Widgets',1208),KN=$hb(poc,'SummernoteView_BinderImpl$Widgets$1',1209),LN=$hb(poc,'SummernoteView_BinderImpl$Widgets$2',1210),MN=$hb(poc,'SummernoteView_BinderImpl$Widgets$3',1211),yG=$hb(Ioc,'TextArea',769),$P=$hb(Avc,'SummernoteBase',1353),ZP=$hb('org.gwtbootstrap3.extras.summernote.client.ui.',Nnc,1352),_P=$hb(Avc,'Toolbar',1354),SP=$hb(Bvc,'SummernoteInitializedEvent',1345),UP=$hb(Bvc,'SummernoteOnEnterEvent',1347),VP=$hb(Bvc,'SummernoteOnFocusEvent',1348),TP=$hb(Bvc,'SummernoteOnBlurEvent',1346),YP=$hb(Bvc,'SummernoteOnKeyUpEvent',1351),XP=$hb(Bvc,'SummernoteOnKeyDownEvent',1350),WP=$hb(Bvc,'SummernoteOnImageUploadEvent',1349),PN=$hb(poc,'SummernoteView_BinderImpl_GenBundle_default_InlineClientBundleGenerator',1212),ON=$hb(poc,'SummernoteView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1',1213);Yjc(jj)(32);
