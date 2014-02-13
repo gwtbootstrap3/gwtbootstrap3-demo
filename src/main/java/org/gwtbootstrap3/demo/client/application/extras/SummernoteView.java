@@ -52,6 +52,10 @@ public class SummernoteView extends ViewImpl implements SummernotePresenter.MyVi
     Button clearLogButton;
     @UiField
     FlowPanel logRow;
+    @UiField
+    Button enableDisableButton;
+    @UiField
+    Summernote enableDisable;
 
     @UiHandler("getCode")
     public void handleClick(ClickEvent event) {
@@ -61,6 +65,18 @@ public class SummernoteView extends ViewImpl implements SummernotePresenter.MyVi
     @UiHandler("clearLogButton")
     public void handleClearLog(final ClickEvent event) {
         logRow.clear();
+    }
+
+    @UiHandler("enableDisableButton")
+    public void handleEnableDisable(final ClickEvent event) {
+        if (enableDisableButton.getText().equals("Enable")) {
+            enableDisable.setEnabled(true);
+            enableDisableButton.setText("Disable");
+        } else {
+            enableDisable.setEnabled(false);
+            enableDisableButton.setText("Enable");
+        }
+        enableDisable.reconfigure();
     }
 
     interface Binder extends UiBinder<Widget, SummernoteView> {

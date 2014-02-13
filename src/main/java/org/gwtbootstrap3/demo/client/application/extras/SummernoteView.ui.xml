@@ -45,6 +45,10 @@
         .logTitle {
             margin-right: 10px;
         }
+
+        .button {
+            margin-bottom: 10px;
+        }
     </ui:style>
 
     <b:Row>
@@ -159,7 +163,33 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Events"/>
+                    <b:Heading size="3" text="Enable/Disable"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Button type="PRIMARY" text="Enable" ui:field="enableDisableButton"
+                              addStyleNames="{style.button}"/>
+                    <summer:Summernote enabled="false" ui:field="enableDisable"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <b:Heading size="4" text="UiBinder"/>
+
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;summer:Summernote enabled="false" ui:field="enableDisable"/&gt;
+                    </d:PrettyPre>
+
+                    <b:Heading size="4" text="Java code"/>
+
+                    <d:PrettyPre addStyleNames="lang-java">
+                        Click Handler\n
+                        enableDisable.setEnabled(true|false);\n
+                        enableDisable.reconfigure();
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                <b:Heading size="3" text="Events"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
