@@ -1,0 +1,38 @@
+function Qac(){}
+function Sac(){}
+function Yac(){}
+function _ac(){}
+function _ic(a,b){a.e=b}
+function Zic(a,b){a.a=b}
+function $ic(a,b){a.b=b}
+function Lkb(a){this.a=a}
+function tjc(){rjc();return njc}
+function Ajc(){yjc();return vjc}
+function Ijc(){Gjc();return Cjc}
+function Qjc(){Ojc();return Kjc}
+function abc(){abc=blc;Xac=new _ac}
+function cjc(a,b){$wnd.jQuery(a).slider(b)}
+function ajc(a,b){$wnd.jQuery(a).slider(g7c,b)}
+function sjc(a,b,c){Mn.call(this,a,b);this.a=c}
+function zjc(a,b,c){Mn.call(this,a,b);this.a=c}
+function Hjc(a,b,c){Mn.call(this,a,b);this.a=c}
+function Pjc(a,b,c){Mn.call(this,a,b);this.a=c}
+function Fac(a,b,c){wfb.call(this,a,b,c,(tUb(),sUb))}
+function kjc(a,b){this.a=a;this.c=b;this.b=false}
+function icb(a,b){SAb(a);a._[cOc]=b!=null?b:smc}
+function bjc(a,b){icb(a.i,smc+b.a);a.W&&nk((ak(),new kjc(a,b)),100)}
+function Oac(){Qfb(this,Uac(new Vac(this)));Zic(this.a,new Qac)}
+function Vac(a){this.a=a;this.b=(new Yac,abc(),Xac);$ac(this.b)}
+function kcc(a){var b;if(!a.k){b=new Oac(new Sac);a.k=b}return a.k}
+function $ac(a){if(!a.a){a.a=true;qr();Ni(nr,j8c);ur();return true}return false}
+function djc(e,b,c){var d=e;$wnd.jQuery(b).slider(c).on(k8c,function(a){d.Oe(a.value)})}
+function yjc(){yjc=blc;wjc=new zjc(SGc,0,t8c);xjc=new zjc(UGc,1,u8c);vjc=$u(YR,llc,171,[wjc,xjc])}
+function rjc(){rjc=blc;ojc=new sjc(n8c,0,o8c);pjc=new sjc(p8c,1,q8c);qjc=new sjc(r8c,2,s8c);njc=$u(XR,llc,170,[ojc,pjc,qjc])}
+function Gjc(){Gjc=blc;Ejc=new Hjc(v8c,0,w8c);Djc=new Hjc(x8c,1,y8c);Fjc=new Hjc(qnc,2,rnc);Cjc=$u(ZR,llc,172,[Ejc,Djc,Fjc])}
+function Ojc(){Ojc=blc;Njc=new Pjc(z8c,0,b7c);Mjc=new Pjc(A8c,1,c7c);Ljc=new Pjc(B8c,2,C8c);Kjc=$u($R,llc,173,[Njc,Mjc,Ljc])}
+function jcc(a){var b;if(!a.j){b=new Fac(Feb(agb(a.a)),kcc(a),icc(a));Xeb((bgb(a.a),b),mgb(bgb(a.a)));a.j=b}return a.j}
+function ijc(){this.e=(yjc(),wjc);this.f=(Gjc(),Ejc);this.j=(Ojc(),Njc);this.b=(rjc(),ojc);this.i=new TAb;qW(this.i,Gm(this.i._,ypc));sW(this,this.i._);bjc(this,new Lkb(5))}
+function Jkb(a){var b;if(!(b=Ikb,!b&&(b=Ikb=/^\s*[+-]?(NaN|Infinity|((\d+\.?\d*)|(\.\d+))([eE][+-]?\d+)?[dDfF]?)\s*$/),b.test(a))){throw new mlb($$c+a+fWc)}return parseFloat(a)}
+function Yic(r,b,c,d,e,f,g,i,j,k,n,o){var p=r;var q={id:b,min:c,max:d,step:e,orientation:f,value:g,selection:i,tooltip:j,handle:k,reversed:n,enabled:o};q.formater=function(a){return p.Ne(a)};return q}
+function Uac(a){var b,c,d,e,f,g,i,j,k,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T;b=new kAb;vtb(b,(c=new Wvb(jEc),vtb(c,(d=new fzb,d.a=Xuc,ezb(d),d)),vtb(c,(e=new bub,vtb(e,(f=new Rwb(4),AW(f._,Y7c,true),LAb(f.c,N5c),f)),vtb(e,(g=new Exb,Dxb(g,(s=new bmb,Dk(s.a,Z7c),new eU(Ik(s.a))).a),g)),vtb(e,(i=new ric,bAb(i,(t=new bmb,Dk(t.a,P5c),new eU(Ik(t.a))).a),AW(i._,oEc,true),i)),vtb(e,(j=new Exb,Dxb(j,(u=new bmb,Dk(u.a,Q5c),new eU(Ik(u.a))).a),j)),vtb(e,(k=new ric,bAb(k,(v=new bmb,Dk(v.a,$7c),new eU(Ik(v.a))).a),AW(k._,oEc,true),k)),vtb(e,(n=new Exb,Dxb(n,(w=new bmb,Dk(w.a,_7c),new eU(Ik(w.a))).a),n)),vtb(e,(o=new ric,bAb(o,(x=new bmb,Dk(x.a,a8c),new eU(Ik(x.a))).a),AW(o._,oEc,true),o)),AW(e._,b8c,true),e)),vtb(c,(p=new nzb,vtb(p,(y=new zzb,yzb(y,(z=new Rwb(3),LAb(z.c,c8c),z)),y)),vtb(p,(A=new qzb,vtb(A,new ijc),A)),vtb(p,(B=new uzb,vtb(B,(C=new ric,bAb(C,(D=new bmb,Dk(D.a,d8c),new eU(Ik(D.a))).a),AW(C._,oEc,true),C)),B)),p)),vtb(c,(q=new nzb,vtb(q,(E=new zzb,yzb(E,(F=new Rwb(3),LAb(F.c,e8c),F)),E)),vtb(q,(G=new qzb,vtb(G,(H=new ijc,H.d=-150,$ic(H,(rjc(),pjc)),H.c=500,bjc(H,new Lkb(250)),H.g=5,a.a.a=H,H)),G)),vtb(q,(I=new uzb,vtb(I,(J=new ric,bAb(J,(K=new bmb,Dk(K.a,f8c),new eU(Ik(K.a))).a),AW(J._,oEc,true),J)),vtb(I,(L=new ric,bAb(L,(M=new bmb,Dk(M.a,g8c),new eU(Ik(M.a))).a),AW(L._,EMc,true),L)),I)),q)),vtb(c,(r=new nzb,vtb(r,(N=new zzb,yzb(N,(O=new Rwb(3),LAb(O.c,h8c),O)),N)),vtb(r,(P=new qzb,vtb(P,(Q=new ijc,_ic(Q,(yjc(),xjc)),Q)),P)),vtb(r,(R=new uzb,vtb(R,(S=new ric,bAb(S,(T=new bmb,Dk(T.a,i8c),new eU(Ik(T.a))).a),AW(S._,oEc,true),S)),R)),r)),c));return b}
+var l8c=' blocks',i8c='&lt;b3:Slider orientation="VERTICAL"/&gt;\\n',f8c='&lt;b3:Slider ui:field="customSlider" value="250.0" min="-150.0" max="500.0" step="5.0" handle="SQUARE"/&gt;\\n',d8c='&lt;b3:Slider/&gt;\\n',$7c='&lt;inherits name="org.gwtbootstrap3.extras.slider.Slider"/&gt;',j8c='.GMIQW-EDAK{background-color:#fcf2f2;border-color:#dfb5b4;}.GMIQW-EDBK{margin-top:0 !important;}',x8c='AFTER',B8c='ALWAYS',v8c='BEFORE',c8c='Basic Slider',e8c='Custom Slider',D8c='Double',b8c='GMIQW-EDAK',Y7c='GMIQW-EDBK',A8c='HIDE',Q8c='HandleType',S8c='HandleType;',_7c="Last but not least must add this namespace to your *.ui.xml (don't have to name it b3):",T8c='OrientationType',U8c='OrientationType;',n8c='ROUND',z8c='SHOW',V8c='SelectionType',W8c='SelectionType;',K8c='SliderBase',L8c='SliderBase$1',E8c='SliderPresenter',F8c='SliderView',G8c='SliderView$1',H8c='SliderView_BinderImpl',I8c='SliderView_BinderImpl$Widgets',N8c='SliderView_BinderImpl_GenBundle_default_StaticClientBundleGenerator',O8c='SliderView_BinderImpl_GenBundle_default_StaticClientBundleGenerator$1',r8c='TRIANGLE',Z7c='To use Slider, you must first add the extras module to your project. In Maven:',X8c='TooltipType',Y8c='TooltipType;',h8c='Vertical Slider',R8c='[Lorg.gwtbootstrap3.extras.slider.client.ui.base.constants.',y8c='after',C8c='always',w8c='before',g8c='customSlider.setFormatter(new FormatterCallback() {\\n \\s@Override\\n \\s\\spublic String toolTipMsg(double value) {\\n \\s\\s\\sint b = (int) (value * 10);\\n \\s\\s\\sreturn b + " blocks";\\n \\s\\s}\\n \\s});\\n',t8c='horizontal',M8c='org.gwtbootstrap3.extras.slider.client.ui.',J8c='org.gwtbootstrap3.extras.slider.client.ui.base.',P8c='org.gwtbootstrap3.extras.slider.client.ui.base.constants.',o8c='round',q8c='square',s8c='triangle',u8c='vertical',a8c='xmlns:b3="urn:import:org.gwtbootstrap3.extras.slider.client.ui"';var Ikb=null;zS(583,584,{93:1,96:1,97:1,104:1},Lkb);_.eQ=function Mkb(a){return jv(a,97)&&hv(a,97).a==this.a};_.hC=function Nkb(){return nv(this.a)};_.tS=function Okb(){return smc+this.a};_.a=0;zS(1197,528,Tlc,Fac);zS(1200,533,Ulc,Oac);_.a=null;zS(1201,1,{},Qac);zS(1202,1,{},Sac);zS(1203,1,{},Vac);_.a=null;_.b=null;zS(1204,1,{},Yac);var Xac=null;zS(1205,1,{},_ac);_.a=false;zS(1233,1,lmc);_.vb=function Kcc(){Fhb(this.b,jcc(this.a.a))};zS(1350,317,Alc);_.Ne=function ejc(a){var b;if(this.a)return b=nv(a*10),b+l8c;return smc+a};_.Oe=function fjc(a){vt(this,new Lkb(a))};_.jc=function gjc(){var a;a=Yic(this,this.i.a.a._.id,this.d,this.c,this.g,this.e.a,(new Lkb(Jkb(SAb(this.i)))).a,this.f.a,this.j.a,this.b.a,false,!this.i._[CFc]);djc(this,this._,a)};_.kc=function hjc(){cjc(this._,m8c)};_.a=null;_.c=10;_.d=0;_.g=1;_.i=null;zS(1349,1350,Alc,ijc);zS(1351,1,{},kjc);_.wb=function ljc(){if(this.a.W){ajc(this.a._,this.c.a);this.b&&vt(this.a,this.c);return false}else{return true}};_.a=null;_.b=false;_.c=null;zS(1352,159,{93:1,96:1,98:1,170:1},sjc);_.a=null;var njc,ojc,pjc,qjc;zS(1353,159,{93:1,96:1,98:1,171:1},zjc);_.a=null;var vjc,wjc,xjc;zS(1354,159,{93:1,96:1,98:1,172:1},Hjc);_.a=null;var Cjc,Djc,Ejc,Fjc;zS(1355,159,{93:1,96:1,98:1,173:1},Pjc);_.a=null;var Kjc,Ljc,Mjc,Njc;var UD=xkb(fvc,D8c,583),fO=xkb(dxc,E8c,1197),lO=xkb(dxc,F8c,1200),gO=xkb(dxc,G8c,1201),kO=xkb(dxc,H8c,1202),hO=xkb(dxc,I8c,1203),zQ=xkb(J8c,K8c,1350),yQ=xkb(J8c,L8c,1351),xQ=xkb(M8c,Xuc,1349),jO=xkb(dxc,N8c,1204),iO=xkb(dxc,O8c,1205),AQ=ykb(P8c,Q8c,1352,tjc),XR=wkb(R8c,S8c,1418),BQ=ykb(P8c,T8c,1353,Ajc),YR=wkb(R8c,U8c,1419),CQ=ykb(P8c,V8c,1354,Ijc),ZR=wkb(R8c,W8c,1426),DQ=ykb(P8c,X8c,1355,Qjc),$R=wkb(R8c,Y8c,1427);pmc(jj)(31);
