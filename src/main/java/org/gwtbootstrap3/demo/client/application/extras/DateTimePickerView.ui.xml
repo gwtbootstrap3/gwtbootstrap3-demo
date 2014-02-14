@@ -57,6 +57,13 @@
 
             <b:PageHeader text="DateTimePicker"/>
 
+            <b:BlockQuote>
+                <b:Bold>Original Library Link:</b:Bold>
+                <b:Anchor addStyleNames="{style.spacing}" href="http://eonasdan.github.io/bootstrap-datetimepicker/">
+                    Bootstrap DateTimePicker
+                </b:Anchor>
+            </b:BlockQuote>
+
             <b:BlockQuote addStyleNames="{style.danger}">
                 <b:Heading addStyleNames="{style.margin-fix}" size="4" text="Required for use"/>
                 <b:Paragraph>

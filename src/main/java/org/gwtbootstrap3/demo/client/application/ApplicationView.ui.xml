@@ -114,6 +114,7 @@
                                     <b:ListItem targetHistoryToken="{nameTokens.getDatetimePicker}">DateTimePicker
                                     </b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getBootbox}">Bootbox</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getSelect}">Select</b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getSlider}">Slider</b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getSummernote}">Summernote</b:ListItem>
                                 </b:DropDownMenu>

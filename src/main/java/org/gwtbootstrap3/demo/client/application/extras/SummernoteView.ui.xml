@@ -49,12 +49,22 @@
         .button {
             margin-bottom: 10px;
         }
+
+        .spacing2 {
+            margin-left: 5px;
+        }
     </ui:style>
 
     <b:Row>
         <b:Column size="XS_12">
 
             <b:PageHeader text="Summernote WYSIWYG Editor"/>
+
+            <b:BlockQuote>
+                <b:Bold>Original Library Link:</b:Bold>
+                <b:Anchor addStyleNames="{style.spacing2}" href="http://hackerwins.github.io/summernote/">Summernote
+                </b:Anchor>
+            </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
                 <b:Heading addStyleNames="{style.margin-fix}" size="4" text="Required for use"/>
@@ -189,7 +199,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                <b:Heading size="3" text="Events"/>
+                    <b:Heading size="3" text="Events"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>

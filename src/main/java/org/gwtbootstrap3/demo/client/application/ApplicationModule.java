@@ -90,5 +90,6 @@ public class ApplicationModule extends AbstractPresenterModule {
         bindPresenter(BootboxJSPresenter.class, BootboxJSPresenter.MyView.class, BootboxJSView.class, BootboxJSPresenter.MyProxy.class);
         bindPresenter(SliderPresenter.class, SliderPresenter.MyView.class, SliderView.class, SliderPresenter.MyProxy.class);
         bindPresenter(SummernotePresenter.class, SummernotePresenter.MyView.class, SummernoteView.class, SummernotePresenter.MyProxy.class);
+        bindPresenter(BootstrapSelectPresenter.class, BootstrapSelectPresenter.MyView.class, BootstrapSelectView.class, BootstrapSelectPresenter.MyProxy.class);
     }
 }

@@ -31,12 +31,23 @@
         .margin-fix {
             margin-top: 0 !important;
         }
+
+        .spacing {
+            margin-left: 5px;
+        }
     </ui:style>
 
     <b:Row>
         <b:Column size="XS_12">
 
             <b:PageHeader text="Slider"/>
+
+            <b:BlockQuote>
+                <b:Bold>Original Library Link:</b:Bold>
+                <b:Anchor addStyleNames="{style.spacing}" href="http://www.eyecon.ro/bootstrap-slider/">Bootstrap
+                    Slider
+                </b:Anchor>
+            </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
                 <b:Heading addStyleNames="{style.margin-fix}" size="4" text="Required for use"/>
