@@ -91,8 +91,8 @@
                     <b:Heading size="3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <select:Select multiple="true">
-                        <select:Option text="One"/>
+                    <select:Select>
+                    <select:Option text="One"/>
                         <select:Option text="Two"/>
                         <select:Option text="Three"/>
                     </select:Select>
