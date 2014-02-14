@@ -20,6 +20,8 @@ package org.gwtbootstrap3.demo.client.application.extras;
  * #L%
  */
 
+import com.google.gwt.event.dom.client.ChangeEvent;
+import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -47,6 +49,8 @@ public class BootstrapSelectView extends ViewImpl implements BootstrapSelectPres
     Button setValue;
     @UiField
     Button getValue;
+    @UiField
+    Button setValues;
 
     interface Binder extends UiBinder<Widget, BootstrapSelectView> {
     }
@@ -55,10 +59,25 @@ public class BootstrapSelectView extends ViewImpl implements BootstrapSelectPres
     BootstrapSelectView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
+        select.addChangeHandler(new ChangeHandler() {
+            @Override
+            public void onChange(ChangeEvent event) {
+                Window.alert("Changed: " + select.getAllSelectedValues());
+            }
+        });
+
         setValue.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
-                select.setValues(two, three);
+                select.setValue("One");
+                select.refresh();
+            }
+        });
+
+        setValues.addClickHandler(new ClickHandler() {
+            @Override
+            public void onClick(ClickEvent event) {
+                select.setValues(three, two);
                 select.refresh();
             }
         });
