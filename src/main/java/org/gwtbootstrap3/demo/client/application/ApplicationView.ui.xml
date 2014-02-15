@@ -119,8 +119,8 @@
                                     <b:ListItem targetHistoryToken="{nameTokens.getSummernote}">Summernote</b:ListItem>
                                 </b:DropDownMenu>
                             </b:ListDropDown>
-                            <b:ListItem text="Fork on GitHub" href="https://github.com/gwtbootstrap3/gwtbootstrap3"
-                                        ui:field="forkLink"/>
+                            <b:ListItem text="Fork on GitHub" href="https://github.com/gwtbootstrap3/gwtbootstrap3"/>
+                            <b:ListItem text="View Javadoc" href="apidocs/index.html"/>
                         </b:NavbarNav>
                     </b:NavbarCollapse>
                 </b:Container>
