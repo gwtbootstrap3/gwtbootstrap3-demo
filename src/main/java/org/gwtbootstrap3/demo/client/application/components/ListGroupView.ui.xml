@@ -49,7 +49,31 @@
             </b:PanelFooter>
         </b:Panel>
 
-        <b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Contextual Classes"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:ListGroup>
+                        <b:ListGroupItem type="SUCCESS" text="Cras justo odio"/>
+                        <b:ListGroupItem type="INFO" text="Dapibus ac facilisis in"/>
+                        <b:ListGroupItem type="WARNING" text="Morbi leo risus"/>
+                        <b:ListGroupItem type="DANGER" text="Vestibulum at eros"/>
+                    </b:ListGroup>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:ListGroup&gt;\n
+                        \s\s&lt;b:ListGroupItem type="SUCCESS" text=""/&gt;\n
+                        \s\s&lt;b:ListGroupItem type="INFO" text=""/&gt;\n
+                        \s\s&lt;b:ListGroupItem type="WARNING" text=""/&gt;\n
+                        \s\s&lt;b:ListGroupItem type="DANGER" text=""/&gt;\n
+                        &lt;/b:ListGroup&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
             <b:PanelHeader>
                 <b:Heading size="3" text="With Badges"/>
             </b:PanelHeader>
