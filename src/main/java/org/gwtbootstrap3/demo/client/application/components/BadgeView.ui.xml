@@ -40,7 +40,7 @@
             <b:PanelBody>
                 <g:FlowPanel addStyleNames="{style.labels}">
                     <g:HTMLPanel>
-                        <a href="#">Inbox
+                        <a href="#">Deleted Items
                             <b:Badge>42</b:Badge>
                         </a>
                     </g:HTMLPanel>
@@ -48,8 +48,36 @@
             </b:PanelBody>
             <b:PanelFooter>
                 <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;a href="#"&gt;Inbox\n
+                    &lt;a href="#"&gt;Deleted Items\n
                     \s\s&lt;b:Badge&gt;42&lt;/b:Badge&gt;\n
+                    &lt;/a&gt;
+                </d:PrettyPre>
+            </b:PanelFooter>
+        </b:Panel>
+
+         <b:Panel>
+            <b:PanelHeader>
+                <b:Heading size="3" text="Advanced"/>
+            </b:PanelHeader>
+            <b:PanelBody>
+                <g:FlowPanel addStyleNames="{style.labels}">
+                    <g:HTMLPanel>
+                        <a href="#">Inbox
+                            <b:Badge>12
+                                <b:Icon type="ENVELOPE"/>
+                                <i>unread</i>
+                            </b:Badge>
+                        </a>
+                    </g:HTMLPanel>
+                </g:FlowPanel>
+            </b:PanelBody>
+            <b:PanelFooter>
+                <d:PrettyPre addStyleNames="lang-xml">
+                    &lt;a href="#"&gt;Inbox\n
+                    \s\s&lt;b:Badge&gt;12\n
+                    \s\s\s&lt;b:Icon type="ENVELOPE"/&gt;\n
+                    \s\s\s&lt;i&gt;unread&lt;/i&gt;\n
+                    \s\s&lt;/b:Badge&gt;\n
                     &lt;/a&gt;
                 </d:PrettyPre>
             </b:PanelFooter>
