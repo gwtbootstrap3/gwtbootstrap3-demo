@@ -39,7 +39,7 @@
                         <b:ListItem icon="CAMERA">Action 2</b:ListItem>
                         <b:Divider/>
                         <b:DropDownHeader>Header 2</b:DropDownHeader>
-                        <b:ListItem icon="CREDIT_CARD" iconPosition="RIGHT">Action 3</b:ListItem>
+                        <b:ListItem icon="CREDIT_CARD" iconPosition="RIGHT" iconSpin="true">Action 3</b:ListItem>
                         <b:ListItem enabled="false">Action 4 (disabled)</b:ListItem>
                     </b:DropDownMenu>
                 </b:DropDown>
@@ -54,7 +54,7 @@
                     \s\s\s\s&lt;b:ListItem icon="CAMERA"&gt;Action 2&lt;/b:ListItem&gt;\n
                     \s\s\s\s&lt;b:Divider/&gt;\n
                     \s\s\s\s&lt;b:DropDownHeader&gt;Header 2&lt;/b:DropDownHeader&gt;\n
-                    \s\s\s\s&lt;b:ListItem icon="CREDIT_CARD" iconPosition="RIGHT"&gt;Action 3&lt;/b:ListItem&gt;\n
+                    \s\s\s\s&lt;b:ListItem icon="CREDIT_CARD" iconPosition="RIGHT" iconSpin="true"&gt;Action 3&lt;/b:ListItem&gt;\n
                     \s\s\s\s&lt;b:ListItem enabled="false"&gt;Action 4 (disabled)&lt;/b:ListItem&gt;\n
                     \s\s&lt;/b:DropDownMenu&gt;\n
                     &lt;/b:DropDown&gt;

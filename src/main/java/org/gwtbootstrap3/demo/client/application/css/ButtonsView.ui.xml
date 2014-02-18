@@ -98,11 +98,14 @@
                 <b:PanelBody addStyleNames="{style.spacing}">
                     <b:Button type="PRIMARY" text="With Icon" icon="STAR"/>
                     <b:Button type="PRIMARY" text="With Icon on Right" icon="STAR" iconPosition="RIGHT"/>
+                    <b:Button type="PRIMARY" text="With Icon with Properties" icon="STAR" iconSpin="true"
+                              iconBordered="true"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:Button type="PRIMARY" icon="STAR"/&gt;\n
                         &lt;b:Button type="PRIMARY" icon="STAR" iconPosition="RIGHT"/&gt;\n
+                        &lt;b:Button type="PRIMARY" icon="STAR" iconSpin="true" iconBordered="true"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>

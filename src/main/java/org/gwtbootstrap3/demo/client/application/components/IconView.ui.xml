@@ -41,6 +41,9 @@
                     For available icons please check out:
                     <a href="http://fontawesome.io/cheatsheet/">Font Awesome Cheat Sheet</a>
                 </b:Paragraph>
+                <b:Paragraph>
+                    Any widget that uses icons will have the properties to spin/flip/rotate/etc..
+                </b:Paragraph>
             </b:PanelBody>
         </b:Panel>
 
@@ -51,18 +54,25 @@
             <b:PanelBody>
                 <b:Icon type="GEAR"/>
                 <b:ClearFix/>
-                <b:SpanPanel>
+                <b:Span>
                     <b:Icon type="GEAR"/>
-                    <b:Text text="Icon with Text"/>
-                </b:SpanPanel>
+                    Icon With Text
+                </b:Span>
+                <b:Br/>
+                <b:Anchor icon="HEART" iconSpin="true">With Anchor</b:Anchor>
+
+                <b:Br/>
+                <b:Anchor icon="HEART" iconSpin="true"/>
             </b:PanelBody>
             <b:PanelFooter>
                 <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:Icon type="..."/&gt;\n\n
-                    &lt;b:SpanPanel&gt;\n
+                    &lt;b:Span&gt;\n
                     \s\s&lt;b:Icon type="..."/&gt;\n
-                    \s\s&lt;b:Text text="..."/&gt;\n
-                    &lt;/b:SpanPanel&gt;
+                    \s\s&lt;...&gt;\n
+                    &lt;/b:Span&gt;\n\n
+                    &lt;b:Anchor icon="..." iconSpin="true" text="..."/&gt;\n\n
+                    &lt;b:Anchor icon="..." iconSpin="true"/&gt;
                 </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
