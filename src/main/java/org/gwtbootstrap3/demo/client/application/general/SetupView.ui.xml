@@ -94,6 +94,23 @@
                     </d:PrettyPre>
                 </b:PanelBody>
             </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Support for IE8"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Paragraph>
+                        For support for IE8 you need to inherit the Respond module into your
+                        *.gwt.xml.
+                    </b:Paragraph>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;module&gt;\n
+                        \s\s&lt;inherits name="org.gwtbootstrap3.extras.respond.Respond"/&gt;\n
+                        &lt;/module&gt;\n
+                    </d:PrettyPre>
+                </b:PanelBody>
+            </b:Panel>
         </b:Column>
     </b:Row>
 
