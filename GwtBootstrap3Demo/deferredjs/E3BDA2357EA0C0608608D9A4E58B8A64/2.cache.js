@@ -1,0 +1,15 @@
+function q0b(){}
+function w0b(){}
+function z0b(){}
+function A0b(){A0b=zuc;v0b=new z0b}
+function o0b(){Tlb(this,s0b(new t0b))}
+function f0b(a,b,c){zlb.call(this,a,b,c,(f_b(),e_b))}
+function N6b(a){var b;if(!a.g){b=new o0b(new q0b);a.g=b}return a.g}
+function y0b(a){if(!a.a){a.a=true;Mu();Pu((Ay(),ZOc));return true}return false}
+function B0b(a){var b;b=new nsb;Zn(b.a,$Oc);hsb(b,y$(a));Zn(b.a,_Oc);return new e$(co(b.a))}
+function D0b(a){var b;b=new nsb;Zn(b.a,cPc);hsb(b,y$(a));Zn(b.a,_Oc);return new e$(co(b.a))}
+function C0b(a){var b;b=new nsb;Zn(b.a,aPc);hsb(b,y$(a));Zn(b.a,bPc);return new e$(co(b.a))}
+function M6b(a){var b;if(!a.f){b=new f0b(Ikb(dmb(a.a)),N6b(a),L6b(a));$kb((emb(a.a),b),pmb(emb(a.a)));a.f=b}return a.f}
+function t0b(){this.g=(new w0b,A0b(),v0b);y0b(this.g);this.e=Oq($doc);this.a=Oq($doc);this.c=Oq($doc);this.f=new c0(this.e);this.b=new c0(this.a);this.d=new c0(this.c)}
+function s0b(a){var b,c,d,e,f,g,i,j,k,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D;b=new vGb;zzb(b,(c=new eCb(sOc),zzb(c,(d=new qFb,d.a=SDc,pFb(d),d)),zzb(c,(e=new yFb,zzb(e,(g=new KFb,JFb(g,(i=new _Cb(3),TGb(i.c,tOc),i)),g)),zzb(e,(j=new BFb,zzb(j,(k=new oeb,k.Hd((n=new Feb(B0b(a.a).a),o=e0(n._),b0(a.b),o.b?Wp(o.b,o.a,o.c):h0(o.a),Deb(n,new iAb((p=new nsb,Zn(p.a,UOc),new e$(co(p.a))).a),b0(a.b)),n)),B0(k._,VOc,true),k)),j)),zzb(e,(q=new FFb,zzb(q,(r=new vqc,mGb(r,(s=new nsb,Zn(s.a,WOc),new e$(co(s.a))).a),B0(r._,xOc,true),r)),q)),e)),zzb(c,(f=new yFb,zzb(f,(t=new KFb,JFb(t,(u=new _Cb(3),TGb(u.c,XOc),u)),t)),zzb(f,(v=new BFb,zzb(v,(w=new oeb,w.Hd((x=new Feb(D0b(a.c).a),y=e0(x._),b0(a.d),y.b?Wp(y.b,y.a,y.c):h0(y.a),Deb(x,(z=new iAb(C0b(a.e).a),A=e0(z._),b0(a.f),A.b?Wp(A.b,A.a,A.c):h0(A.a),Deb(z,new kDb((JWb(),vRb)),b0(a.f)),z),b0(a.d)),x)),B0(w._,VOc,true),w)),v)),zzb(f,(B=new FFb,zzb(B,(C=new vqc,mGb(C,(D=new nsb,Zn(D.a,YOc),new e$(co(D.a))).a),B0(C._,xOc,true),C)),B)),f)),c));return b}
+var WOc='&lt;a href="#"&gt;Deleted Items\\n \\s\\s&lt;b:Badge&gt;42&lt;/b:Badge&gt;\\n &lt;/a&gt;',YOc='&lt;a href="#"&gt;Inbox\\n \\s\\s&lt;b:Badge&gt;12\\n \\s\\s\\s&lt;b:Icon type="ENVELOPE"/&gt;\\n \\s\\s\\s&lt;i&gt;unread&lt;/i&gt;\\n \\s\\s&lt;/b:Badge&gt;\\n &lt;/a&gt;',_Oc="'><\/span> <\/a>",bPc="'><\/span> <i>unread<\/i>",ZOc='.GOE4FJXBII span{margin-right:5px;}',aPc="12 <span id='",UOc='42',$Oc="<a href='#'>Deleted Items <span id='",cPc="<a href='#'>Inbox <span id='",XOc='Advanced',dPc='BadgePresenter',ePc='BadgeView',fPc='BadgeView_BinderImpl',gPc='BadgeView_BinderImpl$Widgets',hPc='BadgeView_BinderImpl_GenBundle_default_StaticClientBundleGenerator',iPc='BadgeView_BinderImpl_GenBundle_default_StaticClientBundleGenerator$1',VOc='GOE4FJXBII';zY(884,540,pvc,f0b);zY(887,545,qvc,o0b);zY(888,1,{},q0b);zY(889,1,{},t0b);_.a=null;_.b=null;_.c=null;_.d=null;_.e=null;_.f=null;_.g=null;zY(890,1,{},w0b);var v0b=null;zY(891,1,{},z0b);_.a=false;zY(1064,1,Tvc);_.vb=function r9b(){Inb(this.b,M6b(this.a.a))};var bO=Cqb(HGc,dPc,884),gO=Cqb(HGc,ePc,887),fO=Cqb(HGc,fPc,888),cO=Cqb(HGc,gPc,889),eO=Cqb(HGc,hPc,890),dO=Cqb(HGc,iPc,891);Wvc(Em)(2);

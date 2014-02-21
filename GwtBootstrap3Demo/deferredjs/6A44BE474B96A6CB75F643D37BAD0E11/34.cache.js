@@ -1,6 +1,0 @@
-function Wgc(){}
-function Lgc(a,b,c){Dhb.call(this,a,b,c,(iXb(),hXb))}
-function nhc(a){var b;if(!a.d){b=new Ugc(new Wgc);a.d=b}return a.d}
-function mhc(a){var b;if(!a.c){b=new Lgc(Mgb(hib(a.a)),nhc(a),lhc(a));chb((iib(a.a),b),tib(iib(a.a)));a.c=b}return a.c}
-function Ugc(){var a,b,c,d,e,f;Xhb(this,(a=new yCb,Cvb(a,(b=new hyb(Jvc),Cvb(b,(c=new Kzb,Cvb(c,(d=new czb(1),WCb(d.c,'Demo for GwtBootstrap3'),d)),Cvb(c,new Szb((e=new hob,On(e.a,"A <a href='http://getbootstrap.com/'>Twitter Bootstrap<\/a> wrapper for <a href='http://gwtproject.org/'>GWT<\/a>"),new WW(Tn(e.a))).a)),Cvb(c,new Szb((f=new hob,On(f.a,"This is the demo for <a href='https://github.com/gwtbootstrap3/gwtbootstrap3'>GwtBootstrap3<\/a> version 0.6-SNAPSHOT. For previous releases please go to: <a href='https://github.com/gwtbootstrap3/gwtbootstrap3/releases'>Previous Releases<\/a>"),new WW(Tn(f.a))).a)),c)),b)),a))}
-NV(1254,522,aqc,Lgc);NV(1257,527,bqc,Ugc);NV(1258,1,{},Wgc);NV(1270,1,Eqc);_.vb=function zhc(){Mjb(this.b,mhc(this.a.a))};var ZR=Emb(fvc,'HomePresenter',1254),_R=Emb(fvc,'HomeView',1257),$R=Emb(fvc,'HomeView_BinderImpl',1258);Iqc(um)(34);
