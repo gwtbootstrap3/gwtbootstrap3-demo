@@ -27,6 +27,7 @@
         .logRow {
             border: 1px solid #888888;
             padding: 5px;
+            min-height: 300px;
         }
 
         .logTitle {
@@ -43,12 +44,17 @@
         }
 
         .spacing {
-            margin-right: 3px;
+            margin-left: 3px;
         }
 
         .spacing2 {
-            margin-right: 3px;
-            margin-top: 3px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .buttons > button {
+            margin-right: 5px;
+            margin-bottom: 5px;
         }
     </ui:style>
 
@@ -59,8 +65,8 @@
 
             <b:BlockQuote>
                 <b:Bold>Original Library Link:</b:Bold>
-                <b:Anchor addStyleNames="{style.spacing}" href="http://eonasdan.github.io/bootstrap-datetimepicker/">
-                    Bootstrap DateTimePicker
+                <b:Anchor addStyleNames="{style.spacing}" href="http://www.malot.fr/bootstrap-datetimepicker/">
+                Bootstrap DateTimePicker
                 </b:Anchor>
             </b:BlockQuote>
 
@@ -110,44 +116,75 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Just Dates"/>
+                    <b:Heading size="3" text="Auto Close"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Row>
-                        <b:Column size="MD_6">
-                            <b2:DateTimeBox showTimePicker="false" format="MM/DD/YYYY" ui:field="justDateBox"/>
-                        </b:Column>
-                        <b:Column size="MD_6">
-                            <b:Button type="PRIMARY" text="Get Value" addStyleNames="pull-right"
-                                      ui:field="getDateValue"/>
-                        </b:Column>
-                    </b:Row>
+                    <b:Paragraph>
+                        Automatically close the selector after selecting a date.
+                    </b:Paragraph>
+                    <b2:DateTimeBox autoClose="true"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b2:DateTimeBox showTimePicker="false" format="MM/DD/YYYY"/&gt;\n
+                        &lt;b2:DateTimeBox/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Just Time"/>
+                    <b:Heading size="3" text="12 Hour Format"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Row>
-                        <b:Column size="MD_6">
-                            <b2:DateTimeBox showDatePicker="false" format="hh:mm a" ui:field="justTimeBox"/>
-                        </b:Column>
-                        <b:Column size="MD_6">
-                            <b:Button type="PRIMARY" text="Get Value" addStyleNames="pull-right"
-                                      ui:field="getTimeValue"/>
-                        </b:Column>
-                    </b:Row>
+                    <b2:DateTimeBox showMeridian="true" format="mm/dd/yyyy hh:ii P" ui:field="twelveHour"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b2:DateTimeBox showDatePicker="false" format="hh:mm a"/&gt;\n
+                        &lt;b2:DateTimeBox/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Dates Only"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b2:DateTimeBox minView="MONTH" format="mm/dd/yyyy"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b2:DateTimeBox/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Time Only"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b2:DateTimeBox startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P"/>
+                    <b:Paragraph addStyleNames="{style.spacing2}">With only every 30 minutes available.</b:Paragraph>
+                    <b2:DateTimeBox startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P" minuteStep="30"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b2:DateTimeBox/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="With Today Button / Today Highlights"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b2:DateTimeBox highlightToday="true" showTodayButton="true"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b2:DateTimeBox/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -158,32 +195,35 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
-                        <b:Column size="MD_6">
-                            <b2:DateTimeBox ui:field="methodsBox"/>
+                        <b:Column size="SM_6">
+                            <b2:DateTimeBox ui:field="methods"/>
                         </b:Column>
-                        <b:Column size="MD_6">
-                            <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="setStartDate"
-                                      ui:field="setStartDate"/>
-                            <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="setEndDate"
-                                      ui:field="setEndDate"/>
-                            <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="show" ui:field="show"/>
-                            <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="hide" ui:field="hide"/>
-                            <b:Br/>
-                            <b:Button addStyleNames="{style.spacing2}" type="PRIMARY" text="disable"
-                                      ui:field="disable"/>
-                            <b:Button addStyleNames="{style.spacing2}" type="PRIMARY" text="enable" ui:field="enable"/>
-                            <b:Button addStyleNames="{style.spacing2}" type="PRIMARY" text="setValue"
-                                      ui:field="setValue"/>
-                            <b:Button addStyleNames="{style.spacing2}" type="PRIMARY" text="getValue"
-                                      ui:field="getValue"/>
+                        <b:Column size="SM_6" addStyleNames="{style.buttons}">
+                            <b:Button type="PRIMARY" text="Set Start Date" ui:field="startDate"/>
+                            <b:Button type="PRIMARY" text="Set End Date" ui:field="endDate"/>
+                            <b:Button type="PRIMARY" text="Get Value" ui:field="getValue"/>
+                            <b:Button type="PRIMARY" text="Set Value" ui:field="setValue"/>
+                            <b:Button type="PRIMARY" text="Enable" ui:field="enable"/>
+                            <b:Button type="PRIMARY" text="Disable" ui:field="disable"/>
+                            <b:Button type="PRIMARY" text="Readonly" ui:field="readonly"/>
+                            <b:Button type="PRIMARY" text="Editable" ui:field="editable"/>
+                            <b:Button type="PRIMARY" text="Disable Sundays" ui:field="disableSundays"/>
+                            <b:Button type="PRIMARY" text="Enable Sundays" ui:field="enableSundays"/>
+                            <b:Button type="PRIMARY" text="Hide" ui:field="hide"/>
+                            <b:Button type="PRIMARY" text="Show" ui:field="show"/>
                         </b:Column>
                     </b:Row>
                 </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b2:DateTimeBox/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
             </b:Panel>
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Events"/>
+                <b:Heading size="3" text="Events"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
