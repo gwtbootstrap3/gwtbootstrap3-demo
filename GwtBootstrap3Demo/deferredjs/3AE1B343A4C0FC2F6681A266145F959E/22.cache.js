@@ -1,0 +1,8 @@
+function T8b(){}
+function zzb(a,b){eq(a.ab,GFb(b).b)}
+function I8b(a,b,c){ijb.call(this,a,b,c,(QYb(),PYb))}
+function Azb(){Uwb.call(this,$doc.createElement(vwc))}
+function Lbc(a){var b;if(!a.i){b=new R8b(new T8b);a.i=b}return a.i}
+function Kbc(a){var b;if(!a.g){b=new I8b(rib(Ojb(a.b)),Lbc(a),Jbc(a));Jib((Pjb(a.b),b),$jb(Pjb(a.b)));a.g=b}return a.g}
+function R8b(){var a,b,c,d,e,f,g,i,j,k,n,o,p,q,r,s,t,u,v,w,x,y;Cjb(this,(a=new dEb,hxb(a,(b=new Ozb(Syc),hxb(b,(c=new $Cb,c.b=uwc,ZCb(c),c.c='have code highlighting for users',ZCb(c),c)),hxb(b,(d=new gDb,hxb(d,(f=new sDb,rDb(f,(g=new KAb(3),BEb(g.d,JAc),g)),f)),hxb(d,(i=new jDb,hxb(i,(j=new Xxb,uq(j.ab,'Code for section:'),j)),hxb(i,(k=new Azb,zzb(k,(n=new Xpb,n.b.b+='&lt;section&gt;',new XY(n.b.b)).b),k)),i)),hxb(d,(o=new nDb,hxb(o,(p=new poc,WDb(p,(q=new Xpb,q.b.b+='&lt;b:Code&gt;\\n \\s\\s...\\n &lt;/b:Code&gt;\\n',new XY(q.b.b)).b),u_(p.ab,Wyc,true),p)),o)),d)),hxb(b,(e=new gDb,hxb(e,(r=new sDb,rDb(r,(s=new KAb(3),BEb(s.d,'Block'),s)),r)),hxb(e,(t=new jDb,hxb(t,(u=new XDb,WDb(u,(v=new Xpb,v.b.b+='&lt;b:Paragraph emphasis="MUTED"/&gt;\\n',new XY(v.b.b)).b),u)),t)),hxb(e,(w=new nDb,hxb(w,(x=new poc,WDb(x,(y=new Xpb,y.b.b+='&lt;b:Pre&gt;\\n \\s\\s...\\n &lt;/b:Pre&gt;\\n',new XY(y.b.b)).b),u_(x.ab,Wyc,true),x)),w)),e)),b)),a))}
+TX(690,652,utc,Azb);TX(1078,525,jtc,I8b);TX(1081,530,ktc,R8b);TX(1082,1,{},T8b);TX(1147,1,Mtc);_.wb=function rcc(){rlb(this.c,Kbc(this.b.b))};var BQ=lob(myc,'CodePresenter',1078),DQ=lob(myc,'CodeView',1081),CQ=lob(myc,'CodeView_BinderImpl',1082),UJ=lob(Dyc,uwc,690);Ptc(Em)(22);
