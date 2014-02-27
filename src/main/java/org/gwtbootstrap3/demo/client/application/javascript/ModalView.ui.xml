@@ -22,6 +22,11 @@
              xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
              xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
+    <ui:style>
+        .top {
+            top: 100px !important;
+        }
+    </ui:style>
     <b:Row>
         <b:Column size="XS_12">
 
@@ -179,7 +184,6 @@
                             <b:Button type="DANGER" dismiss="MODAL">Close</b:Button>
                         </b:ModalFooter>
                     </b:Modal>
-
                     <b:Button target="#myModal" toggle="MODAL" type="PRIMARY" size="LARGE">Click to show modal
                     </b:Button>
                 </b:PanelBody>
@@ -198,6 +202,43 @@
                         \n
                         &lt;b:Button target="#myModal" toggle="MODAL" type="PRIMARY" size="LARGE"&gt;Click to
                         show modal&lt;/b:Button&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Only One Modal Active"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Modal title="Modal 1" closable="true" fade="true" b:id="modal1">
+                        <b:ModalBody>
+                            <b:Button target="#modal2" toggle="MODAL" type="PRIMARY">Modal 2</b:Button>
+                        </b:ModalBody>
+                    </b:Modal>
+                    <b:Modal addStyleNames="{style.top}" title="Modal 2" closable="true" fade="true" b:id="modal2">
+                        <b:ModalBody>
+                            <b:Button target="#modal3" toggle="MODAL" type="PRIMARY">Modal 3</b:Button>
+                        </b:ModalBody>
+                    </b:Modal>
+                    <b:Modal title="Modal 3" closable="true" fade="true" hideOtherModals="true" b:id="modal3">
+                        <b:ModalBody>
+                            <b:Span>Modal 3 (ONLY ONE!)</b:Span>
+                        </b:ModalBody>
+                    </b:Modal>
+                    <b:Button target="#modal1" toggle="MODAL" type="PRIMARY">Modal 1</b:Button>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Modal ... &gt;\n
+                        \s\s...
+                        &lt;/b:Modal&gt;\n
+                        &lt;b:Modal ... &gt;\n
+                        \s\s...
+                        &lt;/b:Modal&gt;\n
+                        &lt;b:Modal ... hideOtherModals="true"&gt;\n
+                        \s\s...
+                        &lt;/b:Modal&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
