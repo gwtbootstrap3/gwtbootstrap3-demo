@@ -145,7 +145,7 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b2:DateTimeBox/&gt;\n
+                        &lt;b2:DateTimeBox autoClose="true"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -159,7 +159,7 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b2:DateTimeBox/&gt;\n
+                        &lt;b2:DateTimeBox showMeridian="true" format="mm/dd/yyyy hh:ii P"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -173,7 +173,7 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b2:DateTimeBox/&gt;\n
+                        &lt;b2:DateTimeBox minView="MONTH" format="mm/dd/yyyy"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -189,7 +189,8 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b2:DateTimeBox/&gt;\n
+                        &lt;b2:DateTimeBox startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P"/&gt;\n\n
+                        &lt;b2:DateTimeBox startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P" minuteStep="30"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -203,7 +204,7 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b2:DateTimeBox/&gt;\n
+                        &lt;b2:DateTimeBox highlightToday="true" showTodayButton="true"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
