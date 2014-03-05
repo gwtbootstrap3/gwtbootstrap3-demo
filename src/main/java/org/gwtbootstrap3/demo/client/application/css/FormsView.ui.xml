@@ -22,6 +22,12 @@
              xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
              xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
+    <ui:style>
+        .margin-right {
+            margin-right: 10px;
+        }
+    </ui:style>
+
     <b:Row>
         <b:Column size="XS_12">
 
@@ -112,6 +118,58 @@
                 </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Changing Validation"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Form>
+                        <b:FieldSet>
+                            <b:FormGroup ui:field="formGroup">
+                                <b:FormLabel for="formSuccess">Field Label</b:FormLabel>
+                                <b:TextBox b:id="formSuccess"/>
+                            </b:FormGroup>
+
+                            <b:Button addStyleNames="{style.margin-right}" type="PRIMARY" ui:field="none">None</b:Button>
+                            <b:Button addStyleNames="{style.margin-right}" type="PRIMARY" ui:field="success">Success</b:Button>
+                            <b:Button addStyleNames="{style.margin-right}" type="PRIMARY" ui:field="warning">Warning</b:Button>
+                            <b:Button addStyleNames="{style.margin-right}" type="PRIMARY" ui:field="error">Error</b:Button>
+                        </b:FieldSet>
+                    </b:Form>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <b:Heading size="4" text="UiBinder Code"/>
+
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Form&gt;\n
+                        \s\s&lt;b:FieldSet&gt;\n
+                        \s\s\s\s&lt;b:FormGroup ui:field="formGroup"&gt;\n
+                        \s\s\s\s\s\s&lt;b:FormLabel for="formSuccess"&gt;Field Label&gt;\n
+                        \s\s\s\s\s\s&lt;b:TextBox b:id="formSuccess"/&gt;\n
+                        \s\s\s\s&lt;/b:FormGroup&gt;\n
+                        \s\s\s\s&lt;b:Button type="PRIMARY"&gt;None&lt;/b:Button&gt;\n
+                        \s\s\s\s&lt;b:Button type="PRIMARY"&gt;Success&lt;/b:Button&gt;\n
+                        \s\s\s\s&lt;b:Button type="PRIMARY"&gt;Warning&lt;/b:Button&gt;\n
+                        \s\s\s\s&lt;b:Button type="PRIMARY"&gt;Error&lt;/b:Button&gt;\n
+                        \s\s&lt;/b:FieldSet&gt;\n
+                        &lt;/b:Form&gt;
+                    </d:PrettyPre>
+
+                    <b:Heading size="4" text="Java code"/>
+
+                    <d:PrettyPre addStyleNames="lang-java">
+                        @UiField\n
+                        FormGroup formGroup;\n\n
+
+                        // Click Handlers (depending on what button is clicked)\n
+                        formGroup.setValidationState(ValidationState.NONE)\n
+                        formGroup.setValidationState(ValidationState.SUCCESS)\n
+                        formGroup.setValidationState(ValidationState.WARNING)\n
+                        formGroup.setValidationState(ValidationState.ERROR)\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
         <b:Panel>
             <b:PanelHeader>
