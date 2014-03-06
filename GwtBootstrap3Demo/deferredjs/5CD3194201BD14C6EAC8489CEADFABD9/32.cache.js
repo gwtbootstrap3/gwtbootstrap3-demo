@@ -1,0 +1,37 @@
+function Ohc(){}
+function Qhc(){}
+function Whc(){}
+function Zhc(){}
+function Zrc(a,b){a.a=b}
+function $rc(a,b){a.b=b}
+function _rc(a,b){a.e=b}
+function zpb(a){this.a=a}
+function tsc(){rsc();return nsc}
+function Asc(){ysc();return vsc}
+function Isc(){Gsc();return Csc}
+function Qsc(){Osc();return Ksc}
+function $hc(){$hc=cuc;Vhc=new Zhc}
+function csc(a,b){$wnd.jQuery(a).slider(b)}
+function asc(a,b){$wnd.jQuery(a).slider('setValue',b)}
+function ksc(a,b){this.a=a;this.c=b;this.b=false}
+function ssc(a,b,c){Vq.call(this,a,b);this.a=c}
+function zsc(a,b,c){Vq.call(this,a,b);this.a=c}
+function Hsc(a,b,c){Vq.call(this,a,b);this.a=c}
+function Psc(a,b,c){Vq.call(this,a,b);this.a=c}
+function Dhc(a,b,c){ikb.call(this,a,b,c,(UZb(),TZb))}
+function Mhc(){Ckb(this,Shc(new Thc(this)));Zrc(this.a,new Ohc)}
+function Thc(a){this.a=a;this.b=(new Whc,$hc(),Vhc);Yhc(this.b)}
+function qjc(a){var b;if(!a.p){b=new Mhc(new Qhc);a.p=b}return a.p}
+function bsc(a,b){dhb(a.i,zvc+b.a);a.W&&In((vn(),new ksc(a,b)),100)}
+function dsc(e,b,c){var d=e;$wnd.jQuery(b).slider(c).on(NIc,function(a){d.Pe(a.value)})}
+function ysc(){ysc=cuc;wsc=new zsc(Txc,0,'horizontal');xsc=new zsc(Uxc,1,'vertical');vsc=yz(vX,muc,188,[wsc,xsc])}
+function Osc(){Osc=cuc;Nsc=new Psc('SHOW',0,CIc);Msc=new Psc('HIDE',1,DIc);Lsc=new Psc('ALWAYS',2,'always');Ksc=yz(xX,muc,190,[Nsc,Msc,Lsc])}
+function Gsc(){Gsc=cuc;Esc=new Hsc('BEFORE',0,'before');Dsc=new Hsc('AFTER',1,'after');Fsc=new Hsc(Wvc,2,Xvc);Csc=yz(wX,muc,189,[Esc,Dsc,Fsc])}
+function rsc(){rsc=cuc;osc=new ssc('ROUND',0,'round');psc=new ssc(PIc,1,'square');qsc=new ssc('TRIANGLE',2,'triangle');nsc=yz(uX,muc,187,[osc,psc,qsc])}
+function pjc(a){var b;if(!a.o){b=new Dhc(rjb(Okb(a.a)),qjc(a),ojc(a));Jjb((Pkb(a.a),b),$kb(Pkb(a.a)));a.o=b}return a.o}
+function isc(){this.e=(ysc(),wsc);this.f=(Gsc(),Esc);this.j=(Osc(),Nsc);this.b=(rsc(),osc);this.i=new PFb;K_(this.i,aq(this.i._,Iwc));M_(this,this.i._);bsc(this,new zpb(5))}
+function xpb(a){var b;if(!(b=wpb,!b&&(b=wpb=/^\s*[+-]?(NaN|Infinity|((\d+\.?\d*)|(\.\d+))([eE][+-]?\d+)?[dDfF]?)\s*$/),b.test(a))){throw new bqb(mGc+a+mFc)}return parseFloat(a)}
+function Yrc(r,b,c,d,e,f,g,i,j,k,n,o){var p=r;var q={id:b,min:c,max:d,step:e,orientation:f,value:g,selection:i,tooltip:j,handle:k,reversed:n,enabled:o};q.formater=function(a){return p.Oe(a)};return q}
+function Yhc(a){if(!a.a){a.a=true;xu();Au((ly(),'.GI23MTFCHK{background-color:#fcf2f2;border-color:#dfb5b4;}.GI23MTFCIK{margin-top:0 !important;}.GI23MTFCJK{margin-left:5px;}'));return true}return false}
+function Shc(a){var b,c,d,e,f,g,i,j,k,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V;b=new dFb;hyb(b,(c=new OAb(zAc),hyb(c,(d=new $Db,d.a=nzc,ZDb(d),d)),hyb(c,(e=new Uyb,hyb(e,(f=new Xyb,Wyb(f,(t=new Xqb,Yn(t.a,NGc),new yZ(bo(t.a))).a),f)),hyb(e,(g=new ryb,kyb(g,(i=new Xqb,Yn(i.a,'Bootstrap Slider'),new yZ(bo(i.a))).a),W_(g._,'GI23MTFCJK',true),g._.href='http://www.eyecon.ro/bootstrap-slider/',g)),e)),hyb(c,(j=new Uyb,hyb(j,(k=new KBb(4),W_(k._,'GI23MTFCIK',true),BFb(k.c,OGc),k)),hyb(j,new xCb((u=new Xqb,Yn(u.a,'To use Slider, you must first add the extras module to your project. In Maven:'),new yZ(bo(u.a))).a)),hyb(j,(n=new $pc,WEb(n,(v=new Xqb,Yn(v.a,PGc),new yZ(bo(v.a))).a),W_(n._,DAc,true),n)),hyb(j,new xCb((w=new Xqb,Yn(w.a,QGc),new yZ(bo(w.a))).a)),hyb(j,(o=new $pc,WEb(o,(x=new Xqb,Yn(x.a,'&lt;inherits name="org.gwtbootstrap3.extras.slider.Slider"/&gt;'),new yZ(bo(x.a))).a),W_(o._,DAc,true),o)),hyb(j,new xCb((y=new Xqb,Yn(y.a,"Last but not least must add this namespace to your *.ui.xml (don't have to name it b3):"),new yZ(bo(y.a))).a)),hyb(j,(p=new $pc,WEb(p,(z=new Xqb,Yn(z.a,'xmlns:b3="urn:import:org.gwtbootstrap3.extras.slider.client.ui"'),new yZ(bo(z.a))).a),W_(p._,DAc,true),p)),W_(j._,'GI23MTFCHK',true),j)),hyb(c,(q=new gEb,hyb(q,(A=new sEb,rEb(A,(B=new KBb(3),BFb(B.c,'Basic Slider'),B)),A)),hyb(q,(C=new jEb,hyb(C,new isc),C)),hyb(q,(D=new nEb,hyb(D,(E=new $pc,WEb(E,(F=new Xqb,Yn(F.a,'&lt;b3:Slider/&gt;\\n'),new yZ(bo(F.a))).a),W_(E._,DAc,true),E)),D)),q)),hyb(c,(r=new gEb,hyb(r,(G=new sEb,rEb(G,(H=new KBb(3),BFb(H.c,'Custom Slider'),H)),G)),hyb(r,(I=new jEb,hyb(I,(J=new isc,J.d=-150,$rc(J,(rsc(),psc)),J.c=500,bsc(J,new zpb(250)),J.g=5,a.a.a=J,J)),I)),hyb(r,(K=new nEb,hyb(K,(L=new $pc,WEb(L,(M=new Xqb,Yn(M.a,'&lt;b3:Slider ui:field="customSlider" value="250.0" min="-150.0" max="500.0" step="5.0" handle="SQUARE"/&gt;\\n'),new yZ(bo(M.a))).a),W_(L._,DAc,true),L)),hyb(K,(N=new $pc,WEb(N,(O=new Xqb,Yn(O.a,'customSlider.setFormatter(new FormatterCallback() {\\n \\s@Override\\n \\s\\spublic String toolTipMsg(double value) {\\n \\s\\s\\sint b = (int) (value * 10);\\n \\s\\s\\sreturn b + " blocks";\\n \\s\\s}\\n \\s});\\n'),new yZ(bo(O.a))).a),W_(N._,nCc,true),N)),K)),r)),hyb(c,(s=new gEb,hyb(s,(P=new sEb,rEb(P,(Q=new KBb(3),BFb(Q.c,'Vertical Slider'),Q)),P)),hyb(s,(R=new jEb,hyb(R,(S=new isc,_rc(S,(ysc(),xsc)),S)),R)),hyb(s,(T=new nEb,hyb(T,(U=new $pc,WEb(U,(V=new Xqb,Yn(V.a,'&lt;b3:Slider orientation="VERTICAL"/&gt;\\n'),new yZ(bo(V.a))).a),W_(U._,DAc,true),U)),T)),s)),c));return b}
+var SIc='[Lorg.gwtbootstrap3.extras.slider.client.ui.base.constants.',QIc='org.gwtbootstrap3.extras.slider.client.ui.base.',RIc='org.gwtbootstrap3.extras.slider.client.ui.base.constants.';var wpb=null;pY(587,588,{95:1,98:1,99:1,106:1},zpb);_.eQ=function Apb(a){return Jz(a,99)&&Hz(a,99).a==this.a};_.hC=function Bpb(){return Nz(this.a)};_.tS=function Cpb(){return zvc+this.a};_.a=0;pY(1233,531,Uuc,Dhc);pY(1236,536,Vuc,Mhc);_.a=null;pY(1237,1,{},Ohc);pY(1238,1,{},Qhc);pY(1239,1,{},Thc);_.a=null;_.b=null;pY(1240,1,{},Whc);var Vhc=null;pY(1241,1,{},Zhc);_.a=false;pY(1272,1,vvc);_.vb=function Xjc(){rmb(this.b,pjc(this.a.a))};pY(1405,321,xvc);_.Oe=function esc(a){var b;if(this.a)return b=Nz(a*10),b+' blocks';return zvc+a};_.Pe=function fsc(a){Cw(this,new zpb(a))};_.kc=function gsc(){var a,b;a=Yrc(this,this.i.e.a._.id,this.d,this.c,this.g,this.e.a,(new zpb(xpb(MFb(this.i)))).a,this.f.a,this.j.a,this.b.a,false,!(b=this.i.d.a._.getAttributeNode($Ac),!!(b&&b.specified)));dsc(this,this._,a)};_.lc=function hsc(){csc(this._,OIc)};_.a=null;_.c=10;_.d=0;_.g=1;_.i=null;pY(1404,1405,xvc,isc);pY(1406,1,{},ksc);_.wb=function lsc(){if(this.a.W){asc(this.a._,this.c.a);this.b&&Cw(this.a,this.c);return false}else{return true}};_.a=null;_.b=false;_.c=null;pY(1407,157,{95:1,98:1,100:1,187:1},ssc);_.a=null;var nsc,osc,psc,qsc;pY(1408,157,{95:1,98:1,100:1,188:1},zsc);_.a=null;var vsc,wsc,xsc;pY(1409,157,{95:1,98:1,100:1,189:1},Hsc);_.a=null;var Csc,Dsc,Esc,Fsc;pY(1410,157,{95:1,98:1,100:1,190:1},Psc);_.a=null;var Ksc,Lsc,Msc,Nsc;var tI=lpb(rzc,'Double',587),jT=lpb(Wzc,'SliderPresenter',1233),pT=lpb(Wzc,'SliderView',1236),kT=lpb(Wzc,'SliderView$1',1237),oT=lpb(Wzc,'SliderView_BinderImpl',1238),lT=lpb(Wzc,'SliderView_BinderImpl$Widgets',1239),VV=lpb(QIc,'SliderBase',1405),UV=lpb(QIc,'SliderBase$1',1406),TV=lpb('org.gwtbootstrap3.extras.slider.client.ui.',nzc,1404),nT=lpb(Wzc,'SliderView_BinderImpl_GenBundle_default_InlineClientBundleGenerator',1240),mT=lpb(Wzc,'SliderView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1',1241),WV=mpb(RIc,'HandleType',1407,tsc),uX=kpb(SIc,'HandleType;',1477),XV=mpb(RIc,'OrientationType',1408,Asc),vX=kpb(SIc,'OrientationType;',1478),YV=mpb(RIc,'SelectionType',1409,Isc),wX=kpb(SIc,'SelectionType;',1485),ZV=mpb(RIc,'TooltipType',1410,Qsc),xX=kpb(SIc,'TooltipType;',1486);yvc(Em)(32);
