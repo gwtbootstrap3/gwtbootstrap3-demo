@@ -26,6 +26,16 @@
         .top {
             top: 100px !important;
         }
+
+        .logRow {
+            border: 1px solid #888888;
+            padding: 5px;
+            min-height: 300px;
+        }
+
+        .logTitle {
+            margin-right: 10px;
+        }
     </ui:style>
     <b:Row>
         <b:Column size="XS_12">
@@ -231,16 +241,39 @@
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:Modal ... &gt;\n
-                        \s\s...
+                        \s\s...\n
                         &lt;/b:Modal&gt;\n
                         &lt;b:Modal ... &gt;\n
-                        \s\s...
+                        \s\s...\n
                         &lt;/b:Modal&gt;\n
                         &lt;b:Modal ... hideOtherModals="true"&gt;\n
-                        \s\s...
+                        \s\s...\n
                         &lt;/b:Modal&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Events"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                        <b:Column size="SM_6 MD_4">
+                            <b:Modal title="Event Modal" closable="true" fade="true" b:id="eventModal" ui:field="eventModal">
+                                <b:ModalBody>
+                                    <b:Span>I fire events!</b:Span>
+                                </b:ModalBody>
+                            </b:Modal>
+                            <b:Button target="#eventModal" toggle="MODAL" type="PRIMARY">Event Modal</b:Button>
+                        </b:Column>
+                        <b:Column addStyleNames="{style.logRow}" size="SM_6 MD_8">
+                            <b:Bold text="Event Log" addStyleNames="{style.logTitle}"/>
+                            <b:Button addStyleNames="pull-right" text="Clear Log" ui:field="clearLogButton"/>
+                            <g:FlowPanel ui:field="logRow"/>
+                        </b:Column>
+                    </b:Row>
+                </b:PanelBody>
             </b:Panel>
         </b:Column>
     </b:Row>

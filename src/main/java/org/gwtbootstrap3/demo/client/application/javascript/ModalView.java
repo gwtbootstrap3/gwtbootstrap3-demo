@@ -21,19 +21,68 @@ package org.gwtbootstrap3.demo.client.application.javascript;
  */
 
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
+import org.gwtbootstrap3.client.shared.event.*;
+import org.gwtbootstrap3.client.ui.Button;
+import org.gwtbootstrap3.client.ui.Modal;
+import org.gwtbootstrap3.client.ui.Paragraph;
 
 /**
  * @author Joshua Godi
  */
 public class ModalView extends ViewImpl implements ModalPresenter.MyView {
+    @UiField
+    Modal eventModal;
+    @UiField
+    Button clearLogButton;
+    @UiField
+    FlowPanel logRow;
+
     interface Binder extends UiBinder<Widget, ModalView> {
     }
 
     @Inject
     ModalView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        eventModal.addHideHandler(new ModalHideHandler() {
+            @Override
+            public void onHide(ModalHideEvent evt) {
+                final Paragraph logEntry = new Paragraph();
+                logEntry.setText("Hide event fired!");
+                logRow.add(logEntry);
+            }
+        });
+
+        eventModal.addHiddenHandler(new ModalHiddenHandler() {
+            @Override
+            public void onHidden(ModalHiddenEvent evt) {
+                final Paragraph logEntry = new Paragraph();
+                logEntry.setText("Hidden event fired!");
+                logRow.add(logEntry);
+            }
+        });
+
+        eventModal.addShowHandler(new ModalShowHandler() {
+            @Override
+            public void onShow(ModalShowEvent evt) {
+                final Paragraph logEntry = new Paragraph();
+                logEntry.setText("Show event fired!");
+                logRow.add(logEntry);
+            }
+        });
+
+        eventModal.addShownHandler(new ModalShownHandler() {
+            @Override
+            public void onShown(ModalShownEvent evt) {
+                final Paragraph logEntry = new Paragraph();
+                logEntry.setText("Shown event fired!");
+                logRow.add(logEntry);
+            }
+        });
     }
 }
