@@ -36,6 +36,10 @@
         .logTitle {
             margin-right: 10px;
         }
+
+        .margin {
+            margin-left: 10px;
+        }
     </ui:style>
     <b:Row>
         <b:Column size="XS_12">
@@ -266,6 +270,7 @@
                                 </b:ModalBody>
                             </b:Modal>
                             <b:Button target="#eventModal" toggle="MODAL" type="PRIMARY">Event Modal</b:Button>
+                            <b:Button type="PRIMARY" addStyleNames="{style.margin}" ui:field="createModal">Create In Java</b:Button>
                         </b:Column>
                         <b:Column addStyleNames="{style.logRow}" size="SM_6 MD_8">
                             <b:Bold text="Event Log" addStyleNames="{style.logTitle}"/>
