@@ -140,7 +140,18 @@ public class ModalView extends ViewImpl implements ModalPresenter.MyView {
                 ModalBody modalBody = new ModalBody();
                 modalBody.add(new Span("Create in Java Code!"));
 
+                ModalFooter modalFooter = new ModalFooter();
+                modalFooter.add(new Button("Click ME!", new ClickHandler() {
+                    @Override
+                    public void onClick(ClickEvent event) {
+                        final Paragraph logEntry = new Paragraph();
+                        logEntry.setText("Click Event from Modal! (Java Created Modal)");
+                        logRow.add(logEntry);
+                    }
+                }));
+
                 modal.add(modalBody);
+                modal.add(modalFooter);
 
                 modal.show();
             }
