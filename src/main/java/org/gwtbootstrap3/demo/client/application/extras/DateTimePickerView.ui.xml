@@ -248,7 +248,12 @@
                 <b:PanelBody>
                     <b:Row>
                         <b:Column size="SM_6 MD_4">
-                            <b2:DateTimeBox ui:field="eventDateTimeBox"/>
+                            <b:Div marginBottom="10" ui:field="eventDateTimeBoxDiv">
+                                <b2:DateTimeBox ui:field="eventDateTimeBox"/>
+                            </b:Div>
+                            <b:Div>
+                                <b:Button type="PRIMARY" ui:field="addRemove">Add/Remove</b:Button>
+                            </b:Div>
                         </b:Column>
                         <b:Column addStyleNames="{style.logRow}" size="SM_6 MD_8">
                             <b:Bold text="Event Log" addStyleNames="{style.logTitle}"/>

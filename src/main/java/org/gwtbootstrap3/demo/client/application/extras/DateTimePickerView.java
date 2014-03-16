@@ -34,6 +34,7 @@ import org.gwtbootstrap3.client.shared.event.HideHandler;
 import org.gwtbootstrap3.client.shared.event.ShowEvent;
 import org.gwtbootstrap3.client.shared.event.ShowHandler;
 import org.gwtbootstrap3.client.ui.Button;
+import org.gwtbootstrap3.client.ui.Div;
 import org.gwtbootstrap3.client.ui.Paragraph;
 import org.gwtbootstrap3.extras.datetimepicker.client.ui.DateTimeBox;
 import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.constants.DateTimePickerDayOfWeek;
@@ -77,6 +78,19 @@ public class DateTimePickerView extends ViewImpl implements DateTimePickerPresen
     Button hide;
     @UiField
     Button setValue;
+    @UiField
+    Button addRemove;
+    @UiField
+    Div eventDateTimeBoxDiv;
+
+    @UiHandler("addRemove")
+    public void handleAddRemove(final ClickEvent event) {
+        if(eventDateTimeBox.isAttached()) {
+            eventDateTimeBox.removeFromParent();
+        } else {
+            eventDateTimeBoxDiv.add(eventDateTimeBox);
+        }
+    }
 
     @UiHandler("clearLogButton")
     public void handleClearLog(final ClickEvent event) {
