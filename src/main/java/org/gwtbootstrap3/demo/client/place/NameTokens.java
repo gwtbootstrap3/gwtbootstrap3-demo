@@ -76,6 +76,7 @@ public class NameTokens {
     public static final String SELECT = "select";
     public static final String SLIDER = "slider";
     public static final String SUMMERNOTE = "summernote";
+    public static final String TOGGLESWITCH = "toggleswitch";
 
     // Getters for UiBinders
 
@@ -237,6 +238,10 @@ public class NameTokens {
 
     public static String getSummernote() {
         return SUMMERNOTE;
+    }
+
+    public static String getToggleSwitch() {
+        return TOGGLESWITCH;
     }
 
     public static String getTabs() {
