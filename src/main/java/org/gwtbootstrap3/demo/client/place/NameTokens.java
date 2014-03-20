@@ -77,6 +77,7 @@ public class NameTokens {
     public static final String SLIDER = "slider";
     public static final String SUMMERNOTE = "summernote";
     public static final String TOGGLESWITCH = "toggleswitch";
+    public static final String OFFLINE = "offline";
 
     // Getters for UiBinders
 
@@ -242,6 +243,10 @@ public class NameTokens {
 
     public static String getToggleSwitch() {
         return TOGGLESWITCH;
+    }
+
+    public static String getOffline() {
+        return OFFLINE;
     }
 
     public static String getTabs() {

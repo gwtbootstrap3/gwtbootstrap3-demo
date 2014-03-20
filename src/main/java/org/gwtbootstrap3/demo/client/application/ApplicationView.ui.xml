@@ -118,6 +118,7 @@
                                     <b:ListItem targetHistoryToken="{nameTokens.getSlider}">Slider</b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getSummernote}">Summernote</b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getToggleSwitch}">ToggleSwitch</b:ListItem>
+                                    <b:ListItem targetHistoryToken="{nameTokens.getOffline}">Offline</b:ListItem>
                                 </b:DropDownMenu>
                             </b:ListDropDown>
                             <b:ListItem text="Fork on GitHub" href="https://github.com/gwtbootstrap3/gwtbootstrap3"/>
