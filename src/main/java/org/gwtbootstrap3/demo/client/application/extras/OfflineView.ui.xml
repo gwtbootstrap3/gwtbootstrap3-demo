@@ -27,11 +27,11 @@
     	background-color: #fcf2f2;
     	border-color: #dFb5b4;
     }
-
+    
     .margin-fix {
     	margin-top: 0 !important;
     }
-
+    
     .spacing {
     	margin-left: 5px;
     }
@@ -99,14 +99,38 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                 <b:Paragraph>
-                    Explain....
+                    Static resources that are needed (outside of the compile unit) require specific inclusion. These files 
+                    would typically be index.html, css files or any resources not included within the GWT application. These 
+                    files are included through the following property added to your module.gwt.xml file:                   
                 </b:Paragraph>
+                
+                <d:PrettyPre addStyleNames="lang-xml">
+                	&lt;extend-configuration-property name="cachemanifest_static_files" value="index.html" /&gt;                        
+                </d:PrettyPre>
+                <b:Paragraph>
+ 				To activate the linker, the following configuration is included in your GWT
+ 				module definition (module.gwt.xml file) as follows:
+                </b:Paragraph>
+ 
+                <d:PrettyPre addStyleNames="lang-xml">
+  				&lt;inherits name="org.gwtbootstrap3.extras.cachemanifest.Offline"/&gt;\n
+  				&lt;add-linker name="offline" /&gt;
+ 				</d:PrettyPre>
+
+                <b:Paragraph>
+				Finally, include the cache manifest file within the html page that loads your
+				GWT application, as follows:
+                </b:Paragraph>
+ 		
+                <d:PrettyPre addStyleNames="lang-xml">
+ 				&lt;!doctype html&gt;\n
+   				&lt;html manifest="/(modulename).manifest"&gt;\n
+  				....\n
+   				&lt;/html&gt;\n
+ 				</d:PrettyPre>
                 </b:PanelBody>
                 <b:PanelFooter>
-                    <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b3:Slider ui:field="customSlider" value="250.0" min="-150.0" max="500.0" step="5.0"
-                        handle="SQUARE"/&gt;\n
-                    </d:PrettyPre>
+                    
                 </b:PanelFooter>
             </b:Panel>
 

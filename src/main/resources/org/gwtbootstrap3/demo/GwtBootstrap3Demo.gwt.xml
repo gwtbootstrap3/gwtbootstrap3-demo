@@ -29,6 +29,10 @@
     <inherits name="org.gwtbootstrap3.extras.select.Select"/>
     <inherits name="org.gwtbootstrap3.extras.respond.Respond"/>
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
+    
+    <inherits name='org.gwtbootstrap3.extras.cachemanifest.Offline'/>
+	<add-linker name="offline" />        
+	<extend-configuration-property name="cachemanifest_static_files" value="index.html" />
 
     <!-- Specify the paths for translatable code                    -->
     <source path="client"/>
