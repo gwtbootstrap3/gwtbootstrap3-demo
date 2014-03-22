@@ -32,7 +32,7 @@
     
     <inherits name='org.gwtbootstrap3.extras.cachemanifest.Offline'/>
 	<add-linker name="offline" />        
-	<extend-configuration-property name="cachemanifest_static_files" value="index.html" />
+	<extend-configuration-property name="cachemanifest_static_files" value="/index.html" />
 
     <!-- Specify the paths for translatable code                    -->
     <source path="client"/>

@@ -101,11 +101,11 @@
                 <b:Paragraph>
                     Static resources that are needed (outside of the compile unit) require specific inclusion. These files 
                     would typically be index.html, css files or any resources not included within the GWT application. These 
-                    files are included through the following property added to your module.gwt.xml file:                   
+                    files are included through the cachemanifest_static_files property added to your module.gwt.xml file.                   
                 </b:Paragraph>
-                
+           
                 <d:PrettyPre addStyleNames="lang-xml">
-                	&lt;extend-configuration-property name="cachemanifest_static_files" value="index.html" /&gt;                        
+                	&lt;extend-configuration-property name="cachemanifest_static_files" value="index.html" /&gt;\n                 
                 </d:PrettyPre>
                 <b:Paragraph>
  				To activate the linker, the following configuration is included in your GWT
@@ -124,7 +124,7 @@
  		
                 <d:PrettyPre addStyleNames="lang-xml">
  				&lt;!doctype html&gt;\n
-   				&lt;html manifest="/(modulename).manifest"&gt;\n
+   				&lt;html manifest="&lt;modulename&gt;/appcache.manifest"&gt;\n
   				....\n
    				&lt;/html&gt;\n
  				</d:PrettyPre>
