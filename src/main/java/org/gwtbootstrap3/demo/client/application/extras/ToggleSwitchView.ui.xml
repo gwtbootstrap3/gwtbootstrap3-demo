@@ -101,11 +101,11 @@
                     <b:Heading size="3" text="Advanced ToggleSwitch"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b3:ToggleSwitch size="MINI" offColor="DANGER" offText="nope" onColor="SUCCESS" onText="yep" value="true"/>
+                    <b3:ToggleSwitch labelText="GWT" offColor="DANGER" offIcon="THUMBS_DOWN" onColor="SUCCESS" onIcon="THUMBS_UP" value="true"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b3:ToggleSwitch size="MINI" offColor="DANGER" offText="nope" onColor="SUCCESS" onText="yep" value="true"/&gt;\n
+                        &lt;b3:ToggleSwitch labelText="GWT" offColor="DANGER" offIcon="THUMBS_DOWN" onColor="SUCCESS" onIcon="THUMBS_UP" value="true"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
