@@ -1,0 +1,12 @@
+function Sec(){}
+function sDb(a,b){yq(a.$,QJb(b).a)}
+function Qec(){lnb(this,Uec(new Vec))}
+function tDb(){EAb.call(this,Kq($doc,kMc))}
+function Hec(a,b,c){Tmb.call(this,a,b,c,(c1b(),b1b))}
+function uic(a){var b;if(!a.g){b=new Qec(new Sec);a.g=b}return a.g}
+function Wec(a){var b;b=new Htb;qo(b.a,vXc);Btb(b,Y_(a));qo(b.a,wXc);return new E_(vo(b.a))}
+function Xec(a){var b;b=new Htb;qo(b.a,vXc);Btb(b,Y_(a));qo(b.a,wXc);return new E_(vo(b.a))}
+function Vec(){this.a=er($doc);this.c=er($doc);this.b=new C1(this.a);this.d=new C1(this.c)}
+function tic(a){var b;if(!a.f){b=new Hec(amb(xnb(a.a)),uic(a),sic(a));smb((ynb(a.a),b),Jnb(ynb(a.a)));a.f=b}return a.f}
+function Uec(a){var b,c,d,e,f,g,i,j,k,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B;b=new kIb;VAb(b,(c=new JDb(iXc),VAb(c,(d=new YGb,d.a=jMc,XGb(d),d.b=a4c,XGb(d),d)),VAb(c,(e=new oHb,VAb(e,(g=new zHb(Wec(a.a).a),i=E1(g.$),B1(a.b),i.b?mq(i.b,i.a,i.c):H1(i.a),Qfb(g,(j=new HEb(3),j.b=b4c,FEb(j),j),B1(a.b)),g)),VAb(e,(k=new rHb,VAb(k,(n=new JBb,Uq(n.$,c4c),n)),VAb(k,(o=new tDb,sDb(o,(p=new Htb,qo(p.a,d4c),new E_(vo(p.a))).a),o)),k)),VAb(e,(q=new vHb,VAb(q,(r=new hyc,bIb(r,(s=new Htb,qo(s.a,e4c),new E_(vo(s.a))).a),a2(r.$,nXc,true),r)),q)),e)),VAb(c,(f=new oHb,VAb(f,(t=new zHb(Xec(a.c).a),u=E1(t.$),B1(a.d),u.b?mq(u.b,u.a,u.c):H1(u.a),Qfb(t,(v=new HEb(3),v.b=f4c,FEb(v),v),B1(a.d)),t)),VAb(f,(w=new rHb,VAb(w,(x=new cIb,bIb(x,(y=new Htb,qo(y.a,g4c),new E_(vo(y.a))).a),x)),w)),VAb(f,(z=new vHb,VAb(z,(A=new hyc,bIb(A,(B=new Htb,qo(B.a,h4c),new E_(vo(B.a))).a),a2(A.$,nXc,true),A)),z)),f)),c));return b}
+var e4c='&lt;b:Code&gt;\\n \\s\\s...\\n &lt;/b:Code&gt;\\n',g4c='&lt;b:Paragraph emphasis="MUTED"/&gt;\\n',h4c='&lt;b:Pre&gt;\\n \\s\\s...\\n &lt;/b:Pre&gt;\\n',d4c='&lt;section&gt;',f4c='Block',c4c='Code for section:',i4c='CodePresenter',j4c='CodeView',k4c='CodeView_BinderImpl',l4c='CodeView_BinderImpl$Widgets',a4c='have code highlighting for users';ZZ(703,664,eEc,tDb);ZZ(1095,537,VDc,Hec);ZZ(1098,542,WDc,Qec);ZZ(1099,1,{},Sec);ZZ(1100,1,{},Vec);_.a=null;_.b=null;_.c=null;_.d=null;ZZ(1168,1,vEc);_.vb=function ajc(){apb(this.b,tic(this.a.a))};var PR=Wrb(fQc,i4c,1095),SR=Wrb(fQc,j4c,1098),RR=Wrb(fQc,k4c,1099),QR=Wrb(fQc,l4c,1100),TK=Wrb(EUc,jMc,703);CEc(Wm)(22);
