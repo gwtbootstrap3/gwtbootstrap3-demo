@@ -43,9 +43,9 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:NavTabs>
-                        <b:TabListItem active="true" target="#tab1" toggle="TAB">Tab 1</b:TabListItem>
-                        <b:TabListItem target="#tab2" toggle="TAB">Tab 2</b:TabListItem>
-                        <b:TabListItem target="#tab3" toggle="TAB">Tab 3</b:TabListItem>
+                        <b:TabListItem active="true" target="#tab1">Tab 1</b:TabListItem>
+                        <b:TabListItem target="#tab2">Tab 2</b:TabListItem>
+                        <b:TabListItem enabled="false" target="#tab3">Tab 3</b:TabListItem>
                     </b:NavTabs>
                     <b:TabContent>
                         <b:TabPane active="true" b:id="tab1">
@@ -71,9 +71,9 @@
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:NavTabs&gt;\n
-                        \s\s&lt;b:TabListItem active="true" target="#tab1" toggle="TAB" text="..."/&gt;\n
-                        \s\s&lt;b:TabListItem target="#tab2" toggle="TAB" text="..."/&gt;\n
-                        \s\s&lt;b:TabListItem target="#tab3" toggle="TAB" text="..."/&gt;\n
+                        \s\s&lt;b:TabListItem active="true" target="#tab1" text="..."/&gt;\n
+                        \s\s&lt;b:TabListItem target="#tab2" text="..."/&gt;\n
+                        \s\s&lt;b:TabListItem enabled="false" target="#tab3" text="..."/&gt;\n
                         &lt;/b:NavTabs&gt;\n
 
                         &lt;b:TabContent&gt;\n
@@ -97,9 +97,9 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:NavTabs>
-                        <b:TabListItem active="true" target="#tab4" toggle="TAB">Tab 4</b:TabListItem>
-                        <b:TabListItem target="#tab5" toggle="TAB">Tab 5</b:TabListItem>
-                        <b:TabListItem target="#tab6" toggle="TAB">Tab 6</b:TabListItem>
+                        <b:TabListItem active="true" target="#tab4">Tab 4</b:TabListItem>
+                        <b:TabListItem target="#tab5">Tab 5</b:TabListItem>
+                        <b:TabListItem target="#tab6">Tab 6</b:TabListItem>
                     </b:NavTabs>
                     <b:TabContent>
                         <b:TabPane fade="true" in="true" active="true" b:id="tab4">
@@ -128,9 +128,9 @@
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:NavTabs&gt;\n
-                        \s\s&lt;b:TabListItem active="true" target="#tab4" toggle="TAB" text="..."/&gt;\n
-                        \s\s&lt;b:TabListItem target="#tab5" toggle="TAB" text="..."/&gt;\n
-                        \s\s&lt;b:TabListItem target="#tab6" toggle="TAB" text="..."/&gt;\n
+                        \s\s&lt;b:TabListItem active="true" target="#tab4" text="..."/&gt;\n
+                        \s\s&lt;b:TabListItem target="#tab5" text="..."/&gt;\n
+                        \s\s&lt;b:TabListItem target="#tab6" text="..."/&gt;\n
                         &lt;/b:NavTabs&gt;\n
 
                         &lt;b:TabContent&gt;\n
@@ -154,10 +154,10 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:NavTabs>
-                        <b:TabListItem active="true" target="#tab7" toggle="TAB" ui:field="tab7ListItem">Tab 7
+                        <b:TabListItem active="true" target="#tab7" ui:field="tab7ListItem">Tab 7
                         </b:TabListItem>
-                        <b:TabListItem target="#tab8" toggle="TAB" ui:field="tab8ListItem">Tab 8</b:TabListItem>
-                        <b:TabListItem target="#tab9" toggle="TAB" ui:field="tab9ListItem">Tab 9</b:TabListItem>
+                        <b:TabListItem target="#tab8" ui:field="tab8ListItem">Tab 8</b:TabListItem>
+                        <b:TabListItem target="#tab9" ui:field="tab9ListItem">Tab 9</b:TabListItem>
                     </b:NavTabs>
                     <b:TabContent>
                         <b:TabPane active="true" b:id="tab7">
@@ -191,9 +191,9 @@
 
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:NavTabs&gt;\n
-                        \s\s&lt;b:TabListItem active="true" target="#tab7" toggle="TAB" text="..."/&gt;\n
-                        \s\s&lt;b:TabListItem target="#tab8" toggle="TAB" text="..."/&gt;\n
-                        \s\s&lt;b:TabListItem target="#tab9" toggle="TAB" text="..."/&gt;\n
+                        \s\s&lt;b:TabListItem active="true" target="#tab7" text="..."/&gt;\n
+                        \s\s&lt;b:TabListItem target="#tab8" text="..."/&gt;\n
+                        \s\s&lt;b:TabListItem target="#tab9" text="..."/&gt;\n
                         &lt;/b:NavTabs&gt;\n
 
                         &lt;b:TabContent&gt;\n
@@ -242,9 +242,9 @@
                             <b:Column size="MD_6">
                                 <b:TabPanel tabPosition="LEFT">
                                     <b:NavTabs>
-                                        <b:TabListItem active="true" target="#tab10" toggle="TAB">Tab 10</b:TabListItem>
-                                        <b:TabListItem target="#tab11" toggle="TAB">Tab 11</b:TabListItem>
-                                        <b:TabListItem target="#tab12" toggle="TAB">Tab 12</b:TabListItem>
+                                        <b:TabListItem active="true" target="#tab10">Tab 10</b:TabListItem>
+                                        <b:TabListItem target="#tab11">Tab 11</b:TabListItem>
+                                        <b:TabListItem target="#tab12">Tab 12</b:TabListItem>
                                     </b:NavTabs>
                                     <b:TabContent>
                                         <b:TabPane active="true" b:id="tab10">
@@ -272,9 +272,9 @@
                             <b:Column size="MD_6">
                                 <b:TabPanel tabPosition="RIGHT">
                                     <b:NavTabs>
-                                        <b:TabListItem active="true" target="#tab13" toggle="TAB">Tab 13</b:TabListItem>
-                                        <b:TabListItem target="#tab14" toggle="TAB">Tab 14</b:TabListItem>
-                                        <b:TabListItem target="#tab15" toggle="TAB">Tab 15</b:TabListItem>
+                                        <b:TabListItem active="true" target="#tab13">Tab 13</b:TabListItem>
+                                        <b:TabListItem target="#tab14">Tab 14</b:TabListItem>
+                                        <b:TabListItem target="#tab15">Tab 15</b:TabListItem>
                                     </b:NavTabs>
                                     <b:TabContent>
                                         <b:TabPane active="true" b:id="tab13">
@@ -322,9 +322,9 @@
                                         </b:TabPane>
                                     </b:TabContent>
                                     <b:NavTabs>
-                                        <b:TabListItem active="true" target="#tab16" toggle="TAB">Tab 16</b:TabListItem>
-                                        <b:TabListItem target="#tab17" toggle="TAB">Tab 17</b:TabListItem>
-                                        <b:TabListItem target="#tab18" toggle="TAB">Tab 18</b:TabListItem>
+                                        <b:TabListItem active="true" target="#tab16">Tab 16</b:TabListItem>
+                                        <b:TabListItem target="#tab17">Tab 17</b:TabListItem>
+                                        <b:TabListItem target="#tab18">Tab 18</b:TabListItem>
                                     </b:NavTabs>
                                 </b:TabPanel>
                             </b:Column>
@@ -338,9 +338,9 @@
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:TabPanel tabPosition="LEFT"&gt;\n
                         \s\s &lt;b:NavTabs&gt;\n
-                        \s\s\s\s&lt;b:TabListItem active="true" target="#tab1" toggle="TAB" text="..."/&gt;\n
-                        \s\s\s\s&lt;b:TabListItem target="#tab2" toggle="TAB" text="..."/&gt;\n
-                        \s\s\s\s&lt;b:TabListItem target="#tab3" toggle="TAB" text="..."/&gt;\n
+                        \s\s\s\s&lt;b:TabListItem active="true" target="#tab1" text="..."/&gt;\n
+                        \s\s\s\s&lt;b:TabListItem target="#tab2" text="..."/&gt;\n
+                        \s\s\s\s&lt;b:TabListItem target="#tab3" text="..."/&gt;\n
                         \s\s&lt;/b:NavTabs&gt;\n
 
                         \s\s&lt;b:TabContent&gt;\n
@@ -363,9 +363,9 @@
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:TabPanel tabPosition="RIGHT"&gt;\n
                         \s\s &lt;b:NavTabs&gt;\n
-                        \s\s\s\s&lt;b:TabListItem active="true" target="#tab1" toggle="TAB" text="..."/&gt;\n
-                        \s\s\s\s&lt;b:TabListItem target="#tab2" toggle="TAB" text="..."/&gt;\n
-                        \s\s\s\s&lt;b:TabListItem target="#tab3" toggle="TAB" text="..."/&gt;\n
+                        \s\s\s\s&lt;b:TabListItem active="true" target="#tab1" text="..."/&gt;\n
+                        \s\s\s\s&lt;b:TabListItem target="#tab2" text="..."/&gt;\n
+                        \s\s\s\s&lt;b:TabListItem target="#tab3" text="..."/&gt;\n
                         \s\s&lt;/b:NavTabs&gt;\n
 
                         \s\s&lt;b:TabContent&gt;\n
@@ -399,9 +399,9 @@
                         \s\s&lt;/b:TabContent&gt;\n
 
                         \s\s &lt;b:NavTabs&gt;\n
-                        \s\s\s\s&lt;b:TabListItem active="true" target="#tab1" toggle="TAB" text="..."/&gt;\n
-                        \s\s\s\s&lt;b:TabListItem target="#tab2" toggle="TAB" text="..."/&gt;\n
-                        \s\s\s\s&lt;b:TabListItem target="#tab3" toggle="TAB" text="..."/&gt;\n
+                        \s\s\s\s&lt;b:TabListItem active="true" target="#tab1" text="..."/&gt;\n
+                        \s\s\s\s&lt;b:TabListItem target="#tab2" text="..."/&gt;\n
+                        \s\s\s\s&lt;b:TabListItem target="#tab3" text="..."/&gt;\n
                         \s\s&lt;/b:NavTabs&gt;\n
                         &lt;/b:TabPanel&gt;\n
                     </d:PrettyPre>
