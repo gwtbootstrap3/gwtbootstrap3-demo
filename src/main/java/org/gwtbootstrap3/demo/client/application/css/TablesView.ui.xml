@@ -55,7 +55,7 @@
                     cellTable.addRangeChangeHandler(new RangeChangeEvent.Handler() {\n
                     \s\s@Override\n
                     \s\spublic void onRangeChange(RangeChangeEvent event) {\n
-                    \s\s\s\spagination.rebuild(pager);\n
+                    \s\s\s\spagination.rebuild(simplePager);\n
                     \s\s}\n
                     });
                 </d:PrettyPre>
@@ -91,7 +91,7 @@
                     dataGrid.addRangeChangeHandler(new RangeChangeEvent.Handler() {\n
                     \s\s@Override\n
                     \s\spublic void onRangeChange(RangeChangeEvent event) {\n
-                    \s\s\s\spagination.rebuild(pager);\n
+                    \s\s\s\spagination.rebuild(simplePager);\n
                     \s\s}\n
                     });
                 </d:PrettyPre>
