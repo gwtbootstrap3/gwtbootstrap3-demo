@@ -174,41 +174,35 @@
 <span class="sourceLineNo">166</span>    }<a name="line.166"></a>
 <span class="sourceLineNo">167</span><a name="line.167"></a>
 <span class="sourceLineNo">168</span>    private void render(final Icon newIcon) {<a name="line.168"></a>
-<span class="sourceLineNo">169</span>        if (text.isAttached()) {<a name="line.169"></a>
-<span class="sourceLineNo">170</span>            text.removeFromParent();<a name="line.170"></a>
-<span class="sourceLineNo">171</span>        }<a name="line.171"></a>
-<span class="sourceLineNo">172</span>        if (separator.isAttached()) {<a name="line.172"></a>
-<span class="sourceLineNo">173</span>            separator.removeFromParent();<a name="line.173"></a>
+<span class="sourceLineNo">169</span>        text.removeFromParent();<a name="line.169"></a>
+<span class="sourceLineNo">170</span>        separator.removeFromParent();<a name="line.170"></a>
+<span class="sourceLineNo">171</span><a name="line.171"></a>
+<span class="sourceLineNo">172</span>        if (icon != null) {<a name="line.172"></a>
+<span class="sourceLineNo">173</span>            icon.removeFromParent();<a name="line.173"></a>
 <span class="sourceLineNo">174</span>        }<a name="line.174"></a>
 <span class="sourceLineNo">175</span><a name="line.175"></a>
-<span class="sourceLineNo">176</span>        if (icon != null) {<a name="line.176"></a>
-<span class="sourceLineNo">177</span>            icon.removeFromParent();<a name="line.177"></a>
-<span class="sourceLineNo">178</span>        }<a name="line.178"></a>
-<span class="sourceLineNo">179</span><a name="line.179"></a>
-<span class="sourceLineNo">180</span>        icon = newIcon;<a name="line.180"></a>
-<span class="sourceLineNo">181</span>        icon.setSize(iconSize);<a name="line.181"></a>
-<span class="sourceLineNo">182</span>        icon.setFlip(iconFlip);<a name="line.182"></a>
-<span class="sourceLineNo">183</span>        icon.setRotate(iconRotate);<a name="line.183"></a>
-<span class="sourceLineNo">184</span>        icon.setMuted(iconMuted);<a name="line.184"></a>
-<span class="sourceLineNo">185</span>        icon.setSpin(iconSpin);<a name="line.185"></a>
-<span class="sourceLineNo">186</span>        icon.setBorder(iconBordered);<a name="line.186"></a>
-<span class="sourceLineNo">187</span>        icon.setLight(iconLight);<a name="line.187"></a>
-<span class="sourceLineNo">188</span><a name="line.188"></a>
-<span class="sourceLineNo">189</span>        if (iconPosition == IconPosition.LEFT) {<a name="line.189"></a>
-<span class="sourceLineNo">190</span>            widget.add(icon);<a name="line.190"></a>
-<span class="sourceLineNo">191</span>            widget.add(separator);<a name="line.191"></a>
-<span class="sourceLineNo">192</span>        }<a name="line.192"></a>
-<span class="sourceLineNo">193</span><a name="line.193"></a>
-<span class="sourceLineNo">194</span>        if (text.getText() != null &amp;&amp; text.getText().length() &gt; 0) {<a name="line.194"></a>
-<span class="sourceLineNo">195</span>            widget.add(text);<a name="line.195"></a>
-<span class="sourceLineNo">196</span>        }<a name="line.196"></a>
-<span class="sourceLineNo">197</span><a name="line.197"></a>
-<span class="sourceLineNo">198</span>        if (iconPosition == IconPosition.RIGHT) {<a name="line.198"></a>
-<span class="sourceLineNo">199</span>            widget.add(separator);<a name="line.199"></a>
-<span class="sourceLineNo">200</span>            widget.add(icon);<a name="line.200"></a>
-<span class="sourceLineNo">201</span>        }<a name="line.201"></a>
-<span class="sourceLineNo">202</span>    }<a name="line.202"></a>
-<span class="sourceLineNo">203</span>}<a name="line.203"></a>
+<span class="sourceLineNo">176</span>        icon = newIcon;<a name="line.176"></a>
+<span class="sourceLineNo">177</span>        icon.setSize(iconSize);<a name="line.177"></a>
+<span class="sourceLineNo">178</span>        icon.setFlip(iconFlip);<a name="line.178"></a>
+<span class="sourceLineNo">179</span>        icon.setRotate(iconRotate);<a name="line.179"></a>
+<span class="sourceLineNo">180</span>        icon.setMuted(iconMuted);<a name="line.180"></a>
+<span class="sourceLineNo">181</span>        icon.setSpin(iconSpin);<a name="line.181"></a>
+<span class="sourceLineNo">182</span>        icon.setBorder(iconBordered);<a name="line.182"></a>
+<span class="sourceLineNo">183</span>        icon.setLight(iconLight);<a name="line.183"></a>
+<span class="sourceLineNo">184</span><a name="line.184"></a>
+<span class="sourceLineNo">185</span>        if (iconPosition == IconPosition.LEFT) {<a name="line.185"></a>
+<span class="sourceLineNo">186</span>            widget.add(icon);<a name="line.186"></a>
+<span class="sourceLineNo">187</span>            widget.add(separator);<a name="line.187"></a>
+<span class="sourceLineNo">188</span>        }<a name="line.188"></a>
+<span class="sourceLineNo">189</span><a name="line.189"></a>
+<span class="sourceLineNo">190</span>        widget.add(text);<a name="line.190"></a>
+<span class="sourceLineNo">191</span><a name="line.191"></a>
+<span class="sourceLineNo">192</span>        if (iconPosition == IconPosition.RIGHT) {<a name="line.192"></a>
+<span class="sourceLineNo">193</span>            widget.add(separator);<a name="line.193"></a>
+<span class="sourceLineNo">194</span>            widget.add(icon);<a name="line.194"></a>
+<span class="sourceLineNo">195</span>        }<a name="line.195"></a>
+<span class="sourceLineNo">196</span>    }<a name="line.196"></a>
+<span class="sourceLineNo">197</span>}<a name="line.197"></a>
 
 
 
