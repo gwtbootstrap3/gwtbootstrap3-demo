@@ -35,8 +35,29 @@
                 <b:Pagination ui:field="cellTablePagination"/>
             </b:PanelBody>
             <b:PanelFooter>
+                <b:Heading size="4" text="UiBinder"/>
+
                 <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:CellTable bordered="true" condensed="true" striped="true" hover="true" height="..." width="..."/&gt;\n
+                </d:PrettyPre>
+
+                <b:Heading size="4" text="Java code"/>
+
+                <b:Paragraph>
+                    <strong>NOTE: The pagination.rebuild() after adding/removing data from the grid.</strong>
+                </b:Paragraph>
+
+                <d:PrettyPre addStyleNames="lang-java">
+                    // Adding / Removing data\n
+                    pagination.rebuild(simplePager);\n\n
+
+                    // Setting the RangeChangeHandler\n
+                    cellTable.addRangeChangeHandler(new RangeChangeEvent.Handler() {\n
+                    \s\s@Override\n
+                    \s\spublic void onRangeChange(RangeChangeEvent event) {\n
+                    \s\s\s\spagination.rebuild(pager);\n
+                    \s\s}\n
+                    });
                 </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>
@@ -50,8 +71,29 @@
                 <b:Pagination ui:field="dataGridPagination"/>
             </b:PanelBody>
             <b:PanelFooter>
+                <b:Heading size="4" text="UiBinder"/>
+
                 <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:DataGrid bordered="true" condensed="true" striped="true" hover="true" height="..." width="..."/&gt;\n
+                </d:PrettyPre>
+
+                <b:Heading size="4" text="Java code"/>
+
+                <b:Paragraph>
+                    <strong>NOTE: The pagination.rebuild() after adding/removing data from the grid.</strong>
+                </b:Paragraph>
+
+                <d:PrettyPre addStyleNames="lang-java">
+                    // Adding / Removing data\n
+                    pagination.rebuild(simplePager);\n\n
+
+                    // Setting the RangeChangeHandler\n
+                    dataGrid.addRangeChangeHandler(new RangeChangeEvent.Handler() {\n
+                    \s\s@Override\n
+                    \s\spublic void onRangeChange(RangeChangeEvent event) {\n
+                    \s\s\s\spagination.rebuild(pager);\n
+                    \s\s}\n
+                    });
                 </d:PrettyPre>
             </b:PanelFooter>
         </b:Panel>

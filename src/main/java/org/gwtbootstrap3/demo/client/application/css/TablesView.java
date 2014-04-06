@@ -20,8 +20,6 @@ package org.gwtbootstrap3.demo.client.application.css;
  * #L%
  */
 
-import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.cellview.client.AbstractCellTable;
@@ -34,7 +32,6 @@ import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 import org.gwtbootstrap3.client.ui.CellTable;
 import org.gwtbootstrap3.client.ui.DataGrid;
-import org.gwtbootstrap3.client.ui.ListItem;
 import org.gwtbootstrap3.client.ui.Pagination;
 import org.gwtbootstrap3.demo.client.pojo.TableTestPojo;
 
@@ -74,7 +71,7 @@ public class TablesView extends ViewImpl implements TablesPresenter.MyView {
             dataProvider.getList().add(new TableTestPojo("Test " + i, "Test " + i, "Test " + i));
         }
         dataProvider.flush();
-        rebuildPager(pagination, simplePager);
+        pagination.rebuild(simplePager);
     }
 
     private void initTable(AbstractCellTable<TableTestPojo> grid, final SimplePager pager, final Pagination pagination, ListDataProvider<TableTestPojo> dataProvider) {
@@ -109,55 +106,12 @@ public class TablesView extends ViewImpl implements TablesPresenter.MyView {
 
             @Override
             public void onRangeChange(RangeChangeEvent event) {
-                rebuildPager(pagination, pager);
+                pagination.rebuild(pager);
             }
         });
 
         pager.setDisplay(grid);
         pagination.clear();
         dataProvider.addDataDisplay(grid);
-    }
-
-    private void rebuildPager(final Pagination pagination, final SimplePager pager) {
-        pagination.clear();
-
-        if (pager.getPageCount() == 0) {
-            return;
-        }
-
-        ListItem prev = pagination.addPreviousLink();
-        prev.addClickHandler(new ClickHandler() {
-            @Override
-            public void onClick(ClickEvent event) {
-                pager.previousPage();
-            }
-        });
-        prev.setEnabled(pager.hasPreviousPage());
-
-        for (int i = 0; i < pager.getPageCount(); i++) {
-            final int display = i + 1;
-            ListItem page = new ListItem(String.valueOf(display));
-            page.addClickHandler(new ClickHandler() {
-                @Override
-                public void onClick(ClickEvent event) {
-                    pager.setPage(display - 1);
-                }
-            });
-
-            if (i == pager.getPage()) {
-                page.setActive(true);
-            }
-
-            pagination.add(page);
-        }
-
-        ListItem next = pagination.addNextLink();
-        next.addClickHandler(new ClickHandler() {
-            @Override
-            public void onClick(ClickEvent event) {
-                pager.nextPage();
-            }
-        });
-        next.setEnabled(pager.hasNextPage());
     }
 }
