@@ -54,6 +54,8 @@
                 <b:Anchor addStyleNames="{style.spacing}" href="https://github.com/silviomoreto/bootstrap-select">
                     Bootstrap Select
                 </b:Anchor>
+                <b:Br/>
+                <b:Bold>Current Version Supported: 1.5.4</b:Bold>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">

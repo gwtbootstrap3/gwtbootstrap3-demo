@@ -44,6 +44,8 @@
             <b:BlockQuote>
                 <b:Bold>Original Library Link:</b:Bold>
                 <b:Anchor addStyleNames="{style.spacing}" href="http://bootboxjs.com/">Bootbox.js</b:Anchor>
+                <b:Br/>
+                <b:Bold>Current Version Supported: 4.1.0</b:Bold>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">

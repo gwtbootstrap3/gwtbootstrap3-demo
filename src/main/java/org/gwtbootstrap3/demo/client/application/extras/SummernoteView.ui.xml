@@ -64,6 +64,8 @@
                 <b:Bold>Original Library Link:</b:Bold>
                 <b:Anchor addStyleNames="{style.spacing2}" href="http://hackerwins.github.io/summernote/">Summernote
                 </b:Anchor>
+                <b:Br/>
+                <b:Bold>Current Version Supported: 0.5.0</b:Bold>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">

@@ -68,6 +68,8 @@
                 <b:Anchor addStyleNames="{style.spacing}" href="http://www.malot.fr/bootstrap-datetimepicker/">
                 Bootstrap DateTimePicker
                 </b:Anchor>
+                <b:Br/>
+                <b:Bold>Current Version Supported: 2.2.0</b:Bold>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">

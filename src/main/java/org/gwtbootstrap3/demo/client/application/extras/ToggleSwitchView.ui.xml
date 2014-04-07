@@ -47,6 +47,8 @@
                 <b:Anchor addStyleNames="{style.spacing}" href="http://www.bootstrap-switch.org/">Bootstrap
                     Switch
                 </b:Anchor>
+                <b:Br/>
+                <b:Bold>Current Version Supported: 3</b:Bold>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
