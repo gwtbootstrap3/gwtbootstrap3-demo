@@ -236,9 +236,16 @@
                         The choices of tab position are: LEFT, RIGHT, BELOW, TOP (default).
                         <br/>
                         <br/>
+                        <b>To use this, you must add this inherit to your *.gwt.xml (to inject the custom css needed):
+                        </b>
+                        <br/>
+                        <br/>
+                        <d:PrettyPre addStyleNames="lang-xml">
+                            &lt;inherits name="org.gwtbootstrap3.extras.positionedtabs.PositionedTabs"/&gt;
+                        </d:PrettyPre>
                     </b:Paragraph>
-                    <b:FluidContainer>
-                        <b:Row>
+                    <b:FluidContainer marginTop="10">
+                    <b:Row>
                             <b:Column size="MD_6">
                                 <b:TabPanel tabPosition="LEFT">
                                     <b:NavTabs>
