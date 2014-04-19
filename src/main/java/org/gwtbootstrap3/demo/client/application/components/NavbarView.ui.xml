@@ -52,7 +52,7 @@
                 <b:Navbar addStyleNames="{style.margin-fix}">
                     <b:NavbarHeader>
                         <b:NavbarBrand>Brand</b:NavbarBrand>
-                        <b:NavbarCollapseButton target="#navbar-collapse2"/>
+                        <b:NavbarCollapseButton dataTarget="#navbar-collapse2"/>
                     </b:NavbarHeader>
 
                     <b:NavbarCollapse b:id="navbar-collapse2">
@@ -62,7 +62,7 @@
                             <b:ListItem>Item 3</b:ListItem>
 
                             <b:ListDropDown>
-                                <b:AnchorButton toggle="DROPDOWN">Dropdown</b:AnchorButton>
+                                <b:AnchorButton dataToggle="DROPDOWN">Dropdown</b:AnchorButton>
                                 <b:DropDownMenu>
                                     <b:ListItem>Dropdown 1</b:ListItem>
                                     <b:ListItem>Dropdown 2</b:ListItem>
@@ -87,7 +87,7 @@
                     &lt;b:Navbar&gt;\n
                     \s\s&lt;b:NavbarHeader&gt;\n
                     \s\s\s\s&lt;b:NavbarBrand&gt;Brand&lt;/b:NavbarBrand&gt;\n
-                    \s\s\s\s&lt;b:NavbarCollapseButton target="#navbar-collapse"/&gt;\n
+                    \s\s\s\s&lt;b:NavbarCollapseButton dataTarget="#navbar-collapse"/&gt;\n
                     \s\s&lt;b:NavbarHeader&gt;\n
                     \n
                     \s\s&lt;b:NavbarCollapse b:id="navbar-collapse"&gt;\n
@@ -97,7 +97,7 @@
                     \s\s\s\s\s\s&lt;b:ListItem&gt;Item 3&lt;/b:ListItem&gt;\n
                     \n
                     \s\s\s\s\s\s&lt;b:ListDropDown&gt;\n
-                    \s\s\s\s\s\s\s\s&lt;b:AnchorButton toggle="DROPDOWN"&gt;Dropdown&lt;/b:AnchorButton&gt;\n
+                    \s\s\s\s\s\s\s\s&lt;b:AnchorButton dataToggle="DROPDOWN"&gt;Dropdown&lt;/b:AnchorButton&gt;\n
                     \s\s\s\s\s\s\s\s&lt;b:DropDownMenu&gt;\n
                     \s\s\s\s\s\s\s\s\s\s&lt;b:ListItem&gt;Dropdown 1&lt;/b:ListItem&gt;\n
                     \s\s\s\s\s\s\s\s\s\s&lt;b:ListItem&gt;Dropdown 2&lt;/b:ListItem&gt;\n

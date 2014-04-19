@@ -58,7 +58,7 @@
                     <b:Heading size="3" text="Collapse via Button target"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Button type="DANGER" toggle="COLLAPSE" target="#demoCollapse">
+                    <b:Button type="DANGER" dataToggle="COLLAPSE" dataTarget="#demoCollapse">
                         Collapse Me
                     </b:Button>
                     <b:ClearFix addStyleNames="{style.margin}"/>
@@ -74,7 +74,7 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Button type="..." toggle="COLLAPSE" target="#demoCollapse" text="Collapse Me"/&gt;\n
+                        &lt;b:Button type="..." dataToggle="COLLAPSE" dataTarget="#demoCollapse" text="Collapse Me"/&gt;\n
                         &lt;b:Collapse b:id="demoCollapse&gt;\n
                         \s\sWidget To Collapse\n
                         &lt;/b:Collapse&gt;\n
@@ -91,7 +91,7 @@
                         <b:Panel>
                             <b:PanelHeader>
                                 <b:HeadingPanel size="4">
-                                    <b:Anchor toggle="COLLAPSE" dataParent="#accordion" target="#collapseOne"
+                                    <b:Anchor dataToggle="COLLAPSE" dataParent="#accordion" dataTarget="#collapseOne"
                                               text="Collapse Group #1"/>
                                 </b:HeadingPanel>
                             </b:PanelHeader>
@@ -106,7 +106,7 @@
                         <b:Panel>
                             <b:PanelHeader>
                                 <b:HeadingPanel size="4">
-                                    <b:Anchor toggle="COLLAPSE" dataParent="#accordion" target="#collapseTwo"
+                                    <b:Anchor dataToggle="COLLAPSE" dataParent="#accordion" dataTarget="#collapseTwo"
                                               text="Collapse Group #2"/>
                                 </b:HeadingPanel>
                             </b:PanelHeader>
@@ -121,8 +121,8 @@
                         <b:Panel>
                             <b:PanelHeader>
                                 <b:HeadingPanel size="4">
-                                    <b:Anchor icon="ANCHOR" toggle="COLLAPSE" dataParent="#accordion"
-                                              target="#collapseThree" text="Collapse Group #3"/>
+                                    <b:Anchor icon="ANCHOR" dataToggle="COLLAPSE" dataParent="#accordion"
+                                              dataTarget="#collapseThree" text="Collapse Group #3"/>
                                 </b:HeadingPanel>
                             </b:PanelHeader>
                             <b:PanelCollapse b:id="collapseThree">
@@ -141,7 +141,7 @@
                         \s\s&lt;b:Panel&gt;\n
                         \s\s\s\s&lt;b:PanelHeader&gt;\n
                         \s\s\s\s\s\s&lt;b:HeadingPanel size="4"&gt;\n
-                        \s\s\s\s\s\s\s\s&lt;b:Anchor toggle="COLLAPSE" dataParent="#accordion" target="#collapseOne"/&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:Anchor dataToggle="COLLAPSE" dataParent="#accordion" dataTarget="#collapseOne"/&gt;\n
                         \s\s\s\s\s\s&lt;/b:HeadingPanel&gt;\n
                         \s\s\s\s&lt;/b:PanelHeader&gt;\n
                         \s\s\s\s&lt;b:PanelCollapse b:id="collapseOne"&gt;\n
@@ -153,7 +153,7 @@
                         \s\s&lt;b:Panel&gt;\n
                         \s\s\s\s&lt;b:PanelHeader&gt;\n
                         \s\s\s\s\s\s&lt;b:HeadingPanel size="4"&gt;\n
-                        \s\s\s\s\s\s\s\s&lt;b:Anchor toggle="COLLAPSE" dataParent="#accordion" target="#collapseTwo"/&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:Anchor dataToggle="COLLAPSE" dataParent="#accordion" dataTarget="#collapseTwo"/&gt;\n
                         \s\s\s\s\s\s&lt;/b:HeadingPanel&gt;\n
                         \s\s\s\s&lt;/b:PanelHeader&gt;\n
                         \s\s\s\s&lt;b:PanelCollapse b:id="collapseTwo"&gt;\n
@@ -165,7 +165,7 @@
                         \s\s&lt;b:Panel&gt;\n
                         \s\s\s\s&lt;b:PanelHeader&gt;\n
                         \s\s\s\s\s\s&lt;b:HeadingPanel size="4"&gt;\n
-                        \s\s\s\s\s\s\s\s&lt;b:Anchor icon="..." toggle="COLLAPSE" dataParent="#accordion" target="#collapseThree"/&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:Anchor icon="..." dataToggle="COLLAPSE" dataParent="#accordion" dataTarget="#collapseThree"/&gt;\n
                         \s\s\s\s\s\s&lt;/b:HeadingPanel&gt;\n
                         \s\s\s\s&lt;/b:PanelHeader&gt;\n
                         \s\s\s\s&lt;b:PanelCollapse b:id="collapseThree"&gt;\n

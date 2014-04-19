@@ -109,26 +109,26 @@
                 <b:PanelBody>
                     <b2:DateTimeBox/>
 
-                    <b:Modal title="DateTimePicker in Modal" closable="true" fade="true" backdrop="STATIC" keyboard="true" b:id="myModal" ui:field="modal">
+                    <b:Modal title="DateTimePicker in Modal" closable="true" fade="true" dataBackdrop="STATIC" dataKeyboard="true" b:id="myModal" ui:field="modal">
                         <b:ModalBody>
                             <b2:DateTimeBox/>
                         </b:ModalBody>
                         <b:ModalFooter>
-                            <b:Button type="DANGER" dismiss="MODAL">Close</b:Button>
+                            <b:Button type="DANGER" dataDismiss="MODAL">Close</b:Button>
                         </b:ModalFooter>
                     </b:Modal>
 
-                    <b:Button addStyleNames="{style.spacing2}" target="#myModal" toggle="MODAL" type="PRIMARY" text="DateTimePicker in Modal"/>
+                    <b:Button addStyleNames="{style.spacing2}" dataTarget="#myModal" dataToggle="MODAL" type="PRIMARY" text="DateTimePicker in Modal"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b2:DateTimeBox/&gt;\n\n
-                        &lt;b:Modal title="..." closable="..." fade="..." backdrop="STATIC" b:id="..."&gt;\n\s\s&lt;b:ModalBody&gt;\n
+                        &lt;b:Modal title="..." closable="..." fade="..." dataBackdrop="STATIC" b:id="..."&gt;\n\s\s&lt;b:ModalBody&gt;\n
                         \s\s&lt;b:ModalBody&gt;\n
                         \s\s\s\s&lt;b2:DateTimeBox/&gt;\n
                         \s\s&lt;/b:ModalBody&gt;\n
                         \s\s&lt;b:ModalFooter&gt;\n
-                        \s\s\s\s&lt;b:Button type="DANGER" dismiss="MODAL"&gt;Close&lt;/b:Button&gt;\n
+                        \s\s\s\s&lt;b:Button type="DANGER" dataDismiss="MODAL"&gt;Close&lt;/b:Button&gt;\n
                         \s\s&lt;/b:ModalFooter&gt;\n
                         &lt;/b:Modal&gt;\n
                     </d:PrettyPre>

@@ -37,42 +37,42 @@
             </b:PanelHeader>
             <b:PanelBody>
                 <b:ButtonGroup addStyleNames="{style.spacing}">
-                    <b:Button toggle="DROPDOWN">Default</b:Button>
+                    <b:Button dataToggle="DROPDOWN">Default</b:Button>
                     <b:DropDownMenu>
                         <b:ListItem>Item 1</b:ListItem>
                         <b:ListItem>Item 2</b:ListItem>
                     </b:DropDownMenu>
                 </b:ButtonGroup>
                 <b:ButtonGroup addStyleNames="{style.spacing}">
-                    <b:Button toggle="DROPDOWN" type="PRIMARY">Primary</b:Button>
+                    <b:Button dataToggle="DROPDOWN" type="PRIMARY">Primary</b:Button>
                     <b:DropDownMenu>
                         <b:ListItem>Item 1</b:ListItem>
                         <b:ListItem>Item 2</b:ListItem>
                     </b:DropDownMenu>
                 </b:ButtonGroup>
                 <b:ButtonGroup addStyleNames="{style.spacing}">
-                    <b:Button toggle="DROPDOWN" type="SUCCESS">Success</b:Button>
+                    <b:Button dataToggle="DROPDOWN" type="SUCCESS">Success</b:Button>
                     <b:DropDownMenu>
                         <b:ListItem>Item 1</b:ListItem>
                         <b:ListItem>Item 2</b:ListItem>
                     </b:DropDownMenu>
                 </b:ButtonGroup>
                 <b:ButtonGroup addStyleNames="{style.spacing}">
-                    <b:Button toggle="DROPDOWN" type="INFO">Info</b:Button>
+                    <b:Button dataToggle="DROPDOWN" type="INFO">Info</b:Button>
                     <b:DropDownMenu>
                         <b:ListItem>Item 1</b:ListItem>
                         <b:ListItem>Item 2</b:ListItem>
                     </b:DropDownMenu>
                 </b:ButtonGroup>
                 <b:ButtonGroup addStyleNames="{style.spacing}">
-                    <b:Button toggle="DROPDOWN" type="WARNING">Warning</b:Button>
+                    <b:Button dataToggle="DROPDOWN" type="WARNING">Warning</b:Button>
                     <b:DropDownMenu>
                         <b:ListItem>Item 1</b:ListItem>
                         <b:ListItem>Item 2</b:ListItem>
                     </b:DropDownMenu>
                 </b:ButtonGroup>
                 <b:ButtonGroup addStyleNames="{style.spacing}">
-                    <b:Button toggle="DROPDOWN" type="DANGER">Danger</b:Button>
+                    <b:Button dataToggle="DROPDOWN" type="DANGER">Danger</b:Button>
                     <b:DropDownMenu>
                         <b:ListItem>Item 1</b:ListItem>
                         <b:ListItem>Item 2</b:ListItem>
@@ -82,7 +82,7 @@
             <b:PanelFooter>
                 <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:ButtonGroup&gt;\n
-                    \s\s&lt;b:Button toggle="DROPDOWN" text="..." type="..."&gt;\n
+                    \s\s&lt;b:Button dataToggle="DROPDOWN" text="..." type="..."&gt;\n
                     \s\s&lt;b:DropDownMenu&gt;\n
                     \s\s\s\s&lt;b:ListItem&gt;Item 1&lt;/b:ListItem&gt;\n
                     \s\s\s\s&lt;b:ListItem&gt;Item 2&lt;/b:ListItem&gt;\n
@@ -99,7 +99,7 @@
             <b:PanelBody>
                 <b:ButtonGroup addStyleNames="{style.spacing}">
                     <b:Button>Split Dropdown</b:Button>
-                    <b:Button toggle="DROPDOWN"/>
+                    <b:Button dataToggle="DROPDOWN"/>
                     <b:DropDownMenu>
                         <b:ListItem>Item 1</b:ListItem>
                         <b:ListItem>Item 2</b:ListItem>
@@ -111,7 +111,7 @@
                 <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:ButtonGroup&gt;\n
                     \s\s&lt;b:Button&gt;Split Dropdown&lt;/b:Button&gt;\n
-                    \s\s&lt;b:Button toggle="DROPDOWN"/&gt;\n
+                    \s\s&lt;b:Button dataToggle="DROPDOWN"/&gt;\n
                     \s\s&lt;b:DropDownMenu&gt;\n
                     \s\s\s\s&lt;b:ListItem&gt;Item 1&lt;/b:ListItem&gt;\n
                     \s\s\s\s&lt;b:ListItem&gt;Item 2&lt;/b:ListItem&gt;\n
@@ -128,7 +128,7 @@
             </b:PanelHeader>
             <b:PanelBody>
                 <b:ButtonGroup dropUp="true" addStyleNames="{style.spacing}">
-                    <b:Button toggle="DROPDOWN">Dropup</b:Button>
+                    <b:Button dataToggle="DROPDOWN">Dropup</b:Button>
                     <b:DropDownMenu>
                         <b:ListItem>Item 1</b:ListItem>
                         <b:ListItem>Item 2</b:ListItem>
@@ -139,7 +139,7 @@
             <b:PanelFooter>
                 <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:ButtonGroup dropUp="true"&gt;\n
-                    \s\s&lt;b:Button toggle="DROPDOWN"&gt;Dropup&lt;/b:Button&gt;\n
+                    \s\s&lt;b:Button dataToggle="DROPDOWN"&gt;Dropup&lt;/b:Button&gt;\n
                     \s\s&lt;b:DropDownMenu&gt;\n
                     \s\s\s\s&lt;b:ListItem&gt;Item 1&lt;/b:ListItem&gt;\n
                     \s\s\s\s&lt;b:ListItem&gt;Item 2&lt;/b:ListItem&gt;\n

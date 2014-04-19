@@ -115,11 +115,11 @@
                     <b:Heading size="3" text="Toggle button"/>
                 </b:PanelHeader>
                 <b:PanelBody addStyleNames="{style.spacing}">
-                    <b:Button toggle="BUTTON" text="Toggle button"/>
+                    <b:Button dataToggle="BUTTON" text="Toggle button"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Button toggle="BUTTON"/&gt;
+                        &lt;b:Button dataToggle="BUTTON"/&gt;
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -129,13 +129,13 @@
                     <b:Heading size="3" text="With loading state"/>
                 </b:PanelHeader>
                 <b:PanelBody addStyleNames="{style.spacing}">
-                    <b:Button ui:field="button" text="Click me" loadingText="Loading..."/>
+                    <b:Button ui:field="button" text="Click me" dataLoadingText="Loading..."/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <b:Heading size="4" text="UiBinder"/>
 
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Button ui:field="button" text="Click me" loadingText="Loading..."/&gt;
+                        &lt;b:Button ui:field="button" text="Click me" dataLoadingText="Loading..."/&gt;
                     </d:PrettyPre>
 
                     <b:Heading size="4" text="Java code"/>

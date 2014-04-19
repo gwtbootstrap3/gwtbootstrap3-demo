@@ -122,7 +122,7 @@
                     <b:ListItem>Item 2</b:ListItem>
 
                     <b:ListDropDown>
-                        <b:AnchorButton toggle="DROPDOWN">Dropdown</b:AnchorButton>
+                        <b:AnchorButton dataToggle="DROPDOWN">Dropdown</b:AnchorButton>
                         <b:DropDownMenu>
                             <b:ListItem>Dropdown 1</b:ListItem>
                             <b:ListItem>Dropdown 2</b:ListItem>
@@ -138,7 +138,7 @@
                     <b:ListItem>Item 2</b:ListItem>
 
                     <b:ListDropDown>
-                        <b:AnchorButton toggle="DROPDOWN">Dropdown</b:AnchorButton>
+                        <b:AnchorButton dataToggle="DROPDOWN">Dropdown</b:AnchorButton>
                         <b:DropDownMenu>
                             <b:ListItem>Dropdown 1</b:ListItem>
                             <b:ListItem>Dropdown 2</b:ListItem>
@@ -156,7 +156,7 @@
                     \s\s&lt;b:ListItem&gt;Item 2&lt;/b:ListItem&gt;\n
                     \n
                     \s\s&lt;b:ListDropDown&gt;\n
-                    \s\s\s\s&lt;b:AnchorButton toggle="DROPDOWN"&gt;Dropdown&lt;/b:AnchorButton&gt;\n
+                    \s\s\s\s&lt;b:AnchorButton dataToggle="DROPDOWN"&gt;Dropdown&lt;/b:AnchorButton&gt;\n
                     \s\s\s\s&lt;b:DropDownMenu&gt;\n
                     \s\s\s\s\s\s&lt;b:ListItem&gt;Dropdown 1&lt;/b:ListItem&gt;\n
                     \s\s\s\s\s\s&lt;b:ListItem&gt;Dropdown 2&lt;/b:ListItem&gt;\n

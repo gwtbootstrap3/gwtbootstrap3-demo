@@ -45,13 +45,13 @@
                     <b:NavbarHeader>
                         <b:NavbarBrand targetHistoryToken="{nameTokens.getHome}" ui:field="brand">GwtBootstrap3
                         </b:NavbarBrand>
-                        <b:NavbarCollapseButton target="#navbar-collapse"/>
+                        <b:NavbarCollapseButton dataTarget="#navbar-collapse"/>
                     </b:NavbarHeader>
                     <b:NavbarCollapse b:id="navbar-collapse">
                         <b:NavbarNav>
                             <b:ListItem text="Setup" targetHistoryToken="{nameTokens.getSetup}"/>
                             <b:ListDropDown>
-                                <b:AnchorButton toggle="DROPDOWN">CSS</b:AnchorButton>
+                                <b:AnchorButton dataToggle="DROPDOWN">CSS</b:AnchorButton>
                                 <b:DropDownMenu>
                                     <b:ListItem targetHistoryToken="{nameTokens.getButtons}">Buttons</b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getCode}">Code</b:ListItem>
@@ -66,7 +66,7 @@
                                 </b:DropDownMenu>
                             </b:ListDropDown>
                             <b:ListDropDown>
-                                <b:AnchorButton toggle="DROPDOWN">Components</b:AnchorButton>
+                                <b:AnchorButton dataToggle="DROPDOWN">Components</b:AnchorButton>
                                 <b:DropDownMenu>
                                     <b:ListItem targetHistoryToken="{nameTokens.getAlerts}">Alerts</b:ListItem>
                                     <b:ListItem targetHistoryToken="{nameTokens.getBadges}">Badges</b:ListItem>
@@ -97,7 +97,7 @@
                                 </b:DropDownMenu>
                             </b:ListDropDown>
                             <b:ListDropDown>
-                                <b:AnchorButton toggle="DROPDOWN">JavaScript</b:AnchorButton>
+                                <b:AnchorButton dataToggle="DROPDOWN">JavaScript</b:AnchorButton>
                                 <b:DropDownMenu>
                                     <!--<b:ListItem targetHistoryToken="{nameTokens.getAffix}">Affix</b:ListItem>-->
                                     <b:ListItem targetHistoryToken="{nameTokens.getCarousel}">Carousel</b:ListItem>
@@ -109,7 +109,7 @@
                                 </b:DropDownMenu>
                             </b:ListDropDown>
                             <b:ListDropDown>
-                                <b:AnchorButton toggle="DROPDOWN">Extras</b:AnchorButton>
+                                <b:AnchorButton dataToggle="DROPDOWN">Extras</b:AnchorButton>
                                 <b:DropDownMenu>
                                     <b:ListItem targetHistoryToken="{nameTokens.getDatetimePicker}">DateTimePicker
                                     </b:ListItem>

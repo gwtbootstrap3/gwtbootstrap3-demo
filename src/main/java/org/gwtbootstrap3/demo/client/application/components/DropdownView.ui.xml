@@ -32,7 +32,7 @@
             </b:PanelHeader>
             <b:PanelBody>
                 <b:DropDown>
-                    <b:Anchor toggle="DROPDOWN">Click to toggle dropdown</b:Anchor>
+                    <b:Anchor dataToggle="DROPDOWN">Click to toggle dropdown</b:Anchor>
                     <b:DropDownMenu>
                         <b:DropDownHeader>Header 1</b:DropDownHeader>
                         <b:ListItem>Action 1</b:ListItem>
@@ -47,7 +47,7 @@
             <b:PanelFooter>
                 <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:DropDown&gt;\n
-                    \s\s&lt;b:Anchor toggle="DROPDOWN"&gt;Click to toggle dropdown&lt;/b:Anchor&gt;\n
+                    \s\s&lt;b:Anchor dataToggle="DROPDOWN"&gt;Click to toggle dropdown&lt;/b:Anchor&gt;\n
                     \s\s&lt;b:DropDownMenu&gt;\n
                     \s\s\s\s&lt;b:DropDownHeader&gt;Header 1&lt;/b:DropDownHeader&gt;\n
                     \s\s\s\s&lt;b:ListItem&gt;Action 1&lt;/b:ListItem&gt;\n
