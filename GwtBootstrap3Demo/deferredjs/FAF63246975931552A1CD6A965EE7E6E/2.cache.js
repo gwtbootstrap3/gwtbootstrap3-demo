@@ -1,0 +1,17 @@
+function e2b(){}
+function k2b(){}
+function n2b(){}
+function o2b(){o2b=bDc;j2b=new n2b}
+function c2b(){Ymb(this,g2b(new h2b))}
+function V1b(a,b,c){Emb.call(this,a,b,c,(S0b(),R0b))}
+function cac(a){var b;if(!a.g){b=new c2b(new e2b);a.g=b}return a.g}
+function p2b(a){var b;b=new vtb;Io(b.a,FJc);ptb(b,f0(a));Io(b.a,GJc);return new M_(b.a.a)}
+function r2b(a){var b;b=new vtb;Io(b.a,FJc);ptb(b,f0(a));Io(b.a,GJc);return new M_(b.a.a)}
+function t2b(a){var b;b=new vtb;Io(b.a,"<a href='#'>Inbox <span id='");ptb(b,f0(a));Io(b.a,KJc);return new M_(b.a.a)}
+function q2b(a){var b;b=new vtb;Io(b.a,"<a href='#'>Deleted Items <span id='");ptb(b,f0(a));Io(b.a,KJc);return new M_(b.a.a)}
+function s2b(a){var b;b=new vtb;Io(b.a,"12 <span id='");ptb(b,f0(a));Io(b.a,"'><\/span> <i>unread<\/i>");return new M_(b.a.a)}
+function bac(a){var b;if(!a.f){b=new V1b(Nlb(jnb(a.a)),cac(a),aac(a));dmb((knb(a.a),b),vnb(knb(a.a)));a.f=b}return a.f}
+function m2b(a){if(!a.a){a.a=true;Fv();Iv((vz(),'.GOBEEQNII span{margin-right:5px;}'));return true}return false}
+function h2b(){this.n=(new k2b,o2b(),j2b);m2b(this.n);this.j=Hr($doc);this.c=Hr($doc);this.g=Hr($doc);this.a=Hr($doc);this.e=Hr($doc);this.k=new K1(this.j);this.d=new K1(this.c);this.i=new K1(this.g);this.b=new K1(this.a);this.f=new K1(this.e)}
+function g2b(a){var b,c,d,e,f,g,i,j,k,n,o,p,q,r,s,t,u,v,w,A,B,C,D,F,G,H,I,J;b=new bIb;LAb(b,(c=new yDb(yJc),LAb(c,(d=new OGb,d.a=lHc,NGb(d),d)),LAb(c,(e=new eHb,LAb(e,(g=new qHb(p2b(a.a).a),i=M1((xab(),g.cb)),J1(a.b),i.b?Fq(i.b,i.a,i.c):P1(i.a),pHb(g,(j=new vEb(3),j.b=zJc,tEb(j),j),J1(a.b)),g)),LAb(e,(k=new hHb,LAb(k,(n=new Kfb,n.Fd((o=new agb(q2b(a.c).a),p=M1(o.cb),J1(a.d),p.b?Fq(p.b,p.a,p.c):P1(p.a),o.Gd(new uBb((q=new vtb,Io(q.a,'42'),new M_(q.a.a)).a),J1(a.d)),o)),n2(n.cb,JJc,true),n)),k)),LAb(e,(r=new lHb,LAb(r,(s=new $xc,UHb(s,(t=new vtb,Io(t.a,'&lt;a href="#"&gt;Deleted Items\\n \\s\\s&lt;b:Badge&gt;42&lt;/b:Badge&gt;\\n &lt;/a&gt;'),new M_(t.a.a)).a),n2(s.cb,CJc,true),s)),r)),e)),LAb(c,(f=new eHb,LAb(f,(u=new qHb(r2b(a.e).a),v=M1(u.cb),J1(a.f),v.b?Fq(v.b,v.a,v.c):P1(v.a),pHb(u,(w=new vEb(3),w.b='Advanced',tEb(w),w),J1(a.f)),u)),LAb(f,(A=new hHb,LAb(A,(B=new Kfb,B.Fd((C=new agb(t2b(a.g).a),D=M1(C.cb),J1(a.i),D.b?Fq(D.b,D.a,D.c):P1(D.a),C.Gd((F=new uBb(s2b(a.j).a),G=M1(F.cb),J1(a.k),G.b?Fq(G.b,G.a,G.c):P1(G.a),_fb(F,new GEb((rYb(),dTb)),J1(a.k)),F),J1(a.i)),C)),n2(B.cb,JJc,true),B)),A)),LAb(f,(H=new lHb,LAb(H,(I=new $xc,UHb(I,(J=new vtb,Io(J.a,'&lt;a href="#"&gt;Inbox\\n \\s\\s&lt;b:Badge&gt;12\\n \\s\\s\\s&lt;b:Icon type="ENVELOPE"/&gt;\\n \\s\\s\\s&lt;i&gt;unread&lt;/i&gt;\\n \\s\\s&lt;/b:Badge&gt;\\n &lt;/a&gt;'),new M_(J.a.a)).a),n2(I.cb,CJc,true),I)),H)),f)),c));return b}
+var KJc="'><\/span> <\/a>",JJc='GOBEEQNII';C$(884,535,RDc,V1b);C$(887,540,SDc,c2b);C$(888,1,{},e2b);C$(889,1,{},h2b);C$(890,1,{},k2b);var j2b;C$(891,1,{},n2b);_.a=false;C$(1064,1,rEc);_.Ab=function Icc(){Oob(this.b,bac(this.a.a))};var ZO=Irb(CIc,'BadgePresenter',884),cP=Irb(CIc,'BadgeView',887),bP=Irb(CIc,'BadgeView_BinderImpl',888),$O=Irb(CIc,'BadgeView_BinderImpl$Widgets',889),aP=Irb(CIc,'BadgeView_BinderImpl_GenBundle_default_InlineClientBundleGenerator',890),_O=Irb(CIc,'BadgeView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1',891);yEc(dn)(2);

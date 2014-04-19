@@ -1,0 +1,10 @@
+function p8b(){}
+function n8b(){Ymb(this,r8b(new s8b))}
+function e8b(a,b,c){Emb.call(this,a,b,c,(S0b(),R0b))}
+function Vac(a){var b;if(!a.eb){b=new n8b(new p8b);a.eb=b}return a.eb}
+function t8b(a){var b;b=new vtb;Io(b.a,FJc);ptb(b,f0(a));Io(b.a,GJc);return new M_(b.a.a)}
+function u8b(a){var b;b=new vtb;Io(b.a,FJc);ptb(b,f0(a));Io(b.a,GJc);return new M_(b.a.a)}
+function s8b(){this.c=Hr($doc);this.a=Hr($doc);this.d=new K1(this.c);this.b=new K1(this.a)}
+function Uac(a){var b;if(!a.db){b=new e8b(Nlb(jnb(a.a)),Vac(a),Tac(a));dmb((knb(a.a),b),vnb(knb(a.a)));a.db=b}return a.db}
+function r8b(a){var b,c,d,e,f,g,i,j,k,n,o,p,q,r,s,t,u,v,w;b=new bIb;LAb(b,(c=new yDb(yJc),LAb(c,(d=new OGb,d.a=KHc,NGb(d),d)),LAb(c,(e=new eHb,LAb(e,(f=new qHb(t8b(a.a).a),g=M1((xab(),f.cb)),J1(a.b),g.b?Fq(g.b,g.a,g.c):P1(g.a),pHb(f,(i=new vEb(3),i.b=zJc,tEb(i),i),J1(a.b)),f)),LAb(e,(j=new hHb,LAb(j,(k=new eHb,LAb(k,(n=new qHb(u8b(a.c).a),o=M1(n.cb),J1(a.d),o.b?Fq(o.b,o.a,o.c):P1(o.a),pHb(n,(p=new vEb(3),p.b='Panel Header',tEb(p),p),J1(a.d)),n)),LAb(k,(q=new hHb,LAb(q,(r=new zBb,tr(r.cb,'Panel Body'),r)),q)),LAb(k,(s=new lHb,LAb(s,(t=new zBb,tr(t.cb,'Panel Footer'),t)),s)),k)),j)),LAb(e,(u=new lHb,LAb(u,(v=new $xc,UHb(v,(w=new vtb,Io(w.a,'&lt;b:Panel&gt;\\n \\s\\s&lt;b:PanelHeader&gt;\\n \\s\\s\\s\\s&lt;b:Heading size="3" text="..."/&gt;\\n \\s\\s&lt;/b:PanelHeader&gt;\\n \\s\\s&lt;b:PanelBody&gt;\\n \\s\\s\\s\\s&lt;b:Bold text="..."/&gt;\\n \\s\\s&lt;/b:PanelBody&gt;\\n \\s\\s&lt;b:PanelFooter&gt;\\n \\s\\s\\s\\s&lt;b:Bold text="..."/&gt;\\n \\s\\s&lt;/b:PanelFooter&gt;\\n &lt;/b:Panel&gt;\\n'),new M_(w.a.a)).a),n2(v.cb,CJc,true),v)),u)),e)),c));return b}
+C$(1009,535,RDc,e8b);C$(1012,540,SDc,n8b);C$(1013,1,{},p8b);C$(1014,1,{},s8b);C$(1058,1,rEc);_.Ab=function ncc(){Oob(this.b,Uac(this.a.a))};var VQ=Irb(CIc,'PanelPresenter',1009),YQ=Irb(CIc,'PanelView',1012),XQ=Irb(CIc,'PanelView_BinderImpl',1013),WQ=Irb(CIc,'PanelView_BinderImpl$Widgets',1014);yEc(dn)(17);
