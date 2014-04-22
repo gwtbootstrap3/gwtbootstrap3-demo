@@ -137,7 +137,24 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Auto Close"/>
+                    <b:Heading size="3" text="Setting Languages"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Paragraph>
+                        Change the language for the DateTimePicker.
+                    </b:Paragraph>
+                    <b2:DateTimeBox autoClose="true" language="FR"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b2:DateTimeBox autoClose="true" language="..."/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                <b:Heading size="3" text="Auto Close"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Paragraph>
