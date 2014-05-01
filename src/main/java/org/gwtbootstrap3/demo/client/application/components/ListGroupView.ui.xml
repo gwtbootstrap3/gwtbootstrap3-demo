@@ -140,15 +140,15 @@
             <b:PanelBody>
                 <b:LinkedGroup>
                     <b:LinkedGroupItem active="true">
-                        <b:LinkedGroupItemHeading size="3" text="Heading"/>
+                        <b:Heading size="3" text="Heading"/>
                         <b:LinkedGroupItemText text="Insert text here..."/>
                     </b:LinkedGroupItem>
                     <b:LinkedGroupItem>
-                        <b:LinkedGroupItemHeading size="3" text="Heading"/>
+                        <b:Heading size="3" text="Heading"/>
                         <b:LinkedGroupItemText text="Insert text here..."/>
                     </b:LinkedGroupItem>
                     <b:LinkedGroupItem>
-                        <b:LinkedGroupItemHeading size="3" text="Heading"/>
+                        <b:Heading size="3" text="Heading"/>
                         <b:LinkedGroupItemText text="Insert text here..."/>
                     </b:LinkedGroupItem>
                 </b:LinkedGroup>
@@ -157,15 +157,15 @@
                 <d:PrettyPre addStyleNames="lang-xml">
                     &lt;b:LinkedGroup&gt;\n
                     \s\s&lt;b:LinkedGroupItem active="true"&gt;\n
-                    \s\s\s\s&lt;b:LinkedGroupItemHeading size="3" text="..."/&gt;\n
+                    \s\s\s\s&lt;b:Heading size="3" text="..."/&gt;\n
                     \s\s\s\s&lt;b:LinkedGroupItemText text="..."/&gt;\n
                     \s\s&lt;/b:LinkedGroupItem&gt;\n
                     \s\s&lt;b:LinkedGroupItem&gt;\n
-                    \s\s\s\s&lt;b:LinkedGroupItemHeading size="3" text="..."/&gt;\n
+                    \s\s\s\s&lt;b:Heading size="3" text="..."/&gt;\n
                     \s\s\s\s&lt;b:LinkedGroupItemText text="..."/&gt;\n
                     \s\s&lt;/b:LinkedGroupItem&gt;\n
                     \s\s&lt;b:LinkedGroupItem&gt;\n
-                    \s\s\s\s&lt;b:LinkedGroupItemHeading size="3" text="..."/&gt;\n
+                    \s\s\s\s&lt;b:Heading size="3" text="..."/&gt;\n
                     \s\s\s\s&lt;b:LinkedGroupItemText text="..."/&gt;\n
                     \s\s&lt;/b:LinkedGroupItem&gt;\n
                     &lt;/b:LinkedGroup&gt;

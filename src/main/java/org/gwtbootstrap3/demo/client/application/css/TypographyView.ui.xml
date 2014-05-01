@@ -38,10 +38,15 @@
                 <b:Heading size="4" text="h4. Bootstrap heading" subtext="subtext"/>
                 <b:Heading size="5" text="h5. Bootstrap heading" subtext="subtext"/>
                 <b:Heading size="6" text="h6. Bootstrap heading" subtext="subtext"/>
-                <b:HeadingPanel size="1">
+                <b:Heading size="6" subtext="subtext" text="Test"/>
+                <b:Heading size="1">
                     <b:Icon type="GEAR"/>
                     <b:Text text="h1. Heading with Icon"/>
-                </b:HeadingPanel>
+                </b:Heading>
+                <b:Heading size="1">
+                    <b:Text text="h1. Heading with Icon"/>
+                    <b:Small text=" Sub"/>
+                </b:Heading>
             </b:PanelBody>
             <b:PanelFooter>
                 <d:PrettyPre addStyleNames="lang-xml">
