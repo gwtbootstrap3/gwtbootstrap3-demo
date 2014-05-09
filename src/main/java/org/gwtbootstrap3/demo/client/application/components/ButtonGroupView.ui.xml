@@ -35,210 +35,210 @@
     <b:Row>
         <b:Column size="XS_12">
 
-        <b:PageHeader text="Button Groups"/>
+            <b:PageHeader text="Button Groups"/>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Basic"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:ButtonGroup>
-                    <b:Button>Button 1</b:Button>
-                    <b:Button>Button 2</b:Button>
-                    <b:Button>Button 3</b:Button>
-                </b:ButtonGroup>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:ButtonGroup&gt;\n
-                    \s\s&lt;b:Button&gt;Button 1&lt;/b:Button&gt;\n
-                    \s\s&lt;b:Button&gt;Button 2&lt;/b:Button&gt;\n
-                    \s\s&lt;b:Button&gt;Button 3&lt;/b:Button&gt;\n
-                    &lt;/b:ButtonGroup&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Basic"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:ButtonGroup>
+                        <b:Button>Button 1</b:Button>
+                        <b:Button>Button 2</b:Button>
+                        <b:Button>Button 3</b:Button>
+                    </b:ButtonGroup>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:ButtonGroup&gt;\n
+                        \s\s&lt;b:Button&gt;Button 1&lt;/b:Button&gt;\n
+                        \s\s&lt;b:Button&gt;Button 2&lt;/b:Button&gt;\n
+                        \s\s&lt;b:Button&gt;Button 3&lt;/b:Button&gt;\n
+                        &lt;/b:ButtonGroup&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Multiple"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:ButtonToolBar>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Multiple"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:ButtonToolBar>
+                        <b:ButtonGroup>
+                            <b:Button>1</b:Button>
+                            <b:Button>2</b:Button>
+                            <b:Button>3</b:Button>
+                        </b:ButtonGroup>
+                        <b:ButtonGroup>
+                            <b:Button>4</b:Button>
+                            <b:Button>5</b:Button>
+                        </b:ButtonGroup>
+                        <b:ButtonGroup>
+                            <b:Button>6</b:Button>
+                            <b:Button>7</b:Button>
+                            <b:Button>8</b:Button>
+                        </b:ButtonGroup>
+                    </b:ButtonToolBar>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:ButtonToolBar&gt;\n
+                        \s\s&lt;b:ButtonGroup&gt;\n
+                        \s\s\s\s&lt;b:Button&gt;1&lt;/b:Button&gt;\n
+                        \s\s\s\s&lt;b:Button&gt;2&lt;/b:Button&gt;\n
+                        \s\s\s\s&lt;b:Button&gt;3&lt;/b:Button&gt;\n
+                        \s\s&lt;/b:ButtonGroup&gt;\n
+                        \n
+                        \s\s&lt;b:ButtonGroup&gt;\n
+                        \s\s\s\s&lt;b:Button&gt;4&lt;/b:Button&gt;\n
+                        \s\s\s\s&lt;b:Button&gt;5&lt;/b:Button&gt;\n
+                        \s\s&lt;/b:ButtonGroup&gt;\n
+                        \n
+                        \s\s&lt;b:ButtonGroup&gt;\n
+                        \s\s\s\s&lt;b:Button&gt;6&lt;/b:Button&gt;\n
+                        \s\s\s\s&lt;b:Button&gt;7&lt;/b:Button&gt;\n
+                        \s\s\s\s&lt;b:Button&gt;8&lt;/b:Button&gt;\n
+                        \s\s&lt;/b:ButtonGroup&gt;\n
+                        &lt;/b:ButtonToolBar&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Nested"/>
+                </b:PanelHeader>
+                <b:PanelBody>
                     <b:ButtonGroup>
                         <b:Button>1</b:Button>
                         <b:Button>2</b:Button>
-                        <b:Button>3</b:Button>
-                    </b:ButtonGroup>
-                    <b:ButtonGroup>
-                        <b:Button>4</b:Button>
-                        <b:Button>5</b:Button>
-                    </b:ButtonGroup>
-                    <b:ButtonGroup>
-                        <b:Button>6</b:Button>
-                        <b:Button>7</b:Button>
-                        <b:Button>8</b:Button>
-                    </b:ButtonGroup>
-                </b:ButtonToolBar>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:ButtonToolBar&gt;\n
-                    \s\s&lt;b:ButtonGroup&gt;\n
-                    \s\s\s\s&lt;b:Button&gt;1&lt;/b:Button&gt;\n
-                    \s\s\s\s&lt;b:Button&gt;2&lt;/b:Button&gt;\n
-                    \s\s\s\s&lt;b:Button&gt;3&lt;/b:Button&gt;\n
-                    \s\s&lt;/b:ButtonGroup&gt;\n
-                    \n
-                    \s\s&lt;b:ButtonGroup&gt;\n
-                    \s\s\s\s&lt;b:Button&gt;4&lt;/b:Button&gt;\n
-                    \s\s\s\s&lt;b:Button&gt;5&lt;/b:Button&gt;\n
-                    \s\s&lt;/b:ButtonGroup&gt;\n
-                    \n
-                    \s\s&lt;b:ButtonGroup&gt;\n
-                    \s\s\s\s&lt;b:Button&gt;6&lt;/b:Button&gt;\n
-                    \s\s\s\s&lt;b:Button&gt;7&lt;/b:Button&gt;\n
-                    \s\s\s\s&lt;b:Button&gt;8&lt;/b:Button&gt;\n
-                    \s\s&lt;/b:ButtonGroup&gt;\n
-                    &lt;/b:ButtonToolBar&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
-
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Nested"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:ButtonGroup>
-                    <b:Button>1</b:Button>
-                    <b:Button>2</b:Button>
-                    <b:ButtonGroup>
-                        <b:Button dataToggle="DROPDOWN">Dropdown</b:Button>
-                        <b:DropDownMenu>
-                            <b:ListItem>3</b:ListItem>
-                            <b:ListItem>4</b:ListItem>
-                        </b:DropDownMenu>
-                    </b:ButtonGroup>
-                </b:ButtonGroup>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:ButtonGroup&gt;\n
-                    \s\s&lt;b:Button&gt;1&lt;/b:Button&gt;\n
-                    \s\s&lt;b:Button&gt;2&lt;/b:Button&gt;\n
-                    \s\s&lt;b:ButtonGroup&gt;\n
-                    \s\s\s\s&lt;b:Button dataToggle="DROPDOWN"&gt;Dropdown&lt;/b:Button&gt;\n
-                    \s\s\s\s&lt;b:DropDownMenu&gt;\n
-                    \s\s\s\s\s\s&lt;b:ListItem&gt;3&lt;/b:ListItem&gt;\n
-                    \s\s\s\s\s\s&lt;b:ListItem&gt;4&lt;/b:ListItem&gt;\n
-                    \s\s\s\s&lt;/b:DropDownMenu&gt;\n
-                    \s\s&lt;/b:ButtonGroup&gt;\n
-                    &lt;/b:ButtonGroup&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
-
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Vertical"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:VerticalButtonGroup>
-                    <b:Button>1</b:Button>
-                    <b:Button>2</b:Button>
-                    <b:Button>3</b:Button>
-                    <b:Button>4</b:Button>
-                </b:VerticalButtonGroup>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:VerticalButtonGroup&gt;\n
-                    \s\s&lt;b:Button&gt;1&lt;/b:Button&gt;\n
-                    \s\s&lt;b:Button&gt;2&lt;/b:Button&gt;\n
-                    \s\s&lt;b:Button&gt;3&lt;/b:Button&gt;\n
-                    \s\s&lt;b:Button&gt;4&lt;/b:Button&gt;\n
-                    &lt;/b:VerticalButtonGroup&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
-
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Justified"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:ButtonGroup justified="true">
-                    <b:AnchorButton>Button 1</b:AnchorButton>
-                    <b:AnchorButton>Button 2</b:AnchorButton>
-                    <b:AnchorButton>Button 3</b:AnchorButton>
-                </b:ButtonGroup>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:ButtonGroup justified="true"&gt;\n
-                    \s\s&lt;b:AnchorButton&gt;Button 1&lt;/b:AnchorButton&gt;\n
-                    \s\s&lt;b:AnchorButton&gt;Button 2&lt;/b:AnchorButton&gt;\n
-                    \s\s&lt;b:AnchorButton&gt;Button 3&lt;/b:AnchorButton&gt;\n
-                    &lt;/b:ButtonGroup&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
-
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Checkbox buttons"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:ButtonGroup dataToggle="BUTTONS">
-                    <b:CheckBoxButton active="true">Option 1</b:CheckBoxButton>
-                    <b:CheckBoxButton>Option 2</b:CheckBoxButton>
-                    <b:CheckBoxButton>Option 3</b:CheckBoxButton>
-                    <b:CheckBoxButton enabled="false">Option 4</b:CheckBoxButton>
-                </b:ButtonGroup>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:ButtonGroup dataToggle="BUTTONS"&gt;\n
-                    \s\s&lt;b:CheckBoxButton active="true"&gt;Option 1&lt;/b:CheckBoxButton&gt;\n
-                    \s\s&lt;b:CheckBoxButton&gt;Option 2&lt;/b:CheckBoxButton&gt;\n
-                    \s\s&lt;b:CheckBoxButton&gt;Option 3&lt;/b:CheckBoxButton&gt;\n
-                    \s\s&lt;b:CheckBoxButton enabled="false"&gt;Option 4&lt;/b:CheckBoxButton&gt;\n
-                    &lt;/b:ButtonGroup&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
-
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Radio buttons"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:Row>
-                    <b:Column size="SM_6 MD_4">
-                        <b:ButtonGroup dataToggle="BUTTONS" name="groupName">
-                            <b:RadioButton ui:field="button1">Option 1</b:RadioButton>
-                            <b:RadioButton ui:field="button2" active="true">Option 2</b:RadioButton>
-                            <b:RadioButton ui:field="button3">Option 3</b:RadioButton>
-                            <b:RadioButton enabled="false">Option 4</b:RadioButton>
+                        <b:ButtonGroup>
+                            <b:Button dataToggle="DROPDOWN">Dropdown</b:Button>
+                            <b:DropDownMenu>
+                                <b:AnchorListItem>3</b:AnchorListItem>
+                                <b:AnchorListItem>4</b:AnchorListItem>
+                            </b:DropDownMenu>
                         </b:ButtonGroup>
-                    </b:Column>
-                    <b:Column size="SM_6 MD_8">
-                        <g:FlowPanel ui:field="log" addStyleNames="{style.log}"/>
-                    </b:Column>
-                </b:Row>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:ButtonGroup dataToggle="BUTTONS"&gt;\n
-                    \s\s&lt;b:RadioButton&gt;Option 1&lt;/b:RadioButton&gt;\n
-                    \s\s&lt;b:RadioButton active="true"&gt;Option 2&lt;/b:RadioButton&gt;\n
-                    \s\s&lt;b:RadioButton&gt;Option 3&lt;/b:RadioButton&gt;\n
-                    \s\s&lt;b:RadioButton enabled="false"&gt;Option 4&lt;/b:RadioButton&gt;\n
-                    &lt;/b:ButtonGroup&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+                    </b:ButtonGroup>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:ButtonGroup&gt;\n
+                        \s\s&lt;b:Button&gt;1&lt;/b:Button&gt;\n
+                        \s\s&lt;b:Button&gt;2&lt;/b:Button&gt;\n
+                        \s\s&lt;b:ButtonGroup&gt;\n
+                        \s\s\s\s&lt;b:Button dataToggle="DROPDOWN"&gt;Dropdown&lt;/b:Button&gt;\n
+                        \s\s\s\s&lt;b:DropDownMenu&gt;\n
+                        \s\s\s\s\s\s&lt;b:AnchorListItem&gt;3&lt;/b:AnchorListItem&gt;\n
+                        \s\s\s\s\s\s&lt;b:AnchorListItem&gt;4&lt;/b:AnchorListItem&gt;\n
+                        \s\s\s\s&lt;/b:DropDownMenu&gt;\n
+                        \s\s&lt;/b:ButtonGroup&gt;\n
+                        &lt;/b:ButtonGroup&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Vertical"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:VerticalButtonGroup>
+                        <b:Button>1</b:Button>
+                        <b:Button>2</b:Button>
+                        <b:Button>3</b:Button>
+                        <b:Button>4</b:Button>
+                    </b:VerticalButtonGroup>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:VerticalButtonGroup&gt;\n
+                        \s\s&lt;b:Button&gt;1&lt;/b:Button&gt;\n
+                        \s\s&lt;b:Button&gt;2&lt;/b:Button&gt;\n
+                        \s\s&lt;b:Button&gt;3&lt;/b:Button&gt;\n
+                        \s\s&lt;b:Button&gt;4&lt;/b:Button&gt;\n
+                        &lt;/b:VerticalButtonGroup&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Justified"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:ButtonGroup justified="true">
+                        <b:AnchorButton>Button 1</b:AnchorButton>
+                        <b:AnchorButton>Button 2</b:AnchorButton>
+                        <b:AnchorButton>Button 3</b:AnchorButton>
+                    </b:ButtonGroup>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:ButtonGroup justified="true"&gt;\n
+                        \s\s&lt;b:AnchorButton&gt;Button 1&lt;/b:AnchorButton&gt;\n
+                        \s\s&lt;b:AnchorButton&gt;Button 2&lt;/b:AnchorButton&gt;\n
+                        \s\s&lt;b:AnchorButton&gt;Button 3&lt;/b:AnchorButton&gt;\n
+                        &lt;/b:ButtonGroup&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Checkbox buttons"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:ButtonGroup dataToggle="BUTTONS">
+                        <b:CheckBoxButton active="true">Option 1</b:CheckBoxButton>
+                        <b:CheckBoxButton>Option 2</b:CheckBoxButton>
+                        <b:CheckBoxButton>Option 3</b:CheckBoxButton>
+                        <b:CheckBoxButton enabled="false">Option 4</b:CheckBoxButton>
+                    </b:ButtonGroup>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:ButtonGroup dataToggle="BUTTONS"&gt;\n
+                        \s\s&lt;b:CheckBoxButton active="true"&gt;Option 1&lt;/b:CheckBoxButton&gt;\n
+                        \s\s&lt;b:CheckBoxButton&gt;Option 2&lt;/b:CheckBoxButton&gt;\n
+                        \s\s&lt;b:CheckBoxButton&gt;Option 3&lt;/b:CheckBoxButton&gt;\n
+                        \s\s&lt;b:CheckBoxButton enabled="false"&gt;Option 4&lt;/b:CheckBoxButton&gt;\n
+                        &lt;/b:ButtonGroup&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Radio buttons"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                        <b:Column size="SM_6 MD_4">
+                            <b:ButtonGroup dataToggle="BUTTONS" name="groupName">
+                                <b:RadioButton ui:field="button1">Option 1</b:RadioButton>
+                                <b:RadioButton ui:field="button2" active="true">Option 2</b:RadioButton>
+                                <b:RadioButton ui:field="button3">Option 3</b:RadioButton>
+                                <b:RadioButton enabled="false">Option 4</b:RadioButton>
+                            </b:ButtonGroup>
+                        </b:Column>
+                        <b:Column size="SM_6 MD_8">
+                            <g:FlowPanel ui:field="log" addStyleNames="{style.log}"/>
+                        </b:Column>
+                    </b:Row>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:ButtonGroup dataToggle="BUTTONS"&gt;\n
+                        \s\s&lt;b:RadioButton&gt;Option 1&lt;/b:RadioButton&gt;\n
+                        \s\s&lt;b:RadioButton active="true"&gt;Option 2&lt;/b:RadioButton&gt;\n
+                        \s\s&lt;b:RadioButton&gt;Option 3&lt;/b:RadioButton&gt;\n
+                        \s\s&lt;b:RadioButton enabled="false"&gt;Option 4&lt;/b:RadioButton&gt;\n
+                        &lt;/b:ButtonGroup&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
         </b:Column>
 
     </b:Row>

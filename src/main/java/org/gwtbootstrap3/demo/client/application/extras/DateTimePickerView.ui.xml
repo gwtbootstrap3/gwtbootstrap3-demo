@@ -20,6 +20,7 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
              xmlns:b2="urn:import:org.gwtbootstrap3.extras.datetimepicker.client.ui"
              xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
@@ -64,19 +65,19 @@
             <b:PageHeader text="DateTimePicker"/>
 
             <b:BlockQuote>
-                <b:Bold>Original Library Link:</b:Bold>
+                <b.html:Strong>Original Library Link:</b.html:Strong>
                 <b:Anchor addStyleNames="{style.spacing}" href="http://www.malot.fr/bootstrap-datetimepicker/">
-                Bootstrap DateTimePicker
+                    Bootstrap DateTimePicker
                 </b:Anchor>
-                <b:Br/>
-                <b:Bold>Current Version Supported: 2.2.0</b:Bold>
+                <b.html:Br/>
+                <b.html:Strong>Current Version Supported: 2.2.0</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
                 <b:Heading addStyleNames="{style.margin-fix}" size="4" text="Required for use"/>
-                <b:Paragraph>
+                <b.html:Paragraph>
                     To use the DateTimePicker, you must first add the extras module to your project. In Maven:
-                </b:Paragraph>
+                </b.html:Paragraph>
                 <d:PrettyPre addStyleNames="lang-xml">
                     &lt;dependency&gt;\n
                     \s\s\s\s&lt;groupId&gt;org.gwtbootstrap3&lt;/groupId&gt;\n
@@ -85,18 +86,18 @@
                     \s\s\s\s&lt;scope&gt;provided&lt;/scope&gt;\n
                     &lt;/dependency&gt;
                 </d:PrettyPre>
-                <b:Paragraph>
+                <b.html:Paragraph>
                     Then you need to inherit the following GWT Module
                     <strong>additionally</strong>
                     to any GwtBootstrap3
                     module into your *.gwt.xml of your project:
-                </b:Paragraph>
+                </b.html:Paragraph>
                 <d:PrettyPre addStyleNames="lang-xml">
                     &lt;inherits name="org.gwtbootstrap3.extras.datetimepicker.DateTimePicker"/&gt;
                 </d:PrettyPre>
-                <b:Paragraph>
+                <b.html:Paragraph>
                     Last but not least must add this namespace to your *.ui.xml (don't have to name it b2):
-                </b:Paragraph>
+                </b.html:Paragraph>
                 <d:PrettyPre addStyleNames="lang-xml">
                     xmlns:b2="urn:import:org.gwtbootstrap3.extras.datetimepicker.client.ui"
                 </d:PrettyPre>
@@ -109,7 +110,8 @@
                 <b:PanelBody>
                     <b2:DateTimeBox/>
 
-                    <b:Modal title="DateTimePicker in Modal" closable="true" fade="true" dataBackdrop="STATIC" dataKeyboard="true" b:id="myModal" ui:field="modal">
+                    <b:Modal title="DateTimePicker in Modal" closable="true" fade="true" dataBackdrop="STATIC"
+                             dataKeyboard="true" b:id="myModal" ui:field="modal">
                         <b:ModalBody>
                             <b2:DateTimeBox/>
                         </b:ModalBody>
@@ -118,7 +120,8 @@
                         </b:ModalFooter>
                     </b:Modal>
 
-                    <b:Button addStyleNames="{style.spacing2}" dataTarget="#myModal" dataToggle="MODAL" type="PRIMARY" text="DateTimePicker in Modal"/>
+                    <b:Button addStyleNames="{style.spacing2}" dataTarget="#myModal" dataToggle="MODAL" type="PRIMARY"
+                              text="DateTimePicker in Modal"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
@@ -140,9 +143,9 @@
                     <b:Heading size="3" text="Auto Close"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Paragraph>
+                    <b.html:Paragraph>
                         Automatically close the selector after selecting a date.
-                    </b:Paragraph>
+                    </b.html:Paragraph>
                     <b2:DateTimeBox autoClose="true"/>
                 </b:PanelBody>
                 <b:PanelFooter>
@@ -186,13 +189,15 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b2:DateTimeBox startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P"/>
-                    <b:Paragraph addStyleNames="{style.spacing2}">With only every 30 minutes available.</b:Paragraph>
+                    <b.html:Paragraph addStyleNames="{style.spacing2}">With only every 30 minutes available.
+                    </b.html:Paragraph>
                     <b2:DateTimeBox startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P" minuteStep="30"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b2:DateTimeBox startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P"/&gt;\n\n
-                        &lt;b2:DateTimeBox startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P" minuteStep="30"/&gt;\n
+                        &lt;b2:DateTimeBox startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P"
+                        minuteStep="30"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -245,20 +250,20 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                <b:Heading size="3" text="Events"/>
+                    <b:Heading size="3" text="Events"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
                         <b:Column size="SM_6 MD_4">
-                            <b:Div marginBottom="10" ui:field="eventDateTimeBoxDiv">
+                            <b.html:Div marginBottom="10" ui:field="eventDateTimeBoxDiv">
                                 <b2:DateTimeBox ui:field="eventDateTimeBox"/>
-                            </b:Div>
-                            <b:Div>
+                            </b.html:Div>
+                            <b.html:Div>
                                 <b:Button type="PRIMARY" ui:field="addRemove">Add/Remove</b:Button>
-                            </b:Div>
+                            </b.html:Div>
                         </b:Column>
                         <b:Column addStyleNames="{style.logRow}" size="SM_6 MD_8">
-                            <b:Bold text="Event Log" addStyleNames="{style.logTitle}"/>
+                            <b.html:Strong text="Event Log" addStyleNames="{style.logTitle}"/>
                             <b:Button addStyleNames="pull-right" text="Clear Log" ui:field="clearLogButton"/>
                             <g:FlowPanel ui:field="logRow"/>
                         </b:Column>

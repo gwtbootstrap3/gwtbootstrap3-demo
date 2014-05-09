@@ -19,6 +19,7 @@
   -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
              xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
     <ui:style>
@@ -43,28 +44,28 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:NavTabs>
-                        <b:TabListItem active="true" dataTarget="#tab1">Tab 1</b:TabListItem>
-                        <b:TabListItem dataTarget="#tab2">Tab 2</b:TabListItem>
-                        <b:TabListItem enabled="false" dataTarget="#tab3">Tab 3</b:TabListItem>
+                        <b:TabListItem active="true" dataTarget="#tab1" text="Tab 1"/>
+                        <b:TabListItem dataTarget="#tab2" text="Tab 2"/>
+                        <b:TabListItem enabled="false" dataTarget="#tab3" text="Tab 3"/>
                     </b:NavTabs>
                     <b:TabContent>
                         <b:TabPane active="true" b:id="tab1">
-                            <b:Heading size="5">Tab 1</b:Heading>
-                            <b:Paragraph>
+                            <b:Heading size="5" text="Tab 1"/>
+                            <b.html:Paragraph>
                                 You must have active="true" on the first tab pane, or set it programmatically.
-                            </b:Paragraph>
+                            </b.html:Paragraph>
                         </b:TabPane>
                         <b:TabPane b:id="tab2">
-                            <b:Heading size="5">Tab 2</b:Heading>
-                            <b:Paragraph>
+                            <b:Heading size="5" text="Tab 2"/>
+                            <b.html:Paragraph>
                                 You must have active="true" on the first tab pane, or set it programmatically.
-                            </b:Paragraph>
+                            </b.html:Paragraph>
                         </b:TabPane>
                         <b:TabPane b:id="tab3">
-                            <b:Heading size="5">Tab 3</b:Heading>
-                            <b:Paragraph>
+                            <b:Heading size="5" text="Tab 3"/>
+                            <b.html:Paragraph>
                                 You must have active="true" on the first tab pane, or set it programmatically.
-                            </b:Paragraph>
+                            </b.html:Paragraph>
                         </b:TabPane>
                     </b:TabContent>
                 </b:PanelBody>
@@ -97,31 +98,31 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:NavTabs>
-                        <b:TabListItem active="true" dataTarget="#tab4">Tab 4</b:TabListItem>
-                        <b:TabListItem dataTarget="#tab5">Tab 5</b:TabListItem>
-                        <b:TabListItem dataTarget="#tab6">Tab 6</b:TabListItem>
+                        <b:TabListItem active="true" dataTarget="#tab4" text="Tab 4"/>
+                        <b:TabListItem dataTarget="#tab5" text="Tab 5"/>
+                        <b:TabListItem dataTarget="#tab6" text="Tab 6"/>
                     </b:NavTabs>
                     <b:TabContent>
                         <b:TabPane fade="true" in="true" active="true" b:id="tab4">
-                            <b:Heading size="5">Tab 4</b:Heading>
-                            <b:Paragraph>
+                            <b:Heading size="5" text="Tab 4"/>
+                            <b.html:Paragraph>
                                 To Fade you must have fade="true" on all TabPanes. Also on the first tab you must have
                                 active="true" and in="true".
-                            </b:Paragraph>
+                            </b.html:Paragraph>
                         </b:TabPane>
                         <b:TabPane fade="true" b:id="tab5">
-                            <b:Heading size="5">Tab 5</b:Heading>
-                            <b:Paragraph>
+                            <b:Heading size="5" text="Tab 5"/>
+                            <b.html:Paragraph>
                                 To Fade you must have fade="true" on all TabPanes. Also on the first tab you must have
                                 active="true" and in="true".
-                            </b:Paragraph>
+                            </b.html:Paragraph>
                         </b:TabPane>
                         <b:TabPane fade="true" b:id="tab6">
-                            <b:Heading size="5">Tab 6</b:Heading>
-                            <b:Paragraph>
+                            <b:Heading size="5" text="Tab 6"/>
+                            <b.html:Paragraph>
                                 To Fade you must have fade="true" on all TabPanes. Also on the first tab you must have
                                 active="true" and in="true".
-                            </b:Paragraph>
+                            </b.html:Paragraph>
                         </b:TabPane>
                     </b:TabContent>
                 </b:PanelBody>
@@ -161,22 +162,22 @@
                     </b:NavTabs>
                     <b:TabContent>
                         <b:TabPane active="true" b:id="tab7">
-                            <b:Heading size="5">Tab 7</b:Heading>
-                            <b:Paragraph>
+                            <b:Heading size="5" text="Tab 7"/>
+                            <b.html:Paragraph>
                                 Use Buttons to change me!
-                            </b:Paragraph>
+                            </b.html:Paragraph>
                         </b:TabPane>
                         <b:TabPane b:id="tab8">
-                            <b:Heading size="5">Tab 8</b:Heading>
-                            <b:Paragraph>
+                            <b:Heading size="5" text="Tab 8"/>
+                            <b.html:Paragraph>
                                 Use Buttons to change me!
-                            </b:Paragraph>
+                            </b.html:Paragraph>
                         </b:TabPane>
                         <b:TabPane b:id="tab9">
-                            <b:Heading size="5">Tab 9</b:Heading>
-                            <b:Paragraph>
+                            <b:Heading size="5" text="Tab 9"/>
+                            <b.html:Paragraph>
                                 Use Buttons to change me!
-                            </b:Paragraph>
+                            </b.html:Paragraph>
                         </b:TabPane>
                     </b:TabContent>
                     <b:Button addStyleNames="{style.margin}" type="PRIMARY" text="Change to Tab 7"
@@ -227,7 +228,7 @@
                     <b:Heading size="3" text="Positions"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Paragraph>
+                    <b.html:Paragraph>
                         You can change the default position of the tabs (top) by wrapping the NavTabs and TabContent
                         inside a TabPanel
                         and setting the tabPosition on it.
@@ -243,9 +244,9 @@
                         <d:PrettyPre addStyleNames="lang-xml">
                             &lt;inherits name="org.gwtbootstrap3.extras.positionedtabs.PositionedTabs"/&gt;
                         </d:PrettyPre>
-                    </b:Paragraph>
-                    <b:FluidContainer marginTop="10">
-                    <b:Row>
+                    </b.html:Paragraph>
+                    <b:Container fluid="true" marginTop="10">
+                        <b:Row>
                             <b:Column size="MD_6">
                                 <b:TabPanel tabPosition="LEFT">
                                     <b:NavTabs>
@@ -255,25 +256,25 @@
                                     </b:NavTabs>
                                     <b:TabContent>
                                         <b:TabPane active="true" b:id="tab10">
-                                            <b:Heading size="5">Tab 10</b:Heading>
-                                            <b:Paragraph>
+                                            <b:Heading size="5" text="Tab 10"/>
+                                            <b.html:Paragraph>
                                                 My tabs are on the left!
-                                            </b:Paragraph>
+                                            </b.html:Paragraph>
                                         </b:TabPane>
                                         <b:TabPane b:id="tab11">
-                                            <b:Heading size="5">Tab 11</b:Heading>
-                                            <b:Paragraph>
+                                            <b:Heading size="5" text="Tab 11"/>
+                                            <b.html:Paragraph>
                                                 My tabs are on the left!
-                                            </b:Paragraph>
+                                            </b.html:Paragraph>
                                         </b:TabPane>
                                         <b:TabPane b:id="tab12">
-                                            <b:Heading size="5">Tab 12</b:Heading>
-                                            <b:Paragraph>
+                                            <b:Heading size="5" text="Tab 12"/>
+                                            <b.html:Paragraph>
                                                 My tabs are on the left!
-                                            </b:Paragraph>
+                                            </b.html:Paragraph>
                                         </b:TabPane>
                                     </b:TabContent>
-                                    <b:ClearFix/>
+                                    <b.html:ClearFix/>
                                 </b:TabPanel>
                             </b:Column>
                             <b:Column size="MD_6">
@@ -285,47 +286,47 @@
                                     </b:NavTabs>
                                     <b:TabContent>
                                         <b:TabPane active="true" b:id="tab13">
-                                            <b:Heading size="5">Tab 13</b:Heading>
-                                            <b:Paragraph>
+                                            <b:Heading size="5" text="Tab 13"/>
+                                            <b.html:Paragraph>
                                                 My tabs are on the right!
-                                            </b:Paragraph>
+                                            </b.html:Paragraph>
                                         </b:TabPane>
                                         <b:TabPane b:id="tab14">
-                                            <b:Heading size="5">Tab 14</b:Heading>
-                                            <b:Paragraph>
+                                            <b:Heading size="5" text="Tab 14"/>
+                                            <b.html:Paragraph>
                                                 My tabs are on the right!
-                                            </b:Paragraph>
+                                            </b.html:Paragraph>
                                         </b:TabPane>
                                         <b:TabPane b:id="tab15">
-                                            <b:Heading size="5">Tab 15</b:Heading>
-                                            <b:Paragraph>
+                                            <b:Heading size="5" text="Tab 15"/>
+                                            <b.html:Paragraph>
                                                 My tabs are on the right!
-                                            </b:Paragraph>
+                                            </b.html:Paragraph>
                                         </b:TabPane>
                                     </b:TabContent>
-                                    <b:ClearFix/>
+                                    <b.html:ClearFix/>
                                 </b:TabPanel>
                             </b:Column>
                             <b:Column size="XS_12">
                                 <b:TabPanel tabPosition="BELOW">
                                     <b:TabContent>
                                         <b:TabPane active="true" b:id="tab16">
-                                            <b:Heading size="5">Tab 16</b:Heading>
-                                            <b:Paragraph>
+                                            <b:Heading size="5" text="Tab 16"/>
+                                            <b.html:Paragraph>
                                                 My tabs are on the bottom!
-                                            </b:Paragraph>
+                                            </b.html:Paragraph>
                                         </b:TabPane>
                                         <b:TabPane b:id="tab17">
-                                            <b:Heading size="5">Tab 17</b:Heading>
-                                            <b:Paragraph>
+                                            <b:Heading size="5" text="Tab 17"/>
+                                            <b.html:Paragraph>
                                                 My tabs are on the bottom!
-                                            </b:Paragraph>
+                                            </b.html:Paragraph>
                                         </b:TabPane>
                                         <b:TabPane b:id="tab18">
-                                            <b:Heading size="5">Tab 18</b:Heading>
-                                            <b:Paragraph>
+                                            <b:Heading size="5" text="Tab 18"/>
+                                            <b.html:Paragraph>
                                                 My tabs are on the bottom!
-                                            </b:Paragraph>
+                                            </b.html:Paragraph>
                                         </b:TabPane>
                                     </b:TabContent>
                                     <b:NavTabs>
@@ -336,12 +337,12 @@
                                 </b:TabPanel>
                             </b:Column>
                         </b:Row>
-                    </b:FluidContainer>
+                    </b:Container>
                 </b:PanelBody>
                 <b:PanelFooter>
-                    <b:Heading size="4">Left</b:Heading>
-                    <b:Paragraph>** Make sure to include a ClearFix after the TabContent to ensure proper heights!
-                    </b:Paragraph>
+                    <b:Heading size="4" text="Left"/>
+                    <b.html:Paragraph>** Make sure to include a ClearFix after the TabContent to ensure proper heights!
+                    </b.html:Paragraph>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:TabPanel tabPosition="LEFT"&gt;\n
                         \s\s &lt;b:NavTabs&gt;\n
@@ -361,12 +362,12 @@
                         \s\s\s\s\s\s...\n
                         \s\s\s\s&lt;/b:TabPane&gt;\n
                         \s\s&lt;/b:TabContent&gt;\n
-                        \s\s&lt;b:ClearFix/&gt;\n
+                        \s\s&lt;b.html:ClearFix/&gt;\n
                         &lt;/b:TabPanel&gt;\n
                     </d:PrettyPre>
-                    <b:Heading size="4">Right</b:Heading>
-                    <b:Paragraph>** Make sure to include a ClearFix after the TabContent to ensure proper heights!
-                    </b:Paragraph>
+                    <b:Heading size="4" text="Right"/>
+                    <b.html:Paragraph>** Make sure to include a ClearFix after the TabContent to ensure proper heights!
+                    </b.html:Paragraph>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:TabPanel tabPosition="RIGHT"&gt;\n
                         \s\s &lt;b:NavTabs&gt;\n
@@ -386,11 +387,12 @@
                         \s\s\s\s\s\s...\n
                         \s\s\s\s&lt;/b:TabPane&gt;\n
                         \s\s&lt;/b:TabContent&gt;\n
-                        \s\s&lt;b:ClearFix/&gt;\n
+                        \s\s&lt;b.html:ClearFix/&gt;\n
                         &lt;/b:TabPanel&gt;\n
                     </d:PrettyPre>
-                    <b:Heading size="4">Below</b:Heading>
-                    <b:Paragraph>** Make sure to place the NavTabs BELOW the TabContent for BELOW tabs!</b:Paragraph>
+                    <b:Heading size="4" text="Below"/>
+                    <b.html:Paragraph>** Make sure to place the NavTabs BELOW the TabContent for BELOW tabs!
+                    </b.html:Paragraph>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:TabPanel tabPosition="BELOW"&gt;\n
                         \s\s&lt;b:TabContent&gt;\n

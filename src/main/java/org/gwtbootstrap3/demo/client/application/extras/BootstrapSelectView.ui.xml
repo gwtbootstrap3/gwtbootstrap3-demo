@@ -19,6 +19,7 @@
   -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
              xmlns:select="urn:import:org.gwtbootstrap3.extras.select.client.ui"
              xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
@@ -50,19 +51,19 @@
             <b:PageHeader text="Bootstrap Select"/>
 
             <b:BlockQuote>
-                <b:Bold>Original Library Link:</b:Bold>
+                <b.html:Strong>Original Library Link:</b.html:Strong>
                 <b:Anchor addStyleNames="{style.spacing}" href="https://github.com/silviomoreto/bootstrap-select">
                     Bootstrap Select
                 </b:Anchor>
-                <b:Br/>
-                <b:Bold>Current Version Supported: 1.5.4</b:Bold>
+                <b.html:Br/>
+                <b.html:Strong>Current Version Supported: 1.5.4</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
                 <b:Heading addStyleNames="{style.margin-fix}" size="4" text="Required for use"/>
-                <b:Paragraph>
+                <b.html:Paragraph>
                     To use Bootstrap Select, you must first add the extras module to your project. In Maven:
-                </b:Paragraph>
+                </b.html:Paragraph>
                 <d:PrettyPre addStyleNames="lang-xml">
                     &lt;dependency&gt;\n
                     \s\s\s\s&lt;groupId&gt;org.gwtbootstrap3&lt;/groupId&gt;\n
@@ -71,18 +72,18 @@
                     \s\s\s\s&lt;scope&gt;provided&lt;/scope&gt;\n
                     &lt;/dependency&gt;
                 </d:PrettyPre>
-                <b:Paragraph>
+                <b.html:Paragraph>
                     Then you need to inherit the following GWT Module
                     <strong>additionally</strong>
                     to any GwtBootstrap3
                     module into your *.gwt.xml of your project:
-                </b:Paragraph>
+                </b.html:Paragraph>
                 <d:PrettyPre addStyleNames="lang-xml">
                     &lt;inherits name="org.gwtbootstrap3.extras.select.Select"/&gt;
                 </d:PrettyPre>
-                <b:Paragraph>
+                <b.html:Paragraph>
                     Last but not least must add this namespace to your *.ui.xml (don't have to name it select):
-                </b:Paragraph>
+                </b.html:Paragraph>
                 <d:PrettyPre addStyleNames="lang-xml">
                     xmlns:select="urn:import:org.gwtbootstrap3.extras.select.client.ui"
                 </d:PrettyPre>
@@ -94,7 +95,7 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <select:Select>
-                    <select:Option text="One"/>
+                        <select:Option text="One"/>
                         <select:Option text="Two"/>
                         <select:Option text="Three"/>
                     </select:Select>
@@ -301,7 +302,7 @@
                     <b:Heading size="3" text="Selected Text Format (Multiple Only)"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Paragraph>
+                    <b.html:Paragraph>
                         The supported values are:
 
                         <ul>
@@ -317,7 +318,7 @@
                                 values to count
                             </li>
                         </ul>
-                    </b:Paragraph>
+                    </b.html:Paragraph>
                     <b:Row>
                         <b:Column size="XS_6">
                             <select:Select multiple="true" selectedTextFormat="count">
@@ -361,9 +362,9 @@
                     <b:Heading size="3" text="Show Tick (Single Only)"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Paragraph>
+                    <b.html:Paragraph>
                         You can also show the tick icon on single select.
-                    </b:Paragraph>
+                    </b.html:Paragraph>
                     <select:Select showTick="true">
                         <select:Option text="One"/>
                         <select:Option text="Two"/>
@@ -768,9 +769,9 @@
 
                     <b:Heading size="4" text="Java code"/>
 
-                    <b:Paragraph>
+                    <b.html:Paragraph>
                         <strong>NOTE: The refresh() after altering the select!!</strong>
-                    </b:Paragraph>
+                    </b.html:Paragraph>
 
                     <d:PrettyPre addStyleNames="lang-java">
                         @UiField\n

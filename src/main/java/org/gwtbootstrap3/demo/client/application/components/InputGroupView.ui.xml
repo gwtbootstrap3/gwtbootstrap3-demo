@@ -24,140 +24,140 @@
     <b:Row>
         <b:Column size="XS_12">
 
-        <b:PageHeader text="Input Groups"/>
+            <b:PageHeader text="Input Groups"/>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Basic"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:InputGroup>
-                    <b:InputGroupAddon>P</b:InputGroupAddon>
-                    <b:TextBox placeholder="Type here" autocomplete="false"/>
-                    <b:InputGroupAddon>A</b:InputGroupAddon>
-                </b:InputGroup>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:InputGroup&gt;\n
-                    \s\s&lt;b:InputGroupAddon&gt;P&lt;/b:InputGroupAddon&gt;\n
-                    \s\s&lt;b:TextBox placeholder="Type here" autocomplete="false"/&gt;\n
-                    \s\s&lt;b:InputGroupAddon&gt;A&lt;/b:InputGroupAddon&gt;\n
-                    &lt;/b:InputGroup&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Basic"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:InputGroup>
+                        <b:InputGroupAddon>P</b:InputGroupAddon>
+                        <b:TextBox placeholder="Type here" autoComplete="false"/>
+                        <b:InputGroupAddon>A</b:InputGroupAddon>
+                    </b:InputGroup>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:InputGroup&gt;\n
+                        \s\s&lt;b:InputGroupAddon&gt;P&lt;/b:InputGroupAddon&gt;\n
+                        \s\s&lt;b:TextBox placeholder="Type here" autoComplete="false"/&gt;\n
+                        \s\s&lt;b:InputGroupAddon&gt;A&lt;/b:InputGroupAddon&gt;\n
+                        &lt;/b:InputGroup&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Icon Addons"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:InputGroup>
-                    <b:InputGroupAddon icon="USER"/>
-                    <b:TextBox placeholder="Type here" autocomplete="false"/>
-                    <b:InputGroupAddon icon="FACEBOOK" iconMuted="true" iconSpin="true"/>
-                </b:InputGroup>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:InputGroup&gt;\n
-                    \s\s&lt;b:InputGroupAddon icon=&quot;USER&quot;/&gt;\n
-                    \s\s&lt;b:TextBox placeholder=&quot;Type here&quot; autocomplete=&quot;false&quot;/&gt;\n
-                    \s\s&lt;b:InputGroupAddon icon=&quot;FACEBOOK&quot; iconMuted="true" iconSpin="true"/&gt;\n
-                    &lt;/b:InputGroup&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Icon Addons"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:InputGroup>
+                        <b:InputGroupAddon icon="USER"/>
+                        <b:TextBox placeholder="Type here" autoComplete="false"/>
+                        <b:InputGroupAddon icon="FACEBOOK" iconMuted="true" iconSpin="true"/>
+                    </b:InputGroup>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:InputGroup&gt;\n
+                        \s\s&lt;b:InputGroupAddon icon=&quot;USER&quot;/&gt;\n
+                        \s\s&lt;b:TextBox placeholder=&quot;Type here&quot; autoComplete=&quot;false&quot;/&gt;\n
+                        \s\s&lt;b:InputGroupAddon icon=&quot;FACEBOOK&quot; iconMuted="true" iconSpin="true"/&gt;\n
+                        &lt;/b:InputGroup&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Icon and Text Mixin Addons"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:InputGroup>
-                    <b:InputGroupAddon icon="USER">User</b:InputGroupAddon>
-                    <b:TextBox placeholder="Type here" autocomplete="false"/>
-                    <b:InputGroupAddon icon="FACEBOOK" iconPosition="RIGHT">Facebook</b:InputGroupAddon>
-                </b:InputGroup>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:InputGroup&gt;\n
-                    \s\s&lt;b:InputGroupAddon icon=&quot;USER&quot;&gt;User&lt;/b:InputGroupAddon&gt;\n
-                    \s\s&lt;b:TextBox placeholder=&quot;Type here&quot; autocomplete=&quot;false&quot;/&gt;\n
-                    \s\s&lt;b:InputGroupAddon icon=&quot;FACEBOOK&quot; iconPosition=&quot;RIGHT&quot;&gt;Facebook&lt;/b:InputGroupAddon&gt;\n
-                    &lt;/b:InputGroup&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Icon and Text Mixin Addons"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:InputGroup>
+                        <b:InputGroupAddon icon="USER">User</b:InputGroupAddon>
+                        <b:TextBox placeholder="Type here" autoComplete="false"/>
+                        <b:InputGroupAddon icon="FACEBOOK" iconPosition="RIGHT">Facebook</b:InputGroupAddon>
+                    </b:InputGroup>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:InputGroup&gt;\n
+                        \s\s&lt;b:InputGroupAddon icon=&quot;USER&quot;&gt;User&lt;/b:InputGroupAddon&gt;\n
+                        \s\s&lt;b:TextBox placeholder=&quot;Type here&quot; autoComplete=&quot;false&quot;/&gt;\n
+                        \s\s&lt;b:InputGroupAddon icon=&quot;FACEBOOK&quot; iconPosition=&quot;RIGHT&quot;&gt;Facebook&lt;/b:InputGroupAddon&gt;\n
+                        &lt;/b:InputGroup&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Checkboxes and Radio Addons"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:Row>
-                    <b:Column size="MD_6">
-                        <b:InputGroup>
-                            <b:InputGroupButton>
-                                <b:CheckBoxButton/>
-                            </b:InputGroupButton>
-                            <b:TextBox autocomplete="false"/>
-                        </b:InputGroup>
-                    </b:Column>
-                    <b:Column size="MD_6">
-                        <b:InputGroup>
-                            <b:InputGroupButton>
-                                <b:RadioButton/>
-                            </b:InputGroupButton>
-                            <b:TextBox autocomplete="false"/>
-                        </b:InputGroup>
-                    </b:Column>
-                </b:Row>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:InputGroup&gt;\n
-                    \s\s&lt;b:InputGroupButton&gt;\n
-                    \s\s\s\s&lt;b:CheckButton&gt;\n
-                    \s\s&lt;/b:InputGroupButton&gt;\n
-                    \s\s&lt;b:TextBox placeholder="Type here" autocomplete="false"/&gt;\n
-                    &lt;/b:InputGroup&gt;\n
-                    \n
-                    &lt;b:InputGroup&gt;\n
-                    \s\s&lt;b:InputGroupButton&gt;\n
-                    \s\s\s\s&lt;b:RadioButton&gt;\n
-                    \s\s&lt;/b:InputGroupButton&gt;\n
-                    \s\s&lt;b:TextBox placeholder="Type here" autocomplete="false"/&gt;\n
-                    &lt;/b:InputGroup&gt;\n
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Checkboxes and Radio Addons"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                        <b:Column size="MD_6">
+                            <b:InputGroup>
+                                <b:InputGroupButton>
+                                    <b:CheckBoxButton/>
+                                </b:InputGroupButton>
+                                <b:TextBox autoComplete="false"/>
+                            </b:InputGroup>
+                        </b:Column>
+                        <b:Column size="MD_6">
+                            <b:InputGroup>
+                                <b:InputGroupButton>
+                                    <b:RadioButton/>
+                                </b:InputGroupButton>
+                                <b:TextBox autoComplete="false"/>
+                            </b:InputGroup>
+                        </b:Column>
+                    </b:Row>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:InputGroup&gt;\n
+                        \s\s&lt;b:InputGroupButton&gt;\n
+                        \s\s\s\s&lt;b:CheckButton&gt;\n
+                        \s\s&lt;/b:InputGroupButton&gt;\n
+                        \s\s&lt;b:TextBox placeholder="Type here" autoComplete="false"/&gt;\n
+                        &lt;/b:InputGroup&gt;\n
+                        \n
+                        &lt;b:InputGroup&gt;\n
+                        \s\s&lt;b:InputGroupButton&gt;\n
+                        \s\s\s\s&lt;b:RadioButton&gt;\n
+                        \s\s&lt;/b:InputGroupButton&gt;\n
+                        \s\s&lt;b:TextBox placeholder="Type here" autoComplete="false"/&gt;\n
+                        &lt;/b:InputGroup&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Button Addons"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:InputGroup>
-                    <b:InputGroupButton>
-                        <b:Button text="Go!"/>
-                    </b:InputGroupButton>
-                    <b:TextBox autocomplete="false"/>
-                </b:InputGroup>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:InputGroup&gt;\n
-                    \s\s&lt;b:InputGroupButton&gt;\n
-                    \s\s\s\s&lt;b:Button text="..."&gt;\n
-                    \s\s&lt;/b:InputGroupButton&gt;\n
-                    \s\s&lt;b:TextBox placeholder="Type here" autocomplete="false"/&gt;\n
-                    &lt;/b:InputGroup&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Button Addons"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:InputGroup>
+                        <b:InputGroupButton>
+                            <b:Button text="Go!"/>
+                        </b:InputGroupButton>
+                        <b:TextBox autoComplete="false"/>
+                    </b:InputGroup>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:InputGroup&gt;\n
+                        \s\s&lt;b:InputGroupButton&gt;\n
+                        \s\s\s\s&lt;b:Button text="..."&gt;\n
+                        \s\s&lt;/b:InputGroupButton&gt;\n
+                        \s\s&lt;b:TextBox placeholder="Type here" autoComplete="false"/&gt;\n
+                        &lt;/b:InputGroup&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
         </b:Column>
 
     </b:Row>
