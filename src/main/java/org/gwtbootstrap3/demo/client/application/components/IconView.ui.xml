@@ -19,6 +19,7 @@
   -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
              xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
     <ui:style>
@@ -30,131 +31,131 @@
     <b:Row>
         <b:Column size="XS_12">
 
-        <b:PageHeader text="Icons" subText="Support for FontAwesome Icons (version 4.0.3)"/>
+            <b:PageHeader text="Icons" subText="Support for FontAwesome Icons (version 4.0.3)"/>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Available Icons"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:Paragraph>
-                    For available icons please check out:
-                    <a href="http://fontawesome.io/cheatsheet/">Font Awesome Cheat Sheet</a>
-                </b:Paragraph>
-                <b:Paragraph>
-                    Any widget that uses icons will have the properties to spin/flip/rotate/etc..
-                </b:Paragraph>
-            </b:PanelBody>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Available Icons"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b.html:Paragraph>
+                        For available icons please check out:
+                        <a href="http://fontawesome.io/cheatsheet/">Font Awesome Cheat Sheet</a>
+                    </b.html:Paragraph>
+                    <b.html:Paragraph>
+                        Any widget that uses icons will have the properties to spin/flip/rotate/etc..
+                    </b.html:Paragraph>
+                </b:PanelBody>
+            </b:Panel>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Basic Use"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:Icon type="GEAR"/>
-                <b:ClearFix/>
-                <b:Span>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Basic Use"/>
+                </b:PanelHeader>
+                <b:PanelBody>
                     <b:Icon type="GEAR"/>
-                    Icon With Text
-                </b:Span>
-                <b:Br/>
-                <b:Anchor icon="HEART" iconSpin="true">With Anchor</b:Anchor>
+                    <b.html:ClearFix/>
+                    <b.html:Span>
+                        <b:Icon type="GEAR"/>
+                        Icon With Text
+                    </b.html:Span>
+                    <b.html:Br/>
+                    <b:Anchor icon="HEART" iconSpin="true">With Anchor</b:Anchor>
 
-                <b:Br/>
-                <b:Anchor icon="HEART" iconSpin="true"/>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:Icon type="..."/&gt;\n\n
-                    &lt;b:Span&gt;\n
-                    \s\s&lt;b:Icon type="..."/&gt;\n
-                    \s\s&lt;...&gt;\n
-                    &lt;/b:Span&gt;\n\n
-                    &lt;b:Anchor icon="..." iconSpin="true" text="..."/&gt;\n\n
-                    &lt;b:Anchor icon="..." iconSpin="true"/&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+                    <b.html:Br/>
+                    <b:Anchor icon="HEART" iconSpin="true"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Icon type="..."/&gt;\n\n
+                        &lt;b.html:Span&gt;\n
+                        \s\s&lt;b:Icon type="..."/&gt;\n
+                        \s\s&lt;...&gt;\n
+                        &lt;/b.html:Span&gt;\n\n
+                        &lt;b:Anchor icon="..." iconSpin="true" text="..."/&gt;\n\n
+                        &lt;b:Anchor icon="..." iconSpin="true"/&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Larger Icons"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:Icon addStyleNames="{style.spacing}" type="GEAR" size="LARGE"/>
-                <b:Icon addStyleNames="{style.spacing}" type="GEAR" size="TIMES2"/>
-                <b:Icon addStyleNames="{style.spacing}" type="GEAR" size="TIMES3"/>
-                <b:Icon addStyleNames="{style.spacing}" type="GEAR" size="TIMES4"/>
-                <b:Icon type="GEAR" size="TIMES5"/>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:Icon type="..." size="LARGE"/&gt;\n
-                    &lt;b:Icon type="..." size="TIMES2"/&gt;\n
-                    &lt;b:Icon type="..." size="TIMES3"/&gt;\n
-                    &lt;b:Icon type="..." size="TIMES4"/&gt;\n
-                    &lt;b:Icon type="..." size="TIMES5"/&gt;\n
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Larger Icons"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Icon addStyleNames="{style.spacing}" type="GEAR" size="LARGE"/>
+                    <b:Icon addStyleNames="{style.spacing}" type="GEAR" size="TIMES2"/>
+                    <b:Icon addStyleNames="{style.spacing}" type="GEAR" size="TIMES3"/>
+                    <b:Icon addStyleNames="{style.spacing}" type="GEAR" size="TIMES4"/>
+                    <b:Icon type="GEAR" size="TIMES5"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Icon type="..." size="LARGE"/&gt;\n
+                        &lt;b:Icon type="..." size="TIMES2"/&gt;\n
+                        &lt;b:Icon type="..." size="TIMES3"/&gt;\n
+                        &lt;b:Icon type="..." size="TIMES4"/&gt;\n
+                        &lt;b:Icon type="..." size="TIMES5"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Spinning"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:Icon addStyleNames="{style.spacing}" type="GEAR" size="LARGE" spin="true"/>
-                <b:Icon type="GEAR" size="TIMES5" spin="true"/>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:Icon type="..." size="LARGE" spin="true"/&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Spinning"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Icon addStyleNames="{style.spacing}" type="GEAR" size="LARGE" spin="true"/>
+                    <b:Icon type="GEAR" size="TIMES5" spin="true"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Icon type="..." size="LARGE" spin="true"/&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Rotated &amp; Flipped"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:Icon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" rotate="ROTATE_90"/>
-                <b:Icon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" rotate="ROTATE_180"/>
-                <b:Icon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" rotate="ROTATE_270"/>
-                <b:Icon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" flip="HORIZONTAL"/>
-                <b:Icon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" flip="VERTICAL"/>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:Icon type="..." size="LARGE" rotate="ROTATE_90"/&gt;\n
-                    &lt;b:Icon type="..." size="LARGE" rotate="ROTATE_180"/&gt;\n
-                    &lt;b:Icon type="..." size="LARGE" rotate="ROTATE_270"/&gt;\n
-                    &lt;b:Icon type="..." size="LARGE" flip="HORIZONTAL"/&gt;\n
-                    &lt;b:Icon type="..." size="LARGE" flip="VERTICAL"/&gt;\n
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Rotated &amp; Flipped"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Icon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" rotate="ROTATE_90"/>
+                    <b:Icon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" rotate="ROTATE_180"/>
+                    <b:Icon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" rotate="ROTATE_270"/>
+                    <b:Icon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" flip="HORIZONTAL"/>
+                    <b:Icon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" flip="VERTICAL"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Icon type="..." size="LARGE" rotate="ROTATE_90"/&gt;\n
+                        &lt;b:Icon type="..." size="LARGE" rotate="ROTATE_180"/&gt;\n
+                        &lt;b:Icon type="..." size="LARGE" rotate="ROTATE_270"/&gt;\n
+                        &lt;b:Icon type="..." size="LARGE" flip="HORIZONTAL"/&gt;\n
+                        &lt;b:Icon type="..." size="LARGE" flip="VERTICAL"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Stacked Icons"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:IconStack>
-                    <b:Icon type="SQUARE_O" stackBase="true"/>
-                    <b:Icon type="TWITTER" stackTop="true"/>
-                </b:IconStack>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:IconStack&gt;\n
-                    \s\s&lt;b:Icon type="..." stackBase="true"/&gt;\n
-                    \s\s&lt;b:Icon type="..." stackTop="true"/&gt;\n
-                    &lt;/b:IconStack&gt;\n
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Stacked Icons"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:IconStack>
+                        <b:Icon type="SQUARE_O" stackBase="true"/>
+                        <b:Icon type="TWITTER" stackTop="true"/>
+                    </b:IconStack>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:IconStack&gt;\n
+                        \s\s&lt;b:Icon type="..." stackBase="true"/&gt;\n
+                        \s\s&lt;b:Icon type="..." stackTop="true"/&gt;\n
+                        &lt;/b:IconStack&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
         </b:Column>
     </b:Row>
 

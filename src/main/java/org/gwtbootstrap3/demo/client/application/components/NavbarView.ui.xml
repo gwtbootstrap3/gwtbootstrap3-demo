@@ -19,6 +19,7 @@
   -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
              xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
     <ui:style>
@@ -34,91 +35,91 @@
     <b:Row>
         <b:Column size="XS_12">
 
-        <b:PageHeader text="Navbar"/>
+            <b:PageHeader text="Navbar"/>
 
-        <b:BlockQuote addStyleNames="{style.danger}">
-            <b:Heading addStyleNames="{style.margin-fix}" size="4" text="Requires JavaScript"/>
-            <b:Paragraph>
-                If JavaScript is disabled and the viewport is narrow enough that the navbar collapses, it will be
-                impossible to expand the navbar and view the content within the .navbar-collapse.
-            </b:Paragraph>
-        </b:BlockQuote>
+            <b:BlockQuote addStyleNames="{style.danger}">
+                <b:Heading addStyleNames="{style.margin-fix}" size="4" text="Requires JavaScript"/>
+                <b.html:Paragraph>
+                    If JavaScript is disabled and the viewport is narrow enough that the navbar collapses, it will be
+                    impossible to expand the navbar and view the content within the .navbar-collapse.
+                </b.html:Paragraph>
+            </b:BlockQuote>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Basic"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:Navbar addStyleNames="{style.margin-fix}">
-                    <b:NavbarHeader>
-                        <b:NavbarBrand>Brand</b:NavbarBrand>
-                        <b:NavbarCollapseButton dataTarget="#navbar-collapse2"/>
-                    </b:NavbarHeader>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Basic"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Navbar addStyleNames="{style.margin-fix}">
+                        <b:NavbarHeader>
+                            <b:NavbarBrand>Brand</b:NavbarBrand>
+                            <b:NavbarCollapseButton dataTarget="#navbar-collapse2"/>
+                        </b:NavbarHeader>
 
-                    <b:NavbarCollapse b:id="navbar-collapse2">
-                        <b:NavbarNav>
-                            <b:ListItem active="true">Item 1</b:ListItem>
-                            <b:ListItem>Item 2</b:ListItem>
-                            <b:ListItem>Item 3</b:ListItem>
+                        <b:NavbarCollapse b:id="navbar-collapse2">
+                            <b:NavbarNav>
+                                <b:AnchorListItem active="true">Item 1</b:AnchorListItem>
+                                <b:AnchorListItem>Item 2</b:AnchorListItem>
+                                <b:AnchorListItem>Item 3</b:AnchorListItem>
 
-                            <b:ListDropDown>
-                                <b:AnchorButton dataToggle="DROPDOWN">Dropdown</b:AnchorButton>
-                                <b:DropDownMenu>
-                                    <b:ListItem>Dropdown 1</b:ListItem>
-                                    <b:ListItem>Dropdown 2</b:ListItem>
-                                    <b:ListItem>Dropdown 3</b:ListItem>
-                                </b:DropDownMenu>
-                            </b:ListDropDown>
-                        </b:NavbarNav>
+                                <b:ListDropDown>
+                                    <b:AnchorButton dataToggle="DROPDOWN">Dropdown</b:AnchorButton>
+                                    <b:DropDownMenu>
+                                        <b:AnchorListItem>Dropdown 1</b:AnchorListItem>
+                                        <b:AnchorListItem>Dropdown 2</b:AnchorListItem>
+                                        <b:AnchorListItem>Dropdown 3</b:AnchorListItem>
+                                    </b:DropDownMenu>
+                                </b:ListDropDown>
+                            </b:NavbarNav>
 
-                        <b:NavbarForm pull="LEFT">
-                            <b:TextBox placeholder="Search" addStyleNames="col-lg-8"/>
-                        </b:NavbarForm>
+                            <b:NavbarForm pull="LEFT">
+                                <b:TextBox placeholder="Search" addStyleNames="col-lg-8"/>
+                            </b:NavbarForm>
 
-                        <b:NavbarText pull="RIGHT">
-                            Signed in as
-                            <b:NavbarLink>John Snow</b:NavbarLink>
-                        </b:NavbarText>
-                    </b:NavbarCollapse>
-                </b:Navbar>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:Navbar&gt;\n
-                    \s\s&lt;b:NavbarHeader&gt;\n
-                    \s\s\s\s&lt;b:NavbarBrand&gt;Brand&lt;/b:NavbarBrand&gt;\n
-                    \s\s\s\s&lt;b:NavbarCollapseButton dataTarget="#navbar-collapse"/&gt;\n
-                    \s\s&lt;b:NavbarHeader&gt;\n
-                    \n
-                    \s\s&lt;b:NavbarCollapse b:id="navbar-collapse"&gt;\n
-                    \s\s\s\s&lt;b:NavbarNav&gt;\n
-                    \s\s\s\s\s\s&lt;b:ListItem active="true"&gt;Item 1&lt;/b:ListItem&gt;\n
-                    \s\s\s\s\s\s&lt;b:ListItem&gt;Item 2&lt;/b:ListItem&gt;\n
-                    \s\s\s\s\s\s&lt;b:ListItem&gt;Item 3&lt;/b:ListItem&gt;\n
-                    \n
-                    \s\s\s\s\s\s&lt;b:ListDropDown&gt;\n
-                    \s\s\s\s\s\s\s\s&lt;b:AnchorButton dataToggle="DROPDOWN"&gt;Dropdown&lt;/b:AnchorButton&gt;\n
-                    \s\s\s\s\s\s\s\s&lt;b:DropDownMenu&gt;\n
-                    \s\s\s\s\s\s\s\s\s\s&lt;b:ListItem&gt;Dropdown 1&lt;/b:ListItem&gt;\n
-                    \s\s\s\s\s\s\s\s\s\s&lt;b:ListItem&gt;Dropdown 2&lt;/b:ListItem&gt;\n
-                    \s\s\s\s\s\s\s\s\s\s&lt;b:ListItem&gt;Dropdown 3&lt;/b:ListItem&gt;\n
-                    \s\s\s\s\s\s\s\s&lt;/b:DropDownMenu&gt;\n
-                    \s\s\s\s\s\s&lt;/b:ListDropDown&gt;\n
-                    \s\s\s\s&lt;/b:NavbarNav&gt;\n
-                    \n
-                    \s\s\s\s&lt;b:NavbarForm pull="LEFT"&gt;\n
-                    \s\s\s\s\s\s&lt;b:TextBox placeholder="Search" addStyleNames="col-lg-8"/&gt;\n
-                    \s\s\s\s&lt;/b:NavbarForm&gt;\n
-                    \n
-                    \s\s\s\s&lt;b:NavbarText pull="RIGHT"&gt;\n
-                    \s\s\s\s\s\sSigned in as\n
-                    \s\s\s\s\s\s&lt;b:NavbarLink&gt;John Snow&lt;/b:NavbarLink&gt;\n
-                    \s\s\s\s&lt;/b:NavbarText&gt;\n
-                    \s\s&lt;/b:NavbarCollapse&gt;\n
-                    &lt;/b:Navbar&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+                            <b:NavbarText pull="RIGHT">
+                                <b.html:Text text="Signed in as"/>
+                                <b:NavbarLink>John Snow</b:NavbarLink>
+                            </b:NavbarText>
+                        </b:NavbarCollapse>
+                    </b:Navbar>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Navbar&gt;\n
+                        \s\s&lt;b:NavbarHeader&gt;\n
+                        \s\s\s\s&lt;b:NavbarBrand&gt;Brand&lt;/b:NavbarBrand&gt;\n
+                        \s\s\s\s&lt;b:NavbarCollapseButton dataTarget="#navbar-collapse"/&gt;\n
+                        \s\s&lt;b:NavbarHeader&gt;\n
+                        \n
+                        \s\s&lt;b:NavbarCollapse b:id="navbar-collapse"&gt;\n
+                        \s\s\s\s&lt;b:NavbarNav&gt;\n
+                        \s\s\s\s\s\s&lt;b:AnchorListItem active="true"&gt;Item 1&lt;/b:AnchorListItem&gt;\n
+                        \s\s\s\s\s\s&lt;b:AnchorListItem&gt;Item 2&lt;/b:AnchorListItem&gt;\n
+                        \s\s\s\s\s\s&lt;b:AnchorListItem&gt;Item 3&lt;/b:AnchorListItem&gt;\n
+                        \n
+                        \s\s\s\s\s\s&lt;b:ListDropDown&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:AnchorButton dataToggle="DROPDOWN"&gt;Dropdown&lt;/b:AnchorButton&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:DropDownMenu&gt;\n
+                        \s\s\s\s\s\s\s\s\s\s&lt;b:AnchorListItem&gt;Dropdown 1&lt;/b:AnchorListItem&gt;\n
+                        \s\s\s\s\s\s\s\s\s\s&lt;b:AnchorListItem&gt;Dropdown 2&lt;/b:AnchorListItem&gt;\n
+                        \s\s\s\s\s\s\s\s\s\s&lt;b:AnchorListItem&gt;Dropdown 3&lt;/b:AnchorListItem&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;/b:DropDownMenu&gt;\n
+                        \s\s\s\s\s\s&lt;/b:ListDropDown&gt;\n
+                        \s\s\s\s&lt;/b:NavbarNav&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:NavbarForm pull="LEFT"&gt;\n
+                        \s\s\s\s\s\s&lt;b:TextBox placeholder="Search" addStyleNames="col-lg-8"/&gt;\n
+                        \s\s\s\s&lt;/b:NavbarForm&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:NavbarText pull="RIGHT"&gt;\n
+                        \s\s\s\s\s\s&lt;b.html:Text text="Signed in as"&gt;\n
+                        \s\s\s\s\s\s&lt;b:NavbarLink&gt;John Snow&lt;/b:NavbarLink&gt;\n
+                        \s\s\s\s&lt;/b:NavbarText&gt;\n
+                        \s\s&lt;/b:NavbarCollapse&gt;\n
+                        &lt;/b:Navbar&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
         </b:Column>
 
     </b:Row>

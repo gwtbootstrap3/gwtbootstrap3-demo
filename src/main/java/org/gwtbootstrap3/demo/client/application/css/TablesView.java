@@ -30,9 +30,9 @@ import com.google.gwt.view.client.ListDataProvider;
 import com.google.gwt.view.client.RangeChangeEvent;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
-import org.gwtbootstrap3.client.ui.CellTable;
-import org.gwtbootstrap3.client.ui.DataGrid;
 import org.gwtbootstrap3.client.ui.Pagination;
+import org.gwtbootstrap3.client.ui.gwt.CellTable;
+import org.gwtbootstrap3.client.ui.gwt.DataGrid;
 import org.gwtbootstrap3.demo.client.pojo.TableTestPojo;
 
 /**
@@ -44,7 +44,7 @@ public class TablesView extends ViewImpl implements TablesPresenter.MyView {
     @UiField
     Pagination dataGridPagination;
     @UiField(provided = true)
-    CellTable<TableTestPojo> cellTable = new CellTable<TableTestPojo>(10);
+    CellTable cellTable = new CellTable<TableTestPojo>(10);
     @UiField
     Pagination cellTablePagination;
 

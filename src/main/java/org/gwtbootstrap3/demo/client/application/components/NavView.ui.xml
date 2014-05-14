@@ -19,156 +19,157 @@
   -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
              xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
     <b:Row>
         <b:Column size="XS_12">
 
-        <b:PageHeader text="Navs"/>
+            <b:PageHeader text="Navs"/>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Tabs"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:NavTabs>
-                    <b:ListItem active="true">Item 1</b:ListItem>
-                    <b:ListItem>Item 2</b:ListItem>
-                    <b:ListItem>Item 3</b:ListItem>
-                    <b:ListItem enabled="false">Item 4</b:ListItem>
-                    <b:ListItem pull="RIGHT">Pulled right</b:ListItem>
-                </b:NavTabs>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:NavTabs&gt;\n
-                    \s\s&lt;b:ListItem active="true"&gt;Item 1&lt;/b:ListItem&gt;\n
-                    \s\s&lt;b:ListItem&gt;Item 2&lt;/b:ListItem&gt;\n
-                    \s\s&lt;b:ListItem&gt;Item 3&lt;/b:ListItem&gt;\n
-                    \s\s&lt;b:ListItem enabled="false"&gt;Item 4&lt;/b:ListItem&gt;\n
-                    \s\s&lt;b:ListItem pull="RIGHT"&gt;Pulled right&lt;/b:ListItem&gt;\n
-                    &lt;/b:NavTabs&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Tabs"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:NavTabs>
+                        <b:AnchorListItem active="true">Item 1</b:AnchorListItem>
+                        <b:AnchorListItem>Item 2</b:AnchorListItem>
+                        <b:AnchorListItem>Item 3</b:AnchorListItem>
+                        <b:AnchorListItem enabled="false">Item 4</b:AnchorListItem>
+                        <b:AnchorListItem pull="RIGHT">Pulled right</b:AnchorListItem>
+                    </b:NavTabs>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:NavTabs&gt;\n
+                        \s\s&lt;b:AnchorListItem active="true"&gt;Item 1&lt;/b:AnchorListItem&gt;\n
+                        \s\s&lt;b:AnchorListItem&gt;Item 2&lt;/b:AnchorListItem&gt;\n
+                        \s\s&lt;b:AnchorListItem&gt;Item 3&lt;/b:AnchorListItem&gt;\n
+                        \s\s&lt;b:AnchorListItem enabled="false"&gt;Item 4&lt;/b:AnchorListItem&gt;\n
+                        \s\s&lt;b:AnchorListItem pull="RIGHT"&gt;Pulled right&lt;/b:AnchorListItem&gt;\n
+                        &lt;/b:NavTabs&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Pills"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:NavPills>
-                    <b:ListItem active="true">Item 1</b:ListItem>
-                    <b:ListItem>Item 2</b:ListItem>
-                    <b:ListItem>Item 3</b:ListItem>
-                    <b:ListItem enabled="false">Item 4</b:ListItem>
-                    <b:ListItem pull="RIGHT">Pulled right</b:ListItem>
-                </b:NavPills>
-                <b:Br/>
-                <b:NavPills stacked="true">
-                    <b:ListItem active="true">Item 1</b:ListItem>
-                    <b:ListItem>Item 2</b:ListItem>
-                    <b:ListItem>Item 3</b:ListItem>
-                </b:NavPills>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:NavPills&gt;\n
-                    \s\s&lt;b:ListItem active="true"&gt;Item 1&lt;/b:ListItem&gt;\n
-                    \s\s&lt;b:ListItem&gt;Item 2&lt;/b:ListItem&gt;\n
-                    \s\s&lt;b:ListItem&gt;Item 3&lt;/b:ListItem&gt;\n
-                    \s\s&lt;b:ListItem enabled="false"&gt;Item 4&lt;/b:ListItem&gt;\n
-                    \s\s&lt;b:ListItem pull="RIGHT"&gt;Pulled right&lt;/b:ListItem&gt;\n
-                    &lt;/b:NavPills&gt;\n
-                    \n
-                    &lt;b:NavPills stacked="true"&gt;\n
-                    \s\s&lt;b:ListItem active="true"&gt;Item 1&lt;/b:ListItem&gt;\n
-                    \s\s&lt;b:ListItem&gt;Item 2&lt;/b:ListItem&gt;\n
-                    \s\s&lt;b:ListItem&gt;Item 3&lt;/b:ListItem&gt;\n
-                    &lt;/b:NavPills&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Pills"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:NavPills>
+                        <b:AnchorListItem active="true">Item 1</b:AnchorListItem>
+                        <b:AnchorListItem>Item 2</b:AnchorListItem>
+                        <b:AnchorListItem>Item 3</b:AnchorListItem>
+                        <b:AnchorListItem enabled="false">Item 4</b:AnchorListItem>
+                        <b:AnchorListItem pull="RIGHT">Pulled right</b:AnchorListItem>
+                    </b:NavPills>
+                    <b.html:Br/>
+                    <b:NavPills stacked="true">
+                        <b:AnchorListItem active="true">Item 1</b:AnchorListItem>
+                        <b:AnchorListItem>Item 2</b:AnchorListItem>
+                        <b:AnchorListItem>Item 3</b:AnchorListItem>
+                    </b:NavPills>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:NavPills&gt;\n
+                        \s\s&lt;b:AnchorListItem active="true"&gt;Item 1&lt;/b:AnchorListItem&gt;\n
+                        \s\s&lt;b:AnchorListItem&gt;Item 2&lt;/b:AnchorListItem&gt;\n
+                        \s\s&lt;b:AnchorListItem&gt;Item 3&lt;/b:AnchorListItem&gt;\n
+                        \s\s&lt;b:AnchorListItem enabled="false"&gt;Item 4&lt;/b:AnchorListItem&gt;\n
+                        \s\s&lt;b:AnchorListItem pull="RIGHT"&gt;Pulled right&lt;/b:AnchorListItem&gt;\n
+                        &lt;/b:NavPills&gt;\n
+                        \n
+                        &lt;b:NavPills stacked="true"&gt;\n
+                        \s\s&lt;b:AnchorListItem active="true"&gt;Item 1&lt;/b:AnchorListItem&gt;\n
+                        \s\s&lt;b:AnchorListItem&gt;Item 2&lt;/b:AnchorListItem&gt;\n
+                        \s\s&lt;b:AnchorListItem&gt;Item 3&lt;/b:AnchorListItem&gt;\n
+                        &lt;/b:NavPills&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Justified Nav"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:NavTabs justified="true">
-                    <b:ListItem active="true">Item 1</b:ListItem>
-                    <b:ListItem>Item 2</b:ListItem>
-                    <b:ListItem>Item 3</b:ListItem>
-                </b:NavTabs>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:NavTabs justified="true"&gt;\n
-                    \s\s&lt;b:ListItem active="true"&gt;Item 1&lt;/b:ListItem&gt;\n
-                    \s\s&lt;b:ListItem&gt;Item 2&lt;/b:ListItem&gt;\n
-                    \s\s&lt;b:ListItem&gt;Item 3&lt;/b:ListItem&gt;\n
-                    &lt;/b:NavTabs&gt;\n
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Justified Nav"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:NavTabs justified="true">
+                        <b:AnchorListItem active="true">Item 1</b:AnchorListItem>
+                        <b:AnchorListItem>Item 2</b:AnchorListItem>
+                        <b:AnchorListItem>Item 3</b:AnchorListItem>
+                    </b:NavTabs>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:NavTabs justified="true"&gt;\n
+                        \s\s&lt;b:AnchorListItem active="true"&gt;Item 1&lt;/b:AnchorListItem&gt;\n
+                        \s\s&lt;b:AnchorListItem&gt;Item 2&lt;/b:AnchorListItem&gt;\n
+                        \s\s&lt;b:AnchorListItem&gt;Item 3&lt;/b:AnchorListItem&gt;\n
+                        &lt;/b:NavTabs&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Using Dropdowns"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:NavTabs>
-                    <b:ListItem active="true">Item 1</b:ListItem>
-                    <b:ListItem>Item 2</b:ListItem>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Using Dropdowns"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:NavTabs>
+                        <b:AnchorListItem active="true">Item 1</b:AnchorListItem>
+                        <b:AnchorListItem>Item 2</b:AnchorListItem>
 
-                    <b:ListDropDown>
-                        <b:AnchorButton dataToggle="DROPDOWN">Dropdown</b:AnchorButton>
-                        <b:DropDownMenu>
-                            <b:ListItem>Dropdown 1</b:ListItem>
-                            <b:ListItem>Dropdown 2</b:ListItem>
-                            <b:ListItem>Dropdown 3</b:ListItem>
-                        </b:DropDownMenu>
-                    </b:ListDropDown>
+                        <b:ListDropDown>
+                            <b:AnchorButton dataToggle="DROPDOWN">Dropdown</b:AnchorButton>
+                            <b:DropDownMenu>
+                                <b:AnchorListItem>Dropdown 1</b:AnchorListItem>
+                                <b:AnchorListItem>Dropdown 2</b:AnchorListItem>
+                                <b:AnchorListItem>Dropdown 3</b:AnchorListItem>
+                            </b:DropDownMenu>
+                        </b:ListDropDown>
 
-                    <b:ListItem>Item 3</b:ListItem>
-                </b:NavTabs>
-                <b:Br/>
-                <b:NavPills>
-                    <b:ListItem active="true">Item 1</b:ListItem>
-                    <b:ListItem>Item 2</b:ListItem>
+                        <b:AnchorListItem>Item 3</b:AnchorListItem>
+                    </b:NavTabs>
+                    <b.html:Br/>
+                    <b:NavPills>
+                        <b:AnchorListItem active="true">Item 1</b:AnchorListItem>
+                        <b:AnchorListItem>Item 2</b:AnchorListItem>
 
-                    <b:ListDropDown>
-                        <b:AnchorButton dataToggle="DROPDOWN">Dropdown</b:AnchorButton>
-                        <b:DropDownMenu>
-                            <b:ListItem>Dropdown 1</b:ListItem>
-                            <b:ListItem>Dropdown 2</b:ListItem>
-                            <b:ListItem>Dropdown 3</b:ListItem>
-                        </b:DropDownMenu>
-                    </b:ListDropDown>
+                        <b:ListDropDown>
+                            <b:AnchorButton dataToggle="DROPDOWN">Dropdown</b:AnchorButton>
+                            <b:DropDownMenu>
+                                <b:AnchorListItem>Dropdown 1</b:AnchorListItem>
+                                <b:AnchorListItem>Dropdown 2</b:AnchorListItem>
+                                <b:AnchorListItem>Dropdown 3</b:AnchorListItem>
+                            </b:DropDownMenu>
+                        </b:ListDropDown>
 
-                    <b:ListItem>Item 3</b:ListItem>
-                </b:NavPills>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:NavTabs&gt;\n
-                    \s\s&lt;b:ListItem active="true"&gt;Item 1&lt;/b:ListItem&gt;\n
-                    \s\s&lt;b:ListItem&gt;Item 2&lt;/b:ListItem&gt;\n
-                    \n
-                    \s\s&lt;b:ListDropDown&gt;\n
-                    \s\s\s\s&lt;b:AnchorButton dataToggle="DROPDOWN"&gt;Dropdown&lt;/b:AnchorButton&gt;\n
-                    \s\s\s\s&lt;b:DropDownMenu&gt;\n
-                    \s\s\s\s\s\s&lt;b:ListItem&gt;Dropdown 1&lt;/b:ListItem&gt;\n
-                    \s\s\s\s\s\s&lt;b:ListItem&gt;Dropdown 2&lt;/b:ListItem&gt;\n
-                    \s\s\s\s\s\s&lt;b:ListItem&gt;Dropdown 3&lt;/b:ListItem&gt;\n
-                    \s\s\s\s&lt;/b:DropDownMenu&gt;\n
-                    \s\s&lt;/b:ListDropDown&gt;\n
-                    \n
-                    \s\s&lt;b:ListItem&gt;Item 3&lt;/b:ListItem&gt;\n
-                    &lt;/b:NavTabs&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+                        <b:AnchorListItem>Item 3</b:AnchorListItem>
+                    </b:NavPills>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:NavTabs&gt;\n
+                        \s\s&lt;b:AnchorListItem active="true"&gt;Item 1&lt;/b:AnchorListItem&gt;\n
+                        \s\s&lt;b:AnchorListItem&gt;Item 2&lt;/b:AnchorListItem&gt;\n
+                        \n
+                        \s\s&lt;b:ListDropDown&gt;\n
+                        \s\s\s\s&lt;b:AnchorButton dataToggle="DROPDOWN"&gt;Dropdown&lt;/b:AnchorButton&gt;\n
+                        \s\s\s\s&lt;b:DropDownMenu&gt;\n
+                        \s\s\s\s\s\s&lt;b:AnchorListItem&gt;Dropdown 1&lt;/b:AnchorListItem&gt;\n
+                        \s\s\s\s\s\s&lt;b:AnchorListItem&gt;Dropdown 2&lt;/b:AnchorListItem&gt;\n
+                        \s\s\s\s\s\s&lt;b:AnchorListItem&gt;Dropdown 3&lt;/b:AnchorListItem&gt;\n
+                        \s\s\s\s&lt;/b:DropDownMenu&gt;\n
+                        \s\s&lt;/b:ListDropDown&gt;\n
+                        \n
+                        \s\s&lt;b:AnchorListItem&gt;Item 3&lt;/b:AnchorListItem&gt;\n
+                        &lt;/b:NavTabs&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
         </b:Column>
 
     </b:Row>

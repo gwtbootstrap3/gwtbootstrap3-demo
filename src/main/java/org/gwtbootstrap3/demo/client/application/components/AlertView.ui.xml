@@ -19,6 +19,7 @@
   -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
              xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
     <ui:style>
@@ -29,96 +30,96 @@
     <b:Row>
         <b:Column size="XS_12">
 
-        <b:PageHeader text="Alerts"/>
+            <b:PageHeader text="Alerts"/>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Basic"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:Alert type="SUCCESS">
-                    <strong>Title</strong>
-                    Description
-                </b:Alert>
-                <b:Alert type="INFO">
-                    <strong>Title</strong>
-                    Description
-                </b:Alert>
-                <b:Alert type="WARNING">
-                    <strong>Title</strong>
-                    Description
-                </b:Alert>
-                <b:Alert addStyleNames="{style.margin-fix}" type="DANGER">
-                    <strong>Title</strong>
-                    Description
-                </b:Alert>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:Alert type="SUCCESS&gt;\n
-                    \s\s&lt;strong&gt;Title&lt;/strong&gt;\n
-                    \s\sDescription\n
-                    &lt;/b:Alert&gt;\n
-                    \n
-                    &lt;b:Alert type="INFO&gt;\n
-                    \s\s&lt;strong&gt;Title&lt;/strong&gt;\n
-                    \s\sDescription\n
-                    &lt;/b:Alert&gt;\n
-                    \n
-                    &lt;b:Alert type="WARNING&gt;\n
-                    \s\s&lt;strong&gt;Title&lt;/strong&gt;\n
-                    \s\sDescription\n
-                    &lt;/b:Alert&gt;\n
-                    \n
-                    &lt;b:Alert type="DANGER&gt;\n
-                    \s\s&lt;strong&gt;Title&lt;/strong&gt;\n
-                    \s\sDescription\n
-                    &lt;/b:Alert&gt;\n
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Basic"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Alert type="SUCCESS">
+                        <b.html:Strong text="Title"/>
+                        <b.html:Text text="Description"/>
+                    </b:Alert>
+                    <b:Alert type="INFO">
+                        <b.html:Strong text="Title"/>
+                        <b.html:Text text="Description"/>
+                    </b:Alert>
+                    <b:Alert type="WARNING">
+                        <b.html:Strong text="Title"/>
+                        <b.html:Text text="Description"/>
+                    </b:Alert>
+                    <b:Alert addStyleNames="{style.margin-fix}" type="DANGER">
+                        <b.html:Strong text="Title"/>
+                        <b.html:Text text="Description"/>
+                    </b:Alert>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Alert type="SUCCESS&gt;\n
+                        \s\s&lt;b.html:Strong text="..."/&gt;\n
+                        \s\s&lt;b.html:Text text="..."/&gt;\n
+                        &lt;/b:Alert&gt;\n
+                        \n
+                        &lt;b:Alert type="INFO&gt;\n
+                        \s\s&lt;b.html:Strong text="..."/&gt;\n
+                        \s\s&lt;b.html:Text text="..."/&gt;\n
+                        &lt;/b:Alert&gt;\n
+                        \n
+                        &lt;b:Alert type="WARNING&gt;\n
+                        \s\s&lt;b.html:Strong text="..."/&gt;\n
+                        \s\s&lt;b.html:Text text="..."/&gt;\n
+                        &lt;/b:Alert&gt;\n
+                        \n
+                        &lt;b:Alert type="DANGER&gt;\n
+                        \s\s&lt;b.html:Strong text="..."/&gt;\n
+                        \s\s&lt;b.html:Text text="..."/&gt;\n
+                        &lt;/b:Alert&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Dismissable"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:Alert addStyleNames="{style.margin-fix}" type="SUCCESS" dismissable="true">
-                    <strong>Title</strong>
-                    Description
-                </b:Alert>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:Alert type="SUCCESS dismissable="true"&gt;\n
-                    \s\s&lt;strong&gt;Title&lt;/strong&gt;\n
-                    \s\sDescription\n
-                    &lt;/b:Alert&gt;\n
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Dismissable"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Alert addStyleNames="{style.margin-fix}" type="SUCCESS" dismissable="true">
+                        <b.html:Strong text="Title"/>
+                        <b.html:Text text="Description"/>
+                    </b:Alert>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Alert type="SUCCESS dismissable="true"&gt;\n
+                        \s\s&lt;b.html:Strong text="..."/&gt;\n
+                        \s\s&lt;b.html:Text text="..."/&gt;\n
+                        &lt;/b:Alert&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Links Inside"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:Alert addStyleNames="{style.margin-fix}" type="SUCCESS" dismissable="true">
-                    <strong>Title</strong>
-                    Description
-                    <b:AlertLink>Link</b:AlertLink>
-                </b:Alert>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:Alert type="SUCCESS dismissable="true"&gt;\n
-                    \s\s&lt;strong&gt;Title&lt;/strong&gt;\n
-                    \s\sDescription\n
-                    \s\s&lt;b:AlertLink&gt;Link&lt;/AlertLink&gt;\n
-                    &lt;/b:Alert&gt;\n
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Links Inside"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Alert addStyleNames="{style.margin-fix}" type="SUCCESS" dismissable="true">
+                        <b.html:Strong text="Title"/>
+                        <b.html:Text text="Description"/>
+                        <b:Anchor text="Link"/>
+                    </b:Alert>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Alert type="SUCCESS dismissable="true"&gt;\n
+                        \s\s&lt;b.html:Strong text="..."/&gt;\n
+                        \s\s&lt;b.html:Text text="..."/&gt;\n
+                        \s\s&lt;b:AlertLink&gt;Link&lt;/AlertLink&gt;\n
+                        &lt;/b:Alert&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
         </b:Column>
 
     </b:Row>

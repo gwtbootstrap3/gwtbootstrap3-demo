@@ -49,81 +49,113 @@
                     </b:NavbarHeader>
                     <b:NavbarCollapse b:id="navbar-collapse">
                         <b:NavbarNav>
-                            <b:ListItem text="Setup" targetHistoryToken="{nameTokens.getSetup}"/>
+                            <b:AnchorListItem text="Setup" targetHistoryToken="{nameTokens.getSetup}"/>
                             <b:ListDropDown>
                                 <b:AnchorButton dataToggle="DROPDOWN">CSS</b:AnchorButton>
                                 <b:DropDownMenu>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getButtons}">Buttons</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getCode}">Code</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getForms}">Forms</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getGridSystem}">Grid System</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getImages}">Images</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getResponsiveUtilities}">Responsive
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getButtons}">Buttons
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getCode}">Code</b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getForms}">Forms
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getGridSystem}">Grid System
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getImages}">Images
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getResponsiveUtilities}">
+                                        Responsive
                                         Utilities
-                                    </b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getTables}">Tables</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getTypography}">Typography</b:ListItem>
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getTables}">Tables
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getTypography}">Typography
+                                    </b:AnchorListItem>
                                 </b:DropDownMenu>
                             </b:ListDropDown>
                             <b:ListDropDown>
                                 <b:AnchorButton dataToggle="DROPDOWN">Components</b:AnchorButton>
                                 <b:DropDownMenu>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getAlerts}">Alerts</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getBadges}">Badges</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getBreadcrumbs}">Breadcrumbs
-                                    </b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getButtonDropdowns}">Button Dropdowns
-                                    </b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getButtonGroups}">Button Groups
-                                    </b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getDropdowns}">Dropdowns</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getIcons}">Icons</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getInputGroups}">Input Groups
-                                    </b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getJumbotron}">Jumbotron</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getLabels}">Labels</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getListGroup}">List Group</b:ListItem>
-                                    <!--<b:ListItem targetHistoryToken="{nameTokens.getMediaObjects}">Media Objects-->
-                                    <!--</b:ListItem>-->
-                                    <b:ListItem targetHistoryToken="{nameTokens.getNavbar}">Navbar</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getNavs}">Navs</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getPageHeader}">Page Header</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getPagination}">Pagination</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getPanels}">Panels</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getProgressBars}">Progress Bars
-                                    </b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getThumbnails}">Thumbnails</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getWells}">Wells</b:ListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getAlerts}">Alerts
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getBadges}">Badges
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getBreadcrumbs}">Breadcrumbs
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getButtonDropdowns}">Button
+                                        Dropdowns
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getButtonGroups}">Button Groups
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getDropdowns}">Dropdowns
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getIcons}">Icons
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getInputGroups}">Input Groups
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getJumbotron}">Jumbotron
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getLabels}">Labels
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getListGroup}">List Group
+                                    </b:AnchorListItem>
+                                    <!--<b:AnchorListItem targetHistoryToken="{nameTokens.getMediaObjects}">Media Objects-->
+                                    <!--</b:AnchorListItem>-->
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getNavbar}">Navbar
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getNavs}">Navs</b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getPageHeader}">Page Header
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getPagination}">Pagination
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getPanels}">Panels
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getProgressBars}">Progress Bars
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getThumbnails}">Thumbnails
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getWells}">Wells
+                                    </b:AnchorListItem>
                                 </b:DropDownMenu>
                             </b:ListDropDown>
                             <b:ListDropDown>
                                 <b:AnchorButton dataToggle="DROPDOWN">JavaScript</b:AnchorButton>
                                 <b:DropDownMenu>
-                                    <!--<b:ListItem targetHistoryToken="{nameTokens.getAffix}">Affix</b:ListItem>-->
-                                    <b:ListItem targetHistoryToken="{nameTokens.getCarousel}">Carousel</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getCollapse}">Collapse</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getModals}">Modals</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getPopover}">Popover</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getTabs}">Tabs</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getTooltips}">Tooltips</b:ListItem>
+                                    <!--<b:AnchorListItem targetHistoryToken="{nameTokens.getAffix}">Affix</b:AnchorListItem>-->
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getCarousel}">Carousel
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getCollapse}">Collapse
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getModals}">Modals
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getPopover}">Popover
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getTabs}">Tabs</b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getTooltips}">Tooltips
+                                    </b:AnchorListItem>
                                 </b:DropDownMenu>
                             </b:ListDropDown>
                             <b:ListDropDown>
                                 <b:AnchorButton dataToggle="DROPDOWN">Extras</b:AnchorButton>
                                 <b:DropDownMenu>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getDatetimePicker}">DateTimePicker
-                                    </b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getBootbox}">Bootbox</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getCard}">Cards</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getSelect}">Select</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getSlider}">Slider</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getSummernote}">Summernote</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getToggleSwitch}">ToggleSwitch</b:ListItem>
-                                    <b:ListItem targetHistoryToken="{nameTokens.getOffline}">Offline</b:ListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getDatetimePicker}">DateTimePicker
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getBootbox}">Bootbox
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getSelect}">Select
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getSlider}">Slider
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getSummernote}">Summernote
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getToggleSwitch}">ToggleSwitch
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getOffline}">Offline
+                                    </b:AnchorListItem>
                                 </b:DropDownMenu>
                             </b:ListDropDown>
-                            <b:ListItem text="Fork on GitHub" href="https://github.com/gwtbootstrap3/gwtbootstrap3"/>
-                            <b:ListItem text="View Javadoc" href="apidocs/index.html"/>
+                            <b:AnchorListItem text="Fork on GitHub"
+                                              href="https://github.com/gwtbootstrap3/gwtbootstrap3"/>
+                            <b:AnchorListItem text="View Javadoc" href="apidocs/index.html"/>
                         </b:NavbarNav>
                     </b:NavbarCollapse>
                 </b:Container>

@@ -24,43 +24,44 @@
     <b:Row>
         <b:Column size="XS_12">
 
-        <b:PageHeader text="Dropdowns"/>
+            <b:PageHeader text="Dropdowns"/>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Basic"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:DropDown>
-                    <b:Anchor dataToggle="DROPDOWN">Click to toggle dropdown</b:Anchor>
-                    <b:DropDownMenu>
-                        <b:DropDownHeader>Header 1</b:DropDownHeader>
-                        <b:ListItem>Action 1</b:ListItem>
-                        <b:ListItem icon="CAMERA">Action 2</b:ListItem>
-                        <b:Divider/>
-                        <b:DropDownHeader>Header 2</b:DropDownHeader>
-                        <b:ListItem icon="CREDIT_CARD" iconPosition="RIGHT" iconSpin="true">Action 3</b:ListItem>
-                        <b:ListItem enabled="false">Action 4 (disabled)</b:ListItem>
-                    </b:DropDownMenu>
-                </b:DropDown>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:DropDown&gt;\n
-                    \s\s&lt;b:Anchor dataToggle="DROPDOWN"&gt;Click to toggle dropdown&lt;/b:Anchor&gt;\n
-                    \s\s&lt;b:DropDownMenu&gt;\n
-                    \s\s\s\s&lt;b:DropDownHeader&gt;Header 1&lt;/b:DropDownHeader&gt;\n
-                    \s\s\s\s&lt;b:ListItem&gt;Action 1&lt;/b:ListItem&gt;\n
-                    \s\s\s\s&lt;b:ListItem icon="CAMERA"&gt;Action 2&lt;/b:ListItem&gt;\n
-                    \s\s\s\s&lt;b:Divider/&gt;\n
-                    \s\s\s\s&lt;b:DropDownHeader&gt;Header 2&lt;/b:DropDownHeader&gt;\n
-                    \s\s\s\s&lt;b:ListItem icon="CREDIT_CARD" iconPosition="RIGHT" iconSpin="true"&gt;Action 3&lt;/b:ListItem&gt;\n
-                    \s\s\s\s&lt;b:ListItem enabled="false"&gt;Action 4 (disabled)&lt;/b:ListItem&gt;\n
-                    \s\s&lt;/b:DropDownMenu&gt;\n
-                    &lt;/b:DropDown&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Basic"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:DropDown>
+                        <b:Anchor dataToggle="DROPDOWN">Click to toggle dropdown</b:Anchor>
+                        <b:DropDownMenu>
+                            <b:DropDownHeader>Header 1</b:DropDownHeader>
+                            <b:AnchorListItem>Action 1</b:AnchorListItem>
+                            <b:AnchorListItem icon="CAMERA">Action 2</b:AnchorListItem>
+                            <b:Divider/>
+                            <b:DropDownHeader>Header 2</b:DropDownHeader>
+                            <b:AnchorListItem icon="CREDIT_CARD" iconPosition="RIGHT" iconSpin="true">Action 3
+                            </b:AnchorListItem>
+                            <b:AnchorListItem enabled="false">Action 4 (disabled)</b:AnchorListItem>
+                        </b:DropDownMenu>
+                    </b:DropDown>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:DropDown&gt;\n
+                        \s\s&lt;b:Anchor dataToggle="DROPDOWN"&gt;Click to toggle dropdown&lt;/b:Anchor&gt;\n
+                        \s\s&lt;b:DropDownMenu&gt;\n
+                        \s\s\s\s&lt;b:DropDownHeader&gt;Header 1&lt;/b:DropDownHeader&gt;\n
+                        \s\s\s\s&lt;b:AnchorListItem&gt;Action 1&lt;/b:AnchorListItem&gt;\n
+                        \s\s\s\s&lt;b:AnchorListItem icon="CAMERA"&gt;Action 2&lt;/b:AnchorListItem&gt;\n
+                        \s\s\s\s&lt;b:Divider/&gt;\n
+                        \s\s\s\s&lt;b:DropDownHeader&gt;Header 2&lt;/b:DropDownHeader&gt;\n
+                        \s\s\s\s&lt;b:AnchorListItem icon="CREDIT_CARD" iconPosition="RIGHT" iconSpin="true"&gt;Action 3&lt;/b:AnchorListItem&gt;\n
+                        \s\s\s\s&lt;b:AnchorListItem enabled="false"&gt;Action 4 (disabled)&lt;/b:AnchorListItem&gt;\n
+                        \s\s&lt;/b:DropDownMenu&gt;\n
+                        &lt;/b:DropDown&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
         </b:Column>
 
     </b:Row>

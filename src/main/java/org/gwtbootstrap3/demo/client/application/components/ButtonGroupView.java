@@ -28,8 +28,8 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
-import org.gwtbootstrap3.client.ui.Paragraph;
 import org.gwtbootstrap3.client.ui.RadioButton;
+import org.gwtbootstrap3.client.ui.html.Paragraph;
 
 /**
  * @author Joshua Godi
