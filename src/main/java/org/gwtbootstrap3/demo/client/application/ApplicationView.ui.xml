@@ -39,11 +39,10 @@
 
     <g:ScrollPanel>
         <b:Container>
-
             <b:Navbar position="FIXED_TOP">
                 <b:Container>
                     <b:NavbarHeader>
-                        <b:NavbarBrand targetHistoryToken="{nameTokens.getHome}" ui:field="brand">GwtBootstrap3
+                        <b:NavbarBrand targetHistoryToken="{nameTokens.getHome}" ui:field="brand">GwtBootstrap3 v0.8
                         </b:NavbarBrand>
                         <b:NavbarCollapseButton dataTarget="#navbar-collapse"/>
                     </b:NavbarHeader>
@@ -140,6 +139,8 @@
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getDatetimePicker}">DateTimePicker
                                     </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getBootbox}">Bootbox
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getCard}">Cards
                                     </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getSelect}">Select
                                     </b:AnchorListItem>

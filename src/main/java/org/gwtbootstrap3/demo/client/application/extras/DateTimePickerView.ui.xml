@@ -143,9 +143,9 @@
                     <b:Heading size="3" text="Setting Languages"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Paragraph>
-                        Change the language for the DateTimePicker.
-                    </b:Paragraph>
+                    <b.html:Paragraph>
+                    Change the language for the DateTimePicker.
+                    </b.html:Paragraph>
                     <b2:DateTimeBox autoClose="true" language="FR"/>
                 </b:PanelBody>
                 <b:PanelFooter>
