@@ -72,45 +72,45 @@
                     </b:Row>
                     <b:Row>
                         <b:Column addStyleNames="{style.column}" size="XS_6 SM_6">
-                            <b.html:Span addStyleNames="{style.visible}" visibleOn="XS SM"
+                            <b.html:Span addStyleNames="{style.visible}" visibleOn="XS_SM"
                                          text="Visible on x-small and small"/>
-                            <b.html:Span hiddenOn="XS SM" text="Extra small and small"/>
+                            <b.html:Span hiddenOn="XS_SM" text="Extra small and small"/>
                         </b:Column>
                         <b:Column addStyleNames="{style.column}" size="XS_6 SM_6">
-                            <b.html:Span addStyleNames="{style.visible}" visibleOn="MD LG"
+                            <b.html:Span addStyleNames="{style.visible}" visibleOn="MD_LG"
                                          text="Visible on medium and large"/>
-                            <b.html:Span hiddenOn="MD LG" text="Medium and large"/>
+                            <b.html:Span hiddenOn="MD_LG" text="Medium and large"/>
                         </b:Column>
                         <b.html:ClearFix visibleOn="XS"/>
                         <b:Column addStyleNames="{style.column}" size="XS_6 SM_6">
-                            <b.html:Span addStyleNames="{style.visible}" visibleOn="XS MD"
+                            <b.html:Span addStyleNames="{style.visible}" visibleOn="XS_MD"
                                          text="Visible on x-small and medium"/>
-                            <b.html:Span hiddenOn="XS MD" text="Extra small and medium"/>
+                            <b.html:Span hiddenOn="XS_MD" text="Extra small and medium"/>
                         </b:Column>
                         <b:Column addStyleNames="{style.column}" size="XS_6 SM_6">
-                            <b.html:Span addStyleNames="{style.visible}" visibleOn="SM LG"
+                            <b.html:Span addStyleNames="{style.visible}" visibleOn="SM_LG"
                                          text="Visible on small and large"/>
-                            <b.html:Span hiddenOn="SM LG" text="Small and Large"/>
+                            <b.html:Span hiddenOn="SM_LG" text="Small and Large"/>
                         </b:Column>
                         <b.html:ClearFix visibleOn="XS"/>
                         <b:Column addStyleNames="{style.column}" size="XS_6 SM_6">
-                            <b.html:Span addStyleNames="{style.visible}" visibleOn="XS LG"
+                            <b.html:Span addStyleNames="{style.visible}" visibleOn="XS_LG"
                                          text="Visible on x-small and large"/>
-                            <b.html:Span hiddenOn="XS LG" text="Extra small and large"/>
+                            <b.html:Span hiddenOn="XS_LG" text="Extra small and large"/>
                         </b:Column>
                         <b:Column addStyleNames="{style.column}" size="XS_6 SM_6">
-                            <b.html:Span addStyleNames="{style.visible}" visibleOn="SM MD"
+                            <b.html:Span addStyleNames="{style.visible}" visibleOn="SM_MD"
                                          text="Visible on small and medium"/>
-                            <b.html:Span hiddenOn="SM MD" text="Small and medium"/>
+                            <b.html:Span hiddenOn="SM_MD" text="Small and medium"/>
                         </b:Column>
                     </b:Row>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b.html:Span visibleOn="SM" text=""/&gt;\n
-                        &lt;b.html:Span visibleOn="SM MD" text=""/&gt;\n
+                        &lt;b.html:Span visibleOn="SM_MD" text=""/&gt;\n
                         &lt;b.html:Span hiddenOn="SM" text=""/&gt;\n
-                        &lt;b.html:Span hiddenOn="SM LG" text=""/&gt;\n
+                        &lt;b.html:Span hiddenOn="SM_LG" text=""/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
