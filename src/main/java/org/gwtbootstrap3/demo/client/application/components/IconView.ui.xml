@@ -61,7 +61,6 @@
                     </b.html:Span>
                     <b.html:Br/>
                     <b:Anchor icon="HEART" iconSpin="true">With Anchor</b:Anchor>
-
                     <b.html:Br/>
                     <b:Anchor icon="HEART" iconSpin="true"/>
                 </b:PanelBody>

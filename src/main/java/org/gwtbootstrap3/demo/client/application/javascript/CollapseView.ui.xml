@@ -183,6 +183,91 @@
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Accordion Example using PanelCollapse (whole header)"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:PanelGroup b:id="accordion2">
+                        <b:Panel>
+                            <b:PanelHeader dataToggle="COLLAPSE" dataParent="#accordion2" dataTarget="#collapseFour">
+                                <b:Heading size="4" text="Collapse Me"/>
+                            </b:PanelHeader>
+                            <b:PanelCollapse b:id="collapseFour" in="true">
+                                <b:PanelBody>
+                                    <b.html:Paragraph>
+                                        I am the content of Collapse Group!
+                                    </b.html:Paragraph>
+                                </b:PanelBody>
+                            </b:PanelCollapse>
+                        </b:Panel>
+                        <b:Panel>
+                            <b:PanelHeader dataToggle="COLLAPSE" dataParent="#accordion2" dataTarget="#collapseFive">
+                                <b:Heading size="4" text="Collapse Me"/>
+                            </b:PanelHeader>
+                            <b:PanelCollapse b:id="collapseFive">
+                                <b:PanelBody>
+                                    <b.html:Paragraph>
+                                        I am the content of Collapse!
+                                    </b.html:Paragraph>
+                                </b:PanelBody>
+                            </b:PanelCollapse>
+                        </b:Panel>
+                        <b:Panel>
+                            <b:PanelHeader dataToggle="COLLAPSE" dataParent="#accordion2" dataTarget="#collapseSix">
+                                <b:Heading size="4" text="Collapse Me"/>
+                            </b:PanelHeader>
+                            <b:PanelCollapse b:id="collapseSix">
+                                <b:PanelBody>
+                                    <b.html:Paragraph>
+                                        I am the content of Collapse!
+                                    </b.html:Paragraph>
+                                </b:PanelBody>
+                            </b:PanelCollapse>
+                        </b:Panel>
+                    </b:PanelGroup>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:PanelGroup b:id="accordion"&gt;\n
+                        \s\s&lt;b:Panel&gt;\n
+                        \s\s\s\s&lt;b:PanelHeader dataToggle="COLLAPSE" dataParent="#accordion2"
+                        dataTarget="#collapseFour"&gt;\n
+                        \s\s\s\s\s\s&lt;b:Heading size="4" text="..."/&gt;\n
+                        \s\s\s\s&lt;/b:PanelHeader&gt;\n
+                        \s\s\s\s&lt;b:PanelCollapse b:id="collapseOne"&gt;\n
+                        \s\s\s\s\s\s&lt;b:PanelBody&gt;\n
+                        \s\s\s\s\s\s\s\sWidgets\n
+                        \s\s\s\s\s\s&lt;/b:PanelBody&gt;\n
+                        \s\s\s\s&lt;/b:PanelCollapse&gt;\n
+                        \s\s&lt;/b:Panel&gt;\n
+                        \s\s&lt;b:Panel&gt;\n
+                        \s\s\s\s&lt;b:PanelHeader dataToggle="COLLAPSE" dataParent="#accordion2"
+                        dataTarget="#collapseFive"&gt;\n
+                        \s\s\s\s\s\s&lt;b:Heading size="4" text="..."/&gt;\n
+                        \s\s\s\s&lt;/b:PanelHeader&gt;\n
+                        \s\s\s\s&lt;b:PanelCollapse b:id="collapseTwo"&gt;\n
+                        \s\s\s\s\s\s&lt;b:PanelBody&gt;\n
+                        \s\s\s\s\s\s\s\sWidgets\n
+                        \s\s\s\s\s\s&lt;/b:PanelBody&gt;\n
+                        \s\s\s\s&lt;/b:PanelCollapse&gt;\n
+                        \s\s&lt;/b:Panel&gt;\n
+                        \s\s&lt;b:Panel&gt;\n
+                        \s\s\s\s&lt;b:PanelHeader dataToggle="COLLAPSE" dataParent="#accordion2"
+                        dataTarget="#collapseSix"&gt;\n
+                        \s\s\s\s\s\s&lt;b:Heading size="4" text="..."/&gt;\n
+                        \s\s\s\s&lt;/b:PanelHeader&gt;\n
+                        \s\s\s\s&lt;b:PanelCollapse b:id="collapseThree"&gt;\n
+                        \s\s\s\s\s\s&lt;b:PanelBody&gt;\n
+                        \s\s\s\s\s\s\s\sWidgets\n
+                        \s\s\s\s\s\s&lt;/b:PanelBody&gt;\n
+                        \s\s\s\s&lt;/b:PanelCollapse&gt;\n
+                        \s\s&lt;/b:Panel&gt;\n
+                        &lt;/b:PanelGroup&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
         </b:Column>
     </b:Row>
 
