@@ -95,7 +95,7 @@
                         \s\s\s\s&lt;b:CarouselIndicator dataTarget="#carousel-basic" dataSlideTo="2"/&gt;\n
                         \s\s&lt;/b:CarouselIndicators&gt;\n
                         \s\s&lt;b:CarouselInner&gt;\n
-                        \s\s\s\s&lt;b:CarouselSlide&gt;\n
+                        \s\s\s\s&lt;b:CarouselSlide active="true"&gt;\n
                         \s\s\s\s\s\s&lt;b:Image url=".../&gt;\n
                         \s\s\s\s&lt;/b:CarouselSlide&gt;\n
                         \s\s&lt;/b:CarouselInner&gt;\n
@@ -161,7 +161,7 @@
                         dataSlideTo="2"/&gt;\n
                         \s\s&lt;/b:CarouselIndicators&gt;\n
                         \s\s&lt;b:CarouselInner&gt;\n
-                        \s\s\s\s&lt;b:CarouselSlide&gt;\n
+                        \s\s\s\s&lt;b:CarouselSlide active="true"&gt;\n
                         \s\s\s\s\s\s&lt;b:Image url=".../&gt;\n
                         \s\s\s\s\s\s&lt;b:CarouselCaption&gt;\n
                         \s\s\s\s\s\s\s\s&lt;b:Heading size="..." text="..."/&gt;\n
