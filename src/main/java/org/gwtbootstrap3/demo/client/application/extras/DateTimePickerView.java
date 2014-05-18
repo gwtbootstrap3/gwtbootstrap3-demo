@@ -36,16 +36,9 @@ import org.gwtbootstrap3.client.shared.event.ShowHandler;
 import org.gwtbootstrap3.client.ui.Button;
 import org.gwtbootstrap3.client.ui.html.Div;
 import org.gwtbootstrap3.client.ui.html.Paragraph;
-import org.gwtbootstrap3.extras.datetimepicker.client.ui.DateTimeBox;
+import org.gwtbootstrap3.extras.datetimepicker.client.ui.DateTimePicker;
 import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.constants.DateTimePickerDayOfWeek;
-import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.events.ChangeDateEvent;
-import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.events.ChangeDateHandler;
-import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.events.ChangeMonthEvent;
-import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.events.ChangeMonthHandler;
-import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.events.ChangeYearEvent;
-import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.events.ChangeYearHandler;
-import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.events.OutOfRangeEvent;
-import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.events.OutOfRangeHandler;
+import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.events.*;
 
 import java.util.Date;
 
@@ -54,7 +47,7 @@ import java.util.Date;
  */
 public class DateTimePickerView extends ViewImpl implements DateTimePickerPresenter.MyView {
     @UiField
-    DateTimeBox eventDateTimeBox;
+    DateTimePicker eventDateTimePicker;
     @UiField
     FlowPanel logRow;
     @UiField
@@ -62,7 +55,7 @@ public class DateTimePickerView extends ViewImpl implements DateTimePickerPresen
     @UiField
     Button clearLogButton;
     @UiField
-    DateTimeBox methods;
+    DateTimePicker methods;
     @UiField
     Button startDate;
     @UiField
@@ -88,14 +81,73 @@ public class DateTimePickerView extends ViewImpl implements DateTimePickerPresen
     @UiField
     Button addRemove;
     @UiField
-    Div eventDateTimeBoxDiv;
+    Div eventDateTimePickerDiv;
+
+    @Inject
+    DateTimePickerView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+
+        eventDateTimePicker.addChangeDateHandler(new ChangeDateHandler() {
+            @Override
+            public void onChangeDate(ChangeDateEvent evt) {
+                final Paragraph logEntry = new Paragraph();
+                logEntry.setText("Changed Date Event Fired! (" + eventDateTimePicker.getValue().toString() + ")");
+                logRow.add(logEntry);
+            }
+        });
+
+        eventDateTimePicker.addChangeMonthHandler(new ChangeMonthHandler() {
+            @Override
+            public void onChangeMonth(ChangeMonthEvent evt) {
+                final Paragraph logEntry = new Paragraph();
+                logEntry.setText("Changed Month Event Fired! (" + eventDateTimePicker.getValue().toString() + ")");
+                logRow.add(logEntry);
+            }
+        });
+
+        eventDateTimePicker.addChangeYearHandler(new ChangeYearHandler() {
+            @Override
+            public void onChangeYear(ChangeYearEvent evt) {
+                final Paragraph logEntry = new Paragraph();
+                logEntry.setText("Changed Year Event Fired! (" + eventDateTimePicker.getValue().toString() + ")");
+                logRow.add(logEntry);
+            }
+        });
+
+        eventDateTimePicker.addOutOfRangeHandler(new OutOfRangeHandler() {
+            @Override
+            public void onOutOfRange(OutOfRangeEvent evt) {
+                final Paragraph logEntry = new Paragraph();
+                logEntry.setText("Out of Range Event Fired! (" + eventDateTimePicker.getValue().toString() + ")");
+                logRow.add(logEntry);
+            }
+        });
+
+        eventDateTimePicker.addShowHandler(new ShowHandler() {
+            @Override
+            public void onShow(final ShowEvent showEvent) {
+                final Paragraph logEntry = new Paragraph();
+                logEntry.setText("Show Event Fired");
+                logRow.add(logEntry);
+            }
+        });
+
+        eventDateTimePicker.addHideHandler(new HideHandler() {
+            @Override
+            public void onHide(final HideEvent hideEvent) {
+                final Paragraph logEntry = new Paragraph();
+                logEntry.setText("Hide Event Fired");
+                logRow.add(logEntry);
+            }
+        });
+    }
 
     @UiHandler("addRemove")
     public void handleAddRemove(final ClickEvent event) {
-        if (eventDateTimeBox.isAttached()) {
-            eventDateTimeBox.removeFromParent();
+        if (eventDateTimePicker.isAttached()) {
+            eventDateTimePicker.removeFromParent();
         } else {
-            eventDateTimeBoxDiv.add(eventDateTimeBox);
+            eventDateTimePickerDiv.add(eventDateTimePicker);
         }
     }
 
@@ -165,64 +217,5 @@ public class DateTimePickerView extends ViewImpl implements DateTimePickerPresen
     }
 
     interface Binder extends UiBinder<Widget, DateTimePickerView> {
-    }
-
-    @Inject
-    DateTimePickerView(Binder uiBinder) {
-        initWidget(uiBinder.createAndBindUi(this));
-
-        eventDateTimeBox.addChangeDateHandler(new ChangeDateHandler() {
-            @Override
-            public void onChangeDate(ChangeDateEvent evt) {
-                final Paragraph logEntry = new Paragraph();
-                logEntry.setText("Changed Date Event Fired! (" + eventDateTimeBox.getValue().toString() + ")");
-                logRow.add(logEntry);
-            }
-        });
-
-        eventDateTimeBox.addChangeMonthHandler(new ChangeMonthHandler() {
-            @Override
-            public void onChangeMonth(ChangeMonthEvent evt) {
-                final Paragraph logEntry = new Paragraph();
-                logEntry.setText("Changed Month Event Fired! (" + eventDateTimeBox.getValue().toString() + ")");
-                logRow.add(logEntry);
-            }
-        });
-
-        eventDateTimeBox.addChangeYearHandler(new ChangeYearHandler() {
-            @Override
-            public void onChangeYear(ChangeYearEvent evt) {
-                final Paragraph logEntry = new Paragraph();
-                logEntry.setText("Changed Year Event Fired! (" + eventDateTimeBox.getValue().toString() + ")");
-                logRow.add(logEntry);
-            }
-        });
-
-        eventDateTimeBox.addOutOfRangeHandler(new OutOfRangeHandler() {
-            @Override
-            public void onOutOfRange(OutOfRangeEvent evt) {
-                final Paragraph logEntry = new Paragraph();
-                logEntry.setText("Out of Range Event Fired! (" + eventDateTimeBox.getValue().toString() + ")");
-                logRow.add(logEntry);
-            }
-        });
-
-        eventDateTimeBox.addShowHandler(new ShowHandler() {
-            @Override
-            public void onShow(final ShowEvent showEvent) {
-                final Paragraph logEntry = new Paragraph();
-                logEntry.setText("Show Event Fired");
-                logRow.add(logEntry);
-            }
-        });
-
-        eventDateTimeBox.addHideHandler(new HideHandler() {
-            @Override
-            public void onHide(final HideEvent hideEvent) {
-                final Paragraph logEntry = new Paragraph();
-                logEntry.setText("Hide Event Fired");
-                logRow.add(logEntry);
-            }
-        });
     }
 }

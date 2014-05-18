@@ -108,13 +108,13 @@
                     <b:Heading size="3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b2:DateTimeBox/>
+                    <b2:DateTimePicker/>
 
                     <b:Modal title="DateTimePicker in Modal" closable="true" fade="true" dataBackdrop="STATIC"
                              dataKeyboard="true" b:id="myModal" ui:field="modal">
                     <b:ModalBody>
-                            <b2:DateTimeBox/>
-                        </b:ModalBody>
+                        <b2:DateTimePicker/>
+                    </b:ModalBody>
                         <b:ModalFooter>
                             <b:Button type="DANGER" dataDismiss="MODAL">Close</b:Button>
                         </b:ModalFooter>
@@ -125,10 +125,10 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b2:DateTimeBox/&gt;\n\n
+                        &lt;b2:DateTimePicker/&gt;\n\n
                         &lt;b:Modal title="..." closable="..." fade="..." dataBackdrop="STATIC" b:id="..."&gt;\n\s\s&lt;b:ModalBody&gt;\n
                         \s\s&lt;b:ModalBody&gt;\n
-                        \s\s\s\s&lt;b2:DateTimeBox/&gt;\n
+                        \s\s\s\s&lt;b2:DateTimePicker/&gt;\n
                         \s\s&lt;/b:ModalBody&gt;\n
                         \s\s&lt;b:ModalFooter&gt;\n
                         \s\s\s\s&lt;b:Button type="DANGER" dataDismiss="MODAL"&gt;Close&lt;/b:Button&gt;\n
@@ -146,11 +146,11 @@
                     <b.html:Paragraph>
                     Change the language for the DateTimePicker.
                     </b.html:Paragraph>
-                    <b2:DateTimeBox autoClose="true" language="FR"/>
+                    <b2:DateTimePicker autoClose="true" language="FR"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b2:DateTimeBox autoClose="true" language="..."/&gt;\n
+                        &lt;b2:DateTimePicker autoClose="true" language="..."/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -163,11 +163,11 @@
                     <b.html:Paragraph>
                     Automatically close the selector after selecting a date.
                     </b.html:Paragraph>
-                    <b2:DateTimeBox autoClose="true"/>
+                    <b2:DateTimePicker autoClose="true"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b2:DateTimeBox autoClose="true"/&gt;\n
+                        &lt;b2:DateTimePicker autoClose="true"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -177,11 +177,11 @@
                     <b:Heading size="3" text="12 Hour Format"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b2:DateTimeBox showMeridian="true" format="mm/dd/yyyy hh:ii P" ui:field="twelveHour"/>
+                    <b2:DateTimePicker showMeridian="true" format="mm/dd/yyyy hh:ii P" ui:field="twelveHour"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b2:DateTimeBox showMeridian="true" format="mm/dd/yyyy hh:ii P"/&gt;\n
+                        &lt;b2:DateTimePicker showMeridian="true" format="mm/dd/yyyy hh:ii P"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -191,11 +191,11 @@
                     <b:Heading size="3" text="Dates Only"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b2:DateTimeBox minView="MONTH" format="mm/dd/yyyy"/>
+                    <b2:DateTimePicker minView="MONTH" format="mm/dd/yyyy"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b2:DateTimeBox minView="MONTH" format="mm/dd/yyyy"/&gt;\n
+                        &lt;b2:DateTimePicker minView="MONTH" format="mm/dd/yyyy"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -205,15 +205,15 @@
                     <b:Heading size="3" text="Time Only"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b2:DateTimeBox startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P"/>
+                    <b2:DateTimePicker startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P"/>
                     <b.html:Paragraph addStyleNames="{style.spacing2}">With only every 30 minutes available.
                     </b.html:Paragraph>
-                    <b2:DateTimeBox startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P" minuteStep="30"/>
+                    <b2:DateTimePicker startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P" minuteStep="30"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b2:DateTimeBox startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P"/&gt;\n\n
-                        &lt;b2:DateTimeBox startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P"
+                        &lt;b2:DateTimePicker startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P"/&gt;\n\n
+                        &lt;b2:DateTimePicker startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P"
                         minuteStep="30"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
@@ -224,11 +224,11 @@
                     <b:Heading size="3" text="With Today Button / Today Highlights"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b2:DateTimeBox highlightToday="true" showTodayButton="true"/>
+                    <b2:DateTimePicker highlightToday="true" showTodayButton="true"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b2:DateTimeBox highlightToday="true" showTodayButton="true"/&gt;\n
+                        &lt;b2:DateTimePicker highlightToday="true" showTodayButton="true"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -240,7 +240,7 @@
                 <b:PanelBody>
                     <b:Row>
                         <b:Column size="SM_6">
-                            <b2:DateTimeBox ui:field="methods"/>
+                            <b2:DateTimePicker ui:field="methods"/>
                         </b:Column>
                         <b:Column size="SM_6" addStyleNames="{style.buttons}">
                             <b:Button type="PRIMARY" text="Set Start Date" ui:field="startDate"/>
@@ -260,7 +260,7 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b2:DateTimeBox/&gt;\n
+                        &lt;b2:DateTimePicker/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -272,8 +272,8 @@
                 <b:PanelBody>
                     <b:Row>
                         <b:Column size="SM_6 MD_4">
-                            <b.html:Div marginBottom="10" ui:field="eventDateTimeBoxDiv">
-                            <b2:DateTimeBox ui:field="eventDateTimeBox"/>
+                            <b.html:Div marginBottom="10" ui:field="eventDateTimePickerDiv">
+                                <b2:DateTimePicker ui:field="eventDateTimePicker"/>
                             </b.html:Div>
                             <b.html:Div>
                             <b:Button type="PRIMARY" ui:field="addRemove">Add/Remove</b:Button>
