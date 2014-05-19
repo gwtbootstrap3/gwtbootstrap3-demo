@@ -157,6 +157,26 @@
 
             <b:Panel>
                 <b:PanelHeader>
+                    <b:Heading size="3" text="Position"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b.html:Paragraph>
+                        Change the position of the popup: TOP_LEFT, BOTTOM_LEFT, TOP_RIGHT, BOTTOM_RIGHT(**Default**)
+                    </b.html:Paragraph>
+                    <b.html:Paragraph>
+                        The positions seem a bit off to me, but this is how the JS library has it.
+                    </b.html:Paragraph>
+                    <b2:DateTimePicker autoClose="true" position="TOP_RIGHT"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b2:DateTimePicker autoClose="true" position="..."/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
                 <b:Heading size="3" text="Auto Close"/>
                 </b:PanelHeader>
                 <b:PanelBody>
