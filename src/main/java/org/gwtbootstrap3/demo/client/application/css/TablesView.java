@@ -57,7 +57,7 @@ public class TablesView extends ViewImpl implements TablesPresenter.MyView {
     private ListDataProvider<TableTestPojo> cellTableProvider = new ListDataProvider<TableTestPojo>();
 
     @Inject
-    TablesView(Binder uiBinder) {
+    TablesView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
         initTable(dataGrid, dataGridPager, dataGridPagination, dataGridProvider);
@@ -66,7 +66,7 @@ public class TablesView extends ViewImpl implements TablesPresenter.MyView {
         initMockData(cellTablePagination, cellTablePager, cellTableProvider);
     }
 
-    private void initMockData(Pagination pagination, SimplePager simplePager, ListDataProvider<TableTestPojo> dataProvider) {
+    private void initMockData(final Pagination pagination, final SimplePager simplePager, final ListDataProvider<TableTestPojo> dataProvider) {
         for (int i = 0; i < 25; i++) {
             dataProvider.getList().add(new TableTestPojo("Test " + i, "Test " + i, "Test " + i));
         }
@@ -74,29 +74,29 @@ public class TablesView extends ViewImpl implements TablesPresenter.MyView {
         pagination.rebuild(simplePager);
     }
 
-    private void initTable(AbstractCellTable<TableTestPojo> grid, final SimplePager pager, final Pagination pagination, ListDataProvider<TableTestPojo> dataProvider) {
-        TextColumn<TableTestPojo> col1 = new TextColumn<TableTestPojo>() {
+    private void initTable(final AbstractCellTable<TableTestPojo> grid, final SimplePager pager, final Pagination pagination, final ListDataProvider<TableTestPojo> dataProvider) {
+        final TextColumn<TableTestPojo> col1 = new TextColumn<TableTestPojo>() {
 
             @Override
-            public String getValue(TableTestPojo object) {
+            public String getValue(final TableTestPojo object) {
                 return String.valueOf(object.getField1());
             }
         };
         grid.addColumn(col1, "Field 1");
 
-        TextColumn<TableTestPojo> col2 = new TextColumn<TableTestPojo>() {
+        final TextColumn<TableTestPojo> col2 = new TextColumn<TableTestPojo>() {
 
             @Override
-            public String getValue(TableTestPojo object) {
+            public String getValue(final TableTestPojo object) {
                 return String.valueOf(object.getField1());
             }
         };
         grid.addColumn(col2, "Field 2");
 
-        TextColumn<TableTestPojo> col3 = new TextColumn<TableTestPojo>() {
+        final TextColumn<TableTestPojo> col3 = new TextColumn<TableTestPojo>() {
 
             @Override
-            public String getValue(TableTestPojo object) {
+            public String getValue(final TableTestPojo object) {
                 return String.valueOf(object.getField1());
             }
         };
@@ -105,7 +105,7 @@ public class TablesView extends ViewImpl implements TablesPresenter.MyView {
         grid.addRangeChangeHandler(new RangeChangeEvent.Handler() {
 
             @Override
-            public void onRangeChange(RangeChangeEvent event) {
+            public void onRangeChange(final RangeChangeEvent event) {
                 pagination.rebuild(pager);
             }
         });

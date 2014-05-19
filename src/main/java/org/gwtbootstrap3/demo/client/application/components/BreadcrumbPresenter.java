@@ -45,9 +45,9 @@ public class BreadcrumbPresenter extends Presenter<BreadcrumbPresenter.MyView, B
     }
 
     @Inject
-    public BreadcrumbPresenter(EventBus eventBus,
-                               MyView view,
-                               MyProxy proxy) {
+    public BreadcrumbPresenter(final EventBus eventBus,
+                               final MyView view,
+                               final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

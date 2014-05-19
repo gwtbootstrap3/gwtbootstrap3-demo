@@ -42,9 +42,9 @@ public class ImagesPresenter extends Presenter<ImagesPresenter.MyView, ImagesPre
     }
 
     @Inject
-    public ImagesPresenter(EventBus eventBus,
-                           MyView view,
-                           MyProxy proxy) {
+    public ImagesPresenter(final EventBus eventBus,
+                           final MyView view,
+                           final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

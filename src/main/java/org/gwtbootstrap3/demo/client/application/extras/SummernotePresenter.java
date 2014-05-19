@@ -44,9 +44,9 @@ public class SummernotePresenter extends Presenter<SummernotePresenter.MyView, S
     }
 
     @Inject
-    public SummernotePresenter(EventBus eventBus,
-                               MyView view,
-                               MyProxy proxy) {
+    public SummernotePresenter(final EventBus eventBus,
+                               final MyView view,
+                               final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

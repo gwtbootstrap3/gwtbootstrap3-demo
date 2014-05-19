@@ -50,9 +50,9 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
     public static final GwtEvent.Type<RevealContentHandler<?>> TYPE_SetMainContent = new GwtEvent.Type<RevealContentHandler<?>>();
 
     @Inject
-    ApplicationPresenter(EventBus eventBus,
-                         MyView view,
-                         MyProxy proxy) {
+    ApplicationPresenter(final EventBus eventBus,
+                         final MyView view,
+                         final MyProxy proxy) {
         super(eventBus, view, proxy, RevealType.RootLayout);
     }
 }

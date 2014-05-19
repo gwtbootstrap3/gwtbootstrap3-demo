@@ -45,9 +45,9 @@ public class IconPresenter extends Presenter<IconPresenter.MyView, IconPresenter
     }
 
     @Inject
-    public IconPresenter(EventBus eventBus,
-                         MyView view,
-                         MyProxy proxy) {
+    public IconPresenter(final EventBus eventBus,
+                         final MyView view,
+                         final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

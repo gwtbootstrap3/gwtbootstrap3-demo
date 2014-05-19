@@ -40,13 +40,13 @@ public class SliderView extends ViewImpl implements SliderPresenter.MyView {
     }
 
     @Inject
-    SliderView(Binder uiBinder) {
+    SliderView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
         customSlider.setFormatter(new FormatterCallback() {
             @Override
-            public String toolTipMsg(double value) {
-                int b = (int) (value * 10);
+            public String toolTipMsg(final double value) {
+                final int b = (int) (value * 10);
                 return b + " blocks";
             }
         });

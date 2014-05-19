@@ -42,9 +42,9 @@ public class ButtonsPresenter extends Presenter<ButtonsPresenter.MyView, Buttons
     }
 
     @Inject
-    public ButtonsPresenter(EventBus eventBus,
-                            MyView view,
-                            MyProxy proxy) {
+    public ButtonsPresenter(final EventBus eventBus,
+                            final MyView view,
+                            final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

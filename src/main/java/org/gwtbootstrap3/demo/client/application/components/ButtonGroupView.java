@@ -52,7 +52,7 @@ public class ButtonGroupView extends ViewImpl implements ButtonGroupPresenter.My
     FlowPanel log;
 
     @Inject
-    ButtonGroupView(Binder uiBinder) {
+    ButtonGroupView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
         button1.addValueChangeHandler(new ValueChangeHandler<Boolean>() {

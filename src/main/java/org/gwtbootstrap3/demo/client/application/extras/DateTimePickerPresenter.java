@@ -45,9 +45,9 @@ public class DateTimePickerPresenter extends Presenter<DateTimePickerPresenter.M
     }
 
     @Inject
-    public DateTimePickerPresenter(EventBus eventBus,
-                                   MyView view,
-                                   MyProxy proxy) {
+    public DateTimePickerPresenter(final EventBus eventBus,
+                                   final MyView view,
+                                   final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

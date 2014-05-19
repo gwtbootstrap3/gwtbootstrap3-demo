@@ -45,9 +45,9 @@ public class SliderPresenter extends Presenter<SliderPresenter.MyView, SliderPre
     }
 
     @Inject
-    public SliderPresenter(EventBus eventBus,
-                              MyView view,
-                              MyProxy proxy) {
+    public SliderPresenter(final EventBus eventBus,
+                           final MyView view,
+                           final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

@@ -33,7 +33,7 @@ public class MediaObjectView extends ViewImpl implements MediaObjectPresenter.My
     }
 
     @Inject
-    MediaObjectView(Binder uiBinder) {
+    MediaObjectView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

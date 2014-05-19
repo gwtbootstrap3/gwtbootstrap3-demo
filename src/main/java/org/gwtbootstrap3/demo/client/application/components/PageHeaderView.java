@@ -33,7 +33,7 @@ public class PageHeaderView extends ViewImpl implements PageHeaderPresenter.MyVi
     }
 
     @Inject
-    PageHeaderView(Binder uiBinder) {
+    PageHeaderView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

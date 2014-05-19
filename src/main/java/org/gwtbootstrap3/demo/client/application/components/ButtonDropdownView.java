@@ -33,7 +33,7 @@ public class ButtonDropdownView extends ViewImpl implements ButtonDropdownPresen
     }
 
     @Inject
-    ButtonDropdownView(Binder uiBinder) {
+    ButtonDropdownView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

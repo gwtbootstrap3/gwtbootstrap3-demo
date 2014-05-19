@@ -88,7 +88,7 @@ public class BootboxJSView extends ViewImpl implements BootboxJSPresenter.MyView
     }
 
     @Inject
-    BootboxJSView(Binder uiBinder) {
+    BootboxJSView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

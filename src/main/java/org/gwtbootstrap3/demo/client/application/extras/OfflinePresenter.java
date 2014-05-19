@@ -21,9 +21,6 @@ package org.gwtbootstrap3.demo.client.application.extras;
  */
 
 
-import org.gwtbootstrap3.demo.client.application.ApplicationPresenter;
-import org.gwtbootstrap3.demo.client.place.NameTokens;
-
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
@@ -31,6 +28,8 @@ import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
+import org.gwtbootstrap3.demo.client.application.ApplicationPresenter;
+import org.gwtbootstrap3.demo.client.place.NameTokens;
 
 /**
  * @author Joshua Godi
@@ -46,9 +45,9 @@ public class OfflinePresenter extends Presenter<OfflinePresenter.MyView, Offline
     }
 
     @Inject
-    public OfflinePresenter(EventBus eventBus,
-                              MyView view,
-                              MyProxy proxy) {
+    public OfflinePresenter(final EventBus eventBus,
+                            final MyView view,
+                            final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

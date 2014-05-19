@@ -33,7 +33,7 @@ public class AlertView extends ViewImpl implements AlertPresenter.MyView {
     }
 
     @Inject
-    AlertView(Binder uiBinder) {
+    AlertView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

@@ -33,7 +33,7 @@ public class BreadcrumbView extends ViewImpl implements BreadcrumbPresenter.MyVi
     }
 
     @Inject
-    BreadcrumbView(Binder uiBinder) {
+    BreadcrumbView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

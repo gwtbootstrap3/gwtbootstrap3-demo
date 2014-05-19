@@ -45,9 +45,9 @@ public class PopoverPresenter extends Presenter<PopoverPresenter.MyView, Popover
     }
 
     @Inject
-    public PopoverPresenter(EventBus eventBus,
-                            MyView view,
-                            MyProxy proxy) {
+    public PopoverPresenter(final EventBus eventBus,
+                            final MyView view,
+                            final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

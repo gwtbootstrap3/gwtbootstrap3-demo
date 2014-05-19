@@ -33,7 +33,7 @@ public class DropdownView extends ViewImpl implements DropdownPresenter.MyView {
     }
 
     @Inject
-    DropdownView(Binder uiBinder) {
+    DropdownView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

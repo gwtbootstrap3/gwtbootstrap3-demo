@@ -84,12 +84,12 @@ public class DateTimePickerView extends ViewImpl implements DateTimePickerPresen
     Div eventDateTimePickerDiv;
 
     @Inject
-    DateTimePickerView(Binder uiBinder) {
+    DateTimePickerView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
         eventDateTimePicker.addChangeDateHandler(new ChangeDateHandler() {
             @Override
-            public void onChangeDate(ChangeDateEvent evt) {
+            public void onChangeDate(final ChangeDateEvent evt) {
                 final Paragraph logEntry = new Paragraph();
                 logEntry.setText("Changed Date Event Fired! (" + eventDateTimePicker.getValue().toString() + ")");
                 logRow.add(logEntry);
@@ -98,7 +98,7 @@ public class DateTimePickerView extends ViewImpl implements DateTimePickerPresen
 
         eventDateTimePicker.addChangeMonthHandler(new ChangeMonthHandler() {
             @Override
-            public void onChangeMonth(ChangeMonthEvent evt) {
+            public void onChangeMonth(final ChangeMonthEvent evt) {
                 final Paragraph logEntry = new Paragraph();
                 logEntry.setText("Changed Month Event Fired! (" + eventDateTimePicker.getValue().toString() + ")");
                 logRow.add(logEntry);
@@ -107,7 +107,7 @@ public class DateTimePickerView extends ViewImpl implements DateTimePickerPresen
 
         eventDateTimePicker.addChangeYearHandler(new ChangeYearHandler() {
             @Override
-            public void onChangeYear(ChangeYearEvent evt) {
+            public void onChangeYear(final ChangeYearEvent evt) {
                 final Paragraph logEntry = new Paragraph();
                 logEntry.setText("Changed Year Event Fired! (" + eventDateTimePicker.getValue().toString() + ")");
                 logRow.add(logEntry);
@@ -116,7 +116,7 @@ public class DateTimePickerView extends ViewImpl implements DateTimePickerPresen
 
         eventDateTimePicker.addOutOfRangeHandler(new OutOfRangeHandler() {
             @Override
-            public void onOutOfRange(OutOfRangeEvent evt) {
+            public void onOutOfRange(final OutOfRangeEvent evt) {
                 final Paragraph logEntry = new Paragraph();
                 logEntry.setText("Out of Range Event Fired! (" + eventDateTimePicker.getValue().toString() + ")");
                 logRow.add(logEntry);

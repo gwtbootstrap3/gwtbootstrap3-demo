@@ -34,7 +34,7 @@ public class OfflineView extends ViewImpl implements OfflinePresenter.MyView {
     }
 
     @Inject
-    OfflineView(Binder uiBinder) {
+    OfflineView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

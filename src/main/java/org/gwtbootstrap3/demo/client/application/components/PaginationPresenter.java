@@ -45,9 +45,9 @@ public class PaginationPresenter extends Presenter<PaginationPresenter.MyView, P
     }
 
     @Inject
-    public PaginationPresenter(EventBus eventBus,
-                               MyView view,
-                               MyProxy proxy) {
+    public PaginationPresenter(final EventBus eventBus,
+                               final MyView view,
+                               final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

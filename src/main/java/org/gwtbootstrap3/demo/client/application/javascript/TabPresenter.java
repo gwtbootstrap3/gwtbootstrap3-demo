@@ -44,9 +44,9 @@ public class TabPresenter extends Presenter<TabPresenter.MyView, TabPresenter.My
     }
 
     @Inject
-    public TabPresenter(EventBus eventBus,
-                        MyView view,
-                        MyProxy proxy) {
+    public TabPresenter(final EventBus eventBus,
+                        final MyView view,
+                        final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

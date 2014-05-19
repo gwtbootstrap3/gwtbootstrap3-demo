@@ -34,7 +34,7 @@ public class CardView extends ViewImpl implements CardPresenter.MyView {
     }
 
     @Inject
-    CardView(Binder uiBinder) {
+    CardView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

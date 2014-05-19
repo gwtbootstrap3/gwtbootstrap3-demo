@@ -33,7 +33,7 @@ public class InputGroupView extends ViewImpl implements InputGroupPresenter.MyVi
     }
 
     @Inject
-    InputGroupView(Binder uiBinder) {
+    InputGroupView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

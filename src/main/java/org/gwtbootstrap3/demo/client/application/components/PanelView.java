@@ -33,7 +33,7 @@ public class PanelView extends ViewImpl implements PanelPresenter.MyView {
     }
 
     @Inject
-    PanelView(Binder uiBinder) {
+    PanelView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

@@ -42,7 +42,7 @@ public class ButtonsView extends ViewImpl implements ButtonsPresenter.MyView {
     Button button;
 
     @Inject
-    ButtonsView(Binder uiBinder) {
+    ButtonsView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 

@@ -42,9 +42,9 @@ public class SetupPresenter extends Presenter<SetupPresenter.MyView, SetupPresen
     }
 
     @Inject
-    public SetupPresenter(EventBus eventBus,
-                          MyView view,
-                          MyProxy proxy) {
+    public SetupPresenter(final EventBus eventBus,
+                          final MyView view,
+                          final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

@@ -45,9 +45,9 @@ public class WellPresenter extends Presenter<WellPresenter.MyView, WellPresenter
     }
 
     @Inject
-    public WellPresenter(EventBus eventBus,
-                         MyView view,
-                         MyProxy proxy) {
+    public WellPresenter(final EventBus eventBus,
+                         final MyView view,
+                         final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

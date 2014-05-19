@@ -45,9 +45,9 @@ public class NavbarPresenter extends Presenter<NavbarPresenter.MyView, NavbarPre
     }
 
     @Inject
-    public NavbarPresenter(EventBus eventBus,
-                           MyView view,
-                           MyProxy proxy) {
+    public NavbarPresenter(final EventBus eventBus,
+                           final MyView view,
+                           final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

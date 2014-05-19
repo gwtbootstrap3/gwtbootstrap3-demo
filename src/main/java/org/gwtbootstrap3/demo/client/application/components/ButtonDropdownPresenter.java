@@ -45,9 +45,9 @@ public class ButtonDropdownPresenter extends Presenter<ButtonDropdownPresenter.M
     }
 
     @Inject
-    public ButtonDropdownPresenter(EventBus eventBus,
-                                   MyView view,
-                                   MyProxy proxy) {
+    public ButtonDropdownPresenter(final EventBus eventBus,
+                                   final MyView view,
+                                   final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

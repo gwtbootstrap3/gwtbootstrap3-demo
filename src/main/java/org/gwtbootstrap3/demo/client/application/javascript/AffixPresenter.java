@@ -45,9 +45,9 @@ public class AffixPresenter extends Presenter<AffixPresenter.MyView, AffixPresen
     }
 
     @Inject
-    public AffixPresenter(EventBus eventBus,
-                          MyView view,
-                          MyProxy proxy) {
+    public AffixPresenter(final EventBus eventBus,
+                          final MyView view,
+                          final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

@@ -33,7 +33,7 @@ public class LabelView extends ViewImpl implements LabelPresenter.MyView {
     }
 
     @Inject
-    LabelView(Binder uiBinder) {
+    LabelView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

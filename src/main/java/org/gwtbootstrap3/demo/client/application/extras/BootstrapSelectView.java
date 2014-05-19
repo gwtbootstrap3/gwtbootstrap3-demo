@@ -56,19 +56,19 @@ public class BootstrapSelectView extends ViewImpl implements BootstrapSelectPres
     }
 
     @Inject
-    BootstrapSelectView(Binder uiBinder) {
+    BootstrapSelectView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
         select.addChangeHandler(new ChangeHandler() {
             @Override
-            public void onChange(ChangeEvent event) {
+            public void onChange(final ChangeEvent event) {
                 Window.alert("Changed: " + select.getAllSelectedValues());
             }
         });
 
         setValue.addClickHandler(new ClickHandler() {
             @Override
-            public void onClick(ClickEvent event) {
+            public void onClick(final ClickEvent event) {
                 select.setValue("One");
                 select.refresh();
             }
@@ -76,7 +76,7 @@ public class BootstrapSelectView extends ViewImpl implements BootstrapSelectPres
 
         setValues.addClickHandler(new ClickHandler() {
             @Override
-            public void onClick(ClickEvent event) {
+            public void onClick(final ClickEvent event) {
                 select.setValues(three, two);
                 select.refresh();
             }
@@ -84,7 +84,7 @@ public class BootstrapSelectView extends ViewImpl implements BootstrapSelectPres
 
         getValue.addClickHandler(new ClickHandler() {
             @Override
-            public void onClick(ClickEvent event) {
+            public void onClick(final ClickEvent event) {
                 Window.alert(select.getAllSelectedValues().toString());
             }
         });

@@ -42,9 +42,9 @@ public class FormsPresenter extends Presenter<FormsPresenter.MyView, FormsPresen
     }
 
     @Inject
-    public FormsPresenter(EventBus eventBus,
-                          MyView view,
-                          MyProxy proxy) {
+    public FormsPresenter(final EventBus eventBus,
+                          final MyView view,
+                          final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

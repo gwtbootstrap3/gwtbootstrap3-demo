@@ -45,7 +45,7 @@ public class PopoverView extends ViewImpl implements PopoverPresenter.MyView {
     }
 
     @Inject
-    PopoverView(Binder uiBinder) {
+    PopoverView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
         forceHideButton.addClickHandler(new ClickHandler() {

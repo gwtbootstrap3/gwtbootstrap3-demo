@@ -45,9 +45,9 @@ public class ButtonGroupPresenter extends Presenter<ButtonGroupPresenter.MyView,
     }
 
     @Inject
-    public ButtonGroupPresenter(EventBus eventBus,
-                                MyView view,
-                                MyProxy proxy) {
+    public ButtonGroupPresenter(final EventBus eventBus,
+                                final MyView view,
+                                final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

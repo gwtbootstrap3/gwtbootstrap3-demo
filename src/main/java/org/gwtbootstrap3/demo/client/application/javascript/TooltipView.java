@@ -46,7 +46,7 @@ public class TooltipView extends ViewImpl implements TooltipPresenter.MyView {
     }
 
     @Inject
-    TooltipView(Binder uiBinder) {
+    TooltipView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
         forceHideButton.addClickHandler(new ClickHandler() {

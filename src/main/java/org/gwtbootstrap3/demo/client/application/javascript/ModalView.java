@@ -28,14 +28,7 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
-import org.gwtbootstrap3.client.shared.event.ModalHiddenEvent;
-import org.gwtbootstrap3.client.shared.event.ModalHiddenHandler;
-import org.gwtbootstrap3.client.shared.event.ModalHideEvent;
-import org.gwtbootstrap3.client.shared.event.ModalHideHandler;
-import org.gwtbootstrap3.client.shared.event.ModalShowEvent;
-import org.gwtbootstrap3.client.shared.event.ModalShowHandler;
-import org.gwtbootstrap3.client.shared.event.ModalShownEvent;
-import org.gwtbootstrap3.client.shared.event.ModalShownHandler;
+import org.gwtbootstrap3.client.shared.event.*;
 import org.gwtbootstrap3.client.ui.Button;
 import org.gwtbootstrap3.client.ui.Modal;
 import org.gwtbootstrap3.client.ui.ModalBody;
@@ -60,19 +53,19 @@ public class ModalView extends ViewImpl implements ModalPresenter.MyView {
     }
 
     @Inject
-    ModalView(Binder uiBinder) {
+    ModalView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
         clearLogButton.addClickHandler(new ClickHandler() {
             @Override
-            public void onClick(ClickEvent event) {
+            public void onClick(final ClickEvent event) {
                 logRow.clear();
             }
         });
 
         eventModal.addHideHandler(new ModalHideHandler() {
             @Override
-            public void onHide(ModalHideEvent evt) {
+            public void onHide(final ModalHideEvent evt) {
                 final Paragraph logEntry = new Paragraph();
                 logEntry.setText("Hide event fired! (UiBinder Modal)");
                 logRow.add(logEntry);
@@ -81,7 +74,7 @@ public class ModalView extends ViewImpl implements ModalPresenter.MyView {
 
         eventModal.addHiddenHandler(new ModalHiddenHandler() {
             @Override
-            public void onHidden(ModalHiddenEvent evt) {
+            public void onHidden(final ModalHiddenEvent evt) {
                 final Paragraph logEntry = new Paragraph();
                 logEntry.setText("Hidden event fired! (UiBinder Modal)");
                 logRow.add(logEntry);
@@ -90,7 +83,7 @@ public class ModalView extends ViewImpl implements ModalPresenter.MyView {
 
         eventModal.addShowHandler(new ModalShowHandler() {
             @Override
-            public void onShow(ModalShowEvent evt) {
+            public void onShow(final ModalShowEvent evt) {
                 final Paragraph logEntry = new Paragraph();
                 logEntry.setText("Show event fired! (UiBinder Modal)");
                 logRow.add(logEntry);
@@ -99,7 +92,7 @@ public class ModalView extends ViewImpl implements ModalPresenter.MyView {
 
         eventModal.addShownHandler(new ModalShownHandler() {
             @Override
-            public void onShown(ModalShownEvent evt) {
+            public void onShown(final ModalShownEvent evt) {
                 final Paragraph logEntry = new Paragraph();
                 logEntry.setText("Shown event fired! (UiBinder Modal)");
                 logRow.add(logEntry);
@@ -108,14 +101,14 @@ public class ModalView extends ViewImpl implements ModalPresenter.MyView {
 
         createModal.addClickHandler(new ClickHandler() {
             @Override
-            public void onClick(ClickEvent event) {
-                Modal modal = new Modal();
+            public void onClick(final ClickEvent event) {
+                final Modal modal = new Modal();
                 modal.setTitle("Java Created Modal");
                 modal.setClosable(true);
 
                 modal.addHideHandler(new ModalHideHandler() {
                     @Override
-                    public void onHide(ModalHideEvent evt) {
+                    public void onHide(final ModalHideEvent evt) {
                         final Paragraph logEntry = new Paragraph();
                         logEntry.setText("Hide event fired! (Java Created Modal)");
                         logRow.add(logEntry);
@@ -124,7 +117,7 @@ public class ModalView extends ViewImpl implements ModalPresenter.MyView {
 
                 modal.addHiddenHandler(new ModalHiddenHandler() {
                     @Override
-                    public void onHidden(ModalHiddenEvent evt) {
+                    public void onHidden(final ModalHiddenEvent evt) {
                         final Paragraph logEntry = new Paragraph();
                         logEntry.setText("Hidden event fired! (Java Created Modal)");
                         logRow.add(logEntry);
@@ -133,7 +126,7 @@ public class ModalView extends ViewImpl implements ModalPresenter.MyView {
 
                 modal.addShowHandler(new ModalShowHandler() {
                     @Override
-                    public void onShow(ModalShowEvent evt) {
+                    public void onShow(final ModalShowEvent evt) {
                         final Paragraph logEntry = new Paragraph();
                         logEntry.setText("Show event fired! (Java Created Modal)");
                         logRow.add(logEntry);
@@ -142,20 +135,20 @@ public class ModalView extends ViewImpl implements ModalPresenter.MyView {
 
                 modal.addShownHandler(new ModalShownHandler() {
                     @Override
-                    public void onShown(ModalShownEvent evt) {
+                    public void onShown(final ModalShownEvent evt) {
                         final Paragraph logEntry = new Paragraph();
                         logEntry.setText("Shown event fired! (Java Created Modal)");
                         logRow.add(logEntry);
                     }
                 });
 
-                ModalBody modalBody = new ModalBody();
+                final ModalBody modalBody = new ModalBody();
                 modalBody.add(new Span("Create in Java Code!"));
 
-                ModalFooter modalFooter = new ModalFooter();
+                final ModalFooter modalFooter = new ModalFooter();
                 modalFooter.add(new Button("Click ME!", new ClickHandler() {
                     @Override
-                    public void onClick(ClickEvent event) {
+                    public void onClick(final ClickEvent event) {
                         final Paragraph logEntry = new Paragraph();
                         logEntry.setText("Click Event from Modal! (Java Created Modal)");
                         logRow.add(logEntry);

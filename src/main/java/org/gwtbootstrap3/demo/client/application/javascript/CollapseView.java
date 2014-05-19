@@ -33,7 +33,7 @@ public class CollapseView extends ViewImpl implements CollapsePresenter.MyView {
     }
 
     @Inject
-    CollapseView(Binder uiBinder) {
+    CollapseView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

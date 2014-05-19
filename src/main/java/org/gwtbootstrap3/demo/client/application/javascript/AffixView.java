@@ -33,7 +33,7 @@ public class AffixView extends ViewImpl implements AffixPresenter.MyView {
     }
 
     @Inject
-    AffixView(Binder uiBinder) {
+    AffixView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

@@ -44,9 +44,9 @@ public class BootstrapSelectPresenter extends Presenter<BootstrapSelectPresenter
     }
 
     @Inject
-    public BootstrapSelectPresenter(EventBus eventBus,
-                                    MyView view,
-                                    MyProxy proxy) {
+    public BootstrapSelectPresenter(final EventBus eventBus,
+                                    final MyView view,
+                                    final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

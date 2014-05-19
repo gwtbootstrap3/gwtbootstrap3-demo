@@ -58,7 +58,7 @@ public class SummernoteView extends ViewImpl implements SummernotePresenter.MyVi
     Summernote enableDisable;
 
     @UiHandler("getCode")
-    public void handleClick(ClickEvent event) {
+    public void handleClick(final ClickEvent event) {
         Window.alert(getSetCode.getCode());
     }
 
@@ -83,7 +83,7 @@ public class SummernoteView extends ViewImpl implements SummernotePresenter.MyVi
     }
 
     @Inject
-    SummernoteView(Binder uiBinder) {
+    SummernoteView(final Binder uiBinder) {
         // Setting up the custom summernotes
         customToolbar = new Summernote();
         customToolbar.setHeight(200);
@@ -97,7 +97,7 @@ public class SummernoteView extends ViewImpl implements SummernotePresenter.MyVi
 
         events.addInitializedHandler(new SummernoteInitializedHandler() {
             @Override
-            public void onInitialize(SummernoteInitializedEvent event) {
+            public void onInitialize(final SummernoteInitializedEvent event) {
                 final Paragraph logEntry = new Paragraph();
                 logEntry.setText("Initialized Event Fired!");
                 logRow.add(logEntry);
@@ -106,7 +106,7 @@ public class SummernoteView extends ViewImpl implements SummernotePresenter.MyVi
 
         events.addEnterHandler(new SummernoteOnEnterHandler() {
             @Override
-            public void onEnter(SummernoteOnEnterEvent event) {
+            public void onEnter(final SummernoteOnEnterEvent event) {
                 final Paragraph logEntry = new Paragraph();
                 logEntry.setText("Enter Event Fired!");
                 logRow.add(logEntry);
@@ -115,7 +115,7 @@ public class SummernoteView extends ViewImpl implements SummernotePresenter.MyVi
 
         events.addFocusHandler(new SummernoteOnFocusHandler() {
             @Override
-            public void onFocus(SummernoteOnFocusEvent event) {
+            public void onFocus(final SummernoteOnFocusEvent event) {
                 final Paragraph logEntry = new Paragraph();
                 logEntry.setText("Focus Event Fired!");
                 logRow.add(logEntry);
@@ -124,7 +124,7 @@ public class SummernoteView extends ViewImpl implements SummernotePresenter.MyVi
 
         events.addBlurHandler(new SummernoteOnBlurHandler() {
             @Override
-            public void onBlur(SummernoteOnBlurEvent event) {
+            public void onBlur(final SummernoteOnBlurEvent event) {
                 final Paragraph logEntry = new Paragraph();
                 logEntry.setText("Blur Event Fired!");
                 logRow.add(logEntry);
@@ -133,7 +133,7 @@ public class SummernoteView extends ViewImpl implements SummernotePresenter.MyVi
 
         events.addKeyUpHandler(new SummernoteOnKeyUpHandler() {
             @Override
-            public void onKeyUp(SummernoteOnKeyUpEvent event) {
+            public void onKeyUp(final SummernoteOnKeyUpEvent event) {
                 final Paragraph logEntry = new Paragraph();
                 logEntry.setText("Key Up Event Fired!");
                 logRow.add(logEntry);
@@ -142,7 +142,7 @@ public class SummernoteView extends ViewImpl implements SummernotePresenter.MyVi
 
         events.addKeyDownHandler(new SummernoteOnKeyDownHandler() {
             @Override
-            public void onKeyDown(SummernoteOnKeyDownEvent event) {
+            public void onKeyDown(final SummernoteOnKeyDownEvent event) {
                 final Paragraph logEntry = new Paragraph();
                 logEntry.setText("Key Down Event Fired!");
                 logRow.add(logEntry);
@@ -151,7 +151,7 @@ public class SummernoteView extends ViewImpl implements SummernotePresenter.MyVi
 
         events.addImageUploadHandler(new SummernoteOnImageUploadHandler() {
             @Override
-            public void onImageUpload(SummernoteOnImageUploadEvent event) {
+            public void onImageUpload(final SummernoteOnImageUploadEvent event) {
                 final Paragraph logEntry = new Paragraph();
                 logEntry.setText("Image Upload Event Fired!");
                 logRow.add(logEntry);

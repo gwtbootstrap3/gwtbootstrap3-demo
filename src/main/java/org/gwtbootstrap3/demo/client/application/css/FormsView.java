@@ -50,33 +50,33 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     }
 
     @Inject
-    FormsView(Binder uiBinder) {
+    FormsView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
         none.addClickHandler(new ClickHandler() {
             @Override
-            public void onClick(ClickEvent event) {
+            public void onClick(final ClickEvent event) {
                 formGroup.setValidationState(ValidationState.NONE);
             }
         });
 
         success.addClickHandler(new ClickHandler() {
             @Override
-            public void onClick(ClickEvent event) {
+            public void onClick(final ClickEvent event) {
                 formGroup.setValidationState(ValidationState.SUCCESS);
             }
         });
 
         warning.addClickHandler(new ClickHandler() {
             @Override
-            public void onClick(ClickEvent event) {
+            public void onClick(final ClickEvent event) {
                 formGroup.setValidationState(ValidationState.WARNING);
             }
         });
 
         error.addClickHandler(new ClickHandler() {
             @Override
-            public void onClick(ClickEvent event) {
+            public void onClick(final ClickEvent event) {
                 formGroup.setValidationState(ValidationState.ERROR);
             }
         });

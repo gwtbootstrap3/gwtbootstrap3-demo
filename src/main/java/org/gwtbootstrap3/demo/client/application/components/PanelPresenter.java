@@ -45,9 +45,9 @@ public class PanelPresenter extends Presenter<PanelPresenter.MyView, PanelPresen
     }
 
     @Inject
-    public PanelPresenter(EventBus eventBus,
-                          MyView view,
-                          MyProxy proxy) {
+    public PanelPresenter(final EventBus eventBus,
+                          final MyView view,
+                          final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

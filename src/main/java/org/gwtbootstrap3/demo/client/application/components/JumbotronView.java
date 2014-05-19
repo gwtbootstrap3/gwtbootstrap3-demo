@@ -33,7 +33,7 @@ public class JumbotronView extends ViewImpl implements JumbotronPresenter.MyView
     }
 
     @Inject
-    JumbotronView(Binder uiBinder) {
+    JumbotronView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }
