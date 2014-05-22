@@ -34,7 +34,13 @@
     
     <inherits name='org.gwtbootstrap3.extras.cachemanifest.Offline'/>
 	<add-linker name="offline" />
-	<extend-configuration-property name="cachemanifest_static_files" value="/gwtbootstrap3-demo/index.html" />
+    <extend-configuration-property name="cachemanifest_static_files"
+                                   value="/gwtbootstrap3-demo/GwtBootstrap3Demo.html"/>
+
+    <!--For SDM-->
+    <add-linker name="xsiframe"/>
+    <set-configuration-property name="devModeRedirectEnabled" value="true"/>
+    <set-configuration-property name="gwt.superdevmode" value="on"/>
 
     <!-- Specify the paths for translatable code                    -->
     <source path="client"/>
