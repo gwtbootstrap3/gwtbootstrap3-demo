@@ -18,13 +18,79 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-             xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
+             xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
     <b:Row>
         <b:Column size="XS_12">
 
-            <b:PageHeader text="Media Objects" subText="TODO!!!"/>
+            <b:PageHeader text="Media Objects"/>
 
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="3" text="Basic"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:MediaList>
+                        <b:ListItem>
+                            <b:ImageAnchor asMediaObject="true" pull="LEFT" url="images/media_object.png"/>
+                            <b:MediaBody>
+                                <b:Heading size="4" text="Media Heading"/>
+                                <b.html:Paragraph>Content Here!</b.html:Paragraph>
+                            </b:MediaBody>
+                        </b:ListItem>
+                        <b:ListItem>
+                            <b:ImageAnchor asMediaObject="true" pull="LEFT" url="images/media_object.png"/>
+                            <b:MediaBody>
+                                <b:Heading size="4" text="Media Heading"/>
+                                <b.html:Paragraph>Content Here!</b.html:Paragraph>
+                            </b:MediaBody>
+                        </b:ListItem>
+                        <b:ListItem>
+                            <b:ImageAnchor asMediaObject="true" pull="LEFT" url="images/media_object.png"/>
+                            <b:MediaBody>
+                                <b:Heading size="4" text="Media Heading"/>
+                                <b.html:Paragraph>Content Here!</b.html:Paragraph>
+                            </b:MediaBody>
+                        </b:ListItem>
+                        <b:ListItem>
+                            <b:ImageAnchor asMediaObject="true" pull="LEFT" url="images/media_object.png"/>
+                            <b:MediaBody>
+                                <b:Heading size="4" text="Media Heading"/>
+                                <b.html:Paragraph>Content Here!</b.html:Paragraph>
+                            </b:MediaBody>
+                        </b:ListItem>
+                        <b:ListItem>
+                            <b:ImageAnchor asMediaObject="true" pull="LEFT" url="images/media_object.png"/>
+                            <b:MediaBody>
+                                <b:Heading size="4" text="Media Heading"/>
+                                <b.html:Paragraph>Content Here!</b.html:Paragraph>
+                            </b:MediaBody>
+                        </b:ListItem>
+                        <b:ListItem>
+                            <b:ImageAnchor asMediaObject="true" pull="RIGHT" url="images/media_object.png"/>
+                            <b:MediaBody>
+                                <b:Heading size="4" text="Media Heading"/>
+                                <b.html:Paragraph>Content Here!</b.html:Paragraph>
+                            </b:MediaBody>
+                        </b:ListItem>
+                    </b:MediaList>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:MediaList&gt;\n
+                        \s\s&lt;b:ListItem&gt;\n
+                        \s\s\s\s&lt;b:ImageAnchor asMediaObject="true" pull="LEFT" url="..."/&gt;\n
+                        \s\s\s\s&lt;b:MediaBody&gt;\n
+                        \s\s\s\s\s\s&lt;b:Heading size="..." text="..."/&gt;\n
+                        \s\s\s\s\s\s&lt;b.html:Paragraph text="..."/&gt;\n
+                        \s\s\s\s&lt;/b:MediaBody&gt;\n
+                        \s\s&lt;/b:ListItem&gt;\n
+                        &lt;/b:MediaList&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
         </b:Column>
     </b:Row>
 

@@ -97,8 +97,8 @@
                                     </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getListGroup}">List Group
                                     </b:AnchorListItem>
-                                    <!--<b:AnchorListItem targetHistoryToken="{nameTokens.getMediaObjects}">Media Objects-->
-                                    <!--</b:AnchorListItem>-->
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getMediaObjects}">Media Objects
+                                    </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getNavbar}">Navbar
                                     </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getNavs}">Navs</b:AnchorListItem>
