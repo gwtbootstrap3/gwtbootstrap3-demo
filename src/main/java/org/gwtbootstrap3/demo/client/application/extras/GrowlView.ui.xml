@@ -172,7 +172,7 @@
 				        \s\sgo.setPositionObject(gp);\n
 				        
 				        \s\sGrowlTemplate gt = GrowlHelper.getNewTemplate();\n
-				        \s\sgt.setTitleDivider("<hr>");\n
+                        \s\sgt.setTitleDivider("<hr/>");\n
 				     
 				        \s\sgo.setTemplateObject(gt);\n
 				        
