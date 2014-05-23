@@ -79,6 +79,7 @@ public class NameTokens {
     public static final String SUMMERNOTE = "summernote";
     public static final String TOGGLESWITCH = "toggleswitch";
     public static final String OFFLINE = "offline";
+    public static final String GROWL = "growl";
 
     // Getters for UiBinders
 
@@ -150,6 +151,10 @@ public class NameTokens {
         return ICONS;
     }
 
+    public static String getGrowl() {
+        return GROWL;
+    }
+    
     public static String getInputGroups() {
         return INPUT_GROUPS;
     }
