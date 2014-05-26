@@ -46,7 +46,7 @@ import java.util.Date;
  * @author Joshua Godi
  */
 public class DateTimePickerView extends ViewImpl implements DateTimePickerPresenter.MyView {
-    @UiField
+    @UiField(provided = true)
     DateTimePicker eventDateTimePicker;
     @UiField
     FlowPanel logRow;
@@ -85,6 +85,9 @@ public class DateTimePickerView extends ViewImpl implements DateTimePickerPresen
 
     @Inject
     DateTimePickerView(final Binder uiBinder) {
+        eventDateTimePicker = new DateTimePicker();
+        eventDateTimePicker.setValue(new Date());
+
         initWidget(uiBinder.createAndBindUi(this));
 
         eventDateTimePicker.addChangeDateHandler(new ChangeDateHandler() {
