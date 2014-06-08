@@ -37,14 +37,6 @@
 
             <b:PageHeader text="Navbar"/>
 
-            <b:BlockQuote addStyleNames="{style.danger}">
-                <b:Heading addStyleNames="{style.margin-fix}" size="4" text="Requires JavaScript"/>
-                <b.html:Paragraph>
-                    If JavaScript is disabled and the viewport is narrow enough that the navbar collapses, it will be
-                    impossible to expand the navbar and view the content within the .navbar-collapse.
-                </b.html:Paragraph>
-            </b:BlockQuote>
-
             <b:Panel>
                 <b:PanelHeader>
                     <b:Heading size="3" text="Basic"/>
