@@ -60,6 +60,51 @@
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Contextual Classes"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Panel type="INFO">
+                        <b:PanelHeader>
+                            <b:Heading size="H3" text="Panel Header"/>
+                        </b:PanelHeader>
+                        <b:PanelBody>
+                            <b.html:Strong text="Panel Body"/>
+                        </b:PanelBody>
+                        <b:PanelFooter>
+                            <b.html:Strong text="Panel Footer"/>
+                        </b:PanelFooter>
+                    </b:Panel>
+                    <b:Panel type="DANGER">
+                        <b:PanelHeader>
+                            <b:Heading size="H3" text="Panel Header"/>
+                        </b:PanelHeader>
+                        <b:PanelBody>
+                            <b.html:Strong text="Panel Body"/>
+                        </b:PanelBody>
+                        <b:PanelFooter>
+                            <b.html:Strong text="Panel Footer"/>
+                        </b:PanelFooter>
+                    </b:Panel>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Panel type="INFO | DANGER | SUCCESS | PRIMARY | WARNING | DEFAULT"&gt;\n
+                        \s\s&lt;b:PanelHeader&gt;\n
+                        \s\s\s\s&lt;b:Heading size="3" text="..."/&gt;\n
+                        \s\s&lt;/b:PanelHeader&gt;\n
+                        \s\s&lt;b:PanelBody&gt;\n
+                        \s\s\s\s&lt;b.html:Strong text="..."/&gt;\n
+                        \s\s&lt;/b:PanelBody&gt;\n
+                        \s\s&lt;b:PanelFooter&gt;\n
+                        \s\s\s\s&lt;b.html:Strong text="..."/&gt;\n
+                        \s\s&lt;/b:PanelFooter&gt;\n
+                        &lt;/b:Panel&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
         </b:Column>
 
     </b:Row>
