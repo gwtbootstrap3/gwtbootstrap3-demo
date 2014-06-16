@@ -157,7 +157,7 @@
                                 </b:DropDownMenu>
                             </b:ListDropDown>
                             <b:AnchorListItem text="Fork on GitHub"
-                                              href="https://github.com/gwtbootstrap3/gwtbootstrap3"/>
+                                              href="https://github.com/gwtbootstrap3"/>
                             <b:AnchorListItem text="View Javadoc" href="apidocs/index.html"/>
                         </b:NavbarNav>
                     </b:NavbarCollapse>
