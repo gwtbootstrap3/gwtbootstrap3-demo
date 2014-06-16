@@ -33,7 +33,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:ButtonGroup addStyleNames="{style.spacing}">
@@ -94,7 +94,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Split"/>
+                    <b:Heading size="H3" text="Split"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:ButtonGroup addStyleNames="{style.spacing}">
@@ -124,7 +124,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Dropup"/>
+                    <b:Heading size="H3" text="Dropup"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:ButtonGroup dropUp="true" addStyleNames="{style.spacing}">

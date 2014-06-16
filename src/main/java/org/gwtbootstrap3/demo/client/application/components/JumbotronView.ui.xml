@@ -24,25 +24,25 @@
     <b:Row>
         <b:Column size="XS_12">
 
-        <b:PageHeader text="Jumbotron"/>
+            <b:PageHeader text="Jumbotron"/>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Basic"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:Jumbotron>
-                    <b:Heading size="1" text="I am in a jumbotron!"/>
-                </b:Jumbotron>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:Jumbotron&gt;\n
-                    \s\s...\n
-                    &lt;/b:Jumbotron&gt;\n
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Basic"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Jumbotron>
+                        <b:Heading size="H1" text="I am in a jumbotron!"/>
+                    </b:Jumbotron>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Jumbotron&gt;\n
+                        \s\s...\n
+                        &lt;/b:Jumbotron&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
         </b:Column>
 
     </b:Row>

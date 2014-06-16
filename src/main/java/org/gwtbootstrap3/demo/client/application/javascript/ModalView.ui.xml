@@ -49,7 +49,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Modal title="Cupcake ipsum" closable="true" fade="true" dataBackdrop="STATIC" dataKeyboard="true"
@@ -145,7 +145,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Only One Modal Active"/>
+                    <b:Heading size="H3" text="Only One Modal Active"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Modal title="Modal 1" closable="true" fade="true" b:id="modal1">
@@ -182,7 +182,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Events"/>
+                    <b:Heading size="H3" text="Events"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>

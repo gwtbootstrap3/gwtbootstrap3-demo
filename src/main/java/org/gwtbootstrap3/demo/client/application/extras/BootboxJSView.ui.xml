@@ -50,7 +50,7 @@
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
-                <b:Heading addStyleNames="{style.margin-fix}" size="4" text="Required for use"/>
+                <b:Heading addStyleNames="{style.margin-fix}" size="H4" text="Required for use"/>
                 <b.html:Paragraph>
                     To use Bootbox, you must first add the extras module to your project. In Maven:
                 </b.html:Paragraph>
@@ -81,7 +81,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Alert"/>
+                    <b:Heading size="H3" text="Alert"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Button type="PRIMARY" icon="PLAY" ui:field="alertButton">Run Example</b:Button>
@@ -98,7 +98,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Alert with Callback"/>
+                    <b:Heading size="H3" text="Alert with Callback"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Button type="PRIMARY" icon="PLAY" ui:field="alertCallbackButton">Run Example</b:Button>
@@ -120,7 +120,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Confirm"/>
+                    <b:Heading size="H3" text="Confirm"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Button type="PRIMARY" icon="PLAY" ui:field="confirmButton">Run Example</b:Button>
@@ -142,7 +142,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Prompt"/>
+                    <b:Heading size="H3" text="Prompt"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Button type="PRIMARY" icon="PLAY" ui:field="promptButton">Run Example</b:Button>

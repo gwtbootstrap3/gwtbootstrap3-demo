@@ -39,7 +39,7 @@
             <b:PageHeader text="Progress Bars"/>
 
             <b:BlockQuote addStyleNames="{style.danger}">
-                <b:Heading addStyleNames="{style.margin-fix}" size="4" text="Cross-browser compatibility"/>
+                <b:Heading addStyleNames="{style.margin-fix}" size="H4" text="Cross-browser compatibility"/>
                 <b.html:Paragraph>
                     Progress bars use CSS3 transitions and animations to achieve some of their effects. These features
                     are
@@ -51,7 +51,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Progress>
@@ -87,7 +87,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Striped"/>
+                    <b:Heading size="H3" text="Striped"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph>
@@ -126,7 +126,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Animated"/>
+                    <b:Heading size="H3" text="Animated"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph>
@@ -147,7 +147,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Stacked"/>
+                    <b:Heading size="H3" text="Stacked"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Progress>

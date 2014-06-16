@@ -30,31 +30,31 @@
     <b:Row>
         <b:Column size="XS_12">
 
-        <b:PageHeader text="Labels"/>
+            <b:PageHeader text="Labels"/>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Basic"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:Label addStyleNames="{style.spacing}" text="Default"/>
-                <b:Label addStyleNames="{style.spacing}" text="Primary" type="PRIMARY"/>
-                <b:Label addStyleNames="{style.spacing}" text="Success" type="SUCCESS"/>
-                <b:Label addStyleNames="{style.spacing}" text="Info" type="INFO"/>
-                <b:Label addStyleNames="{style.spacing}" text="Warning" type="WARNING"/>
-                <b:Label addStyleNames="{style.spacing}" text="Danger" type="DANGER"/>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:Label text="..."/&gt;\n
-                    &lt;b:Label text="..." type="PRIMARY"/&gt;\n
-                    &lt;b:Label text="..." type="SUCCESS"/&gt;\n
-                    &lt;b:Label text="..." type="INFO"/&gt;\n
-                    &lt;b:Label text="..." type="WARNING"/&gt;\n
-                    &lt;b:Label text="..." type="DANGER"/&gt;\n
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Basic"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Label addStyleNames="{style.spacing}" text="Default"/>
+                    <b:Label addStyleNames="{style.spacing}" text="Primary" type="PRIMARY"/>
+                    <b:Label addStyleNames="{style.spacing}" text="Success" type="SUCCESS"/>
+                    <b:Label addStyleNames="{style.spacing}" text="Info" type="INFO"/>
+                    <b:Label addStyleNames="{style.spacing}" text="Warning" type="WARNING"/>
+                    <b:Label addStyleNames="{style.spacing}" text="Danger" type="DANGER"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Label text="..."/&gt;\n
+                        &lt;b:Label text="..." type="PRIMARY"/&gt;\n
+                        &lt;b:Label text="..." type="SUCCESS"/&gt;\n
+                        &lt;b:Label text="..." type="INFO"/&gt;\n
+                        &lt;b:Label text="..." type="WARNING"/&gt;\n
+                        &lt;b:Label text="..." type="DANGER"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
         </b:Column>
 
     </b:Row>

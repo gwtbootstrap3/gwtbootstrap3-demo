@@ -28,7 +28,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:InputGroup>
@@ -50,7 +50,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Icon Addons"/>
+                    <b:Heading size="H3" text="Icon Addons"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:InputGroup>
@@ -72,7 +72,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Icon and Text Mixin Addons"/>
+                    <b:Heading size="H3" text="Icon and Text Mixin Addons"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:InputGroup>
@@ -94,7 +94,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Checkboxes and Radio Addons"/>
+                    <b:Heading size="H3" text="Checkboxes and Radio Addons"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
@@ -137,7 +137,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Button Addons"/>
+                    <b:Heading size="H3" text="Button Addons"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:InputGroup>

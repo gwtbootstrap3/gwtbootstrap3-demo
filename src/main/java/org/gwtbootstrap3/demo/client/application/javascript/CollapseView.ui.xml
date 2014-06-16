@@ -43,7 +43,7 @@
             <b:PageHeader text="Collapse"/>
 
             <b:BlockQuote addStyleNames="{style.danger}">
-                <b:Heading addStyleNames="{style.margin-fix}" size="4"
+                <b:Heading addStyleNames="{style.margin-fix}" size="H4"
                            text="Cross-browser compatibility"/>
                 <b.html:Paragraph>
                     <b>Transition animations not supported in Internet Explorer 8 &amp; 9</b>
@@ -57,7 +57,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Collapse via Button target"/>
+                    <b:Heading size="H3" text="Collapse via Button target"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Button type="DANGER" dataToggle="COLLAPSE" dataTarget="#demoCollapse">
@@ -86,14 +86,14 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Accordion Example using PanelCollapse"/>
+                    <b:Heading size="H3" text="Accordion Example using PanelCollapse"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:PanelGroup b:id="accordion">
                         <b:Panel>
                             <b:PanelHeader>
-                                <b:Heading size="4">
-                                    <b:Anchor dataToggle="COLLAPSE" dataParent="#accordion" dataTarget="#collapseOne"
+                                <b:Heading size="H4">
+                                <b:Anchor dataToggle="COLLAPSE" dataParent="#accordion" dataTarget="#collapseOne"
                                               text="Collapse Group #1"/>
                                 </b:Heading>
                             </b:PanelHeader>
@@ -107,8 +107,8 @@
                         </b:Panel>
                         <b:Panel>
                             <b:PanelHeader>
-                                <b:Heading size="4">
-                                    <b:Anchor dataToggle="COLLAPSE" dataParent="#accordion" dataTarget="#collapseTwo"
+                                <b:Heading size="H4">
+                                <b:Anchor dataToggle="COLLAPSE" dataParent="#accordion" dataTarget="#collapseTwo"
                                               text="Collapse Group #2"/>
                                 </b:Heading>
                             </b:PanelHeader>
@@ -122,8 +122,8 @@
                         </b:Panel>
                         <b:Panel>
                             <b:PanelHeader>
-                                <b:Heading size="4">
-                                    <b:Anchor icon="ANCHOR" dataToggle="COLLAPSE" dataParent="#accordion"
+                                <b:Heading size="H4">
+                                <b:Anchor icon="ANCHOR" dataToggle="COLLAPSE" dataParent="#accordion"
                                               dataTarget="#collapseThree" text="Collapse Group #3"/>
                                 </b:Heading>
                             </b:PanelHeader>
@@ -186,13 +186,13 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Accordion Example using PanelCollapse (whole header)"/>
+                    <b:Heading size="H3" text="Accordion Example using PanelCollapse (whole header)"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:PanelGroup b:id="accordion2">
                         <b:Panel>
                             <b:PanelHeader dataToggle="COLLAPSE" dataParent="#accordion2" dataTarget="#collapseFour">
-                                <b:Heading size="4" text="Collapse Me"/>
+                                <b:Heading size="H4" text="Collapse Me"/>
                             </b:PanelHeader>
                             <b:PanelCollapse b:id="collapseFour" in="true">
                                 <b:PanelBody>
@@ -204,7 +204,7 @@
                         </b:Panel>
                         <b:Panel>
                             <b:PanelHeader dataToggle="COLLAPSE" dataParent="#accordion2" dataTarget="#collapseFive">
-                                <b:Heading size="4" text="Collapse Me"/>
+                                <b:Heading size="H4" text="Collapse Me"/>
                             </b:PanelHeader>
                             <b:PanelCollapse b:id="collapseFive">
                                 <b:PanelBody>
@@ -216,7 +216,7 @@
                         </b:Panel>
                         <b:Panel>
                             <b:PanelHeader dataToggle="COLLAPSE" dataParent="#accordion2" dataTarget="#collapseSix">
-                                <b:Heading size="4" text="Collapse Me"/>
+                                <b:Heading size="H4" text="Collapse Me"/>
                             </b:PanelHeader>
                             <b:PanelCollapse b:id="collapseSix">
                                 <b:PanelBody>

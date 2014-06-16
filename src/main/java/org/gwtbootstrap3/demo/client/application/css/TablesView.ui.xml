@@ -30,7 +30,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Cell Table"/>
+                    <b:Heading size="H3" text="Cell Table"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.gwt:CellTable bordered="true" condensed="true" striped="true" hover="true" height="300px"
@@ -38,14 +38,14 @@
                     <b:Pagination ui:field="cellTablePagination"/>
                 </b:PanelBody>
                 <b:PanelFooter>
-                    <b:Heading size="4" text="UiBinder"/>
+                    <b:Heading size="H4" text="UiBinder"/>
 
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:CellTable bordered="true" condensed="true" striped="true" hover="true" height="..."
                         width="..."/&gt;\n
                     </d:PrettyPre>
 
-                    <b:Heading size="4" text="Java code"/>
+                    <b:Heading size="H4" text="Java code"/>
 
                     <b.html:Paragraph>
                         <strong>NOTE: The pagination.rebuild() after adding/removing data from the grid.</strong>
@@ -68,7 +68,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Data Grid"/>
+                    <b:Heading size="H3" text="Data Grid"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.gwt:DataGrid bordered="true" condensed="true" striped="true" hover="true" height="300px"
@@ -76,14 +76,14 @@
                     <b:Pagination ui:field="dataGridPagination"/>
                 </b:PanelBody>
                 <b:PanelFooter>
-                    <b:Heading size="4" text="UiBinder"/>
+                    <b:Heading size="H4" text="UiBinder"/>
 
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:DataGrid bordered="true" condensed="true" striped="true" hover="true" height="..."
                         width="..."/&gt;\n
                     </d:PrettyPre>
 
-                    <b:Heading size="4" text="Java code"/>
+                    <b:Heading size="H4" text="Java code"/>
 
                     <b.html:Paragraph>
                         <strong>NOTE: The pagination.rebuild() after adding/removing data from the grid.</strong>

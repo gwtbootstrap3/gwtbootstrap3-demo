@@ -28,7 +28,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:ListGroup>
@@ -51,7 +51,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Contextual Classes"/>
+                    <b:Heading size="H3" text="Contextual Classes"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:ListGroup>
@@ -75,7 +75,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="With Badges"/>
+                    <b:Heading size="H3" text="With Badges"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:ListGroup>
@@ -112,7 +112,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Linked Items"/>
+                    <b:Heading size="H3" text="Linked Items"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:LinkedGroup>
@@ -135,20 +135,20 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Custom Content"/>
+                    <b:Heading size="H3" text="Custom Content"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:LinkedGroup>
                         <b:LinkedGroupItem active="true">
-                            <b:Heading size="3" text="Heading"/>
+                            <b:Heading size="H3" text="Heading"/>
                             <b:LinkedGroupItemText text="Insert text here..."/>
                         </b:LinkedGroupItem>
                         <b:LinkedGroupItem>
-                            <b:Heading size="3" text="Heading"/>
+                            <b:Heading size="H3" text="Heading"/>
                             <b:LinkedGroupItemText text="Insert text here..."/>
                         </b:LinkedGroupItem>
                         <b:LinkedGroupItem>
-                            <b:Heading size="3" text="Heading"/>
+                            <b:Heading size="H3" text="Heading"/>
                             <b:LinkedGroupItemText text="Insert text here..."/>
                         </b:LinkedGroupItem>
                     </b:LinkedGroup>

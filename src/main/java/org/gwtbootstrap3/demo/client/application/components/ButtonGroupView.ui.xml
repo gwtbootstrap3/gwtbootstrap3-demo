@@ -39,7 +39,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:ButtonGroup>
@@ -61,7 +61,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Multiple"/>
+                    <b:Heading size="H3" text="Multiple"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:ButtonToolBar>
@@ -107,7 +107,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Nested"/>
+                    <b:Heading size="H3" text="Nested"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:ButtonGroup>
@@ -141,7 +141,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Vertical"/>
+                    <b:Heading size="H3" text="Vertical"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:VerticalButtonGroup>
@@ -165,7 +165,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Justified"/>
+                    <b:Heading size="H3" text="Justified"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:ButtonGroup justified="true">
@@ -187,7 +187,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Checkbox buttons"/>
+                    <b:Heading size="H3" text="Checkbox buttons"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:ButtonGroup dataToggle="BUTTONS">
@@ -211,7 +211,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Radio buttons"/>
+                    <b:Heading size="H3" text="Radio buttons"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>

@@ -44,13 +44,15 @@
 
             <b:BlockQuote>
                 <b.html:Strong>Original Library Link:</b.html:Strong>
-                <b:Anchor addStyleNames="{style.spacing}" href="http://bootstrap-growl.remabledesigns.com/">Bootstrap Growl</b:Anchor>
+                <b:Anchor addStyleNames="{style.spacing}" href="http://bootstrap-growl.remabledesigns.com/">Bootstrap
+                    Growl
+                </b:Anchor>
                 <b.html:Br/>
                 <b.html:Strong>Current Version Supported: 1.0.6</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
-                <b:Heading addStyleNames="{style.margin-fix}" size="4" text="Required for use"/>
+                <b:Heading addStyleNames="{style.margin-fix}" size="H4" text="Required for use"/>
                 <b.html:Paragraph>
                     To use Growl, you must first add the extras module to your project. In Maven:
                 </b.html:Paragraph>
@@ -81,7 +83,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic Growl"/>
+                    <b:Heading size="H3" text="Basic Growl"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Button type="PRIMARY" icon="PLAY" ui:field="basicGrowl">Run Example</b:Button>
@@ -98,7 +100,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic Growl with Title"/>
+                    <b:Heading size="H3" text="Basic Growl with Title"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Button type="PRIMARY" icon="PLAY" ui:field="basicGrowlWithTitle">Run Example</b:Button>
@@ -115,7 +117,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic Growl with Title and Icon"/>
+                    <b:Heading size="H3" text="Basic Growl with Title and Icon"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Button type="PRIMARY" icon="PLAY" ui:field="basicGrowlWithTitleIcon">Run Example</b:Button>
@@ -124,7 +126,8 @@
                     <d:PrettyPre addStyleNames="lang-java">
                         @UiHandler("button")\n
                         public void handleButton(ClickEvent event) {\n
-                        \s\sGrowl.growl("Title","Message",Styles.FONT_AWESOME_BASE + " " + IconType.SMILE_O.getCssName());\n
+                        \s\sGrowl.growl("Title","Message",Styles.FONT_AWESOME_BASE + " " +
+                        IconType.SMILE_O.getCssName());\n
                         }
                     </d:PrettyPre>
                 </b:PanelFooter>
@@ -132,7 +135,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Change Background, Remove Close Icon"/>
+                    <b:Heading size="H3" text="Change Background, Remove Close Icon"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Button type="PRIMARY" icon="PLAY" ui:field="changeBackgroundAndDismiss">Run Example</b:Button>
@@ -142,18 +145,19 @@
                         @UiHandler("button")\n
                         public void handleButton(ClickEvent event) {\n
                         \s\sGrowlOptions go = GrowlHelper.getNewOptions();\n
-				        \s\sgo.setSuccessType();\n
-				        \s\sgo.setAllowDismiss(false);\n
-				        \s\sGrowl.growl("Title","Message",Styles.FONT_AWESOME_BASE + " " + IconType.SMILE_O.getCssName(),go);\n
+                        \s\sgo.setSuccessType();\n
+                        \s\sgo.setAllowDismiss(false);\n
+                        \s\sGrowl.growl("Title","Message",Styles.FONT_AWESOME_BASE + " " +
+                        IconType.SMILE_O.getCssName(),go);\n
                         }
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
-            
-            
+
+
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Change Position and Formatting"/>
+                    <b:Heading size="H3" text="Change Position and Formatting"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Button type="PRIMARY" icon="PLAY" ui:field="positionAndFormatting">Run Example</b:Button>
@@ -162,21 +166,22 @@
                     <d:PrettyPre addStyleNames="lang-java">
                         @UiHandler("button")\n
                         public void handleButton(ClickEvent event) {\n
-				    	\s\sGrowlOptions go = GrowlHelper.getNewOptions();\n
-				        \s\sgo.setWarningType();\n
-				        \s\sgo.setAllowDismiss(false);\n
-				        
-				        \s\sGrowlPosition gp = GrowlHelper.getNewPosition();\n
-				        \s\sgp.setTop(false);\n
-				        \s\sgp.setCenter();\n
-				        \s\sgo.setPositionObject(gp);\n
-				        
-				        \s\sGrowlTemplate gt = GrowlHelper.getNewTemplate();\n
+                        \s\sGrowlOptions go = GrowlHelper.getNewOptions();\n
+                        \s\sgo.setWarningType();\n
+                        \s\sgo.setAllowDismiss(false);\n
+
+                        \s\sGrowlPosition gp = GrowlHelper.getNewPosition();\n
+                        \s\sgp.setTop(false);\n
+                        \s\sgp.setCenter();\n
+                        \s\sgo.setPositionObject(gp);\n
+
+                        \s\sGrowlTemplate gt = GrowlHelper.getNewTemplate();\n
                         \s\sgt.setTitleDivider("<hr/>");\n
-				     
-				        \s\sgo.setTemplateObject(gt);\n
-				        
-				        \s\sGrowl.growl("Title","Message",Styles.FONT_AWESOME_BASE + " " + IconType.SMILE_O.getCssName(),go);\n
+
+                        \s\sgo.setTemplateObject(gt);\n
+
+                        \s\sGrowl.growl("Title","Message",Styles.FONT_AWESOME_BASE + " " +
+                        IconType.SMILE_O.getCssName(),go);\n
                         }
                     </d:PrettyPre>
                 </b:PanelFooter>

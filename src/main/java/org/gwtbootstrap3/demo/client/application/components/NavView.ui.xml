@@ -29,7 +29,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Tabs"/>
+                    <b:Heading size="H3" text="Tabs"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:NavTabs>
@@ -55,7 +55,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Pills"/>
+                    <b:Heading size="H3" text="Pills"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:NavPills>
@@ -93,7 +93,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Justified Nav"/>
+                    <b:Heading size="H3" text="Justified Nav"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:NavTabs justified="true">
@@ -115,7 +115,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Using Dropdowns"/>
+                    <b:Heading size="H3" text="Using Dropdowns"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:NavTabs>

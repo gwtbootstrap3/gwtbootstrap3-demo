@@ -33,7 +33,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody addStyleNames="{style.spacing}">
                     <b:Button text="Default"/>
@@ -59,7 +59,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Sizes"/>
+                    <b:Heading size="H3" text="Sizes"/>
                 </b:PanelHeader>
                 <b:PanelBody addStyleNames="{style.spacing}">
                     <b:Button type="PRIMARY" size="SMALL" text="Small"/>
@@ -77,7 +77,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Disabled State"/>
+                    <b:Heading size="H3" text="Disabled State"/>
                 </b:PanelHeader>
                 <b:PanelBody addStyleNames="{style.spacing}">
                     <b:Button type="PRIMARY" text="Enabled" enabled="true"/>
@@ -93,7 +93,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="With Icons"/>
+                    <b:Heading size="H3" text="With Icons"/>
                 </b:PanelHeader>
                 <b:PanelBody addStyleNames="{style.spacing}">
                     <b:Button type="PRIMARY" text="With Icon" icon="STAR"/>
@@ -112,7 +112,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Toggle button"/>
+                    <b:Heading size="H3" text="Toggle button"/>
                 </b:PanelHeader>
                 <b:PanelBody addStyleNames="{style.spacing}">
                     <b:Button dataToggle="BUTTON" text="Toggle button"/>
@@ -126,19 +126,19 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="With loading state"/>
+                    <b:Heading size="H3" text="With loading state"/>
                 </b:PanelHeader>
                 <b:PanelBody addStyleNames="{style.spacing}">
                     <b:Button ui:field="button" text="Click me" dataLoadingText="Loading..."/>
                 </b:PanelBody>
                 <b:PanelFooter>
-                    <b:Heading size="4" text="UiBinder"/>
+                    <b:Heading size="H4" text="UiBinder"/>
 
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:Button ui:field="button" text="Click me" dataLoadingText="Loading..."/&gt;
                     </d:PrettyPre>
 
-                    <b:Heading size="4" text="Java code"/>
+                    <b:Heading size="H4" text="Java code"/>
 
                     <d:PrettyPre addStyleNames="lang-java">
                         @UiHandler("button")\n
@@ -158,7 +158,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Block level button"/>
+                    <b:Heading size="H3" text="Block level button"/>
                 </b:PanelHeader>
                 <b:PanelBody addStyleNames="{style.spacing}">
                     <b:Button text="Block level button" block="true"/>

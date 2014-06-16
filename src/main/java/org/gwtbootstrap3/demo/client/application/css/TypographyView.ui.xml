@@ -30,21 +30,21 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Headings"/>
+                    <b:Heading size="H3" text="Headings"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Heading size="1" text="h1. Bootstrap heading" subtext="subtext"/>
-                    <b:Heading size="2" text="h2. Bootstrap heading" subtext="subtext"/>
-                    <b:Heading size="3" text="h3. Bootstrap heading" subtext="subtext"/>
-                    <b:Heading size="4" text="h4. Bootstrap heading" subtext="subtext"/>
-                    <b:Heading size="5" text="h5. Bootstrap heading" subtext="subtext"/>
-                    <b:Heading size="6" text="h6. Bootstrap heading" subtext="subtext"/>
-                    <b:Heading size="6" subtext="subtext" text="Test"/>
-                    <b:Heading size="1">
+                    <b:Heading size="H1" text="h1. Bootstrap heading" subtext="subtext"/>
+                    <b:Heading size="H2" text="h2. Bootstrap heading" subtext="subtext"/>
+                    <b:Heading size="H3" text="h3. Bootstrap heading" subtext="subtext"/>
+                    <b:Heading size="H4" text="h4. Bootstrap heading" subtext="subtext"/>
+                    <b:Heading size="H5" text="h5. Bootstrap heading" subtext="subtext"/>
+                    <b:Heading size="H6" text="h6. Bootstrap heading" subtext="subtext"/>
+                    <b:Heading size="H6" subtext="subtext" text="Test"/>
+                    <b:Heading size="H1">
                         <b:Icon type="GEAR"/>
                         <b.html:Text text="h1. Heading with Icon"/>
                     </b:Heading>
-                    <b:Heading size="1">
+                    <b:Heading size="H1">
                         <b.html:Text text="h1. Heading with Icon"/>
                         <b.html:Small text=" Sub"/>
                     </b:Heading>
@@ -67,7 +67,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Body Copy"/>
+                    <b:Heading size="H3" text="Body Copy"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Lead text="Make a paragraph stand out!"/>
@@ -89,7 +89,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Text Emphasis"/>
+                    <b:Heading size="H3" text="Text Emphasis"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph emphasis="MUTED">Fusce dapibus, tellus ac cursus commodo</b.html:Paragraph>
@@ -113,7 +113,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Text Alignment"/>
+                    <b:Heading size="H3" text="Text Alignment"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph alignment="LEFT">Align Left</b.html:Paragraph>
@@ -131,7 +131,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Abbreviations"/>
+                    <b:Heading size="H3" text="Abbreviations"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <g:HTMLPanel>
@@ -148,7 +148,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Block Quotes"/>
+                    <b:Heading size="H3" text="Block Quotes"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:BlockQuote>
@@ -182,7 +182,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Lists"/>
+                    <b:Heading size="H3" text="Lists"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:OrderedList>
@@ -229,7 +229,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Description"/>
+                    <b:Heading size="H3" text="Description"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Description>

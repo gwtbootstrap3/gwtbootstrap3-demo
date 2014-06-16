@@ -29,7 +29,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph>
@@ -45,7 +45,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Bootstrap2 Look-a-like Setup"/>
+                    <b:Heading size="H3" text="Bootstrap2 Look-a-like Setup"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph>
@@ -62,7 +62,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Custom Theme"/>
+                    <b:Heading size="H3" text="Custom Theme"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph>
@@ -98,7 +98,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Support for IE8"/>
+                    <b:Heading size="H3" text="Support for IE8"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph>

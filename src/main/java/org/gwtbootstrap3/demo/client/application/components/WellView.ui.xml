@@ -29,7 +29,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Default"/>
+                    <b:Heading size="H3" text="Default"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Well>
@@ -47,7 +47,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Optional classes"/>
+                    <b:Heading size="H3" text="Optional classes"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Well size="LARGE">

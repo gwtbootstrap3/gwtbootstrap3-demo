@@ -74,9 +74,9 @@
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
-                <b:Heading addStyleNames="{style.margin-fix}" size="4" text="Required for use"/>
+                <b:Heading addStyleNames="{style.margin-fix}" size="H4" text="Required for use"/>
                 <b.html:Paragraph>
-                To use the DateTimePicker, you must first add the extras module to your project. In Maven:
+                    To use the DateTimePicker, you must first add the extras module to your project. In Maven:
                 </b.html:Paragraph>
                 <d:PrettyPre addStyleNames="lang-xml">
                     &lt;dependency&gt;\n
@@ -87,7 +87,7 @@
                     &lt;/dependency&gt;
                 </d:PrettyPre>
                 <b.html:Paragraph>
-                Then you need to inherit the following GWT Module
+                    Then you need to inherit the following GWT Module
                     <strong>additionally</strong>
                     to any GwtBootstrap3
                     module into your *.gwt.xml of your project:
@@ -96,7 +96,7 @@
                     &lt;inherits name="org.gwtbootstrap3.extras.datetimepicker.DateTimePicker"/&gt;
                 </d:PrettyPre>
                 <b.html:Paragraph>
-                Last but not least must add this namespace to your *.ui.xml (don't have to name it b2):
+                    Last but not least must add this namespace to your *.ui.xml (don't have to name it b2):
                 </b.html:Paragraph>
                 <d:PrettyPre addStyleNames="lang-xml">
                     xmlns:b2="urn:import:org.gwtbootstrap3.extras.datetimepicker.client.ui"
@@ -105,16 +105,16 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b2:DateTimePicker/>
 
                     <b:Modal title="DateTimePicker in Modal" closable="true" fade="true" dataBackdrop="STATIC"
                              dataKeyboard="true" b:id="myModal" ui:field="modal">
-                    <b:ModalBody>
-                        <b2:DateTimePicker/>
-                    </b:ModalBody>
+                        <b:ModalBody>
+                            <b2:DateTimePicker/>
+                        </b:ModalBody>
                         <b:ModalFooter>
                             <b:Button type="DANGER" dataDismiss="MODAL">Close</b:Button>
                         </b:ModalFooter>
@@ -140,11 +140,11 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Setting Languages"/>
+                    <b:Heading size="H3" text="Setting Languages"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph>
-                    Change the language for the DateTimePicker.
+                        Change the language for the DateTimePicker.
                     </b.html:Paragraph>
                     <b2:DateTimePicker autoClose="true" language="FR"/>
                 </b:PanelBody>
@@ -157,7 +157,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Position"/>
+                    <b:Heading size="H3" text="Position"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph>
@@ -177,11 +177,11 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                <b:Heading size="3" text="Auto Close"/>
+                    <b:Heading size="H3" text="Auto Close"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph>
-                    Automatically close the selector after selecting a date.
+                        Automatically close the selector after selecting a date.
                     </b.html:Paragraph>
                     <b2:DateTimePicker autoClose="true"/>
                 </b:PanelBody>
@@ -194,7 +194,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="12 Hour Format"/>
+                    <b:Heading size="H3" text="12 Hour Format"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b2:DateTimePicker showMeridian="true" format="mm/dd/yyyy hh:ii P" ui:field="twelveHour"/>
@@ -208,7 +208,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Dates Only"/>
+                    <b:Heading size="H3" text="Dates Only"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b2:DateTimePicker minView="MONTH" format="mm/dd/yyyy"/>
@@ -222,7 +222,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Time Only"/>
+                    <b:Heading size="H3" text="Time Only"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b2:DateTimePicker startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P"/>
@@ -241,7 +241,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="With Today Button / Today Highlights"/>
+                    <b:Heading size="H3" text="With Today Button / Today Highlights"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b2:DateTimePicker highlightToday="true" showTodayButton="true"/>
@@ -255,7 +255,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Methods"/>
+                    <b:Heading size="H3" text="Methods"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
@@ -287,7 +287,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Events"/>
+                    <b:Heading size="H3" text="Events"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
@@ -296,7 +296,7 @@
                                 <b2:DateTimePicker ui:field="eventDateTimePicker"/>
                             </b.html:Div>
                             <b.html:Div>
-                            <b:Button type="PRIMARY" ui:field="addRemove">Add/Remove</b:Button>
+                                <b:Button type="PRIMARY" ui:field="addRemove">Add/Remove</b:Button>
                             </b.html:Div>
                         </b:Column>
                         <b:Column addStyleNames="{style.logRow}" size="SM_6 MD_8">

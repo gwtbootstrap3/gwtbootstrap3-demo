@@ -29,49 +29,49 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:MediaList>
                         <b:ListItem>
                             <b:ImageAnchor asMediaObject="true" pull="LEFT" url="images/media_object.png"/>
                             <b:MediaBody>
-                                <b:Heading size="4" text="Media Heading"/>
+                                <b:Heading size="H4" text="Media Heading"/>
                                 <b.html:Paragraph>Content Here!</b.html:Paragraph>
                             </b:MediaBody>
                         </b:ListItem>
                         <b:ListItem>
                             <b:ImageAnchor asMediaObject="true" pull="LEFT" url="images/media_object.png"/>
                             <b:MediaBody>
-                                <b:Heading size="4" text="Media Heading"/>
+                                <b:Heading size="H4" text="Media Heading"/>
                                 <b.html:Paragraph>Content Here!</b.html:Paragraph>
                             </b:MediaBody>
                         </b:ListItem>
                         <b:ListItem>
                             <b:ImageAnchor asMediaObject="true" pull="LEFT" url="images/media_object.png"/>
                             <b:MediaBody>
-                                <b:Heading size="4" text="Media Heading"/>
+                                <b:Heading size="H4" text="Media Heading"/>
                                 <b.html:Paragraph>Content Here!</b.html:Paragraph>
                             </b:MediaBody>
                         </b:ListItem>
                         <b:ListItem>
                             <b:ImageAnchor asMediaObject="true" pull="LEFT" url="images/media_object.png"/>
                             <b:MediaBody>
-                                <b:Heading size="4" text="Media Heading"/>
+                                <b:Heading size="H4" text="Media Heading"/>
                                 <b.html:Paragraph>Content Here!</b.html:Paragraph>
                             </b:MediaBody>
                         </b:ListItem>
                         <b:ListItem>
                             <b:ImageAnchor asMediaObject="true" pull="LEFT" url="images/media_object.png"/>
                             <b:MediaBody>
-                                <b:Heading size="4" text="Media Heading"/>
+                                <b:Heading size="H4" text="Media Heading"/>
                                 <b.html:Paragraph>Content Here!</b.html:Paragraph>
                             </b:MediaBody>
                         </b:ListItem>
                         <b:ListItem>
                             <b:ImageAnchor asMediaObject="true" pull="RIGHT" url="images/media_object.png"/>
                             <b:MediaBody>
-                                <b:Heading size="4" text="Media Heading"/>
+                                <b:Heading size="H4" text="Media Heading"/>
                                 <b.html:Paragraph>Content Here!</b.html:Paragraph>
                             </b:MediaBody>
                         </b:ListItem>

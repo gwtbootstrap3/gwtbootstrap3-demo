@@ -40,9 +40,9 @@
             <b:PageHeader text="Cards"/>
 
             <b:BlockQuote addStyleNames="{style.danger}">
-                <b:Heading addStyleNames="{style.margin-fix}" size="4" text="Required for use"/>
+                <b:Heading addStyleNames="{style.margin-fix}" size="H4" text="Required for use"/>
                 <b.html:Paragraph>
-                To use Bootstrap Cards, you must first add the extras module to your project. In Maven:
+                    To use Bootstrap Cards, you must first add the extras module to your project. In Maven:
                 </b.html:Paragraph>
                 <d:PrettyPre addStyleNames="lang-xml">
                     &lt;dependency&gt;\n
@@ -53,7 +53,7 @@
                     &lt;/dependency&gt;
                 </d:PrettyPre>
                 <b.html:Paragraph>
-                Then you need to inherit the following GWT Module
+                    Then you need to inherit the following GWT Module
                     <strong>additionally</strong>
                     to any GwtBootstrap3
                     module into your *.gwt.xml of your project:
@@ -62,7 +62,7 @@
                     &lt;inherits name="org.gwtbootstrap3.extras.card.Card"/&gt;
                 </d:PrettyPre>
                 <b.html:Paragraph>
-                Last but not least must add this namespace to your *.ui.xml (don't have to name it card):
+                    Last but not least must add this namespace to your *.ui.xml (don't have to name it card):
                 </b.html:Paragraph>
                 <d:PrettyPre addStyleNames="lang-xml">
                     xmlns:card="urn:import:org.gwtbootstrap3.extras.card.client.ui"
@@ -71,15 +71,15 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="How to Use"/>
+                    <b:Heading size="H3" text="How to Use"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph>
-                    Basic cards that flip to reveal a front and a back. Very basic implementation right now, if you
+                        Basic cards that flip to reveal a front and a back. Very basic implementation right now, if you
                         require different animations, you can send a pull request or override the CSS.
                     </b.html:Paragraph>
                     <b.html:Paragraph>
-                    The contents of the Front/Back can by anything. The Front/Back are containers, so feel free to
+                        The contents of the Front/Back can by anything. The Front/Back are containers, so feel free to
                         do whatever is needed inside these!
                     </b.html:Paragraph>
                     <card:Card width="100px">

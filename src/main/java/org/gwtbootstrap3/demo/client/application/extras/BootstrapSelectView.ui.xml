@@ -60,7 +60,7 @@
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
-                <b:Heading addStyleNames="{style.margin-fix}" size="4" text="Required for use"/>
+                <b:Heading addStyleNames="{style.margin-fix}" size="H4" text="Required for use"/>
                 <b.html:Paragraph>
                     To use Bootstrap Select, you must first add the extras module to your project. In Maven:
                 </b.html:Paragraph>
@@ -91,7 +91,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <select:Select>
@@ -114,7 +114,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Option Groups"/>
+                    <b:Heading size="H3" text="Option Groups"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <select:Select>
@@ -151,7 +151,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Multiple Select"/>
+                    <b:Heading size="H3" text="Multiple Select"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <select:Select multiple="true">
@@ -177,7 +177,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Styles"/>
+                    <b:Heading size="H3" text="Styles"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
@@ -232,7 +232,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Live Searching"/>
+                    <b:Heading size="H3" text="Live Searching"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <select:Select liveSearch="true">
@@ -258,7 +258,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Custom Selected Titles"/>
+                    <b:Heading size="H3" text="Custom Selected Titles"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
@@ -299,7 +299,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Selected Text Format (Multiple Only)"/>
+                    <b:Heading size="H3" text="Selected Text Format (Multiple Only)"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph>
@@ -359,7 +359,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Show Tick (Single Only)"/>
+                    <b:Heading size="H3" text="Show Tick (Single Only)"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph>
@@ -388,7 +388,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Show Menu Arrow"/>
+                    <b:Heading size="H3" text="Show Menu Arrow"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <select:Select showMenuArrow="true">
@@ -414,7 +414,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Custom Option Style"/>
+                    <b:Heading size="H3" text="Custom Option Style"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <select:Select>
@@ -440,7 +440,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Controlling Width"/>
+                    <b:Heading size="H3" text="Controlling Width"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
@@ -493,7 +493,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Enabling / Disabling"/>
+                    <b:Heading size="H3" text="Enabling / Disabling"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
@@ -559,7 +559,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Visible Items Before Scroll"/>
+                    <b:Heading size="H3" text="Visible Items Before Scroll"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
@@ -617,7 +617,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Dividers"/>
+                    <b:Heading size="H3" text="Dividers"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <select:Select>
@@ -641,7 +641,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Subtext"/>
+                    <b:Heading size="H3" text="Subtext"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
@@ -681,7 +681,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Icons"/>
+                    <b:Heading size="H3" text="Icons"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <select:Select>
@@ -708,7 +708,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Headers"/>
+                    <b:Heading size="H3" text="Headers"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <select:Select header="Heading">
@@ -731,7 +731,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Methods"/>
+                    <b:Heading size="H3" text="Methods"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
@@ -755,7 +755,7 @@
                     </b:Row>
                 </b:PanelBody>
                 <b:PanelFooter>
-                    <b:Heading size="4" text="UiBinder"/>
+                    <b:Heading size="H4" text="UiBinder"/>
 
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;select:Select multiple="true" ui:field="select"&gt;\n
@@ -767,7 +767,7 @@
                         &lt;/select:Select&gt;\n
                     </d:PrettyPre>
 
-                    <b:Heading size="4" text="Java code"/>
+                    <b:Heading size="H4" text="Java code"/>
 
                     <b.html:Paragraph>
                         <strong>NOTE: The refresh() after altering the select!!</strong>

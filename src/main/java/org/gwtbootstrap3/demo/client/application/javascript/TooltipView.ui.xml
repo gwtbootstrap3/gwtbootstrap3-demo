@@ -48,7 +48,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Tooltip title="I am a Tooltip!">
@@ -84,7 +84,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Triggers"/>
+                    <b:Heading size="H3" text="Triggers"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Tooltip title="I am a Tooltip!">

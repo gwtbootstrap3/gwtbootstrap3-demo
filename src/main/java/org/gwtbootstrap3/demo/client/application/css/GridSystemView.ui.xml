@@ -43,7 +43,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Container fluid="true">
@@ -104,7 +104,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Responsiveness"/>
+                    <b:Heading size="H3" text="Responsiveness"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph>
@@ -171,7 +171,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Offsetting"/>
+                    <b:Heading size="H3" text="Offsetting"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Container fluid="true">
@@ -200,7 +200,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Nesting"/>
+                    <b:Heading size="H3" text="Nesting"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Container fluid="true">
@@ -237,7 +237,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Ordering"/>
+                    <b:Heading size="H3" text="Ordering"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Container fluid="true">

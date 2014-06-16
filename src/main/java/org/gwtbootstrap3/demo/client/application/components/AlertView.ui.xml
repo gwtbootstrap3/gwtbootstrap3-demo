@@ -34,7 +34,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Alert type="SUCCESS">
@@ -81,7 +81,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Dismissable"/>
+                    <b:Heading size="H3" text="Dismissable"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Alert addStyleNames="{style.margin-fix}" type="SUCCESS" dismissable="true">
@@ -101,7 +101,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Links Inside"/>
+                    <b:Heading size="H3" text="Links Inside"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Alert addStyleNames="{style.margin-fix}" type="SUCCESS" dismissable="true">

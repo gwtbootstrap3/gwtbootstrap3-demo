@@ -29,7 +29,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Pagination>
@@ -71,7 +71,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Pager"/>
+                    <b:Heading size="H3" text="Pager"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Pager/>

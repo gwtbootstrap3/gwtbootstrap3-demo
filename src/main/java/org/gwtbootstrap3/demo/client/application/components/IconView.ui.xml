@@ -35,7 +35,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Available Icons"/>
+                    <b:Heading size="H3" text="Available Icons"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph>
@@ -50,7 +50,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic Use"/>
+                    <b:Heading size="H3" text="Basic Use"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Icon type="GEAR"/>
@@ -79,7 +79,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Larger Icons"/>
+                    <b:Heading size="H3" text="Larger Icons"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Icon addStyleNames="{style.spacing}" type="GEAR" size="LARGE"/>
@@ -101,7 +101,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Spinning"/>
+                    <b:Heading size="H3" text="Spinning"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Icon addStyleNames="{style.spacing}" type="GEAR" size="LARGE" spin="true"/>
@@ -116,7 +116,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Rotated &amp; Flipped"/>
+                    <b:Heading size="H3" text="Rotated &amp; Flipped"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Icon addStyleNames="{style.spacing}" type="FLAG_O" size="LARGE" rotate="ROTATE_90"/>
@@ -138,7 +138,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Stacked Icons"/>
+                    <b:Heading size="H3" text="Stacked Icons"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:IconStack>

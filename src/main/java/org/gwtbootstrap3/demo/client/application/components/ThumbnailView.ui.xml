@@ -29,7 +29,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="As Links"/>
+                    <b:Heading size="H3" text="As Links"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
@@ -66,7 +66,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Custom Content"/>
+                    <b:Heading size="H3" text="Custom Content"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
@@ -74,7 +74,7 @@
                             <b:ThumbnailPanel>
                                 <b:Image url="images/test.png" type="THUMBNAIL"/>
                                 <b:Caption>
-                                    <b:Heading size="3" text="Heading"/>
+                                    <b:Heading size="H3" text="Heading"/>
                                     <b.html:Paragraph text="Content here..."/>
                                     <b:Button text="Button"/>
                                 </b:Caption>
@@ -84,7 +84,7 @@
                             <b:ThumbnailPanel>
                                 <b:Image url="images/test.png" type="THUMBNAIL"/>
                                 <b:Caption>
-                                    <b:Heading size="3" text="Heading"/>
+                                    <b:Heading size="H3" text="Heading"/>
                                     <b.html:Paragraph text="Content here..."/>
                                     <b:Button text="Button"/>
                                 </b:Caption>
@@ -94,7 +94,7 @@
                             <b:ThumbnailPanel>
                                 <b:Image url="images/test.png" type="THUMBNAIL"/>
                                 <b:Caption>
-                                    <b:Heading size="3" text="Heading"/>
+                                    <b:Heading size="H3" text="Heading"/>
                                     <b.html:Paragraph text="Content here..."/>
                                     <b:Button text="Button"/>
                                 </b:Caption>

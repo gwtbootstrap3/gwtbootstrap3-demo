@@ -36,7 +36,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <g:FlowPanel addStyleNames="{style.labels}">
@@ -58,7 +58,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Advanced"/>
+                    <b:Heading size="H3" text="Advanced"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <g:FlowPanel addStyleNames="{style.labels}">

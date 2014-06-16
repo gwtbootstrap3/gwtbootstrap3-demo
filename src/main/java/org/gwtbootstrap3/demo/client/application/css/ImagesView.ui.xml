@@ -43,7 +43,7 @@
             <b:PageHeader text="Images"/>
 
             <b:BlockQuote addStyleNames="{style.danger}">
-                <b:Heading addStyleNames="{style.margin-fix}" size="4" text="Cross-browser compatibility"/>
+                <b:Heading addStyleNames="{style.margin-fix}" size="H4" text="Cross-browser compatibility"/>
                 <b.html:Paragraph>
                     Keep in mind that Internet Explorer 8 lacks support for rounded corners.
                 </b.html:Paragraph>
@@ -51,7 +51,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Image addStyleNames="{style.spacing}" type="ROUNDED" url="images/test.png"/>

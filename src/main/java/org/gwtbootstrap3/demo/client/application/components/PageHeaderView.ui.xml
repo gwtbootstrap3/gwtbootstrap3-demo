@@ -24,21 +24,21 @@
     <b:Row>
         <b:Column size="XS_12">
 
-        <b:PageHeader text="Page Headers"/>
+            <b:PageHeader text="Page Headers"/>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Basic"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:PageHeader text="Heading" subText="sub heading"/>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:PageHeader text="..." subText="..."/&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Basic"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:PageHeader text="Heading" subText="sub heading"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:PageHeader text="..." subText="..."/&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
         </b:Column>
 
     </b:Row>

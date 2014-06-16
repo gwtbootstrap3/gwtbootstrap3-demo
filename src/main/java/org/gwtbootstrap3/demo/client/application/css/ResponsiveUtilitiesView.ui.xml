@@ -48,7 +48,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Visible / Hidden on..."/>
+                    <b:Heading size="H3" text="Visible / Hidden on..."/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>

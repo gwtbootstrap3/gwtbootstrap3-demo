@@ -38,7 +38,7 @@
             <b:PageHeader text="Carousel"/>
 
             <b:BlockQuote addStyleNames="{style.danger}">
-                <b:Heading addStyleNames="{style.margin-fix}" size="4"
+                <b:Heading addStyleNames="{style.margin-fix}" size="H4"
                            text="Cross-browser compatibility"/>
                 <b.html:Paragraph>
                     <b>Transition animations not supported in Internet Explorer 8 &amp;
@@ -56,7 +56,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Carousel b:id="carousel-basic">
@@ -109,7 +109,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="With Captions"/>
+                    <b:Heading size="H3" text="With Captions"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Carousel b:id="carousel-captions">
@@ -125,21 +125,21 @@
                             <b:CarouselSlide active="true">
                                 <b:Image width="100%" url="images/carousel1.png"/>
                                 <b:CarouselCaption>
-                                    <b:Heading size="3" text="Slide 1"/>
+                                    <b:Heading size="H3" text="Slide 1"/>
                                     <b.html:Paragraph text="Caption!"/>
                                 </b:CarouselCaption>
                             </b:CarouselSlide>
                             <b:CarouselSlide>
                                 <b:Image width="100%" url="images/carousel2.png"/>
                                 <b:CarouselCaption>
-                                    <b:Heading size="3" text="Slide 2"/>
+                                    <b:Heading size="H3" text="Slide 2"/>
                                     <b.html:Paragraph text="Caption!"/>
                                 </b:CarouselCaption>
                             </b:CarouselSlide>
                             <b:CarouselSlide>
                                 <b:Image width="100%" url="images/carousel3.png"/>
                                 <b:CarouselCaption>
-                                    <b:Heading size="3" text="Slide 3"/>
+                                    <b:Heading size="H3" text="Slide 3"/>
                                     <b.html:Paragraph text="Caption!"/>
                                 </b:CarouselCaption>
                             </b:CarouselSlide>

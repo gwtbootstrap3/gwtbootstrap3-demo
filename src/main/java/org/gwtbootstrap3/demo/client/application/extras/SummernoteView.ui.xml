@@ -70,9 +70,9 @@
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
-                <b:Heading addStyleNames="{style.margin-fix}" size="4" text="Required for use"/>
+                <b:Heading addStyleNames="{style.margin-fix}" size="H4" text="Required for use"/>
                 <b.html:Paragraph>
-                To use Summernote, you must first add the extras module to your project. In Maven:
+                    To use Summernote, you must first add the extras module to your project. In Maven:
                 </b.html:Paragraph>
                 <d:PrettyPre addStyleNames="lang-xml">
                     &lt;dependency&gt;\n
@@ -83,7 +83,7 @@
                     &lt;/dependency&gt;
                 </d:PrettyPre>
                 <b.html:Paragraph>
-                Then you need to inherit the following GWT Module
+                    Then you need to inherit the following GWT Module
                     <strong>additionally</strong>
                     to any GwtBootstrap3
                     module into your *.gwt.xml of your project:
@@ -92,7 +92,7 @@
                     &lt;inherits name="org.gwtbootstrap3.extras.summernote.Summernote"/&gt;
                 </d:PrettyPre>
                 <b.html:Paragraph>
-                Last but not least must add this namespace to your *.ui.xml (don't have to name it summer):
+                    Last but not least must add this namespace to your *.ui.xml (don't have to name it summer):
                 </b.html:Paragraph>
                 <d:PrettyPre addStyleNames="lang-xml">
                     xmlns:summer="urn:import:org.gwtbootstrap3.extras.summernote.client.ui"
@@ -101,7 +101,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Basic"/>
+                    <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <summer:Summernote/>
@@ -115,19 +115,19 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Custom Toolbar / Sizing"/>
+                    <b:Heading size="H3" text="Custom Toolbar / Sizing"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <summer:Summernote ui:field="customToolbar"/>
                 </b:PanelBody>
                 <b:PanelFooter>
-                    <b:Heading size="4" text="UiBinder"/>
+                    <b:Heading size="H4" text="UiBinder"/>
 
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;summer:Summernote ui:field="customToolbar"/&gt;
                     </d:PrettyPre>
 
-                    <b:Heading size="4" text="Java code"/>
+                    <b:Heading size="H4" text="Java code"/>
 
                     <d:PrettyPre addStyleNames="lang-java">
                         @UiField(provided = true)\n
@@ -143,7 +143,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Get/Set Code"/>
+                    <b:Heading size="H3" text="Get/Set Code"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <summer:Summernote ui:field="getSetCode"/>
@@ -151,13 +151,13 @@
                               ui:field="getCode"/>
                 </b:PanelBody>
                 <b:PanelFooter>
-                    <b:Heading size="4" text="UiBinder"/>
+                    <b:Heading size="H4" text="UiBinder"/>
 
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;summer:Summernote ui:field="getSetCode"/&gt;
                     </d:PrettyPre>
 
-                    <b:Heading size="4" text="Java code"/>
+                    <b:Heading size="H4" text="Java code"/>
 
                     <d:PrettyPre addStyleNames="lang-java">
                         @UiField(provided = true)\n
@@ -176,7 +176,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Enable/Disable"/>
+                    <b:Heading size="H3" text="Enable/Disable"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Button type="PRIMARY" text="Enable" ui:field="enableDisableButton"
@@ -184,13 +184,13 @@
                     <summer:Summernote enabled="false" ui:field="enableDisable"/>
                 </b:PanelBody>
                 <b:PanelFooter>
-                    <b:Heading size="4" text="UiBinder"/>
+                    <b:Heading size="H4" text="UiBinder"/>
 
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;summer:Summernote enabled="false" ui:field="enableDisable"/&gt;
                     </d:PrettyPre>
 
-                    <b:Heading size="4" text="Java code"/>
+                    <b:Heading size="H4" text="Java code"/>
 
                     <d:PrettyPre addStyleNames="lang-java">
                         Click Handler\n
@@ -202,7 +202,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Events"/>
+                    <b:Heading size="H3" text="Events"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>

@@ -29,7 +29,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Inline"/>
+                    <b:Heading size="H3" text="Inline"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Strong text="Code for section: "/>
@@ -48,7 +48,7 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Block"/>
+                    <b:Heading size="H3" text="Block"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Pre>

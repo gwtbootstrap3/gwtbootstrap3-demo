@@ -31,97 +31,97 @@
     <b:Row>
         <b:Column size="XS_12">
 
-        <b:PageHeader text="Forms" subText="form control widgets"/>
-
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Basic"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:Form>
-                    <b:FieldSet>
-                        <b:FormGroup>
-                            <b:FormLabel for="formEmail">Email</b:FormLabel>
-                            <b:FormStatic b:id="formEmail">email@example.example</b:FormStatic>
-                        </b:FormGroup>
-
-                        <b:FormGroup>
-                            <b:FormLabel for="formPassword">Password</b:FormLabel>
-                            <b:Input type="PASSWORD" b:id="formPassword"/>
-                        </b:FormGroup>
-
-                        <b:FormGroup>
-                            <b:FormLabel for="formName">Name</b:FormLabel>
-                            <b:TextBox text="blabla" b:id="formName"/>
-                        </b:FormGroup>
-
-                        <b:FormGroup validationState="WARNING">
-                            <b:FormLabel for="formWarning">Input with warning</b:FormLabel>
-                            <b:TextBox b:id="formWarning"/>
-                            <b:HelpBlock text="Form inline help here"/>
-                        </b:FormGroup>
-
-                        <b:FormGroup validationState="ERROR">
-                            <b:FormLabel for="formError">Input with error</b:FormLabel>
-                            <b:TextBox b:id="formError"/>
-                        </b:FormGroup>
-
-                        <b:FormGroup validationState="SUCCESS">
-                            <b:FormLabel for="formSuccess">Input with success / Disabled</b:FormLabel>
-                            <b:TextBox b:id="formSuccess" enabled="false"/>
-                        </b:FormGroup>
-
-                        <b:Button>Send</b:Button>
-                    </b:FieldSet>
-                </b:Form>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:Form&gt;\n
-                    \s\s&lt;b:FieldSet&gt;\n
-                    \s\s\s\s&lt;b:Legend&gt;Sample form&lt;/b:Legend&gt;\n
-                    \n
-                    \s\s\s\s&lt;b:FormGroup&gt;\n
-                    \s\s\s\s\s\s&lt;b:FormLabel for="formEmail"&gt;Email&lt;/b:FormLabel&gt;\n
-                    \s\s\s\s\s\s&lt;b:FormStatic b:id="formEmail"&gt;email@example.example&lt;/b:FormStatic&gt;\n
-                    \s\s\s\s&lt;/b:FormGroup&gt;\n
-                    \n
-                    \s\s\s\s&lt;b:FormGroup&gt;\n
-                    \s\s\s\s\s\s&lt;b:FormLabel for=&quot;formPassword&quot;&gt;Password&lt;/b:FormLabel&gt;\n
-                    \s\s\s\s\s\s&lt;b:Input type="PASSWORD" b:id=&quot;formPassword&quot;/&gt;\n
-                    \s\s\s\s&lt;/b:FormGroup&gt;\n
-                    \n
-                    \s\s\s\s&lt;b:FormGroup&gt;\n
-                    \s\s\s\s\s\s&lt;b:FormLabel for="formName"&gt;Name&lt;/b:FormLabel&gt;\n
-                    \s\s\s\s\s\s&lt;b:TextBox text="blabla" b:id="formName"/&gt;\n
-                    \s\s\s\s&lt;/b:FormGroup&gt;\n
-                    \n
-                    \s\s\s\s&lt;b:FormGroup validationState="WARNING"&gt;\n
-                    \s\s\s\s\s\s&lt;b:FormLabel for="formWarning"&gt;Input with warning&lt;/b:FormLabel&gt;\n
-                    \s\s\s\s\s\s&lt;b:TextBox b:id="formWarning"/&gt;\n
-                    \s\s\s\s\s\s&lt;b:HelpBlock text=""/&gt;\n
-                    \s\s\s\s&lt;/b:FormGroup&gt;\n
-                    \n
-                    \s\s\s\s&lt;b:FormGroup validationState="ERROR"&gt;\n
-                    \s\s\s\s\s\s&lt;b:FormLabel for="formError"&gt;Input with error&lt;/b:FormLabel&gt;\n
-                    \s\s\s\s\s\s&lt;b:TextBox b:id="formError"/&gt;\n
-                    \s\s\s\s&lt;/b:FormGroup&gt;\n
-                    \n
-                    \s\s\s\s&lt;b:FormGroup validationState="SUCCESS"&gt;\n
-                    \s\s\s\s\s\s&lt;b:FormLabel for="formSuccess"&gt;Input with success&lt;/b:FormLabel&gt;\n
-                    \s\s\s\s\s\s&lt;b:TextBox b:id="formSuccess"/&gt;\n
-                    \s\s\s\s&lt;/b:FormGroup&gt;\n
-                    \n
-                    \s\s\s\s&lt;b:Button&gt;Send&lt;/b:Button&gt;\n
-                    \s\s&lt;/b:FieldSet&gt;\n
-                    &lt;/b:Form&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+            <b:PageHeader text="Forms" subText="form control widgets"/>
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="3" text="Changing Validation"/>
+                    <b:Heading size="H3" text="Basic"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Form>
+                        <b:FieldSet>
+                            <b:FormGroup>
+                                <b:FormLabel for="formEmail">Email</b:FormLabel>
+                                <b:FormStatic b:id="formEmail">email@example.example</b:FormStatic>
+                            </b:FormGroup>
+
+                            <b:FormGroup>
+                                <b:FormLabel for="formPassword">Password</b:FormLabel>
+                                <b:Input type="PASSWORD" b:id="formPassword"/>
+                            </b:FormGroup>
+
+                            <b:FormGroup>
+                                <b:FormLabel for="formName">Name</b:FormLabel>
+                                <b:TextBox text="blabla" b:id="formName"/>
+                            </b:FormGroup>
+
+                            <b:FormGroup validationState="WARNING">
+                                <b:FormLabel for="formWarning">Input with warning</b:FormLabel>
+                                <b:TextBox b:id="formWarning"/>
+                                <b:HelpBlock text="Form inline help here"/>
+                            </b:FormGroup>
+
+                            <b:FormGroup validationState="ERROR">
+                                <b:FormLabel for="formError">Input with error</b:FormLabel>
+                                <b:TextBox b:id="formError"/>
+                            </b:FormGroup>
+
+                            <b:FormGroup validationState="SUCCESS">
+                                <b:FormLabel for="formSuccess">Input with success / Disabled</b:FormLabel>
+                                <b:TextBox b:id="formSuccess" enabled="false"/>
+                            </b:FormGroup>
+
+                            <b:Button>Send</b:Button>
+                        </b:FieldSet>
+                    </b:Form>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Form&gt;\n
+                        \s\s&lt;b:FieldSet&gt;\n
+                        \s\s\s\s&lt;b:Legend&gt;Sample form&lt;/b:Legend&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:FormGroup&gt;\n
+                        \s\s\s\s\s\s&lt;b:FormLabel for="formEmail"&gt;Email&lt;/b:FormLabel&gt;\n
+                        \s\s\s\s\s\s&lt;b:FormStatic b:id="formEmail"&gt;email@example.example&lt;/b:FormStatic&gt;\n
+                        \s\s\s\s&lt;/b:FormGroup&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:FormGroup&gt;\n
+                        \s\s\s\s\s\s&lt;b:FormLabel for=&quot;formPassword&quot;&gt;Password&lt;/b:FormLabel&gt;\n
+                        \s\s\s\s\s\s&lt;b:Input type="PASSWORD" b:id=&quot;formPassword&quot;/&gt;\n
+                        \s\s\s\s&lt;/b:FormGroup&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:FormGroup&gt;\n
+                        \s\s\s\s\s\s&lt;b:FormLabel for="formName"&gt;Name&lt;/b:FormLabel&gt;\n
+                        \s\s\s\s\s\s&lt;b:TextBox text="blabla" b:id="formName"/&gt;\n
+                        \s\s\s\s&lt;/b:FormGroup&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:FormGroup validationState="WARNING"&gt;\n
+                        \s\s\s\s\s\s&lt;b:FormLabel for="formWarning"&gt;Input with warning&lt;/b:FormLabel&gt;\n
+                        \s\s\s\s\s\s&lt;b:TextBox b:id="formWarning"/&gt;\n
+                        \s\s\s\s\s\s&lt;b:HelpBlock text=""/&gt;\n
+                        \s\s\s\s&lt;/b:FormGroup&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:FormGroup validationState="ERROR"&gt;\n
+                        \s\s\s\s\s\s&lt;b:FormLabel for="formError"&gt;Input with error&lt;/b:FormLabel&gt;\n
+                        \s\s\s\s\s\s&lt;b:TextBox b:id="formError"/&gt;\n
+                        \s\s\s\s&lt;/b:FormGroup&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:FormGroup validationState="SUCCESS"&gt;\n
+                        \s\s\s\s\s\s&lt;b:FormLabel for="formSuccess"&gt;Input with success&lt;/b:FormLabel&gt;\n
+                        \s\s\s\s\s\s&lt;b:TextBox b:id="formSuccess"/&gt;\n
+                        \s\s\s\s&lt;/b:FormGroup&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:Button&gt;Send&lt;/b:Button&gt;\n
+                        \s\s&lt;/b:FieldSet&gt;\n
+                        &lt;/b:Form&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Changing Validation"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Form>
@@ -131,15 +131,19 @@
                                 <b:TextBox b:id="formSuccess"/>
                             </b:FormGroup>
 
-                            <b:Button addStyleNames="{style.margin-right}" type="PRIMARY" ui:field="none">None</b:Button>
-                            <b:Button addStyleNames="{style.margin-right}" type="PRIMARY" ui:field="success">Success</b:Button>
-                            <b:Button addStyleNames="{style.margin-right}" type="PRIMARY" ui:field="warning">Warning</b:Button>
-                            <b:Button addStyleNames="{style.margin-right}" type="PRIMARY" ui:field="error">Error</b:Button>
+                            <b:Button addStyleNames="{style.margin-right}" type="PRIMARY" ui:field="none">None
+                            </b:Button>
+                            <b:Button addStyleNames="{style.margin-right}" type="PRIMARY" ui:field="success">Success
+                            </b:Button>
+                            <b:Button addStyleNames="{style.margin-right}" type="PRIMARY" ui:field="warning">Warning
+                            </b:Button>
+                            <b:Button addStyleNames="{style.margin-right}" type="PRIMARY" ui:field="error">Error
+                            </b:Button>
                         </b:FieldSet>
                     </b:Form>
                 </b:PanelBody>
                 <b:PanelFooter>
-                    <b:Heading size="4" text="UiBinder Code"/>
+                    <b:Heading size="H4" text="UiBinder Code"/>
 
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:Form&gt;\n
@@ -156,7 +160,7 @@
                         &lt;/b:Form&gt;
                     </d:PrettyPre>
 
-                    <b:Heading size="4" text="Java code"/>
+                    <b:Heading size="H4" text="Java code"/>
 
                     <d:PrettyPre addStyleNames="lang-java">
                         @UiField\n
@@ -171,155 +175,155 @@
                 </b:PanelFooter>
             </b:Panel>
 
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Inline"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:Form type="INLINE">
-                    <b:FieldSet>
-                        <b:Legend>Sample form</b:Legend>
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Inline"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Form type="INLINE">
+                        <b:FieldSet>
+                            <b:Legend>Sample form</b:Legend>
 
-                        <b:FormGroup>
-                            <b:TextBox placeholder="Enter email"/>
-                        </b:FormGroup>
+                            <b:FormGroup>
+                                <b:TextBox placeholder="Enter email"/>
+                            </b:FormGroup>
 
-                        <b:FormGroup>
-                            <b:Input type="PASSWORD" placeholder="Enter password"/>
-                        </b:FormGroup>
+                            <b:FormGroup>
+                                <b:Input type="PASSWORD" placeholder="Enter password"/>
+                            </b:FormGroup>
 
-                        <b:FormGroup>
-                            <b:CheckBox text="Remember me"/>
-                        </b:FormGroup>
-
-                        <b:FormGroup>
-                            <b:Button>Send</b:Button>
-                        </b:FormGroup>
-                    </b:FieldSet>
-                </b:Form>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:Form type="INLINE"&gt;\n
-                    \s\s&lt;b:FieldSet&gt;\n
-                    \s\s\s\s&lt;b:Legend&gt;Sample form&lt;/b:Legend&gt;\n
-                    \n
-                    \s\s\s\s&lt;b:FormGroup&gt;\n
-                    \s\s\s\s\s\s&lt;b:TextBox placeholder=&quot;Enter email&quot;/&gt;\n
-                    \s\s\s\s&lt;/b:FormGroup&gt;\n
-                    \n
-                    \s\s\s\s&lt;b:FormGroup&gt;\n
-                    \s\s\s\s\s\s&lt;b:Input type="PASSWORD placeholder=&quot;Enter password&quot;/&gt;\n
-                    \s\s\s\s&lt;/b:FormGroup&gt;\n
-                    \n
-                    \s\s\s\s&lt;b:FormGroup&gt;\n
-                    \s\s\s\s\s\s&lt;b:CheckBox text="Remember me"/&gt;\n
-                    \s\s\s\s&lt;/b:FormGroup&gt;\n
-                    \n
-                    \s\s\s\s&lt;b:FormGroup&gt;\n
-                    \s\s\s\s\s\s&lt;b:Button&gt;Send&lt;/b:Button&gt;\n
-                    \s\s\s\s&lt;/b:FormGroup&gt;\n
-                    \s\s&lt;/b:FieldSet&gt;\n
-                    &lt;/b:Form&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
-
-        <b:Panel>
-            <b:PanelHeader>
-                <b:Heading size="3" text="Horizontal"/>
-            </b:PanelHeader>
-            <b:PanelBody>
-                <b:Form type="HORIZONTAL">
-                    <b:FieldSet>
-                        <b:Legend>Sample form</b:Legend>
-
-                        <b:FormGroup>
-                            <b:FormLabel for="formEmail" addStyleNames="col-lg-2">Email</b:FormLabel>
-                            <g:FlowPanel addStyleNames="col-lg-10">
-                                <b:FormStatic b:id="formEmail">email@example.example</b:FormStatic>
-                            </g:FlowPanel>
-                        </b:FormGroup>
-
-                        <b:FormGroup>
-                            <b:FormLabel for="formName" addStyleNames="col-lg-2">Name</b:FormLabel>
-                            <g:FlowPanel addStyleNames="col-lg-10">
-                                <b:TextBox text="blabla" b:id="formName"/>
-                            </g:FlowPanel>
-                        </b:FormGroup>
-
-                        <b:FormGroup>
-                            <b:FormLabel for="formCountry" addStyleNames="col-lg-2">Country</b:FormLabel>
-                            <g:FlowPanel addStyleNames="col-lg-10">
-                                <b:ListBox b:id="formCountry">
-                                    <g:item>USA</g:item>
-                                    <g:item>Germany</g:item>
-                                    <g:item>Other</g:item>
-                                </b:ListBox>
-                            </g:FlowPanel>
-                        </b:FormGroup>
-
-                        <b:FormGroup>
-                            <g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10">
+                            <b:FormGroup>
                                 <b:CheckBox text="Remember me"/>
-                            </g:FlowPanel>
-                        </b:FormGroup>
+                            </b:FormGroup>
 
-                        <b:FormGroup>
-                            <g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10">
+                            <b:FormGroup>
                                 <b:Button>Send</b:Button>
-                            </g:FlowPanel>
-                        </b:FormGroup>
-                    </b:FieldSet>
-                </b:Form>
-            </b:PanelBody>
-            <b:PanelFooter>
-                <d:PrettyPre addStyleNames="lang-xml">
-                    &lt;b:Form type="HORIZONTAL"&gt;\n
-                    \s\s&lt;b:FieldSet&gt;\n
-                    \s\s\s\s&lt;b:Legend&gt;Sample form&lt;/b:Legend&gt;\n
-                    \n
-                    \s\s\s\s&lt;b:FormGroup&gt;\n
-                    \s\s\s\s\s\s&lt;b:FormLabel for="formEmail" addStyleNames="col-lg-2"&gt;Email&lt;/b:FormLabel&gt;\n
-                    \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-10"&gt;\n
-                    \s\s\s\s\s\s\s\s&lt;b:FormStatic b:id="formEmail"&gt;email@example.example&lt;/b:FormStatic&gt;\n
-                    \s\s\s\s&lt;/g:FlowPanel&gt;\n
-                    \s\s\s\s&lt;/b:FormGroup&gt;\n
-                    \n
-                    \s\s\s\s&lt;b:FormGroup&gt;\n
-                    \s\s\s\s\s\s&lt;b:FormLabel for="formName" addStyleNames="col-lg-2"&gt;Name&lt;/b:FormLabel&gt;\n
-                    \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-10"&gt;\n
-                    \s\s\s\s\s\s\s\s&lt;b:TextBox text="blabla" b:id="formName"/&gt;\n
-                    \s\s\s\s\s\s&lt;/g:FlowPanel&gt;\n
-                    \s\s\s\s&lt;/b:FormGroup&gt;\n
-                    \n
-                    \s\s\s\s&lt;b:FormGroup&gt;\n
-                    \s\s\s\s\s\s&lt;b:FormLabel for="formCountry" addStyleNames="col-lg-2"&gt;Country&lt;/b:FormLabel&gt;\n
-                    \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-10"&gt;\n
-                    \s\s\s\s\s\s\s\s&lt;b:ListBox b:id="formCountry"&gt;\n
-                    \s\s\s\s\s\s\s\s\s\s&lt;g:item&gt;USA&lt;/g:item&gt;\n
-                    \s\s\s\s\s\s\s\s\s\s&lt;g:item&gt;Germany&lt;/g:item&gt;\n
-                    \s\s\s\s\s\s\s\s\s\s&lt;g:item&gt;Other&lt;/g:item&gt;\n
-                    \s\s\s\s\s\s\s\s&lt;/b:ListBox&gt;\n
-                    \s\s\s\s\s\s&lt;/g:FlowPanel&gt;\n
-                    \s\s\s\s&lt;/b:FormGroup&gt;\n
-                    \n
-                    \s\s\s\s&lt;b:FormGroup&gt;\n
-                    \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10"&gt;\n
-                    \s\s\s\s\s\s\s\s&lt;b:CheckBox text="Remember me"/&gt;\n
-                    \s\s\s\s\s\s&lt;/g:FlowPanel&gt;\n
-                    \s\s\s\s&lt;/b:FormGroup&gt;\n
-                    \n
-                    \s\s\s\s&lt;b:FormGroup&gt;\n
-                    \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10"&gt;\n
-                    \s\s\s\s\s\s\s\s&lt;b:Button&gt;Send&lt;/b:Button&gt;\n
-                    \s\s\s\s\s\s&lt;/g:FlowPanel&gt;\n
-                    \s\s\s\s&lt;/b:FormGroup&gt;\n
-                    \s\s&lt;/b:FieldSet&gt;\n
-                    &lt;/b:Form&gt;
-                </d:PrettyPre>
-            </b:PanelFooter>
-        </b:Panel>
+                            </b:FormGroup>
+                        </b:FieldSet>
+                    </b:Form>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Form type="INLINE"&gt;\n
+                        \s\s&lt;b:FieldSet&gt;\n
+                        \s\s\s\s&lt;b:Legend&gt;Sample form&lt;/b:Legend&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:FormGroup&gt;\n
+                        \s\s\s\s\s\s&lt;b:TextBox placeholder=&quot;Enter email&quot;/&gt;\n
+                        \s\s\s\s&lt;/b:FormGroup&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:FormGroup&gt;\n
+                        \s\s\s\s\s\s&lt;b:Input type="PASSWORD placeholder=&quot;Enter password&quot;/&gt;\n
+                        \s\s\s\s&lt;/b:FormGroup&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:FormGroup&gt;\n
+                        \s\s\s\s\s\s&lt;b:CheckBox text="Remember me"/&gt;\n
+                        \s\s\s\s&lt;/b:FormGroup&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:FormGroup&gt;\n
+                        \s\s\s\s\s\s&lt;b:Button&gt;Send&lt;/b:Button&gt;\n
+                        \s\s\s\s&lt;/b:FormGroup&gt;\n
+                        \s\s&lt;/b:FieldSet&gt;\n
+                        &lt;/b:Form&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Horizontal"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Form type="HORIZONTAL">
+                        <b:FieldSet>
+                            <b:Legend>Sample form</b:Legend>
+
+                            <b:FormGroup>
+                                <b:FormLabel for="formEmail" addStyleNames="col-lg-2">Email</b:FormLabel>
+                                <g:FlowPanel addStyleNames="col-lg-10">
+                                    <b:FormStatic b:id="formEmail">email@example.example</b:FormStatic>
+                                </g:FlowPanel>
+                            </b:FormGroup>
+
+                            <b:FormGroup>
+                                <b:FormLabel for="formName" addStyleNames="col-lg-2">Name</b:FormLabel>
+                                <g:FlowPanel addStyleNames="col-lg-10">
+                                    <b:TextBox text="blabla" b:id="formName"/>
+                                </g:FlowPanel>
+                            </b:FormGroup>
+
+                            <b:FormGroup>
+                                <b:FormLabel for="formCountry" addStyleNames="col-lg-2">Country</b:FormLabel>
+                                <g:FlowPanel addStyleNames="col-lg-10">
+                                    <b:ListBox b:id="formCountry">
+                                        <g:item>USA</g:item>
+                                        <g:item>Germany</g:item>
+                                        <g:item>Other</g:item>
+                                    </b:ListBox>
+                                </g:FlowPanel>
+                            </b:FormGroup>
+
+                            <b:FormGroup>
+                                <g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10">
+                                    <b:CheckBox text="Remember me"/>
+                                </g:FlowPanel>
+                            </b:FormGroup>
+
+                            <b:FormGroup>
+                                <g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10">
+                                    <b:Button>Send</b:Button>
+                                </g:FlowPanel>
+                            </b:FormGroup>
+                        </b:FieldSet>
+                    </b:Form>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Form type="HORIZONTAL"&gt;\n
+                        \s\s&lt;b:FieldSet&gt;\n
+                        \s\s\s\s&lt;b:Legend&gt;Sample form&lt;/b:Legend&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:FormGroup&gt;\n
+                        \s\s\s\s\s\s&lt;b:FormLabel for="formEmail" addStyleNames="col-lg-2"&gt;Email&lt;/b:FormLabel&gt;\n
+                        \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-10"&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:FormStatic b:id="formEmail"&gt;email@example.example&lt;/b:FormStatic&gt;\n
+                        \s\s\s\s&lt;/g:FlowPanel&gt;\n
+                        \s\s\s\s&lt;/b:FormGroup&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:FormGroup&gt;\n
+                        \s\s\s\s\s\s&lt;b:FormLabel for="formName" addStyleNames="col-lg-2"&gt;Name&lt;/b:FormLabel&gt;\n
+                        \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-10"&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:TextBox text="blabla" b:id="formName"/&gt;\n
+                        \s\s\s\s\s\s&lt;/g:FlowPanel&gt;\n
+                        \s\s\s\s&lt;/b:FormGroup&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:FormGroup&gt;\n
+                        \s\s\s\s\s\s&lt;b:FormLabel for="formCountry" addStyleNames="col-lg-2"&gt;Country&lt;/b:FormLabel&gt;\n
+                        \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-10"&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:ListBox b:id="formCountry"&gt;\n
+                        \s\s\s\s\s\s\s\s\s\s&lt;g:item&gt;USA&lt;/g:item&gt;\n
+                        \s\s\s\s\s\s\s\s\s\s&lt;g:item&gt;Germany&lt;/g:item&gt;\n
+                        \s\s\s\s\s\s\s\s\s\s&lt;g:item&gt;Other&lt;/g:item&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;/b:ListBox&gt;\n
+                        \s\s\s\s\s\s&lt;/g:FlowPanel&gt;\n
+                        \s\s\s\s&lt;/b:FormGroup&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:FormGroup&gt;\n
+                        \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10"&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:CheckBox text="Remember me"/&gt;\n
+                        \s\s\s\s\s\s&lt;/g:FlowPanel&gt;\n
+                        \s\s\s\s&lt;/b:FormGroup&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:FormGroup&gt;\n
+                        \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10"&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:Button&gt;Send&lt;/b:Button&gt;\n
+                        \s\s\s\s\s\s&lt;/g:FlowPanel&gt;\n
+                        \s\s\s\s&lt;/b:FormGroup&gt;\n
+                        \s\s&lt;/b:FieldSet&gt;\n
+                        &lt;/b:Form&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
         </b:Column>
 
     </b:Row>
