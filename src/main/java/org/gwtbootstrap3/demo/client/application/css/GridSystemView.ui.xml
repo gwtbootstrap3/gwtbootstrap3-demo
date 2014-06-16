@@ -89,7 +89,7 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Container&gt;\n
+                        &lt;b:Container fluid="true"&gt;\n
                         \s\s&lt;b:Row&gt;\n
                         \s\s\s\s&lt;b:Column size="MD_1"&gt;...&lt;/b:Column&gt;\n
                         \s\s\s\s&lt;b:Column size="MD_1"&gt;...&lt;/b:Column&gt;\n
@@ -155,7 +155,7 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        \s\s&lt;b:Container&gt;\n
+                        \s\s&lt;b:Container fluid="true"&gt;\n
                         \s\s&lt;b:Row&gt;\n
                         \s\s\s\s&lt;b:Column size="XS_6,SM_4,MD_3,LG_1"&gt;...&lt;/b:Column&gt;\n
                         \s\s\s\s&lt;b:Column size="XS_6,SM_4,MD_3,LG_1"&gt;...&lt;/b:Column&gt;\n
@@ -187,7 +187,7 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Container&gt;\n
+                        &lt;b:Container fluid="true"&gt;\n
                         \s\s&lt;b:Row&gt;\n
                         \s\s\s\s&lt;b:Column size="MD_4"&gt;...&lt;/b:Column&gt;\n
                         \s\s\s\s&lt;b:Column size="MD_4" offset="MD_4"&gt;...&lt;/b:Column&gt;\n
@@ -221,7 +221,7 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Container&gt;\n
+                        &lt;b:Container fluid="true"&gt;\n
                         \s\s&lt;b:Row&gt;\n
                         \s\s\s\s&lt;b:Column size="MD_9"&gt;\n
                         \s\s\s\s\s\s &lt;b:Row&gt;\n
@@ -253,7 +253,7 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Container&gt;\n
+                        &lt;b:Container fluid="true"&gt;\n
                         \s\s&lt;b:Row&gt;\n
                         \s\s\s\s&lt;b:Column size="MD_9" push="MD_3"&gt;...&lt;/b:Column&gt;\n
                         \s\s\s\s&lt;b:Column size="MD_3" pull="MD_9"&gt;...&lt;/b:Column&gt;\n
