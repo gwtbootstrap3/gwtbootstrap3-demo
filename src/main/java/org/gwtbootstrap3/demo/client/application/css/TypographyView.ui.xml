@@ -33,6 +33,8 @@
                     <b:Heading size="H3" text="Headings"/>
                 </b:PanelHeader>
                 <b:PanelBody>
+                    <b:Heading size="H6" subtext="Test"/>
+                    <b:Heading size="H1" text="Test"/>
                     <b:Heading size="H1" text="h1. Bootstrap heading" subtext="subtext"/>
                     <b:Heading size="H2" text="h2. Bootstrap heading" subtext="subtext"/>
                     <b:Heading size="H3" text="h3. Bootstrap heading" subtext="subtext"/>
