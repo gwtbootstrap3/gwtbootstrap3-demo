@@ -136,11 +136,11 @@
                             <b:ListDropDown>
                                 <b:AnchorButton dataToggle="DROPDOWN">Extras</b:AnchorButton>
                                 <b:DropDownMenu>
-                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getDatetimePicker}">DateTimePicker
-                                    </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getBootbox}">Bootbox
                                     </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getCard}">Cards
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getDatetimePicker}">DateTimePicker
                                     </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getGrowl}">Growl
                                     </b:AnchorListItem>
