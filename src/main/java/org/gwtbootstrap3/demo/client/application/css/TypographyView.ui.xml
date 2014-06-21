@@ -51,13 +51,13 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Heading size="1" subtext="..."/&gt;\n
-                        &lt;b:Heading size="2" subtext="..."/&gt;\n
-                        &lt;b:Heading size="3" subtext="..."/&gt;\n
-                        &lt;b:Heading size="4" subtext="..."/&gt;\n
-                        &lt;b:Heading size="5" subtext="..."/&gt;\n
-                        &lt;b:Heading size="6" subtext="..."/&gt;\n\n
-                        &lt;b:Heading size="1"&gt;\n
+                        &lt;b:Heading size="H1" subtext="..."/&gt;\n
+                        &lt;b:Heading size="H2" subtext="..."/&gt;\n
+                        &lt;b:Heading size="H3" subtext="..."/&gt;\n
+                        &lt;b:Heading size="H4" subtext="..."/&gt;\n
+                        &lt;b:Heading size="H5" subtext="..."/&gt;\n
+                        &lt;b:Heading size="H6" subtext="..."/&gt;\n\n
+                        &lt;b:Heading size="H1"&gt;\n
                         \s\s&lt;b:Icon type="..."/&gt;\n
                         \s\s&lt;b.html:Text type="..."/&gt;\n
                         &lt;/b:Heading&gt;\n

@@ -142,7 +142,7 @@
                         &lt;b:PanelGroup b:id="accordion"&gt;\n
                         \s\s&lt;b:Panel&gt;\n
                         \s\s\s\s&lt;b:PanelHeader&gt;\n
-                        \s\s\s\s\s\s&lt;b:Heading size="4"&gt;\n
+                        \s\s\s\s\s\s&lt;b:Heading size="H4"&gt;\n
                         \s\s\s\s\s\s\s\s&lt;b:Anchor dataToggle="COLLAPSE" dataParent="#accordion"
                         dataTarget="#collapseOne"/&gt;\n
                         \s\s\s\s\s\s&lt;/b:Heading&gt;\n
@@ -155,7 +155,7 @@
                         \s\s&lt;/b:Panel&gt;\n
                         \s\s&lt;b:Panel&gt;\n
                         \s\s\s\s&lt;b:PanelHeader&gt;\n
-                        \s\s\s\s\s\s&lt;b:Heading size="4"&gt;\n
+                        \s\s\s\s\s\s&lt;b:Heading size="H4"&gt;\n
                         \s\s\s\s\s\s\s\s&lt;b:Anchor dataToggle="COLLAPSE" dataParent="#accordion"
                         dataTarget="#collapseTwo"/&gt;\n
                         \s\s\s\s\s\s&lt;/b:Heading&gt;\n
@@ -168,7 +168,7 @@
                         \s\s&lt;/b:Panel&gt;\n
                         \s\s&lt;b:Panel&gt;\n
                         \s\s\s\s&lt;b:PanelHeader&gt;\n
-                        \s\s\s\s\s\s&lt;b:Heading size="4"&gt;\n
+                        \s\s\s\s\s\s&lt;b:Heading size="H4"&gt;\n
                         \s\s\s\s\s\s\s\s&lt;b:Anchor icon="..." dataToggle="COLLAPSE" dataParent="#accordion"
                         dataTarget="#collapseThree"/&gt;\n
                         \s\s\s\s\s\s&lt;/b:Heading&gt;\n
@@ -234,7 +234,7 @@
                         \s\s&lt;b:Panel&gt;\n
                         \s\s\s\s&lt;b:PanelHeader dataToggle="COLLAPSE" dataParent="#accordion2"
                         dataTarget="#collapseFour"&gt;\n
-                        \s\s\s\s\s\s&lt;b:Heading size="4" text="..."/&gt;\n
+                        \s\s\s\s\s\s&lt;b:Heading size="H4" text="..."/&gt;\n
                         \s\s\s\s&lt;/b:PanelHeader&gt;\n
                         \s\s\s\s&lt;b:PanelCollapse b:id="collapseOne"&gt;\n
                         \s\s\s\s\s\s&lt;b:PanelBody&gt;\n
@@ -245,7 +245,7 @@
                         \s\s&lt;b:Panel&gt;\n
                         \s\s\s\s&lt;b:PanelHeader dataToggle="COLLAPSE" dataParent="#accordion2"
                         dataTarget="#collapseFive"&gt;\n
-                        \s\s\s\s\s\s&lt;b:Heading size="4" text="..."/&gt;\n
+                        \s\s\s\s\s\s&lt;b:Heading size="H4" text="..."/&gt;\n
                         \s\s\s\s&lt;/b:PanelHeader&gt;\n
                         \s\s\s\s&lt;b:PanelCollapse b:id="collapseTwo"&gt;\n
                         \s\s\s\s\s\s&lt;b:PanelBody&gt;\n
@@ -256,7 +256,7 @@
                         \s\s&lt;b:Panel&gt;\n
                         \s\s\s\s&lt;b:PanelHeader dataToggle="COLLAPSE" dataParent="#accordion2"
                         dataTarget="#collapseSix"&gt;\n
-                        \s\s\s\s\s\s&lt;b:Heading size="4" text="..."/&gt;\n
+                        \s\s\s\s\s\s&lt;b:Heading size="H4" text="..."/&gt;\n
                         \s\s\s\s&lt;/b:PanelHeader&gt;\n
                         \s\s\s\s&lt;b:PanelCollapse b:id="collapseThree"&gt;\n
                         \s\s\s\s\s\s&lt;b:PanelBody&gt;\n

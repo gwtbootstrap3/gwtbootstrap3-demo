@@ -157,15 +157,15 @@
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:LinkedGroup&gt;\n
                         \s\s&lt;b:LinkedGroupItem active="true"&gt;\n
-                        \s\s\s\s&lt;b:Heading size="3" text="..."/&gt;\n
+                        \s\s\s\s&lt;b:Heading size="H3" text="..."/&gt;\n
                         \s\s\s\s&lt;b:LinkedGroupItemText text="..."/&gt;\n
                         \s\s&lt;/b:LinkedGroupItem&gt;\n
                         \s\s&lt;b:LinkedGroupItem&gt;\n
-                        \s\s\s\s&lt;b:Heading size="3" text="..."/&gt;\n
+                        \s\s\s\s&lt;b:Heading size="H3" text="..."/&gt;\n
                         \s\s\s\s&lt;b:LinkedGroupItemText text="..."/&gt;\n
                         \s\s&lt;/b:LinkedGroupItem&gt;\n
                         \s\s&lt;b:LinkedGroupItem&gt;\n
-                        \s\s\s\s&lt;b:Heading size="3" text="..."/&gt;\n
+                        \s\s\s\s&lt;b:Heading size="H3" text="..."/&gt;\n
                         \s\s\s\s&lt;b:LinkedGroupItemText text="..."/&gt;\n
                         \s\s&lt;/b:LinkedGroupItem&gt;\n
                         &lt;/b:LinkedGroup&gt;

@@ -48,7 +48,7 @@
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:Panel&gt;\n
                         \s\s&lt;b:PanelHeader&gt;\n
-                        \s\s\s\s&lt;b:Heading size="3" text="..."/&gt;\n
+                        \s\s\s\s&lt;b:Heading size="H3" text="..."/&gt;\n
                         \s\s&lt;/b:PanelHeader&gt;\n
                         \s\s&lt;b:PanelBody&gt;\n
                         \s\s\s\s&lt;b.html:Strong text="..."/&gt;\n
@@ -93,7 +93,7 @@
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:Panel type="INFO | DANGER | SUCCESS | PRIMARY | WARNING | DEFAULT"&gt;\n
                         \s\s&lt;b:PanelHeader&gt;\n
-                        \s\s\s\s&lt;b:Heading size="3" text="..."/&gt;\n
+                        \s\s\s\s&lt;b:Heading size="H3" text="..."/&gt;\n
                         \s\s&lt;/b:PanelHeader&gt;\n
                         \s\s&lt;b:PanelBody&gt;\n
                         \s\s\s\s&lt;b.html:Strong text="..."/&gt;\n
