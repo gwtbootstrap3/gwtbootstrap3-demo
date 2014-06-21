@@ -17,9 +17,10 @@
                 <b:Heading size="H1" text="Demo for GwtBootstrap"/>
 
                 <b.html:Paragraph>
-                    <a href="http://getbootstrap.com/">Twitter Bootstrap</a>
-                    wrapper for
+                    A
                     <a href="http://gwtproject.org/">GWT</a>
+                    wrapper for
+                    <a href="http://getbootstrap.com/">Bootstrap</a>
                 </b.html:Paragraph>
 
                 <b.html:Paragraph>
