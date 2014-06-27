@@ -42,7 +42,7 @@
                         <b:FieldSet>
                             <b:FormGroup>
                                 <b:FormLabel for="formEmail">Email</b:FormLabel>
-                                <b:FormStatic b:id="formEmail">email@example.example</b:FormStatic>
+                                <b:FormControlStatic b:id="formEmail">email@example.example</b:FormControlStatic>
                             </b:FormGroup>
 
                             <b:FormGroup>
@@ -241,7 +241,7 @@
                             <b:FormGroup>
                                 <b:FormLabel for="formEmail" addStyleNames="col-lg-2">Email</b:FormLabel>
                                 <g:FlowPanel addStyleNames="col-lg-10">
-                                    <b:FormStatic b:id="formEmail">email@example.example</b:FormStatic>
+                                    <b:FormControlStatic b:id="formEmail">email@example.example</b:FormControlStatic>
                                 </g:FlowPanel>
                             </b:FormGroup>
 
