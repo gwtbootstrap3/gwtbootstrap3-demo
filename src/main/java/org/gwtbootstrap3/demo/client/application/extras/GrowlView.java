@@ -24,19 +24,13 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
-
 import org.gwtbootstrap3.client.ui.Button;
 import org.gwtbootstrap3.client.ui.constants.IconType;
 import org.gwtbootstrap3.client.ui.constants.Styles;
-import org.gwtbootstrap3.extras.growl.client.ui.Growl;
-import org.gwtbootstrap3.extras.growl.client.ui.GrowlHelper;
-import org.gwtbootstrap3.extras.growl.client.ui.GrowlOptions;
-import org.gwtbootstrap3.extras.growl.client.ui.GrowlPosition;
-import org.gwtbootstrap3.extras.growl.client.ui.GrowlTemplate;
+import org.gwtbootstrap3.extras.growl.client.ui.*;
 
 /**
  * @author Jeff Isenhart
@@ -76,23 +70,23 @@ public class GrowlView extends ViewImpl implements GrowlPresenter.MyView {
         go.setAllowDismiss(false);
         Growl.growl("Title","Message",Styles.FONT_AWESOME_BASE + " " + IconType.SMILE_O.getCssName(),go);
     }
-    
+
     @UiHandler("positionAndFormatting")
     public void handlePositionAndFormatting(final ClickEvent event) {
     	GrowlOptions go = GrowlHelper.getNewOptions();
         go.setWarningType();
         go.setAllowDismiss(false);
-        
+
         GrowlPosition gp = GrowlHelper.getNewPosition();
         gp.setTop(false);
         gp.setCenter();
-        go.setPositionObject(gp);
-        
+//        go.setPositionObject(gp);
+
         GrowlTemplate gt = GrowlHelper.getNewTemplate();
         gt.setTitleDivider("<hr>");
-     
+
         go.setTemplateObject(gt);
-        
+
         Growl.growl("Title","Message",Styles.FONT_AWESOME_BASE + " " + IconType.SMILE_O.getCssName(),go);
     }
 

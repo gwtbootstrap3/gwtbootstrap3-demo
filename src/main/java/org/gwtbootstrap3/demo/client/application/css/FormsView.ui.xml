@@ -193,7 +193,7 @@
                             </b:FormGroup>
 
                             <b:FormGroup>
-                                <b:CheckBox text="Remember me"/>
+                                <b:InlineCheckBox text="Remember me"/> <b:InlineCheckBox text="Another check box"/>
                             </b:FormGroup>
 
                             <b:FormGroup>
@@ -217,7 +217,7 @@
                         \s\s\s\s&lt;/b:FormGroup&gt;\n
                         \n
                         \s\s\s\s&lt;b:FormGroup&gt;\n
-                        \s\s\s\s\s\s&lt;b:CheckBox text="Remember me"/&gt;\n
+                        \s\s\s\s\s\s&lt;b:InlineCheckBox text="Remember me"/&gt; &lt;b:InlineCheckBox text="Another check box"/&gt;\n
                         \s\s\s\s&lt;/b:FormGroup&gt;\n
                         \n
                         \s\s\s\s&lt;b:FormGroup&gt;\n
@@ -271,6 +271,14 @@
 
                             <b:FormGroup>
                                 <g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10">
+                                    <b:InlineRadio name="radio1" formValue="value1" text="Radio 1"/>
+                                    <b:InlineRadio name="radio1" formValue="value2" text="Radio 2"/>
+                                    <b:InlineRadio name="radio1" formValue="value3" text="Radio 3"/>
+                                </g:FlowPanel>
+                            </b:FormGroup>
+
+                            <b:FormGroup>
+                                <g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10">
                                     <b:Button>Send</b:Button>
                                 </g:FlowPanel>
                             </b:FormGroup>
@@ -311,6 +319,14 @@
                         \s\s\s\s&lt;b:FormGroup&gt;\n
                         \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10"&gt;\n
                         \s\s\s\s\s\s\s\s&lt;b:CheckBox text="Remember me"/&gt;\n
+                        \s\s\s\s\s\s&lt;/g:FlowPanel&gt;\n
+                        \s\s\s\s&lt;/b:FormGroup&gt;\n
+                        \n
+                        \s\s\s\s&lt;b:FormGroup&gt;\n
+                        \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-offset-2 col-lg-10"&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:InlineRadio name="radio1" formValue="value1" text="Radio 1"/&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:InlineRadio name="radio1" formValue="value2" text="Radio 2"/&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:InlineRadio name="radio1" formValue="value3" text="Radio 3"/&gt;\n
                         \s\s\s\s\s\s&lt;/g:FlowPanel&gt;\n
                         \s\s\s\s&lt;/b:FormGroup&gt;\n
                         \n

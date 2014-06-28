@@ -32,21 +32,21 @@
     <inherits name="org.gwtbootstrap3.extras.respond.Respond"/>
     <inherits name="org.gwtbootstrap3.extras.growl.Growl"/>
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
-    
+
     <inherits name='org.gwtbootstrap3.extras.cachemanifest.Offline'/>
-	<add-linker name="offline" />
+    <add-linker name="offline"/>
     <extend-configuration-property name="cachemanifest_static_files"
                                    value="/gwtbootstrap3-demo/GwtBootstrap3Demo.html"/>
 
-    <!--For SDM-->
+    <!-- For SDM -->
     <add-linker name="xsiframe"/>
     <set-configuration-property name="devModeRedirectEnabled" value="true"/>
     <set-configuration-property name="gwt.superdevmode" value="on"/>
 
-    <!-- Specify the paths for translatable code                    -->
+    <!-- Specify the paths for translatable code -->
     <source path="client"/>
 
-    <!-- GWT Modules                                                -->
+    <!-- GWT Modules -->
     <set-configuration-property name="gin.ginjector.modules"
                                 value="org.gwtbootstrap3.demo.client.gin.DemoModule"/>
 
