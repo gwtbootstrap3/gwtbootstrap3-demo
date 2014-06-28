@@ -55,25 +55,25 @@ public class GrowlView extends ViewImpl implements GrowlPresenter.MyView {
 
     @UiHandler("basicGrowlWithTitle")
     public void handleBasicGrowlWithTitle(final ClickEvent event) {
-    	Growl.growl("Title","Message");
+        Growl.growl("Title", "Message");
     }
 
     @UiHandler("basicGrowlWithTitleIcon")
     public void handleBasicGrowlWithTitleIcon(final ClickEvent event) {
-    	 Growl.growl("Title","Message",Styles.FONT_AWESOME_BASE + " " + IconType.SMILE_O.getCssName());
+        Growl.growl("Title", "Message", Styles.FONT_AWESOME_BASE + " " + IconType.SMILE_O.getCssName());
     }
 
     @UiHandler("changeBackgroundAndDismiss")
     public void handleChangeBackgroundAndDismiss(final ClickEvent event) {
-    	GrowlOptions go = GrowlHelper.getNewOptions();
+        GrowlOptions go = GrowlHelper.getNewOptions();
         go.setSuccessType();
         go.setAllowDismiss(false);
-        Growl.growl("Title","Message",Styles.FONT_AWESOME_BASE + " " + IconType.SMILE_O.getCssName(),go);
+        Growl.growl("Title", "Message", Styles.FONT_AWESOME_BASE + " " + IconType.SMILE_O.getCssName(), go);
     }
 
     @UiHandler("positionAndFormatting")
     public void handlePositionAndFormatting(final ClickEvent event) {
-    	GrowlOptions go = GrowlHelper.getNewOptions();
+        GrowlOptions go = GrowlHelper.getNewOptions();
         go.setWarningType();
         go.setAllowDismiss(false);
 
@@ -87,9 +87,8 @@ public class GrowlView extends ViewImpl implements GrowlPresenter.MyView {
 
         go.setTemplateObject(gt);
 
-        Growl.growl("Title","Message",Styles.FONT_AWESOME_BASE + " " + IconType.SMILE_O.getCssName(),go);
+        Growl.growl("Title", "Message", Styles.FONT_AWESOME_BASE + " " + IconType.SMILE_O.getCssName(), go);
     }
-
 
     interface Binder extends UiBinder<Widget, GrowlView> {
     }

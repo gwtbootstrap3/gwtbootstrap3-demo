@@ -83,7 +83,6 @@ public class BootboxJSView extends ViewImpl implements BootboxJSPresenter.MyView
         });
     }
 
-
     interface Binder extends UiBinder<Widget, BootboxJSView> {
     }
 

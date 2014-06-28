@@ -20,7 +20,6 @@ package org.gwtbootstrap3.demo.client.application.components;
  * #L%
  */
 
-
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;

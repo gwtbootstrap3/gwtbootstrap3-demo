@@ -20,7 +20,6 @@ package org.gwtbootstrap3.demo.client.ui;
  * #L%
  */
 
-
 import org.gwtbootstrap3.client.ui.Code;
 import org.gwtbootstrap3.demo.client.ui.constants.Styles;
 

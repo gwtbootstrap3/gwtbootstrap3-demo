@@ -20,7 +20,6 @@ package org.gwtbootstrap3.demo.client.application;
  * #L%
  */
 
-
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import org.gwtbootstrap3.demo.client.application.components.*;
 import org.gwtbootstrap3.demo.client.application.css.*;

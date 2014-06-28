@@ -20,7 +20,6 @@ package org.gwtbootstrap3.demo.client.ui.constants;
  * #L%
  */
 
-
 /**
  * @author Sven Jacobs
  */

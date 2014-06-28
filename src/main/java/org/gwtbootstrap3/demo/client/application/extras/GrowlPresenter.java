@@ -20,7 +20,6 @@ package org.gwtbootstrap3.demo.client.application.extras;
  * #L%
  */
 
-
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
@@ -46,8 +45,8 @@ public class GrowlPresenter extends Presenter<GrowlPresenter.MyView, GrowlPresen
 
     @Inject
     public GrowlPresenter(final EventBus eventBus,
-                              final MyView view,
-                              final MyProxy proxy) {
+                          final MyView view,
+                          final MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.TYPE_SetMainContent);
     }
 }

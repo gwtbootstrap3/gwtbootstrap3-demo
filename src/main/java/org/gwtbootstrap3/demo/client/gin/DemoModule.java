@@ -20,7 +20,6 @@ package org.gwtbootstrap3.demo.client.gin;
  * #L%
  */
 
-
 import com.gwtplatform.mvp.client.annotations.DefaultPlace;
 import com.gwtplatform.mvp.client.annotations.ErrorPlace;
 import com.gwtplatform.mvp.client.annotations.GaAccount;

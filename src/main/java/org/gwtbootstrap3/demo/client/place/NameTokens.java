@@ -20,7 +20,6 @@ package org.gwtbootstrap3.demo.client.place;
  * #L%
  */
 
-
 /**
  * @author Joshua Godi
  */
@@ -154,7 +153,7 @@ public class NameTokens {
     public static String getGrowl() {
         return GROWL;
     }
-    
+
     public static String getInputGroups() {
         return INPUT_GROUPS;
     }
