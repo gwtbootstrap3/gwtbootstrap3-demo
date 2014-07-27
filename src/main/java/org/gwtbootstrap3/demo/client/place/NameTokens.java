@@ -79,6 +79,7 @@ public class NameTokens {
     public static final String TOGGLESWITCH = "toggleswitch";
     public static final String OFFLINE = "offline";
     public static final String GROWL = "growl";
+    public static final String FULL_CALENDAR = "fullcalendar";
 
     // Getters for UiBinders
 
@@ -154,6 +155,9 @@ public class NameTokens {
         return GROWL;
     }
 
+    public static String getFullCalendar() {
+        return FULL_CALENDAR;
+    }
     public static String getInputGroups() {
         return INPUT_GROUPS;
     }
