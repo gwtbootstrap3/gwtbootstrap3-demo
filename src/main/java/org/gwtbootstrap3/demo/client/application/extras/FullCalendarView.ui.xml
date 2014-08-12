@@ -20,6 +20,7 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
              xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
+             xmlns:b.gwt="urn:import:org.gwtbootstrap3.client.ui.gwt"
              xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
 
     <ui:style>
@@ -79,8 +80,8 @@
                     ...\n
                     FullCalendar fc = new FullCalendar("some_unique_id",ViewOption.agendaWeek,false);\n
 					fc.addLoadHandler(new LoadHandler() {\n
-			
-						@Override\n
+
+                    @Override\n
 						public void onLoad(LoadEvent event) {\n
 							addEvents();//example code below...\n
 						}\n
@@ -91,14 +92,14 @@
 					...\n
 					//add some events to the calendar manually/randomly...\n
 					protected void addEvents() {\n
-						for (int i = 0; i < 15; i++) {\n
+                    for (int i = 0; i 15; i++) {\n
 							Event calEvent = new Event("id:" + i, "This is Event: " + i);\n
 							int day = Random.nextInt(10);\n
 							Date start = new Date();\n
 							CalendarUtil.addDaysToDate(start, -1 * day);\n
 							calEvent.setStart(start);\n
-							
-							if( i % 3 == 0 ){\n
+
+                    if( i % 3 == 0 ){\n
 								calEvent.setAllDay(true);\n
 							}else{\n
 								Date d = new Date(start.getTime());\n
@@ -118,65 +119,65 @@
                 <b:PanelBody>
                     <b:Button type="PRIMARY" icon="PLAY" ui:field="configuring">Run Example</b:Button>
                      <b.html:Br/>
-                    <b:FlowPanel ui:field="configuringPanel"></b:FlowPanel>
+                    <b.gwt:FlowPanel ui:field="configuringPanel"></b.gwt:FlowPanel>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-java">
                         ...\n
 						CalendarConfig config = new CalendarConfig();\n
 						ClickAndHoverConfig clickHover = new ClickAndHoverConfig(new ClickAndHoverEventCallback() {\n
-							
-							@Override\n
+
+                        @Override\n
 							public void eventMouseover(JavaScriptObject calendarEvent,NativeEvent event, JavaScriptObject viewObject) {\n
 							}\n
-							
-							@Override\n
+
+                        @Override\n
 							public void eventMouseout(JavaScriptObject calendarEvent,NativeEvent event, JavaScriptObject viewObject) {\n
 							}\n
-							
-							@Override\n
+
+                        @Override\n
 							public void eventClick(JavaScriptObject calendarEvent, NativeEvent event,JavaScriptObject viewObject) {\n
 								Event calEvent = new Event(calendarEvent);\n
 								System.out.println("id " + calEvent.getId() + " start: " + calEvent.getStart() + " end: " + calEvent.getEnd() + " all day: " + calEvent.isAllDay());\n
 								Window.alert(calEvent.getTitle());\n
 							}\n
-							
-							@Override\n
+
+                        @Override\n
 							public void dayClick(JavaScriptObject moment, NativeEvent event,JavaScriptObject viewObject) {\n
 							}\n
 						});\n
-						
-						config.setClickHoverConfig(clickHover);\n
+
+                        config.setClickHoverConfig(clickHover);\n
 						DragAndResizeConfig dr = new DragAndResizeConfig(new DragAndResizeCallback() {\n
-							
-							@Override\n
+
+                        @Override\n
 							public void eventResizeStop(JavaScriptObject calendarEvent,NativeEvent nativeEvent) {\n
 								//System.out.println("eventResizeStop");\n
 							}
-							
-							@Override\n
+
+                        @Override\n
 							public void eventResizeStart(JavaScriptObject calendarEvent,NativeEvent nativeEvent) {
 								//System.out.println("eventResizeStart");\n
 							}
-							
-							@Override\n
+
+                        @Override\n
 							public void eventResize(JavaScriptObject calendarEvent, JavaScriptObject revertFunction,NativeEvent nativeEvent) {\n
 								//System.out.println("eventResize");\n
 							}\n
-							
-							@Override\n
+
+                        @Override\n
 							public void eventDrop(JavaScriptObject calendarEvent, JavaScriptObject revertFunction,NativeEvent nativeEvent) {\n
 								//System.out.println("eventDrop");\n
 								Event evt = new Event(calendarEvent);\n
 								System.out.println("eventDrop: " + evt.getStartFromYearMonthDay());\n
 							}\n
-							
-							@Override\n
+
+                        @Override\n
 							public void eventDragStop(JavaScriptObject calendarEvent,NativeEvent nativeEvent) {\n
 								//System.out.println("eventDragStop");\n
 							}
-							
-							@Override\n
+
+                        @Override\n
 							public void eventDragStart(JavaScriptObject calendarEvent,NativeEvent nativeEvent) {\n
 								//System.out.println("eventDragStart");\n
 							}\n
@@ -184,11 +185,11 @@
 						config.setDragResizeConfig(dr);\n
 						GeneralDisplay gd = new GeneralDisplay();\n
 						config.setGeneralDisplay(gd);\n
-						
-						FullCalendar fc = new FullCalendar("some_unique_id",ViewOption.agendaWeek,config,true);\n
+
+                        FullCalendar fc = new FullCalendar("some_unique_id",ViewOption.agendaWeek,config,true);\n
 						fc.addLoadHandler(new LoadHandler() {\n
-							
-							@Override\n
+
+                        @Override\n
 							public void onLoad(LoadEvent event) {\n
 								addEvents();//see code below\n
 							}\n
@@ -198,18 +199,18 @@
 						...\n
 						//add some events to the calendar manually/randomly...\n
 						protected void addEvents() {\n
-							for (int i = 0; i < 15; i++) {\n
+                        for (int i = 0; i 15; i++) {\n
 								Event calEvent = new Event("id:" + i, "This is Event: " + i);\n
 								int day = Random.nextInt(10);\n
 								Date start = new Date();\n
 								CalendarUtil.addDaysToDate(start, -1 * day);\n
 								calEvent.setStart(start);\n
-								
-								if( i % 3 == 0 ){\n
+
+                        if( i % 3 == 0 ){\n
 									calEvent.setAllDay(true);\n
 								}else{\n
 									Date d = new Date(start.getTime());\n
-									d.setHours(d.getHours() + 1);\n	
+                        d.setHours(d.getHours() + 1);\n
 									calEvent.setEnd(d);\n
 								}\n
 								fc.addEvent(calEvent);\n
@@ -228,7 +229,7 @@
                 <b:PanelBody>
                     <b:Button type="PRIMARY" icon="PLAY" ui:field="localization">Run Example</b:Button>
                     <b.html:Br/>
-                    <b:FlowPanel ui:field="localizationPanel"></b:FlowPanel>
+                    <b.gwt:FlowPanel ui:field="localizationPanel"></b.gwt:FlowPanel>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-java">

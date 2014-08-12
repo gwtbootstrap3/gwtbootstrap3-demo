@@ -20,9 +20,6 @@ package org.gwtbootstrap3.demo.client.application.extras;
  * #L%
  */
 
-import java.util.Date;
-
-import com.bootstrap3.test.client.CalendarHeader;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.dom.client.NativeEvent;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -37,12 +34,11 @@ import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.user.datepicker.client.CalendarUtil;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
-
 import org.gwtbootstrap3.client.ui.Button;
-import org.gwtbootstrap3.client.ui.FlowPanel;
-import org.gwtbootstrap3.client.ui.constants.IconType;
-import org.gwtbootstrap3.client.ui.constants.Styles;
+import org.gwtbootstrap3.client.ui.gwt.FlowPanel;
 import org.gwtbootstrap3.extras.fullcalendar.client.ui.*;
+
+import java.util.Date;
 
 /**
  * @author Jeff Isenhart
@@ -58,7 +54,7 @@ public class FullCalendarView extends ViewImpl implements FullCalendarPresenter.
     @UiField
     Button localization;
     @UiField
-    Button localizationPanel;
+    FlowPanel localizationPanel;
     private FullCalendar localizationCalendar;
 
     interface Binder extends UiBinder<Widget, FullCalendarView> {
