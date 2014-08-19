@@ -52,7 +52,7 @@
 
                             <b:FormGroup>
                                 <b:FormLabel for="formName">Name</b:FormLabel>
-                                <b:TextBox text="blabla" b:id="formName"/>
+                                <b:TextBox placeholder="blabla" b:id="formName"/>
                             </b:FormGroup>
 
                             <b:FormGroup validationState="WARNING">
@@ -93,7 +93,7 @@
                         \n
                         \s\s\s\s&lt;b:FormGroup&gt;\n
                         \s\s\s\s\s\s&lt;b:FormLabel for="formName"&gt;Name&lt;/b:FormLabel&gt;\n
-                        \s\s\s\s\s\s&lt;b:TextBox text="blabla" b:id="formName"/&gt;\n
+                        \s\s\s\s\s\s&lt;b:TextBox placeholder="blabla" b:id="formName"/&gt;\n
                         \s\s\s\s&lt;/b:FormGroup&gt;\n
                         \n
                         \s\s\s\s&lt;b:FormGroup validationState="WARNING"&gt;\n
@@ -248,7 +248,7 @@
                             <b:FormGroup>
                                 <b:FormLabel for="formName" addStyleNames="col-lg-2">Name</b:FormLabel>
                                 <g:FlowPanel addStyleNames="col-lg-10">
-                                    <b:TextBox text="blabla" b:id="formName"/>
+                                    <b:TextBox placeholder="blabla" b:id="formName"/>
                                 </g:FlowPanel>
                             </b:FormGroup>
 
@@ -301,7 +301,7 @@
                         \s\s\s\s&lt;b:FormGroup&gt;\n
                         \s\s\s\s\s\s&lt;b:FormLabel for="formName" addStyleNames="col-lg-2"&gt;Name&lt;/b:FormLabel&gt;\n
                         \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-10"&gt;\n
-                        \s\s\s\s\s\s\s\s&lt;b:TextBox text="blabla" b:id="formName"/&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:TextBox placeholder="blabla" b:id="formName"/&gt;\n
                         \s\s\s\s\s\s&lt;/g:FlowPanel&gt;\n
                         \s\s\s\s&lt;/b:FormGroup&gt;\n
                         \n
