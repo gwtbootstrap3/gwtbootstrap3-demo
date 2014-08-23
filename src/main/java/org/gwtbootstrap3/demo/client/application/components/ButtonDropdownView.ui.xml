@@ -37,7 +37,7 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:ButtonGroup addStyleNames="{style.spacing}">
-                        <b:Button dataToggle="DROPDOWN">Default</b:Button>
+                        <b:Button dataToggle="DROPDOWN" toggleCaret="false">Default (no caret)</b:Button>
                         <b:DropDownMenu>
                             <b:AnchorListItem>Item 1</b:AnchorListItem>
                             <b:AnchorListItem>Item 2</b:AnchorListItem>
@@ -82,7 +82,7 @@
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:ButtonGroup&gt;\n
-                        \s\s&lt;b:Button dataToggle="DROPDOWN" text="..." type="..."&gt;\n
+                        \s\s&lt;b:Button dataToggle="DROPDOWN" text="..." type="..." toggleCaret="true|false"&gt;\n
                         \s\s&lt;b:DropDownMenu&gt;\n
                         \s\s\s\s&lt;b:AnchorListItem&gt;Item 1&lt;/b:AnchorListItem&gt;\n
                         \s\s\s\s&lt;b:AnchorListItem&gt;Item 2&lt;/b:AnchorListItem&gt;\n
