@@ -33,15 +33,15 @@
                     <b:Heading size="H3" text="Headings"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Heading size="H6" subtext="Test"/>
+                    <b:Heading size="H6" subText="Test"/>
                     <b:Heading size="H1" text="Test"/>
-                    <b:Heading size="H1" text="h1. Bootstrap heading" subtext="subtext"/>
-                    <b:Heading size="H2" text="h2. Bootstrap heading" subtext="subtext"/>
-                    <b:Heading size="H3" text="h3. Bootstrap heading" subtext="subtext"/>
-                    <b:Heading size="H4" text="h4. Bootstrap heading" subtext="subtext"/>
-                    <b:Heading size="H5" text="h5. Bootstrap heading" subtext="subtext"/>
-                    <b:Heading size="H6" text="h6. Bootstrap heading" subtext="subtext"/>
-                    <b:Heading size="H6" subtext="subtext" text="Test"/>
+                    <b:Heading size="H1" text="h1. Bootstrap heading" subText="subtext"/>
+                    <b:Heading size="H2" text="h2. Bootstrap heading" subText="subtext"/>
+                    <b:Heading size="H3" text="h3. Bootstrap heading" subText="subtext"/>
+                    <b:Heading size="H4" text="h4. Bootstrap heading" subText="subtext"/>
+                    <b:Heading size="H5" text="h5. Bootstrap heading" subText="subtext"/>
+                    <b:Heading size="H6" text="h6. Bootstrap heading" subText="subtext"/>
+                    <b:Heading size="H6" subText="subtext" text="Test"/>
                     <b:Heading size="H1">
                         <b:Icon type="GEAR"/>
                         <b.html:Text text="h1. Heading with Icon"/>
@@ -53,12 +53,12 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Heading size="H1" subtext="..."/&gt;\n
-                        &lt;b:Heading size="H2" subtext="..."/&gt;\n
-                        &lt;b:Heading size="H3" subtext="..."/&gt;\n
-                        &lt;b:Heading size="H4" subtext="..."/&gt;\n
-                        &lt;b:Heading size="H5" subtext="..."/&gt;\n
-                        &lt;b:Heading size="H6" subtext="..."/&gt;\n\n
+                        &lt;b:Heading size="H1" subText="..."/&gt;\n
+                        &lt;b:Heading size="H2" subText="..."/&gt;\n
+                        &lt;b:Heading size="H3" subText="..."/&gt;\n
+                        &lt;b:Heading size="H4" subText="..."/&gt;\n
+                        &lt;b:Heading size="H5" subText="..."/&gt;\n
+                        &lt;b:Heading size="H6" subText="..."/&gt;\n\n
                         &lt;b:Heading size="H1"&gt;\n
                         \s\s&lt;b:Icon type="..."/&gt;\n
                         \s\s&lt;b.html:Text type="..."/&gt;\n

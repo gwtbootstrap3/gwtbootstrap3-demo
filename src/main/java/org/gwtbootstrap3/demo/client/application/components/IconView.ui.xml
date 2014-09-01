@@ -155,6 +155,37 @@
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Fixed Width Icons"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b.html:Span>
+                    <b:Icon type="GEAR" fixedWidth="true"/>
+                        Vertically aligned icons
+                    </b.html:Span>
+                    <b.html:ClearFix/>
+                    <b.html:Span>
+                    <b:Icon type="BOLT" fixedWidth="true"/>
+                        Vertically aligned icons
+                    </b.html:Span>
+                    <b.html:ClearFix/>
+                    <b.html:Span>
+                    <b:Icon type="BARCODE" fixedWidth="true"/>
+                        Vertically aligned icons
+                    </b.html:Span>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b.html:Span&gt;\n
+                        \s\s&lt;b:Icon type="..." fixedWidth="true"/&gt;\n
+                        \s\sVertically aligned icons\n
+                        &lt;/b.html:Span&gt;\n\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
         </b:Column>
     </b:Row>
 
