@@ -170,6 +170,28 @@
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Navs With Icons And Fixed Width"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:NavPills stacked="true">
+                        <b:AnchorListItem icon="BOLT" iconFixedWidth="true" active="true">Item 1</b:AnchorListItem>
+                        <b:AnchorListItem icon="GEAR" iconFixedWidth="true">Item 2</b:AnchorListItem>
+                        <b:AnchorListItem icon="BARCODE" iconFixedWidth="true">Item 3</b:AnchorListItem>
+                    </b:NavPills>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:NavPills stacked="true"&gt;\n
+                        \s\s&lt;b:AnchorListItem icon="..." iconFixedWidth="true" active="true"&gt;Item 1&lt;/b:AnchorListItem&gt;\n
+                        \s\s&lt;b:AnchorListItem icon="..." iconFixedWidth="true"&gt;Item 2&lt;/b:AnchorListItem&gt;\n
+                        \s\s&lt;b:AnchorListItem icon="..." iconFixedWidth="true"&gt;Item 3&lt;/b:AnchorListItem&gt;\n
+                        &lt;/b:NavPills&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
         </b:Column>
 
     </b:Row>
