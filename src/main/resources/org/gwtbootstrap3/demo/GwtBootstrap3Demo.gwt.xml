@@ -31,6 +31,7 @@
     <inherits name="org.gwtbootstrap3.extras.positionedtabs.PositionedTabs"/>
     <inherits name="org.gwtbootstrap3.extras.respond.Respond"/>
     <inherits name="org.gwtbootstrap3.extras.growl.Growl"/>
+    <inherits name="org.gwtbootstrap3.extras.animate.Animate"/>
     <inherits name="org.gwtbootstrap3.extras.fullcalendar.FullCalendar"/>
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
 

@@ -80,6 +80,7 @@ public class NameTokens {
     public static final String OFFLINE = "offline";
     public static final String GROWL = "growl";
     public static final String FULL_CALENDAR = "fullcalendar";
+    public static final String ANIMATE = "animate";
 
     // Getters for UiBinders
 
@@ -268,5 +269,9 @@ public class NameTokens {
 
     public static String getCard() {
         return CARD;
+    }
+
+    public static String getAnimate() {
+        return ANIMATE;
     }
 }

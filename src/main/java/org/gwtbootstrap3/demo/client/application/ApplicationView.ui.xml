@@ -156,6 +156,8 @@
                                     </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getOffline}">Offline
                                     </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getAnimate}">Animate
+                                    </b:AnchorListItem>
                                 </b:DropDownMenu>
                             </b:ListDropDown>
                             <b:AnchorListItem text="Fork on GitHub"
