@@ -1,0 +1,172 @@
+<!--
+  #%L
+  GwtBootstrap3
+  %%
+  Copyright (C) 2013 GwtBootstrap3
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
+             xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
+
+    <ui:style>
+        .danger {
+            background-color: #fcf2f2;
+            border-color: #dFb5b4;
+        }
+
+        .margin-fix {
+            margin-top: 0 !important;
+        }
+
+        .spacing {
+            margin-left: 5px;
+        }
+    </ui:style>
+
+    <b:Row>
+        <b:Column size="XS_12">
+
+            <b:PageHeader text="Animate"/>
+
+            <b:BlockQuote>
+                <b.html:Strong>Original Library Link:</b.html:Strong>
+                <b:Anchor addStyleNames="{style.spacing}" href="http://daneden.github.io/animate.css/">Animate.css
+                </b:Anchor>
+                <b.html:Br/>
+                <b.html:Strong>Current Version Supported: 3.2.0</b.html:Strong>
+            </b:BlockQuote>
+
+            <b:BlockQuote addStyleNames="{style.danger}">
+                <b:Heading addStyleNames="{style.margin-fix}" size="H4" text="Required for use"/>
+                <b.html:Paragraph>
+                    To use Animate, you must first add the extras module to your project. In Maven:
+                </b.html:Paragraph>
+                <d:PrettyPre addStyleNames="lang-xml">
+                    &lt;dependency&gt;\n
+                    \s\s\s\s&lt;groupId&gt;org.gwtbootstrap3&lt;/groupId&gt;\n
+                    \s\s\s\s&lt;artifactId&gt;gwtbootstrap3-extras&lt;/artifactId&gt;\n
+                    \s\s\s\s&lt;version&gt;VERSION&lt;/version&gt;\n
+                    \s\s\s\s&lt;scope&gt;provided&lt;/scope&gt;\n
+                    &lt;/dependency&gt;
+                </d:PrettyPre>
+                <b.html:Paragraph>
+                    Then you need to inherit the following GWT Module
+                    <strong>additionally</strong>
+                    to any GwtBootstrap3
+                    module into your *.gwt.xml of your project:
+                </b.html:Paragraph>
+                <d:PrettyPre addStyleNames="lang-xml">
+                    &lt;inherits name="org.gwtbootstrap3.extras.animate.Animate"/&gt;
+                </d:PrettyPre>
+            </b:BlockQuote>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Using animation"/>
+                </b:PanelHeader>
+                <b:PanelBody ui:field="body">
+                    <b.html:Paragraph>Animation starts when Widget is attached to the DOM or <i>new</i> class name is added and runs only once.</b.html:Paragraph>
+                    <b.html:Paragraph>You can use either native class names in UiBinder or enum Animation in Java.</b.html:Paragraph>
+                    <b.html:ClearFix/>
+                    <b:Button icon="PLAY" ui:field="animated" type="PRIMARY" text="Add animated button"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;!-- UiBinder --&gt;\n
+                        &lt;b:Button text="Animated button" addStyleNames="animated fadeInDown"/&gt;\n
+                    </d:PrettyPre>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        /* Java */\n
+                        Button button = new Button("Animated button");\n
+                        button.addStyleName(Animation.FADE_IN_DOWN.getCssName());\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Repeating animations"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b.html:Paragraph>Same animation can be restarted when class name is removed and added again or Widget is removed from DOM and added again. Browser just need some time to notice.</b.html:Paragraph>
+                    <b.html:ClearFix/>
+                    <b:Button ui:field="run" icon="PLAY" type="PRIMARY" text="Run animation"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;!-- UiBinder --&gt;\n
+                        &lt;b:Button ui:field="run" icon="PLAY" text="Run animation" /&gt;\n
+                    </d:PrettyPre>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        /* Java */\n
+                        @UiHandler("run")\n
+                        public void onClick(ClickEvent event) {\n
+                        \s\srun.removeStyleName(Animation.LIGHTSPEED_IN.getCssName());\n
+                        \s\sScheduler.get().scheduleFixedDelay(new Scheduler.RepeatingCommand() {\n
+                        \s\s\s\s@Override\n
+                        \s\s\s\spublic boolean execute() {\n
+                        \s\s\s\s\s\srun.addStyleName(Animation.LIGHTSPEED_IN.getCssName());\n
+                        \s\s\s\s\s\sreturn false;\n
+                        \s\s\s\s}\n
+                        \s\s}, 200);\n
+                        }\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Removing animations"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b.html:Paragraph>To remove some animation from Widget use method <i>removeStyleName()</i> with class name of original animation.</b.html:Paragraph>
+                    <b.html:Paragraph>Using Animation.NO_ANIMATION doesn't remove any animations !!</b.html:Paragraph>
+                    <b.html:ClearFix/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        /* Java */\n
+                        button.removeStyleName(Animation.LIGHTSPEED_IN.getCssName());\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Customizing animations"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b.html:Paragraph>You can change the duration of animations, add a delay or change the number of times that it plays by adding custom style.</b.html:Paragraph>
+                    <b.html:ClearFix/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-css">
+                        /* CSS */\n
+                        #yourElement {\n
+                        \s\s-vendor-animation-duration: 3s;\n
+                        \s\s-vendor-animation-delay: 2s;\n
+                        \s\s-vendor-animation-iteration-count: infinite;\n
+                        }\n
+                    </d:PrettyPre>
+                    <b.html:Paragraph>Note: replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, etc.).</b.html:Paragraph>
+                </b:PanelFooter>
+            </b:Panel>
+
+        </b:Column>
+    </b:Row>
+
+</ui:UiBinder>

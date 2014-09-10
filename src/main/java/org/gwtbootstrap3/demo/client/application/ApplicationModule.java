@@ -95,5 +95,6 @@ public class ApplicationModule extends AbstractPresenterModule {
         bindPresenter(OfflinePresenter.class, OfflinePresenter.MyView.class, OfflineView.class, OfflinePresenter.MyProxy.class);
         bindPresenter(GrowlPresenter.class, GrowlPresenter.MyView.class, GrowlView.class, GrowlPresenter.MyProxy.class);
         bindPresenter(FullCalendarPresenter.class, FullCalendarPresenter.MyView.class, FullCalendarView.class, FullCalendarPresenter.MyProxy.class);
+        bindPresenter(AnimatePresenter.class, AnimatePresenter.MyView.class, AnimateView.class, AnimatePresenter.MyProxy.class);
     }
 }
