@@ -76,71 +76,30 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="H3" text="Using animation"/>
-                </b:PanelHeader>
-                <b:PanelBody ui:field="body">
-                    <b.html:Paragraph>Animation starts when Widget is attached to the DOM or <i>new</i> class name is added and runs only once.</b.html:Paragraph>
-                    <b.html:Paragraph>You can use either native class names in UiBinder or enum Animation in Java.</b.html:Paragraph>
-                    <b.html:ClearFix/>
-                    <b:Button icon="PLAY" ui:field="animated" type="PRIMARY" text="Add animated button"/>
-                </b:PanelBody>
-                <b:PanelFooter>
-                    <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;!-- UiBinder --&gt;\n
-                        &lt;b:Button text="Animated button" addStyleNames="animated fadeInDown"/&gt;\n
-                    </d:PrettyPre>
-                    <d:PrettyPre addStyleNames="lang-java">
-                        /* Java */\n
-                        Button button = new Button("Animated button");\n
-                        button.addStyleName(Animation.FADE_IN_DOWN.getCssName());\n
-                    </d:PrettyPre>
-                </b:PanelFooter>
-            </b:Panel>
-
-            <b:Panel>
-                <b:PanelHeader>
-                    <b:Heading size="H3" text="Repeating animations"/>
+                    <b:Heading size="H3" text="Using animations"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b.html:Paragraph>Same animation can be restarted when class name is removed and added again or Widget is removed from DOM and added again. Browser just need some time to notice.</b.html:Paragraph>
+                    <b.html:Paragraph>Animations are CSS based. To animate any object, simply add proper style name to it. In java use enum <i>Animation</i> to get available animation`s class names. Animation starts when Widget is attached to the DOM or new (yet unused) class name is added and runs only once.</b.html:Paragraph>
+                    <b.html:Paragraph><strong>We strongly recommend to use java class <i>Animate</i> to assign animations to your widgets.</strong></b.html:Paragraph>
                     <b.html:ClearFix/>
-                    <b:Button ui:field="run" icon="PLAY" type="PRIMARY" text="Run animation"/>
+                    <b:Button icon="PLAY" ui:field="animated" type="PRIMARY" text="Re-play animation"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;!-- UiBinder --&gt;\n
-                        &lt;b:Button ui:field="run" icon="PLAY" text="Run animation" /&gt;\n
+                        &lt;b:Button text="Re-play animation" ui:field="button" icon="PLAY" type="PRIMARY"/&gt;\n
                     </d:PrettyPre>
                     <d:PrettyPre addStyleNames="lang-java">
                         /* Java */\n
-                        @UiHandler("run")\n
+                        @UiField("button")\n
+                        Button button;\n\n
+                        // Assign animation anywhere in code to start it (waits to start if not attached to the DOM)\n
+                        Animate.animate(button, Animation.RUBBER_BAND);\n\n
+                        @UiHandler("button")\n
                         public void onClick(ClickEvent event) {\n
-                        \s\srun.removeStyleName(Animation.LIGHTSPEED_IN.getCssName());\n
-                        \s\sScheduler.get().scheduleFixedDelay(new Scheduler.RepeatingCommand() {\n
-                        \s\s\s\s@Override\n
-                        \s\s\s\spublic boolean execute() {\n
-                        \s\s\s\s\s\srun.addStyleName(Animation.LIGHTSPEED_IN.getCssName());\n
-                        \s\s\s\s\s\sreturn false;\n
-                        \s\s\s\s}\n
-                        \s\s}, 200);\n
+                        \s\s// Restart animation on demand (will stop previous animation)\n
+                        \s\sAnimate.animate(run, Animation.RUBBER_BAND);\n
                         }\n
-                    </d:PrettyPre>
-                </b:PanelFooter>
-            </b:Panel>
-
-            <b:Panel>
-                <b:PanelHeader>
-                    <b:Heading size="H3" text="Removing animations"/>
-                </b:PanelHeader>
-                <b:PanelBody>
-                    <b.html:Paragraph>To remove some animation from Widget use method <i>removeStyleName()</i> with class name of original animation.</b.html:Paragraph>
-                    <b.html:Paragraph>Using Animation.NO_ANIMATION doesn't remove any animations !!</b.html:Paragraph>
-                    <b.html:ClearFix/>
-                </b:PanelBody>
-                <b:PanelFooter>
-                    <d:PrettyPre addStyleNames="lang-java">
-                        /* Java */\n
-                        button.removeStyleName(Animation.LIGHTSPEED_IN.getCssName());\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -150,20 +109,52 @@
                     <b:Heading size="H3" text="Customizing animations"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b.html:Paragraph>You can change the duration of animations, add a delay or change the number of times that it plays by adding custom style.</b.html:Paragraph>
+                    <b.html:Paragraph>You can use various static methods from <i>Animate</i> class to customize each animation run. Customizable properties are: <i>repeat, duration</i> and <i>delay</i>. You can also pass custom style name as String to run your own animations.</b.html:Paragraph>
+                    <b.html:Paragraph><strong>Each run of unique combination of animation and it's settings appends new stylesheet to the DOM.</strong> Don't overuse it with too many different configurations.</b.html:Paragraph>
                     <b.html:ClearFix/>
+                    <b:Button ui:field="run" icon="PLAY" type="PRIMARY" text="Run animation"/>
                 </b:PanelBody>
                 <b:PanelFooter>
-                    <d:PrettyPre addStyleNames="lang-css">
-                        /* CSS */\n
-                        #yourElement {\n
-                        \s\s-vendor-animation-duration: 3s;\n
-                        \s\s-vendor-animation-delay: 2s;\n
-                        \s\s-vendor-animation-iteration-count: infinite;\n
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;!-- UiBinder --&gt;\n
+                        &lt;b:Button ui:field="button" icon="PLAY" text="Run animation" type="PRIMARY"/&gt;\n
+                    </d:PrettyPre>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        /* Java */\n
+                        @UiField("button")\n
+                        Button button;\n\n
+                        @UiHandler("button")\n
+                        public void onClick(ClickEvent event) {\n
+                        \s\s// Run animation twice and for 4 second\n
+                        \s\sAnimate.animate(button, Animation.RUBBER_BAND, 2, 4000);\n
                         }\n
                     </d:PrettyPre>
-                    <b.html:Paragraph>Note: replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, etc.).</b.html:Paragraph>
                 </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Stopping animations"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b.html:Paragraph>Each call of <i>Animate.animate(....)</i> returns String value of used class name. To stop animation in the middle just use:</b.html:Paragraph>
+                    <b.html:ClearFix/>
+                    <b.html:Paragraph>
+                        <d:PrettyPre addStyleNames="lang-java">
+                            Animate.stopAnimation(button, myAnimationClassName);\n
+                        </d:PrettyPre>
+                    </b.html:Paragraph>
+                    <b.html:ClearFix/>
+                    <b.html:Paragraph>You can also remove animation after it ends, to prevent re-play when widget is re-attached to the DOM (e.g. switching pages in some GWT app)</b.html:Paragraph>
+                    <b.html:ClearFix/>
+                    <b.html:Paragraph>
+                        <d:PrettyPre addStyleNames="lang-java">
+                            Animate.removeAnimationOnEnd(button, myAnimationClassName)\n
+                        </d:PrettyPre>
+                    </b.html:Paragraph>
+                    <b.html:Paragraph>Using <i>Animation.NO_ANIMATION</i> doesn't remove any animations !! It's just helper value, which can be used when some method requires Animation parameter which you don't have / don't want to use.</b.html:Paragraph>
+                    <b.html:ClearFix/>
+                </b:PanelBody>
             </b:Panel>
 
         </b:Column>
