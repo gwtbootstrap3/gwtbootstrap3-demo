@@ -69,8 +69,9 @@
                             </b:NavbarForm>
 
                             <b:NavbarText pull="RIGHT">
-                                <b.html:Text text="Signed in as"/>
-                                <b:NavbarLink>John Snow</b:NavbarLink>
+                                <b.html:Span>Signed in as
+                                    <b:NavbarLink>John Snow</b:NavbarLink>
+                                </b.html:Span>
                             </b:NavbarText>
                         </b:NavbarCollapse>
                     </b:Navbar>
@@ -104,8 +105,9 @@
                         \s\s\s\s&lt;/b:NavbarForm&gt;\n
                         \n
                         \s\s\s\s&lt;b:NavbarText pull="RIGHT"&gt;\n
-                        \s\s\s\s\s\s&lt;b.html:Text text="Signed in as"&gt;\n
-                        \s\s\s\s\s\s&lt;b:NavbarLink&gt;John Snow&lt;/b:NavbarLink&gt;\n
+                        \s\s\s\s\s\s&lt;b.html:Span&gt;Signed in as\n
+                        \s\s\s\s\s\s\s\s&lt;b:NavbarLink&gt;John Snow&lt;/b:NavbarLink&gt;\n
+                        \s\s\s\s\s\s&lt;/b.html:Span&gt;\n
                         \s\s\s\s&lt;/b:NavbarText&gt;\n
                         \s\s&lt;/b:NavbarCollapse&gt;\n
                         &lt;/b:Navbar&gt;
