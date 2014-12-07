@@ -82,7 +82,7 @@
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:ButtonGroup&gt;\n
-                        \s\s&lt;b:Button dataToggle="DROPDOWN" text="..." type="..." toggleCaret="true|false"&gt;\n
+                        \s\s&lt;b:Button dataToggle="DROPDOWN" text="..." type="..." toggleCaret="true|false"/&gt;\n
                         \s\s&lt;b:DropDownMenu&gt;\n
                         \s\s\s\s&lt;b:AnchorListItem&gt;Item 1&lt;/b:AnchorListItem&gt;\n
                         \s\s\s\s&lt;b:AnchorListItem&gt;Item 2&lt;/b:AnchorListItem&gt;\n
