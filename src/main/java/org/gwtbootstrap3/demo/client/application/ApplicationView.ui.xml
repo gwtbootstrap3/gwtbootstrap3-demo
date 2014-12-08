@@ -31,10 +31,6 @@
         .labels span {
             margin-right: 5px;
         }
-
-        .push {
-            padding-top: 70px;
-        }
     </ui:style>
 
     <g:ScrollPanel>
@@ -169,7 +165,7 @@
             </b:Navbar>
 
             <!-- Container Content -->
-            <g:SimplePanel addStyleNames="{style.push}" ui:field="contentContainer"/>
+            <g:SimplePanel ui:field="contentContainer"/>
 
         </b:Container>
 

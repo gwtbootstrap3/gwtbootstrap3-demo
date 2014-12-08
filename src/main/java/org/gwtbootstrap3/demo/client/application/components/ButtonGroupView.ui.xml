@@ -217,10 +217,10 @@
                     <b:Row>
                         <b:Column size="SM_6 MD_4">
                             <b:ButtonGroup dataToggle="BUTTONS" name="groupName">
-                                <b:RadioButton ui:field="button1">Option 1</b:RadioButton>
-                                <b:RadioButton ui:field="button2" active="true">Option 2</b:RadioButton>
-                                <b:RadioButton ui:field="button3">Option 3</b:RadioButton>
-                                <b:RadioButton enabled="false">Option 4</b:RadioButton>
+                                <b:RadioButton name="groupName" ui:field="button1">Option 1</b:RadioButton>
+                                <b:RadioButton name="groupName" ui:field="button2" active="true">Option 2</b:RadioButton>
+                                <b:RadioButton name="groupName" ui:field="button3">Option 3</b:RadioButton>
+                                <b:RadioButton name="groupName" enabled="false">Option 4</b:RadioButton>
                             </b:ButtonGroup>
                         </b:Column>
                         <b:Column size="SM_6 MD_8">
@@ -231,10 +231,10 @@
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:ButtonGroup dataToggle="BUTTONS"&gt;\n
-                        \s\s&lt;b:RadioButton&gt;Option 1&lt;/b:RadioButton&gt;\n
-                        \s\s&lt;b:RadioButton active="true"&gt;Option 2&lt;/b:RadioButton&gt;\n
-                        \s\s&lt;b:RadioButton&gt;Option 3&lt;/b:RadioButton&gt;\n
-                        \s\s&lt;b:RadioButton enabled="false"&gt;Option 4&lt;/b:RadioButton&gt;\n
+                        \s\s&lt;b:RadioButton name="groupName"&gt;Option 1&lt;/b:RadioButton&gt;\n
+                        \s\s&lt;b:RadioButton name="groupName" active="true"&gt;Option 2&lt;/b:RadioButton&gt;\n
+                        \s\s&lt;b:RadioButton name="groupName"&gt;Option 3&lt;/b:RadioButton&gt;\n
+                        \s\s&lt;b:RadioButton name="groupName" enabled="false"&gt;Option 4&lt;/b:RadioButton&gt;\n
                         &lt;/b:ButtonGroup&gt;
                     </d:PrettyPre>
                 </b:PanelFooter>

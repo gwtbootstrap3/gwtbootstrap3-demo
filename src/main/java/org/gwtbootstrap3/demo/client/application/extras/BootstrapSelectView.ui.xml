@@ -181,7 +181,7 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <select:Select title="Select something...">
-                        <select:Option hidden="true"/>
+                        <select:Option visible="false"/>
                         <select:Option text="One"/>
                         <select:Option text="Two"/>
                         <select:Option text="Three"/>
@@ -193,7 +193,7 @@
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;select:Select title="Select something..."&gt;\n
-                        \s\s&lt;select:Option hidden="true"/&gt;\n
+                        \s\s&lt;select:Option visible="false"/&gt;\n
                         \s\s&lt;select:Option text="..."/&gt;\n
                         \s\s&lt;select:Option text="..."/&gt;\n
                         \s\s&lt;select:Option text="..."/&gt;\n
