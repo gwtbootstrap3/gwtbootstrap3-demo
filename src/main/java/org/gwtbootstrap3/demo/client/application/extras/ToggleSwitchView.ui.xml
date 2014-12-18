@@ -81,10 +81,24 @@
                     xmlns:b3="urn:import:org.gwtbootstrap3.extras.toggleswitch.client.ui"
                 </d:PrettyPre>
             </b:BlockQuote>
-
+            
             <b:Panel>
                 <b:PanelHeader>
                     <b:Heading size="H3" text="Basic ToggleSwitch"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:ToggleSwitch/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:ToggleSwitch /&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+            
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Sizes"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b3:ToggleSwitch size="LARGE"/>
@@ -94,7 +108,222 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b3:ToggleSwitch size="..."/&gt;\n
+                        &lt;b3:ToggleSwitch size="LARGE"/&gt;\n
+                        &lt;b3:ToggleSwitch /&gt;\n
+                        &lt;b3:ToggleSwitch size="SMALL"/&gt;\n
+                        &lt;b3:ToggleSwitch size="MINI"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+            
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Disable animation"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:ToggleSwitch animate="false"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:ToggleSwitch animate="false"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+            
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Disabled"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:ToggleSwitch enabled="false" />
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:ToggleSwitch enabled="false"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+            
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Read only"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:ToggleSwitch readOnly="true"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:ToggleSwitch readOnly="true"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+            
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Indeterminate"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:ToggleSwitch indeterminate="true"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:ToggleSwitch indeterminate="true"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+            
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Inverse"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:ToggleSwitch inverse="true"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:ToggleSwitch inverse="true"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+            
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="On/Off Color"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:ToggleSwitch onColor="INFO" offColor="WARNING"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:ToggleSwitch onColor="INFO" offColor="WARNING"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+            
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="On/Off Text"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:ToggleSwitch onText="Yes" offText="No"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:ToggleSwitch onText="Yes" offText="No"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+            
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="On/Off Icon"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:ToggleSwitch onIcon="CHECK" offIcon="TIMES"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:ToggleSwitch onIcon="CHECK" offIcon="TIMES"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+            
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Label text"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:ToggleSwitch labelText="Label"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:ToggleSwitch labelText="Label"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+            
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Handle width"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b.html:Paragraph>
+                        By default, the handle's width is calculated automatically,
+                        to ensure the text inside will fit. This can be explicitly set by
+                        setting handleWidth to "auto".
+                    </b.html:Paragraph>
+                    <b.html:Div>
+                        <b3:ToggleSwitch handleWidth="100"/>
+                    </b.html:Div>
+                    <b.html:Div>
+                        <b3:ToggleSwitch onText="Automatic sizing by default" />
+                    </b.html:Div> 
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:ToggleSwitch handleWidth="100"/&gt;\n
+                        &lt;b3:ToggleSwitch onText="Automatic sizing by default"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+            
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Label width"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b.html:Paragraph>
+                        By default, the label's width is calculated automatically,
+                        to ensure the text inside will fit. This can be explicitly set by
+                        setting labelWidth to "auto".
+                    </b.html:Paragraph>
+                    <b.html:Div>
+                        <b3:ToggleSwitch labelWidth="100"/>
+                    </b.html:Div>
+                    <b.html:Div>
+                        <b3:ToggleSwitch labelText="Automatic sizing by default" /> 
+                    </b.html:Div>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:ToggleSwitch labelWidth="100"/&gt;\n
+                        &lt;b3:ToggleSwitch labelText="Automatic sizing by default"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+            
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Radio version"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:ToggleSwitchRadio name="radio1"/>
+                    <b3:ToggleSwitchRadio name="radio1"/>
+                    <b3:ToggleSwitchRadio name="radio1"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:ToggleSwitchRadio name="radio1"/&gt;\n
+                        &lt;b3:ToggleSwitchRadio name="radio1"/&gt;\n
+                        &lt;b3:ToggleSwitchRadio name="radio1"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+            
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Allow all radios off"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:ToggleSwitchRadio name="radio2" radioAllOff="true"/>
+                    <b3:ToggleSwitchRadio name="radio2" radioAllOff="true"/>
+                    <b3:ToggleSwitchRadio name="radio2" radioAllOff="true"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:ToggleSwitchRadio name="radio2" radioAllOff="true"/&gt;\n
+                        &lt;b3:ToggleSwitchRadio name="radio2" radioAllOff="true"/&gt;\n
+                        &lt;b3:ToggleSwitchRadio name="radio2" radioAllOff="true"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
