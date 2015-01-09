@@ -82,7 +82,7 @@
                         \s\s&lt;b:NavbarHeader&gt;\n
                         \s\s\s\s&lt;b:NavbarBrand&gt;Brand&lt;/b:NavbarBrand&gt;\n
                         \s\s\s\s&lt;b:NavbarCollapseButton dataTarget="#navbar-collapse"/&gt;\n
-                        \s\s&lt;b:NavbarHeader&gt;\n
+                        \s\s&lt;/b:NavbarHeader&gt;\n
                         \n
                         \s\s&lt;b:NavbarCollapse b:id="navbar-collapse"&gt;\n
                         \s\s\s\s&lt;b:NavbarNav&gt;\n
