@@ -97,7 +97,7 @@
                                               text="Collapse Group #1"/>
                                 </b:Heading>
                             </b:PanelHeader>
-                            <b:PanelCollapse b:id="collapseOne" in="true">
+                            <b:PanelCollapse b:id="collapseOne" in="true" ui:field="collapseOne">
                                 <b:PanelBody>
                                     <b.html:Paragraph>
                                         I am the content of Collapse Group #1.
@@ -138,6 +138,7 @@
                     </b:PanelGroup>
                 </b:PanelBody>
                 <b:PanelFooter>
+                    <b:Heading size="H4" text="UiBinder"/>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:PanelGroup b:id="accordion"&gt;\n
                         \s\s&lt;b:Panel&gt;\n
@@ -147,7 +148,7 @@
                         dataTarget="#collapseOne"/&gt;\n
                         \s\s\s\s\s\s&lt;/b:Heading&gt;\n
                         \s\s\s\s&lt;/b:PanelHeader&gt;\n
-                        \s\s\s\s&lt;b:PanelCollapse b:id="collapseOne"&gt;\n
+                        \s\s\s\s&lt;b:PanelCollapse b:id="collapseOne" ui:field="collapseOne"&gt;\n
                         \s\s\s\s\s\s&lt;b:PanelBody&gt;\n
                         \s\s\s\s\s\s\s\sWidgets\n
                         \s\s\s\s\s\s&lt;/b:PanelBody&gt;\n
@@ -180,6 +181,18 @@
                         \s\s\s\s&lt;/b:PanelCollapse&gt;\n
                         \s\s&lt;/b:Panel&gt;\n
                         &lt;/b:PanelGroup&gt;\n
+                    </d:PrettyPre>
+
+                    <b:Heading size="H4" text="Java code"/>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        @UiField\n
+                        PanelCollapse collapseOne;\n\n
+
+                        // Add a show handler\n
+                        collapseOne.addShowHandler(...);\n\n
+
+                        // Add a hide handler\n
+                        collapseOne.addHideHandler(...);
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>

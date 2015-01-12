@@ -21,9 +21,16 @@ package org.gwtbootstrap3.demo.client.application.javascript;
  */
 
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
+import org.gwtbootstrap3.client.shared.event.HideEvent;
+import org.gwtbootstrap3.client.shared.event.HideHandler;
+import org.gwtbootstrap3.client.shared.event.ShowEvent;
+import org.gwtbootstrap3.client.shared.event.ShowHandler;
+import org.gwtbootstrap3.client.ui.PanelCollapse;
 
 /**
  * @author Joshua Godi
@@ -32,8 +39,26 @@ public class CollapseView extends ViewImpl implements CollapsePresenter.MyView {
     interface Binder extends UiBinder<Widget, CollapseView> {
     }
 
+    @UiField
+    PanelCollapse collapseOne;
+
     @Inject
     CollapseView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        // Add handlers
+        collapseOne.addShowHandler(new ShowHandler() {
+            @Override
+            public void onShow(ShowEvent showEvent) {
+                Window.alert("SHOW ONE");
+            }
+        });
+
+        collapseOne.addHideHandler(new HideHandler() {
+            @Override
+            public void onHide(HideEvent hideEvent) {
+                Window.alert("HIDE ONE");
+            }
+        });
     }
 }
