@@ -115,6 +115,30 @@
 
             <b:Panel>
                 <b:PanelHeader>
+                    <b:Heading size="H3" text="Contextual Backgrounds"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b.html:Paragraph contextualBackground="DEFAULT">Fusce dapibus, tellus ac cursus commodo</b.html:Paragraph>
+                    <b.html:Paragraph contextualBackground="PRIMARY">Fusce dapibus, tellus ac cursus commodo</b.html:Paragraph>
+                    <b.html:Paragraph contextualBackground="SUCCESS">Fusce dapibus, tellus ac cursus commodo</b.html:Paragraph>
+                    <b.html:Paragraph contextualBackground="INFO">Fusce dapibus, tellus ac cursus commodo</b.html:Paragraph>
+                    <b.html:Paragraph contextualBackground="WARNING">Fusce dapibus, tellus ac cursus commodo</b.html:Paragraph>
+                    <b.html:Paragraph contextualBackground="DANGER">Fusce dapibus, tellus ac cursus commodo</b.html:Paragraph>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b.html:Paragraph contextualBackground="DEFAULT"/&gt;\n
+                        &lt;b.html:Paragraph contextualBackground="PRIMARY"/&gt;\n
+                        &lt;b.html:Paragraph contextualBackground="SUCCESS"/&gt;\n
+                        &lt;b.html:Paragraph contextualBackground="INFO"/&gt;\n
+                        &lt;b.html:Paragraph contextualBackground="WARNING"/&gt;\n
+                        &lt;b.html:Paragraph contextualBackground="DANGER"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
                     <b:Heading size="H3" text="Text Alignment"/>
                 </b:PanelHeader>
                 <b:PanelBody>
