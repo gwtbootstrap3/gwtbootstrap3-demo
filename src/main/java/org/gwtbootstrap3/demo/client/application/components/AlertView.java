@@ -21,9 +21,16 @@ package org.gwtbootstrap3.demo.client.application.components;
  */
 
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
+import org.gwtbootstrap3.client.shared.event.AlertCloseEvent;
+import org.gwtbootstrap3.client.shared.event.AlertCloseHandler;
+import org.gwtbootstrap3.client.shared.event.AlertClosedEvent;
+import org.gwtbootstrap3.client.shared.event.AlertClosedHandler;
+import org.gwtbootstrap3.client.ui.Alert;
 
 /**
  * @author Joshua Godi
@@ -32,8 +39,25 @@ public class AlertView extends ViewImpl implements AlertPresenter.MyView {
     interface Binder extends UiBinder<Widget, AlertView> {
     }
 
+    @UiField
+    Alert dismissibleAlert;
+
     @Inject
     AlertView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        // Add mock handlers
+        dismissibleAlert.addCloseHandler(new AlertCloseHandler() {
+            @Override
+            public void onClose(AlertCloseEvent evt) {
+                Window.alert("CLOSE FIRED");
+            }
+        });
+        dismissibleAlert.addClosedHandler(new AlertClosedHandler() {
+            @Override
+            public void onClosed(AlertClosedEvent evt) {
+                Window.alert("CLOSED FIRED");
+            }
+        });
     }
 }
