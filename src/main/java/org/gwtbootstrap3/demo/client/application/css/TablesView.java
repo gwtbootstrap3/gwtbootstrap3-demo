@@ -20,17 +20,23 @@ package org.gwtbootstrap3.demo.client.application.css;
  * #L%
  */
 
+import com.google.gwt.cell.client.FieldUpdater;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.cellview.client.AbstractCellTable;
+import com.google.gwt.user.cellview.client.Column;
 import com.google.gwt.user.cellview.client.SimplePager;
 import com.google.gwt.user.cellview.client.TextColumn;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.view.client.ListDataProvider;
 import com.google.gwt.view.client.RangeChangeEvent;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 import org.gwtbootstrap3.client.ui.Pagination;
+import org.gwtbootstrap3.client.ui.constants.ButtonType;
+import org.gwtbootstrap3.client.ui.constants.IconType;
+import org.gwtbootstrap3.client.ui.gwt.ButtonCell;
 import org.gwtbootstrap3.client.ui.gwt.CellTable;
 import org.gwtbootstrap3.client.ui.gwt.DataGrid;
 import org.gwtbootstrap3.demo.client.pojo.TableTestPojo;
@@ -101,6 +107,20 @@ public class TablesView extends ViewImpl implements TablesPresenter.MyView {
             }
         };
         grid.addColumn(col3, "Field 3");
+
+        final Column<TableTestPojo, String> col4 = new Column<TableTestPojo, String>(new ButtonCell(ButtonType.PRIMARY, IconType.GITHUB)) {
+            @Override
+            public String getValue(TableTestPojo object) {
+                return "Click Me";
+            }
+        };
+        col4.setFieldUpdater(new FieldUpdater<TableTestPojo, String>() {
+            @Override
+            public void update(int index, TableTestPojo object, String value) {
+                Window.alert("Clicked!");
+            }
+        });
+        grid.addColumn(col4, "Buttons");
 
         grid.addRangeChangeHandler(new RangeChangeEvent.Handler() {
 
