@@ -44,7 +44,7 @@ public class TablesView extends ViewImpl implements TablesPresenter.MyView {
     @UiField
     Pagination dataGridPagination;
     @UiField(provided = true)
-    CellTable cellTable = new CellTable<TableTestPojo>(10);
+    CellTable<TableTestPojo> cellTable = new CellTable<TableTestPojo>(10);
     @UiField
     Pagination cellTablePagination;
 
