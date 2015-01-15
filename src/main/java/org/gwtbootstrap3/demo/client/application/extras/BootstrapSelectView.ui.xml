@@ -774,7 +774,8 @@
                             </select:Select>
                         </b:Column>
                         <b:Column size="SM_6">
-                            <b:Button type="PRIMARY" text="Get Value" ui:field="getValue"/>
+                            <b:Button type="PRIMARY" text="Disable/Enable" ui:field="disableEnable"/>
+                            <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="Get Value" ui:field="getValue"/>
                             <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="Set Value"
                                       ui:field="setValue"/>
                             <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="Set Values"
@@ -809,15 +810,19 @@
                         @UiField\n
                         Option three;\n\n
 
-                        Get ClickHandler\n
+                        // Get ClickHandler\n
                         select.getAllSelectedValues();\n\n
 
-                        Set ClickHandler\n
+                        // Set ClickHandler\n
                         select.setValues(two, three);\n
                         select.refresh();\n\n
 
-                        Set ChangeHandler\n
-                        select.addChangeHandler(...);
+                        // Set ChangeHandler\n
+                        select.addChangeHandler(...);\n\n
+
+                        // Set Enable/Disable\n
+                        select.setEnabled(true | false);\n
+                        select.refresh();
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>

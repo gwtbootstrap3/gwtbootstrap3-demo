@@ -51,6 +51,8 @@ public class BootstrapSelectView extends ViewImpl implements BootstrapSelectPres
     Button getValue;
     @UiField
     Button setValues;
+    @UiField
+    Button disableEnable;
 
     interface Binder extends UiBinder<Widget, BootstrapSelectView> {
     }
@@ -78,6 +80,14 @@ public class BootstrapSelectView extends ViewImpl implements BootstrapSelectPres
             @Override
             public void onClick(final ClickEvent event) {
                 select.setValues(three, two);
+                select.refresh();
+            }
+        });
+
+        disableEnable.addClickHandler(new ClickHandler() {
+            @Override
+            public void onClick(ClickEvent event) {
+                select.setEnabled(!select.isEnabled());
                 select.refresh();
             }
         });
