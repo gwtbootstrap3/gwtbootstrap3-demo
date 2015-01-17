@@ -330,23 +330,14 @@
                     <b:Heading size="H3" text="Selected Text Format (Multiple Only)"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b.html:Paragraph>
-                        The supported values are:
-
-                        <ul>
-                            <li>
-                                values A comma delimted list of selected values. (default)
-                            </li>
-                            <li>
-                                count If one item is selected, then the value is shown, if more than one is selected
-                                then the number of selected items is displayed, eg 2 of 6 selected
-                            </li>
-                            <li>
-                                count > x Where X is the number of items selected when the display format changes from
-                                values to count
-                            </li>
-                        </ul>
-                    </b.html:Paragraph>
+                    <b.html:Paragraph>The supported values are:</b.html:Paragraph>
+                    <b.html:UnorderedList>
+                        <b:ListItem text="values A comma delimted list of selected values. (default)" />
+                        <b:ListItem text="count If one item is selected, then the value is shown, if more than one is selected
+                            then the number of selected items is displayed, eg 2 of 6 selected" />
+                        <b:ListItem text="count > x Where X is the number of items selected when the display format changes from
+                            values to count"/>
+                    </b.html:UnorderedList>
                     <b:Row>
                         <b:Column size="XS_6">
                             <select:Select multiple="true" selectedTextFormat="count">
