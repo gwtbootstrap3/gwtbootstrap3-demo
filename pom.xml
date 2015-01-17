@@ -15,7 +15,7 @@
 
     <properties>
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
-        <gwtp.version>1.0.3</gwtp.version>
+        <gwtp.version>1.4</gwtp.version>
         <gin.version>2.1.2</gin.version>
     </properties>
 
