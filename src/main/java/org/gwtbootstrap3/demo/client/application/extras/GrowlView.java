@@ -29,65 +29,86 @@ import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 import org.gwtbootstrap3.client.ui.Button;
 import org.gwtbootstrap3.client.ui.constants.IconType;
-import org.gwtbootstrap3.client.ui.constants.Styles;
+import org.gwtbootstrap3.extras.animate.client.ui.constants.Animation;
 import org.gwtbootstrap3.extras.growl.client.ui.*;
 
 /**
  * @author Jeff Isenhart
+ * @author Pavel Zlámal
  */
 public class GrowlView extends ViewImpl implements GrowlPresenter.MyView {
 
     @UiField
     Button basicGrowl;
     @UiField
-    Button basicGrowlWithTitle;
-    @UiField
     Button basicGrowlWithTitleIcon;
     @UiField
     Button changeBackgroundAndDismiss;
     @UiField
-    Button positionAndFormatting;
+    Button positionAndLink;
+    @UiField
+    Button animationAndOffset;
+    @UiField
+    Button template;
 
     @UiHandler("basicGrowl")
     public void handleBasicGrowl(final ClickEvent event) {
         Growl.growl("Message");
     }
 
-    @UiHandler("basicGrowlWithTitle")
-    public void handleBasicGrowlWithTitle(final ClickEvent event) {
-        Growl.growl("Title", "Message");
-    }
-
     @UiHandler("basicGrowlWithTitleIcon")
     public void handleBasicGrowlWithTitleIcon(final ClickEvent event) {
-        Growl.growl("Title", "Message", Styles.FONT_AWESOME_BASE + " " + IconType.SMILE_O.getCssName());
+        Growl.growl("Title", "Message", IconType.SMILE_O);
     }
 
     @UiHandler("changeBackgroundAndDismiss")
     public void handleChangeBackgroundAndDismiss(final ClickEvent event) {
-        GrowlOptions go = GrowlHelper.getNewOptions();
-        go.setSuccessType();
+        GrowlOptions go = new GrowlOptions();
+        go.setType(GrowlType.SUCCESS);
         go.setAllowDismiss(false);
-        Growl.growl("Title", "Message", Styles.FONT_AWESOME_BASE + " " + IconType.SMILE_O.getCssName(), go);
+        Growl.growl("Title", "Message", IconType.SMILE_O, go);
     }
 
-    @UiHandler("positionAndFormatting")
+    @UiHandler("positionAndLink")
     public void handlePositionAndFormatting(final ClickEvent event) {
-        GrowlOptions go = GrowlHelper.getNewOptions();
-        go.setWarningType();
-        go.setAllowDismiss(false);
 
-        GrowlPosition gp = GrowlHelper.getNewPosition();
-        gp.setTop(false);
-        gp.setCenter();
-//        go.setPositionObject(gp);
+        GrowlOptions go = new GrowlOptions();
+        go.setPosition(GrowlPosition.TOP_CENTER);
 
-        GrowlTemplate gt = GrowlHelper.getNewTemplate();
-        gt.setTitleDivider("<hr>");
+        Growl.growl("Title", "Message", IconType.SMILE_O, "https://github.com/gwtbootstrap3/gwtbootstrap3", go);
 
-        go.setTemplateObject(gt);
+    }
 
-        Growl.growl("Title", "Message", Styles.FONT_AWESOME_BASE + " " + IconType.SMILE_O.getCssName(), go);
+    @UiHandler("animationAndOffset")
+    public void handleAnimationAndOffset(final ClickEvent event) {
+
+        GrowlOptions go = new GrowlOptions();
+        go.setAnimation(Animation.TADA, Animation.LIGHTSPEED_OUT);
+        go.setOffset(200, 140);
+
+        Growl.growl("Title", "Message", IconType.SMILE_O, go);
+
+    }
+
+    @UiHandler("template")
+    public void handleTemplate(final ClickEvent event) {
+
+        GrowlOptions go = new GrowlOptions();
+        go.setTemplate("<div data-growl=\"container\" class=\"alert\" role=\"alert\">\n" +
+                "\t\t<button type=\"button\" class=\"close\" data-growl=\"dismiss\">\n" +
+                "\t\t\t<span aria-hidden=\"true\">×</span>\n" +
+                "\t\t\t<span class=\"sr-only\">Close</span>\n" +
+                "\t\t</button>\n" +
+                "\t\t<span data-growl=\"icon\"></span>\n" +
+                "\t\t<b><span data-growl=\"title\"></span></b>\n" +
+                "\t\t<span data-growl=\"message\"></span>\n" +
+                "\t\t<a href=\"#\" data-growl=\"url\"></a>\n" +
+                "\t</div>");
+
+        go.makeDefault();
+
+        Growl.growl("Title", "Message", IconType.SMILE_O);
+
     }
 
     interface Binder extends UiBinder<Widget, GrowlView> {
