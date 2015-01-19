@@ -70,7 +70,7 @@
                     Bootstrap DateTimePicker
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 2.2.0</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 2.3.1</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
@@ -275,6 +275,7 @@
                             <b:Button type="PRIMARY" text="Enable Sundays" ui:field="enableSundays"/>
                             <b:Button type="PRIMARY" text="Hide" ui:field="hide"/>
                             <b:Button type="PRIMARY" text="Show" ui:field="show"/>
+                            <b:Button type="PRIMARY" text="Set Format" ui:field="setFormat"/>
                         </b:Column>
                     </b:Row>
                 </b:PanelBody>
@@ -282,6 +283,8 @@
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b2:DateTimePicker/&gt;\n
                     </d:PrettyPre>
+
+                    <b.html:Paragraph emphasis="DANGER" text="** In order to setFormat, you must call box.refresh() after to set on the JS object!"/>
                 </b:PanelFooter>
             </b:Panel>
 

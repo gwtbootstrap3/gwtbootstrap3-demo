@@ -82,6 +82,8 @@ public class DateTimePickerView extends ViewImpl implements DateTimePickerPresen
     Button addRemove;
     @UiField
     Div eventDateTimePickerDiv;
+    @UiField
+    Button setFormat;
 
     @Inject
     DateTimePickerView(final Binder uiBinder) {
@@ -161,12 +163,12 @@ public class DateTimePickerView extends ViewImpl implements DateTimePickerPresen
 
     @UiHandler("endDate")
     public void handleEndDate(final ClickEvent event) {
-        methods.setEndDate("2014-02-27");
+        methods.setEndDate("2015-01-27");
     }
 
     @UiHandler("startDate")
     public void handleStartDate(final ClickEvent event) {
-        methods.setStartDate("2014-02-10");
+        methods.setStartDate("2015-01-10");
     }
 
     @UiHandler("getValue")
@@ -217,6 +219,12 @@ public class DateTimePickerView extends ViewImpl implements DateTimePickerPresen
     @UiHandler("show")
     public void handleShow(final ClickEvent event) {
         methods.show();
+    }
+
+    @UiHandler("setFormat")
+    public void handleSetFormat(final ClickEvent event) {
+        methods.setFormat("dd.mm.yyyy");
+        methods.reload();
     }
 
     interface Binder extends UiBinder<Widget, DateTimePickerView> {
