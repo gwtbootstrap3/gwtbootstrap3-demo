@@ -53,6 +53,10 @@
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
+                <b.html:Strong>This extra does not currently work with IE8. As soon as the wrapped library supports IE8, we will update this to reflect</b.html:Strong>
+            </b:BlockQuote>
+
+            <b:BlockQuote addStyleNames="{style.danger}">
                 <b:Heading addStyleNames="{style.margin-fix}" size="H4" text="Required for use"/>
                 <b.html:Paragraph>
                     To use Slider, you must first add the extras module to your project. In Maven:
