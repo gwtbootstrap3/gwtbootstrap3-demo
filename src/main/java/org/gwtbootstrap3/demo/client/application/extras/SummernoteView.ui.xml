@@ -63,7 +63,7 @@
 
             <b:BlockQuote>
                 <b.html:Strong>Original Library Link:</b.html:Strong>
-                <b:Anchor addStyleNames="{style.spacing2}" href="http://summernote.org/">Summernote
+                <b:Anchor addStyleNames="{style.spacing2}" href="https://github.com/summernote/summernote">Summernote
                 </b:Anchor>
                 <b.html:Br/>
                 <b.html:Strong>Current Version Supported: 0.6.0</b.html:Strong>
