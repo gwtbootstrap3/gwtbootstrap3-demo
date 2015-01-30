@@ -148,9 +148,9 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b.html:Paragraph align="LEFT"/&gt;\n
-                        &lt;b.html:Paragraph align="CENTER"/&gt;\n
-                        &lt;b.html:Paragraph align="RIGHT"/&gt;\n
+                        &lt;b.html:Paragraph alignment="LEFT"/&gt;\n
+                        &lt;b.html:Paragraph alignment="CENTER"/&gt;\n
+                        &lt;b.html:Paragraph alignmant="RIGHT"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
