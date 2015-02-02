@@ -69,6 +69,22 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
+                <version>${gwt.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>test</goal>
+                            <goal>resources</goal>
+                        </goals>
+                        <configuration>
+                            <mode>htmlunit</mode>
+                            <testTimeOut>240</testTimeOut>
+                            <failOnError>true</failOnError>
+                        </configuration>
+                    </execution>
+                </executions>
+                <inherited>true</inherited>
                 <configuration>
                     <runTarget>GwtBootstrap3Demo.html</runTarget>
                     <hostedWebapp>${webappDirectory}</hostedWebapp>
