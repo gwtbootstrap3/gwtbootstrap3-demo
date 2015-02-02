@@ -83,7 +83,7 @@
                         \n
                         \s\s\s\s&lt;b:FormGroup&gt;\n
                         \s\s\s\s\s\s&lt;b:FormLabel for="formEmail"&gt;Email&lt;/b:FormLabel&gt;\n
-                        \s\s\s\s\s\s&lt;b:FormStatic b:id="formEmail"&gt;email@example.example&lt;/b:FormStatic&gt;\n
+                        \s\s\s\s\s\s&lt;b:FormControlStatic b:id="formEmail"&gt;email@example.example&lt;/b:FormControlStatic&gt;\n
                         \s\s\s\s&lt;/b:FormGroup&gt;\n
                         \n
                         \s\s\s\s&lt;b:FormGroup&gt;\n
@@ -213,7 +213,7 @@
                         \s\s\s\s&lt;/b:FormGroup&gt;\n
                         \n
                         \s\s\s\s&lt;b:FormGroup&gt;\n
-                        \s\s\s\s\s\s&lt;b:Input type="PASSWORD placeholder=&quot;Enter password&quot;/&gt;\n
+                        \s\s\s\s\s\s&lt;b:Input type="PASSWORD" placeholder=&quot;Enter password&quot;/&gt;\n
                         \s\s\s\s&lt;/b:FormGroup&gt;\n
                         \n
                         \s\s\s\s&lt;b:FormGroup&gt;\n
@@ -294,7 +294,7 @@
                         \s\s\s\s&lt;b:FormGroup&gt;\n
                         \s\s\s\s\s\s&lt;b:FormLabel for="formEmail" addStyleNames="col-lg-2"&gt;Email&lt;/b:FormLabel&gt;\n
                         \s\s\s\s\s\s&lt;g:FlowPanel addStyleNames="col-lg-10"&gt;\n
-                        \s\s\s\s\s\s\s\s&lt;b:FormStatic b:id="formEmail"&gt;email@example.example&lt;/b:FormStatic&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:FormControlStatic b:id="formEmail"&gt;email@example.example&lt;/b:FormControlStatic&gt;\n
                         \s\s\s\s&lt;/g:FlowPanel&gt;\n
                         \s\s\s\s&lt;/b:FormGroup&gt;\n
                         \n
