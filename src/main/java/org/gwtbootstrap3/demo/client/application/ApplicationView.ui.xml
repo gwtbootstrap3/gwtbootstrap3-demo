@@ -38,7 +38,7 @@
             <b:Navbar position="FIXED_TOP">
                 <b:Container>
                     <b:NavbarHeader>
-                        <b:NavbarBrand targetHistoryToken="{nameTokens.getHome}" ui:field="brand">GwtBootstrap3 v0.8
+                        <b:NavbarBrand targetHistoryToken="{nameTokens.getHome}" ui:field="brand">GwtBootstrap3 v0.9-SNAPSHOT
                         </b:NavbarBrand>
                         <b:NavbarCollapseButton dataTarget="#navbar-collapse"/>
                     </b:NavbarHeader>
