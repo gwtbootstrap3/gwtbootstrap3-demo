@@ -53,6 +53,8 @@
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getCode}">Code</b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getForms}">Forms
                                     </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getFormsWithValidation}">Forms w/Validation
+                                    </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getGridSystem}">Grid System
                                     </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getImages}">Images
