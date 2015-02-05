@@ -34,6 +34,7 @@ public class NameTokens {
     public static final String CODE = "code";
     public static final String TABLES = "tables";
     public static final String FORMS = "forms";
+    public static final String FORMS_WITH_VALIDATION = "formsWithValidation";
     public static final String BUTTONS = "buttons";
     public static final String IMAGES = "images";
     public static final String RESPONSIVE_UTILITIES = "responsiveUtilities";
@@ -112,6 +113,10 @@ public class NameTokens {
         return FORMS;
     }
 
+    public static String getFormsWithValidation() {
+        return FORMS_WITH_VALIDATION;
+    }
+
     public static String getButtons() {
         return BUTTONS;
     }
@@ -159,6 +164,7 @@ public class NameTokens {
     public static String getFullCalendar() {
         return FULL_CALENDAR;
     }
+
     public static String getInputGroups() {
         return INPUT_GROUPS;
     }

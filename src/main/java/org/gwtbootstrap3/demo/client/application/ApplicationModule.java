@@ -21,8 +21,11 @@ package org.gwtbootstrap3.demo.client.application;
  */
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
+
 import org.gwtbootstrap3.demo.client.application.components.*;
 import org.gwtbootstrap3.demo.client.application.css.*;
+import org.gwtbootstrap3.demo.client.application.css.validation.FormsWithValidationPresenter;
+import org.gwtbootstrap3.demo.client.application.css.validation.FormsWithValidationView;
 import org.gwtbootstrap3.demo.client.application.extras.*;
 import org.gwtbootstrap3.demo.client.application.general.HomePresenter;
 import org.gwtbootstrap3.demo.client.application.general.HomeView;
@@ -49,6 +52,7 @@ public class ApplicationModule extends AbstractPresenterModule {
         bindPresenter(CodePresenter.class, CodePresenter.MyView.class, CodeView.class, CodePresenter.MyProxy.class);
         bindPresenter(TablesPresenter.class, TablesPresenter.MyView.class, TablesView.class, TablesPresenter.MyProxy.class);
         bindPresenter(FormsPresenter.class, FormsPresenter.MyView.class, FormsView.class, FormsPresenter.MyProxy.class);
+        bindPresenter(FormsWithValidationPresenter.class, FormsWithValidationPresenter.MyView.class, FormsWithValidationView.class, FormsWithValidationPresenter.MyProxy.class);
         bindPresenter(ButtonsPresenter.class, ButtonsPresenter.MyView.class, ButtonsView.class, ButtonsPresenter.MyProxy.class);
         bindPresenter(ImagesPresenter.class, ImagesPresenter.MyView.class, ImagesView.class, ImagesPresenter.MyProxy.class);
         bindPresenter(ResponsiveUtilitiesPresenter.class, ResponsiveUtilitiesPresenter.MyView.class, ResponsiveUtilitiesView.class, ResponsiveUtilitiesPresenter.MyProxy.class);

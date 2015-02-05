@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -17,6 +17,9 @@
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
         <gwtp.version>1.4</gwtp.version>
         <gin.version>2.1.2</gin.version>
+        <validation.version>1.0.0.GA</validation.version>
+        <hibernate-validator.version>4.1.0.Final</hibernate-validator.version>
+        <slf4j.version>1.7.9</slf4j.version>
     </properties>
 
     <dependencies>
@@ -33,7 +36,7 @@
             <version>${gwt.version}</version>
             <scope>provided</scope>
         </dependency>
-    
+
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>gwtbootstrap3</artifactId>
@@ -60,6 +63,35 @@
             <version>${gwtp.version}</version>
             <scope>provided</scope>
         </dependency>
+
+        <!-- JSR-303 Bean Validation -->
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>${validation.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>${validation.version}</version>
+            <classifier>sources</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>${hibernate-validator.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>${hibernate-validator.version}</version>
+            <classifier>sources</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -69,7 +101,6 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
-                <version>${gwt.version}</version>
                 <executions>
                     <execution>
                         <goals>
