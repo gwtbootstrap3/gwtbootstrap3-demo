@@ -76,6 +76,7 @@ public class ApplicationModule extends AbstractPresenterModule {
         bindPresenter(PaginationPresenter.class, PaginationPresenter.MyView.class, PaginationView.class, PaginationPresenter.MyProxy.class);
         bindPresenter(PanelPresenter.class, PanelPresenter.MyView.class, PanelView.class, PanelPresenter.MyProxy.class);
         bindPresenter(ProgressBarPresenter.class, ProgressBarPresenter.MyView.class, ProgressBarView.class, ProgressBarPresenter.MyProxy.class);
+        bindPresenter(SuggestBoxPresenter.class, SuggestBoxPresenter.MyView.class, SuggestBoxView.class, SuggestBoxPresenter.MyProxy.class);
         bindPresenter(ThumbnailPresenter.class, ThumbnailPresenter.MyView.class, ThumbnailView.class, ThumbnailPresenter.MyProxy.class);
         bindPresenter(WellPresenter.class, WellPresenter.MyView.class, WellView.class, WellPresenter.MyProxy.class);
 

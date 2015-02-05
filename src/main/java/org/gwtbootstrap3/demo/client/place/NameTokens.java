@@ -58,6 +58,7 @@ public class NameTokens {
     public static final String PAGINATION = "pagination";
     public static final String PANELS = "panels";
     public static final String PROGRESS_BARS = "progressBars";
+    public static final String SUGGEST_BOX = "suggestBox";
     public static final String THUMBNAILS = "thumbnails";
     public static final String WELLS = "wells";
 
@@ -251,6 +252,10 @@ public class NameTokens {
 
     public static String getSlider() {
         return SLIDER;
+    }
+
+    public static String getSuggestBox() {
+        return SUGGEST_BOX;
     }
 
     public static String getSummernote() {
