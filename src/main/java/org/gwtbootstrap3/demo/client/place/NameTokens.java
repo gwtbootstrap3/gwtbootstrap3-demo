@@ -79,6 +79,7 @@ public class NameTokens {
     public static final String SLIDER = "slider";
     public static final String SUMMERNOTE = "summernote";
     public static final String TOGGLESWITCH = "toggleswitch";
+    public static final String TYPEAHEAD = "typeahead";
     public static final String OFFLINE = "offline";
     public static final String GROWL = "growl";
     public static final String FULL_CALENDAR = "fullcalendar";
@@ -264,6 +265,10 @@ public class NameTokens {
 
     public static String getToggleSwitch() {
         return TOGGLESWITCH;
+    }
+
+    public static String getTypeahead() {
+      return TYPEAHEAD;
     }
 
     public static String getOffline() {
