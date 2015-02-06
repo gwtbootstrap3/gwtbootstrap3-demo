@@ -133,17 +133,6 @@
                     <merge>true</merge>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>com.github.github</groupId>
-                <artifactId>site-maven-plugin</artifactId>
-                <version>${github-site-plugin-version}</version>
-                <configuration>
-                    <message>Updating snapshot apidocs site for ${project.version}</message>
-                    <outputDirectory>../gwtbootstrap3/gwtbootstrap3/target/site/apidocs</outputDirectory>
-                    <path>snapshot/apidocs</path>
-                    <merge>true</merge>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 
