@@ -29,4 +29,4 @@ script:
   - mvn clean install -DdryRun=true -Dlicense.failOnMissingHeader=true -Dlicense.failOnNotUptodateHeader=true
 
 after_success:
-  - if [[ $TRAVIS_PULL_REQUEST == "false" ]]; then mvn -Dgithub.global.oauth2Token=$GITHUB_AUTH_TOKEN -pl com.github.github:site-maven-plugin:site; fi
+  - if [[ $TRAVIS_PULL_REQUEST == "false" ]]; then mvn -Dgithub.global.oauth2Token=$GITHUB_AUTH_TOKEN -pl site; fi
