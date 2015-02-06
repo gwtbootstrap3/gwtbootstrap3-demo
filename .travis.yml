@@ -28,4 +28,4 @@ script:
   - mvn clean install -DdryRun=true -Dlicense.failOnMissingHeader=true -Dlicense.failOnNotUptodateHeader=true
 
 after_success:
-  - if [[ $TRAVIS_PULL_REQUEST == "false" ]]; then mvn -Dgithub.global.oauth2Token=$GITHUB_AUTH_TOKEN site; fi
+  - ./deploy.sh
