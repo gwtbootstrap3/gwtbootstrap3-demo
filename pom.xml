@@ -20,6 +20,7 @@
         <validation.version>1.0.0.GA</validation.version>
         <hibernate-validator.version>4.1.0.Final</hibernate-validator.version>
         <slf4j.version>1.7.9</slf4j.version>
+        <github-site-plugin-version>0.10</github-site-plugin-version>
     </properties>
 
     <dependencies>
@@ -119,6 +120,28 @@
                 <configuration>
                     <runTarget>GwtBootstrap3Demo.html</runTarget>
                     <hostedWebapp>${webappDirectory}</hostedWebapp>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.github.github</groupId>
+                <artifactId>site-maven-plugin</artifactId>
+                <version>${github-site-plugin-version}</version>
+                <configuration>
+                    <message>Updating snapshot demo site for ${project.version}</message>
+                    <outputDirectory>${project.build.directory}/gwtbootstrap3-demo-${project.version}</outputDirectory>
+                    <path>snapshot/</path>
+                    <merge>true</merge>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.github.github</groupId>
+                <artifactId>site-maven-plugin</artifactId>
+                <version>${github-site-plugin-version}</version>
+                <configuration>
+                    <message>Updating snapshot apidocs site for ${project.version}</message>
+                    <outputDirectory>../gwtbootstrap3/gwtbootstrap3/target/site/apidocs</outputDirectory>
+                    <path>snapshot/apidocs</path>
+                    <merge>true</merge>
                 </configuration>
             </plugin>
         </plugins>
