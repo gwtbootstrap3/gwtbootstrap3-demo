@@ -35,6 +35,7 @@
     <inherits name="org.gwtbootstrap3.extras.toggleswitch.ToggleSwitch"/>
     <inherits name="org.gwtbootstrap3.extras.summernote.Summernote"/>
     <inherits name="org.gwtbootstrap3.extras.select.Select"/>
+    <inherits name="org.gwtbootstrap3.extras.typeahead.Typeahead"/>
     <inherits name="org.gwtbootstrap3.extras.positionedtabs.PositionedTabs"/>
     <inherits name="org.gwtbootstrap3.extras.respond.Respond"/>
     <inherits name="org.gwtbootstrap3.extras.growl.Growl"/>
