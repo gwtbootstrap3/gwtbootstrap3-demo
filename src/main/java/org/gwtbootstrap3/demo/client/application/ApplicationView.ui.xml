@@ -156,6 +156,8 @@
                                     </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getToggleSwitch}">ToggleSwitch
                                     </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getTypeahead}">Typeahead
+                                    </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getOffline}">Offline
                                     </b:AnchorListItem>
                                 </b:DropDownMenu>
