@@ -21,6 +21,7 @@ package org.gwtbootstrap3.demo.client.application.css.validation;
  */
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 import javax.validation.ConstraintViolation;
@@ -31,10 +32,13 @@ import javax.validation.groups.Default;
 import org.gwtbootstrap3.client.ui.Form;
 import org.gwtbootstrap3.client.ui.PanelBody;
 import org.gwtbootstrap3.client.ui.TextBox;
+import org.gwtbootstrap3.client.ui.form.error.BasicEditorError;
 import org.gwtbootstrap3.extras.toggleswitch.client.ui.ToggleSwitch;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.DivElement;
+import com.google.gwt.editor.client.Editor;
+import com.google.gwt.editor.client.EditorError;
 import com.google.gwt.editor.client.SimpleBeanEditorDriver;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
@@ -65,6 +69,10 @@ public class FormsWithValidationView extends ViewImpl implements FormsWithValida
 
     @Ignore
     @UiField
+    protected TextBox yesNoTextBox;
+
+    @Ignore
+    @UiField
     protected PanelBody body;
 
     @Ignore
@@ -89,6 +97,24 @@ public class FormsWithValidationView extends ViewImpl implements FormsWithValida
             public void onValueChange(ValueChangeEvent<Boolean> event) {
                 boolean on = event.getValue();
                 allowBlankTextBox.setValidateOnBlur(on);
+                yesNoTextBox.setValidateOnBlur(on);
+            }
+        });
+
+        yesNoTextBox.addValidator(new org.gwtbootstrap3.client.ui.form.validator.Validator() {
+            @Override
+            public List<EditorError> validate(Editor editor, Object value) {
+                List<EditorError> result = new ArrayList<EditorError>();
+                String valueStr = value == null ? "" : value.toString();
+                if (!("Yes".equalsIgnoreCase(valueStr) || "No".equalsIgnoreCase(valueStr))) {
+                    result.add(new BasicEditorError(yesNoTextBox, value, "Must be \"Yes\" or \"No\""));
+                }
+                return result;
+            }
+
+            @Override
+            public int getPriority() {
+                return Priority.MEDIUM;
             }
         });
     }
