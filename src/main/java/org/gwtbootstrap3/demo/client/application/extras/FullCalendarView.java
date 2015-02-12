@@ -167,7 +167,6 @@ public class FullCalendarView extends ViewImpl implements FullCalendarPresenter.
 
     protected void addEvents(FullCalendar fc) {
         for (int i = 0; i < 15; i++) {
-            long milis = System.currentTimeMillis();
             Event calEvent = new Event("" + i, "This is Event: " + i);
             int day = Random.nextInt(10);
             Date start = new Date();
