@@ -8,3 +8,8 @@ org.gwtbootstrap3.client.ui.base.helper
 org.gwtbootstrap3.client.ui.base.mixin
 org.gwtbootstrap3.client.ui.base.modal
 org.gwtbootstrap3.client.ui.constants
+org.gwtbootstrap3.client.ui.form.error
+org.gwtbootstrap3.client.ui.form.validator
+org.gwtbootstrap3.client.ui.gwt
+org.gwtbootstrap3.client.ui.html
+org.gwtbootstrap3.client.ui.impl
