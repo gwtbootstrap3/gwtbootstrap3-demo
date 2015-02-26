@@ -30,6 +30,10 @@
         .inline {
             display: inline;
         }
+
+        .wider {
+            max-width: 400px;
+        }
     </ui:style>
 
     <b:Row>
@@ -39,11 +43,20 @@
 
             <b:BlockQuote>
                 <b.html:Paragraph>
-                    For more examples and more options on setup (animation, supporting html, custom selector/container,
-                    etc..)
-                    go to<a href="http://getbootstrap.com/javascript/#tooltips">
+                    Tooltip supports setting options for things like animation, html support,
+                    container element, and more. See the <a href="http://gwtbootstrap3.github.io/gwtbootstrap3-demo/snapshot/apidocs/org/gwtbootstrap3/client/ui/Tooltip.html">
+                    Tooltip javadoc</a> for the full set of options.
+                </b.html:Paragraph>
+                <b.html:Paragraph>
+                    Tooltip also supports setting class names into the default template, while still using
+                    the template. This is useful for overriding the default look on a case-by-case basis.
+                </b.html:Paragraph>
+                <b.html:Paragraph>
+                    For more examples and screenshots, go to<a href="http://getbootstrap.com/javascript/#tooltips">
                     http://getbootstrap.com/javascript/#tooltips</a>.
                 </b.html:Paragraph>
+
+
             </b:BlockQuote>
 
             <b:Panel>
@@ -116,6 +129,39 @@
                         &lt;/b:Tooltip&gt;\n\n
                         &lt;b:Tooltip title="..." trigger="MANUAL"&gt;\n
                         \s\s&lt;b:Button text="..."/&gt;\n
+                        &lt;/b:Tooltip&gt;\n\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Options"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Tooltip title="I am a Tooltip with very long text that should be wider than a normal tooltip!"
+                            tooltipClassNames="tooltip {style.wider}" tooltipInnerClassNames="tooltip-inner {style.wider}">
+                        <b:Button addStyleNames="{style.margin}" text="I have a Tooltip!"/>
+                    </b:Tooltip>
+                    <b:Tooltip title="I am a Tooltip with a 2 second hide delay!" hideDelayMs="2000">
+                        <b:Button addStyleNames="{style.margin}" text="I have a Tooltip!"/>
+                    </b:Tooltip>
+                    <b:Tooltip title="&lt;table style='border: 1px solid white'&gt;&lt;tr&gt;&lt;td&gt;I am a tooltip&lt;/tr&gt;&lt;/td&gt;&lt;tr&gt;&lt;td&gt;with an HTML table!&lt;/tr&gt;&lt;/td&gt;&lt;/table&gt;"
+                             isHtml="true">
+                        <b:Button addStyleNames="{style.margin}" text="I have a Tooltip!"/>
+                    </b:Tooltip>
+
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Tooltip title=&quot;...&quot; tooltipClassNames=&quot;tooltip ...&quot; tooltipInnerClassNames=&quot;tooltip-inner ...&quot;&gt;\n
+                        \s\s&lt;b:Button text=&quot;...&quot;/&gt;\n
+                        &lt;/b:Tooltip&gt;\n\n
+                        &lt;b:Tooltip title=&quot;...&quot; hideDelayMs=&quot;2000&quot;&gt;\n
+                        \s\s&lt;b:Button text=&quot;...&quot;/&gt;\n
+                        &lt;/b:Tooltip&gt;\n\n
+                        &lt;b:Tooltip title=&quot;...&quot; isHtml=&quot;true&quot;&gt;\n
+                        \s\s&lt;b:Button text=&quot;...&quot;/&gt;\n
                         &lt;/b:Tooltip&gt;\n\n
                     </d:PrettyPre>
                 </b:PanelFooter>
