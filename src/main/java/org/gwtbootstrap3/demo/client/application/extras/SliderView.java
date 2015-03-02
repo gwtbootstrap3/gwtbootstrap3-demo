@@ -74,7 +74,7 @@ public class SliderView extends ViewImpl implements SliderPresenter.MyView {
 
     @UiHandler("isEnabled")
     void onIsEnabled(ClickEvent event) {
-        basicExample.isEnabled();
+    	Window.alert("" + basicExample.isEnabled());
     }
 
     @UiHandler("getValue")
@@ -104,7 +104,7 @@ public class SliderView extends ViewImpl implements SliderPresenter.MyView {
 
     @UiHandler("rangeIsEnabled")
     void onRangeIsEnabled(ClickEvent event) {
-        rangeExample.isEnabled();
+        Window.alert("" + rangeExample.isEnabled());
     }
 
     @UiHandler("rangeGetValue")
