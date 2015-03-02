@@ -45,7 +45,7 @@
 
             <b:BlockQuote>
                 <b.html:Strong>Original Library Link:</b.html:Strong>
-                <b:Anchor addStyleNames="{style.spacing}" href="http://seiyria.github.io/bootstrap-slider/">Bootstrap
+                <b:Anchor target="_blank" addStyleNames="{style.spacing}" href="http://seiyria.github.io/bootstrap-slider/">Bootstrap
                     Slider
                 </b:Anchor>
                 <b.html:Br/>
@@ -92,11 +92,20 @@
                     <b:Heading size="H3" text="Basic Slider"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b3:Slider min="0" max="20" step="1" value="14"/>
+                    <b:Row>
+                        <b:Column size="SM_4">
+                            <b3:Slider ui:field="basicExample" min="0" max="20" step="1" value="14"/>
+                        </b:Column>
+                        <b:Column size="SM_8">
+                            <b:Button ui:field="disableEnable" type="PRIMARY" text="Disable/Enable"/>
+                            <b:Button ui:field="getValue" type="PRIMARY" addStyleNames="{style.spacing}" text="Get Value"/>
+                            <b:Button ui:field="setValue" type="PRIMARY" addStyleNames="{style.spacing}" text="Set Value"/>
+                        </b:Column>
+                    </b:Row>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b3:Slider min="0", max="20" step="1" value="14"/&gt;\n
+                        &lt;b3:Slider min="0" max="20" step="1" value="14"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>

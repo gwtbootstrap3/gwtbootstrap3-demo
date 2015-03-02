@@ -23,8 +23,11 @@ package org.gwtbootstrap3.demo.client.application.extras;
 import org.gwtbootstrap3.extras.slider.client.ui.Slider;
 import org.gwtbootstrap3.extras.slider.client.ui.base.FormatterCallback;
 
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
@@ -34,6 +37,7 @@ import com.gwtplatform.mvp.client.ViewImpl;
  */
 public class SliderView extends ViewImpl implements SliderPresenter.MyView {
 
+    @UiField Slider basicExample;
     @UiField Slider formatterExample;
 
     interface Binder extends UiBinder<Widget, SliderView> {}
@@ -48,5 +52,20 @@ public class SliderView extends ViewImpl implements SliderPresenter.MyView {
                 return "Current value: " + value;
             }
         });
+    }
+
+    @UiHandler("disableEnable")
+    void onDisableEnable(ClickEvent event) {
+        basicExample.setEnabled(!basicExample.isEnabled());
+    }
+
+    @UiHandler("getValue")
+    void onGetValue(ClickEvent event) {
+        Window.alert(basicExample.getValue().toString());
+    }
+
+    @UiHandler("setValue")
+    void onSetValue(ClickEvent event) {
+        basicExample.setValue(10D);
     }
 }
