@@ -20,6 +20,8 @@ package org.gwtbootstrap3.demo.client.application.extras;
  * #L%
  */
 
+import org.gwtbootstrap3.extras.slider.client.ui.Range;
+import org.gwtbootstrap3.extras.slider.client.ui.RangeSlider;
 import org.gwtbootstrap3.extras.slider.client.ui.Slider;
 import org.gwtbootstrap3.extras.slider.client.ui.base.FormatterCallback;
 
@@ -38,6 +40,7 @@ import com.gwtplatform.mvp.client.ViewImpl;
 public class SliderView extends ViewImpl implements SliderPresenter.MyView {
 
     @UiField Slider basicExample;
+    @UiField RangeSlider rangeExample;
     @UiField Slider formatterExample;
 
     interface Binder extends UiBinder<Widget, SliderView> {}
@@ -54,9 +57,24 @@ public class SliderView extends ViewImpl implements SliderPresenter.MyView {
         });
     }
 
-    @UiHandler("disableEnable")
-    void onDisableEnable(ClickEvent event) {
-        basicExample.setEnabled(!basicExample.isEnabled());
+    @UiHandler("enable")
+    void onEnable(ClickEvent event) {
+        basicExample.setEnabled(true);
+    }
+
+    @UiHandler("disable")
+    void onDisable(ClickEvent event) {
+        basicExample.setEnabled(false);
+    }
+
+    @UiHandler("toggle")
+    void onToggle(ClickEvent event) {
+        basicExample.toggle();
+    }
+
+    @UiHandler("isEnabled")
+    void onIsEnabled(ClickEvent event) {
+        basicExample.isEnabled();
     }
 
     @UiHandler("getValue")
@@ -67,5 +85,35 @@ public class SliderView extends ViewImpl implements SliderPresenter.MyView {
     @UiHandler("setValue")
     void onSetValue(ClickEvent event) {
         basicExample.setValue(10D);
+    }
+
+    @UiHandler("rangeEnable")
+    void onRangeDisableEnable(ClickEvent event) {
+        rangeExample.setEnabled(true);
+    }
+
+    @UiHandler("rangeDisable")
+    void onRangeDisableDisable(ClickEvent event) {
+        rangeExample.setEnabled(false);
+    }
+
+    @UiHandler("rangeToggle")
+    void onRangeToggle(ClickEvent event) {
+        rangeExample.toggle();
+    }
+
+    @UiHandler("rangeIsEnabled")
+    void onRangeIsEnabled(ClickEvent event) {
+        rangeExample.isEnabled();
+    }
+
+    @UiHandler("rangeGetValue")
+    void onRangeGetValue(ClickEvent event) {
+        Window.alert(rangeExample.getValue().toString());
+    }
+
+    @UiHandler("rangeSetValue")
+    void onRangeSetValue(ClickEvent event) {
+        rangeExample.setValue(new Range(400, 700));
     }
 }

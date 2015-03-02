@@ -97,7 +97,10 @@
                             <b3:Slider ui:field="basicExample" min="0" max="20" step="1" value="14"/>
                         </b:Column>
                         <b:Column size="SM_8">
-                            <b:Button ui:field="disableEnable" type="PRIMARY" text="Disable/Enable"/>
+                            <b:Button ui:field="enable" type="PRIMARY" addStyleNames="{style.spacing}" text="Enable"/>
+                            <b:Button ui:field="disable" type="PRIMARY" addStyleNames="{style.spacing}" text="Disable"/>
+                            <b:Button ui:field="isEnabled" type="PRIMARY" addStyleNames="{style.spacing}" text="isEnabled"/>
+                            <b:Button ui:field="toggle" type="PRIMARY" addStyleNames="{style.spacing}" text="Toggle"/>
                             <b:Button ui:field="getValue" type="PRIMARY" addStyleNames="{style.spacing}" text="Get Value"/>
                             <b:Button ui:field="setValue" type="PRIMARY" addStyleNames="{style.spacing}" text="Set Value"/>
                         </b:Column>
@@ -105,7 +108,20 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b3:Slider min="0" max="20" step="1" value="14"/&gt;\n
+                        &lt;b3:Slider ui:field="mySlider" min="0" max="20" step="1" value="14"/&gt;\n
+                    </d:PrettyPre>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        // Enable/Disable slider\n
+                        mySlider.setEnabled(true);\n
+                        mySlider.setEnabled(false);\n\n
+                        // Slider enabled?\n
+                        boolean isEnabled = mySlider.isEnabled();\n\n
+                        // Toggle slider\n
+                        mySlider.toggle();\n\n
+                        // Get value\n
+                        double value = mySlider.getValue();\n\n
+                        // Set value\n
+                        mySlider.setValue(10);\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -116,13 +132,38 @@
                     <b:Heading size="H3" text="Range Slider"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b.html:Strong text="€ 10"/>
-                    <b3:RangeSlider min="10" max="1000" step="5" value="[250,450]"/>
-                    <b.html:Strong text="€ 1000"/>
+                    <b:Row>
+                        <b:Column size="SM_4">
+                            <b.html:Strong text="10"/>
+                            <b3:RangeSlider ui:field="rangeExample" min="10" max="1000" step="5" value="[250,450]"/>
+                            <b.html:Strong text="1000"/>
+                        </b:Column>
+                        <b:Column size="SM_8">
+                            <b:Button ui:field="rangeEnable" type="PRIMARY" addStyleNames="{style.spacing}" text="Enable"/>
+                            <b:Button ui:field="rangeDisable" type="PRIMARY" addStyleNames="{style.spacing}" text="Disable"/>
+                            <b:Button ui:field="rangeIsEnabled" type="PRIMARY" addStyleNames="{style.spacing}" text="isEnabled"/>
+                            <b:Button ui:field="rangeToggle" type="PRIMARY" addStyleNames="{style.spacing}" text="Toggle"/>
+                            <b:Button ui:field="rangeGetValue" type="PRIMARY" addStyleNames="{style.spacing}" text="Get Value"/>
+                            <b:Button ui:field="rangeSetValue" type="PRIMARY" addStyleNames="{style.spacing}" text="Set Value"/>
+                        </b:Column>
+                    </b:Row>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b3:RangeSlider min="10" max="1000" step="5" value="[250,450]"/&gt;\n
+                        &lt;b3:RangeSlider ui:field="myRangeSlider" min="10" max="1000" step="5" value="[250,450]"/&gt;\n
+                    </d:PrettyPre>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        // Enable/Disable range slider\n
+                        myRangeSlider.setEnabled(true);\n
+                        myRangeSlider.setEnabled(false);\n\n
+                        // Slider enabled?\n
+                        boolean isEnabled = myRangeSlider.isEnabled();\n\n
+                        // Toggle range slider\n
+                        myRangeSlider.toggle();\n\n
+                        // Get value\n
+                        Range value = myRangeSlider.getValue();\n\n
+                        // Set value\n
+                        myRangeSlider.setValue(new Range(400, 700));\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
