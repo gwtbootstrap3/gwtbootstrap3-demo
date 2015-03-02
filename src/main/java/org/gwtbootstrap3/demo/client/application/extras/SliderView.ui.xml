@@ -45,15 +45,15 @@
 
             <b:BlockQuote>
                 <b.html:Strong>Original Library Link:</b.html:Strong>
-                <b:Anchor addStyleNames="{style.spacing}" href="http://www.eyecon.ro/bootstrap-slider/">Bootstrap
+                <b:Anchor addStyleNames="{style.spacing}" href="http://seiyria.github.io/bootstrap-slider/">Bootstrap
                     Slider
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 1.4.3</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 4.5.1</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
-                <b.html:Strong>This extra does not currently work with IE8. As soon as the wrapped library supports IE8, we will update this to reflect</b.html:Strong>
+                <b.html:Strong>This extra only support modern browsers. Basically, any browser below IE9 is not compatible.</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
@@ -86,52 +86,68 @@
                 </d:PrettyPre>
             </b:BlockQuote>
 
+            <!-- Basic slider -->
             <b:Panel>
                 <b:PanelHeader>
                     <b:Heading size="H3" text="Basic Slider"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b3:Slider/>
+                    <b3:Slider min="0" max="20" step="1" value="14"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b3:Slider/&gt;\n
+                        &lt;b3:Slider min="0", max="20" step="1" value="14"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
 
+            <!-- Range slider -->
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="H3" text="Custom Slider"/>
+                    <b:Heading size="H3" text="Range Slider"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b3:Slider ui:field="customSlider" value="250.0" min="-150.0" max="500.0" step="5.0"
-                               handle="SQUARE"/>
+                    <b.html:Strong text="€ 10"/>
+                    <b3:RangeSlider min="10" max="1000" step="5" value="[250,450]"/>
+                    <b.html:Strong text="€ 1000"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b3:Slider ui:field="customSlider" value="250.0" min="-150.0" max="500.0" step="5.0"
-                        handle="SQUARE"/&gt;\n
-                    </d:PrettyPre>
-                    <d:PrettyPre addStyleNames="lang-java">
-                        customSlider.setFormatter(new FormatterCallback() {\n
-                        \s@Override\n
-                        \s\spublic String toolTipMsg(double value) {\n
-                        \s\s\sint b = (int) (value * 10);\n
-                        \s\s\sreturn b + " blocks";\n
-                        \s\s}\n
-                        \s});\n
+                        &lt;b3:RangeSlider min="10" max="1000" step="5" value="[250,450]"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
 
-
+            <!-- Formatter -->
             <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Formatter"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:Slider ui:field="formatterExample" min="-100.0" max="100.0" value="0" step="5.0"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:Slider ui:field=“mySliedr” min="-100.0" max="100.0" value="0" step="5.0"/&gt;\n
+                    </d:PrettyPre>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        mySliedr.setFormatter(new FormatterCallback() {\n
+                        \s\s@Override\n
+                        \s\spublic String formatTooltip(final double value) {\n
+                        \s\s\sreturn "Current value: " + value;\n
+                        \s\s}\n
+                        });\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <!-- FIXME: Vertical slider is broken, to be enabled in later version -->
+            <b:Panel visible="false">
                 <b:PanelHeader>
                     <b:Heading size="H3" text="Vertical Slider"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b3:Slider orientation="VERTICAL"/>
+                    <b3:Slider min="0" max="10" value="5" orientation="VERTICAL"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">

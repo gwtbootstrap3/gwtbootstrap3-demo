@@ -20,34 +20,32 @@ package org.gwtbootstrap3.demo.client.application.extras;
  * #L%
  */
 
+import org.gwtbootstrap3.extras.slider.client.ui.Slider;
+import org.gwtbootstrap3.extras.slider.client.ui.base.FormatterCallback;
+
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
-import org.gwtbootstrap3.extras.slider.client.ui.Slider;
-import org.gwtbootstrap3.extras.slider.client.ui.base.FormatterCallback;
 
 /**
- * @author lyhcode
+ * @author Xiaodong SUN
  */
 public class SliderView extends ViewImpl implements SliderPresenter.MyView {
 
-    @UiField
-    Slider customSlider;
+    @UiField Slider formatterExample;
 
-    interface Binder extends UiBinder<Widget, SliderView> {
-    }
+    interface Binder extends UiBinder<Widget, SliderView> {}
 
     @Inject
     SliderView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
-        customSlider.setFormatter(new FormatterCallback() {
+        formatterExample.setFormatter(new FormatterCallback() {
             @Override
-            public String toolTipMsg(final double value) {
-                final int b = (int) (value * 10);
-                return b + " blocks";
+            public String formatTooltip(final double value) {
+                return "Current value: " + value;
             }
         });
     }
