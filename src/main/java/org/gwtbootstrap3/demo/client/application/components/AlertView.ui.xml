@@ -56,22 +56,22 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Alert type="SUCCESS&gt;\n
+                        &lt;b:Alert type="SUCCESS"&gt;\n
                         \s\s&lt;b.html:Strong text="..."/&gt;\n
                         \s\s&lt;b.html:Text text="..."/&gt;\n
                         &lt;/b:Alert&gt;\n
                         \n
-                        &lt;b:Alert type="INFO&gt;\n
+                        &lt;b:Alert type="INFO"&gt;\n
                         \s\s&lt;b.html:Strong text="..."/&gt;\n
                         \s\s&lt;b.html:Text text="..."/&gt;\n
                         &lt;/b:Alert&gt;\n
                         \n
-                        &lt;b:Alert type="WARNING&gt;\n
+                        &lt;b:Alert type="WARNING"&gt;\n
                         \s\s&lt;b.html:Strong text="..."/&gt;\n
                         \s\s&lt;b.html:Text text="..."/&gt;\n
                         &lt;/b:Alert&gt;\n
                         \n
-                        &lt;b:Alert type="DANGER&gt;\n
+                        &lt;b:Alert type="DANGER"&gt;\n
                         \s\s&lt;b.html:Strong text="..."/&gt;\n
                         \s\s&lt;b.html:Text text="..."/&gt;\n
                         &lt;/b:Alert&gt;\n
