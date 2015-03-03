@@ -45,11 +45,11 @@
 
             <b:BlockQuote>
                 <b.html:Strong>Original Library Link:</b.html:Strong>
-                <b:Anchor addStyleNames="{style.spacing}" href="http://www.bootstrap-switch.org/">Bootstrap
+                <b:Anchor target="_blank" addStyleNames="{style.spacing}" href="http://www.bootstrap-switch.org/">Bootstrap
                     Switch
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 3.2.2</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 3.3.2</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">

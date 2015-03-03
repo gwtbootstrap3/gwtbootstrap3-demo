@@ -18,6 +18,7 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
              xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
              xmlns:b3="urn:import:org.gwtbootstrap3.extras.slider.client.ui"
@@ -27,6 +28,16 @@
         .danger {
             background-color: #fcf2f2;
             border-color: #dFb5b4;
+        }
+
+        .logRow {
+            border: 1px solid #888888;
+            padding: 5px;
+            min-height: 300px;
+        }
+
+        .logTitle {
+            margin-right: 10px;
         }
 
         .margin-fix {
@@ -45,15 +56,15 @@
 
             <b:BlockQuote>
                 <b.html:Strong>Original Library Link:</b.html:Strong>
-                <b:Anchor addStyleNames="{style.spacing}" href="http://www.eyecon.ro/bootstrap-slider/">Bootstrap
+                <b:Anchor target="_blank" addStyleNames="{style.spacing}" href="http://seiyria.github.io/bootstrap-slider/">Bootstrap
                     Slider
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 1.4.3</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 4.5.1</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
-                <b.html:Strong>This extra does not currently work with IE8. As soon as the wrapped library supports IE8, we will update this to reflect</b.html:Strong>
+                <b.html:Strong>This extra only support modern browsers. Basically, any browser below IE9 is not compatible.</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
@@ -86,52 +97,265 @@
                 </d:PrettyPre>
             </b:BlockQuote>
 
+            <!-- Basic slider -->
             <b:Panel>
                 <b:PanelHeader>
                     <b:Heading size="H3" text="Basic Slider"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b3:Slider/>
+                    <b:Row>
+                        <b:Column size="SM_4">
+                            <b3:Slider ui:field="basicExample" min="0" max="20" step="1" value="14"/>
+                        </b:Column>
+                        <b:Column size="SM_8">
+                            <b:Button ui:field="enable" type="PRIMARY" text="Enable"/>
+                            <b:Button ui:field="disable" type="PRIMARY" addStyleNames="{style.spacing}" text="Disable"/>
+                            <b:Button ui:field="isEnabled" type="PRIMARY" addStyleNames="{style.spacing}" text="isEnabled"/>
+                            <b:Button ui:field="toggle" type="PRIMARY" addStyleNames="{style.spacing}" text="Toggle"/>
+                            <b:Button ui:field="getValue" type="PRIMARY" addStyleNames="{style.spacing}" text="Get Value"/>
+                            <b:Button ui:field="setValue" type="PRIMARY" addStyleNames="{style.spacing}" text="Set Value"/>
+                        </b:Column>
+                    </b:Row>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b3:Slider/&gt;\n
-                    </d:PrettyPre>
-                </b:PanelFooter>
-            </b:Panel>
-
-            <b:Panel>
-                <b:PanelHeader>
-                    <b:Heading size="H3" text="Custom Slider"/>
-                </b:PanelHeader>
-                <b:PanelBody>
-                    <b3:Slider ui:field="customSlider" value="250.0" min="-150.0" max="500.0" step="5.0"
-                               handle="SQUARE"/>
-                </b:PanelBody>
-                <b:PanelFooter>
-                    <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b3:Slider ui:field="customSlider" value="250.0" min="-150.0" max="500.0" step="5.0"
-                        handle="SQUARE"/&gt;\n
+                        &lt;b3:Slider ui:field="mySlider" min="0" max="20" step="1" value="14"/&gt;\n
                     </d:PrettyPre>
                     <d:PrettyPre addStyleNames="lang-java">
-                        customSlider.setFormatter(new FormatterCallback() {\n
-                        \s@Override\n
-                        \s\spublic String toolTipMsg(double value) {\n
-                        \s\s\sint b = (int) (value * 10);\n
-                        \s\s\sreturn b + " blocks";\n
-                        \s\s}\n
-                        \s});\n
+                        // Enable/Disable slider\n
+                        mySlider.setEnabled(true);\n
+                        mySlider.setEnabled(false);\n\n
+                        // Slider enabled?\n
+                        boolean isEnabled = mySlider.isEnabled();\n\n
+                        // Toggle slider\n
+                        mySlider.toggle();\n\n
+                        // Get value\n
+                        double value = mySlider.getValue();\n\n
+                        // Set value\n
+                        mySlider.setValue(10);\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
 
-
+            <!-- Range slider -->
             <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Range Slider"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                        <b:Column size="SM_4">
+                            <b.html:Strong text="10"/>
+                            <b3:RangeSlider ui:field="rangeExample" min="10" max="1000" step="5" value="[250,450]"/>
+                            <b.html:Strong text="1000"/>
+                        </b:Column>
+                        <b:Column size="SM_8">
+                            <b:Button ui:field="rangeEnable" type="PRIMARY" text="Enable"/>
+                            <b:Button ui:field="rangeDisable" type="PRIMARY" addStyleNames="{style.spacing}" text="Disable"/>
+                            <b:Button ui:field="rangeIsEnabled" type="PRIMARY" addStyleNames="{style.spacing}" text="isEnabled"/>
+                            <b:Button ui:field="rangeToggle" type="PRIMARY" addStyleNames="{style.spacing}" text="Toggle"/>
+                            <b:Button ui:field="rangeGetValue" type="PRIMARY" addStyleNames="{style.spacing}" text="Get Value"/>
+                            <b:Button ui:field="rangeSetValue" type="PRIMARY" addStyleNames="{style.spacing}" text="Set Value"/>
+                        </b:Column>
+                    </b:Row>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:RangeSlider ui:field="myRangeSlider" min="10" max="1000" step="5" value="[250,450]"/&gt;\n
+                    </d:PrettyPre>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        // Enable/Disable range slider\n
+                        myRangeSlider.setEnabled(true);\n
+                        myRangeSlider.setEnabled(false);\n\n
+                        // Slider enabled?\n
+                        boolean isEnabled = myRangeSlider.isEnabled();\n\n
+                        // Toggle range slider\n
+                        myRangeSlider.toggle();\n\n
+                        // Get value\n
+                        Range value = myRangeSlider.getValue();\n\n
+                        // Set value\n
+                        myRangeSlider.setValue(new Range(400, 700));\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <!-- Handle -->
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Handle"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                        <b:Column size="SM_6">
+                            <b3:Slider min="10" max="20" value="15" handle="ROUND"/>
+                            <b.html:Br/><b.html:Br/>
+                            <b3:Slider min="10" max="20" value="15" handle="SQUARE"/>
+                        </b:Column>
+                        <b:Column size="SM_6">
+                            <b3:Slider min="10" max="20" value="15" handle="TRIANGLE"/>
+                            <b.html:Br/><b.html:Br/>
+                            <b3:Slider min="10" max="20" value="15" handle="CUSTOM"/>
+                        </b:Column>
+                    </b:Row>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:Slider min="10" max="20" value="15" handle="ROUND"/&gt;\n
+                        &lt;b3:Slider min="10" max="20" value="15" handle="SQUARE"/&gt;\n
+                        &lt;b3:Slider min="10" max="20" value="15" handle="TRIANGLE"/&gt;\n
+                        &lt;b3:Slider min="10" max="20" value="15" handle="CUSTOM"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <!-- Formatter -->
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Formatter"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:Slider ui:field="formatterExample" min="-100.0" max="100.0" value="0" step="5.0"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:Slider ui:field=“mySlider” min="-100.0" max="100.0" value="0" step="5.0"/&gt;\n
+                    </d:PrettyPre>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        mySlider.setFormatter(new FormatterCallback() {\n
+                        \s\s@Override\n
+                        \s\spublic String formatTooltip(final double value) {\n
+                        \s\s\sreturn "Current value: " + value;\n
+                        \s\s}\n
+                        });\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <!-- Precision -->
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Precision"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:Slider min="0" max="10" value="8.115" precision="2"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;!-- Slider will instantiate showing 8.12 due to specified precision--&gt;\n
+                        &lt;b3:Slider min="0" max="10" value="8.115" precision="2"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <!-- Tooltip -->
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Tooltip"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                        <b:Column size="SM_4">
+                            <b3:Slider min="0" max="10" value="10" tooltip="SHOW"/>
+                        </b:Column>
+                        <b:Column size="SM_4">
+                            <b3:Slider min="0" max="10" value="10" tooltip="ALWAYS"/>
+                        </b:Column>
+                        <b:Column size="SM_4">
+                            <b3:Slider min="0" max="10" value="10" tooltip="HIDE"/>
+                        </b:Column>
+                    </b:Row>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:Slider min="0" max="10" value="10" tooltip="SHOW"/&gt;\n
+                        &lt;b3:Slider min="0" max="10" value="10" tooltip="ALWAYS"/&gt;\n
+                        &lt;b3:Slider min="0" max="10" value="10" tooltip="HIDE"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <!-- Logarithmic Scale -->
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Logarithmic Scale"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:Slider min="1000" max="10000000" value="10" step="10" scale="LOGARITHMIC"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:Slider min="1000" max="10000000" value="10" step="10" scale="LOGARITHMIC"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <!-- Events -->
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Events"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                        <b:Column size="SM_6 MD_5">
+                            <b3:Slider ui:field="eventExample" min="0" max="100" step="10" value="10"/>
+                            <b:Button ui:field="eventToggle" type="PRIMARY" addStyleNames="{style.spacing}" text="Toggle"/>
+                            <b:Button ui:field="eventSetValue" type="PRIMARY" addStyleNames="{style.spacing}" text="SetValue"/>
+                            <b.html:Br/><b.html:Br/>
+                            <b3:RangeSlider ui:field="eventRangeExample" min="0" max="100" step="10" value="[30,70]"/>
+                            <b:Button ui:field="eventRangeToggle" type="PRIMARY" addStyleNames="{style.spacing}" text="Toggle"/>
+                            <b:Button ui:field="eventRangeSetValue" type="PRIMARY" addStyleNames="{style.spacing}" text="SetValue"/>
+                        </b:Column>
+                        <b:Column addStyleNames="{style.logRow}" size="SM_6 MD_7">
+                            <b.html:Strong text="Event Log" addStyleNames="{style.logTitle}"/>
+                            <b:Button pull="RIGHT" text="Clear Log" ui:field="clearLogButton"/>
+                            <b.html:Div addStyleNames="clearfix"/>
+                            <g:ScrollPanel height="300px">
+                                <g:FlowPanel ui:field="logRow"/>
+                            </g:ScrollPanel>
+                        </b:Column>
+                    </b:Row>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:Slider ui:field="mySlider" min="0" max="100" step="10" value="10"/&gt;\n
+                        &lt;b3:RangeSlider ui:field="myRangeSlider" min="0" max="100" step="10" value="[30,70]"/&gt;\n
+                    </d:PrettyPre>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        @UiHandler("mySlider")\n
+                        void onSlide(SlideEvent&lt;Double&gt; event) { Double value = event.getValue(); ... }\n\n
+                        @UiHandler("mySlider")\n
+                        void onSlideStart(SlideStartEvent&lt;Double&gt; event) { Double value = event.getValue(); ... }\n\n
+                        @UiHandler("mySlider")\n
+                        void onSlideStop(SlideStopEvent&lt;Double&gt; event) { Double value = event.getValue(); ... }\n\n
+                        @UiHandler("mySlider")\n
+                        void onChange(ValueChangeEvent&lt;Double&gt; event) { Double value = event.getValue(); ... }\n\n
+                        @UiHandler("mySlider")\n
+                        void onEnabled(SlideEnabledEvent event) { ... }\n\n
+                        @UiHandler("mySlider")\n
+                        void onDisabled(SlideDisabledEvent event) { ... }\n\n
+                        @UiHandler("myRangeSlider")\n
+                        void onRangeSlide(SlideEvent&lt;Range&gt; event) { Range range = event.getValue(); ... }\n\n
+                        @UiHandler("myRangeSlider")\n
+                        void onRangeSlideStart(SlideStartEvent&lt;Range&gt; event) { Range range = event.getValue(); ... }\n\n
+                        @UiHandler("myRangeSlider")\n
+                        void onRangeSlideStop(SlideStopEvent&lt;Range&gt; event) { Range range = event.getValue(); ... }\n\n
+                        @UiHandler("myRangeSlider")\n
+                        void onRangeChange(ValueChangeEvent&lt;Range&gt; event) { Range range = event.getValue(); ... }\n\n
+                        @UiHandler("myRangeSlider")\n
+                        void onRangeEnabled(SlideEnabledEvent event) { ... }\n\n
+                        @UiHandler("myRangeSlider")\n
+                        void onRangeDisabled(SlideDisabledEvent event) { ... }\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <!-- FIXME: Vertical slider is broken, to be enabled in later version -->
+            <b:Panel visible="false">
                 <b:PanelHeader>
                     <b:Heading size="H3" text="Vertical Slider"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b3:Slider orientation="VERTICAL"/>
+                    <b3:Slider min="0" max="10" value="5" orientation="VERTICAL"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
