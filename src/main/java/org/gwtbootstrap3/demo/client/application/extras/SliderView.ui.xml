@@ -97,7 +97,7 @@
                             <b3:Slider ui:field="basicExample" min="0" max="20" step="1" value="14"/>
                         </b:Column>
                         <b:Column size="SM_8">
-                            <b:Button ui:field="enable" type="PRIMARY" addStyleNames="{style.spacing}" text="Enable"/>
+                            <b:Button ui:field="enable" type="PRIMARY" text="Enable"/>
                             <b:Button ui:field="disable" type="PRIMARY" addStyleNames="{style.spacing}" text="Disable"/>
                             <b:Button ui:field="isEnabled" type="PRIMARY" addStyleNames="{style.spacing}" text="isEnabled"/>
                             <b:Button ui:field="toggle" type="PRIMARY" addStyleNames="{style.spacing}" text="Toggle"/>
@@ -139,7 +139,7 @@
                             <b.html:Strong text="1000"/>
                         </b:Column>
                         <b:Column size="SM_8">
-                            <b:Button ui:field="rangeEnable" type="PRIMARY" addStyleNames="{style.spacing}" text="Enable"/>
+                            <b:Button ui:field="rangeEnable" type="PRIMARY" text="Enable"/>
                             <b:Button ui:field="rangeDisable" type="PRIMARY" addStyleNames="{style.spacing}" text="Disable"/>
                             <b:Button ui:field="rangeIsEnabled" type="PRIMARY" addStyleNames="{style.spacing}" text="isEnabled"/>
                             <b:Button ui:field="rangeToggle" type="PRIMARY" addStyleNames="{style.spacing}" text="Toggle"/>
@@ -168,6 +168,39 @@
                 </b:PanelFooter>
             </b:Panel>
 
+            <!-- Handle -->
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Handle"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                        <b:Column size="SM_6">
+                            <b3:Slider min="10" max="20" value="15" handle="ROUND"/>
+                        </b:Column>
+                        <b:Column size="SM_6">
+                            <b3:Slider min="10" max="20" value="15" handle="SQUARE"/>
+                        </b:Column>
+                    </b:Row>
+                    <b:Row>
+                        <b:Column size="SM_6">
+                            <b3:Slider min="10" max="20" value="15" handle="TRIANGLE"/>
+                        </b:Column>
+                        <b:Column size="SM_6">
+                            <b3:Slider min="10" max="20" value="15" handle="CUSTOM"/>
+                        </b:Column>
+                    </b:Row>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:Slider min="10" max="20" value="15" handle="ROUND"/&gt;\n
+                        &lt;b3:Slider min="10" max="20" value="15" handle="SQUARE"/&gt;\n
+                        &lt;b3:Slider min="10" max="20" value="15" handle="TRIANGLE"/&gt;\n
+                        &lt;b3:Slider min="10" max="20" value="15" handle="CUSTOM"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
             <!-- Formatter -->
             <b:Panel>
                 <b:PanelHeader>
@@ -187,6 +220,21 @@
                         \s\s\sreturn "Current value: " + value;\n
                         \s\s}\n
                         });\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <!-- Scale -->
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Logarithmic Scale"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b3:Slider min="1000" max="10000000" value="10" step="10" scale="LOGARITHMIC"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:Slider min="1000" max="10000000" value="10" step="10" scale="LOGARITHMIC"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
