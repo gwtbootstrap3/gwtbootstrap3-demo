@@ -20,6 +20,10 @@ package org.gwtbootstrap3.demo.client.application.extras;
  * #L%
  */
 
+import org.gwtbootstrap3.client.ui.Button;
+import org.gwtbootstrap3.extras.select.client.ui.Option;
+import org.gwtbootstrap3.extras.select.client.ui.Select;
+
 import com.google.gwt.event.dom.client.ChangeEvent;
 import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -30,9 +34,6 @@ import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
-import org.gwtbootstrap3.client.ui.Button;
-import org.gwtbootstrap3.extras.select.client.ui.Option;
-import org.gwtbootstrap3.extras.select.client.ui.Select;
 
 /**
  * @author godi
@@ -53,6 +54,8 @@ public class BootstrapSelectView extends ViewImpl implements BootstrapSelectPres
     Button setValues;
     @UiField
     Button disableEnable;
+    @UiField
+    Button deselectAll;
 
     interface Binder extends UiBinder<Widget, BootstrapSelectView> {
     }
@@ -96,6 +99,13 @@ public class BootstrapSelectView extends ViewImpl implements BootstrapSelectPres
             @Override
             public void onClick(final ClickEvent event) {
                 Window.alert(select.getAllSelectedValues().toString());
+            }
+        });
+
+        deselectAll.addClickHandler(new ClickHandler() {
+            @Override
+            public void onClick(ClickEvent event) {
+                select.deselectAll();
             }
         });
     }

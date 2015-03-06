@@ -41,7 +41,8 @@
         }
 
         .spacing {
-            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
         }
     </ui:style>
 
@@ -56,7 +57,7 @@
                     Bootstrap Select
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 1.6.3</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 1.6.4</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
@@ -765,12 +766,11 @@
                             </select:Select>
                         </b:Column>
                         <b:Column size="SM_6">
-                            <b:Button type="PRIMARY" text="Disable/Enable" ui:field="disableEnable"/>
+                            <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="Disable/Enable" ui:field="disableEnable"/>
                             <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="Get Value" ui:field="getValue"/>
-                            <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="Set Value"
-                                      ui:field="setValue"/>
-                            <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="Set Values"
-                                      ui:field="setValues"/>
+                            <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="Set Value" ui:field="setValue"/>
+                            <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="Set Values" ui:field="setValues"/>
+                            <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="Deselect All" ui:field="deselectAll"/>
                         </b:Column>
                     </b:Row>
                 </b:PanelBody>
@@ -801,10 +801,10 @@
                         @UiField\n
                         Option three;\n\n
 
-                        // Get ClickHandler\n
+                        // Get Selected Values\n
                         select.getAllSelectedValues();\n\n
 
-                        // Set ClickHandler\n
+                        // Set Certain Values\n
                         select.setValues(two, three);\n
                         select.refresh();\n\n
 
@@ -813,7 +813,10 @@
 
                         // Set Enable/Disable\n
                         select.setEnabled(true | false);\n
-                        select.refresh();
+                        select.refresh();\n\n
+
+                        // Deselect All\n
+                        select.deselectAll();\n\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
