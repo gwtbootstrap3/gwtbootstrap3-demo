@@ -74,28 +74,21 @@ public class NotifyView extends ViewImpl implements NotifyPresenter.MyView {
 
     @UiHandler("positionAndLink")
     public void handlePositionAndFormatting(final ClickEvent event) {
-
         NotifySettings settings = NotifySettings.newSettings();
         settings.setPlacement(NotifyPlacement.TOP_CENTER);
-
         Notify.notify("Title", "Message", IconType.SMILE_O, "https://github.com/gwtbootstrap3/gwtbootstrap3", settings);
-
     }
 
     @UiHandler("animationAndOffset")
     public void handleAnimationAndOffset(final ClickEvent event) {
-
         NotifySettings settings = NotifySettings.newSettings();
         settings.setAnimation(Animation.TADA, Animation.LIGHTSPEED_OUT);
         settings.setOffset(200, 140);
-
         Notify.notify("Title", "Message", IconType.SMILE_O, settings);
-
     }
 
     @UiHandler("template")
     public void handleTemplate(final ClickEvent event) {
-
         NotifySettings settings = NotifySettings.newSettings();
         settings.setTemplate("<div data-notify=\"container\" class=\"alert\" role=\"alert\">\n" +
                 "\t\t<button type=\"button\" class=\"close\" data-notify=\"dismiss\">\n" +
@@ -107,11 +100,8 @@ public class NotifyView extends ViewImpl implements NotifyPresenter.MyView {
                 "\t\t<span data-notify=\"message\"></span>\n" +
                 "\t\t<a href=\"#\" data-notify=\"url\"></a>\n" +
                 "\t</div>");
-
         settings.makeDefault();
-
         Notify.notify("Title", "Message", IconType.SMILE_O);
-
     }
 
     interface Binder extends UiBinder<Widget, NotifyView> {
