@@ -161,6 +161,33 @@
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Dialog"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Button type="PRIMARY" icon="PLAY" ui:field="dialogButton">Run Example</b:Button>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        @UiHandler("button")\n
+                        public void handleButton(ClickEvent event) {\n
+                        \s\sBootbox.Dialog.create()\n
+                        \s\s\s\s.setMessage("Dialog message!")\n
+                        \s\s\s\s.setCloseButton(false)\n
+                        \s\s\s\s.setTitle("<i class='fa fa-info-circle fa-3x text-info' style='vertical-align: middle; padding-right:10px;'></i>Dialog title")\n
+                        \s\s\s\s.addButton("OK", "btn-primary", new AlertCallback() {\n
+                        \s\s\s\s\s\s@Override\n
+                        \s\s\s\s\s\spublic void callback() {\n
+                        \s\s\s\s\s\s\s\sWindow.alert("Ok button selected");\n
+                        \s\s\s\s\s\s}})\n
+                        \s\s\s\s.addButton("Cancel", "btn-danger")\n
+                        \s\s\s\s.show();\n
+                        }
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
         </b:Column>
     </b:Row>
 
