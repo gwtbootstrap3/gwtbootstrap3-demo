@@ -44,7 +44,7 @@
 
             <b:BlockQuote>
                 <b.html:Strong>Original Library Link:</b.html:Strong>
-                <b:Anchor addStyleNames="{style.spacing}" href="http://bootstrap-notify.remabledesigns.com/">Bootstrap
+                <b:Anchor target="_blank" addStyleNames="{style.spacing}" href="http://bootstrap-notify.remabledesigns.com/">Bootstrap
                     Notify
                 </b:Anchor>
                 <b.html:Br/>
@@ -126,10 +126,10 @@
                     <d:PrettyPre addStyleNames="lang-java">
                         @UiHandler("button")\n
                         public void handleButton(ClickEvent event) {\n
-                        \s\sGrowlOptions go = new GrowlOptions();\n
-                        \s\sgo.setType(GrowlType.SUCCESS);\n
-                        \s\sgo.setAllowDismiss(false);\n
-                        \s\sGrowl.growl("Title", "Message", IconType.SMILE_O, go);\n
+                        \s\sNotifySettings settings = NotifySettings.newSettings();\n
+                        \s\ssettings.setType(NotifyType.SUCCESS);\n
+                        \s\ssettings.setAllowDismiss(false);\n
+                        \s\sNotify.notify("Title", "Message", IconType.SMILE_O, settings);\n
                         }
                     </d:PrettyPre>
                 </b:PanelFooter>
@@ -147,9 +147,9 @@
                     <d:PrettyPre addStyleNames="lang-java">
                         @UiHandler("button")\n
                         public void handleButton(ClickEvent event) {\n
-                        \s\sGrowlOptions go = new GrowlOptions();\n
-                        \s\sgo.setPosition(GrowlPosition.TOP_CENTER);\n
-                        \s\sGrowl.growl("Title", "Message", IconType.SMILE_O, "https://github.com/gwtbootstrap3/gwtbootstrap3", go);\n
+                        \s\sNotifySettings settings = NotifySettings.newSettings();\n
+                        \s\ssettings.setPlacement(NotifyPlacement.TOP_CENTER);\n
+                        \s\sNotify.notify("Title", "Message", IconType.SMILE_O, "https://github.com/gwtbootstrap3/gwtbootstrap3", settings);\n
                         }
                     </d:PrettyPre>
                 </b:PanelFooter>
@@ -170,10 +170,10 @@
                     <d:PrettyPre addStyleNames="lang-java">
                         @UiHandler("button")\n
                         public void handleButton(ClickEvent event) {\n
-                        \s\sGrowlOptions go = new GrowlOptions();\n
-                        \s\sgo.setAnimation(Animation.TADA, Animation.LIGHTSPEED_OUT);\n
-                        \s\sgo.setOffset(200, 140);\n
-                        \s\sGrowl.growl("Title", "Message", IconType.SMILE_O, go);\n
+                        \s\sNotifySettings settings = NotifySettings.newSettings();\n
+                        \s\ssettings.setAnimation(Animation.TADA, Animation.LIGHTSPEED_OUT);\n
+                        \s\ssettings.setOffset(200, 140);\n
+                        \s\sNotify.notify("Title", "Message", IconType.SMILE_O, settings);\n
                         }
                     </d:PrettyPre>
                 </b:PanelFooter>
@@ -185,7 +185,7 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b.html:Paragraph>
-                        You can set own Notify template by passing valid HTML structure with proper CSS classes. You can set also this template as default for all new opened Growls.
+                        You can set own Notify template by passing valid HTML structure with proper CSS classes. You can set also this template as default for all new opened Notifies.
                     </b.html:Paragraph>
                     <b.html:ClearFix/>
                     <b:Button type="PRIMARY" icon="PLAY" ui:field="template">Run Example</b:Button>
@@ -194,19 +194,19 @@
                     <d:PrettyPre addStyleNames="lang-java">
                         @UiHandler("button")\n
                         public void handleButton(ClickEvent event) {\n
-                        \s\sGrowlOptions go = new GrowlOptions();\n
-                        \s\sgo.setTemplate("&lt;div data-growl=\"container\" class=\"alert\" role=\"alert\"&gt;"+\n
-                        \s\s"&lt;button type=\"button\" class=\"close\" data-growl=\"dismiss\"&gt;"+\n
+                        \s\sNotifySettings settings = NotifySettings.newSettings();\n
+                        \s\ssettings.setTemplate("&lt;div data-notify=\"container\" class=\"alert\" role=\"alert\"&gt;"+\n
+                        \s\s"&lt;button type=\"button\" class=\"close\" data-notify=\"dismiss\"&gt;"+\n
                         \s\s\s"&lt;span aria-hidden=\"true\"&gt;×&lt;/span&gt;"+\n
                         \s\s\s"&lt;span class=\"sr-only\"&gt;Close&lt;/span&gt;"+\n
                         \s\s"&lt;/button&gt;"+\n
-                        \s\s"&lt;span data-growl=\"icon\"&gt;&lt;/span&gt;"+\n
-                        \s\s"&lt;b&gt;&lt;span data-growl=\"title\"&gt;&lt;/span&gt;&lt;/b&gt;"+\n
-                        \s\s"&lt;span data-growl=\"message\"&gt;&lt;/span&gt;"+\n
-                        \s\s"&lt;a href=\"#\" data-growl=\"url\"&gt;&lt;/a&gt;"+\n
+                        \s\s"&lt;span data-notify=\"icon\"&gt;&lt;/span&gt;"+\n
+                        \s\s"&lt;b&gt;&lt;span data-notify=\"title\"&gt;&lt;/span&gt;&lt;/b&gt;"+\n
+                        \s\s"&lt;span data-notify=\"message\"&gt;&lt;/span&gt;"+\n
+                        \s\s"&lt;a href=\"#\" data-notify=\"url\"&gt;&lt;/a&gt;"+\n
                         \s\s"&lt;/div&gt;");\n
-                        \s\sgo.makeDefault();\n
-                        \s\sGrowl.growl("Title", "Message", IconType.SMILE_O);
+                        \s\ssettings.makeDefault();\n
+                        \s\sNotify.notify("Title", "Message", IconType.SMILE_O);\n
                         }
                     </d:PrettyPre>
                 </b:PanelFooter>
