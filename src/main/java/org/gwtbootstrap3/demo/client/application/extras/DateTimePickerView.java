@@ -119,11 +119,11 @@ public class DateTimePickerView extends ViewImpl implements DateTimePickerPresen
             }
         });
 
-        eventDateTimePicker.addOutOfRangeHandler(new OutOfRangeHandler() {
+        eventDateTimePicker.addClearDateHandler(new ClearDateHandler() {
             @Override
-            public void onOutOfRange(final OutOfRangeEvent evt) {
+            public void onClearDate(final ClearDateEvent evt) {
                 final Paragraph logEntry = new Paragraph();
-                logEntry.setText("Out of Range Event Fired! (" + eventDateTimePicker.getValue().toString() + ")");
+                logEntry.setText("Clear Date Event Fired! (" + eventDateTimePicker.getValue().toString() + ")");
                 logRow.add(logEntry);
             }
         });
@@ -163,12 +163,12 @@ public class DateTimePickerView extends ViewImpl implements DateTimePickerPresen
 
     @UiHandler("endDate")
     public void handleEndDate(final ClickEvent event) {
-        methods.setEndDate("2015-01-27");
+        methods.setEndDate("01-27-2015");
     }
 
     @UiHandler("startDate")
     public void handleStartDate(final ClickEvent event) {
-        methods.setStartDate("2015-01-10");
+        methods.setStartDate("01-10-2015");
     }
 
     @UiHandler("getValue")
