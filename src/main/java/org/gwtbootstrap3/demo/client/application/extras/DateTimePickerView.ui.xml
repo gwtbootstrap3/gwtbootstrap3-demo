@@ -62,15 +62,15 @@
     <b:Row>
         <b:Column size="XS_12">
 
-            <b:PageHeader text="DatePicker"/>
+            <b:PageHeader text="DateTimePicker"/>
 
             <b:BlockQuote>
                 <b.html:Strong>Original Library Link:</b.html:Strong>
-                <b:Anchor addStyleNames="{style.spacing}" href="https://github.com/eternicode/bootstrap-datepicker">
-                    Bootstrap DatePicker
+                <b:Anchor addStyleNames="{style.spacing}" href="http://www.malot.fr/bootstrap-datetimepicker/">
+                    Bootstrap DateTimePicker
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 1.4.0</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 2.3.1</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
@@ -164,7 +164,7 @@
                         Change the position of the popup: TOP_LEFT, BOTTOM_LEFT, TOP_RIGHT, BOTTOM_RIGHT(**Default**)
                     </b.html:Paragraph>
                     <b.html:Paragraph>
-                        The position is the position of the arrow in relation to the date picker.
+                        The positions seem a bit off to me, but this is how the JS library has it.
                     </b.html:Paragraph>
                     <b2:DateTimePicker autoClose="true" position="TOP_RIGHT"/>
                 </b:PanelBody>
@@ -192,6 +192,52 @@
                 </b:PanelFooter>
             </b:Panel>
 
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="12 Hour Format"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b2:DateTimePicker showMeridian="true" format="mm/dd/yyyy hh:ii P" ui:field="twelveHour"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b2:DateTimePicker showMeridian="true" format="mm/dd/yyyy hh:ii P"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Dates Only"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b2:DateTimePicker minView="MONTH" format="mm/dd/yyyy"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b2:DateTimePicker minView="MONTH" format="mm/dd/yyyy"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Time Only"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b2:DateTimePicker startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P"/>
+                    <b.html:Paragraph addStyleNames="{style.spacing2}">With only every 30 minutes available.
+                    </b.html:Paragraph>
+                    <b2:DateTimePicker startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P" minuteStep="30"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b2:DateTimePicker startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P"/&gt;\n\n
+                        &lt;b2:DateTimePicker startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P"
+                        minuteStep="30"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
 
             <b:Panel>
                 <b:PanelHeader>
