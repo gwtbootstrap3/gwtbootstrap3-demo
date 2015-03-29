@@ -83,6 +83,21 @@ public class BootboxJSView extends ViewImpl implements BootboxJSPresenter.MyView
         });
     }
 
+    @UiHandler("dialogButton")
+    public void handleButton(ClickEvent event) {
+        Bootbox.Dialog.create()
+            .setMessage("Dialog message!")
+            .setCloseButton(false)
+            .setTitle("<i class=\"fa fa-info-circle fa-3x text-info\" style=\"vertical-align: middle; padding-right:10px;\"></i>Dialog title")
+            .addButton("OK", "btn-primary", new AlertCallback() {
+                @Override
+                public void callback() {
+                    Window.alert("Ok button selected");
+                }})
+            .addButton("Cancel", "btn-danger")
+            .show();
+    }
+
     interface Binder extends UiBinder<Widget, BootboxJSView> {
     }
 
