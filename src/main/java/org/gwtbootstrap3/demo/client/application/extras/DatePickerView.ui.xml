@@ -1,0 +1,270 @@
+<!--
+  #%L
+  GwtBootstrap3
+  %%
+  Copyright (C) 2013 GwtBootstrap3
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
+             xmlns:b2="urn:import:org.gwtbootstrap3.extras.datepicker.client.ui"
+             xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
+
+    <ui:style>
+        .logRow {
+            border: 1px solid #888888;
+            padding: 5px;
+            min-height: 300px;
+        }
+
+        .logTitle {
+            margin-right: 10px;
+        }
+
+        .danger {
+            background-color: #fcf2f2;
+            border-color: #dFb5b4;
+        }
+
+        .margin-fix {
+            margin-top: 0 !important;
+        }
+
+        .spacing {
+            margin-left: 3px;
+        }
+
+        .spacing2 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .buttons > button {
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+    </ui:style>
+
+    <b:Row>
+        <b:Column size="XS_12">
+
+            <b:PageHeader text="DatePicker"/>
+
+            <b:BlockQuote>
+                <b.html:Strong>Original Library Link:</b.html:Strong>
+                <b:Anchor addStyleNames="{style.spacing}" href="https://github.com/eternicode/bootstrap-datepicker">
+                    Bootstrap DatePicker
+                </b:Anchor>
+                <b.html:Br/>
+                <b.html:Strong>Current Version Supported: 1.4.0</b.html:Strong>
+            </b:BlockQuote>
+
+            <b:BlockQuote addStyleNames="{style.danger}">
+                <b:Heading addStyleNames="{style.margin-fix}" size="H4" text="Required for use"/>
+                <b.html:Paragraph>
+                    To use the DatePicker, you must first add the extras module to your project. In Maven:
+                </b.html:Paragraph>
+                <d:PrettyPre addStyleNames="lang-xml">
+                    &lt;dependency&gt;\n
+                    \s\s\s\s&lt;groupId&gt;org.gwtbootstrap3&lt;/groupId&gt;\n
+                    \s\s\s\s&lt;artifactId&gt;gwtbootstrap3-extras&lt;/artifactId&gt;\n
+                    \s\s\s\s&lt;version&gt;VERSION&lt;/version&gt;\n
+                    \s\s\s\s&lt;scope&gt;provided&lt;/scope&gt;\n
+                    &lt;/dependency&gt;
+                </d:PrettyPre>
+                <b.html:Paragraph>
+                    Then you need to inherit the following GWT Module
+                    <strong>additionally</strong>
+                    to any GwtBootstrap3
+                    module into your *.gwt.xml of your project:
+                </b.html:Paragraph>
+                <d:PrettyPre addStyleNames="lang-xml">
+                    &lt;inherits name="org.gwtbootstrap3.extras.datepicker.DatePicker"/&gt;
+                </d:PrettyPre>
+                <b.html:Paragraph>
+                    Last but not least must add this namespace to your *.ui.xml (don't have to name it b2):
+                </b.html:Paragraph>
+                <d:PrettyPre addStyleNames="lang-xml">
+                    xmlns:b2="urn:import:org.gwtbootstrap3.extras.datepicker.client.ui"
+                </d:PrettyPre>
+            </b:BlockQuote>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Basic"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b2:DatePicker/>
+
+                    <b:Modal title="DatePicker in Modal" closable="true" fade="true" dataBackdrop="STATIC"
+                             dataKeyboard="true" b:id="myModal" ui:field="modal">
+                        <b:ModalBody>
+                            <b2:DatePicker/>
+                        </b:ModalBody>
+                        <b:ModalFooter>
+                            <b:Button type="DANGER" dataDismiss="MODAL">Close</b:Button>
+                        </b:ModalFooter>
+                    </b:Modal>
+
+                    <b:Button addStyleNames="{style.spacing2}" dataTarget="#myModal" dataToggle="MODAL" type="PRIMARY"
+                              text="DatePicker in Modal"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b2:DatePicker/&gt;\n\n
+                        &lt;b:Modal title="..." closable="..." fade="..." dataBackdrop="STATIC" b:id="..."&gt;\n\s\s&lt;b:ModalBody&gt;\n
+                        \s\s&lt;b:ModalBody&gt;\n
+                        \s\s\s\s&lt;b2:DatePicker/&gt;\n
+                        \s\s&lt;/b:ModalBody&gt;\n
+                        \s\s&lt;b:ModalFooter&gt;\n
+                        \s\s\s\s&lt;b:Button type="DANGER" dataDismiss="MODAL"&gt;Close&lt;/b:Button&gt;\n
+                        \s\s&lt;/b:ModalFooter&gt;\n
+                        &lt;/b:Modal&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Setting Languages"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b.html:Paragraph>
+                        Change the language for the DatePicker.
+                    </b.html:Paragraph>
+                    <b2:DatePicker autoClose="true" language="FR"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b2:DatePicker autoClose="true" language="..."/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Position"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b.html:Paragraph>
+                        Change the position of the popup: TOP_LEFT, BOTTOM_LEFT, TOP_RIGHT, BOTTOM_RIGHT(**Default**)
+                    </b.html:Paragraph>
+                    <b.html:Paragraph>
+                        The position is the position of the arrow in relation to the date picker.
+                    </b.html:Paragraph>
+                    <b2:DatePicker autoClose="true" position="TOP_RIGHT"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b2:DatePicker autoClose="true" position="..."/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Auto Close"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b.html:Paragraph>
+                        Automatically close the selector after selecting a date.
+                    </b.html:Paragraph>
+                    <b2:DatePicker autoClose="true"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b2:DatePicker autoClose="true"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="With Today Button / Today Highlights"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b2:DatePicker highlightToday="true" showTodayButton="true"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b2:DatePicker highlightToday="true" showTodayButton="true"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Methods"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                        <b:Column size="SM_6">
+                            <b2:DatePicker ui:field="methods"/>
+                        </b:Column>
+                        <b:Column size="SM_6" addStyleNames="{style.buttons}">
+                            <b:Button type="PRIMARY" text="Set Start Date" ui:field="startDate"/>
+                            <b:Button type="PRIMARY" text="Set End Date" ui:field="endDate"/>
+                            <b:Button type="PRIMARY" text="Get Value" ui:field="getValue"/>
+                            <b:Button type="PRIMARY" text="Set Value" ui:field="setValue"/>
+                            <b:Button type="PRIMARY" text="Enable" ui:field="enable"/>
+                            <b:Button type="PRIMARY" text="Disable" ui:field="disable"/>
+                            <b:Button type="PRIMARY" text="Readonly" ui:field="readonly"/>
+                            <b:Button type="PRIMARY" text="Editable" ui:field="editable"/>
+                            <b:Button type="PRIMARY" text="Disable Sundays" ui:field="disableSundays"/>
+                            <b:Button type="PRIMARY" text="Enable Sundays" ui:field="enableSundays"/>
+                            <b:Button type="PRIMARY" text="Hide" ui:field="hide"/>
+                            <b:Button type="PRIMARY" text="Show" ui:field="show"/>
+                            <b:Button type="PRIMARY" text="Set Format" ui:field="setFormat"/>
+                        </b:Column>
+                    </b:Row>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b2:DatePicker/&gt;\n
+                    </d:PrettyPre>
+
+                    <b.html:Paragraph emphasis="DANGER" text="** In order to setFormat, you must call box.refresh() after to set on the JS object!"/>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Events"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                        <b:Column size="SM_6 MD_4">
+                            <b.html:Div marginBottom="10" ui:field="eventDatePickerDiv">
+                                <b2:DatePicker ui:field="eventDatePicker"/>
+                            </b.html:Div>
+                            <b.html:Div>
+                                <b:Button type="PRIMARY" ui:field="addRemove">Add/Remove</b:Button>
+                            </b.html:Div>
+                        </b:Column>
+                        <b:Column addStyleNames="{style.logRow}" size="SM_6 MD_8">
+                            <b.html:Strong text="Event Log" addStyleNames="{style.logTitle}"/>
+                            <b:Button addStyleNames="pull-right" text="Clear Log" ui:field="clearLogButton"/>
+                            <g:FlowPanel ui:field="logRow"/>
+                        </b:Column>
+                    </b:Row>
+                </b:PanelBody>
+            </b:Panel>
+        </b:Column>
+    </b:Row>
+
+</ui:UiBinder>

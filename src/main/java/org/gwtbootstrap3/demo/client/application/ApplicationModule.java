@@ -91,6 +91,7 @@ public class ApplicationModule extends AbstractPresenterModule {
 
         // Extra Views
         bindPresenter(DateTimePickerPresenter.class, DateTimePickerPresenter.MyView.class, DateTimePickerView.class, DateTimePickerPresenter.MyProxy.class);
+        bindPresenter(DatePickerPresenter.class, DatePickerPresenter.MyView.class, DatePickerView.class, DatePickerPresenter.MyProxy.class);
         bindPresenter(BootboxJSPresenter.class, BootboxJSPresenter.MyView.class, BootboxJSView.class, BootboxJSPresenter.MyProxy.class);
         bindPresenter(CardPresenter.class, CardPresenter.MyView.class, CardView.class, CardPresenter.MyProxy.class);
         bindPresenter(SliderPresenter.class, SliderPresenter.MyView.class, SliderView.class, SliderPresenter.MyProxy.class);
