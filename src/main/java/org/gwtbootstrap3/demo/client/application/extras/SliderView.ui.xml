@@ -60,7 +60,7 @@
                     Slider
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 4.5.4</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 4.5.6</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">

@@ -82,6 +82,7 @@ public class NameTokens {
     public static final String TYPEAHEAD = "typeahead";
     public static final String OFFLINE = "offline";
     public static final String GROWL = "growl";
+    public static final String NOTIFY = "notify";
     public static final String FULL_CALENDAR = "fullcalendar";
     public static final String ANIMATE = "animate";
 
@@ -161,6 +162,10 @@ public class NameTokens {
 
     public static String getGrowl() {
         return GROWL;
+    }
+
+    public static String getNotify() {
+        return NOTIFY;
     }
 
     public static String getFullCalendar() {

@@ -4,7 +4,7 @@ package org.gwtbootstrap3.demo.client.application;
  * #%L
  * GwtBootstrap3
  * %%
- * Copyright (C) 2013 GwtBootstrap3
+ * Copyright (C) 2013 - 2015 GwtBootstrap3
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -100,6 +100,7 @@ public class ApplicationModule extends AbstractPresenterModule {
         bindPresenter(TypeaheadPresenter.class, TypeaheadPresenter.MyView.class, TypeaheadView.class, TypeaheadPresenter.MyProxy.class);
         bindPresenter(OfflinePresenter.class, OfflinePresenter.MyView.class, OfflineView.class, OfflinePresenter.MyProxy.class);
         bindPresenter(GrowlPresenter.class, GrowlPresenter.MyView.class, GrowlView.class, GrowlPresenter.MyProxy.class);
+        bindPresenter(NotifyPresenter.class, NotifyPresenter.MyView.class, NotifyView.class, NotifyPresenter.MyProxy.class);
         bindPresenter(FullCalendarPresenter.class, FullCalendarPresenter.MyView.class, FullCalendarView.class, FullCalendarPresenter.MyProxy.class);
         bindPresenter(AnimatePresenter.class, AnimatePresenter.MyView.class, AnimateView.class, AnimatePresenter.MyProxy.class);
     }

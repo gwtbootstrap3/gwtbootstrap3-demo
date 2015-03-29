@@ -61,6 +61,55 @@
 
             <b:Panel>
                 <b:PanelHeader>
+                    <b:Heading size="H3" text="Size"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+	                <b:ButtonToolBar>
+	                    <b:ButtonGroup size="LARGE">
+	                        <b:Button>Large 1</b:Button>
+	                        <b:Button>Large 2</b:Button>
+	                    </b:ButtonGroup>
+	                    <b:ButtonGroup>
+	                        <b:Button>Default 1</b:Button>
+	                        <b:Button>Default 2</b:Button>
+	                    </b:ButtonGroup>
+	                    <b:ButtonGroup size="SMALL">
+	                        <b:Button>Small 1</b:Button>
+	                        <b:Button>Small 2</b:Button>
+	                    </b:ButtonGroup>
+	                    <b:ButtonGroup size="EXTRA_SMALL">
+	                        <b:Button>Extra Small 1</b:Button>
+	                        <b:Button>Extra Small 2</b:Button>
+	                    </b:ButtonGroup>
+                    </b:ButtonToolBar>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:ButtonGroup size="LARGE"&gt;\n
+                        \s\s&lt;b:Button&gt;Large 1&lt;/b:Button&gt;\n
+                        \s\s&lt;b:Button&gt;Large 2&lt;/b:Button&gt;\n
+                        &lt;b:ButtonGroup&gt;\n
+                        \n
+                        &lt;b:ButtonGroup&gt;\n
+                        \s\s&lt;b:Button&gt;Default 1&lt;/b:Button&gt;\n
+                        \s\s&lt;b:Button&gt;Default 2&lt;/b:Button&gt;\n
+                        &lt;b:ButtonGroup&gt;\n
+                        \n
+                        &lt;b:ButtonGroup size="SMALL"&gt;\n
+                        \s\s&lt;b:Button&gt;Small 1&lt;/b:Button&gt;\n
+                        \s\s&lt;b:Button&gt;Small 2&lt;/b:Button&gt;\n
+                        &lt;b:ButtonGroup&gt;\n
+                        \n
+                        &lt;b:ButtonGroup size="EXTRA_SMALL"&gt;\n
+                        \s\s&lt;b:Button&gt;Extra Small 1&lt;/b:Button&gt;\n
+                        \s\s&lt;b:Button&gt;Extra Small 2&lt;/b:Button&gt;\n
+                        &lt;b:ButtonGroup&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
                     <b:Heading size="H3" text="Multiple"/>
                 </b:PanelHeader>
                 <b:PanelBody>
