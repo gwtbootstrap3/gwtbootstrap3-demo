@@ -280,14 +280,14 @@
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:Description&gt;\n
                         \s\s&lt;b:DescriptionTitle text=""/&gt;\n
-                        \s\s&lt;b:DescriptionDescription text=""/&gt;\n
+                        \s\s&lt;b:DescriptionData text=""/&gt;\n
                         &lt;/b:Description&gt;\n
                     </d:PrettyPre>
                     <b.html:ClearFix/>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:Description horizontal="true"&gt;\n
                         \s\s&lt;b:DescriptionTitle text=""/&gt;\n
-                        \s\s&lt;b:DescriptionDescription text=""/&gt;\n
+                        \s\s&lt;b:DescriptionData text=""/&gt;\n
                         &lt;/b:Description&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
