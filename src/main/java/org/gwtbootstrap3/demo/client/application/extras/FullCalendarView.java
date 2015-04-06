@@ -105,7 +105,8 @@ public class FullCalendarView extends ViewImpl implements FullCalendarPresenter.
                 Event calEvent = new Event(calendarEvent);
                 System.out.println("id " + calEvent.getId() + " start: " + calEvent.getStart() + " end: " + calEvent.getEnd() + " all day: "
                         + calEvent.isAllDay());
-                Window.alert(calEvent.getTitle());
+                if (Window.confirm("Delete '" + calEvent.getTitle() + "'?"))
+                    configuringCalendar.removeEvent(calEvent.getId());
             }
 
             @Override
@@ -116,6 +117,27 @@ public class FullCalendarView extends ViewImpl implements FullCalendarPresenter.
         });
 
         config.setClickHoverConfig(clickHover);
+        SelectConfig selectConfig = new SelectConfig(new SelectEventCallback() {
+
+            @Override
+            public void select(JavaScriptObject start, JavaScriptObject end, NativeEvent event, JavaScriptObject viewObject) {
+                Event tempEvent = new Event("" + System.currentTimeMillis(), "New event");
+                tempEvent.setStart(start);
+                tempEvent.setEnd(end);
+                if (tempEvent.getEnd().getHours() == tempEvent.getStart().getHours() && tempEvent.getEnd().getMinutes() == tempEvent.getStart().getMinutes())
+                    tempEvent.setAllDay(true);
+                if (Window.confirm("Create event?")) {
+                    configuringCalendar.unselect();
+                    configuringCalendar.addEvent(tempEvent);
+                }
+            }
+
+            @Override
+            public void unselect(JavaScriptObject viewObject, NativeEvent event) {
+                // System.out.println("unselect");
+            }
+        });
+        config.setSelectConfig(selectConfig);
         DragAndResizeConfig dr = new DragAndResizeConfig(new DragAndResizeCallback() {
 
             @Override

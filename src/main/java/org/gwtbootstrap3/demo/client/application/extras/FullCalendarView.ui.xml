@@ -139,6 +139,8 @@
 							public void eventClick(JavaScriptObject calendarEvent, NativeEvent event,JavaScriptObject viewObject) {\n
 								Event calEvent = new Event(calendarEvent);\n
 								System.out.println("id " + calEvent.getId() + " start: " + calEvent.getStart() + " end: " + calEvent.getEnd() + " all day: " + calEvent.isAllDay());\n
+								if (Window.confirm("Delete '" + calEvent.getTitle() + "'?"))
+                    				configuringCalendar.removeEvent(calEvent.getId());\n
 								Window.alert(calEvent.getTitle());\n
 							}\n
 
@@ -148,6 +150,27 @@
 						});\n
 
                         config.setClickHoverConfig(clickHover);\n
+                        SelectConfig selectConfig = new SelectConfig(new SelectEventCallback() {\n
+                        \n
+				            \s@Override\n
+				            \spublic void select(JavaScriptObject start, JavaScriptObject end, NativeEvent event, JavaScriptObject viewObject) {\n
+				                \s\sEvent tempEvent = new Event("" + System.currentTimeMillis(), "New event");\n
+				                \s\stempEvent.setStart(start);\n
+				                \s\stempEvent.setEnd(end);\n
+				                \s\sif (tempEvent.getEnd().getHours() == tempEvent.getStart().getHours() &amp;&amp; tempEvent.getEnd().getMinutes() == tempEvent.getStart().getMinutes())\n
+				                    \s\s\stempEvent.setAllDay(true);\n
+				                \s\sif (Window.confirm("Create event?")) {\n
+				                    \s\s\sconfiguringCalendar.unselect();\n
+				                    \s\sconfiguringCalendar.addEvent(tempEvent);\n
+				                \s\s}\n
+				            \s}\n
+							\n
+				            \s@Override\n
+				            \spublic void unselect(JavaScriptObject viewObject, NativeEvent event) {\n
+				            \s\s// System.out.println("unselect");\n
+				            \s}\n
+				        });\n
+				        config.setSelectConfig(selectConfig);\n
 						DragAndResizeConfig dr = new DragAndResizeConfig(new DragAndResizeCallback() {\n
 
                         @Override\n
