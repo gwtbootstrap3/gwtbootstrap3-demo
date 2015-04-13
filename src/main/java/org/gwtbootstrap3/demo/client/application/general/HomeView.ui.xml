@@ -26,7 +26,7 @@
                 <b.html:Paragraph>
                     This is the demo for
                     <a href="https://github.com/gwtbootstrap3/gwtbootstrap3">GwtBootstrap3</a>
-                    version 1.0-SNAPSHOT. For previous releases please go to:
+                    version 0.9.1. For previous releases please go to:
                     <a href="https://github.com/gwtbootstrap3/gwtbootstrap3/releases">Previous Releases</a>
                 </b.html:Paragraph>
             </b:Jumbotron>
