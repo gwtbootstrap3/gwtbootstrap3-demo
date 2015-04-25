@@ -48,7 +48,7 @@
                 <b:Anchor addStyleNames="{style.spacing}" href="http://arshaw.com/fullcalendar/">FullCalendar
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 2.1</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 2.3.1</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
@@ -261,6 +261,49 @@
 					   FullCalendar fc = new FullCalendar("some_unique_id",ViewOption.month,config,true);\n
 					   ...\n
 					   someContainerWidget.add(fc);\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+            
+             <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Background events"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Button type="PRIMARY" icon="PLAY" ui:field="backgroundEvents">Run Example</b:Button>
+                    <b.html:Br/>
+                    <b.gwt:FlowPanel ui:field="backgroundEventsPanel"></b.gwt:FlowPanel>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        Event lunch = new Event("some_event_id", "Business lunch");\n
+						...\n
+            			lunch.setConstraint("businessHours");\n
+            			fc.addEvent(lunch);\n
+                        ...\n
+            			\n
+                    	Event available = new Event("availableForMeeting", "");\n
+            			...\n
+            			available.setRendering("background");\n
+            			available.setBackgroundColor("#8FDF82");\n
+            			fc.addEvent(available);\n
+            			...\n
+            			\n
+            			Event meeting = new Event("some_event_id", "Meeting");\n
+            			...\n
+            			meeting.setConstraint("availableForMeeting");\n
+            			meeting.setBackgroundColor("#257e4a");\n
+            			fc.addEvent(meeting);\n
+						...\n
+            			\n
+						Event blocked = new Event("some_event_id", "");\n
+            			...\n
+            			blocked.setAllDay(true);\n
+            			blocked.setOverlap(false);\n
+            			blocked.setRendering("background");\n
+            			blocked.setBackgroundColor("#ff9f89");\n
+            			fc.addEvent(blocked);
+            			...\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
