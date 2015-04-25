@@ -242,46 +242,46 @@ public class FullCalendarView extends ViewImpl implements FullCalendarPresenter.
     }
     
     protected void addBackgroundEvents(FullCalendar fc) {
-    	Date start = new Date();
+        Date start = new Date();
         start.setMinutes(0);
         start.setHours(9);
         CalendarUtil.addDaysToDate(start, -start.getDay()-1);
         for (int i = 1; i < 28; i++) {
             CalendarUtil.addDaysToDate(start, 1);
             if (i == 3) {
-            	Event lunch = new Event("" + i, "Business lunch");
-            	lunch.setStart(new Date(start.getTime() + 1000*60*60*4));
-            	lunch.setConstraint("businessHours");
-            	fc.addEvent(lunch);
+                Event lunch = new Event("" + i, "Business lunch");
+                lunch.setStart(new Date(start.getTime() + 1000*60*60*4));
+                lunch.setConstraint("businessHours");
+                fc.addEvent(lunch);
             } if (i == 11 || i == 13) {
-            	Event available = new Event("availableForMeeting", "");
-            	available.setStart(start);
-            	available.setEnd(new Date(start.getTime() + 1000*60*60*8));
-            	available.setRendering("background");
-            	available.setBackgroundColor("#8FDF82");
-            	fc.addEvent(available);
-            	if (i == 13) {
-            		Event meeting = new Event("" + i, "Meeting");
-            		meeting.setStart(new Date(start.getTime() + Random.nextInt(7) * 1000*60*60));
-            		meeting.setEnd(new Date(start.getTime() + 1000*60*60));
-            		meeting.setBackgroundColor("#257e4a");
-            		meeting.setConstraint("availableForMeeting");
-            		fc.addEvent(meeting);
-            	}
+                Event available = new Event("availableForMeeting", "");
+                available.setStart(start);
+                available.setEnd(new Date(start.getTime() + 1000*60*60*8));
+                available.setRendering("background");
+                available.setBackgroundColor("#8FDF82");
+                fc.addEvent(available);
+                if (i == 13) {
+                    Event meeting = new Event("" + i, "Meeting");
+                    meeting.setStart(new Date(start.getTime() + Random.nextInt(7) * 1000*60*60));
+                    meeting.setEnd(new Date(start.getTime() + 1000*60*60));
+                    meeting.setBackgroundColor("#257e4a");
+                    meeting.setConstraint("availableForMeeting");
+                    fc.addEvent(meeting);
+                }
             } else if (i == 6 || i == 7 || i > 23) {
-            	Event blocked = new Event("" + i, "");
-            	blocked.setStart(start);
-            	blocked.setAllDay(true);
-            	blocked.setOverlap(false);
-            	blocked.setRendering("background");
-            	blocked.setBackgroundColor("#ff9f89");
-            	fc.addEvent(blocked);
+                Event blocked = new Event("" + i, "");
+                blocked.setStart(start);
+                blocked.setAllDay(true);
+                blocked.setOverlap(false);
+                blocked.setRendering("background");
+                blocked.setBackgroundColor("#ff9f89");
+                fc.addEvent(blocked);
             } else if (i == 10) {
-	        	Event conference = new Event("" + i, "Conference");
-	        	conference.setStart(start);
-	        	conference.setEnd(new Date(start.getTime() + 1000*60*60*48));
-	        	conference.setAllDay(true);
-	        	fc.addEvent(conference);
+            Event conference = new Event("" + i, "Conference");
+                conference.setStart(start);
+                conference.setEnd(new Date(start.getTime() + 1000*60*60*48));
+                conference.setAllDay(true);
+                fc.addEvent(conference);
             } 
         }
     }
