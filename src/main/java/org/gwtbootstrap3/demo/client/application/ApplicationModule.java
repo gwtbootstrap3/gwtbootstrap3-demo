@@ -100,7 +100,6 @@ public class ApplicationModule extends AbstractPresenterModule {
         bindPresenter(ToggleSwitchPresenter.class, ToggleSwitchPresenter.MyView.class, ToggleSwitchView.class, ToggleSwitchPresenter.MyProxy.class);
         bindPresenter(TypeaheadPresenter.class, TypeaheadPresenter.MyView.class, TypeaheadView.class, TypeaheadPresenter.MyProxy.class);
         bindPresenter(OfflinePresenter.class, OfflinePresenter.MyView.class, OfflineView.class, OfflinePresenter.MyProxy.class);
-        bindPresenter(GrowlPresenter.class, GrowlPresenter.MyView.class, GrowlView.class, GrowlPresenter.MyProxy.class);
         bindPresenter(NotifyPresenter.class, NotifyPresenter.MyView.class, NotifyView.class, NotifyPresenter.MyProxy.class);
         bindPresenter(FullCalendarPresenter.class, FullCalendarPresenter.MyView.class, FullCalendarView.class, FullCalendarPresenter.MyProxy.class);
         bindPresenter(AnimatePresenter.class, AnimatePresenter.MyView.class, AnimateView.class, AnimatePresenter.MyProxy.class);

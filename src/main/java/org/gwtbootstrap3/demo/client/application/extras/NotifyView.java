@@ -64,6 +64,14 @@ public class NotifyView extends ViewImpl implements NotifyPresenter.MyView {
         Notify.notify("Title", "Message", IconType.SMILE_O);
     }
 
+    @UiHandler("showProgressbar")
+    public void handleShowProgressbar(final ClickEvent event) {
+        NotifySettings settings = NotifySettings.newSettings();
+        settings.setShowProgressbar(true);
+        settings.setPauseOnMouseOver(true);
+        Notify.notify("Title", "Message", IconType.SMILE_O, settings);
+    }
+
     @UiHandler("changeBackgroundAndDismiss")
     public void handleChangeBackgroundAndDismiss(final ClickEvent event) {
         NotifySettings settings = NotifySettings.newSettings();
