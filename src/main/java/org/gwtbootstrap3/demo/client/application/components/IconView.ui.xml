@@ -31,7 +31,7 @@
     <b:Row>
         <b:Column size="XS_12">
 
-            <b:PageHeader text="Icons" subText="Support for FontAwesome Icons (version 4.0.3)"/>
+            <b:PageHeader text="Icons" subText="Support for FontAwesome Icons (version 4.4.0)"/>
 
             <b:Panel>
                 <b:PanelHeader>
@@ -43,7 +43,7 @@
                         <a href="http://fontawesome.io/cheatsheet/">Font Awesome Cheat Sheet</a>
                     </b.html:Paragraph>
                     <b.html:Paragraph>
-                        Any widget that uses icons will have the properties to spin/flip/rotate/etc..
+                        Any widget that uses icons will have the properties to spin/pulse/flip/rotate/etc..
                     </b.html:Paragraph>
                 </b:PanelBody>
             </b:Panel>
@@ -101,15 +101,22 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="H3" text="Spinning"/>
+                    <b:Heading size="H3" text="Animation"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Icon addStyleNames="{style.spacing}" type="GEAR" size="LARGE" spin="true"/>
-                    <b:Icon type="GEAR" size="TIMES5" spin="true"/>
+                    <b:Icon addStyleNames="{style.spacing}" type="CIRCLE_O_NOTCH" size="TIMES3" spin="true"/>
+                    <b:Icon addStyleNames="{style.spacing}" type="REFRESH" size="TIMES3" spin="true"/>
+                    <b:Icon addStyleNames="{style.spacing}" type="COG" size="TIMES3" spin="true"/>
+                    <b:Icon addStyleNames="{style.spacing}" type="SPINNER" size="TIMES3" spin="true"/>
+                    <b:Icon type="SPINNER" size="TIMES3" pulse="true"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Icon type="..." size="LARGE" spin="true"/&gt;
+                        &lt;b:Icon type="CIRCLE_O_NOTCH" size="TIMES3" spin="true"/&gt;\n
+                        &lt;b:Icon type="REFRESH" size="TIMES3" spin="true"/&gt;\n
+                        &lt;b:Icon type="COG" size="TIMES3" spin="true"/&gt;\n
+                        &lt;b:Icon type="SPINNER" size="TIMES3" spin="true"/&gt;\n
+                        &lt;b:Icon type="SPINNER" size="TIMES3" pulse="true"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -145,12 +152,28 @@
                         <b:Icon type="SQUARE_O" stackBase="true"/>
                         <b:Icon type="TWITTER" stackTop="true"/>
                     </b:IconStack>
+                    <b:IconStack size="LARGE">
+                        <b:Icon type="SQUARE" stackBase="true"/>
+                        <b:Icon type="TERMINAL" stackTop="true" inverse="true"/>
+                    </b:IconStack>
+                    <b:IconStack size="TIMES3">
+                        <b:Icon type="CAMERA" stackTop="true"/>
+                        <b:Icon type="BAN" stackBase="true" emphasis="DANGER"/>
+                    </b:IconStack>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:IconStack&gt;\n
-                        \s\s&lt;b:Icon type="..." stackBase="true"/&gt;\n
-                        \s\s&lt;b:Icon type="..." stackTop="true"/&gt;\n
+                        \s\s&lt;b:Icon type="SQUARE_O" stackBase="true"/&gt;\n
+                        \s\s&lt;b:Icon type="TWITTER" stackTop="true"/&gt;\n
+                        &lt;/b:IconStack&gt;\n
+                        &lt;b:IconStack size="LARGE"&gt;\n
+                        \s\s&lt;b:Icon type="SQUARE" stackBase="true"/&gt;\n
+                        \s\s&lt;b:Icon type="TERMINAL" stackTop="true" inverse="true"/&gt;\n
+                        &lt;/b:IconStack&gt;\n
+                        &lt;b:IconStack size="TIMES3"&gt;\n
+                        \s\s&lt;b:Icon type="CAMERA" stackTop="true"/&gt;\n
+                        \s\s&lt;b:Icon type="BAN" stackBase="true" emphasis="DANGER"/&gt;\n
                         &lt;/b:IconStack&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
