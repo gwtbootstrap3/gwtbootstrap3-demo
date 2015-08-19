@@ -66,7 +66,7 @@
                 <b:Anchor addStyleNames="{style.spacing2}" href="https://github.com/summernote/summernote">Summernote
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 0.6.2</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 0.6.16</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
