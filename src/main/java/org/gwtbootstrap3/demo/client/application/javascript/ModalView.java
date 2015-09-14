@@ -105,6 +105,7 @@ public class ModalView extends ViewImpl implements ModalPresenter.MyView {
                 final Modal modal = new Modal();
                 modal.setTitle("Java Created Modal");
                 modal.setClosable(true);
+                modal.setRemoveOnHide(true);
 
                 modal.addHideHandler(new ModalHideHandler() {
                     @Override
