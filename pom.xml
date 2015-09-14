@@ -15,12 +15,12 @@
 
     <properties>
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
-        <gwtp.version>1.4</gwtp.version>
+        <gwtp.version>1.5</gwtp.version>
         <gin.version>2.1.2</gin.version>
         <validation.version>1.0.0.GA</validation.version>
         <hibernate-validator.version>4.1.0.Final</hibernate-validator.version>
-        <slf4j.version>1.7.9</slf4j.version>
-        <github-site-plugin-version>0.10</github-site-plugin-version>
+        <slf4j.version>1.7.12</slf4j.version>
+        <github-site-plugin-version>0.12</github-site-plugin-version>
         <github.global.server>github</github.global.server>
     </properties>
 
