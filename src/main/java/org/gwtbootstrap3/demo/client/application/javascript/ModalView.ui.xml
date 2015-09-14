@@ -53,7 +53,7 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Modal title="Cupcake ipsum" closable="true" fade="true" dataBackdrop="STATIC" dataKeyboard="true"
-                             b:id="myModal" removeOnHide="false" ui:field="modal">
+                             b:id="myModal" ui:field="modal">
                         <b:ModalBody>
                             <g:HTML>
                                 <p>
@@ -148,17 +148,17 @@
                     <b:Heading size="H3" text="Only One Modal Active"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b:Modal title="Modal 1" closable="true" fade="true" removeOnHide="false" b:id="modal1">
+                    <b:Modal title="Modal 1" closable="true" fade="true" b:id="modal1">
                         <b:ModalBody>
                             <b:Button dataTarget="#modal2" dataToggle="MODAL" type="PRIMARY">Modal 2</b:Button>
                         </b:ModalBody>
                     </b:Modal>
-                    <b:Modal addStyleNames="{style.top}" title="Modal 2" closable="true" fade="true" removeOnHide="false" b:id="modal2">
+                    <b:Modal addStyleNames="{style.top}" title="Modal 2" closable="true" fade="true" b:id="modal2">
                         <b:ModalBody>
                             <b:Button dataTarget="#modal3" dataToggle="MODAL" type="PRIMARY">Modal 3</b:Button>
                         </b:ModalBody>
                     </b:Modal>
-                    <b:Modal title="Modal 3" closable="true" fade="true" hideOtherModals="true" removeOnHide="false" b:id="modal3">
+                    <b:Modal title="Modal 3" closable="true" fade="true" hideOtherModals="true" b:id="modal3">
                         <b:ModalBody>
                             <b.html:Span>Modal 3 (ONLY ONE!)</b.html:Span>
                         </b:ModalBody>
@@ -188,7 +188,7 @@
                     <b:Row>
                         <b:Column size="SM_6 MD_4">
                             <b:Modal title="Event Modal" closable="true" fade="true" b:id="eventModal"
-                                     removeOnHide="false" ui:field="eventModal">
+                                     ui:field="eventModal">
                                 <b:ModalBody>
                                     <b.html:Span>I fire events!</b.html:Span>
                                 </b:ModalBody>
