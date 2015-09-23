@@ -98,30 +98,22 @@
 
     <build>
         <outputDirectory>${webappDirectory}/WEB-INF/classes</outputDirectory>
-
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>compile</goal>
-                            <goal>test</goal>
-                            <goal>resources</goal>
-                        </goals>
-                        <configuration>
-                            <mode>htmlunit</mode>
-                            <testTimeOut>240</testTimeOut>
-                            <failOnError>true</failOnError>
-                        </configuration>
-                    </execution>
-                </executions>
-                <inherited>true</inherited>
                 <configuration>
                     <runTarget>GwtBootstrap3Demo.html</runTarget>
                     <hostedWebapp>${webappDirectory}</hostedWebapp>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
             </plugin>
             <plugin>
                 <groupId>com.github.github</groupId>
@@ -144,19 +136,5 @@
             </plugin>
         </plugins>
     </build>
-
-    <!-- Required because snapshot releases may need to be fetched by CI server -->
-    <repositories>
-        <repository>
-            <id>sonatype-nexus-snapshots</id>
-            <url>http://oss.sonatype.org/content/repositories/snapshots</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-        </repository>
-    </repositories>
 
 </project>
