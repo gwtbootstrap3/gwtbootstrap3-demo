@@ -50,6 +50,7 @@ public class SliderView extends ViewImpl implements SliderPresenter.MyView {
     @UiField Slider basicExample;
     @UiField RangeSlider rangeExample;
     @UiField Slider formatterExample;
+    @UiField RangeSlider rangeFormatterExample;
     @UiField Slider eventExample;
     @UiField RangeSlider eventRangeExample;
     @UiField FlowPanel logRow;
@@ -60,12 +61,20 @@ public class SliderView extends ViewImpl implements SliderPresenter.MyView {
     SliderView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
-        formatterExample.setFormatter(new FormatterCallback() {
+        formatterExample.setFormatter(new FormatterCallback<Double>() {
             @Override
-            public String formatTooltip(final double value) {
+            public String formatTooltip(final Double value) {
                 return "Current value: " + value;
             }
         });
+
+        rangeFormatterExample.setFormatter(new FormatterCallback<Range>() {
+            @Override
+            public String formatTooltip(final Range value) {
+                return "Range: [" + value.getMinValue() + ", " + value.getMaxValue() + "]";
+            }
+        });
+
     }
 
     @UiHandler("enable")

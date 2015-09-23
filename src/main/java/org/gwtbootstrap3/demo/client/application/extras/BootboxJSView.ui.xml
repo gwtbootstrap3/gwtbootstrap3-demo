@@ -44,9 +44,9 @@
 
             <b:BlockQuote>
                 <b.html:Strong>Original Library Link:</b.html:Strong>
-                <b:Anchor addStyleNames="{style.spacing}" href="http://bootboxjs.com/">Bootbox.js</b:Anchor>
+                <b:Anchor target="_blank" addStyleNames="{style.spacing}" href="http://bootboxjs.com/">Bootbox.js</b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 4.1.0</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 4.4.0</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
