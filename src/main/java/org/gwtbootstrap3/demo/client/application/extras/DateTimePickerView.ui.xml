@@ -108,7 +108,12 @@
                     <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b2:DateTimePicker/>
+                
+                    <b:FormGroup>
+                        <b:FormLabel showRequiredIndicator="true">Basic</b:FormLabel>
+                        <b:InlineHelpBlock iconType="EXCLAMATION_TRIANGLE" />
+                        <b2:DateTimePicker allowBlank="false" validateOnBlur="true" />
+                    </b:FormGroup>
 
                     <b:Modal title="DateTimePicker in Modal" closable="true" fade="true" dataBackdrop="STATIC"
                              dataKeyboard="true" b:id="myModal" ui:field="modal">
