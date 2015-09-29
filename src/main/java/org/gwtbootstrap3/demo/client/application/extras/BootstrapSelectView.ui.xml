@@ -41,8 +41,7 @@
         }
 
         .spacing {
-            margin-right: 5px;
-            margin-bottom: 5px;
+            margin-left: 5px;
         }
     </ui:style>
 
@@ -53,8 +52,8 @@
 
             <b:BlockQuote>
                 <b.html:Strong>Original Library Link:</b.html:Strong>
-                <b:Anchor addStyleNames="{style.spacing}" href="https://github.com/silviomoreto/bootstrap-select">
-                    Bootstrap Select
+                <b:Anchor target="_blank" addStyleNames="{style.spacing}" href="http://silviomoreto.github.io/bootstrap-select">Bootstrap
+                	Select
                 </b:Anchor>
                 <b.html:Br/>
                 <b.html:Strong>Current Version Supported: 1.6.4</b.html:Strong>

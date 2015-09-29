@@ -60,7 +60,7 @@
                     Slider
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 4.5.6</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 5.1.1</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
@@ -214,17 +214,35 @@
                     <b:Heading size="H3" text="Formatter"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b3:Slider ui:field="formatterExample" min="-100.0" max="100.0" value="0" step="5.0"/>
+                    <b:Row>
+                        <b:Column size="SM_6">
+                            <b3:Slider ui:field="formatterExample" min="-100.0" max="100.0" value="0" step="5.0"/>
+                        </b:Column>
+                        <b:Column size="SM_6">
+                            <b3:RangeSlider ui:field="rangeFormatterExample" min="0" max="100" step="5" value="[20,60]"/>
+                        </b:Column>
+                    </b:Row>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b3:Slider ui:field=“mySlider” min="-100.0" max="100.0" value="0" step="5.0"/&gt;\n
                     </d:PrettyPre>
                     <d:PrettyPre addStyleNames="lang-java">
-                        mySlider.setFormatter(new FormatterCallback() {\n
+                        mySlider.setFormatter(new FormatterCallback&lt;Double&gt;() {\n
                         \s\s@Override\n
-                        \s\spublic String formatTooltip(final double value) {\n
+                        \s\spublic String formatTooltip(final Double value) {\n
                         \s\s\sreturn "Current value: " + value;\n
+                        \s\s}\n
+                        });\n
+                    </d:PrettyPre>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:RangeSlider ui:field="myRangeSlider" min="0" max="100" step="5" value="[20,60]"/&gt;\n
+                    </d:PrettyPre>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        myRangeSlider.setFormatter(new FormatterCallback&lt;Range&gt;() {\n
+                        \s\s@Override\n
+                        \s\spublic String formatTooltip(final Range range) {\n
+                        \s\s\sreturn "Range: [" + range.getMinValue() + ", " + range.getMaxValue() + "]";\n
                         \s\s}\n
                         });\n
                     </d:PrettyPre>
