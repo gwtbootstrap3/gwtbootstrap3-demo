@@ -105,6 +105,7 @@
                 <configuration>
                     <runTarget>GwtBootstrap3Demo.html</runTarget>
                     <hostedWebapp>${webappDirectory}</hostedWebapp>
+                    <extraJvmArgs>-Xmx1G</extraJvmArgs>
                 </configuration>
             </plugin>
             <plugin>
