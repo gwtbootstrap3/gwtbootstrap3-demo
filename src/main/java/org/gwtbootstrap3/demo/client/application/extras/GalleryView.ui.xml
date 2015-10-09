@@ -135,6 +135,44 @@
                 </b:PanelFooter>
             </b:Panel>
 
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="With Controls"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <gallery:Gallery ui:field="galleryWithControls" thumbnailWidth="100px" thumbnailHeight="100px">
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/582/21830878218_f7e24ec74d_b.jpg">
+                            <b:Anchor ui:field="delete1" icon="CLOSE" color="white" />
+                        </gallery:GalleryImage>
+                        <gallery:GalleryImage url="https://farm6.static.flickr.com/5707/21832711448_02e33b3b3b_b.jpg">
+                            <b:Anchor ui:field="delete2" icon="CLOSE" color="white" />
+                        </gallery:GalleryImage>
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/655/21391422043_68c98789bf_b.jpg">
+                            <b:Anchor ui:field="delete3" icon="CLOSE" color="white" />
+                        </gallery:GalleryImage>
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/567/22011206725_9d0b3dc1ae_b.jpg">
+                            <b:Anchor ui:field="delete4" icon="CLOSE" color="white" />
+                        </gallery:GalleryImage>
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/670/22016240921_6fca2b20ce_b.jpg">
+                            <b:Anchor ui:field="delete5" icon="CLOSE" color="white" />
+                        </gallery:GalleryImage>
+                        <gallery:GalleryImage url="https://farm6.static.flickr.com/5833/21401954003_27f145bc32_b.jpg">
+                            <b:Anchor ui:field="delete6" icon="CLOSE" color="white" />
+                        </gallery:GalleryImage>
+                    </gallery:Gallery>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;gallery:Gallery ui:field="gallery" thumbnailWidth="100px" thumbnailHeight="100px"&gt;\n
+                        \s\s\s\s&lt;gallery:GalleryImage url="https://farm1.static.flickr.com/655/21391422043_68c98789bf_b.jpg"&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:Anchor ui:field="delete" icon="CLOSE" /&gt;\n
+                        \s\s\s\s&lt;gallery:GalleryImage /&gt;\n
+                        \s\s\s\s...\n
+                        &lt;gallery:Gallery/&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
         </b:Column>
     </b:Row>
 

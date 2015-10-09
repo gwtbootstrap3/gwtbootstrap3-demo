@@ -20,8 +20,11 @@ package org.gwtbootstrap3.demo.client.application.extras;
  * #L%
  */
 
+import com.google.gwt.dom.client.Element;
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
@@ -36,9 +39,19 @@ public class GalleryView extends ViewImpl implements GalleryPresenter.MyView {
     }
 
     @UiField Gallery gallery;
+    @UiField Gallery galleryWithControls;
 
     @Inject
     GalleryView(final Binder uiBinder) {
       initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @UiHandler({"delete1", "delete2", "delete3", "delete4", "delete5", "delete6"})
+    protected void deleteFirstClick(ClickEvent event) {
+        Element element = Element.as(event.getNativeEvent().getEventTarget());
+        Element item = element.getParentElement();
+        if(item != null) {
+            item.getParentElement().removeFromParent();
+        }
     }
 }
