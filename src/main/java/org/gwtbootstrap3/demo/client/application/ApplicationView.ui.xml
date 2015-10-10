@@ -160,6 +160,8 @@
                                     </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getTypeahead}">Typeahead
                                     </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getGallery}">Gallery
+                                    </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getOffline}">Offline
                                     </b:AnchorListItem>
                                 </b:DropDownMenu>

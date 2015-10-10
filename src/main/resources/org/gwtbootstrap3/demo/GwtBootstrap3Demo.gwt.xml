@@ -48,6 +48,7 @@
     <inherits name="org.gwtbootstrap3.extras.notify.Notify"/>
     <inherits name="org.gwtbootstrap3.extras.animate.Animate"/>
     <inherits name="org.gwtbootstrap3.extras.fullcalendar.FullCalendar"/>
+    <inherits name="org.gwtbootstrap3.extras.gallery.Gallery"/>
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
 
     <inherits name='org.gwtbootstrap3.extras.cachemanifest.Offline'/>

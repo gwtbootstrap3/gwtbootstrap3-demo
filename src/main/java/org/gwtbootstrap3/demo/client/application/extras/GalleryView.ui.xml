@@ -1,0 +1,179 @@
+<!--
+  #%L
+  GwtBootstrap3
+  %%
+  Copyright (C) 2013 GwtBootstrap3
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
+             xmlns:gallery="urn:import:org.gwtbootstrap3.extras.gallery.client.ui"
+             xmlns:d="urn:import:org.gwtbootstrap3.demo.client.ui">
+
+    <ui:style>
+        .danger {
+            background-color: #fcf2f2;
+            border-color: #dFb5b4;
+        }
+
+        .margin-fix {
+            margin-top: 0 !important;
+        }
+
+        .spacing {
+            margin-left: 5px;
+        }
+    </ui:style>
+
+    <b:Row>
+        <b:Column size="XS_12">
+
+            <b:PageHeader text="Bootstrap Image Gallery"/>
+
+            <b:BlockQuote>
+                <b.html:Strong>Original Library Link:</b.html:Strong>
+                <b:Anchor addStyleNames="{style.spacing}" href="https://github.com/blueimp/Bootstrap-Image-Gallery">
+                    Bootstrap Image Gallery
+                </b:Anchor>
+                <b.html:Br/>
+                <b.html:Strong>Current Version Supported: 3.1.3</b.html:Strong>
+            </b:BlockQuote>
+
+            <b:BlockQuote addStyleNames="{style.danger}">
+                <b:Heading addStyleNames="{style.margin-fix}" size="H4" text="Required for use"/>
+                <b.html:Paragraph>
+                    To use Bootstrap Image Gallery, you must first add the extras module to your project. In Maven:
+                </b.html:Paragraph>
+                <d:PrettyPre addStyleNames="lang-xml">
+                    &lt;dependency&gt;\n
+                    \s\s\s\s&lt;groupId&gt;org.gwtbootstrap3&lt;/groupId&gt;\n
+                    \s\s\s\s&lt;artifactId&gt;gwtbootstrap3-extras&lt;/artifactId&gt;\n
+                    \s\s\s\s&lt;version&gt;VERSION&lt;/version&gt;\n
+                    \s\s\s\s&lt;scope&gt;provided&lt;/scope&gt;\n
+                    &lt;/dependency&gt;
+                </d:PrettyPre>
+                <b.html:Paragraph>
+                    Then you need to inherit the following GWT Module
+                    <strong>additionally</strong>
+                    to any GwtBootstrap3
+                    module into your *.gwt.xml of your project:
+                </b.html:Paragraph>
+                <d:PrettyPre addStyleNames="lang-xml">
+                    &lt;inherits name="org.gwtbootstrap3.extras.gallery.Gallery"/&gt;
+                </d:PrettyPre>
+                <b.html:Paragraph>
+                    Last but not least must add this namespace to your *.ui.xml (don't have to name it select):
+                </b.html:Paragraph>
+                <d:PrettyPre addStyleNames="lang-xml">
+                    xmlns:gallery="urn:import:org.gwtbootstrap3.extras.gallery.client.ui"
+                </d:PrettyPre>
+            </b:BlockQuote>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Basic"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <gallery:Gallery ui:field="gallery" thumbnailWidth="100px" thumbnailHeight="100px">
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/655/21391422043_68c98789bf_b.jpg" />
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/582/21830878218_f7e24ec74d_b.jpg" />
+                        <gallery:GalleryImage url="https://farm6.static.flickr.com/5707/21832711448_02e33b3b3b_b.jpg" />
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/567/22011206725_9d0b3dc1ae_b.jpg" />
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/670/22016240921_6fca2b20ce_b.jpg" />
+                        <gallery:GalleryImage url="https://farm6.static.flickr.com/5833/21401954003_27f145bc32_b.jpg" />
+                        <gallery:GalleryImage url="https://farm6.static.flickr.com/5686/21997628766_9845a40fdc_b.jpg" />
+                        <gallery:GalleryImage url="https://farm6.static.flickr.com/5637/21393309814_17ca189d39_b.jpg" />
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/660/22018439171_06358ee107_b.jpg" />
+                        <gallery:GalleryImage url="https://farm6.static.flickr.com/5757/21829896778_e9febcfec8_b.jpg" />
+                        <gallery:GalleryImage url="https://farm6.static.flickr.com/5799/21837884439_b5cfe23d60_b.jpg" />
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/616/21833374820_2c2a1ee5a7_b.jpg" />
+                        <gallery:GalleryImage url="https://farm6.static.flickr.com/5834/21998184436_d4a185b1f3_b.jpg" />
+                        <gallery:GalleryImage url="https://farm6.static.flickr.com/5799/21837884439_b5cfe23d60_b.jpg" />
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/699/22010791525_c810cdace3_b.jpg" />
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/682/22016792395_142c6a20e6_b.jpg" />
+                        <gallery:GalleryImage url="https://farm6.static.flickr.com/5682/21388276414_85064b87da_b.jpg" />
+                        <gallery:GalleryImage url="https://farm6.static.flickr.com/5747/22018426185_b438d4f59e_b.jpg" />
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/592/21390068924_ed57f5d9f4_b.jpg" />
+                        <gallery:GalleryImage url="https://farm6.static.flickr.com/5727/21831177010_5f24ca7722_b.jpg" />
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/577/22004465542_d9169779ce_b.jpg" />
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/612/21825410320_a9e880f4d3_b.jpg" />
+                    </gallery:Gallery>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;gallery:Gallery ui:field="gallery" thumbnailWidth="100px" thumbnailHeight="100px"&gt;\n
+                        \s\s\s\s&lt;gallery:GalleryImage url="https://farm1.static.flickr.com/655/21391422043_68c98789bf_b.jpg" /&gt;\n
+                        \s\s\s\s&lt;gallery:GalleryImage url="https://farm1.static.flickr.com/582/21830878218_f7e24ec74d_b.jpg" /&gt;\n
+                        \s\s\s\s&lt;gallery:GalleryImage url="https://farm6.static.flickr.com/5707/21832711448_02e33b3b3b_b.jpg" /&gt;\n
+                        \s\s\s\s&lt;gallery:GalleryImage url="https://farm1.static.flickr.com/567/22011206725_9d0b3dc1ae_b.jpg" /&gt;\n
+                        \s\s\s\s&lt;gallery:GalleryImage url="https://farm1.static.flickr.com/670/22016240921_6fca2b20ce_b.jpg" /&gt;\n
+                        \s\s\s\s&lt;gallery:GalleryImage url="https://farm6.static.flickr.com/5833/21401954003_27f145bc32_b.jpg" /&gt;\n
+                        \s\s\s\s&lt;gallery:GalleryImage url="https://farm6.static.flickr.com/5686/21997628766_9845a40fdc_b.jpg" /&gt;\n
+                        \s\s\s\s&lt;gallery:GalleryImage url="https://farm6.static.flickr.com/5637/21393309814_17ca189d39_b.jpg" /&gt;\n
+                        \s\s\s\s&lt;gallery:GalleryImage url="https://farm1.static.flickr.com/660/22018439171_06358ee107_b.jpg" /&gt;\n
+                        \s\s\s\s&lt;gallery:GalleryImage url="https://farm6.static.flickr.com/5757/21829896778_e9febcfec8_b.jpg" /&gt;\n
+                        \s\s\s\s&lt;gallery:GalleryImage url="https://farm6.static.flickr.com/5799/21837884439_b5cfe23d60_b.jpg" /&gt;\n
+                        \s\s\s\s&lt;gallery:GalleryImage url="https://farm1.static.flickr.com/616/21833374820_2c2a1ee5a7_b.jpg" /&gt;\n
+                        &lt;gallery:Gallery/&gt;
+                    </d:PrettyPre>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        @UiField Gallery gallery;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="With Controls"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <gallery:Gallery ui:field="galleryWithControls" thumbnailWidth="100px" thumbnailHeight="100px">
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/582/21830878218_f7e24ec74d_b.jpg">
+                            <b:Anchor ui:field="delete1" icon="CLOSE" color="white" />
+                        </gallery:GalleryImage>
+                        <gallery:GalleryImage url="https://farm6.static.flickr.com/5707/21832711448_02e33b3b3b_b.jpg">
+                            <b:Anchor ui:field="delete2" icon="CLOSE" color="white" />
+                        </gallery:GalleryImage>
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/655/21391422043_68c98789bf_b.jpg">
+                            <b:Anchor ui:field="delete3" icon="CLOSE" color="white" />
+                        </gallery:GalleryImage>
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/567/22011206725_9d0b3dc1ae_b.jpg">
+                            <b:Anchor ui:field="delete4" icon="CLOSE" color="white" />
+                        </gallery:GalleryImage>
+                        <gallery:GalleryImage url="https://farm1.static.flickr.com/670/22016240921_6fca2b20ce_b.jpg">
+                            <b:Anchor ui:field="delete5" icon="CLOSE" color="white" />
+                        </gallery:GalleryImage>
+                        <gallery:GalleryImage url="https://farm6.static.flickr.com/5833/21401954003_27f145bc32_b.jpg">
+                            <b:Anchor ui:field="delete6" icon="CLOSE" color="white" />
+                        </gallery:GalleryImage>
+                    </gallery:Gallery>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;gallery:Gallery ui:field="gallery" thumbnailWidth="100px" thumbnailHeight="100px"&gt;\n
+                        \s\s\s\s&lt;gallery:GalleryImage url="https://farm1.static.flickr.com/655/21391422043_68c98789bf_b.jpg"&gt;\n
+                        \s\s\s\s\s\s\s\s&lt;b:Anchor ui:field="delete" icon="CLOSE" /&gt;\n
+                        \s\s\s\s&lt;gallery:GalleryImage /&gt;\n
+                        \s\s\s\s...\n
+                        &lt;gallery:Gallery/&gt;
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+        </b:Column>
+    </b:Row>
+
+</ui:UiBinder>
