@@ -20,6 +20,7 @@
 <module rename-to="GwtBootstrap3Demo">
     <inherits name="com.google.gwt.uibinder.UiBinder"/>
     <inherits name="com.google.gwt.inject.Inject"/>
+	<inherits name="com.arcbees.analytics.Analytics"/>
 
     <!-- Validation and locale dependencies. -->
     <inherits name="com.google.gwt.i18n.I18N"/>
