@@ -101,11 +101,11 @@ public class FormsWithValidationView extends ViewImpl implements FormsWithValida
             }
         });
 
-        yesNoTextBox.addValidator(new org.gwtbootstrap3.client.ui.form.validator.Validator() {
+        yesNoTextBox.addValidator(new org.gwtbootstrap3.client.ui.form.validator.Validator<String>() {
             @Override
-            public List<EditorError> validate(Editor editor, Object value) {
+            public List<EditorError> validate(Editor<String> editor, String value) {
                 List<EditorError> result = new ArrayList<EditorError>();
-                String valueStr = value == null ? "" : value.toString();
+                String valueStr = value == null ? "" : value;
                 if (!("Yes".equalsIgnoreCase(valueStr) || "No".equalsIgnoreCase(valueStr))) {
                     result.add(new BasicEditorError(yesNoTextBox, value, "Must be \"Yes\" or \"No\""));
                 }

@@ -1,5 +1,10 @@
 package org.gwtbootstrap3.demo.client.gin;
 
+import org.gwtbootstrap3.demo.client.application.ApplicationModule;
+import org.gwtbootstrap3.demo.client.place.NameTokens;
+
+import com.arcbees.analytics.client.AnalyticsModule;
+
 /*
  * #%L
  * GwtBootstrap3
@@ -22,13 +27,9 @@ package org.gwtbootstrap3.demo.client.gin;
 
 import com.gwtplatform.mvp.client.annotations.DefaultPlace;
 import com.gwtplatform.mvp.client.annotations.ErrorPlace;
-import com.gwtplatform.mvp.client.annotations.GaAccount;
 import com.gwtplatform.mvp.client.annotations.UnauthorizedPlace;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import com.gwtplatform.mvp.client.gin.DefaultModule;
-import com.gwtplatform.mvp.client.googleanalytics.GoogleAnalyticsNavigationTracker;
-import org.gwtbootstrap3.demo.client.application.ApplicationModule;
-import org.gwtbootstrap3.demo.client.place.NameTokens;
 
 /**
  * @author Joshua Godi
@@ -40,13 +41,10 @@ public class DemoModule extends AbstractPresenterModule {
     protected void configure() {
         install(new DefaultModule());
         install(new ApplicationModule());
-
+        install(new AnalyticsModule.Builder(ANALYTICS_ACCOUNT).build());
+        
         bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.HOME);
         bindConstant().annotatedWith(ErrorPlace.class).to(NameTokens.HOME);
         bindConstant().annotatedWith(UnauthorizedPlace.class).to(NameTokens.HOME);
-
-        // Google Analytics
-        bindConstant().annotatedWith(GaAccount.class).to(ANALYTICS_ACCOUNT);
-        bind(GoogleAnalyticsNavigationTracker.class).asEagerSingleton();
     }
 }

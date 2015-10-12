@@ -223,6 +223,7 @@ public class FullCalendarView extends ViewImpl implements FullCalendarPresenter.
         configuringPanel.add(configuringCalendar);
     }
 
+    @SuppressWarnings("deprecation")
     protected void addEvents(FullCalendar fc) {
         for (int i = 0; i < 15; i++) {
             Event calEvent = new Event("" + i, "This is Event: " + i);
@@ -241,6 +242,7 @@ public class FullCalendarView extends ViewImpl implements FullCalendarPresenter.
         }
     }
     
+    @SuppressWarnings("deprecation")
     protected void addBackgroundEvents(FullCalendar fc) {
         Date start = new Date();
         start.setMinutes(0);
