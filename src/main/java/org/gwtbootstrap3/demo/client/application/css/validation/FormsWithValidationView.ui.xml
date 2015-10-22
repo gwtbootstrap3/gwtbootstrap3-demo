@@ -52,12 +52,29 @@
         <b:Column size="XS_12">
             <b:PageHeader text="Forms with Validation" />
             <b:Form ui:field="form">
-
                 <b:Panel>
                     <b:PanelHeader>
                         <b:Heading size="H3" text="Input Validators" />
                     </b:PanelHeader>
                     <b:PanelBody>
+                        <b:Row addStyleNames="{style.hr}">
+                            <b:Column size="SM_6">
+                                <b:FormGroup>
+                                    <b:FormLabel for="validateOnBlur">Submit On Enter:&#160;</b:FormLabel>
+                                    <b3:ToggleSwitch ui:field="submitOnEnterToggle" size="MINI" value="true" />
+                                </b:FormGroup>
+                            </b:Column>
+                            <b:Column size="SM_6">
+                                <b:Heading size="H5" text="Submit On Enter" />
+                                <d:PrettyPre addStyleNames="lang-java"><![CDATA[
+form.setSubmitOnEnter(true);
+                         ]]></d:PrettyPre>
+                                <b2:Text>or with UiBinder</b2:Text>
+                                <d:PrettyPre addStyleNames="lang-java"><![CDATA[
+<b:Form submitOnEnter="true" />
+                         ]]></d:PrettyPre>
+                            </b:Column>
+                        </b:Row>
                         <b:Row addStyleNames="{style.hr}">
                             <b:Column size="SM_6">
                                 <b:FormGroup>

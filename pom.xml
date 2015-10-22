@@ -15,7 +15,7 @@
 
     <properties>
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
-        <gwtp.version>1.5</gwtp.version>
+        <gwtp.version>1.5.1</gwtp.version>
         <gin.version>2.1.2</gin.version>
         <validation.version>1.0.0.GA</validation.version>
         <hibernate-validator.version>4.1.0.Final</hibernate-validator.version>
