@@ -42,7 +42,7 @@
                         </b:NavbarBrand>
                         <b:NavbarCollapseButton dataTarget="#navbar-collapse"/>
                     </b:NavbarHeader>
-                    <b:NavbarCollapse b:id="navbar-collapse">
+                    <b:NavbarCollapse b:id="navbar-collapse" ui:field="navbarCollapse">
                         <b:NavbarNav>
                             <b:AnchorListItem text="Setup" targetHistoryToken="{nameTokens.getSetup}"/>
                             <b:ListDropDown>
