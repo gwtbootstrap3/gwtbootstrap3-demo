@@ -7,7 +7,7 @@ echo -e "GH_TOKEN is not set"
 exit 1
 fi	
 
-if ![[ -f $HOME/gwtbootstrap3-demo/target/gwtbootstrap3-demo-*.war ]]; then
+if ![[ -f $TRAVIS_BUILD_DIR/target/gwtbootstrap3-demo-*.war ]]; then
 echo -e "demo war file not found."
 exit 1
 fi	
@@ -41,7 +41,7 @@ git rm -rf ./snapshot/WEB-INF
 fi
 
 # copy the new GwtBootstrap3Demo the snapshot dir.
-unzip -u $HOME/gwtbootstrap3-demo/target/gwtbootstrap3-demo-*.war -d ./snapshot/
+unzip -u $TRAVIS_BUILD_DIR/target/gwtbootstrap3-demo-*.war -d ./snapshot/
 mv -f  ./snapshot/GwtBootstrap3Demo.html ./snapshot/index.html
 rm -rf ./snapshot/META-INF 
 rm -rf ./snapshot/WEB-INF
