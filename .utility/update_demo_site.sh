@@ -7,7 +7,7 @@ echo -e "GH_TOKEN is not set"
 exit 1
 fi	
 
-if ![[ -f $TRAVIS_BUILD_DIR/target/gwtbootstrap3-demo-*.war ]]; then
+if [ ! -f $TRAVIS_BUILD_DIR/target/gwtbootstrap3-demo-*.war ]; then
 echo -e "demo war file not found."
 exit 1
 fi	
