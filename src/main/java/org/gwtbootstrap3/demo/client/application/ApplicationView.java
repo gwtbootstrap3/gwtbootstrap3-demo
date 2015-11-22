@@ -27,6 +27,7 @@ import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
+import org.gwtbootstrap3.client.ui.NavbarCollapse;
 
 /**
  * @author Joshua Godi
@@ -35,6 +36,13 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
 
     @UiField
     SimplePanel contentContainer;
+    @UiField
+    NavbarCollapse navbarCollapse;
+
+    @Override
+    public NavbarCollapse getNavbarCollapse() {
+        return navbarCollapse;
+    }
 
     interface Binder extends UiBinder<Widget, ApplicationView> {
     }
