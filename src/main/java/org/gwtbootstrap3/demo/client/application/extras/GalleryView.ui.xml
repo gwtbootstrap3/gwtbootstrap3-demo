@@ -45,7 +45,7 @@
 
             <b:BlockQuote>
                 <b.html:Strong>Original Library Link:</b.html:Strong>
-                <b:Anchor addStyleNames="{style.spacing}" href="https://github.com/blueimp/Bootstrap-Image-Gallery">
+                <b:Anchor target="_blank" addStyleNames="{style.spacing}" href="https://github.com/blueimp/Bootstrap-Image-Gallery">
                     Bootstrap Image Gallery
                 </b:Anchor>
                 <b.html:Br/>
