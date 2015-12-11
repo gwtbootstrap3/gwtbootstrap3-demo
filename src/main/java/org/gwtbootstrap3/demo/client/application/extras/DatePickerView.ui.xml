@@ -66,7 +66,7 @@
 
             <b:BlockQuote>
                 <b.html:Strong>Original Library Link:</b.html:Strong>
-                <b:Anchor addStyleNames="{style.spacing}" href="https://github.com/eternicode/bootstrap-datepicker">
+                <b:Anchor target="_blank" addStyleNames="{style.spacing}" href="https://github.com/eternicode/bootstrap-datepicker">
                     Bootstrap DatePicker
                 </b:Anchor>
                 <b.html:Br/>
