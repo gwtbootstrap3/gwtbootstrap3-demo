@@ -66,11 +66,11 @@
 
             <b:BlockQuote>
                 <b.html:Strong>Original Library Link:</b.html:Strong>
-                <b:Anchor addStyleNames="{style.spacing}" href="http://www.malot.fr/bootstrap-datetimepicker/">
+                <b:Anchor target="_blank" addStyleNames="{style.spacing}" href="http://www.malot.fr/bootstrap-datetimepicker/">
                     Bootstrap DateTimePicker
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 2.3.1</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 2.3.5</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
