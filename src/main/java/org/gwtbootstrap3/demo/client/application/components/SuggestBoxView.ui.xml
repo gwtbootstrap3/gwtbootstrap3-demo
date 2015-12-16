@@ -35,6 +35,25 @@
                             </b:FormGroup>
                         </b:FieldSet>
                     </b:Form>
+                    <b:Modal title="SuggestBox Modal" closable="true" fade="true" dataBackdrop="STATIC"
+                        dataKeyboard="true" b:id="suggestBoxModal">
+                        <b:ModalBody>
+                            <b:Form>
+                                <b:FieldSet>
+                                    <b:FormGroup>
+                                        <b:FormLabel for="country">Country</b:FormLabel>
+                                        <b:SuggestBox b:id="country2" ui:field="country2" />
+                                    </b:FormGroup>
+                                </b:FieldSet>
+                            </b:Form>
+                        </b:ModalBody>
+                        <b:ModalFooter>
+                            <b:Button type="PRIMARY">Do something</b:Button>
+                            <b:Button type="DANGER" dataDismiss="MODAL">Close</b:Button>
+                        </b:ModalFooter>
+                    </b:Modal>
+                    <b:Button dataTarget="#suggestBoxModal" dataToggle="MODAL" type="PRIMARY" size="LARGE">SuggestBox
+                        Modal</b:Button>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml"><![CDATA[

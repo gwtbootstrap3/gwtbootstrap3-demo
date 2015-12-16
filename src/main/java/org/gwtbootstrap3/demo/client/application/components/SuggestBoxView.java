@@ -76,15 +76,20 @@ public class SuggestBoxView extends ViewImpl implements SuggestBoxPresenter.MyVi
     @UiField(provided = true)
     protected SuggestBox country;
 
-    @Inject
-   public SuggestBoxView(final Binder uiBinder) {
+    @UiField(provided = true)
+    protected SuggestBox country2;
 
+    @Inject
+    public SuggestBoxView(final Binder uiBinder) {
         MultiWordSuggestOracle oracle = new MultiWordSuggestOracle();
         oracle.addAll(Arrays.asList(COUNTRIES));
         country = new SuggestBox(oracle);
 
+        MultiWordSuggestOracle oracle2 = new MultiWordSuggestOracle();
+        oracle2.addAll(Arrays.asList(COUNTRIES));
+        country2 = new SuggestBox(oracle2);
+
         initWidget(uiBinder.createAndBindUi(this));
-        
     }
 
 }
