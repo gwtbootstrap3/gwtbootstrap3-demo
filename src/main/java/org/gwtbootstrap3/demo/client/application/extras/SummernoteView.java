@@ -20,7 +20,44 @@ package org.gwtbootstrap3.demo.client.application.extras;
  * #L%
  */
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import org.gwtbootstrap3.client.ui.Button;
+import org.gwtbootstrap3.client.ui.ListBox;
+import org.gwtbootstrap3.client.ui.html.Paragraph;
+import org.gwtbootstrap3.extras.summernote.client.event.SummernoteBlurEvent;
+import org.gwtbootstrap3.extras.summernote.client.event.SummernoteChangeEvent;
+import org.gwtbootstrap3.extras.summernote.client.event.SummernoteEnterEvent;
+import org.gwtbootstrap3.extras.summernote.client.event.SummernoteFocusEvent;
+import org.gwtbootstrap3.extras.summernote.client.event.SummernoteImageUploadEvent;
+import org.gwtbootstrap3.extras.summernote.client.event.SummernoteImageUploadEvent.ImageFile;
+import org.gwtbootstrap3.extras.summernote.client.event.SummernoteInitEvent;
+import org.gwtbootstrap3.extras.summernote.client.event.SummernoteKeyDownEvent;
+import org.gwtbootstrap3.extras.summernote.client.event.SummernoteKeyUpEvent;
+import org.gwtbootstrap3.extras.summernote.client.event.SummernotePasteEvent;
+import org.gwtbootstrap3.extras.summernote.client.ui.Summernote;
+import org.gwtbootstrap3.extras.summernote.client.ui.SummernoteLanguage;
+import org.gwtbootstrap3.extras.summernote.client.ui.base.DefaultHintHandler;
+import org.gwtbootstrap3.extras.summernote.client.ui.base.Toolbar;
+import org.gwtbootstrap3.extras.summernote.client.ui.base.ToolbarButton;
+
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.core.client.JsArray;
+import com.google.gwt.dom.client.Document;
+import com.google.gwt.dom.client.ImageElement;
+import com.google.gwt.dom.client.Node;
+import com.google.gwt.dom.client.Style.Unit;
+import com.google.gwt.event.dom.client.ChangeEvent;
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.http.client.Request;
+import com.google.gwt.http.client.RequestBuilder;
+import com.google.gwt.http.client.RequestCallback;
+import com.google.gwt.http.client.RequestException;
+import com.google.gwt.http.client.Response;
+import com.google.gwt.json.client.JSONObject;
+import com.google.gwt.json.client.JSONParser;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
@@ -29,37 +66,36 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
-import org.gwtbootstrap3.client.ui.Button;
-import org.gwtbootstrap3.client.ui.html.Paragraph;
-import org.gwtbootstrap3.extras.summernote.client.event.*;
-import org.gwtbootstrap3.extras.summernote.client.ui.Summernote;
-import org.gwtbootstrap3.extras.summernote.client.ui.base.Toolbar;
 
 /**
  * @author godi
+ * @author Xiaodong Sun
  */
 public class SummernoteView extends ViewImpl implements SummernotePresenter.MyView {
 
-    @UiField(provided = true)
-    Summernote customToolbar;
-    @UiField(provided = true)
-    Summernote getSetCode;
-    @UiField
-    Button getCode;
-    @UiField
-    Summernote events;
-    @UiField
-    Button clearLogButton;
-    @UiField
-    FlowPanel logRow;
-    @UiField
-    Button enableDisableButton;
-    @UiField
-    Summernote enableDisable;
+    @UiField Summernote customToolbar;
+    @UiField Summernote getSetCode;
+    @UiField ListBox languageBox;
+    @UiField Summernote languageNote;
+    @UiField Summernote hintWords;
+    @UiField Summernote hintEmoji;
+    @UiField Summernote events;
+    @UiField Button clearLogButton;
+    @UiField FlowPanel logRow;
+
+    @UiHandler("setCode")
+    void setCode(final ClickEvent event) {
+        getSetCode.setCode("<b>This is custom code. </b><u>OH YA</u>");
+    }
 
     @UiHandler("getCode")
-    public void handleClick(final ClickEvent event) {
+    void getCode(final ClickEvent event) {
         Window.alert(getSetCode.getCode());
+    }
+
+    @UiHandler("isEmpty")
+    void isEmpty(final ClickEvent event) {
+        Window.alert("" + getSetCode.isEmpty());
     }
 
     @UiHandler("clearLogButton")
@@ -67,16 +103,80 @@ public class SummernoteView extends ViewImpl implements SummernotePresenter.MyVi
         logRow.clear();
     }
 
-    @UiHandler("enableDisableButton")
-    public void handleEnableDisable(final ClickEvent event) {
-        if (enableDisableButton.getText().equals("Enable")) {
-            enableDisable.setEnabled(true);
-            enableDisableButton.setText("Disable");
-        } else {
-            enableDisable.setEnabled(false);
-            enableDisableButton.setText("Enable");
+    @UiHandler("languageBox")
+    void onChangeLanguage(final ChangeEvent event) {
+        String language = languageBox.getSelectedValue();
+        languageNote.setLanguage(SummernoteLanguage.valueOf(language));
+        languageNote.reconfigure();
+    }
+
+    @UiHandler("events")
+    void onSummernoteInit(final SummernoteInitEvent event) {
+        final Paragraph logEntry = new Paragraph();
+        logEntry.setText("Init Event Fired!");
+        logRow.add(logEntry);
+    }
+
+    @UiHandler("events")
+    void onSummernoteEnter(final SummernoteEnterEvent event) {
+        final Paragraph logEntry = new Paragraph();
+        logEntry.setText("Enter Event Fired!");
+        logRow.add(logEntry);
+    }
+
+    @UiHandler("events")
+    void onSummernoteFocus(final SummernoteFocusEvent event) {
+        final Paragraph logEntry = new Paragraph();
+        logEntry.setText("Focus Event Fired!");
+        logRow.add(logEntry);
+    }
+
+    @UiHandler("events")
+    void onSummernoteBlur(final SummernoteBlurEvent event) {
+        final Paragraph logEntry = new Paragraph();
+        logEntry.setText("Blur Event Fired!");
+        logRow.add(logEntry);
+    }
+
+    @UiHandler("events")
+    void onSummernoteKeyUp(final SummernoteKeyUpEvent event) {
+        final Paragraph logEntry = new Paragraph();
+        logEntry.setText("Key Up Event Fired. The key code is:" + event.getNativeEvent().getKeyCode());
+        logRow.add(logEntry);
+    }
+
+    @UiHandler("events")
+    void onSummernoteKeyDown(final SummernoteKeyDownEvent event) {
+        final Paragraph logEntry = new Paragraph();
+        logEntry.setText("Key Down Event Fired. The key code is:" + event.getNativeEvent().getKeyCode());
+        logRow.add(logEntry);
+    }
+
+    @UiHandler("events")
+    public void onSummernotePaste(final SummernotePasteEvent event) {
+        final Paragraph logEntry = new Paragraph();
+        logEntry.setText("Paste Event Fired!");
+        logRow.add(logEntry);
+    }
+
+    @UiHandler("events")
+    public void onSummernoteImageUpload(final SummernoteImageUploadEvent event) {
+        final Paragraph logEntry = new Paragraph();
+        StringBuilder sb = new StringBuilder("Image Upload Event Fired:");
+        JsArray<ImageFile> images = event.getImages();
+        for (int i = 0; i < images.length(); i++) {
+            sb.append("<br>").append(images.get(i).getMetadata());
         }
-        enableDisable.reconfigure();
+        logEntry.setHTML(sb.toString());
+        logRow.add(logEntry);
+        events.insertImages(images);
+    }
+
+    @UiHandler("events")
+    public void onSummernoteChange(final SummernoteChangeEvent event) {
+        final Paragraph logEntry = new Paragraph();
+        logEntry.setText("Change Event Fired!");
+        logRow.add(logEntry);
     }
 
     interface Binder extends UiBinder<Widget, SummernoteView> {
@@ -84,78 +184,87 @@ public class SummernoteView extends ViewImpl implements SummernotePresenter.MyVi
 
     @Inject
     SummernoteView(final Binder uiBinder) {
-        // Setting up the custom summernotes
-        customToolbar = new Summernote();
-        customToolbar.setHeight(200);
-        customToolbar.setToolbar(new Toolbar()
-                .setShowBoldButton(true));
-
-        getSetCode = new Summernote();
-        getSetCode.setCode("<b>This is custom code</b><u>OH YA</u>");
 
         initWidget(uiBinder.createAndBindUi(this));
 
-        events.addInitializedHandler(new SummernoteInitializedHandler() {
+        // Hint for words
+        hintWords.setHint("\\b(\\w{1,})$", new DefaultHintHandler() {
+
+            List<String> words = new ArrayList<>(
+                    Arrays.asList("apple", "orange", "watermelon", "lemon"));
+
             @Override
-            public void onInitialize(final SummernoteInitializedEvent event) {
-                final Paragraph logEntry = new Paragraph();
-                logEntry.setText("Initialized Event Fired!");
-                logRow.add(logEntry);
+            public String[] onSearch(String keyword) {
+                List<String> result = new ArrayList<>(0);
+                for (String word : words) {
+                    if (word.indexOf(keyword) == 0)
+                        result.add(word);
+                }
+                return result.toArray(new String[0]);
             }
         });
 
-        events.addEnterHandler(new SummernoteOnEnterHandler() {
-            @Override
-            public void onEnter(final SummernoteOnEnterEvent event) {
-                final Paragraph logEntry = new Paragraph();
-                logEntry.setText("Enter Event Fired!");
-                logRow.add(logEntry);
-            }
-        });
+        // Hint for emoji
+        RequestBuilder requestBuilder = new RequestBuilder(RequestBuilder.GET, "https://api.github.com/emojis");
+        requestBuilder.setCallback(new RequestCallback() {
 
-        events.addFocusHandler(new SummernoteOnFocusHandler() {
             @Override
-            public void onFocus(final SummernoteOnFocusEvent event) {
-                final Paragraph logEntry = new Paragraph();
-                logEntry.setText("Focus Event Fired!");
-                logRow.add(logEntry);
-            }
-        });
+            public void onResponseReceived(Request request, Response response) {
+                String text = response.getText();
+                final JSONObject emojiUrls = JSONParser.parseStrict(text).isObject();
+                GWT.log("Found " + emojiUrls.size() + " emojis");
+                hintEmoji.setHint(":([\\-+\\w]+)$", new DefaultHintHandler() {
 
-        events.addBlurHandler(new SummernoteOnBlurHandler() {
-            @Override
-            public void onBlur(final SummernoteOnBlurEvent event) {
-                final Paragraph logEntry = new Paragraph();
-                logEntry.setText("Blur Event Fired!");
-                logRow.add(logEntry);
-            }
-        });
+                    @Override
+                    public String[] onSearch(String keyword) {
+                        List<String> result = new ArrayList<>(0);
+                        for (String key : emojiUrls.keySet()) {
+                            if (key.indexOf(keyword) == 0)
+                                result.add(key);
+                        }
+                        return result.toArray(new String[0]);
+                    }
 
-        events.addKeyUpHandler(new SummernoteOnKeyUpHandler() {
-            @Override
-            public void onKeyUp(final SummernoteOnKeyUpEvent event) {
-                final Paragraph logEntry = new Paragraph();
-                logEntry.setText("Key Up Event Fired!");
-                logRow.add(logEntry);
-            }
-        });
+                    @Override
+                    public String getTemplate(String item) {
+                        String url = emojiUrls.get(item).isString().stringValue();
+                        return "<img src=\"" + url + "\" style=\"width:20px\"/> :" + item + ":";
+                    }
 
-        events.addKeyDownHandler(new SummernoteOnKeyDownHandler() {
-            @Override
-            public void onKeyDown(final SummernoteOnKeyDownEvent event) {
-                final Paragraph logEntry = new Paragraph();
-                logEntry.setText("Key Down Event Fired!");
-                logRow.add(logEntry);
+                    @Override
+                    public Node getContent(String item) {
+                        String url = emojiUrls.get(item).isString().stringValue();
+                        ImageElement img = Document.get().createImageElement();
+                        img.setSrc(url);
+                        img.getStyle().setWidth(20, Unit.PX);
+                        return img;
+                    }
+                });
+                hintEmoji.reconfigure();
             }
-        });
 
-        events.addImageUploadHandler(new SummernoteOnImageUploadHandler() {
             @Override
-            public void onImageUpload(final SummernoteOnImageUploadEvent event) {
-                final Paragraph logEntry = new Paragraph();
-                logEntry.setText("Image Upload Event Fired!");
-                logRow.add(logEntry);
+            public void onError(Request request, Throwable exception) {
+                GWT.log("Error while requesting emojis", exception);
             }
         });
+        try {
+            requestBuilder.send();
+        } catch (RequestException e) {
+            GWT.log("Error while sending request for emojis", e);
+        }
+
+        // Customize toolbar
+        customToolbar.setToolbar(new Toolbar()
+            .addGroup(ToolbarButton.UNDO, ToolbarButton.REDO)
+            .addGroup(ToolbarButton.CODE_VIEW)
+            .addGroup(ToolbarButton.TABLE));
+
+        // Language
+        SummernoteLanguage defaultLanguage = languageNote.getLanguage();
+        for (SummernoteLanguage language : SummernoteLanguage.values()) {
+            languageBox.addItem(language.getCode(), language.name());
+        }
+        languageBox.setSelectedIndex(defaultLanguage.ordinal());
     }
 }
