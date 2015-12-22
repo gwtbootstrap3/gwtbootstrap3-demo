@@ -45,7 +45,7 @@
 
             <b:BlockQuote>
                 <b.html:Strong>Original Library Link:</b.html:Strong>
-                <b:Anchor addStyleNames="{style.spacing}" href="https://github.com/twitter/typeahead.js">
+                <b:Anchor target="_blank" addStyleNames="{style.spacing}" href="https://github.com/twitter/typeahead.js">
                     Twitter typeahead.js
                 </b:Anchor>
                 <b.html:Br/>

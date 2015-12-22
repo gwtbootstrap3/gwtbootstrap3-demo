@@ -257,7 +257,7 @@
                     <b:Heading size="H4" text="Java code"/>
                     <d:PrettyPre addStyleNames="lang-java">
                         hintWords.setHint("\\b(\\w{1,})$", new DefaultHintHandler() {\n
-                        \s\sList&lt;String&gt; words = new ArrayList&lt;&gt;(Arrays.asList("apple", "orange", "watermelon", "lemon"));
+                        \s\sList&lt;String&gt; words = new ArrayList&lt;&gt;(Arrays.asList("apple", "orange", "watermelon", "lemon"));\n
                         \s\s@Override\n
                         \s\spublic String[] onSearch(String keyword) {\n
                         \s\s\s\sList&lt;String&gt; result = new ArrayList&lt;&gt;(0);\n
