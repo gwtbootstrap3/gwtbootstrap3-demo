@@ -60,7 +60,7 @@
                     Slider
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 5.2.6</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 5.3.3</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
@@ -282,12 +282,25 @@
                             <b3:Slider min="0" max="10" value="10" tooltip="HIDE"/>
                         </b:Column>
                     </b:Row>
+                    <b:Row>
+                        <b:Column size="SM_4">
+                            <b3:RangeSlider min="0" max="100" step="5" value="[20,60]" tooltipSplit="true"/>
+                        </b:Column>
+                        <b:Column size="SM_4">
+                            <b3:Slider min="0" max="10" value="10" tooltipPosition="BOTTOM"/>
+                        </b:Column>
+                    </b:Row>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;!-- Tooltip: SHOW, ALWAYS, HIDE --&gt;\n
                         &lt;b3:Slider min="0" max="10" value="10" tooltip="SHOW"/&gt;\n
                         &lt;b3:Slider min="0" max="10" value="10" tooltip="ALWAYS"/&gt;\n
-                        &lt;b3:Slider min="0" max="10" value="10" tooltip="HIDE"/&gt;\n
+                        &lt;b3:Slider min="0" max="10" value="10" tooltip="HIDE"/&gt;\n\n
+                        &lt;!-- Tooltip Split for Range Sliders --&gt;\n
+                        &lt;b3:RangeSlider min="0" max="100" step="5" value="[20,60]" tooltipSplit="true"/&gt;\n\n
+                        &lt;!-- Tooltip Position --&gt;\n
+                        &lt;b3:Slider min="0" max="10" value="10" tooltipPosition="BOTTOM"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
