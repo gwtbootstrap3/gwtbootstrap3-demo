@@ -4,7 +4,7 @@ package org.gwtbootstrap3.demo.client.application.extras;
  * #%L
  * GwtBootstrap3
  * %%
- * Copyright (C) 2013 - 2015 GwtBootstrap3
+ * Copyright (C) 2013 - 2016 GwtBootstrap3
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -74,7 +74,7 @@ import com.gwtplatform.mvp.client.ViewImpl;
 public class SummernoteView extends ViewImpl implements SummernotePresenter.MyView {
 
     @UiField Summernote customToolbar;
-    @UiField Summernote getSetCode;
+    @UiField Summernote apiTest;
     @UiField ListBox languageBox;
     @UiField Summernote languageNote;
     @UiField Summernote hintWords;
@@ -85,17 +85,32 @@ public class SummernoteView extends ViewImpl implements SummernotePresenter.MyVi
 
     @UiHandler("setCode")
     void setCode(final ClickEvent event) {
-        getSetCode.setCode("<b>This is custom code. </b><u>OH YA</u>");
+        apiTest.setCode("<b>This is custom code. </b><u>OH YA</u>");
     }
 
     @UiHandler("getCode")
     void getCode(final ClickEvent event) {
-        Window.alert(getSetCode.getCode());
+        Window.alert(apiTest.getCode());
     }
 
     @UiHandler("isEmpty")
     void isEmpty(final ClickEvent event) {
-        Window.alert("" + getSetCode.isEmpty());
+        Window.alert("" + apiTest.isEmpty());
+    }
+
+    @UiHandler("enable")
+    void enable(final ClickEvent event) {
+        apiTest.setEnabled(true);
+    }
+
+    @UiHandler("disable")
+    void disable(final ClickEvent event) {
+        apiTest.setEnabled(false);
+    }
+
+    @UiHandler("reset")
+    void reset(final ClickEvent event) {
+        apiTest.reset();
     }
 
     @UiHandler("clearLogButton")

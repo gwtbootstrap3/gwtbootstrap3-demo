@@ -67,7 +67,7 @@
                 <b:Anchor target="_blank" addStyleNames="{style.spacing2}" href="http://summernote.org/">Summernote
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 0.7.0</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 0.7.1</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
@@ -148,14 +148,15 @@
                     <b:Heading size="H3" text="Editor Customization"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <summer:Summernote ui:field="customNote" defaultHeight="150" placeholder="This is a placeholder."
-                        disableDragAndDrop="true" shortcuts="false" showToolbar="false"/>
+                    <summer:Summernote ui:field="customNote" defaultHeight="100" minHeight="50" maxHeight="150"
+                        hasFocus="true" placeholder="This is a placeholder." disableDragAndDrop="true"
+                        shortcuts="false" showToolbar="false"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <b:Heading size="H4" text="UiBinder"/>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;summer:Summernote ui:field="customNote" defaultHeight="150"\n
-                        \s\splaceholder="This is a placeholder." disableDragAndDrop="true"\n
+                        &lt;summer:Summernote ui:field="customNote" defaultHeight="100" minHeight="50" maxHeight="150"\n
+                        \s\shasFocus="true" placeholder="This is a placeholder." disableDragAndDrop="true"\n
                         \s\sshortcuts="false" showToolbar="false"/&gt;
                     </d:PrettyPre>
                 </b:PanelFooter>
@@ -185,30 +186,37 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="H3" text="Get/Set Code"/>
+                    <b:Heading size="H3" text="API"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <summer:Summernote ui:field="getSetCode" code="This is the initial code &lt;b&gt;before&lt;/b&gt; the editor is attached to DOM."/>
+                    <summer:Summernote ui:field="apiTest" code="This is the initial code &lt;b&gt;before&lt;/b&gt; the editor is attached to DOM."/>
                     <b:Button type="PRIMARY" text="Set Code" ui:field="setCode"/>
                     <b:Button addStyleNames="{style.spacing2}" type="PRIMARY" text="Get Code" ui:field="getCode"/>
                     <b:Button addStyleNames="{style.spacing2}" type="PRIMARY" text="Is Empty" ui:field="isEmpty"/>
+                    <b:Button addStyleNames="{style.spacing2}" type="PRIMARY" text="Enable" ui:field="enable"/>
+                    <b:Button addStyleNames="{style.spacing2}" type="PRIMARY" text="Disable" ui:field="disable"/>
+                    <b:Button addStyleNames="{style.spacing2}" type="PRIMARY" text="Reset" ui:field="reset"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <b:Heading size="H4" text="UiBinder"/>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;summer:Summernote ui:field="getSetCode" code="This is the initial code
+                        &lt;summer:Summernote ui:field="apiTest" code="This is the initial code
                         &amp;lt;b&amp;gt;before&amp;lt;/b&amp;gt; the editor is attached to DOM."/&gt;
                     </d:PrettyPre>
                     <b:Heading size="H4" text="Java code"/>
                     <d:PrettyPre addStyleNames="lang-java">
                         // Set Code\n
-                        getSetCode.setCode("&lt;b&gt;This is custom code. &lt;/b&gt;&lt;u&gt;OH YA&lt;/u&gt;");\n\n
-
+                        apiTest.setCode("&lt;b&gt;This is custom code. &lt;/b&gt;&lt;u&gt;OH YA&lt;/u&gt;");\n\n
                         // Get Code\n
-                        Window.alert(getSetCode.getCode());\n\n
-
-                        // Empty\n
-                        Window.alert(getSetCode.isEmpty());
+                        Window.alert(apiTest.getCode());\n\n
+                        // Is Empty\n
+                        Window.alert(apiTest.isEmpty());\n\n
+                        // Enable\n
+                        apiTest.setEnabled(true);\n\n
+                        // Disable\n
+                        apiTest.setEnabled(false);\n\n
+                        // Reset\n
+                        apiTest.reset();
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -218,7 +226,7 @@
                     <b:Heading size="H3" text="Language Support"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <summer:Summernote ui:field="languageNote" defaultHeight="50"/>
+                    <summer:Summernote ui:field="languageNote"/>
                     <b:Form type="INLINE">
                         <b:FormGroup>               
                             <b:FormLabel for="languageBox">Select Language: </b:FormLabel>
@@ -229,7 +237,7 @@
                 <b:PanelFooter>
                     <b:Heading size="H4" text="UiBinder"/>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;summer:Summernote ui:field="languageNote" defaultHeight="50"/&gt;
+                        &lt;summer:Summernote ui:field="languageNote"/&gt;
                     </d:PrettyPre>
                     <b:Heading size="H4" text="Java code"/>
                     <d:PrettyPre addStyleNames="lang-java">
@@ -245,14 +253,14 @@
                     <b:Heading size="H3" text="Hint for words"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <summer:Summernote ui:field="hintWords" showToolbar="false" defaultHeight="50"
+                    <summer:Summernote ui:field="hintWords" showToolbar="false"
                         placeholder="Type with apple, orange, watermelon, and lemon"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <b:Heading size="H4" text="UiBinder"/>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;summer:Summernote ui:field="hintWords" showToolbar="false"\n
-                        \s\sdefaultHeight="50" placeholder="Type with apple, orange, watermelon, and lemon"/&gt;
+                        \s\placeholder="Type with apple, orange, watermelon, and lemon"/&gt;
                     </d:PrettyPre>
                     <b:Heading size="H4" text="Java code"/>
                     <d:PrettyPre addStyleNames="lang-java">
@@ -276,14 +284,14 @@
                     <b:Heading size="H3" text="Hint for emoji"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <summer:Summernote ui:field="hintEmoji" showToolbar="false" defaultHeight="50"
+                    <summer:Summernote ui:field="hintEmoji" showToolbar="false"
                         placeholder="Type starting with : then any alphabet"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <b:Heading size="H4" text="UiBinder"/>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;summer:Summernote ui:field="hintEmoji" showToolbar="false"\n
-                        \s\sdefaultHeight="50" placeholder="Type starting with : then any alphabet"/&gt;
+                        \s\placeholder="Type starting with : then any alphabet"/&gt;
                     </d:PrettyPre>
                     <b:Heading size="H4" text="Java code"/>
                     <b:Alert type="INFO">
