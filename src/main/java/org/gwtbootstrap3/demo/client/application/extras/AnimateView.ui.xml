@@ -47,7 +47,7 @@
                 <b:Anchor target="_blank" addStyleNames="{style.spacing}" href="http://daneden.github.io/animate.css/">Animate.css
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 3.5.0</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 3.5.1</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
