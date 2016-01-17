@@ -40,6 +40,7 @@ import org.gwtbootstrap3.extras.summernote.client.event.SummernotePasteEvent;
 import org.gwtbootstrap3.extras.summernote.client.ui.Summernote;
 import org.gwtbootstrap3.extras.summernote.client.ui.SummernoteLanguage;
 import org.gwtbootstrap3.extras.summernote.client.ui.base.DefaultHintHandler;
+import org.gwtbootstrap3.extras.summernote.client.ui.base.SummernoteFontName;
 import org.gwtbootstrap3.extras.summernote.client.ui.base.Toolbar;
 import org.gwtbootstrap3.extras.summernote.client.ui.base.ToolbarButton;
 
@@ -91,6 +92,11 @@ public class SummernoteView extends ViewImpl implements SummernotePresenter.MyVi
     @UiHandler("getCode")
     void getCode(final ClickEvent event) {
         Window.alert(apiTest.getCode());
+    }
+
+    @UiHandler("clear")
+    void clear(final ClickEvent event) {
+        apiTest.clear();
     }
 
     @UiHandler("isEmpty")
@@ -270,10 +276,13 @@ public class SummernoteView extends ViewImpl implements SummernotePresenter.MyVi
         }
 
         // Customize toolbar
+        customToolbar.setFontNames(SummernoteFontName.HELVETICA_NEUE, SummernoteFontName.VERDANA, SummernoteFontName.ARIAL);
         customToolbar.setToolbar(new Toolbar()
+            .addGroup(ToolbarButton.FONT_NAME, ToolbarButton.FONT_SIZE)
             .addGroup(ToolbarButton.UNDO, ToolbarButton.REDO)
             .addGroup(ToolbarButton.CODE_VIEW)
             .addGroup(ToolbarButton.TABLE));
+
 
         // Language
         SummernoteLanguage defaultLanguage = languageNote.getLanguage();
