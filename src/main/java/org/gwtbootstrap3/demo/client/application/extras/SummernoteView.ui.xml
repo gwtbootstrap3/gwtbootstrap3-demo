@@ -67,7 +67,7 @@
                 <b:Anchor target="_blank" addStyleNames="{style.spacing2}" href="http://summernote.org/">Summernote
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 0.7.1</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 0.7.3</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
@@ -176,7 +176,9 @@
                     </d:PrettyPre>
                     <b:Heading size="H4" text="Java code"/>
                     <d:PrettyPre addStyleNames="lang-java">
+                        customToolbar.setFontNames(SummernoteFontName.HELVETICA_NEUE, SummernoteFontName.VERDANA, SummernoteFontName.ARIAL);\n
                         customToolbar.setToolbar(new Toolbar()\n
+                        \s\s.addGroup(ToolbarButton.FONT_NAME, ToolbarButton.FONT_SIZE)\n
                         \s\s.addGroup(ToolbarButton.UNDO, ToolbarButton.REDO)\n
                         \s\s.addGroup(ToolbarButton.CODE_VIEW)\n
                         \s\s.addGroup(ToolbarButton.TABLE));\n
@@ -192,6 +194,7 @@
                     <summer:Summernote ui:field="apiTest" code="This is the initial code &lt;b&gt;before&lt;/b&gt; the editor is attached to DOM."/>
                     <b:Button type="PRIMARY" text="Set Code" ui:field="setCode"/>
                     <b:Button addStyleNames="{style.spacing2}" type="PRIMARY" text="Get Code" ui:field="getCode"/>
+                    <b:Button addStyleNames="{style.spacing2}" type="PRIMARY" text="Clear" ui:field="clear"/>
                     <b:Button addStyleNames="{style.spacing2}" type="PRIMARY" text="Is Empty" ui:field="isEmpty"/>
                     <b:Button addStyleNames="{style.spacing2}" type="PRIMARY" text="Enable" ui:field="enable"/>
                     <b:Button addStyleNames="{style.spacing2}" type="PRIMARY" text="Disable" ui:field="disable"/>
@@ -216,7 +219,9 @@
                         // Disable\n
                         apiTest.setEnabled(false);\n\n
                         // Reset\n
-                        apiTest.reset();
+                        apiTest.reset();\n\n
+                        // Clear\n
+                        apiTest.clear();
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
