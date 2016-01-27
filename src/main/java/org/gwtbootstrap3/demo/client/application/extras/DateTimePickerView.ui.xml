@@ -70,7 +70,7 @@
                     Bootstrap DateTimePicker
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 2.3.5</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 2.3.8</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
@@ -202,11 +202,11 @@
                     <b:Heading size="H3" text="12 Hour Format"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b2:DateTimePicker showMeridian="true" format="mm/dd/yyyy hh:ii P" ui:field="twelveHour"/>
+                    <b2:DateTimePicker showMeridian="true" format="mm/dd/yyyy HH:ii P" ui:field="twelveHour"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b2:DateTimePicker showMeridian="true" format="mm/dd/yyyy hh:ii P"/&gt;\n
+                        &lt;b2:DateTimePicker showMeridian="true" format="mm/dd/yyyy HH:ii P"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>

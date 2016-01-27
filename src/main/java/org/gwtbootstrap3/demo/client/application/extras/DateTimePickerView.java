@@ -9,9 +9,9 @@ package org.gwtbootstrap3.demo.client.application.extras;
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -19,6 +19,26 @@ package org.gwtbootstrap3.demo.client.application.extras;
  * limitations under the License.
  * #L%
  */
+
+import java.util.Date;
+
+import org.gwtbootstrap3.client.shared.event.HideEvent;
+import org.gwtbootstrap3.client.shared.event.HideHandler;
+import org.gwtbootstrap3.client.shared.event.ShowEvent;
+import org.gwtbootstrap3.client.shared.event.ShowHandler;
+import org.gwtbootstrap3.client.ui.Button;
+import org.gwtbootstrap3.client.ui.html.Div;
+import org.gwtbootstrap3.client.ui.html.Paragraph;
+import org.gwtbootstrap3.extras.datetimepicker.client.ui.DateTimePicker;
+import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.constants.DateTimePickerDayOfWeek;
+import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.events.ChangeDateEvent;
+import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.events.ChangeDateHandler;
+import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.events.ChangeMonthEvent;
+import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.events.ChangeMonthHandler;
+import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.events.ChangeYearEvent;
+import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.events.ChangeYearHandler;
+import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.events.OutOfRangeEvent;
+import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.events.OutOfRangeHandler;
 
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -29,18 +49,6 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
-import org.gwtbootstrap3.client.shared.event.HideEvent;
-import org.gwtbootstrap3.client.shared.event.HideHandler;
-import org.gwtbootstrap3.client.shared.event.ShowEvent;
-import org.gwtbootstrap3.client.shared.event.ShowHandler;
-import org.gwtbootstrap3.client.ui.Button;
-import org.gwtbootstrap3.client.ui.html.Div;
-import org.gwtbootstrap3.client.ui.html.Paragraph;
-import org.gwtbootstrap3.extras.datetimepicker.client.ui.DateTimePicker;
-import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.constants.DateTimePickerDayOfWeek;
-import org.gwtbootstrap3.extras.datetimepicker.client.ui.base.events.*;
-
-import java.util.Date;
 
 /**
  * @author Joshua Godi
