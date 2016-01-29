@@ -66,16 +66,16 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Popover title="..."&gt;\n
+                        &lt;b:Popover title="..." content="..."&gt;\n
                         \s\s&lt;b:Button text="..."/&gt;\n
                         &lt;/b:Popover&gt;\n\n
-                        &lt;b:Popover title="..." placement="LEFT"&gt;\n
+                        &lt;b:Popover title="..." content="..." placement="LEFT"&gt;\n
                         \s\s&lt;b:Button text="..."/&gt;\n
                         &lt;/b:Popover&gt;\n\n
-                        &lt;b:Popover title="..." placement="BOTTOM"&gt;\n
+                        &lt;b:Popover title="..." content="..." placement="BOTTOM"&gt;\n
                         \s\s&lt;b:Button text="..."/&gt;\n
                         &lt;/b:Popover&gt;\n\n
-                        &lt;b:Popover title="..." placement="RIGHT"&gt;\n
+                        &lt;b:Popover title="..." content="..." placement="RIGHT"&gt;\n
                         \s\s&lt;b:Button text="..."/&gt;\n
                         &lt;/b:Popover&gt;\n\n
                     </d:PrettyPre>
@@ -105,16 +105,16 @@
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b:Popover title="..."&gt;\n
+                        &lt;b:Popover title="..." content="..."&gt;\n
                         \s\s&lt;b:Button text="..."/&gt;\n
                         &lt;/b:Popover&gt;\n\n
-                        &lt;b:Popover title="..." trigger="FOCUS"/&gt;\n
+                        &lt;b:Popover title="..." content="..." trigger="FOCUS"/&gt;\n
                         \s\s&lt;b:TextBox/&gt;\n
                         &lt;/b:Popover&gt;\n\n
-                        &lt;b:Popover title="..." trigger="CLICK"/&gt;\n
+                        &lt;b:Popover title="..." content="..." trigger="CLICK"/&gt;\n
                         \s\s&lt;b:Button text="..."/&gt;\n
                         &lt;/b:Popover&gt;\n\n
-                        &lt;b:Popover title="..." trigger="MANUAL"&gt;\n
+                        &lt;b:Popover title="..." content="..." trigger="MANUAL"&gt;\n
                         \s\s&lt;b:Button text="..."/&gt;\n
                         &lt;/b:Popover&gt;\n\n
                     </d:PrettyPre>
