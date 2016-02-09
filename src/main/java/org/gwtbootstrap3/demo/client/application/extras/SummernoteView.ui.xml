@@ -67,7 +67,7 @@
                 <b:Anchor target="_blank" addStyleNames="{style.spacing2}" href="http://summernote.org/">Summernote
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 0.7.3</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 0.8.0</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
