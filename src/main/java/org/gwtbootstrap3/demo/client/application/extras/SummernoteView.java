@@ -38,9 +38,9 @@ import org.gwtbootstrap3.extras.summernote.client.event.SummernoteKeyDownEvent;
 import org.gwtbootstrap3.extras.summernote.client.event.SummernoteKeyUpEvent;
 import org.gwtbootstrap3.extras.summernote.client.event.SummernotePasteEvent;
 import org.gwtbootstrap3.extras.summernote.client.ui.Summernote;
-import org.gwtbootstrap3.extras.summernote.client.ui.SummernoteLanguage;
 import org.gwtbootstrap3.extras.summernote.client.ui.base.DefaultHintHandler;
 import org.gwtbootstrap3.extras.summernote.client.ui.base.SummernoteFontName;
+import org.gwtbootstrap3.extras.summernote.client.ui.base.SummernoteLanguage;
 import org.gwtbootstrap3.extras.summernote.client.ui.base.Toolbar;
 import org.gwtbootstrap3.extras.summernote.client.ui.base.ToolbarButton;
 
