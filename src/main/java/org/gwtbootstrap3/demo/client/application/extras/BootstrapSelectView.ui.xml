@@ -2,7 +2,7 @@
   #%L
   GwtBootstrap3
   %%
-  Copyright (C) 2013 GwtBootstrap3
+  Copyright (C) 2016 GwtBootstrap3
   %%
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -18,6 +18,7 @@
   #L%
   -->
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
              xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
              xmlns:select="urn:import:org.gwtbootstrap3.extras.select.client.ui"
@@ -29,15 +30,25 @@
             border-color: #dFb5b4;
         }
 
+        .logRow {
+            border: 1px solid #888888;
+            padding: 5px;
+            min-height: 300px;
+        }
+
+        .logTitle {
+            margin-right: 10px;
+        }
+
         .margin-fix {
             margin-top: 0 !important;
         }
 
         .special {
-            font-style: italic;
             font-weight: bold !important;
-            color: #bc0000 !important;
-            background: #000;
+            color: #fff !important;
+            background: #bc0000 !important;
+            text-transform: uppercase;
         }
 
         .spacing {
@@ -56,7 +67,7 @@
                 	Select
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 1.7.4</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 1.10.0</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
@@ -94,233 +105,242 @@
                     <b:Heading size="H3" text="Basic"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <select:Select>
-                        <select:Option text="One"/>
-                        <select:Option text="Two"/>
-                        <select:Option text="Three"/>
-                    </select:Select>
-                </b:PanelBody>
-                <b:PanelFooter>
-                    <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;select:Select&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s...\n
-                        &lt;/select:Select&gt;\n
-                    </d:PrettyPre>
-                </b:PanelFooter>
-            </b:Panel>
-
-            <b:Panel>
-                <b:PanelHeader>
-                    <b:Heading size="H3" text="Option Groups"/>
-                </b:PanelHeader>
-                <b:PanelBody>
-                    <select:Select>
-                        <select:OptGroup label="Group 1">
-                            <select:Option text="One"/>
-                            <select:Option text="Two"/>
-                            <select:Option text="Three"/>
-                        </select:OptGroup>
-                        <select:OptGroup label="Group 2">
-                            <select:Option text="Four"/>
-                            <select:Option text="Five"/>
-                            <select:Option text="Six"/>
-                        </select:OptGroup>
-                    </select:Select>
-                </b:PanelBody>
-                <b:PanelFooter>
-                    <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;select:Select&gt;\n
-                        \s\s&lt;select:OptGroup label="..."&gt;\n
-                        \s\s\s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s\s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s\s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;/select:OptGroup&gt;\n
-                        \s\s&lt;select:OptGroup label="..."&gt;\n
-                        \s\s\s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s\s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s\s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;/select:OptGroup&gt;\n
-                        \s\s...\n
-                        &lt;/select:Select&gt;\n
-                    </d:PrettyPre>
-                </b:PanelFooter>
-            </b:Panel>
-
-            <b:Panel>
-                <b:PanelHeader>
-                    <b:Heading size="H3" text="Multiple Select"/>
-                </b:PanelHeader>
-                <b:PanelBody>
-                    <select:Select multiple="true">
-                        <select:Option text="One"/>
-                        <select:Option text="Two"/>
-                        <select:Option text="Three"/>
-                        <select:Option text="Four"/>
-                        <select:Option text="Five"/>
-                        <select:Option text="Six"/>
-                    </select:Select>
-                </b:PanelBody>
-                <b:PanelFooter>
-                    <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;select:Select multiple="true"&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s...\n
-                        &lt;/select:Select&gt;\n
-                    </d:PrettyPre>
-                </b:PanelFooter>
-            </b:Panel>
-            
-            <b:Panel>
-                <b:PanelHeader>
-                    <b:Heading size="H3" text="Placeholder text"/>
-                </b:PanelHeader>
-                <b:PanelBody>
-                    <select:Select title="Select something...">
-                        <select:Option visible="false"/>
-                        <select:Option text="One"/>
-                        <select:Option text="Two"/>
-                        <select:Option text="Three"/>
-                        <select:Option text="Four"/>
-                        <select:Option text="Five"/>
-                        <select:Option text="Six"/>
-                    </select:Select>
-                </b:PanelBody>
-                <b:PanelFooter>
-                    <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;select:Select title="Select something..."&gt;\n
-                        \s\s&lt;select:Option visible="false"/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s...\n
-                        &lt;/select:Select&gt;\n
-                    </d:PrettyPre>
-                </b:PanelFooter>
-            </b:Panel>
-
-            <b:Panel>
-                <b:PanelHeader>
-                    <b:Heading size="H3" text="Styles"/>
-                </b:PanelHeader>
-                <b:PanelBody>
-                    <b:Row>
-                        <b:Column size="SM_4">
-                            <select:Select style="PRIMARY">
-                                <select:Option text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
-                            </select:Select>
+                	<b:Row>
+                		<b:Column size="XS_4">
+                			<b:FormLabel for="basic1">Standard select boxes</b:FormLabel>
+                		</b:Column>
+                		<b:Column size="XS_4">
+                			<b:FormLabel for="basic2">Select boxes with optgroups</b:FormLabel>
+                		</b:Column>
+                		<b:Column size="XS_4">
+                			<b:FormLabel for="basic3">Multiple select boxes</b:FormLabel>
+                		</b:Column>
+                	</b:Row>
+                	<b:Row>
+                        <b:Column size="XS_4">
+                            <select:Select b:id="basic1">
+		                        <select:Option text="Mustard"/>
+		                        <select:Option text="Ketchup"/>
+		                        <select:Option text="Relish"/>
+		                    </select:Select>
                         </b:Column>
-                        <b:Column size="SM_4">
-                            <select:Select style="INFO">
-                                <select:Option text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
-                            </select:Select>
+                        <b:Column size="XS_4">
+                            <select:Select b:id="basic2">
+		                        <select:OptGroup label="Picnic">
+		                            <select:Option text="Mustard"/>
+		                            <select:Option text="Ketchup"/>
+		                            <select:Option text="Relish"/>
+		                        </select:OptGroup>
+		                        <select:OptGroup label="Camping">
+		                            <select:Option text="Tent"/>
+		                            <select:Option text="Flashlight"/>
+		                            <select:Option text="Toilet Paper"/>
+		                        </select:OptGroup>
+		                    </select:Select>
                         </b:Column>
-                        <b:Column size="SM_4">
-                            <select:Select style="SUCCESS">
-                                <select:Option text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
-                            </select:Select>
-                        </b:Column>
-                        <b:Column size="SM_4">
-                            <select:Select style="WARNING">
-                                <select:Option text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
-                            </select:Select>
-                        </b:Column>
-                        <b:Column size="SM_4">
-                            <select:Select style="DANGER">
-                                <select:Option text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
-                            </select:Select>
+                        <b:Column size="XS_4">
+                            <select:MultipleSelect b:id="basic3">
+		                        <select:Option text="Mustard"/>
+		                        <select:Option text="Ketchup"/>
+		                        <select:Option text="Relish"/>
+		                    </select:MultipleSelect>
                         </b:Column>
                     </b:Row>
+                    
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;select:Select style="SUCCESS | WARNING | DANGER | INFO | PRIMARY"&gt;\n
+                    	&lt;!-- Standard select boxes --&gt;\n
+                        &lt;select:Select&gt;\n
                         \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s...\n
-                        &lt;/select:Select&gt;\n
-                    </d:PrettyPre>
-                </b:PanelFooter>
-            </b:Panel>
-
-            <b:Panel>
-                <b:PanelHeader>
-                    <b:Heading size="H3" text="Live Searching"/>
-                </b:PanelHeader>
-                <b:PanelBody>
-                    <select:Select liveSearch="true">
-                        <select:Option text="One"/>
-                        <select:Option text="Two"/>
-                        <select:Option text="Three"/>
-                        <select:Option text="Four"/>
-                        <select:Option text="Five"/>
-                        <select:Option text="Six"/>
-                    </select:Select>
-                </b:PanelBody>
-                <b:PanelFooter>
-                    <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;select:Select liveSearch="true"&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s...\n
-                        &lt;/select:Select&gt;\n
-                    </d:PrettyPre>
-                </b:PanelFooter>
-            </b:Panel>
-
-            <b:Panel>
-                <b:PanelHeader>
-                    <b:Heading size="H3" text="Custom Selected Titles"/>
-                </b:PanelHeader>
-                <b:PanelBody>
-                    <b:Row>
-                        <b:Column size="XS_6">
-                            <select:Select title="Select something...">
-                                <select:Option text="One" title="Option 1"/>
-                                <select:Option text="Two" title="Option 2"/>
-                                <select:Option text="Three" title="Option 3"/>
-                            </select:Select>
-                        </b:Column>
-                        <b:Column size="XS_6">
-                            <select:Select title="Select something..." multiple="true">
-                                <select:Option text="One" title="Option 1"/>
-                                <select:Option text="Two" title="Option 2"/>
-                                <select:Option text="Three" title="Option 3"/>
-                            </select:Select>
-                        </b:Column>
-                    </b:Row>
-
-                </b:PanelBody>
-                <b:PanelFooter>
-                    <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;select:Select title="..."&gt;\n
-                        \s\s&lt;select:Option title="..." text="..."/&gt;\n
-                        \s\s&lt;select:Option title="..." text="..."/&gt;\n
-                        \s\s&lt;select:Option title="..." text="..."/&gt;\n
                         \s\s...\n
                         &lt;/select:Select&gt;\n\n
-                        &lt;select:Select title="..." multiple="true"&gt;\n
-                        \s\s&lt;select:Option title="..." text="..."/&gt;\n
-                        \s\s&lt;select:Option title="..." text="..."/&gt;\n
-                        \s\s&lt;select:Option title="..." text="..."/&gt;\n
+                        &lt;!-- Select boxes with optgroups --&gt;\n
+                        &lt;select:Select&gt;\n
+                        \s\s&lt;select:OptGroup label="..."&gt;\n
+                        \s\s\s\s&lt;select:Option text="..."/&gt;\n
+                        \s\s\s\s...\n
+                        \s\s&lt;/select:OptGroup&gt;\n
+                        \s\s&lt;select:OptGroup label="..."&gt;\n
+                        \s\s\s\s&lt;select:Option text="..."/&gt;\n
+                        \s\s\s\s...\n
+                        \s\s&lt;/select:OptGroup&gt;\n
+                        \s\s...\n
+                        &lt;/select:Select&gt;\n\n
+                        &lt;!-- Multiple select boxes --&gt;\n
+                        &lt;select:MultipleSelect&gt;\n
+                        \s\s&lt;select:Option text="..."/&gt;\n
                         \s\s...\n
                         &lt;/select:Select&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Live Search"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                	<b:Row>
+                		<b:Column size="XS_6">
+		                    <select:Select liveSearch="true" liveSearchPlaceholder="Please type something...">
+		                        <select:Option text="Hot Dog, Fries and a Soda"/>
+		                        <select:Option text="Burger, Shake and a Smile"/>
+		                        <select:Option text="Sugar, Spice and all things nice"/>
+		                    </select:Select>
+		                </b:Column>
+		                <b:Column size="XS_6">
+		                	<select:Select liveSearch="true" liveSearchPlaceholder="ketchup, mustard, frosting...">
+		                        <select:Option tokens="ketchup mustard" text="Hot Dog, Fries and a Soda"/>
+		                        <select:Option tokens="mustard" text="Burger, Shake and a Smile"/>
+		                        <select:Option tokens="frosting" text="Sugar, Spice and all things nice"/>
+		                    </select:Select>
+		                </b:Column>
+		            </b:Row>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                    	&lt;!-- Add a search input with placeholder --&gt;\n
+                        &lt;select:Select liveSearch="true" liveSearchPlaceholder="Please type something..."&gt;\n
+                        \s\s&lt;select:Option text="..."/&gt;\n
+                        \s\s...\n
+                        &lt;/select:Select&gt;\n\n
+                        &lt;!-- Add key words to options to improve their searchability --&gt;\n
+                        &lt;select:Select liveSearch="true" liveSearchPlaceholder="ketchup, mustard, frosting..."&gt;\n
+                        \s\s&lt;select:Option tokens="ketchup mustard" text="Hot Dog, Fries and a Soda"/&gt;\n
+                        \s\s&lt;select:Option tokens="mustard" text="Burger, Shake and a Smile"/&gt;\n
+                        \s\s&lt;select:Option tokens="frosting" text="Sugar, Spice and all things nice"/&gt;\n
+                        \s\s...\n
+                        &lt;/select:Select&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Limit the number of selections"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                		<b:Column size="XS_6">
+		                    <select:MultipleSelect maxOptions="2">
+		                        <select:Option text="Mustard"/>
+				                <select:Option text="Ketchup"/>
+				                <select:Option text="Relish"/>
+		                    </select:MultipleSelect>
+		                </b:Column>
+		                <b:Column size="XS_6">
+		                	<select:MultipleSelect>
+		                		<select:OptGroup label="Condiments" maxOptions="2">
+		                            <select:Option text="Mustard"/>
+		                            <select:Option text="Ketchup"/>
+		                            <select:Option text="Relish"/>
+		                        </select:OptGroup>
+		                        <select:OptGroup label="Breads" maxOptions="2">
+		                            <select:Option text="Plain"/>
+		                            <select:Option text="Steamed"/>
+		                            <select:Option text="Toasted"/>
+		                        </select:OptGroup>
+		                    </select:MultipleSelect>
+		                </b:Column>
+		            </b:Row>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                    	&lt;!-- Limit the number of options --&gt;\n
+                        &lt;select:MultipleSelect maxOptions="2"&gt;\n
+                        \s\s&lt;select:Option text="..."/&gt;\n
+                        \s\s...\n
+                        &lt;/select:MultipleSelect&gt;\n\n
+                        &lt;!-- It also works for option groups --&gt;\n
+                        &lt;select:MultipleSelect&gt;\n
+                        \s\s&lt;select:OptGroup label="..." maxOptions="2"&gt;\n
+                        \s\s\s\s&lt;select:Option text="..."/&gt;\n
+                        \s\s\s\s...\n
+                        \s\s&lt;/select:OptGroup&gt;\n
+                        \s\s&lt;select:OptGroup label="..." maxOptions="2"&gt;\n
+                        \s\s\s\s&lt;select:Option text="..."/&gt;\n
+                        \s\s\s\s...\n
+                        \s\s&lt;/select:OptGroup&gt;\n
+                        &lt;/select:MultipleSelect&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Placeholder"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                		<b:Column size="XS_6">
+		                    <select:Select title="Choose one of the following...">
+		                        <select:Option text="Mustard"/>
+				                <select:Option text="Ketchup"/>
+				                <select:Option text="Relish"/>
+		                    </select:Select>
+		                </b:Column>
+		                <b:Column size="XS_6">
+		                	<select:MultipleSelect title="Choose one of the following...">
+		                        <select:Option text="Mustard"/>
+				                <select:Option text="Ketchup"/>
+				                <select:Option text="Relish"/>
+		                    </select:MultipleSelect>
+		                </b:Column>
+		            </b:Row>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                    	&lt;!-- Set the default placeholder text when nothing is selected --&gt;\n
+                        &lt;select:Select title="Choose one of the following..."&gt;\n
+                        \s\s&lt;select:Option text="..."/&gt;\n
+                        \s\s...\n
+                        &lt;/select:Select&gt;\n\n
+                        &lt;!-- It also works for multiple select boxes --&gt;\n
+                        &lt;select:MultipleSelect title="Choose one of the following..."&gt;\n
+                        \s\s&lt;select:Option text="..."/&gt;\n
+                        \s\s...\n
+                        &lt;/select:MultipleSelect&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Selected Text"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                        <b:Column size="XS_6">
+                            <select:Select>
+                                <select:Option text="Hot Dog, Fries and a Soda" title="Combo 1"/>
+                                <select:Option text="Burger, Shake and a Smile" title="Combo 2"/>
+                                <select:Option text="Sugar, Spice and all things nice" title="Combo 3"/>
+                            </select:Select>
+                        </b:Column>
+                        <b:Column size="XS_6">
+                            <select:MultipleSelect>
+                                <select:Option text="Hot Dog, Fries and a Soda" title="Combo 1"/>
+                                <select:Option text="Burger, Shake and a Smile" title="Combo 2"/>
+                                <select:Option text="Sugar, Spice and all things nice" title="Combo 3"/>
+                            </select:MultipleSelect>
+                        </b:Column>
+                    </b:Row>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                    	&lt;!-- Set the title attribute on individual options to display alternative text when the option is selected --&gt;\n
+                        &lt;select:Select&gt;\n
+                        \s\s&lt;select:Option text="Hot Dog, Fries and a Soda" title="Combo 1"/&gt;\n
+                        \s\s&lt;select:Option text="Burger, Shake and a Smile" title="Combo 2"/&gt;\n
+                        \s\s&lt;select:Option text="Sugar, Spice and all things nice" title="Combo 3"/&gt;\n
+                        &lt;/select:Select&gt;\n\n
+                        &lt;!-- It also works for multiple select boxes --&gt;\n
+                        &lt;select:MultipleSelect&gt;\n
+                        \s\s&lt;select:Option text="Hot Dog, Fries and a Soda" title="Combo 1"/&gt;\n
+                        \s\s&lt;select:Option text="Burger, Shake and a Smile" title="Combo 2"/&gt;\n
+                        \s\s&lt;select:Option text="Sugar, Spice and all things nice" title="Combo 3"/&gt;\n
+                        &lt;/select:MultipleSelect&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -330,46 +350,130 @@
                     <b:Heading size="H3" text="Selected Text Format (Multiple Only)"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b.html:Paragraph>The supported values are:</b.html:Paragraph>
-                    <b.html:UnorderedList>
-                        <b:ListItem text="values A comma delimted list of selected values. (default)" />
-                        <b:ListItem text="count If one item is selected, then the value is shown, if more than one is selected
-                            then the number of selected items is displayed, eg 2 of 6 selected" />
-                        <b:ListItem text="count > x Where X is the number of items selected when the display format changes from
-                            values to count"/>
-                    </b.html:UnorderedList>
                     <b:Row>
-                        <b:Column size="XS_6">
-                            <select:Select multiple="true" selectedTextFormat="count">
-                                <select:Option text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
-                            </select:Select>
+                    	<b:Column size="XS_3">
+                            <b:FormLabel for="selectedTextFormat1">VALUES</b:FormLabel>
                         </b:Column>
-                        <b:Column size="XS_6">
-                            <select:Select multiple="true" selectedTextFormat="count>3">
-                                <select:Option text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
-                                <select:Option text="Four"/>
-                                <select:Option text="Five"/>
-                            </select:Select>
+                        <b:Column size="XS_3">
+                            <b:FormLabel for="selectedTextFormat2">COUNT</b:FormLabel>
+                        </b:Column>
+                        <b:Column size="XS_3">
+                            <b:FormLabel for="selectedTextFormat3">STATIC</b:FormLabel>
+                        </b:Column>
+                        <b:Column size="XS_3">
+                            <b:FormLabel for="selectedTextFormat4">COUNT > X</b:FormLabel>
                         </b:Column>
                     </b:Row>
-
+                    <b:Row>
+                    	<b:Column size="XS_3">
+                            <select:MultipleSelect selectedTextFormat="VALUES" b:id="selectedTextFormat1">
+                                <select:Option text="Mustard"/>
+				                <select:Option text="Ketchup"/>
+				                <select:Option text="Relish"/>
+                            </select:MultipleSelect>
+                        </b:Column>
+                        <b:Column size="XS_3">
+                            <select:MultipleSelect selectedTextFormat="COUNT" b:id="selectedTextFormat2">
+                                <select:Option text="Mustard"/>
+				                <select:Option text="Ketchup"/>
+				                <select:Option text="Relish"/>
+                            </select:MultipleSelect>
+                        </b:Column>
+                        <b:Column size="XS_3">
+                            <select:MultipleSelect selectedTextFormat="STATIC" b:id="selectedTextFormat3">
+                                <select:Option text="Mustard"/>
+				                <select:Option text="Ketchup"/>
+				                <select:Option text="Relish"/>
+                            </select:MultipleSelect>
+                        </b:Column>
+                        <b:Column size="XS_3">
+                            <select:MultipleSelect countSelectedTextFormat="2" b:id="selectedTextFormat4">
+                                <select:Option text="Mustard"/>
+				                <select:Option text="Ketchup"/>
+				                <select:Option text="Relish"/>
+                            </select:MultipleSelect>
+                        </b:Column>
+                    </b:Row>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;select:Select multiple="true" selectedTextFormat="count"&gt;\n
+                    	&lt;!-- VALUES: A comma delimited list of selected values (default) --&gt;\n
+                    	&lt;!-- COUNT: If one item is selected, then the value is shown, if more than one is selected then the number of selected items is displayed, eg 2 of 6 selected --&gt;\n
+                    	&lt;!-- STATIC: Always show the select title (placeholder), regardless of selection --&gt;\n
+                        &lt;select:MultipleSelect selectedTextFormat="VALUES | COUNT | STATIC"&gt;\n
                         \s\s&lt;select:Option text="..."/&gt;\n
+                        \s\s...\n
+                        &lt;/select:MultipleSelect&gt;\n\n
+                        &lt;!-- COUNT > X: Where X is the number of items selected when the display format changes from values to count --&gt;\n
+                        &lt;select:MultipleSelect countSelectedTextFormat="2"&gt;\n
                         \s\s&lt;select:Option text="..."/&gt;\n
                         \s\s&lt;select:Option text="..."/&gt;\n
                         \s\s...\n
+                        &lt;/select:MultipleSelect&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Button classes"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                        <b:Column size="SM_4">
+                            <select:Select style="PRIMARY">
+                                <select:Option text="Mustard"/>
+				                <select:Option text="Ketchup"/>
+				                <select:Option text="Relish"/>
+                            </select:Select>
+                        </b:Column>
+                        <b:Column size="SM_4">
+                            <select:Select style="INFO">
+                                <select:Option text="Mustard"/>
+				                <select:Option text="Ketchup"/>
+				                <select:Option text="Relish"/>
+                            </select:Select>
+                        </b:Column>
+                        <b:Column size="SM_4">
+                            <select:Select style="SUCCESS">
+                                <select:Option text="Mustard"/>
+				                <select:Option text="Ketchup"/>
+				                <select:Option text="Relish"/>
+                            </select:Select>
+                        </b:Column>
+                    </b:Row>
+                    <b:Row>
+                        <b:Column size="SM_4">
+                            <select:Select style="WARNING">
+                                <select:Option text="Mustard"/>
+				                <select:Option text="Ketchup"/>
+				                <select:Option text="Relish"/>
+                            </select:Select>
+                        </b:Column>
+                        <b:Column size="SM_4">
+                            <select:Select style="DANGER">
+                                <select:Option text="Mustard"/>
+				                <select:Option text="Ketchup"/>
+				                <select:Option text="Relish"/>
+                            </select:Select>
+                        </b:Column>
+                        <b:Column size="SM_4">
+                            <select:Select customStyle="btn-default">
+                                <select:Option text="Mustard"/>
+				                <select:Option text="Ketchup"/>
+				                <select:Option text="Relish"/>
+                            </select:Select>
+                        </b:Column>
+                    </b:Row>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                    	&lt;!-- Set the button classes --&gt;\n
+                        &lt;select:Select style="PRIMARY | INFO | SUCCESS | WARNING | DANGER | DEFAULT"&gt;\n
+                        \s\s...\n
                         &lt;/select:Select&gt;\n\n
-                        &lt;select:Select multiple="true" selectedTextFormat="count>3"&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
+                        &lt;!-- Or set a custom class name --&gt;\n
+                        &lt;select:Select customStyle="btn-default"&gt;\n
                         \s\s...\n
                         &lt;/select:Select&gt;\n
                     </d:PrettyPre>
@@ -378,27 +482,18 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="H3" text="Show Tick (Single Only)"/>
+                    <b:Heading size="H3" text="Checkmark on selected option (Standard Only)"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b.html:Paragraph>
-                        You can also show the tick icon on single select.
-                    </b.html:Paragraph>
                     <select:Select showTick="true">
-                        <select:Option text="One"/>
-                        <select:Option text="Two"/>
-                        <select:Option text="Three"/>
-                        <select:Option text="Four"/>
-                        <select:Option text="Five"/>
-                        <select:Option text="Six"/>
+                        <select:Option text="Mustard"/>
+				        <select:Option text="Ketchup"/>
+				        <select:Option text="Relish"/>
                     </select:Select>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;select:Select showTick="true"&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
                         \s\s...\n
                         &lt;/select:Select&gt;\n
                     </d:PrettyPre>
@@ -407,24 +502,18 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="H3" text="Show Menu Arrow"/>
+                    <b:Heading size="H3" text="Menu Arrow"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <select:Select showMenuArrow="true">
-                        <select:Option text="One"/>
-                        <select:Option text="Two"/>
-                        <select:Option text="Three"/>
-                        <select:Option text="Four"/>
-                        <select:Option text="Five"/>
-                        <select:Option text="Six"/>
+                        <select:Option text="Mustard"/>
+				        <select:Option text="Ketchup"/>
+				        <select:Option text="Relish"/>
                     </select:Select>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;select:Select showMenuArrow="true"&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
                         \s\s...\n
                         &lt;/select:Select&gt;\n
                     </d:PrettyPre>
@@ -433,24 +522,19 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="H3" text="Custom Option Style"/>
+                    <b:Heading size="H3" text="Style individual options"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <select:Select>
-                        <select:Option text="One"/>
-                        <select:Option text="Two"/>
-                        <select:Option text="Three"/>
-                        <select:Option addStyleNames="{style.special}" text="Four"/>
-                        <select:Option text="Five"/>
-                        <select:Option text="Six"/>
+                        <select:Option text="Mustard"/>
+                        <select:Option addStyleNames="{style.special}" text="Ketchup"/>
+                        <select:Option text="Relish"/>
                     </select:Select>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;select:Select&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option addStyleName="..." text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
+                        \s\s&lt;select:Option addStyleNames="..." text="..."/&gt;\n
                         \s\s...\n
                         &lt;/select:Select&gt;\n
                     </d:PrettyPre>
@@ -459,51 +543,78 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="H3" text="Controlling Width"/>
+                    <b:Heading size="H3" text="Width"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
-                        <b:Column size="XS_12">
-                            <select:Select width="auto">
-                                <select:Option text="One"/>
-                                <select:Option text="Two (I am a really long one to show auto width!!!)"/>
-                                <select:Option text="Three"/>
+                        <b:Column size="SM_1">
+                        	<b:FormLabel text="AUTO" for="widthAuto"/>
+                        </b:Column>
+                        <b:Column size="SM_11">
+                            <select:Select selectWidth="AUTO" b:id="widthAuto">
+                                <select:Option text="Mustard"/>
+                                <select:Option text="Ketchup"/>
+                                <select:Option text="Relish"/>
+                                <select:Option text="All of the above (and much, much more!)"/>
                             </select:Select>
                         </b:Column>
-                        <b:Column size="XS_12">
-                            <select:Select width="100px">
-                                <select:Option text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
+                    </b:Row>
+                    <b:Row>
+                        <b:Column size="SM_1">
+                        	<b:FormLabel text="FIT" for="widthFit"/>
+                        </b:Column>
+                        <b:Column size="SM_11">
+                            <select:Select selectWidth="FIT" b:id="widthFit">
+                                <select:Option text="Mustard"/>
+                                <select:Option text="Ketchup"/>
+                                <select:Option text="Relish"/>
+                                <select:Option text="All of the above (and much, much more!)"/>
                             </select:Select>
                         </b:Column>
-                        <b:Column size="XS_12">
-                            <select:Select width="80%">
-                                <select:Option text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
+                    </b:Row>
+                    <b:Row>    
+                        <b:Column size="SM_1">
+                        	<b:FormLabel text="100px" for="width100px"/>
+                        </b:Column>
+                        <b:Column size="SM_11">
+                            <select:Select width="100px" b:id="width100px">
+                                <select:Option text="Mustard"/>
+                                <select:Option text="Ketchup"/>
+                                <select:Option text="Relish"/>
+                                <select:Option text="All of the above (and much, much more!)"/>
+                            </select:Select>
+                        </b:Column>
+                    </b:Row>
+                    <b:Row>
+                        <b:Column size="SM_1">
+                        	<b:FormLabel text="75%" for="width75pc"/>
+                        </b:Column>
+                        <b:Column size="SM_11">
+                            <select:Select width="75%" b:id="width75pc">
+                                <select:Option text="Mustard"/>
+                                <select:Option text="Ketchup"/>
+                                <select:Option text="Relish"/>
+                                <select:Option text="All of the above (and much, much more!)"/>
                             </select:Select>
                         </b:Column>
                     </b:Row>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;select:Select width="auto"&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
+                    	&lt;!-- AUTO: The width of the select is automatically adjusted to accommodate the widest option.--&gt;\n
+                        &lt;select:Select selectWidth="AUTO"&gt;\n
                         \s\s...\n
                         &lt;/select:Select&gt;\n\n
+                        &lt;!-- FIT: Automatically adjusts the width of the select to the width of its currently selected option. --&gt;\n
+                        &lt;select:Select selectWidth="FIT"&gt;\n
+                        \s\s...\n
+                        &lt;/select:Select&gt;\n\n
+                        &lt;!-- CSS Width: 100px --&gt;\n
                         &lt;select:Select width="100px"&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
                         \s\s...\n
                         &lt;/select:Select&gt;\n\n
-                        &lt;select:Select width="80%"&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
+                        &lt;!-- CSS Width: 75% --&gt;\n
+                        &lt;select:Select width="75%"&gt;\n
                         \s\s...\n
                         &lt;/select:Select&gt;\n\n
                     </d:PrettyPre>
@@ -512,146 +623,45 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="H3" text="Enabling / Disabling"/>
-                </b:PanelHeader>
-                <b:PanelBody>
-                    <b:Row>
-                        <b:Column size="SM_6">
-                            <select:Select enabled="false">
-                                <select:Option text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
-                            </select:Select>
-                        </b:Column>
-                        <b:Column size="SM_6">
-                            <select:Select>
-                                <select:Option enabled="false" text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
-                            </select:Select>
-                        </b:Column>
-                        <b:Column size="SM_6">
-                            <select:Select>
-                                <select:OptGroup label="Group" enabled="false">
-                                    <select:Option text="One"/>
-                                    <select:Option text="Two"/>
-                                    <select:Option text="Three"/>
-                                </select:OptGroup>
-                                <select:OptGroup label="Group">
-                                    <select:Option text="Four"/>
-                                    <select:Option text="Five"/>
-                                    <select:Option text="Six"/>
-                                </select:OptGroup>
-                            </select:Select>
-                        </b:Column>
-                    </b:Row>
-                </b:PanelBody>
-                <b:PanelFooter>
-                    <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;select:Select enabled="false"&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s...\n
-                        &lt;/select:Select&gt;\n\n
-                        &lt;select:Select&gt;\n
-                        \s\s&lt;select:Option enabled="false" text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s...\n
-                        &lt;/select:Select&gt;\n\n
-                        &lt;select:Select&gt;\n
-                        \s\s&lt;select:OptGroup enabled="false" label="..."&gt;\n
-                        \s\s\s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s\s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s\s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;/select:OptGroup&gt;\n
-                        \s\s&lt;select:OptGroup label="..."&gt;\n
-                        \s\s\s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s\s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s\s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;/select:OptGroup&gt;\n
-                        &lt;/select:Select&gt;\n
-                    </d:PrettyPre>
-                </b:PanelFooter>
-            </b:Panel>
-
-            <b:Panel>
-                <b:PanelHeader>
-                    <b:Heading size="H3" text="Visible Items Before Scroll"/>
-                </b:PanelHeader>
-                <b:PanelBody>
-                    <b:Row>
-                        <b:Column size="SM_6">
-                            <select:Select visibleSize="auto">
-                                <select:Option text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
-                                <select:Option text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
-                                <select:Option text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
-                                <select:Option text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
-                            </select:Select>
-                        </b:Column>
-                        <b:Column size="SM_6">
-                            <select:Select visibleSize="5">
-                                <select:Option text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
-                                <select:Option text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
-                                <select:Option text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
-                                <select:Option text="One"/>
-                                <select:Option text="Two"/>
-                                <select:Option text="Three"/>
-                            </select:Select>
-                        </b:Column>
-                    </b:Row>
-                </b:PanelBody>
-                <b:PanelFooter>
-                    <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;select:Select visibleSize="auto"&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s...\n
-                        &lt;/select:Select&gt;\n\n
-                        &lt;select:Select visibleSize="5"&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s...\n
-                        &lt;/select:Select&gt;\n
-                    </d:PrettyPre>
-                </b:PanelFooter>
-            </b:Panel>
-
-            <b:Panel>
-                <b:PanelHeader>
-                    <b:Heading size="H3" text="Dividers"/>
+                    <b:Heading size="H3" text="Icons"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <select:Select>
-                        <select:Option text="One"/>
-                        <select:Option showDivider="true"/>
-                        <select:Option text="Two"/>
-                        <select:Option text="Three"/>
+                        <select:OptGroup label="Picnic" icon="CODE_FORK">
+                            <select:Option icon="AMBULANCE" text="Mustard"/>
+                            <select:Option icon="ANDROID" text="Ketchup"/>
+                            <select:Option icon="FIGHTER_JET" text="Relish"/>
+                        </select:OptGroup>
                     </select:Select>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;select:Select visibleSize="auto"&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option showDivider="true"/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
+                        &lt;select:Select&gt;\n
+                        \s\s&lt;select:OptGroup icon="..." label="..."&gt;\n
+                        \s\s\s\s&lt;select:Option icon="..." text="..."/&gt;\n
+                        \s\s&lt;/select:OptGroup&gt;\n
+                        \s\s...\n
+                        &lt;/select:Select&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Custom content"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <select:Select>
+                        <select:Option content="&lt;span class='label label-warning'&gt;Mustard&lt;/span&gt;" text="Mustard"/>
+                        <select:Option content="&lt;span class='label label-danger'&gt;Ketchup&lt;/span&gt;" text="Ketchup"/>
+                        <select:Option content="&lt;span class='label label-success'&gt;Relish&lt;/span&gt;" text="Relish"/>
+                        <select:Option content="&lt;span class='label label-info'&gt;Mayonnaise&lt;/span&gt;" text="Mayonnaise"/>
+                    </select:Select>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;select:Select&gt;\n
+                        \s\s&lt;select:Option content="&amp;lt;span class='label label-warning'&amp;gt;...&amp;lt;/span&amp;gt;" text="..."/&gt;\n
                         \s\s...\n
                         &lt;/select:Select&gt;\n
                     </d:PrettyPre>
@@ -666,31 +676,31 @@
                     <b:Row>
                         <b:Column size="SM_6">
                             <select:Select>
-                                <select:Option subtext="one" text="One"/>
-                                <select:Option subtext="two" text="Two"/>
-                                <select:Option subtext="three" text="Three"/>
+                                <select:Option subtext="French's" text="Mustard"/>
+                                <select:Option subtext="Heinz" text="Ketchup"/>
+                                <select:Option subtext="Sweet" text="Relish"/>
+                                <select:Option subtext="Miracle Whip" text="Mayonnaise"/>
                             </select:Select>
                         </b:Column>
                         <b:Column size="SM_6">
                             <select:Select showSubtext="true">
-                                <select:Option subtext="one" text="One"/>
-                                <select:Option subtext="two" text="Two"/>
-                                <select:Option subtext="three" text="Three"/>
+                                <select:Option subtext="French's" text="Mustard"/>
+                                <select:Option subtext="Heinz" text="Ketchup"/>
+                                <select:Option subtext="Sweet" text="Relish"/>
+                                <select:Option subtext="Miracle Whip" text="Mayonnaise"/>
                             </select:Select>
                         </b:Column>
                     </b:Row>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;!-- Add subtext to an option or optgroup --&gt;\n
                         &lt;select:Select&gt;\n
-                        \s\s&lt;select:Option text="..." subtext="..."/&gt;\n
-                        \s\s&lt;select:Option text="..." subtext="..."/&gt;\n
                         \s\s&lt;select:Option text="..." subtext="..."/&gt;\n
                         \s\s...\n
                         &lt;/select:Select&gt;\n\n
+                        &lt;!-- Show subtext --&gt;\n
                         &lt;select:Select showSubtext="true"&gt;\n
-                        \s\s&lt;select:Option text="..." subtext="..."/&gt;\n
-                        \s\s&lt;select:Option text="..." subtext="..."/&gt;\n
                         \s\s&lt;select:Option text="..." subtext="..."/&gt;\n
                         \s\s...\n
                         &lt;/select:Select&gt;\n
@@ -700,25 +710,116 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="H3" text="Icons"/>
+                    <b:Heading size="H3" text="Menu size"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                        <b:Column size="SM_4">
+                            <select:Select menuSize="AUTO" title="menuSize: AUTO">
+                                <select:Option text="Mustard"/>
+                                <select:Option text="Ketchup"/>
+                                <select:Option text="Relish"/>
+                                <select:Option text="Mayonnaise"/>
+                                <select:Option text="Barbecue Sauce"/>
+                                <select:Option text="Salad Dressing"/>
+                                <select:Option text="Tabasco"/>
+                                <select:Option text="Salsa"/>
+                                <select:Option text="Mustard"/>
+                                <select:Option text="Ketchup"/>
+                                <select:Option text="Relish"/>
+                                <select:Option text="Mayonnaise"/>
+                                <select:Option text="Barbecue Sauce"/>
+                                <select:Option text="Salad Dressing"/>
+                                <select:Option text="Tabasco"/>
+                                <select:Option text="Salsa"/>
+                                <select:Option text="Mustard"/>
+                                <select:Option text="Ketchup"/>
+                                <select:Option text="Relish"/>
+                                <select:Option text="Mayonnaise"/>
+                                <select:Option text="Barbecue Sauce"/>
+                                <select:Option text="Salad Dressing"/>
+                                <select:Option text="Tabasco"/>
+                                <select:Option text="Salsa"/>
+                            </select:Select>
+                        </b:Column>
+                        <b:Column size="SM_4">
+                            <select:Select menuSize="ALL" title="menuSize: ALL">
+                                <select:Option text="Mustard"/>
+                                <select:Option text="Ketchup"/>
+                                <select:Option text="Relish"/>
+                                <select:Option text="Mayonnaise"/>
+                                <select:Option text="Barbecue Sauce"/>
+                                <select:Option text="Salad Dressing"/>
+                                <select:Option text="Tabasco"/>
+                                <select:Option text="Salsa"/>
+                                <select:Option text="Mustard"/>
+                                <select:Option text="Ketchup"/>
+                                <select:Option text="Relish"/>
+                                <select:Option text="Mayonnaise"/>
+                                <select:Option text="Barbecue Sauce"/>
+                                <select:Option text="Salad Dressing"/>
+                                <select:Option text="Tabasco"/>
+                                <select:Option text="Salsa"/>
+                                <select:Option text="Mustard"/>
+                                <select:Option text="Ketchup"/>
+                                <select:Option text="Relish"/>
+                                <select:Option text="Mayonnaise"/>
+                                <select:Option text="Barbecue Sauce"/>
+                                <select:Option text="Salad Dressing"/>
+                                <select:Option text="Tabasco"/>
+                                <select:Option text="Salsa"/>
+                            </select:Select>
+                        </b:Column>
+                        <b:Column size="SM_4">
+                            <select:Select fixedMenuSize="5" title="fixedMenuSize: 5">
+                                <select:Option text="Mustard"/>
+                                <select:Option text="Ketchup"/>
+                                <select:Option text="Relish"/>
+                                <select:Option text="Mayonnaise"/>
+                                <select:Option text="Barbecue Sauce"/>
+                                <select:Option text="Salad Dressing"/>
+                                <select:Option text="Tabasco"/>
+                                <select:Option text="Salsa"/>
+                            </select:Select>
+                        </b:Column>
+                    </b:Row>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                    	&lt;!-- AUTO: the menu always opens up to show as many items as the window will allow without being cut off --&gt;\n
+                        &lt;select:Select menuSize="AUTO"&gt;\n
+                        \s\s...\n
+                        &lt;/select:Select&gt;\n\n
+                        &lt;!-- ALL: always show all items. --&gt;\n
+                        &lt;select:Select menuSize="ALL"&gt;\n
+                        \s\s...\n
+                        &lt;/select:Select&gt;\n\n
+                        &lt;!-- Choose the maximum number of items to show in the menu. --&gt;\n
+                        &lt;select:Select fixedMenuSize="5"&gt;\n
+                        \s\s...\n
+                        &lt;/select:Select&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Divider"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <select:Select>
-                        <select:OptGroup label="Group" icon="CODE_FORK">
-                            <select:Option icon="AMBULANCE" text="One"/>
-                            <select:Option icon="ANDROID" text="Two"/>
-                            <select:Option icon="FIGHTER_JET" text="Three"/>
-                        </select:OptGroup>
+                    	<select:Option text="Mustard"/>
+                    	<select:Option divider="true"/>
+                        <select:Option text="Ketchup"/>
+                        <select:Option text="Relish"/>
                     </select:Select>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;select:Select&gt;\n
-                        \s\s&lt;select:OptGroup icon="..." label="..."&gt;\n
-                        \s\s\s\s&lt;select:Option icon="..." text="..."/&gt;\n
-                        \s\s\s\s&lt;select:Option icon="..." text="..."/&gt;\n
-                        \s\s\s\s&lt;select:Option icon="..." text="..."/&gt;\n
-                        \s\s&lt;/select:OptGroup&gt;\n
+                        \s\s&lt;select:Option text="..."/&gt;\n
+                        \s\s&lt;select:Option divider="true"/&gt;\n
+                        \s\s&lt;select:Option text="..."/&gt;\n
                         \s\s...\n
                         &lt;/select:Select&gt;\n
                     </d:PrettyPre>
@@ -727,21 +828,19 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="H3" text="Headers"/>
+                    <b:Heading size="H3" text="Menu header"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <select:Select header="Heading">
-                        <select:Option text="One"/>
-                        <select:Option text="Two"/>
-                        <select:Option text="Three"/>
+                    <select:Select header="Select a condiment">
+                        <select:Option subtext="French's" text="Mustard"/>
+                        <select:Option subtext="Heinz" text="Ketchup"/>
+                        <select:Option subtext="Sweet" text="Relish"/>
+                        <select:Option subtext="Miracle Whip" text="Mayonnaise"/>
                     </select:Select>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;select:Select header="..."&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
+                        &lt;select:Select header="Select a condiment"&gt;\n
                         \s\s...\n
                         &lt;/select:Select&gt;\n
                     </d:PrettyPre>
@@ -750,26 +849,166 @@
 
             <b:Panel>
                 <b:PanelHeader>
-                    <b:Heading size="H3" text="Methods"/>
+                    <b:Heading size="H3" text="Dropup menu"/>
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
                         <b:Column size="SM_6">
-                            <select:Select multiple="true" ui:field="select">
-                                <select:Option text="One"/>
-                                <select:Option text="Two" ui:field="two"/>
-                                <select:Option text="Three" ui:field="three"/>
-                                <select:Option text="Four"/>
-                                <select:Option text="Five"/>
-                                <select:Option text="Six"/>
+                        	<select:Select dropupAuto="false">
+		                        <select:Option text="Mustard"/>
+		                        <select:Option text="Ketchup"/>
+		                        <select:Option text="Relish"/>
+		                    </select:Select>
+		                </b:Column>
+		                <b:Column size="SM_6">
+                        	<select:Select dropupAuto="false" forceDropup="true">
+		                        <select:Option text="Mustard"/>
+		                        <select:Option text="Ketchup"/>
+		                        <select:Option text="Relish"/>
+		                    </select:Select>
+		                </b:Column>
+		            </b:Row>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                     	&lt;!-- Set to true by default, which automatically determines whether or not the menu should display above or below the select box. --&gt;\n
+                        &lt;!-- false: Never show menu above the select --&gt;\n
+                        &lt;select:Select dropupAuto="false"&gt;\n
+                        \s\s...\n
+                        &lt;/select:Select&gt;\n\n
+                        &lt;!-- If dropupAuto is set to false, manually make the select a dropup menu by adding the .dropup class to the select. --&gt;\n
+                        &lt;select:Select dropupAuto="false" forceDropup="true"&gt;\n
+                        \s\s...\n
+                        &lt;/select:Select&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Disabled"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                    	<b:Column size="SM_4">
+                            <b:FormLabel for="disabled1">Disabled select box</b:FormLabel>
+                        </b:Column>
+                        <b:Column size="SM_4">
+                            <b:FormLabel for="disabled2">Disabled option</b:FormLabel>
+                        </b:Column>
+                        <b:Column size="SM_4">
+                            <b:FormLabel for="disabled3">Disabled option group</b:FormLabel>
+                        </b:Column>
+                    </b:Row>
+                    <b:Row>
+                        <b:Column size="SM_4">
+                            <select:Select enabled="false" b:id="disabled1">
+                                <select:Option text="Mustard"/>
+		                        <select:Option text="Ketchup"/>
+		                        <select:Option text="Relish"/>
                             </select:Select>
                         </b:Column>
-                        <b:Column size="SM_6">
-                            <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="Disable/Enable" ui:field="disableEnable"/>
-                            <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="Get Value" ui:field="getValue"/>
-                            <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="Set Value" ui:field="setValue"/>
-                            <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="Set Values" ui:field="setValues"/>
-                            <b:Button addStyleNames="{style.spacing}" type="PRIMARY" text="Deselect All" ui:field="deselectAll"/>
+                        <b:Column size="SM_4">
+                            <select:Select  b:id="disabled2">
+                                <select:Option text="Mustard" enabled="false"/>
+		                        <select:Option text="Ketchup"/>
+		                        <select:Option text="Relish"/>
+                            </select:Select>
+                        </b:Column>
+                        <b:Column size="SM_4">
+                            <select:Select  b:id="disabled3">
+                                <select:OptGroup label="Picnic" enabled="false">
+		                            <select:Option text="Mustard"/>
+		                            <select:Option text="Ketchup"/>
+		                            <select:Option text="Relish"/>
+		                        </select:OptGroup>
+		                        <select:OptGroup label="Camping">
+		                            <select:Option text="Tent"/>
+		                            <select:Option text="Flashlight"/>
+		                            <select:Option text="Toilet Paper"/>
+		                        </select:OptGroup>
+                            </select:Select>
+                        </b:Column>
+                    </b:Row>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                    	&lt;!-- Disabled select box --&gt;\n
+                        &lt;select:Select enabled="false"&gt;\n
+                        \s\s&lt;select:Option text="..."/&gt;\n
+                        \s\s...\n
+                        &lt;/select:Select&gt;\n\n
+                        &lt;!-- Disabled option --&gt;\n
+                        &lt;select:Select&gt;\n
+                        \s\s&lt;select:Option enabled="false" text="..."/&gt;\n
+                        \s\s...\n
+                        &lt;/select:Select&gt;\n\n
+                        &lt;!-- Disabled option group --&gt;\n
+                        &lt;select:Select&gt;\n
+                        \s\s&lt;select:OptGroup enabled="false" label="..."&gt;\n
+                        \s\s...\n
+                        \s\s&lt;/select:OptGroup&gt;\n
+                        &lt;/select:Select&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="API and events"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                        <b:Column size="SM_3">
+                            <select:Select ui:field="simpleSelect" showSubtext="true" title="Please select...">
+                            	<select:Option text="Mustard" value="1" subtext="value=1"/>
+		                        <select:Option text="Ketchup" value="2" subtext="value=2"/>
+		                        <select:Option text="Relish"/>
+                            </select:Select>
+                            <b.html:Br/><b.html:Br/><b.html:Br/>
+                        </b:Column>
+                        <b:Column size="SM_9">
+                        	<b:Button ui:field="disableEnableSimple" type="PRIMARY" addStyleNames="{style.spacing}" text="Disable"/>
+                            <b:Button ui:field="showHideSimple" type="PRIMARY" addStyleNames="{style.spacing}" text="Hide"/>
+                            <b:Button ui:field="toggleSimple" type="PRIMARY" addStyleNames="{style.spacing}" text="Toggle"/>
+                            <b:Button ui:field="getValueSimple" type="PRIMARY" addStyleNames="{style.spacing}" text="Get Value"/>
+                            <b:Button ui:field="setValueSimple" type="PRIMARY" addStyleNames="{style.spacing}" text="Set Value"/>
+                            <b:Button ui:field="renderedSimple" type="PRIMARY" addStyleNames="{style.spacing}" text="Render"/>
+                            <b:Button ui:field="refreshSimple" type="PRIMARY" addStyleNames="{style.spacing}" text="Refresh"/>
+                        </b:Column>
+                    </b:Row>
+                    <b:Row>
+                        <b:Column size="SM_3">
+                            <select:MultipleSelect ui:field="multiSelect">
+                                <select:Option text="Mustard" value="1" subtext="value=1" title="Mustard (value=1)"/>
+		                        <select:Option text="Ketchup" value="2" subtext="value=2" title="Ketchup (value=2)"/>
+		                        <select:Option text="Relish"/>
+                            </select:MultipleSelect>
+                            <b.html:Br/><b.html:Br/>
+                        </b:Column>
+                        <b:Column size="SM_9">
+                        	<b:Button ui:field="disableEnableMultiple" addStyleNames="{style.spacing}" type="PRIMARY" text="Disable"/>
+                        	<b:Button ui:field="showHideMultiple" type="PRIMARY" addStyleNames="{style.spacing}" text="Hide"/>
+                        	<b:Button ui:field="toggleMultiple" type="PRIMARY" addStyleNames="{style.spacing}" text="Toggle"/>
+                        	<b:Button ui:field="getValueMultiple" type="PRIMARY" addStyleNames="{style.spacing}" text="Get Value"/>
+                            <b:Button ui:field="setValueMultiple" type="PRIMARY" addStyleNames="{style.spacing}" text="Set Values"/>
+                            <b:Button ui:field="renderMultiple" type="PRIMARY" addStyleNames="{style.spacing}" text="Render"/>
+                            <b:Button ui:field="refreshMultiple" type="PRIMARY" addStyleNames="{style.spacing}" text="Refresh"/>
+                        	<b:Button ui:field="selectAll" addStyleNames="{style.spacing}" type="PRIMARY" text="Select All"/>
+                            <b:Button ui:field="deselectAll" addStyleNames="{style.spacing}" type="PRIMARY" text="Deselect All"/>
+                        </b:Column>
+                    </b:Row>
+                    <b:Row>
+                    	<b:Column size="SM_3">
+                    		<b.html:Br/><b.html:Br/><b.html:Br/>
+                    	</b:Column>
+                        <b:Column addStyleNames="{style.logRow}" size="SM_9">
+                        	<b.html:Strong text="Event Log" addStyleNames="{style.logTitle}"/>
+                            <b:Button pull="RIGHT" text="Clear Log" ui:field="clearLogButton"/>
+                            <b.html:Div addStyleNames="clearfix"/>
+                            <g:ScrollPanel height="300px">
+                                <g:FlowPanel ui:field="logRow"/>
+                            </g:ScrollPanel>
                         </b:Column>
                     </b:Row>
                 </b:PanelBody>
@@ -777,45 +1016,61 @@
                     <b:Heading size="H4" text="UiBinder"/>
 
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;select:Select multiple="true" ui:field="select"&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s&lt;select:Option text="..."/ ui:field="two"&gt;\n
-                        \s\s&lt;select:Option text="..."/ ui:field="three"&gt;\n
-                        \s\s&lt;select:Option text="..."/&gt;\n
-                        \s\s...\n
+                    	&lt;!-- Standard Select --&gt;\n
+                        &lt;select:Select ui:field="simpleSelect"&gt;\n
+                        \s\s&lt;select:Option text="Mustard" value="1"/&gt;\n
+                        \s\s&lt;select:Option text="Ketchup" value="2"/&gt;\n
+                        \s\s&lt;select:Option text="Relish"/&gt;\n
+                        &lt;/select:Select&gt;\n\n
+                        &lt;!-- Multiple Select --&gt;\n
+                        &lt;select:MultipleSelect ui:field="multiSelect"&gt;\n
+                        \s\s&lt;select:Option text="Mustard" value="1"/&gt;\n
+                        \s\s&lt;select:Option text="Ketchup" value="2"/&gt;\n
+                        \s\s&lt;select:Option text="Relish"/&gt;\n
                         &lt;/select:Select&gt;\n
                     </d:PrettyPre>
 
                     <b:Heading size="H4" text="Java code"/>
 
-                    <b.html:Paragraph>
-                        <strong>NOTE: The refresh() after altering the select!!</strong>
-                    </b.html:Paragraph>
-
                     <d:PrettyPre addStyleNames="lang-java">
-                        @UiField\n
-                        Select select;\n
-                        @UiField\n
-                        Option two;\n
-                        @UiField\n
-                        Option three;\n\n
+                        @UiField Select simpleSelect;\n
+                        @UiField MultipleSelect multiSelect\n\n
 
-                        // Get Selected Values\n
-                        select.getAllSelectedValues();\n\n
+                        // Enable/Disable\n
+                        simpleSelect.setEnabled(true | false);\n
+                        multiSelect.setEnabled(true | false);\n\n
 
-                        // Set Certain Values\n
-                        select.setValues(two, three);\n
-                        select.refresh();\n\n
+                        // Show/Hide\n
+                        simpleSelect.setVisible(true | false);\n
+                        multiSelect.setVisible(true | false);\n\n
 
-                        // Set ChangeHandler\n
-                        select.addChangeHandler(...);\n\n
+                        // Toggle Menu\n
+                        simpleSelect.toggle();\n
+                       	multiSelect.toggle();\n\n
 
-                        // Set Enable/Disable\n
-                        select.setEnabled(true | false);\n
-                        select.refresh();\n\n
+                        // Get Value\n
+                        // If the "value" is not set on an option, the text value is considered as value.\n
+                        String value = simpleSelect.getValue();\n
+                        List&lt;String&gt; values = multiSelect.getValue();\n\n
 
-                        // Deselect All\n
-                        select.deselectAll();\n\n
+                        // Set Value\n
+                        // If the value to be set is not in the item list, no item will be selected.\n
+                        // If you want to fire ValueChangeEvent, add a second argument "true"; it will be fired if the new value is different than
+                        // the old one.\n
+                        simpleSelect.setValue("2"[, true]);\n
+                        multiSelect.setValue(Arrays.asList("2", "Relish")[, true]);\n\n
+
+						// Render Select\n
+                        simpleSelect.render();\n
+                       	multiSelect.render();\n\n
+
+                       	// Refresh Select\n
+                        simpleSelect.refresh();\n
+                       	multiSelect.refresh();\n\n
+
+                        // Select/Deselect All (Multiple Only)\n
+                        multiSelect.selectAll();\n
+                        multiSelect.deselectAll();\n\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
