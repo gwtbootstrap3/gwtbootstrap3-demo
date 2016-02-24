@@ -169,6 +169,7 @@
                             <b:AnchorListItem text="Fork on GitHub"
                                               href="https://github.com/gwtbootstrap3"/>
                             <b:AnchorListItem text="View Javadoc" href="apidocs/index.html"/>
+                            <b:AnchorListItem text="View Extras Javadoc" href="extras-apidocs/index.html"/>
                         </b:NavbarNav>
                     </b:NavbarCollapse>
                 </b:Container>
