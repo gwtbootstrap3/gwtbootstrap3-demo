@@ -44,9 +44,9 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:NavTabs>
-                        <b:TabListItem active="true" dataTarget="#tab1" text="Tab 1"/>
-                        <b:TabListItem dataTarget="#tab2" text="Tab 2"/>
-                        <b:TabListItem enabled="false" dataTarget="#tab3" text="Tab 3"/>
+                        <b:TabListItem active="true" dataTarget="#tab1" text="Tab 1" icon="CAR"/>
+                        <b:TabListItem dataTarget="#tab2" text="Tab 2" icon="TRAIN" iconPosition="RIGHT"/>
+                        <b:TabListItem enabled="false" dataTarget="#tab3" text="Tab 3" icon="SPINNER" iconPulse="true"/>
                     </b:NavTabs>
                     <b:TabContent>
                         <b:TabPane active="true" b:id="tab1">
@@ -72,9 +72,9 @@
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:NavTabs&gt;\n
-                        \s\s&lt;b:TabListItem active="true" dataTarget="#tab1" text="..."/&gt;\n
-                        \s\s&lt;b:TabListItem dataTarget="#tab2" text="..."/&gt;\n
-                        \s\s&lt;b:TabListItem enabled="false" dataTarget="#tab3" text="..."/&gt;\n
+                        \s\s&lt;b:TabListItem active="true" dataTarget="#tab1" text="..." icon="CAR"/&gt;\n
+                        \s\s&lt;b:TabListItem dataTarget="#tab2" text="..." icon="TRAIN" iconPosition="RIGHT"/&gt;\n
+                        \s\s&lt;b:TabListItem enabled="false" dataTarget="#tab3" text="..." icon="SPINNER" iconPulse="true"/&gt;\n
                         &lt;/b:NavTabs&gt;\n
 
                         &lt;b:TabContent&gt;\n
@@ -98,9 +98,9 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:NavTabs>
-                        <b:TabListItem active="true" dataTarget="#tab4" text="Tab 4"/>
-                        <b:TabListItem dataTarget="#tab5" text="Tab 5"/>
-                        <b:TabListItem dataTarget="#tab6" text="Tab 6"/>
+                        <b:TabListItem active="true" dataTarget="#tab4" text="Tab 4" badgeText="4"/>
+                        <b:TabListItem dataTarget="#tab5" text="Tab 5" badgeText="5"/>
+                        <b:TabListItem dataTarget="#tab6" text="Tab 6" badgeText="6"/>
                     </b:NavTabs>
                     <b:TabContent>
                         <b:TabPane fade="true" in="true" active="true" b:id="tab4">
@@ -129,9 +129,9 @@
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;b:NavTabs&gt;\n
-                        \s\s&lt;b:TabListItem active="true" dataTarget="#tab4" text="..."/&gt;\n
-                        \s\s&lt;b:TabListItem dataTarget="#tab5" text="..."/&gt;\n
-                        \s\s&lt;b:TabListItem dataTarget="#tab6" text="..."/&gt;\n
+                        \s\s&lt;b:TabListItem active="true" dataTarget="#tab4" text="..." badgeText="..."/&gt;\n
+                        \s\s&lt;b:TabListItem dataTarget="#tab5" text="..." badgeText="..."/&gt;\n
+                        \s\s&lt;b:TabListItem dataTarget="#tab6" text="..." badgeText="..."/&gt;\n
                         &lt;/b:NavTabs&gt;\n
 
                         &lt;b:TabContent&gt;\n

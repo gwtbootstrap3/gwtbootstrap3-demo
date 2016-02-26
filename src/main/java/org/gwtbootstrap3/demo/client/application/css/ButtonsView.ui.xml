@@ -112,6 +112,22 @@
 
             <b:Panel>
                 <b:PanelHeader>
+                    <b:Heading size="H3" text="With Badges"/>
+                </b:PanelHeader>
+                <b:PanelBody addStyleNames="{style.spacing}">
+                    <b:Button type="PRIMARY" text="With Badge" badgeText="1"/>
+                    <b:Button type="PRIMARY" text="With Badge on Left" badgeText="2" badgePosition="LEFT"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b:Button type="PRIMARY" badgeText="..."/&gt;\n
+                        &lt;b:Button type="PRIMARY" badgeText="..." badgePosition="LEFT"/&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
                     <b:Heading size="H3" text="Toggle button"/>
                 </b:PanelHeader>
                 <b:PanelBody addStyleNames="{style.spacing}">

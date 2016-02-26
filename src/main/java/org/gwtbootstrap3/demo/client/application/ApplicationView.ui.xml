@@ -166,10 +166,14 @@
                                     </b:AnchorListItem>
                                 </b:DropDownMenu>
                             </b:ListDropDown>
-                            <b:AnchorListItem text="Fork on GitHub"
-                                              href="https://github.com/gwtbootstrap3"/>
-                            <b:AnchorListItem text="View Javadoc" href="apidocs/index.html"/>
-                            <b:AnchorListItem text="View Extras Javadoc" href="extras-apidocs/index.html"/>
+                            <b:ListDropDown>
+                                <b:AnchorButton dataToggle="DROPDOWN">View Javadoc</b:AnchorButton>
+                                <b:DropDownMenu>
+                                    <b:AnchorListItem text="GwtBootstrap3" href="apidocs/index.html"/>
+                                    <b:AnchorListItem text="GwtBootstrap3-Extras" href="extras-apidocs/index.html"/>
+                                </b:DropDownMenu>
+                            </b:ListDropDown>
+                            <b:AnchorListItem text="Fork on GitHub" href="https://github.com/gwtbootstrap3"/>
                         </b:NavbarNav>
                     </b:NavbarCollapse>
                 </b:Container>
