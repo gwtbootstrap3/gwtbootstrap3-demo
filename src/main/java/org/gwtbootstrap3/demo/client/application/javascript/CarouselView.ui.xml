@@ -79,10 +79,8 @@
                                 <b:Image width="100%" url="images/carousel3.png"/>
                             </b:CarouselSlide>
                         </b:CarouselInner>
-                        <b:CarouselControl dataTarget="#carousel-basic" prev="true"
-                                           iconType="CHEVRON_CIRCLE_LEFT"/>
-                        <b:CarouselControl dataTarget="#carousel-basic" next="true"
-                                           iconType="CHEVRON_CIRCLE_RIGHT"/>
+                        <b:CarouselControl href="#carousel-basic" prev="true" text="Previous" iconType="CHEVRON_CIRCLE_LEFT"/>
+                        <b:CarouselControl href="#carousel-basic" next="true" text="Next" iconType="CHEVRON_CIRCLE_RIGHT"/>
                     </b:Carousel>
                 </b:PanelBody>
                 <b:PanelFooter>
@@ -99,9 +97,8 @@
                         \s\s\s\s\s\s&lt;b:Image url=".../&gt;\n
                         \s\s\s\s&lt;/b:CarouselSlide&gt;\n
                         \s\s&lt;/b:CarouselInner&gt;\n
-                        \s\s&lt;b:CarouselControl dataTarget="#carousel-basic" prev="true" iconType="..."/&gt;\n
-                        \s\s&lt;b:CarouselControl dataTarget="#carousel-basic" next="true"
-                        iconType="..."/&gt;\n
+                        \s\s&lt;b:CarouselControl href="#carousel-basic" prev="true" text="Previous" iconType="..."/&gt;\n
+                        \s\s&lt;b:CarouselControl href="#carousel-basic" next="true" text="Next" iconType="..."/&gt;\n
                         &lt;/b:Carousel&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
@@ -144,10 +141,8 @@
                                 </b:CarouselCaption>
                             </b:CarouselSlide>
                         </b:CarouselInner>
-                        <b:CarouselControl dataTarget="#carousel-captions"
-                                           prev="true" iconType="CHEVRON_CIRCLE_LEFT"/>
-                        <b:CarouselControl dataTarget="#carousel-captions"
-                                           next="true" iconType="CHEVRON_CIRCLE_RIGHT"/>
+                        <b:CarouselControl href="#carousel-captions" prev="true" text="Previous" iconType="CHEVRON_CIRCLE_LEFT"/>
+                        <b:CarouselControl href="#carousel-captions" next="true" text="Next" iconType="CHEVRON_CIRCLE_RIGHT"/>
                     </b:Carousel>
                 </b:PanelBody>
                 <b:PanelFooter>
@@ -169,9 +164,8 @@
                         \s\s\s\s\s\s&lt;/b:CarouselCaption&gt;\n
                         \s\s\s\s&lt;/b:CarouselSlide&gt;\n
                         \s\s&lt;/b:CarouselInner&gt;\n
-                        \s\s&lt;b:CarouselControl dataTarget="#carousel-captions" prev="true" iconType="..."/&gt;\n
-                        \s\s&lt;b:CarouselControl dataTarget="#carousel-captions" next="true"
-                        iconType="..."/&gt;\n
+                        \s\s&lt;b:CarouselControl href="#carousel-captions" prev="true" text="Previous" iconType="..."/&gt;\n
+                        \s\s&lt;b:CarouselControl href="#carousel-captions" next="true" text="Next" iconType="..."/&gt;\n
                         &lt;/b:Carousel&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
