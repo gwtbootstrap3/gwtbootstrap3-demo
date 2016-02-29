@@ -51,6 +51,7 @@
     <inherits name="org.gwtbootstrap3.extras.fullcalendar.FullCalendar"/>
     <inherits name="org.gwtbootstrap3.extras.gallery.Gallery"/>
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
+    <inherits name="org.gwtbootstrap3.extras.tagsinput.TagsInput"/>
 
     <inherits name='org.gwtbootstrap3.extras.cachemanifest.Offline'/>
     <add-linker name="offline"/>
