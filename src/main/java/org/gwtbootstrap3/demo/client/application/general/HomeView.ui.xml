@@ -14,7 +14,7 @@
     <b:Row>
         <b:Column size="XS_12">
             <b:Jumbotron>
-                <b:Heading size="H1" text="Demo for GwtBootstrap"/>
+                <b:Heading size="H1" text="Demo for GwtBootstrap3"/>
 
                 <b.html:Paragraph>
                     A
