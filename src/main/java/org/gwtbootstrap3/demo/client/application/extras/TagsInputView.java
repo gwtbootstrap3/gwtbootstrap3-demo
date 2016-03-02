@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.gwtbootstrap3.extras.tagsinput.client.ui.TagsInput;
+import org.gwtbootstrap3.extras.typeahead.client.base.StringDataset;
 
 /*
  * #%L
@@ -45,10 +46,19 @@ public class TagsInputView extends ViewImpl implements TagsInputPresenter.MyView
     @Inject
     public TagsInputView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+    }
+    
+    
 
+    @Override
+    protected void onAttach() {
+        super.onAttach();
+        
         createMarkupTagsInput();
         createTypeaheadTagsInput();
     }
+
+
 
     private void createMarkupTagsInput() {
         List<String> tags = new ArrayList<String>();
@@ -83,6 +93,9 @@ public class TagsInputView extends ViewImpl implements TagsInputPresenter.MyView
         suggestions.add("Cape Town");
         suggestions.add("Kinshasa");
         
-        typeaheadTagsInput.setTypeahead(suggestions);
+        StringDataset dataset = new StringDataset(suggestions);
+        
+        typeaheadTagsInput.setDatasets(dataset);
+        typeaheadTagsInput.reconfigure();
     }
 }
