@@ -164,6 +164,8 @@
                                     </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getOffline}">Offline
                                     </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getTagsInput}">InputTags
+                                    </b:AnchorListItem>
                                 </b:DropDownMenu>
                             </b:ListDropDown>
                             <b:ListDropDown>

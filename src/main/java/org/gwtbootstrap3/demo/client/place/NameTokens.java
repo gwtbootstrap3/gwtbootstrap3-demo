@@ -86,6 +86,7 @@ public class NameTokens {
     public static final String FULL_CALENDAR = "fullcalendar";
     public static final String ANIMATE = "animate";
     public static final String GALLERY = "gallery";
+    public static final String TAGSINPUT = "tagsInput";
 
     // Getters for UiBinders
 
@@ -299,5 +300,9 @@ public class NameTokens {
 
     public static String getGallery() {
         return GALLERY;
+    }
+    
+    public static String getTagsInput() {
+        return TAGSINPUT;
     }
 }
