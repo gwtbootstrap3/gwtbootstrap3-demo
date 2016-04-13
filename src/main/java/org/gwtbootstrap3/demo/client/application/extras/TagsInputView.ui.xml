@@ -100,12 +100,12 @@
                     <b:Heading size="H3" text="Markup"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <tagsinput:TagsInput ui:field="markupTagsInput" value="Belgrade, Amsterdam, Washington"/>
+                    <tagsinput:TagsInput ui:field="markupTagsInput" value="Belgrade,Amsterdam,Washington"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                 	<b:Heading size="H4" text="UiBinder"/>
                     <d:PrettyPre addStyleNames="lang-xml">
-                    	&lt;tagsinput:TagsInput ui:field="markupTagsInput" value="Amsterdam, Washington"/&gt;\n
+                    	&lt;tagsinput:TagsInput ui:field="markupTagsInput" value="Belgrade,Amsterdam,Washington"/&gt;\n
                     </d:PrettyPre>
 
 					<b:Heading size="H4" text="Java code"/>
@@ -131,12 +131,12 @@
 					<b.html:Paragraph>Instead of comma separated string, the values will be set in an array. Existing <code>&lt;option /&gt;</code> elements will automatically be set as tags. This makes it also possible to create tags containing a comma.</b.html:Paragraph>
 				</b:PanelHeader>
 				<b:PanelBody>
-					<tagsinput:MVTagsInput ui:field="multiValueTagsInput" value="Belgrade, Amsterdam, Washington"/>
+					<tagsinput:MVTagsInput ui:field="multiValueTagsInput" value="Belgrade,Amsterdam,Washington"/>
 				</b:PanelBody>
 				<b:PanelFooter>
                 	<b:Heading size="H4" text="UiBinder"/>
                     <d:PrettyPre addStyleNames="lang-xml">
-                    	&lt;tagsinput:MVTagsInput ui:field="multiValueTagsInput" value="Amsterdam, Washington"/&gt;\n
+                    	&lt;tagsinput:MVTagsInput ui:field="multiValueTagsInput" value="Belgrade,Amsterdam,Washington"/&gt;\n
                     </d:PrettyPre>
 
 					<b:Heading size="H4" text="Java code"/>
@@ -254,6 +254,43 @@
                     </d:PrettyPre>               
                 </b:PanelFooter>
             </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Categorizing tags"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <tagsinput:TagsInput ui:field="categoryTagsInput" value="Belgrade,Amsterdam,Washington"/>
+                </b:PanelBody>
+                <b:PanelFooter>
+                	<b:Heading size="H4" text="UiBinder"/>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                    	&lt;tagsinput:TagsInput ui:field="categoryTagsInput" value="Belgrade,Amsterdam,Washington"/&gt;\n
+                    </d:PrettyPre>
+
+					<b:Heading size="H4" text="Java code"/>
+                    <d:PrettyPre addStyleNames="lang-java">
+                    	@UiField TagsInput categoryTagsInput;\n
+                    	\n
+                        categoryTagsInput.setTagClass(new TagClassCallback&lt;String&gt;() {\n
+                        \s\s\s\s@Override\n
+                        \s\s\s\spublic String getTagClass(String item) {\n
+                        \s\s\s\s\s\s\s\sswitch(item) {\n
+                        \s\s\s\s\s\s\s\scase "Belgrade":   return "label label-primary";\n
+                        \s\s\s\s\s\s\s\scase "Amsterdam":  return "label label-danger label-important";\n
+                        \s\s\s\s\s\s\s\scase "Washington": return "label label-success";\n
+                        \s\s\s\s\s\s\s\scase "Sydney":     return "label label-default";\n
+                        \s\s\s\s\s\s\s\scase "Beijing":    return "label label-warning";\n
+                        \s\s\s\s\s\s\s\scase "Cairo":      return "label label-info";\n
+                        \s\s\s\s\s\s\s\sdefault:           return "label label-info";\n
+                        \s\s\s\s\s\s\s\s}\n
+                        \s\s\s\s}\n
+                        });\n
+                        categoryTagsInput.reconfigure();\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
     	</b:Column>
     </b:Row>
 </ui:UiBinder> 

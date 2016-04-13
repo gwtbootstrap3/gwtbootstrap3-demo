@@ -25,6 +25,7 @@ import java.util.List;
 
 import org.gwtbootstrap3.extras.tagsinput.client.callback.ItemTextCallback;
 import org.gwtbootstrap3.extras.tagsinput.client.callback.ItemValueCallback;
+import org.gwtbootstrap3.extras.tagsinput.client.callback.TagClassCallback;
 import org.gwtbootstrap3.extras.tagsinput.client.ui.MVTagsInput;
 import org.gwtbootstrap3.extras.tagsinput.client.ui.TagsInput;
 import org.gwtbootstrap3.extras.tagsinput.client.ui.base.SingleValueTagsInput;
@@ -74,6 +75,8 @@ public class TagsInputView extends ViewImpl implements TagsInputPresenter.MyView
     
     @UiField SingleValueTagsInput<Item> joTagsInput;
     
+    @UiField TagsInput categoryTagsInput;
+    
     @Inject
     public TagsInputView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
@@ -87,6 +90,7 @@ public class TagsInputView extends ViewImpl implements TagsInputPresenter.MyView
         createMultiValueTagsInput();
         createTypeaheadTagsInput();
         createJOTagsInput();
+        createCategoryTagsInput();
     }
 
     private void createMarkupTagsInput() {
@@ -174,5 +178,33 @@ public class TagsInputView extends ViewImpl implements TagsInputPresenter.MyView
             }
         };
         joTagsInput.setDatasets(dataset);
+    }
+
+    private void createCategoryTagsInput() {
+        categoryTagsInput.setTagClass(new TagClassCallback<String>() {
+            @Override
+            public String getTagClass(String item) {
+                switch(item) {
+                case "Belgrade":   return "label label-primary";
+                case "Amsterdam":  return "label label-danger label-important";
+                case "Washington": return "label label-success";
+                case "Sydney":     return "label label-default";
+                case "Beijing":    return "label label-warning";
+                case "Cairo":      return "label label-info";
+                default:           return "label label-info";
+                }
+            }
+        });
+        categoryTagsInput.reconfigure();
+        
+        List<String> tags = new ArrayList<String>();
+        
+        tags.add("Sydney");
+        tags.add("Beijing");
+        tags.add("Cairo");
+        
+        for(String tag : tags) {
+            categoryTagsInput.add(tag);
+        }
     }
 }
