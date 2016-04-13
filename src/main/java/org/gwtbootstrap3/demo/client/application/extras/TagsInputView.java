@@ -1,11 +1,5 @@
 package org.gwtbootstrap3.demo.client.application.extras;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.gwtbootstrap3.extras.tagsinput.client.ui.TagsInput;
-import org.gwtbootstrap3.extras.typeahead.client.base.StringDataset;
-
 /*
  * #%L
  * GwtBootstrap3
@@ -26,6 +20,16 @@ import org.gwtbootstrap3.extras.typeahead.client.base.StringDataset;
  * #L%
  */
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.gwtbootstrap3.extras.tagsinput.client.callback.ItemTextCallback;
+import org.gwtbootstrap3.extras.tagsinput.client.callback.ItemValueCallback;
+import org.gwtbootstrap3.extras.tagsinput.client.ui.MVTagsInput;
+import org.gwtbootstrap3.extras.tagsinput.client.ui.TagsInput;
+import org.gwtbootstrap3.extras.tagsinput.client.ui.base.SingleValueTagsInput;
+import org.gwtbootstrap3.extras.typeahead.client.base.CollectionDataset;
+import org.gwtbootstrap3.extras.typeahead.client.base.StringDataset;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
@@ -39,32 +43,55 @@ public class TagsInputView extends ViewImpl implements TagsInputPresenter.MyView
 
     interface Binder extends UiBinder<Widget, TagsInputView> {
     }
-
+    
     @UiField TagsInput markupTagsInput;
+    @UiField MVTagsInput multiValueTagsInput;
     @UiField TagsInput typeaheadTagsInput;
+    
+    class Item {
+        
+        private String text;
+        private Integer value;
+        
+        public Item(String text, Integer value) {
+            setText(text);
+            setValue(value);
+        }
+        
+        public String getText() {
+            return text;
+        }
+        public void setText(String text) {
+            this.text = text;
+        }
+        public Integer getValue() {
+            return value;
+        }
+        public void setValue(Integer value) {
+            this.value = value;
+        }
+    }
+    
+    @UiField SingleValueTagsInput<Item> joTagsInput;
     
     @Inject
     public TagsInputView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
-    
-    
 
     @Override
     protected void onAttach() {
         super.onAttach();
         
         createMarkupTagsInput();
+        createMultiValueTagsInput();
         createTypeaheadTagsInput();
+        createJOTagsInput();
     }
-
-
 
     private void createMarkupTagsInput() {
         List<String> tags = new ArrayList<String>();
         
-        tags.add("Amsterdam");
-        tags.add("Washington");
         tags.add("Sydney");
         tags.add("Beijing");
         tags.add("Cairo");
@@ -74,9 +101,20 @@ public class TagsInputView extends ViewImpl implements TagsInputPresenter.MyView
         }
     }
 
+    private void createMultiValueTagsInput() {
+        List<String> tags = new ArrayList<String>();
+        
+        tags.add("Sydney");
+        tags.add("Beijing");
+        tags.add("Cairo");
+        
+        multiValueTagsInput.add(tags);
+    }
+    
     private void createTypeaheadTagsInput() {
         List<String> suggestions = new ArrayList<String>();
         
+        suggestions.add("Belgrade");
         suggestions.add("Amsterdam");
         suggestions.add("London");
         suggestions.add("Paris");
@@ -97,5 +135,44 @@ public class TagsInputView extends ViewImpl implements TagsInputPresenter.MyView
         
         typeaheadTagsInput.setDatasets(dataset);
         typeaheadTagsInput.reconfigure();
+    }
+
+    private void createJOTagsInput() {        
+        final ItemValueCallback<Item> cbValue = new ItemValueCallback<Item>() {
+            @Override
+            public String getItemValue(Item item) {
+                return item.getValue().toString();
+            }
+        };
+        
+        final ItemTextCallback<Item> cbText = new ItemTextCallback<Item>() {
+            @Override
+            public String getItemText(Item item) {
+                return item.getText();
+            }
+        };
+        
+        joTagsInput.setItemValue(cbValue);
+        joTagsInput.setItemText(cbText);
+        joTagsInput.reconfigure();
+
+        // Add tags
+        List<Item> tags = new ArrayList<Item>();
+        tags.add(new Item("Belgrade", 1));
+        tags.add(new Item("Amsterdam", 1));
+        tags.add(new Item("London", 2));
+        joTagsInput.add(tags);
+        
+        // Create suggestions
+        List<Item> suggestions = new ArrayList<Item>();
+        suggestions.add(new Item("Belgrade", 4));
+        suggestions.add(new Item("Athens", 5));
+        CollectionDataset<Item> dataset = new CollectionDataset<Item>(suggestions) {
+            @Override
+            public String getValue(Item datum) {
+                return datum != null ? datum.getText() : "";
+            }
+        };
+        joTagsInput.setDatasets(dataset);
     }
 }
