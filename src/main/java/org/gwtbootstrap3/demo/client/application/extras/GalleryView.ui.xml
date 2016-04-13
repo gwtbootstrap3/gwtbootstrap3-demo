@@ -49,7 +49,7 @@
                     Bootstrap Image Gallery
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 3.3.6</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 3.4.2</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">

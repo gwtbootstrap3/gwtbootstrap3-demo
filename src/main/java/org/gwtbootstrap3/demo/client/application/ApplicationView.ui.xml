@@ -148,6 +148,10 @@
                                     </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getFullCalendar}">FullCalendar
                                     </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getGallery}">Gallery
+                                    </b:AnchorListItem>
+                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getTagsInput}">InputTags
+                                    </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getNotify}">Notify
                                     </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getSelect}">Select
@@ -159,8 +163,6 @@
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getToggleSwitch}">ToggleSwitch
                                     </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getTypeahead}">Typeahead
-                                    </b:AnchorListItem>
-                                    <b:AnchorListItem targetHistoryToken="{nameTokens.getGallery}">Gallery
                                     </b:AnchorListItem>
                                     <b:AnchorListItem targetHistoryToken="{nameTokens.getOffline}">Offline
                                     </b:AnchorListItem>
