@@ -31,7 +31,7 @@
     <b:Row>
         <b:Column size="XS_12">
 
-            <b:PageHeader text="Icons" subText="Support for FontAwesome Icons (version 4.4.0)"/>
+            <b:PageHeader text="Icons" subText="Support for FontAwesome Icons (version 4.6.3)"/>
 
             <b:Panel>
                 <b:PanelHeader>
