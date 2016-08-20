@@ -71,7 +71,7 @@
                     Select
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 1.10.0</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 1.11.0</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
@@ -186,18 +186,32 @@
                 </b:PanelHeader>
                 <b:PanelBody>
                     <b:Row>
-                        <b:Column size="XS_6">
+                        <b:Column size="XS_3">
                             <select:Select liveSearch="true" liveSearchPlaceholder="Please type something...">
                                 <select:Option text="Hot Dog, Fries and a Soda"/>
                                 <select:Option text="Burger, Shake and a Smile"/>
                                 <select:Option text="Sugar, Spice and all things nice"/>
                             </select:Select>
                         </b:Column>
-                        <b:Column size="XS_6">
+                        <b:Column size="XS_3">
                             <select:Select liveSearch="true" liveSearchPlaceholder="ketchup, mustard, frosting...">
                                 <select:Option tokens="ketchup mustard" text="Hot Dog, Fries and a Soda"/>
                                 <select:Option tokens="mustard" text="Burger, Shake and a Smile"/>
                                 <select:Option tokens="frosting" text="Sugar, Spice and all things nice"/>
+                            </select:Select>
+                        </b:Column>
+                        <b:Column size="XS_3">
+                            <select:Select liveSearch="true" liveSearchNormalize="true" liveSearchPlaceholder="Accent-insensitive search...">
+                                <select:Option text="Hot Dôg, Friés and a Soda"/>
+                                <select:Option text="Bûrger, Shakè and à Smîle"/>
+                                <select:Option text="Sùgàr, Spiçe ând all thïngs nicé"/>
+                            </select:Select>
+                        </b:Column>
+                        <b:Column size="XS_3">
+                            <select:Select liveSearch="true" liveSearchStyle="STARTS_WITH" liveSearchPlaceholder="Hot, Burger, Sugar...">
+                                <select:Option text="Hot Dog, Fries and a Soda"/>
+                                <select:Option text="Burger, Shake and a Smile"/>
+                                <select:Option text="Sugar, Spice and all things nice"/>
                             </select:Select>
                         </b:Column>
                     </b:Row>
@@ -214,6 +228,20 @@
                         \s\s&lt;select:Option tokens="ketchup mustard" text="Hot Dog, Fries and a Soda"/&gt;\n
                         \s\s&lt;select:Option tokens="mustard" text="Burger, Shake and a Smile"/&gt;\n
                         \s\s&lt;select:Option tokens="frosting" text="Sugar, Spice and all things nice"/&gt;\n
+                        \s\s...\n
+                        &lt;/select:Select&gt;\n\n
+                        &lt;!-- Enable accent-insensitive search --&gt;\n
+                        &lt;select:Select liveSearch="true" liveSearchNormalize="true" liveSearchPlaceholder="Accent-insensitive search..."&gt;\n
+                        \s\s&lt;select:Option text="Hot Dôg, Friés and a Soda"/&gt;\n
+                        \s\s&lt;select:Option text="Bûrger, Shakè and à Smîle"/&gt;\n
+                        \s\s&lt;select:Option text="Sùgàr, Spiçe ând all thïngs nicé"/&gt;\n
+                        \s\s...\n
+                        &lt;/select:Select&gt;\n\n
+                        &lt;!-- Reveal options starting with the searched text --&gt;\n
+                        &lt;select:Select liveSearch="true" liveSearchStyle="STARTS_WITH" liveSearchPlaceholder="Hot, Burger, Sugar..."&gt;\n
+                        \s\s&lt;select:Option text="Hot Dog, Fries and a Soda"/&gt;\n
+                        \s\s&lt;select:Option text="Burger, Shake and a Smile"/&gt;\n
+                        \s\s&lt;select:Option text="Sugar, Spice and all things nice"/&gt;\n
                         \s\s...\n
                         &lt;/select:Select&gt;\n
                     </d:PrettyPre>
@@ -234,8 +262,8 @@
                             </select:MultipleSelect>
                         </b:Column>
                         <b:Column size="XS_6">
-                            <select:MultipleSelect>
-                                <select:OptGroup label="Condiments" maxOptions="2">
+                            <select:MultipleSelect ui:field="maxOptionsSelect" maxOptions="2">
+                                <select:OptGroup label="Condiments" maxOptions="3">
                                     <select:Option text="Mustard"/>
                                     <select:Option text="Ketchup"/>
                                     <select:Option text="Relish"/>
@@ -257,7 +285,7 @@
                         \s\s...\n
                         &lt;/select:MultipleSelect&gt;\n\n
                         &lt;!-- It also works for option groups --&gt;\n
-                        &lt;select:MultipleSelect&gt;\n
+                        &lt;select:MultipleSelect ui:field="maxOptionsSelect" maxOptions="3"&gt;\n
                         \s\s&lt;select:OptGroup label="..." maxOptions="2"&gt;\n
                         \s\s\s\s&lt;select:Option text="..."/&gt;\n
                         \s\s\s\s...\n
@@ -266,7 +294,24 @@
                         \s\s\s\s&lt;select:Option text="..."/&gt;\n
                         \s\s\s\s...\n
                         \s\s&lt;/select:OptGroup&gt;\n
-                        &lt;/select:MultipleSelect&gt;\n
+                        &lt;/select:MultipleSelect&gt;\n\n
+                    </d:PrettyPre>
+                    <b:Heading size="H4" text="Java Code"/>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        // Customize the message displayed when the limit is reached\n
+                        @UiField MultipleSelect maxOptionsSelect;\n\n
+                        maxOptionsSelect.setMaxOptionsTextHandler(new MaxOptionsTextHandler() {\n
+                        \s\s@Override\n
+                        \s\spublic String getMaxSelectOptionsText(int maxSelectOptions) {\n
+                        \s\s\s\s// Or return "Only {n} options are allowed";\n
+                        \s\s\s\sreturn "Only " + maxSelectOptions + " options are allowed";\n
+                        \s\s}\n
+                        \s\s@Override\n
+                        \s\spublic String getMaxGroupOptionsText(int maxGroupOptions) {\n
+                        \s\s\s\s// Or return "No more than {n} options in group";\n
+                        \s\s\s\sreturn "No more than " + maxGroupOptions + " options in group";\n
+                        \s\s}\n
+                        });\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -426,35 +471,40 @@
                 <b:PanelBody>
                     <b:Row>
                         <b:Column size="SM_2">
-                            <select:Select type="PRIMARY" title="PRIMARY">
+                            <select:Select type="PRIMARY">
+                                <select:Option text="PRIMARY"/>
                                 <select:Option text="Mustard"/>
                                 <select:Option text="Ketchup"/>
                                 <select:Option text="Relish"/>
                             </select:Select>
                         </b:Column>
                         <b:Column size="SM_2">
-                            <select:Select type="INFO" title="INFO">
+                            <select:Select type="INFO">
+                                <select:Option text="INFO"/>
                                 <select:Option text="Mustard"/>
                                 <select:Option text="Ketchup"/>
                                 <select:Option text="Relish"/>
                             </select:Select>
                         </b:Column>
                         <b:Column size="SM_2">
-                            <select:Select type="SUCCESS" title="SUCCESS">
+                            <select:Select type="SUCCESS">
+                                <select:Option text="SUCCESS"/>
                                 <select:Option text="Mustard"/>
                                 <select:Option text="Ketchup"/>
                                 <select:Option text="Relish"/>
                             </select:Select>
                         </b:Column>
                         <b:Column size="SM_2">
-                            <select:Select type="WARNING" title="WARNING">
+                            <select:Select type="WARNING">
+                                <select:Option text="WARNING"/>
                                 <select:Option text="Mustard"/>
                                 <select:Option text="Ketchup"/>
                                 <select:Option text="Relish"/>
                             </select:Select>
                         </b:Column>
                         <b:Column size="SM_2">
-                            <select:Select type="DANGER" title="DANGER">
+                            <select:Select type="DANGER">
+                                <select:Option text="DANGER"/>
                                 <select:Option text="Mustard"/>
                                 <select:Option text="Ketchup"/>
                                 <select:Option text="Relish"/>
@@ -801,6 +851,44 @@
                         &lt;select:Select fixedMenuSize="5"&gt;\n
                         \s\s...\n
                         &lt;/select:Select&gt;\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Select/deselect all options"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                        <b:Column size="SM_6">
+                            <select:MultipleSelect showActionsBox="true">
+                                <select:Option text="Mustard"/>
+                                <select:Option text="Ketchup"/>
+                                <select:Option text="Relish"/>
+                            </select:MultipleSelect>
+                        </b:Column>
+                        <b:Column size="SM_6">
+                            <select:MultipleSelect showActionsBox="true" selectAllText="Check All" deselectAllText="Uncheck All">
+                                <select:Option text="Mustard"/>
+                                <select:Option text="Ketchup"/>
+                                <select:Option text="Relish"/>
+                            </select:MultipleSelect>
+                        </b:Column>
+                    </b:Row>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;!-- Adds two buttons to the top of the menu - Select All &amp; Deselect All --&gt;\n
+                        &lt;select:MultipleSelect showActionsBox="true"&gt;\n
+                        \s\s&lt;select:Option text="..."/&gt;\n
+                        \s\s...\n
+                        &lt;/select:MultipleSelect&gt;\n\n
+                        &lt;!-- Customize the text of two buttons --&gt;\n
+                        &lt;select:MultipleSelect showActionsBox="true" selectAllText="Check All" deselectAllText="Uncheck All"&gt;\n
+                        \s\s&lt;select:Option text="..."/&gt;\n
+                        \s\s...\n
+                        &lt;/select:MultipleSelect&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
