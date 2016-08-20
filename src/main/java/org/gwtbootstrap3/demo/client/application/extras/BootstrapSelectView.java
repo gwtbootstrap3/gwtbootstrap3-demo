@@ -25,6 +25,7 @@ import java.util.List;
 
 import org.gwtbootstrap3.client.ui.Button;
 import org.gwtbootstrap3.client.ui.html.Paragraph;
+import org.gwtbootstrap3.extras.select.client.ui.MaxOptionsTextHandler;
 import org.gwtbootstrap3.extras.select.client.ui.MultipleSelect;
 import org.gwtbootstrap3.extras.select.client.ui.Select;
 import org.gwtbootstrap3.extras.select.client.ui.event.HasAllSelectHandlers;
@@ -52,6 +53,7 @@ import com.gwtplatform.mvp.client.ViewImpl;
  */
 public class BootstrapSelectView extends ViewImpl implements BootstrapSelectPresenter.MyView {
 
+    @UiField MultipleSelect maxOptionsSelect;
     @UiField Select simpleSelect;
     @UiField MultipleSelect multiSelect;
     @UiField Button setValueSimple;
@@ -69,6 +71,16 @@ public class BootstrapSelectView extends ViewImpl implements BootstrapSelectPres
     @Inject
     BootstrapSelectView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        maxOptionsSelect.setMaxOptionsTextHandler(new MaxOptionsTextHandler() {
+            @Override
+            public String getMaxSelectOptionsText(int maxSelectOptions) {
+                return "Only " + maxSelectOptions + " options are allowed";
+            }
+            @Override
+            public String getMaxGroupOptionsText(int maxGroupOptions) {
+                return "No more than " + maxGroupOptions + " options in group";
+            }
+        });
     }
 
     @UiHandler("disableEnableSimple")
