@@ -60,7 +60,7 @@
                     Slider
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 7.1.1</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 9.2.0</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
@@ -175,6 +175,32 @@
                         Range value = myRangeSlider.getValue();\n\n
                         // Set value\n
                         myRangeSlider.setValue(new Range(400, 700));\n
+                    </d:PrettyPre>
+                </b:PanelFooter>
+            </b:Panel>
+
+            <!-- Vertical slider -->
+            <b:Panel>
+                <b:PanelHeader>
+                    <b:Heading size="H3" text="Vertical Slider"/>
+                </b:PanelHeader>
+                <b:PanelBody>
+                    <b:Row>
+                        <b:Column size="SM_4">
+                            <b3:Slider ui:field="verticalExample" min="0" max="10" value="5" orientation="VERTICAL"/>
+                        </b:Column>
+                        <b:Column size="SM_8">
+                            <b:Button ui:field="verticalReversed" type="PRIMARY" text="Reverse"/>
+                        </b:Column>
+                    </b:Row>
+                </b:PanelBody>
+                <b:PanelFooter>
+                    <d:PrettyPre addStyleNames="lang-xml">
+                        &lt;b3:Slider ui:field="myVerticalSlider" min="0" max="10" value="5" orientation="VERTICAL"/&gt;\n
+                    </d:PrettyPre>
+                    <d:PrettyPre addStyleNames="lang-java">
+                        // Toggle Reversed\n
+                        myVerticalSlider.setReversed(!myVerticalSlider.isReversed());\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>
@@ -376,21 +402,6 @@
                         void onRangeEnabled(SlideEnabledEvent event) { ... }\n\n
                         @UiHandler("myRangeSlider")\n
                         void onRangeDisabled(SlideDisabledEvent event) { ... }\n
-                    </d:PrettyPre>
-                </b:PanelFooter>
-            </b:Panel>
-
-            <!-- FIXME: Vertical slider is broken, to be enabled in later version -->
-            <b:Panel visible="false">
-                <b:PanelHeader>
-                    <b:Heading size="H3" text="Vertical Slider"/>
-                </b:PanelHeader>
-                <b:PanelBody>
-                    <b3:Slider min="0" max="10" value="5" orientation="VERTICAL"/>
-                </b:PanelBody>
-                <b:PanelFooter>
-                    <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b3:Slider orientation="VERTICAL"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
             </b:Panel>

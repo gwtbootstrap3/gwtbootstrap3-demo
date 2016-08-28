@@ -49,6 +49,7 @@ public class SliderView extends ViewImpl implements SliderPresenter.MyView {
 
     @UiField Slider basicExample;
     @UiField RangeSlider rangeExample;
+    @UiField Slider verticalExample;
     @UiField Slider formatterExample;
     @UiField RangeSlider rangeFormatterExample;
     @UiField Slider eventExample;
@@ -135,6 +136,11 @@ public class SliderView extends ViewImpl implements SliderPresenter.MyView {
     @UiHandler("rangeSetValue")
     void onRangeSetValue(ClickEvent event) {
         rangeExample.setValue(new Range(400, 700));
+    }
+
+    @UiHandler("verticalReversed")
+    void onVerticalReversed(ClickEvent event) {
+        verticalExample.setReversed(!verticalExample.isReversed());
     }
 
     @UiHandler("eventExample")
