@@ -77,9 +77,9 @@
                     <d:PrettyPre addStyleNames="lang-xml">
                         &lt;a href="#"&gt;Inbox\n
                         \s\s&lt;b:Badge&gt;\n
-                        \s\s\s&lt;b:Text text="..."/&gt;\n
+                        \s\s\s&lt;b.html:Text text="..."/&gt;\n
                         \s\s\s&lt;b:Icon type="ENVELOPE"/&gt;\n
-                        \s\s\s&lt;i&gt;unread&lt;/i&gt;\n
+                        \s\s\s&lt;b.html:Italic&gt;unread&lt;/b.html:Italic&gt;\n
                         \s\s&lt;/b:Badge&gt;\n
                         &lt;/a&gt;
                     </d:PrettyPre>
