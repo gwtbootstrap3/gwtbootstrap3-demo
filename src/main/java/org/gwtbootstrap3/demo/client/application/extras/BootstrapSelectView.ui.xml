@@ -71,7 +71,7 @@
                     Select
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 1.11.0</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 1.12.0</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
