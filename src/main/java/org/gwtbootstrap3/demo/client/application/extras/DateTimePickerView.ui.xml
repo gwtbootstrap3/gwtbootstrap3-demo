@@ -2,7 +2,7 @@
   #%L
   GwtBootstrap3
   %%
-  Copyright (C) 2013 GwtBootstrap3
+  Copyright (C) 2016 GwtBootstrap3
   %%
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -70,7 +70,7 @@
                     Bootstrap DateTimePicker
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 2.3.8</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 2.3.11</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
@@ -230,15 +230,15 @@
                     <b:Heading size="H3" text="Time Only"/>
                 </b:PanelHeader>
                 <b:PanelBody>
-                    <b2:DateTimePicker startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P"/>
+                    <b2:DateTimePicker startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P" formatViewType="TIME"/>
                     <b.html:Paragraph addStyleNames="{style.spacing2}">With only every 30 minutes available.
                     </b.html:Paragraph>
-                    <b2:DateTimePicker startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P" minuteStep="30"/>
+                    <b2:DateTimePicker startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P" formatViewType="TIME" minuteStep="30"/>
                 </b:PanelBody>
                 <b:PanelFooter>
                     <d:PrettyPre addStyleNames="lang-xml">
-                        &lt;b2:DateTimePicker startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P"/&gt;\n\n
-                        &lt;b2:DateTimePicker startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P"
+                        &lt;b2:DateTimePicker startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P" formatViewType="TIME"/&gt;\n\n
+                        &lt;b2:DateTimePicker startView="DAY" minView="HOUR" maxView="DAY" format="HH:ii P" formatViewType="TIME"
                         minuteStep="30"/&gt;\n
                     </d:PrettyPre>
                 </b:PanelFooter>
