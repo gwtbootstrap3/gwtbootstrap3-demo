@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span>package org.gwtbootstrap3.extras.animate.client.ui.constants;<a name="line.1"></a>
+<span class="sourceLineNo">002</span><a name="line.2"></a>
+<span class="sourceLineNo">003</span>/*<a name="line.3"></a>
+<span class="sourceLineNo">004</span> * #%L<a name="line.4"></a>
+<span class="sourceLineNo">005</span> * GwtBootstrap3<a name="line.5"></a>
+<span class="sourceLineNo">006</span> * %%<a name="line.6"></a>
+<span class="sourceLineNo">007</span> * Copyright (C) 2013 - 2014 GwtBootstrap3<a name="line.7"></a>
+<span class="sourceLineNo">008</span> * %%<a name="line.8"></a>
+<span class="sourceLineNo">009</span> * Licensed under the Apache License, Version 2.0 (the "License");<a name="line.9"></a>
+<span class="sourceLineNo">010</span> * you may not use this file except in compliance with the License.<a name="line.10"></a>
+<span class="sourceLineNo">011</span> * You may obtain a copy of the License at<a name="line.11"></a>
+<span class="sourceLineNo">012</span> * <a name="line.12"></a>
+<span class="sourceLineNo">013</span> *      http://www.apache.org/licenses/LICENSE-2.0<a name="line.13"></a>
+<span class="sourceLineNo">014</span> * <a name="line.14"></a>
+<span class="sourceLineNo">015</span> * Unless required by applicable law or agreed to in writing, software<a name="line.15"></a>
+<span class="sourceLineNo">016</span> * distributed under the License is distributed on an "AS IS" BASIS,<a name="line.16"></a>
+<span class="sourceLineNo">017</span> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<a name="line.17"></a>
+<span class="sourceLineNo">018</span> * See the License for the specific language governing permissions and<a name="line.18"></a>
+<span class="sourceLineNo">019</span> * limitations under the License.<a name="line.19"></a>
+<span class="sourceLineNo">020</span> * #L%<a name="line.20"></a>
+<span class="sourceLineNo">021</span> */<a name="line.21"></a>
+<span class="sourceLineNo">022</span><a name="line.22"></a>
+<span class="sourceLineNo">023</span>import com.google.gwt.dom.client.Style;<a name="line.23"></a>
+<span class="sourceLineNo">024</span>import org.gwtbootstrap3.client.ui.base.helper.EnumHelper;<a name="line.24"></a>
+<span class="sourceLineNo">025</span><a name="line.25"></a>
+<span class="sourceLineNo">026</span>/**<a name="line.26"></a>
+<span class="sourceLineNo">027</span> * Enumeration of CSS animations from Animate.css project.<a name="line.27"></a>
+<span class="sourceLineNo">028</span> * See: http://daneden.github.io/animate.css/<a name="line.28"></a>
+<span class="sourceLineNo">029</span> *<a name="line.29"></a>
+<span class="sourceLineNo">030</span> * @author Pavel Zlámal<a name="line.30"></a>
+<span class="sourceLineNo">031</span> */<a name="line.31"></a>
+<span class="sourceLineNo">032</span>public enum Animation implements Style.HasCssName {<a name="line.32"></a>
+<span class="sourceLineNo">033</span><a name="line.33"></a>
+<span class="sourceLineNo">034</span>    BOUNCE("animated bounce"),<a name="line.34"></a>
+<span class="sourceLineNo">035</span>    BOUNCE_IN("animated bounceIn"),<a name="line.35"></a>
+<span class="sourceLineNo">036</span>    BOUNCE_IN_DOWN("animated bounceInDown"),<a name="line.36"></a>
+<span class="sourceLineNo">037</span>    BOUNCE_IN_LEFT("animated bounceInLeft"),<a name="line.37"></a>
+<span class="sourceLineNo">038</span>    BOUNCE_IN_RIGHT("animated bounceInRight"),<a name="line.38"></a>
+<span class="sourceLineNo">039</span>    BOUNCE_IN_UP("animated bounceInUp"),<a name="line.39"></a>
+<span class="sourceLineNo">040</span>    BOUNCE_OUT("animated bounceOut"),<a name="line.40"></a>
+<span class="sourceLineNo">041</span>    BOUNCE_OUT_DOWN("animated bounceOutDown"),<a name="line.41"></a>
+<span class="sourceLineNo">042</span>    BOUNCE_OUT_LEFT("animated bounceOutLeft"),<a name="line.42"></a>
+<span class="sourceLineNo">043</span>    BOUNCE_OUT_RIGHT("animated bounceOutRight"),<a name="line.43"></a>
+<span class="sourceLineNo">044</span>    BOUNCE_OUT_UP("animated bounceOutUp"),<a name="line.44"></a>
+<span class="sourceLineNo">045</span>    FADE_IN("animated fadeIn"),<a name="line.45"></a>
+<span class="sourceLineNo">046</span>    FADE_IN_DOWN("animated fadeInDown"),<a name="line.46"></a>
+<span class="sourceLineNo">047</span>    FADE_IN_DOWN_BIG("animated fadeInDownBig"),<a name="line.47"></a>
+<span class="sourceLineNo">048</span>    FADE_IN_LEFT("animated fadeInLeft"),<a name="line.48"></a>
+<span class="sourceLineNo">049</span>    FADE_IN_LEFT_BIG("animated fadeInLeftBig"),<a name="line.49"></a>
+<span class="sourceLineNo">050</span>    FADE_IN_RIGHT("animated fadeInRight"),<a name="line.50"></a>
+<span class="sourceLineNo">051</span>    FADE_IN_RIGHT_BIG("animated fadeInRightBig"),<a name="line.51"></a>
+<span class="sourceLineNo">052</span>    FADE_IN_UP("animated fadeInUp"),<a name="line.52"></a>
+<span class="sourceLineNo">053</span>    FADE_IN_UP_BIG("animated fadeInUpBig"),<a name="line.53"></a>
+<span class="sourceLineNo">054</span>    FADE_OUT("animated fadeOut"),<a name="line.54"></a>
+<span class="sourceLineNo">055</span>    FADE_OUT_DOWN("animated fadeOutDown"),<a name="line.55"></a>
+<span class="sourceLineNo">056</span>    FADE_OUT_DOWN_BIG("animated fadeOutDownBig"),<a name="line.56"></a>
+<span class="sourceLineNo">057</span>    FADE_OUT_LEFT("animated fadeOutLeft"),<a name="line.57"></a>
+<span class="sourceLineNo">058</span>    FADE_OUT_LEFT_BIG("animated fadeOutLeftBig"),<a name="line.58"></a>
+<span class="sourceLineNo">059</span>    FADE_OUT_RIGHT("animated fadeOutRight"),<a name="line.59"></a>
+<span class="sourceLineNo">060</span>    FADE_OUT_RIGHT_BIG("animated fadeOutRightBig"),<a name="line.60"></a>
+<span class="sourceLineNo">061</span>    FADE_OUT_UP("animated fadeOutUp"),<a name="line.61"></a>
+<span class="sourceLineNo">062</span>    FADE_OUT_UP_BIG("animated fadeOutUpBig"),<a name="line.62"></a>
+<span class="sourceLineNo">063</span>    FLASH("animated flash"),<a name="line.63"></a>
+<span class="sourceLineNo">064</span>    FLIP("animated flip"),<a name="line.64"></a>
+<span class="sourceLineNo">065</span>    FLIP_IN_X("animated flipInX"),<a name="line.65"></a>
+<span class="sourceLineNo">066</span>    FLIP_IN_Y("animated flipInY"),<a name="line.66"></a>
+<span class="sourceLineNo">067</span>    FLIP_OUT_X("animated flipOutX"),<a name="line.67"></a>
+<span class="sourceLineNo">068</span>    FLIP_OUT_Y("animated flipOutY"),<a name="line.68"></a>
+<span class="sourceLineNo">069</span>    HINGE("animated hinge"),<a name="line.69"></a>
+<span class="sourceLineNo">070</span>    JELLO("animated jello"),<a name="line.70"></a>
+<span class="sourceLineNo">071</span>    LIGHTSPEED_IN("animated lightSpeedIn"),<a name="line.71"></a>
+<span class="sourceLineNo">072</span>    LIGHTSPEED_OUT("animated lightSpeedOut"),<a name="line.72"></a>
+<span class="sourceLineNo">073</span>    NO_ANIMATION(""),<a name="line.73"></a>
+<span class="sourceLineNo">074</span>    PULSE("animated pulse"),<a name="line.74"></a>
+<span class="sourceLineNo">075</span>    ROLL_IN("animated rollIn"),<a name="line.75"></a>
+<span class="sourceLineNo">076</span>    ROLL_OUT("animated rollOut"),<a name="line.76"></a>
+<span class="sourceLineNo">077</span>    ROTATE_IN("animated rotateIn"),<a name="line.77"></a>
+<span class="sourceLineNo">078</span>    ROTATE_IN_DOWN_LEFT("animated rotateInDownLeft"),<a name="line.78"></a>
+<span class="sourceLineNo">079</span>    ROTATE_IN_DOWN_RIGHT("animated rotateInDownRight"),<a name="line.79"></a>
+<span class="sourceLineNo">080</span>    ROTATE_IN_UP_LEFT("animated rotateInUpLeft"),<a name="line.80"></a>
+<span class="sourceLineNo">081</span>    ROTATE_IN_UP_RIGHT("animated rotateInUpRight"),<a name="line.81"></a>
+<span class="sourceLineNo">082</span>    ROTATE_OUT("animated rotateOut"),<a name="line.82"></a>
+<span class="sourceLineNo">083</span>    ROTATE_OUT_DOWN_LEFT("animated rotateOutDownLeft"),<a name="line.83"></a>
+<span class="sourceLineNo">084</span>    ROTATE_OUT_DOWN_RIGHT("animated rotateOutDownRight"),<a name="line.84"></a>
+<span class="sourceLineNo">085</span>    ROTATE_OUT_UP_LEFT("animated rotateOutUpLeft"),<a name="line.85"></a>
+<span class="sourceLineNo">086</span>    ROTATE_OUT_UP_RIGHT("animated rotateOutUpRight"),<a name="line.86"></a>
+<span class="sourceLineNo">087</span>    RUBBER_BAND("animated rubberBand"),<a name="line.87"></a>
+<span class="sourceLineNo">088</span>    SHAKE("animated shake"),<a name="line.88"></a>
+<span class="sourceLineNo">089</span>    SLIDE_IN_UP("animated slideInUp"),<a name="line.89"></a>
+<span class="sourceLineNo">090</span>    SLIDE_IN_DOWN("animated slideInDown"),<a name="line.90"></a>
+<span class="sourceLineNo">091</span>    SLIDE_IN_LEFT("animated slideInLeft"),<a name="line.91"></a>
+<span class="sourceLineNo">092</span>    SLIDE_IN_RIGHT("animated slideInRight"),<a name="line.92"></a>
+<span class="sourceLineNo">093</span>    SLIDE_OUT_UP("animated slideOutUp"),<a name="line.93"></a>
+<span class="sourceLineNo">094</span>    SLIDE_OUT_DOWN("animated slideOutDown"),<a name="line.94"></a>
+<span class="sourceLineNo">095</span>    SLIDE_OUT_LEFT("animated slideOutLeft"),<a name="line.95"></a>
+<span class="sourceLineNo">096</span>    SLIDE_OUT_RIGHT("animated slideOutRight"),<a name="line.96"></a>
+<span class="sourceLineNo">097</span>    SWING("animated swing"),<a name="line.97"></a>
+<span class="sourceLineNo">098</span>    TADA("animated tada"),<a name="line.98"></a>
+<span class="sourceLineNo">099</span>    WOBBLE("animated wobble"),<a name="line.99"></a>
+<span class="sourceLineNo">100</span>    ZOOM_IN("animated zoomIn"),<a name="line.100"></a>
+<span class="sourceLineNo">101</span>    ZOOM_IN_DOWN("animated zoomInDown"),<a name="line.101"></a>
+<span class="sourceLineNo">102</span>    ZOOM_IN_LEFT("animated zoomInLeft"),<a name="line.102"></a>
+<span class="sourceLineNo">103</span>    ZOOM_IN_RIGHT("animated zoomInRight"),<a name="line.103"></a>
+<span class="sourceLineNo">104</span>    ZOOM_IN_UP("animated zoomInUp"),<a name="line.104"></a>
+<span class="sourceLineNo">105</span>    ZOOM_OUT("animated zoomOut"),<a name="line.105"></a>
+<span class="sourceLineNo">106</span>    ZOOM_OUT_DOWN("animated zoomOutDown"),<a name="line.106"></a>
+<span class="sourceLineNo">107</span>    ZOOM_OUT_LEFT("animated zoomOutLeft"),<a name="line.107"></a>
+<span class="sourceLineNo">108</span>    ZOOM_OUT_RIGHT("animated zoomOutRight"),<a name="line.108"></a>
+<span class="sourceLineNo">109</span>    ZOOM_OUT_UP("animated zoomOutUp");<a name="line.109"></a>
+<span class="sourceLineNo">110</span><a name="line.110"></a>
+<span class="sourceLineNo">111</span>    private final String cssClass;<a name="line.111"></a>
+<span class="sourceLineNo">112</span><a name="line.112"></a>
+<span class="sourceLineNo">113</span>    private Animation(final String cssClass) {<a name="line.113"></a>
+<span class="sourceLineNo">114</span>        this.cssClass = cssClass;<a name="line.114"></a>
+<span class="sourceLineNo">115</span>    }<a name="line.115"></a>
+<span class="sourceLineNo">116</span><a name="line.116"></a>
+<span class="sourceLineNo">117</span>    @Override<a name="line.117"></a>
+<span class="sourceLineNo">118</span>    public String getCssName() {<a name="line.118"></a>
+<span class="sourceLineNo">119</span>        return cssClass;<a name="line.119"></a>
+<span class="sourceLineNo">120</span>    }<a name="line.120"></a>
+<span class="sourceLineNo">121</span><a name="line.121"></a>
+<span class="sourceLineNo">122</span>    public static Animation fromStyleName(final String styleName) {<a name="line.122"></a>
+<span class="sourceLineNo">123</span>        return EnumHelper.fromStyleName(styleName, Animation.class, NO_ANIMATION);<a name="line.123"></a>
+<span class="sourceLineNo">124</span>    }<a name="line.124"></a>
+<span class="sourceLineNo">125</span><a name="line.125"></a>
+<span class="sourceLineNo">126</span>}<a name="line.126"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>

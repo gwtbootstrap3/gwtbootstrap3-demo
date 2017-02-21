@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span>package org.gwtbootstrap3.extras.cachemanifest;<a name="line.1"></a>
+<span class="sourceLineNo">002</span><a name="line.2"></a>
+<span class="sourceLineNo">003</span>/*<a name="line.3"></a>
+<span class="sourceLineNo">004</span> * #%L<a name="line.4"></a>
+<span class="sourceLineNo">005</span> * GwtBootstrap3<a name="line.5"></a>
+<span class="sourceLineNo">006</span> * %%<a name="line.6"></a>
+<span class="sourceLineNo">007</span> * Copyright (C) 2013 GwtBootstrap3<a name="line.7"></a>
+<span class="sourceLineNo">008</span> * %%<a name="line.8"></a>
+<span class="sourceLineNo">009</span> * Licensed under the Apache License, Version 2.0 (the "License");<a name="line.9"></a>
+<span class="sourceLineNo">010</span> * you may not use this file except in compliance with the License.<a name="line.10"></a>
+<span class="sourceLineNo">011</span> * You may obtain a copy of the License at<a name="line.11"></a>
+<span class="sourceLineNo">012</span> * <a name="line.12"></a>
+<span class="sourceLineNo">013</span> *      http://www.apache.org/licenses/LICENSE-2.0<a name="line.13"></a>
+<span class="sourceLineNo">014</span> * <a name="line.14"></a>
+<span class="sourceLineNo">015</span> * Unless required by applicable law or agreed to in writing, software<a name="line.15"></a>
+<span class="sourceLineNo">016</span> * distributed under the License is distributed on an "AS IS" BASIS,<a name="line.16"></a>
+<span class="sourceLineNo">017</span> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<a name="line.17"></a>
+<span class="sourceLineNo">018</span> * See the License for the specific language governing permissions and<a name="line.18"></a>
+<span class="sourceLineNo">019</span> * limitations under the License.<a name="line.19"></a>
+<span class="sourceLineNo">020</span> * #L%<a name="line.20"></a>
+<span class="sourceLineNo">021</span> */<a name="line.21"></a>
+<span class="sourceLineNo">022</span><a name="line.22"></a>
+<span class="sourceLineNo">023</span>import com.google.gwt.core.ext.LinkerContext;<a name="line.23"></a>
+<span class="sourceLineNo">024</span>import com.google.gwt.core.ext.TreeLogger;<a name="line.24"></a>
+<span class="sourceLineNo">025</span>import com.google.gwt.core.ext.UnableToCompleteException;<a name="line.25"></a>
+<span class="sourceLineNo">026</span>import com.google.gwt.core.ext.linker.*;<a name="line.26"></a>
+<span class="sourceLineNo">027</span>import com.google.gwt.core.ext.linker.EmittedArtifact.Visibility;<a name="line.27"></a>
+<span class="sourceLineNo">028</span>import com.google.gwt.core.ext.linker.LinkerOrder.Order;<a name="line.28"></a>
+<span class="sourceLineNo">029</span><a name="line.29"></a>
+<span class="sourceLineNo">030</span>import java.util.Date;<a name="line.30"></a>
+<span class="sourceLineNo">031</span>import java.util.HashSet;<a name="line.31"></a>
+<span class="sourceLineNo">032</span>import java.util.Set;<a name="line.32"></a>
+<span class="sourceLineNo">033</span>import java.util.SortedSet;<a name="line.33"></a>
+<span class="sourceLineNo">034</span><a name="line.34"></a>
+<span class="sourceLineNo">035</span>/**<a name="line.35"></a>
+<span class="sourceLineNo">036</span> * Offline linker performs the task of generating a valid cache manifest file<a name="line.36"></a>
+<span class="sourceLineNo">037</span> * when you compile your GWT application.<a name="line.37"></a>
+<span class="sourceLineNo">038</span> * &lt;p/&gt;<a name="line.38"></a>
+<span class="sourceLineNo">039</span> * &lt;p/&gt;<a name="line.39"></a>
+<span class="sourceLineNo">040</span> * Static resources that are needed (outside of the compile unit) require<a name="line.40"></a>
+<span class="sourceLineNo">041</span> * specific inclusion. These files would typically be index.html, css files or<a name="line.41"></a>
+<span class="sourceLineNo">042</span> * any resources not included within the GWT application. These files are<a name="line.42"></a>
+<span class="sourceLineNo">043</span> * included through the cachemanifest_static_files property added to your<a name="line.43"></a>
+<span class="sourceLineNo">044</span> * module.gwt.xml file. The path is relative to manifest, so include a full path<a name="line.44"></a>
+<span class="sourceLineNo">045</span> * if you include resources outside of the apps path.<a name="line.45"></a>
+<span class="sourceLineNo">046</span> * &lt;p/&gt;<a name="line.46"></a>
+<span class="sourceLineNo">047</span> * &lt;pre&gt;<a name="line.47"></a>
+<span class="sourceLineNo">048</span> * {@code<a name="line.48"></a>
+<span class="sourceLineNo">049</span> * &lt;extend-configuration-property name="cachemanifest_static_files" value="/index.html" /&gt;<a name="line.49"></a>
+<span class="sourceLineNo">050</span> * }<a name="line.50"></a>
+<span class="sourceLineNo">051</span> * &lt;/pre&gt;<a name="line.51"></a>
+<span class="sourceLineNo">052</span> * &lt;p/&gt;<a name="line.52"></a>
+<span class="sourceLineNo">053</span> * To activate the linker, the following configuration is included in your GWT<a name="line.53"></a>
+<span class="sourceLineNo">054</span> * module definition (module.gwt.xml file) as follows:<a name="line.54"></a>
+<span class="sourceLineNo">055</span> * &lt;p/&gt;<a name="line.55"></a>
+<span class="sourceLineNo">056</span> * &lt;pre&gt;<a name="line.56"></a>
+<span class="sourceLineNo">057</span> * {@code<a name="line.57"></a>
+<span class="sourceLineNo">058</span> * &lt;inherits name='org.gwtbootstrap3.extras.cachemanifest.Offline'/&gt;<a name="line.58"></a>
+<span class="sourceLineNo">059</span> * &lt;add-linker name="offline" /&gt;<a name="line.59"></a>
+<span class="sourceLineNo">060</span> * }<a name="line.60"></a>
+<span class="sourceLineNo">061</span> * &lt;/pre&gt;<a name="line.61"></a>
+<span class="sourceLineNo">062</span> * &lt;p/&gt;<a name="line.62"></a>
+<span class="sourceLineNo">063</span> * Finally, include the cache manifest file within the html page that loads your<a name="line.63"></a>
+<span class="sourceLineNo">064</span> * GWT application, as follows:<a name="line.64"></a>
+<span class="sourceLineNo">065</span> * &lt;p/&gt;<a name="line.65"></a>
+<span class="sourceLineNo">066</span> * &lt;pre&gt;<a name="line.66"></a>
+<span class="sourceLineNo">067</span> * {@code<a name="line.67"></a>
+<span class="sourceLineNo">068</span> *  &lt;!doctype html&gt;<a name="line.68"></a>
+<span class="sourceLineNo">069</span> *  &lt;html manifest="&lt;modulename&gt;/appcache.manifest"&gt;<a name="line.69"></a>
+<span class="sourceLineNo">070</span> *  ....<a name="line.70"></a>
+<span class="sourceLineNo">071</span> *  &lt;/html&gt;<a name="line.71"></a>
+<span class="sourceLineNo">072</span> * }<a name="line.72"></a>
+<span class="sourceLineNo">073</span> * &lt;/pre&gt;<a name="line.73"></a>
+<span class="sourceLineNo">074</span> *<a name="line.74"></a>
+<span class="sourceLineNo">075</span> * @author Grant Slender<a name="line.75"></a>
+<span class="sourceLineNo">076</span> */<a name="line.76"></a>
+<span class="sourceLineNo">077</span><a name="line.77"></a>
+<span class="sourceLineNo">078</span>@LinkerOrder(Order.POST)<a name="line.78"></a>
+<span class="sourceLineNo">079</span>public class Offline extends AbstractLinker {<a name="line.79"></a>
+<span class="sourceLineNo">080</span><a name="line.80"></a>
+<span class="sourceLineNo">081</span>    private static final String CACHEMANIFEST_STATIC_FILES_PROPERTY = "cachemanifest_static_files";<a name="line.81"></a>
+<span class="sourceLineNo">082</span><a name="line.82"></a>
+<span class="sourceLineNo">083</span>    @Override<a name="line.83"></a>
+<span class="sourceLineNo">084</span>    public String getDescription() {<a name="line.84"></a>
+<span class="sourceLineNo">085</span>        return "Offline Linker";<a name="line.85"></a>
+<span class="sourceLineNo">086</span>    }<a name="line.86"></a>
+<span class="sourceLineNo">087</span><a name="line.87"></a>
+<span class="sourceLineNo">088</span>    @Override<a name="line.88"></a>
+<span class="sourceLineNo">089</span>    public ArtifactSet link(final TreeLogger logger, final LinkerContext context, final ArtifactSet artifacts) throws UnableToCompleteException {<a name="line.89"></a>
+<span class="sourceLineNo">090</span><a name="line.90"></a>
+<span class="sourceLineNo">091</span>        final ArtifactSet artifactset = new ArtifactSet(artifacts);<a name="line.91"></a>
+<span class="sourceLineNo">092</span><a name="line.92"></a>
+<span class="sourceLineNo">093</span>        final HashSet&lt;String&gt; resources = new HashSet&lt;String&gt;();<a name="line.93"></a>
+<span class="sourceLineNo">094</span>        for (final EmittedArtifact emitted : artifacts.find(EmittedArtifact.class)) {<a name="line.94"></a>
+<span class="sourceLineNo">095</span><a name="line.95"></a>
+<span class="sourceLineNo">096</span>            if (skipArtifact(emitted))<a name="line.96"></a>
+<span class="sourceLineNo">097</span>                continue;<a name="line.97"></a>
+<span class="sourceLineNo">098</span>            resources.add(emitted.getPartialPath());<a name="line.98"></a>
+<span class="sourceLineNo">099</span>        }<a name="line.99"></a>
+<span class="sourceLineNo">100</span><a name="line.100"></a>
+<span class="sourceLineNo">101</span>        final SortedSet&lt;ConfigurationProperty&gt; staticFileProperties = context.getConfigurationProperties();<a name="line.101"></a>
+<span class="sourceLineNo">102</span>        for (final ConfigurationProperty configurationProperty : staticFileProperties) {<a name="line.102"></a>
+<span class="sourceLineNo">103</span>            final String name = configurationProperty.getName();<a name="line.103"></a>
+<span class="sourceLineNo">104</span>            if (CACHEMANIFEST_STATIC_FILES_PROPERTY.equals(name)) {<a name="line.104"></a>
+<span class="sourceLineNo">105</span>                for (final String value : configurationProperty.getValues()) {<a name="line.105"></a>
+<span class="sourceLineNo">106</span>                    resources.add(value);<a name="line.106"></a>
+<span class="sourceLineNo">107</span>                }<a name="line.107"></a>
+<span class="sourceLineNo">108</span>            }<a name="line.108"></a>
+<span class="sourceLineNo">109</span>        }<a name="line.109"></a>
+<span class="sourceLineNo">110</span><a name="line.110"></a>
+<span class="sourceLineNo">111</span>        final String manifestString = buildManifestContents(resources);<a name="line.111"></a>
+<span class="sourceLineNo">112</span>        if (manifestString != null) {<a name="line.112"></a>
+<span class="sourceLineNo">113</span>            final EmittedArtifact manifest = emitString(logger, manifestString, "appcache.manifest");<a name="line.113"></a>
+<span class="sourceLineNo">114</span>            artifactset.add(manifest);<a name="line.114"></a>
+<span class="sourceLineNo">115</span>        }<a name="line.115"></a>
+<span class="sourceLineNo">116</span>        return artifactset;<a name="line.116"></a>
+<span class="sourceLineNo">117</span>    }<a name="line.117"></a>
+<span class="sourceLineNo">118</span><a name="line.118"></a>
+<span class="sourceLineNo">119</span>    private boolean skipArtifact(final EmittedArtifact emitted) {<a name="line.119"></a>
+<span class="sourceLineNo">120</span><a name="line.120"></a>
+<span class="sourceLineNo">121</span>        if (emitted.getVisibility().matches(Visibility.Private))<a name="line.121"></a>
+<span class="sourceLineNo">122</span>            return true;<a name="line.122"></a>
+<span class="sourceLineNo">123</span><a name="line.123"></a>
+<span class="sourceLineNo">124</span>        final String pathName = emitted.getPartialPath();<a name="line.124"></a>
+<span class="sourceLineNo">125</span><a name="line.125"></a>
+<span class="sourceLineNo">126</span>        if (pathName.endsWith("symbolMap"))<a name="line.126"></a>
+<span class="sourceLineNo">127</span>            return true;<a name="line.127"></a>
+<span class="sourceLineNo">128</span>        if (pathName.endsWith(".xml.gz"))<a name="line.128"></a>
+<span class="sourceLineNo">129</span>            return true;<a name="line.129"></a>
+<span class="sourceLineNo">130</span>        if (pathName.endsWith("rpc.log"))<a name="line.130"></a>
+<span class="sourceLineNo">131</span>            return true;<a name="line.131"></a>
+<span class="sourceLineNo">132</span>        if (pathName.endsWith("gwt.rpc"))<a name="line.132"></a>
+<span class="sourceLineNo">133</span>            return true;<a name="line.133"></a>
+<span class="sourceLineNo">134</span>        if (pathName.endsWith("manifest.txt"))<a name="line.134"></a>
+<span class="sourceLineNo">135</span>            return true;<a name="line.135"></a>
+<span class="sourceLineNo">136</span>        if (pathName.startsWith("rpcPolicyManifest"))<a name="line.136"></a>
+<span class="sourceLineNo">137</span>            return true;<a name="line.137"></a>
+<span class="sourceLineNo">138</span>        if (pathName.startsWith("soycReport"))<a name="line.138"></a>
+<span class="sourceLineNo">139</span>            return true;<a name="line.139"></a>
+<span class="sourceLineNo">140</span>        if (pathName.endsWith(".cssmap"))<a name="line.140"></a>
+<span class="sourceLineNo">141</span>            return true;<a name="line.141"></a>
+<span class="sourceLineNo">142</span><a name="line.142"></a>
+<span class="sourceLineNo">143</span>        return false;<a name="line.143"></a>
+<span class="sourceLineNo">144</span>    }<a name="line.144"></a>
+<span class="sourceLineNo">145</span><a name="line.145"></a>
+<span class="sourceLineNo">146</span>    private String buildManifestContents(final Set&lt;String&gt; resources) {<a name="line.146"></a>
+<span class="sourceLineNo">147</span>        if (resources == null)<a name="line.147"></a>
+<span class="sourceLineNo">148</span>            return null;<a name="line.148"></a>
+<span class="sourceLineNo">149</span><a name="line.149"></a>
+<span class="sourceLineNo">150</span>        final StringBuilder sb = new StringBuilder();<a name="line.150"></a>
+<span class="sourceLineNo">151</span>        sb.append("CACHE MANIFEST\n");<a name="line.151"></a>
+<span class="sourceLineNo">152</span>        sb.append("# Version: " + (new Date()).getTime() + "." + Math.random() + "\n");<a name="line.152"></a>
+<span class="sourceLineNo">153</span>        sb.append("\n");<a name="line.153"></a>
+<span class="sourceLineNo">154</span>        sb.append("CACHE:\n");<a name="line.154"></a>
+<span class="sourceLineNo">155</span>        for (final String resourcePath : resources) {<a name="line.155"></a>
+<span class="sourceLineNo">156</span>            sb.append(resourcePath + "\n");<a name="line.156"></a>
+<span class="sourceLineNo">157</span>        }<a name="line.157"></a>
+<span class="sourceLineNo">158</span><a name="line.158"></a>
+<span class="sourceLineNo">159</span>        sb.append("\n\n");<a name="line.159"></a>
+<span class="sourceLineNo">160</span>        sb.append("NETWORK:\n");<a name="line.160"></a>
+<span class="sourceLineNo">161</span>        sb.append("*\n");<a name="line.161"></a>
+<span class="sourceLineNo">162</span>        return sb.toString();<a name="line.162"></a>
+<span class="sourceLineNo">163</span>    }<a name="line.163"></a>
+<span class="sourceLineNo">164</span>}<a name="line.164"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>
