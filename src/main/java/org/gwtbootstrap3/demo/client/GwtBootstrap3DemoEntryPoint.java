@@ -34,4 +34,5 @@ public class GwtBootstrap3DemoEntryPoint implements EntryPoint {
                 .setWindow(ScriptInjector.TOP_WINDOW)
                 .inject();
     }
+    
 }
