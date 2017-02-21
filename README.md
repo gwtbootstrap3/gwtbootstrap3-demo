@@ -21,3 +21,4 @@ This is the source code for that [GwtBootstrap3](https://github.com/gwtbootstrap
 * [Contributing](https://github.com/gwtbootstrap3/gwtbootstrap3/wiki/Contributing) - Want to help by writing code?  **Awesome!!**  Please read [this](https://github.com/gwtbootstrap3/gwtbootstrap3/wiki/Contributing) first.
 
 [![Join the chat at https://gitter.im/gwtbootstrap3/gwtbootstrap3](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gwtbootstrap3/gwtbootstrap3?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
