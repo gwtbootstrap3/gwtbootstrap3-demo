@@ -70,7 +70,7 @@
                     Bootstrap DatePicker
                 </b:Anchor>
                 <b.html:Br/>
-                <b.html:Strong>Current Version Supported: 1.5.1</b.html:Strong>
+                <b.html:Strong>Current Version Supported: 1.6.4</b.html:Strong>
             </b:BlockQuote>
 
             <b:BlockQuote addStyleNames="{style.danger}">
