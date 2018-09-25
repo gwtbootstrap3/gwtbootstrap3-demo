@@ -249,7 +249,7 @@
                         dataTarget="#collapseFour"&gt;\n
                         \s\s\s\s\s\s&lt;b:Heading size="H4" text="..."/&gt;\n
                         \s\s\s\s&lt;/b:PanelHeader&gt;\n
-                        \s\s\s\s&lt;b:PanelCollapse b:id="collapseOne"&gt;\n
+                        \s\s\s\s&lt;b:PanelCollapse b:id="collapseFour"&gt;\n
                         \s\s\s\s\s\s&lt;b:PanelBody&gt;\n
                         \s\s\s\s\s\s\s\sWidgets\n
                         \s\s\s\s\s\s&lt;/b:PanelBody&gt;\n
@@ -260,7 +260,7 @@
                         dataTarget="#collapseFive"&gt;\n
                         \s\s\s\s\s\s&lt;b:Heading size="H4" text="..."/&gt;\n
                         \s\s\s\s&lt;/b:PanelHeader&gt;\n
-                        \s\s\s\s&lt;b:PanelCollapse b:id="collapseTwo"&gt;\n
+                        \s\s\s\s&lt;b:PanelCollapse b:id="collapseFive"&gt;\n
                         \s\s\s\s\s\s&lt;b:PanelBody&gt;\n
                         \s\s\s\s\s\s\s\sWidgets\n
                         \s\s\s\s\s\s&lt;/b:PanelBody&gt;\n
@@ -271,7 +271,7 @@
                         dataTarget="#collapseSix"&gt;\n
                         \s\s\s\s\s\s&lt;b:Heading size="H4" text="..."/&gt;\n
                         \s\s\s\s&lt;/b:PanelHeader&gt;\n
-                        \s\s\s\s&lt;b:PanelCollapse b:id="collapseThree"&gt;\n
+                        \s\s\s\s&lt;b:PanelCollapse b:id="collapseSix"&gt;\n
                         \s\s\s\s\s\s&lt;b:PanelBody&gt;\n
                         \s\s\s\s\s\s\s\sWidgets\n
                         \s\s\s\s\s\s&lt;/b:PanelBody&gt;\n
